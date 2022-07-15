@@ -71,7 +71,7 @@ if (localStorage.clientMode == "legacy") {
         },
         300: {
             key: 'Plaza',
-            scene: require('@rooms/old/plaza/Plaza').default,
+            scene: require('@rooms/old/plaza/ffc/Plaza').default,
             x: 760,
             y: 680
         },
@@ -336,7 +336,7 @@ if (localStorage.clientMode == "vanilla") {
         },
         300: {
             key: 'Plaza',
-            scene: require('@rooms/new/plaza/ffc/Plaza').default,
+            scene: require('@rooms/new/plaza/Plaza').default,
             x: 760,
             y: 680
         },
