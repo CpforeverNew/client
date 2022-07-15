@@ -105,7 +105,7 @@ export default class Buddy extends Plugin {
         if (!buddy) return
 
         buddy.online = true
-
+        console.log(buddy)
         if (this.interface.main.scene.isActive()) {
             this.interface.updateBuddies()
             this.interface.main.showOnlinePopup(this.filterUsername(buddy))

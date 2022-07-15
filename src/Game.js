@@ -9,7 +9,7 @@ export default class Game extends Phaser.Game {
     constructor(config) {
         super(config)
 
-        if (window.location.hostname == 'play.cpforever.net' || window.location.hostname == 'localhost' || window.location.hostname.match(/^[0-9].+$/) != null) {
+        if (window.location.hostname == 'play.cpforever.org' || window.location.hostname == 'localhost' || window.location.hostname.match(/^[0-9].+$/) != null) {
             this.crumbs = config.crumbs
             this.network = new Network(this)
 
@@ -18,8 +18,8 @@ export default class Game extends Phaser.Game {
             this.logBanner()
         }
         else {
-            console.log("%c%s", "color: #ff0000; font-size: 20px;", "You are not on the correct domain.\nPlease visit https://play.cpforever.net to play.")
-			window.open("https://play.cpforever.net","_self")
+            console.log("%c%s", "color: #ff0000; font-size: 20px;", "You are not on the correct domain.\nPlease visit https://play.cpforever.org to play.")
+			window.open("https://play.cpforever.org","_self")
         }
     }
 	
