@@ -1,0 +1,328 @@
+{
+    "id": "7490f426-ce4a-4afa-b075-2ce139ba5776",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/book/book-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Book",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "8fc441d9-2cd2-4728-8d28-e81bc40d58c1",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "bg"
+            },
+            "y": -6,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "3c785f09-b7ca-43cf-bf8b-b57183a3bea0",
+            "label": "books",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "books",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "book",
+                "frame": "books"
+            },
+            "x": 241,
+            "y": 267,
+            "originX": 0.35501355013550134,
+            "originY": 0.28205128205128205
+        },
+        {
+            "type": "Image",
+            "id": "3f068263-f4f5-4b66-88b0-078006583a4c",
+            "label": "chair_back",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "chair_back"
+            },
+            "x": 175,
+            "y": 590,
+            "originX": 0.5052631578947369,
+            "originY": 0.46808510638297873
+        },
+        {
+            "type": "Image",
+            "id": "587577af-f9ef-471a-849a-09a07bc115b1",
+            "label": "chair_front",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "chair_front"
+            },
+            "x": 180,
+            "y": 652,
+            "originX": 0.5022026431718062,
+            "originY": 0.5178571428571429
+        },
+        {
+            "type": "Image",
+            "id": "c9532f84-c85e-4dc4-bae4-aaaf8557e69e",
+            "label": "chair_table",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "chair_table"
+            },
+            "x": 132,
+            "y": 722,
+            "originX": 0.5069124423963134,
+            "originY": 0.5103734439834025
+        },
+        {
+            "type": "Image",
+            "id": "3121adc6-b8d0-49cc-80b9-fb0f907a2521",
+            "label": "table",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "table",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "ShowHint.text": "Play Mancala",
+            "texture": {
+                "key": "book",
+                "frame": "table"
+            },
+            "x": 951,
+            "y": 446,
+            "originX": 0.5043478260869565,
+            "originY": 0.46
+        },
+        {
+            "type": "Image",
+            "id": "7c76f0f6-08ce-42ce-95ce-ee2bf30214e8",
+            "label": "table_1",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "table",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "ShowHint.text": "Play Mancala",
+            "texture": {
+                "key": "book",
+                "frame": "table"
+            },
+            "x": 652,
+            "y": 444,
+            "originX": 0.5043478260869565,
+            "originY": 0.46
+        },
+        {
+            "type": "Image",
+            "id": "69f50215-4fae-4002-ab73-5ae417038520",
+            "label": "table_2",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "table",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "ShowHint.text": "Play Mancala",
+            "texture": {
+                "key": "book",
+                "frame": "table"
+            },
+            "x": 426,
+            "y": 646,
+            "originX": 0.5043478260869565,
+            "originY": 0.46
+        },
+        {
+            "type": "Image",
+            "id": "2f6c3924-ae43-4b24-b896-637751ef5008",
+            "label": "table_4",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "table",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "ShowHint.text": "Play Mancala",
+            "texture": {
+                "key": "book",
+                "frame": "table"
+            },
+            "x": 1208,
+            "y": 748,
+            "originX": 0.5043478260869565,
+            "originY": 0.46
+        },
+        {
+            "type": "Image",
+            "id": "5d81afbf-7ec6-48cc-8358-e21aa041c684",
+            "label": "red_balloons",
+            "components": [],
+            "texture": {
+                "key": "pg-book",
+                "frame": "red_balloons"
+            },
+            "x": 877,
+            "y": 236,
+            "angle": 15
+        },
+        {
+            "type": "Image",
+            "id": "ffaad2b7-7755-4f0c-ae95-7e8b4fc9c96b",
+            "label": "red_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-book",
+                "frame": "red_sign"
+            },
+            "x": 603,
+            "y": 88
+        },
+        {
+            "type": "Image",
+            "id": "9f1d49ec-d40b-438f-a6d1-05cd6f375f0c",
+            "label": "blue_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-book",
+                "frame": "blue_sign"
+            },
+            "x": 1443,
+            "y": 245
+        },
+        {
+            "type": "Image",
+            "id": "4faec9a9-b431-497d-97ae-4a9eac03ba8a",
+            "label": "flag_entry",
+            "components": [],
+            "texture": {
+                "key": "pg-book",
+                "frame": "flag_entry"
+            },
+            "x": 1220,
+            "y": 237
+        },
+        {
+            "type": "Image",
+            "id": "7fed27e5-0551-431e-9d62-288badd4868c",
+            "label": "flags",
+            "components": [],
+            "texture": {
+                "key": "pg-book",
+                "frame": "flags"
+            },
+            "x": 289,
+            "y": 481
+        },
+        {
+            "type": "Image",
+            "id": "db5a4476-89f4-4fb1-965c-ad2e3f1ddb46",
+            "label": "line_flag",
+            "components": [],
+            "texture": {
+                "key": "pg-book",
+                "frame": "line_flag"
+            },
+            "x": 282,
+            "y": 471
+        },
+        {
+            "type": "Image",
+            "id": "d42457a9-c6cd-4c09-a46c-f324c88f5bd1",
+            "label": "blue_balloons",
+            "components": [],
+            "texture": {
+                "key": "pg-book",
+                "frame": "blue_balloons"
+            },
+            "x": 1443,
+            "y": 466
+        },
+        {
+            "type": "Image",
+            "id": "f71b4971-51e5-4553-bd6a-442efb4c3737",
+            "label": "banners",
+            "components": [],
+            "texture": {
+                "key": "pg-book",
+                "frame": "banners"
+            },
+            "x": 311,
+            "y": 36
+        },
+        {
+            "type": "Image",
+            "id": "119103ff-6d00-4fc4-9e9f-6d34d5352411",
+            "label": "streamers",
+            "components": [],
+            "texture": {
+                "key": "pg-book",
+                "frame": "streamers"
+            },
+            "x": 732,
+            "y": 24
+        },
+        {
+            "type": "Image",
+            "id": "eda65a45-b00a-47cb-a0d0-4d7ddfb494ff",
+            "label": "base_pin",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.prompt.showItem(589)",
+            "texture": {
+                "key": "589"
+            },
+            "x": 181,
+            "y": 388,
+            "scaleX": 0.4537394869170155,
+            "scaleY": 0.4537394869170155
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "8bce6f73-b3e7-48cf-9a02-7e5412e5397d",
+            "label": "sort",
+            "objectIds": [
+                "2f6c3924-ae43-4b24-b896-637751ef5008",
+                "69f50215-4fae-4002-ab73-5ae417038520",
+                "7c76f0f6-08ce-42ce-95ce-ee2bf30214e8",
+                "3121adc6-b8d0-49cc-80b9-fb0f907a2521",
+                "c9532f84-c85e-4dc4-bae4-aaaf8557e69e",
+                "587577af-f9ef-471a-849a-09a07bc115b1",
+                "3f068263-f4f5-4b66-88b0-078006583a4c"
+            ]
+        }
+    ]
+}

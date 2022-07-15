@@ -1,0 +1,233 @@
+{
+    "id": "9fe47c51-d0aa-496c-be0a-49fc409c5988",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/rink/rink-pack.json",
+            "client/assets/media/rooms/old/sport/sport-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Rink",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "1cbd9670-8af9-419a-a0a4-06e6d95c1257",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "pg-stadium",
+                "frame": "bg"
+            },
+            "x": -33,
+            "y": -7,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "139351a3-ad27-4f1c-b1cc-cb39e13fb57d",
+            "label": "rink_border",
+            "components": [],
+            "texture": {
+                "key": "rink",
+                "frame": "rink_border"
+            },
+            "x": 465,
+            "y": 291,
+            "originX": 0.30707692,
+            "originY": 0.42490372
+        },
+        {
+            "type": "Image",
+            "id": "5efbc284-3a48-4070-afaa-7e75fdd7fa7a",
+            "label": "sports_door0001",
+            "components": [],
+            "texture": {
+                "key": "rink",
+                "frame": "sports_door0001"
+            },
+            "x": 1327,
+            "y": 280,
+            "originX": 0.5125,
+            "originY": 0.62962963
+        },
+        {
+            "type": "Image",
+            "id": "dd5aac14-4403-46f8-89e5-bf4c0af9d7e1",
+            "label": "ball",
+            "components": [],
+            "texture": {
+                "key": "rink",
+                "frame": "ball"
+            },
+            "x": 781,
+            "y": 487,
+            "originY": 0.7037037,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "4696c680-3ebf-4d19-b173-930fa9100e32",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "pg-stadium",
+                "frame": "fg"
+            },
+            "x": -60,
+            "y": 985,
+            "originX": 0,
+            "originY": 0.9998385876423137
+        },
+        {
+            "type": "Image",
+            "id": "e98107c1-00e5-4038-af33-9c09f0215d15",
+            "label": "goal_back",
+            "components": [],
+            "texture": {
+                "key": "rink",
+                "frame": "goal_back"
+            },
+            "x": 1284,
+            "y": 422,
+            "originX": 0.97183099,
+            "originY": 0.48863636
+        },
+        {
+            "type": "Image",
+            "id": "d2fc417b-d621-42bf-b36f-9ceb490309a9",
+            "label": "goal",
+            "components": [],
+            "texture": {
+                "key": "rink",
+                "frame": "goal"
+            },
+            "x": 1300,
+            "y": 554,
+            "originX": 0.58571429,
+            "originY": 0.91902834
+        },
+        {
+            "type": "Image",
+            "id": "e0207549-cdcf-46ef-bc96-f47224bdbf9e",
+            "label": "goal_back_1",
+            "components": [],
+            "texture": {
+                "key": "rink",
+                "frame": "goal_back"
+            },
+            "x": 264,
+            "y": 422,
+            "originX": 0.97183099,
+            "originY": 0.48863636,
+            "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "22bb19b8-4dba-44de-b801-0c1a933e24e7",
+            "label": "goal_1",
+            "components": [],
+            "texture": {
+                "key": "rink",
+                "frame": "goal"
+            },
+            "x": 250,
+            "y": 554,
+            "originX": 0.58571429,
+            "originY": 0.91902834,
+            "flipX": true
+        },
+        {
+            "type": "Sprite",
+            "id": "975ef425-bf9b-4e5c-9eb5-09f523cf03b9",
+            "label": "pg_blimp",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pg-stadium",
+                "frame": "blimp0001"
+            },
+            "x": 752,
+            "y": 76
+        },
+        {
+            "type": "Image",
+            "id": "4c930038-a7e4-410d-894e-5272dd6df1cc",
+            "label": "book_sports",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "book-sports",
+            "Button.callback": "() => this.interface.loadExternal('SportsCatalog')",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "sport",
+                "frame": "book-sports"
+            },
+            "x": 1414,
+            "y": 1111.244075129439,
+            "originY": 2.552033959411991
+        },
+        {
+            "type": "Image",
+            "id": "ec57b7d9-6d1e-4940-bea3-1cd49a9b5509",
+            "label": "spin",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "561"
+            },
+            "x": 781,
+            "y": 475,
+            "scaleX": 0.6464836304732878,
+            "scaleY": 0.6464836304732878
+        },
+        {
+            "type": "Ellipse",
+            "id": "f87b0316-ccc2-4e61-9b56-c9c6f66e7d20",
+            "label": "soccer_pin",
+            "scope": "CLASS",
+            "components": [],
+            "x": 782,
+            "y": 473,
+            "scaleX": 0.5556653150031384,
+            "scaleY": 0.4700144737280961,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "width": 128,
+            "height": 128
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "9e830a7e-9e8a-466e-aec7-18c94d7d6d64",
+            "label": "sort",
+            "objectIds": [
+                "4696c680-3ebf-4d19-b173-930fa9100e32",
+                "dd5aac14-4403-46f8-89e5-bf4c0af9d7e1",
+                "e98107c1-00e5-4038-af33-9c09f0215d15",
+                "d2fc417b-d621-42bf-b36f-9ceb490309a9",
+                "e0207549-cdcf-46ef-bc96-f47224bdbf9e",
+                "22bb19b8-4dba-44de-b801-0c1a933e24e7",
+                "5efbc284-3a48-4070-afaa-7e75fdd7fa7a",
+                "139351a3-ad27-4f1c-b1cc-cb39e13fb57d",
+                "4c930038-a7e4-410d-894e-5272dd6df1cc"
+            ]
+        }
+    ]
+}

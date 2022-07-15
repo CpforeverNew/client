@@ -1,0 +1,1124 @@
+{
+    "id": "b597012f-8f30-4a42-adee-243d7fc03649",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/new/petShop/petShop-pack-new.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Pet",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "c21f1414-1e8d-4e20-ae67-79237f09dd77",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "bg"
+            },
+            "x": 938,
+            "y": 325
+        },
+        {
+            "type": "Sprite",
+            "id": "02954104-d020-44df-93d6-b3fa6bccdec5",
+            "label": "pufflescapebg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "pufflescapebg"
+            },
+            "x": 1001,
+            "y": 200
+        },
+        {
+            "type": "Sprite",
+            "id": "c631d15e-bcea-4290-bd3c-0f1b938cda15",
+            "label": "pufflescape",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "pufflescape0001"
+            },
+            "x": 1013,
+            "y": 234
+        },
+        {
+            "type": "Sprite",
+            "id": "567d8796-7703-42fb-9694-9797867905d3",
+            "label": "pufflescapefg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "pufflescapefg"
+            },
+            "x": 1020,
+            "y": 136
+        },
+        {
+            "type": "Sprite",
+            "id": "77537ea0-2aa4-436c-96fc-cd177d2be847",
+            "label": "cannon_layer1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "cannon_layer1"
+            },
+            "x": 1215,
+            "y": 236
+        },
+        {
+            "type": "Sprite",
+            "id": "017462b6-ed33-4dd5-bcf2-401bfee6b040",
+            "label": "cannon_layer2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "cannon_layer20001"
+            },
+            "x": 1208,
+            "y": 182
+        },
+        {
+            "type": "Sprite",
+            "id": "db6d330c-66e3-4a9f-a352-66852b6e7438",
+            "label": "cannonlayer3",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "cannonlayer3"
+            },
+            "x": 1231,
+            "y": 302,
+            "scaleX": 1.02
+        },
+        {
+            "type": "Sprite",
+            "id": "d78c5d8e-7536-49fe-af6b-7e3b716f9a35",
+            "label": "cannonlayer4",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "cannonlayer40001"
+            },
+            "x": 1259,
+            "y": 249
+        },
+        {
+            "type": "Sprite",
+            "id": "62531a22-25dd-4dab-b357-f6db22c02def",
+            "label": "cannon_layer5",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "cannon_layer5"
+            },
+            "x": 1230,
+            "y": 211
+        },
+        {
+            "type": "Sprite",
+            "id": "02c2fb38-caf1-4793-be02-d7c670127cea",
+            "label": "plazadoor",
+            "scope": "CLASS",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "plazadoor",
+            "Button.hoverCallback": "() => this.sound.add(\"petShop-DoorPetOpen\").play()",
+            "Button.hoverOutCallback": "() => this.sound.add(\"petShop-DoorPetClose\").play()",
+            "Button.activeFrame": false,
+            "MoveTo.x": 775,
+            "MoveTo.y": 300,
+            "texture": {
+                "key": "pet-new",
+                "frame": "plazadoor"
+            },
+            "x": 776,
+            "y": 211
+        },
+        {
+            "type": "Sprite",
+            "id": "8ce30afc-18b4-443a-ac90-5f20d8675723",
+            "label": "main",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "main"
+            },
+            "x": 784,
+            "y": 497
+        },
+        {
+            "type": "Sprite",
+            "id": "8ba9ded1-53c4-48e0-ab04-a854bd28a0bb",
+            "label": "parkdoor",
+            "scope": "CLASS",
+            "components": [
+                "Button",
+                "ShowHint",
+                "MoveTo"
+            ],
+            "Button.spriteName": "parkdoor",
+            "Button.hoverCallback": "() => this.sound.add(\"petShop-DoorRightOpen\").play()",
+            "Button.hoverOutCallback": "() => this.sound.add(\"petShop-DoorRightClose\").play()",
+            "Button.activeFrame": false,
+            "ShowHint.text": "Puffle Roundup\n",
+            "MoveTo.x": 1440,
+            "MoveTo.y": 496,
+            "texture": {
+                "key": "pet-new",
+                "frame": "parkdoor"
+            },
+            "x": 1479,
+            "y": 362
+        },
+        {
+            "type": "Sprite",
+            "id": "41ba3b11-dd96-4f39-935c-2079d19d5f32",
+            "label": "mainbuthigher",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "mainbuthigher"
+            },
+            "x": 790,
+            "y": 496
+        },
+        {
+            "type": "Sprite",
+            "id": "f754081c-be3d-4764-9454-4d6828ec7822",
+            "label": "oberry_fall",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "oberry_fall0001"
+            },
+            "x": 583,
+            "y": 181
+        },
+        {
+            "type": "Sprite",
+            "id": "8f696e0b-fd85-4628-be44-693f0501dc18",
+            "label": "sometubes",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "sometubes"
+            },
+            "x": 855,
+            "y": 217
+        },
+        {
+            "type": "Sprite",
+            "id": "ca4a4e01-e702-4bdb-881b-f6c800072610",
+            "label": "oberry_machine",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "oberry_machine"
+            },
+            "x": 567,
+            "y": 394
+        },
+        {
+            "type": "Sprite",
+            "id": "c06713f5-23d1-488b-a256-2de70dc40e9d",
+            "label": "oberry_pad",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "oberry_pad"
+            },
+            "x": 610,
+            "y": 442
+        },
+        {
+            "type": "Sprite",
+            "id": "539cb6d1-9bdc-4cff-af6f-6b79333c1a43",
+            "label": "oberry_shoot",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "oberry_shoot"
+            },
+            "x": 507,
+            "y": 312
+        },
+        {
+            "type": "Sprite",
+            "id": "48b939e7-8b6f-47db-9e7c-4e3828f34430",
+            "label": "pufflearea",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "pufflearea"
+            },
+            "x": 318,
+            "y": 360
+        },
+        {
+            "type": "Sprite",
+            "id": "6aa4b0c3-4b25-4731-b8ae-4b29d1f6044b",
+            "label": "purple_body",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "purple_body"
+            },
+            "x": 291,
+            "y": 293
+        },
+        {
+            "type": "Sprite",
+            "id": "9dd83ec3-3d32-4f8f-8037-12ea64c878ef",
+            "label": "purple_eyes",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "purple_eyes0001"
+            },
+            "x": 292,
+            "y": 294
+        },
+        {
+            "type": "Sprite",
+            "id": "b1a19b42-1a13-4fb0-a9d4-407414839541",
+            "label": "purple_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "purple_jump0001"
+            },
+            "x": 291,
+            "y": 268,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "1ecd30fb-b4cd-42a7-8149-71a9f1d1efe0",
+            "label": "white_lookaround",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "white_lookaround0001"
+            },
+            "x": 387,
+            "y": 296
+        },
+        {
+            "type": "Sprite",
+            "id": "bffce166-2c26-4902-8e3a-21c623c5c752",
+            "label": "green_body",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "green_body"
+            },
+            "x": 239,
+            "y": 361
+        },
+        {
+            "type": "Sprite",
+            "id": "c3650b10-f341-4efb-9e1a-f14776150766",
+            "label": "green_eyes",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "green_eyes0001"
+            },
+            "x": 241,
+            "y": 362
+        },
+        {
+            "type": "Sprite",
+            "id": "14fc135c-3f1c-4a0a-be6a-5d6c1e5b22b5",
+            "label": "green_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "green_jump0001"
+            },
+            "x": 240,
+            "y": 336,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "f8169957-0e74-463d-8829-c8fba8225186",
+            "label": "brown_body",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "brown_body"
+            },
+            "x": 295,
+            "y": 354
+        },
+        {
+            "type": "Sprite",
+            "id": "0ac3e306-49c8-46e2-99d4-8c6928a0be95",
+            "label": "brown_eyes",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "brown_eyes0001"
+            },
+            "x": 301,
+            "y": 356
+        },
+        {
+            "type": "Sprite",
+            "id": "b256707f-705a-41fd-b248-3830b3c2317f",
+            "label": "brown_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "brown_jump0001"
+            },
+            "x": 300,
+            "y": 329,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "290d3a10-bf2b-4140-814f-3f97883d7965",
+            "label": "yellow_body",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "yellow_body"
+            },
+            "x": 357,
+            "y": 355
+        },
+        {
+            "type": "Sprite",
+            "id": "a78be032-f042-4445-b6c5-207b033b6fff",
+            "label": "yellow_eyes",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "yellow_eyes0001"
+            },
+            "x": 364,
+            "y": 357
+        },
+        {
+            "type": "Sprite",
+            "id": "25b0cfc9-2889-42cc-adab-6d8dcf36dfbf",
+            "label": "yellow_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "yellow_jump0001"
+            },
+            "x": 363,
+            "y": 330,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "ba3f9c1f-a279-4f42-bbec-5ea8dfb73782",
+            "label": "border_idle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "border_idle0001"
+            },
+            "x": 280,
+            "y": 402
+        },
+        {
+            "type": "Sprite",
+            "id": "5a27c43a-a6e8-4ba7-ad4d-5594aef0b9c3",
+            "label": "border_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "border_jump0001"
+            },
+            "x": 280,
+            "y": 371,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "26a62f7c-b398-4f79-9f0e-4f2df1ec768e",
+            "label": "tabby_idle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "tabby_idle0001"
+            },
+            "x": 337,
+            "y": 404
+        },
+        {
+            "type": "Sprite",
+            "id": "6c490c7e-70a4-4208-9218-ddc5dcbb5e27",
+            "label": "tabby_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "tabby_jump0001"
+            },
+            "x": 338,
+            "y": 371,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "23e082ab-4ffa-4fb0-a007-7bd073d271e3",
+            "label": "red_body",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "red_body"
+            },
+            "x": 389,
+            "y": 390
+        },
+        {
+            "type": "Sprite",
+            "id": "706dc791-aea6-4c9b-9483-df9738a166ef",
+            "label": "red_eyes",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "red_eyes0001"
+            },
+            "x": 390,
+            "y": 391
+        },
+        {
+            "type": "Sprite",
+            "id": "13c163fb-d4c1-4ed2-aabf-246316940184",
+            "label": "red_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "red_jump0001"
+            },
+            "x": 389,
+            "y": 365,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "b43a90db-7bd5-47ee-a8c9-270045d8974a",
+            "label": "blue_body",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "blue_body"
+            },
+            "x": 237,
+            "y": 431
+        },
+        {
+            "type": "Sprite",
+            "id": "c619081c-9c4a-4e9e-aadd-abceb04bc419",
+            "label": "blue_eyes",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "blue_eyes0001"
+            },
+            "x": 245,
+            "y": 433
+        },
+        {
+            "type": "Sprite",
+            "id": "b931d6ea-76f3-4402-8a6c-8e715bd5d5f8",
+            "label": "blue_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "blue_jump0001"
+            },
+            "x": 243,
+            "y": 406,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "cf596e1a-45fa-4027-8d5e-5f1988ae6c08",
+            "label": "pufflearea_front",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "pufflearea_front"
+            },
+            "x": 413,
+            "y": 270
+        },
+        {
+            "type": "Sprite",
+            "id": "a7ba9c9a-2b34-4b6b-b157-25ac7d2df6da",
+            "label": "light",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "light"
+            },
+            "x": 106,
+            "y": 334
+        },
+        {
+            "type": "Sprite",
+            "id": "3d1d9f3a-a567-44b9-81d2-35af41bb14e9",
+            "label": "main_fg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "main_fg"
+            },
+            "x": 781,
+            "y": 411
+        },
+        {
+            "type": "Sprite",
+            "id": "db86e8df-6cff-4273-a6df-97d492998bc0",
+            "label": "pufflearea_floor",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "pufflearea_floor"
+            },
+            "x": 332,
+            "y": 470
+        },
+        {
+            "type": "Sprite",
+            "id": "8bc705ef-0b1f-45f5-9614-1384d7fdb3dd",
+            "label": "orange_idle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "orange_idle0001"
+            },
+            "x": 400,
+            "y": 182
+        },
+        {
+            "type": "Sprite",
+            "id": "298f4a48-f6fc-474d-ad1c-fb825e16aa9b",
+            "label": "orange_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "orange_jump0001"
+            },
+            "x": 400,
+            "y": 157,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "e3a59b7f-7a9f-4ff6-b85e-60e327a83857",
+            "label": "pink_body",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "pink_body"
+            },
+            "x": 278,
+            "y": 204
+        },
+        {
+            "type": "Sprite",
+            "id": "8fffe568-e2d9-41ba-b370-f66dac0065fb",
+            "label": "pink_eyes",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "pink_eyes0001"
+            },
+            "x": 284,
+            "y": 206
+        },
+        {
+            "type": "Sprite",
+            "id": "34f28167-397b-4dc4-b728-b557000a22e4",
+            "label": "pink_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "pink_jump0001"
+            },
+            "x": 279,
+            "y": 179,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "6a592269-023c-43f0-9a73-0093afa718dd",
+            "label": "black_idle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "black_idle"
+            },
+            "x": 456,
+            "y": 170
+        },
+        {
+            "type": "Sprite",
+            "id": "f09210d0-3c84-4d13-bb44-fd12640a1f64",
+            "label": "apollo_idle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "apollo_idle0001"
+            },
+            "x": 343,
+            "y": 196
+        },
+        {
+            "type": "Sprite",
+            "id": "cb5334f3-f94d-43c0-8a18-2048123d6abf",
+            "label": "rug",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "rug"
+            },
+            "x": 775,
+            "y": 702
+        },
+        {
+            "type": "Sprite",
+            "id": "1772c759-4c53-499e-903b-f77c66193b07",
+            "label": "rug_puffle_blue",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "rug_puffle_blue"
+            },
+            "x": 790,
+            "y": 692
+        },
+        {
+            "type": "Sprite",
+            "id": "67629a2b-3bed-4ff5-88f4-285102e84a55",
+            "label": "cart_back",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "cart_back"
+            },
+            "x": 1235,
+            "y": 462
+        },
+        {
+            "type": "Sprite",
+            "id": "6b4a5ab8-a3a2-49c0-8e4d-691ebbefba07",
+            "label": "cart_front",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "cart_front"
+            },
+            "x": 1224,
+            "y": 532
+        },
+        {
+            "type": "Sprite",
+            "id": "1c2ca154-50dc-424e-aecb-433885617287",
+            "label": "railing_left",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "railing_left"
+            },
+            "x": 1336,
+            "y": 499
+        },
+        {
+            "type": "Sprite",
+            "id": "4fe68f68-9427-4d2c-872c-63c0f5d7f993",
+            "label": "railing_right",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "railing_right"
+            },
+            "x": 1446,
+            "y": 582
+        },
+        {
+            "type": "Sprite",
+            "id": "5751cec7-a006-400d-83ae-4a288ee5e909",
+            "label": "surfboard",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "surfboard"
+            },
+            "x": 1470,
+            "y": 610
+        },
+        {
+            "type": "Sprite",
+            "id": "a9eef244-f8e0-435f-bf6f-581c219b4306",
+            "label": "highbedback",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "highbedback"
+            },
+            "x": 1346,
+            "y": 699
+        },
+        {
+            "type": "Sprite",
+            "id": "8a7241de-f6a8-466e-aeaa-a21c59f1244f",
+            "label": "highbedfront",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "highbedfront"
+            },
+            "x": 1342,
+            "y": 854
+        },
+        {
+            "type": "Sprite",
+            "id": "861dee6c-02e7-4e89-b938-22d3984a6d7e",
+            "label": "carealtar",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "carealtar",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "pet-new",
+                "frame": "carealtar"
+            },
+            "x": 272,
+            "y": 529
+        },
+        {
+            "type": "Sprite",
+            "id": "619f6c7f-6361-49c2-9d36-b5cb1008d5fa",
+            "label": "dualfood",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "dualfood"
+            },
+            "x": 1040,
+            "y": 883
+        },
+        {
+            "type": "Sprite",
+            "id": "e317a480-41ea-4b68-9cf9-78be9668833a",
+            "label": "skateboard",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "skateboard"
+            },
+            "x": 979,
+            "y": 798
+        },
+        {
+            "type": "Sprite",
+            "id": "a4460590-b65a-4d6f-9e7f-f72682391b7b",
+            "label": "ball",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "ball"
+            },
+            "x": 490,
+            "y": 431
+        },
+        {
+            "type": "Sprite",
+            "id": "5acce23e-0398-4ae7-bce7-13cbba0d5dab",
+            "label": "stackedbowls",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "stackedbowls"
+            },
+            "x": 918,
+            "y": 417
+        },
+        {
+            "type": "Sprite",
+            "id": "5242fbab-03a9-4c77-9e0c-fd364365acd9",
+            "label": "yellowbowl",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "yellowbowl"
+            },
+            "x": 953,
+            "y": 453
+        },
+        {
+            "type": "Sprite",
+            "id": "ef28ee77-946e-44f7-89ef-d157110851f8",
+            "label": "hotel_door",
+            "scope": "CLASS",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "hotel_door",
+            "Button.hoverCallback": "() => this.sound.add(\"petShop-DoorMiddleOpen\").play()",
+            "Button.hoverOutCallback": "() => this.sound.add(\"petShop-DoorMiddleClose\").play()",
+            "Button.activeFrame": false,
+            "MoveTo.x": 120,
+            "MoveTo.y": 704,
+            "texture": {
+                "key": "pet-new",
+                "frame": "hotel_door"
+            },
+            "x": 79,
+            "y": 554
+        },
+        {
+            "type": "Sprite",
+            "id": "44faa033-4c10-45de-9f7e-b590b389a3e6",
+            "label": "hotel_arch",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "hotel_arch"
+            },
+            "x": 34,
+            "y": 571
+        },
+        {
+            "type": "Sprite",
+            "id": "f5993127-fa6d-4d01-986a-917657aea141",
+            "label": "stuff",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "stuff"
+            },
+            "x": 296,
+            "y": 601
+        },
+        {
+            "type": "Sprite",
+            "id": "6d25b20f-8e96-4e0f-a3af-b00736c5b790",
+            "label": "skate",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "skate"
+            },
+            "x": 240,
+            "y": 673
+        },
+        {
+            "type": "Sprite",
+            "id": "e7f57db4-8fbc-4963-a58f-7b7603759936",
+            "label": "bed",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "bed"
+            },
+            "x": 326,
+            "y": 871
+        },
+        {
+            "type": "Sprite",
+            "id": "ea189764-37a9-4d4f-a9aa-4c06c739ecb4",
+            "label": "clawything",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "clawything"
+            },
+            "x": 557,
+            "y": 870
+        },
+        {
+            "type": "Sprite",
+            "id": "3e691c2c-ecb1-481d-a26b-2ecd78af6a28",
+            "label": "clawyfront",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "clawyfront"
+            },
+            "x": 580,
+            "y": 822
+        },
+        {
+            "type": "Sprite",
+            "id": "9d4249a9-4b8e-41cf-b246-8b4d1b2af076",
+            "label": "fg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "fg"
+            },
+            "x": 698,
+            "y": 868
+        },
+        {
+            "type": "Rectangle",
+            "id": "0ab12224-fc7e-4182-ad14-11f62f70bd7b",
+            "label": "cannon_btn",
+            "components": [
+                "SimpleButton",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onCannonOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onCannonOut()",
+            "MoveTo.x": 1150,
+            "MoveTo.y": 420,
+            "ShowHint.text": "Puffle Launch",
+            "x": 1251,
+            "y": 320,
+            "fillColor": "#00eee9",
+            "fillAlpha": 0.5,
+            "width": 150,
+            "height": 230
+        },
+        {
+            "type": "Rectangle",
+            "id": "b8cb2e8d-2fae-47b5-833d-e975dbec10d2",
+            "label": "puffle_btn",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onPufflesOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onPufflesOut()",
+            "MoveTo.x": 350,
+            "MoveTo.y": 450,
+            "x": 321,
+            "y": 347,
+            "angle": -5,
+            "fillColor": "#00eee9",
+            "fillAlpha": 0.5,
+            "width": 250,
+            "height": 250
+        },
+        {
+            "type": "Rectangle",
+            "id": "6c67e9b2-724f-4247-bb69-e49d517fca07",
+            "label": "pufflescape_btn",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onPufflescapeOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onPufflescapeOut()",
+            "MoveTo.x": 1000,
+            "MoveTo.y": 300,
+            "x": 1009,
+            "y": 194,
+            "fillColor": "#00eee9",
+            "fillAlpha": 0.5,
+            "width": 150,
+            "height": 180
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort"
+        }
+    ]
+}
