@@ -198,6 +198,9 @@ export default class PlayerCard extends BaseContainer {
      * @param {object} items - Penguin items object
      */
     _showCard(penguin, items = penguin) {
+        // if (penguin.isClient) {
+        //     this.network.send("update_coins", {id:penguin.id})
+        // }
         // Text
         if (penguin.username_approved == 1) {
             this.username.text = penguin.username

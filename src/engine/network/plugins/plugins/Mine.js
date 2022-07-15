@@ -8,6 +8,7 @@ export default class MiniGame extends Plugin {
         this.events = {
             'mining_error': this.miningError,
             'reset_mining': this.resetMiningError,
+            'update_coins': this.updateCoins,
         }
     }
 
@@ -15,8 +16,13 @@ export default class MiniGame extends Plugin {
         return this.world.client
     }
 
+    updateCoins(args) {
+        this.client.coins = args.coins
+    }
+
     miningError(args) {
         this.client.miningError = args.miningError
+        if (args.miningError == 0) this.network.send("update_coins", {id:args.id})
     }
 
     resetMiningError(args) {

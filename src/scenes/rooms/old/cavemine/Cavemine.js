@@ -156,9 +156,10 @@ export default class Cavemine extends RoomScene {
     }
 
     errorHandling(penguin) {
-        if (this.miningError == 1 && (this.x != penguin.x || this.y != penguin.y)) return true
+        if (this.randomId === undefined) return false 
+        else if (this.miningError == 2) return true
+        else if (this.miningError == 1 && (this.x != penguin.x || this.y != penguin.y)) return true
         else if (this.x != penguin.x || this.y != penguin.y) return true
-        else if (this.miningError == 2) this.network.send("delete_mine", {miningId:this.randomId})
         return false
     }
 
@@ -182,12 +183,12 @@ export default class Cavemine extends RoomScene {
                     }
                 }
             }
+        } else if (this.errorHandling(penguin)) {
+            this.resetMining(penguin)
         } else if (this.x == 0 && this.y == 0) {
             this.randomId = (Math.random() + 1).toString(36).substring(7);
             this.x = penguin.x;
             this.y = penguin.y; 
-        } else if (this.errorHandling(penguin)) {
-            this.resetMining(penguin)
         } else {
             clearInterval(this.coinsInterval);
         }
