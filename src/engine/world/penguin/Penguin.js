@@ -118,7 +118,7 @@ export default class Penguin extends BaseContainer {
         let frame = ([25, 26].includes(_frame))
             ? this.getSecretFrame(_frame)
             : _frame
-
+        // console.log(key)
         for (let sprite of sprites) {
             if (sprite.animating) return
 
@@ -143,6 +143,9 @@ export default class Penguin extends BaseContainer {
     createAnim(key, frame) {
         let animation = this.crumbs.penguin[frame]
         let frames = this.generateFrames(key, frame, animation)
+        if (frame == 36) {
+            frames = frames.slice(-18);
+        }
 
         this.world.anims.create({
             key: `${key}_${frame}`,
