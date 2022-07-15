@@ -5,7 +5,7 @@ if (localStorage.clientMode == "legacy") {
     rooms = {
         100: {
             key: 'Town',
-            scene: require('@rooms/old/town/Town').default,
+            scene: require('@rooms/old/town/ffc/Town').default,
             x: 760,
             y: 660
         },
@@ -107,7 +107,7 @@ if (localStorage.clientMode == "legacy") {
         },
         400: {
             key: 'Beach',
-            scene: require('@rooms/old/beach/Beach').default,
+            scene: require('@rooms/old/beach/ffc/Beach').default,
             x: 840,
             y: 680
         },
@@ -336,7 +336,7 @@ if (localStorage.clientMode == "vanilla") {
         },
         300: {
             key: 'Plaza',
-            scene: require('@rooms/new/plaza/Plaza').default,
+            scene: require('@rooms/new/plaza/ffc/Plaza').default,
             x: 760,
             y: 680
         },
