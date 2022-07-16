@@ -18,7 +18,7 @@ export default class Cavemine extends RoomScene {
 
 
         /* START-USER-CTR-CODE */
-        this.timer = 2500
+        this.timer = 3500
         this.roomTriggers = {
          'minehat': () => this.interface.prompt.showItem(429),
          'lake': () => this.unimplementedPrompt(),
@@ -169,7 +169,7 @@ export default class Cavemine extends RoomScene {
             const allEqual = arr => arr.every( v => v === arr[0] )
             if ([429].includes(penguin.head) && allEqual([penguin.body, penguin.feet, penguin.hand, penguin.neck, penguin.face]))  {
                 let coinValues = [5, 5, 5, 10, 10, 10, 25, 25, 50, 100];
-                if (this.probability(.2)) {
+                if (this.probability(.3)) {
                     let coinsToGive = coinValues[Math.floor(Math.random() * coinValues.length)]
                     this.addMiningCoins(penguin, coinsToGive);
                     if (this.errorHandling(penguin)) {

@@ -202,6 +202,9 @@ export default class PlayerCard extends BaseContainer {
         //     this.network.send("update_coins", {id:penguin.id})
         // }
         // Text
+        if (this.paperDoll.puffle) {
+            this.paperDoll.puffle.destroy()
+        }
         if (penguin.username_approved == 1) {
             this.username.text = penguin.username
         } else {
@@ -212,12 +215,16 @@ export default class PlayerCard extends BaseContainer {
             if (this.world.mascots[x].id == penguin.id) this.username.text = this.world.mascots[x].name
         }
 
-        if (penguin.puffle && !items.puffle){
+        if (penguin.puffle && penguin.puffle !== 0 && !items.puffle){
             items.puffle = penguin.puffle
+        } else {
+            items.puffle = 0;
         }
         if (penguin.id && !items.id){
             items.id = penguin.id
         }
+        console.log(items)
+
 
         // Paper doll
         this.paperDoll.loadDoll(items, penguin.isClient)

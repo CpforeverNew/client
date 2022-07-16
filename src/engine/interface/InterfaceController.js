@@ -206,7 +206,7 @@ export default class InterfaceController extends BaseScene {
             this.main.puffle_button_disabled.visible = true
             this.main.puffle_button.visible = false
         }
-        else{
+        else {
             this.main.puffle_icon.setFrame(`puffle-icon-${color}`)
             this.main.puffle_button_disabled.visible = false
             this.main.puffle_button.visible = true

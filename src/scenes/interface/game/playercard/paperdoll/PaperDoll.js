@@ -38,7 +38,7 @@ export default class PaperDoll extends BaseContainer {
 
         // Slots ordered by depth
         // '' representing paperdoll
-        this.slots = [ 'photo', 'color', '', 'feet', 'body', 'neck', 'hand', 'face', 'head', 'flag' ]
+        this.slots = [ 'photo', 'color', '', 'feet', 'body', 'neck', 'hand', 'face', 'head', 'flag']
         this.items = this.setItems()
 
         this.paperDollLoader = new PaperDollLoader(scene, this)
@@ -73,12 +73,11 @@ export default class PaperDoll extends BaseContainer {
                 sprite = null
             }
         }
-    }
+    } 
 
     loadDoll(penguin, isInputEnabled = false) {
         // Clear items for next penguin
         this.removeItems()
-
         this.isInputEnabled = isInputEnabled
 
         if (isInputEnabled) {

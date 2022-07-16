@@ -14,7 +14,7 @@ export default class PaperDollLoader extends BaseLoader {
         this.keyPrefix = 'puffles_paper/'
     }
 
-    loadPuffle(puffle) {
+    loadPuffle(puffle, del = false) {
         let key = this.getKey(puffle)
 
         let interval = setInterval(() => {
@@ -25,6 +25,7 @@ export default class PaperDollLoader extends BaseLoader {
         },100)
 
         this.image(key, `${puffle}.png`)
+
         this.start()
     }
 

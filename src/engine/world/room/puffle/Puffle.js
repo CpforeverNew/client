@@ -286,7 +286,7 @@ export default class Puffle extends BaseContainer {
         } else {
             this.sprite.visible = false
         }
-
+        console.log(this.frame)
         // Frames that aren't set get set to 1
         this.frame = (set) ? _frame : 1
     }

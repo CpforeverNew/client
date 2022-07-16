@@ -26,7 +26,7 @@ export default class Buddy extends Plugin {
 
         this.world.client.buddies.push(buddy)
         this.interface.updateBuddies()
-        this.interface.main.showOnlinePopup(this.filterUsername(buddy))
+        this.interface.main.showOnlinePopup(buddy.username)
     }
 
     buddyRemove(args) {

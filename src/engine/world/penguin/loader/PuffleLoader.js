@@ -5,48 +5,45 @@ export default class PuffleLoader extends BaseLoader {
 
     constructor(penguin) {
         super(penguin.room)
-		this.penguin = penguin
-		this.baseURL = '/assets/media/puffles/'
-		this.keyPrefix = 'puffle_'
+        this.penguin = penguin
+        this.baseURL = '/assets/media/puffles/'
+        this.keyPrefix = 'puffle_'
     }
 
     loadPuffle(puffle) {
-
         let mainKey = this.getKey(puffle)
-
+        let types = ["_adopt", "_dig", "_dive", "_eat", "_hydrant", "_maxed", "_scratchpost", "_splash","_tireswing","_weightlifting"]
+        let tricks = ["_jumpforward","_jumpspin","_nuzzle","_roll","_sandonhead","_speak"]
+        let allArrays1 = types.concat(tricks);
+        let allArrays = [""].concat(allArrays1);
         let interval = setInterval(() => {
-            if (this.textureExists(mainKey) && this.textureExists(mainKey + "_dig") && this.textureExists(mainKey + "_dive") && this.textureExists(mainKey + "_eat") && this.textureExists(mainKey + "_hydrant") && this.textureExists(mainKey + "_maxed") && this.textureExists(mainKey + "_scratchpost") && this.textureExists(mainKey + "_splash") && this.textureExists(mainKey + "_tireswing") && this.textureExists(mainKey + "_weightlifting") && this.textureExists(mainKey + "_jumpforward") && this.textureExists(mainKey + "_jumpspin") && this.textureExists(mainKey + "_nuzzle") && this.textureExists(mainKey + "_roll") && this.textureExists(mainKey + "_standonhead") && this.textureExists(mainKey + "_speak")) {
+            if (this.checkIfExist(mainKey, allArrays)) {
+                console.log(this.checkIfExist(mainKey, allArrays))
                 this.onFileComplete(mainKey, puffle)
                 clearInterval(interval)
             }
-        },100)
-
-        this.multiatlas(mainKey, `sprites/${puffle}.json`)
-        this.multiatlas(mainKey + '_adopt', `adopt/${puffle}.json`)
-        this.multiatlas(mainKey + '_dig', `dig/${puffle}.json`)
-        this.multiatlas(mainKey + '_dive', `dive/${puffle}.json`)
-        this.multiatlas(mainKey + '_eat', `eat/${puffle}.json`)
-        this.multiatlas(mainKey + '_hydrant', `hydrant/${puffle}.json`)
-        this.multiatlas(mainKey + '_maxed', `maxed/${puffle}.json`)
-        this.multiatlas(mainKey + '_scratchpost', `scratchpost/${puffle}.json`)
-        this.multiatlas(mainKey + '_splash', `splash/${puffle}.json`)
-        this.multiatlas(mainKey + '_tireswing', `tireswing/${puffle}.json`)
-        this.multiatlas(mainKey + '_weightlifting', `weightlifting/${puffle}.json`)
-        this.multiatlas(mainKey + '_jumpforward', `tricks/${puffle}/jumpforward.json`)
-        this.multiatlas(mainKey + '_jumpspin', `tricks/${puffle}/jumpspin.json`)
-        this.multiatlas(mainKey + '_nuzzle', `tricks/${puffle}/nuzzle.json`)
-        this.multiatlas(mainKey + '_roll', `tricks/${puffle}/roll.json`)
-        this.multiatlas(mainKey + '_standonhead', `tricks/${puffle}/sandonhead.json`)
-        this.multiatlas(mainKey + '_speak', `tricks/${puffle}/speak.json`)
+        }, 100)
+        if(!this.textureExists(mainKey)) this.multiatlas(mainKey, `sprites/${puffle}.json`)
+        for (const element of types) {
+            if(!this.textureExists(mainKey + element)) this.multiatlas(mainKey + element, `${element.substring(1)}/${puffle}.json`)
+        }
+        for (const element of tricks) {
+            if(!this.textureExists(mainKey + element)) this.multiatlas(mainKey + element, `tricks/${puffle}/${element.substring(1)}.json`)
+        }
         this.start()
+    }
+
+    checkIfExist(key,arr) {
+        for (const element of arr) {
+            if (!this.textureExists(key + element)) return false
+        }
+        return true;
     }
 
     onFileComplete(key, puffle) {
         if (!this.textureExists(key)) {
             return
         }
-
-        if (this.penguin.room.anims.exists(`puffle_${puffle}_dig`)) return
         
         this.createAnim(`puffle_${puffle}_adopt`, 'Sprite')
         this.createAnim(`puffle_${puffle}_dig`, 'Sprite')
@@ -65,7 +62,7 @@ export default class PuffleLoader extends BaseLoader {
         this.createAnim(`puffle_${puffle}_standonhead`, 'Sprite')
         this.createAnim(`puffle_${puffle}_speak`, 'Sprite')
 
-       this.penguin.penguinLoader.loadPuffle(this.penguin, puffle)
+        this.penguin.penguinLoader.loadPuffle(this.penguin, puffle)
     }
 
     createAnim(key, frame) {
@@ -81,7 +78,9 @@ export default class PuffleLoader extends BaseLoader {
 
     generateFrames(key, frame) {
         let textureFrames = this.world.textures.get(key).getFrameNames(false)
-        textureFrames.sort(function (a, b) { return parseInt(a.substring(6)) - parseInt(b.substring(6)) });
+        textureFrames.sort(function(a, b) {
+            return parseInt(a.substring(6)) - parseInt(b.substring(6))
+        });
         textureFrames = textureFrames.filter(frame => frame[0] !== '.')
         let config = {
             frames: textureFrames

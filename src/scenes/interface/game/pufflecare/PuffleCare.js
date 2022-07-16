@@ -242,8 +242,7 @@ export default class PuffleCare extends BaseContainer {
         this.food_bar.x = foodpos;
 
         this.name_txt.text = args.name
-
-        if (args.puffleId !== this.world.client.penguin.puffle){
+        if (this.world.client.penguin.puffle === 0) {
             this.swap_btn.visible = false
             this.walk_btn.visible = true
         }
@@ -262,12 +261,14 @@ export default class PuffleCare extends BaseContainer {
     }
 
     onCare(){
+        this.world.network.send("send_error", {error: "This feature is not yet implemented!\nCPForever is in development, and is being\nactively updated. Check back soon!'"})
         this.visible = false
     }
 
     onSwap(){
-        this.world.network.send("stop_walking")
         this.visible = false
+        this.world.network.send("stop_walking")
+        this.world.network.send("walk_puffle", {puffle: this.args.puffleId})
     }
     /* END-USER-CODE */
 }
