@@ -62,7 +62,7 @@ export default class Elevator extends BaseContainer {
         this.add(goldBar_2);
 
         // puffleBtn1
-        const puffleBtn1 = scene.add.sprite(260, 295, "elevator", "puffleBtn");
+        const puffleBtn1 = scene.add.sprite(264, 295, "elevator", "puffleBtn");
         this.add(puffleBtn1);
 
         // puffleBtn2
@@ -139,10 +139,14 @@ export default class Elevator extends BaseContainer {
         const grey_x = scene.add.image(1405, 47, "main", "grey-x");
         this.add(grey_x);
 
+        // goldBar (components)
+        const goldBarSimpleButton = new SimpleButton(goldBar);
+        goldBarSimpleButton.callback = () => {this.onRoomClick(432)};
+
         // grey_button (components)
         const grey_buttonButton = new Button(grey_button);
         grey_buttonButton.spriteName = "grey-button";
-        grey_buttonButton.callback = () => { this.visible = false };
+        grey_buttonButton.callback = () => { this.closeElevator() };
 
         this.puffleBtn1 = puffleBtn1;
         this.puffleBtn2 = puffleBtn2;
@@ -165,10 +169,29 @@ export default class Elevator extends BaseContainer {
 
     /* START-USER-CODE */
 
-    // Write your code here.
-    // create() {
-    // }
+    closeElevator() {
+        this.visible = false
+        this.puffleBtn1_active.visible = false;
+        this.puffleBtn1.visible = true;
+        this.puffleBtn2_active.visible = false;
+        this.puffleBtn2.visible = true;
+        this.puffleBtn3_active.visible = false;
+        this.puffleBtn3.visible = true;
+        this.eatAndSleep_active.visible = false;
+        this.eatAndSleep.visible = true;
+        this.playAndGroom_active.visible = false;
+        this.playAndGroom.visible = true;
+        this.eatAndDress_active.visible = false;
+        this.eatAndDress.visible = true;
+    }
 
+    onRoomClick(id) {
+        let room = this.crumbs.scenes.rooms[id]
+        if (this.world.room.key == room.key) return
+
+        this.closeElevator();
+        this.world.client.sendJoinRoom(id, room.key, room.x, room.y)
+    }
     /* END-USER-CODE */
 }
 

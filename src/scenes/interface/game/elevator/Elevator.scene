@@ -62,7 +62,10 @@
                     "type": "Image",
                     "id": "c56eebd7-e86f-4566-97c2-452588135b53",
                     "label": "goldBar",
-                    "components": [],
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => {this.onRoomClick(432)}",
                     "texture": {
                         "key": "elevator",
                         "frame": "goldBar"
@@ -104,7 +107,7 @@
                         "key": "elevator",
                         "frame": "puffleBtn"
                     },
-                    "x": 260,
+                    "x": 264,
                     "y": 295
                 },
                 {
@@ -312,7 +315,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "grey-button",
-                    "Button.callback": "() => { this.visible = false }",
+                    "Button.callback": "() => { this.closeElevator() }",
                     "texture": {
                         "key": "main",
                         "frame": "grey-button"
