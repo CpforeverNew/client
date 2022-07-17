@@ -25,7 +25,7 @@ import Settings from '../settings/Settings'
 import Manage from '../manage/Manage'
 import Prompt from '../prompt/Prompt'
 import Snitch from '../snitch/Snitch'
-
+import Elevator from '../elevator/Elevator'
 
 /* START OF COMPILED CODE */
 
@@ -144,6 +144,8 @@ export default class Main extends BaseScene {
         this.puffleCare;
         /** @type {Prompt} */
         this.prompt;
+        /** @type {Elevator} */
+        this.elevator;
         /** @type {Array<PlayerCard|Buddy|Moderator>} */
         this.hideOnSleep;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|ChatLog>} */
@@ -381,6 +383,11 @@ export default class Main extends BaseScene {
         this.add.existing(prompt);
         prompt.visible = false;
 
+        // elevator
+        const elevator = new Elevator(this, 27, 35);
+        this.add.existing(elevator);
+        elevator.visible = false;
+
         // lists
         const hideOnSleep = [playerCard, buddy, moderator];
         const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, puffle_icon, puffle_button_disabled, chat_box, map_button, news_button, mod_m, chatLog, badge_member, emote_icon];
@@ -548,6 +555,7 @@ export default class Main extends BaseScene {
         this.stampEarnedBody = stampEarnedBody;
         this.puffleCare = puffleCare;
         this.prompt = prompt;
+        this.elevator = elevator;
         this.hideOnSleep = hideOnSleep;
         this.interfaceList = interfaceList;
 

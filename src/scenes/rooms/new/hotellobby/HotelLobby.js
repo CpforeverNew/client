@@ -15,9 +15,10 @@ export default class HotelLobby extends RoomScene {
         this.roomTriggers = {
             'plaza': () => this.triggerRoom(300, 680, 500),
             'pet': () => this.triggerRoom(310, 160, 760),
+            'lift' : () => this.lobbyLift(),
         }
 
-        this.music = "362"
+        this.music = "362";
 
         /* END-USER-CTR-CODE */
     }
@@ -416,6 +417,15 @@ export default class HotelLobby extends RoomScene {
     create() {
         super.create()
         this.fountain.play("hotellobby_fountain");
+        this.elevatorPopup = this.world.interface.main.elevator;
+    }
+
+    lobbyLift() {
+        this.elevatorPopup.visible = true;
+        this.elevatorPopup.puffleBtn2_active.visible = true;
+        this.elevatorPopup.puffleBtn2.visible = false;
+        this.elevatorPopup.eatAndDress_active.visible = true;
+        this.elevatorPopup.eatAndDress.visible = false;
     }
     /* END-USER-CODE */
 }

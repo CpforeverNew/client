@@ -877,6 +877,22 @@
             "y": 0,
             "visible": false,
             "nestedPrefabs": []
+        },
+        {
+            "prefabId": "9f7a331a-a949-4528-a4c9-d9c59747ebf1",
+            "id": "9db83153-b0a5-4484-917a-2d9f77419df4",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "elevator",
+            "scope": "CLASS",
+            "components": [],
+            "x": 27,
+            "y": 35,
+            "visible": false,
+            "nestedPrefabs": []
         }
     ],
     "plainObjects": [],
