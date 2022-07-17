@@ -118,7 +118,6 @@ export default class Penguin extends BaseContainer {
         let frame = ([25, 26].includes(_frame))
             ? this.getSecretFrame(_frame)
             : _frame
-        // console.log(key)
         for (let sprite of sprites) {
             if (sprite.animating) return
 
