@@ -122,7 +122,25 @@ if (localStorage.clientMode == "legacy") {
             scene: require('@rooms/old/beacon/ffc/Beacon').default,
             x: 410,
             y: 800
+        },        
+        430: {
+            key: 'HotelLobby',
+            scene: require('@rooms/new/hotellobby/HotelLobby').default,
+            x: 800,
+            y: 350
         },
+        431: {
+            key: 'HotelSpa',
+            scene: require('@rooms/new/hotelspa/HotelSpa').default,
+            x: 220,
+            y: 600
+        },
+        432: {
+            key: 'HotelRoof',
+            scene: require('@rooms/new/hotelroof/HotelRoof').default,
+            x: 220,
+            y: 600
+        }, 
         800: {
             key: 'Dock',
             scene: require('@rooms/old/dock/ffc/Dock').default,

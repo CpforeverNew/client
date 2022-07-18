@@ -261,13 +261,22 @@ export default class PuffleCare extends BaseContainer {
     }
 
     onCare(){
-        this.world.network.send("send_error", {error: "This feature is not yet implemented!\nCPForever is in development, and is being\nactively updated. Check back soon!'"})
+        this.onRoomClick(430)
         this.visible = false
+    }
+
+    onRoomClick(id,x=0,y=0) {
+        let room = this.crumbs.scenes.rooms[id]
+        if (this.world.room.key == room.key) return
+        if (x==0) x = room.x
+        if (y==0) y = room.y
+        console.log(room)
+        this.world.network.send("walk_puffle", {puffle: this.args.puffleId})
+        this.world.client.sendJoinRoom(id, room.key, x, y)
     }
 
     onSwap(){
         this.visible = false
-        this.world.network.send("stop_walking")
         this.world.network.send("walk_puffle", {puffle: this.args.puffleId})
     }
     /* END-USER-CODE */
