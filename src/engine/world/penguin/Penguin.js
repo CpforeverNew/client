@@ -113,16 +113,15 @@ export default class Penguin extends BaseContainer {
 
         // Filters out shadow and ring
         let sprites = this.list.filter(child => child.type == 'Sprite')
-
         // Get correct frame id
         let frame = ([25, 26].includes(_frame))
             ? this.getSecretFrame(_frame)
             : _frame
+            
         for (let sprite of sprites) {
             if (sprite.animating) return
 
             let key = `${sprite.texture.key}_${frame}`
-
             if (!this.world.anims.exists(key)) {
                 this.createAnim(sprite.texture.key, frame)
             }

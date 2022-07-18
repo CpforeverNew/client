@@ -92,7 +92,10 @@
                     "type": "Image",
                     "id": "7719fbc7-15e9-4eca-96e8-5c41e97e7d63",
                     "label": "goldBar_2",
-                    "components": [],
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => {this.onRoomClick(431)}",
                     "texture": {
                         "key": "elevator",
                         "frame": "goldBar"
@@ -137,7 +140,10 @@
                     "id": "b10f08af-3216-4ccc-b00c-9025335dde20",
                     "label": "puffleBtn3",
                     "scope": "CLASS",
-                    "components": [],
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => {this.onSpa()}",
                     "texture": {
                         "key": "elevator",
                         "frame": "puffleBtn"

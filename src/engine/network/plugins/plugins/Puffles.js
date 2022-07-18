@@ -52,7 +52,11 @@ export default class Puffles extends Plugin {
         }
 
         if (args.penguinId == this.world.client.penguin.id) {
-            this.interface.showPuffle(this.world.crumbs.puffles[args.color].name)
+            let puffleName = this.world.crumbs.puffles[args.color].name;
+            if (puffleName == "bluedog") puffleName = "blue" 
+            else if (puffleName == "blackcat") puffleName = "black"
+            else if (puffleName == "orangecat") puffleName = "orange"
+            this.interface.showPuffle(puffleName)
         }
     }
 

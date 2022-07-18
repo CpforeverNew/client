@@ -388,6 +388,12 @@ if (localStorage.clientMode == "vanilla") {
             x: 800,
             y: 350
         },
+        431: {
+            key: 'HotelSpa',
+            scene: require('@rooms/new/hotelspa/HotelSpa').default,
+            x: 220,
+            y: 600
+        },
         432: {
             key: 'HotelRoof',
             scene: require('@rooms/new/hotelroof/HotelRoof').default,

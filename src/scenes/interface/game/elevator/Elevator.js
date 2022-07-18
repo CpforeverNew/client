@@ -147,6 +147,10 @@ export default class Elevator extends BaseContainer {
         const goldBar_1SimpleButton = new SimpleButton(goldBar_1);
         goldBar_1SimpleButton.callback = () => {this.onRoomClick(430,72,520)};
 
+        // goldBar_2 (components)
+        const goldBar_2SimpleButton = new SimpleButton(goldBar_2);
+        goldBar_2SimpleButton.callback = () => {this.onRoomClick(431)};
+
         // puffleBtn1 (components)
         const puffleBtn1SimpleButton = new SimpleButton(puffleBtn1);
         puffleBtn1SimpleButton.callback = () => {this.onRoomClick(432)};
@@ -154,6 +158,10 @@ export default class Elevator extends BaseContainer {
         // puffleBtn2 (components)
         const puffleBtn2SimpleButton = new SimpleButton(puffleBtn2);
         puffleBtn2SimpleButton.callback = () => {this.onRoomClick(430,72,520)};
+
+        // puffleBtn3 (components)
+        const puffleBtn3SimpleButton = new SimpleButton(puffleBtn3);
+        puffleBtn3SimpleButton.callback = () => {this.onSpa()};
 
         // grey_button (components)
         const grey_buttonButton = new Button(grey_button);
@@ -205,6 +213,11 @@ export default class Elevator extends BaseContainer {
 
         this.closeElevator();
         this.world.client.sendJoinRoom(id, room.key, x, y)
+    }
+
+    onSpa(){
+        this.closeElevator();
+        this.world.network.send("send_error", {error: "This feature is not yet implemented!\nCPForever is in development, and is being\nactively updated. Check back soon!'"})
     }
     /* END-USER-CODE */
 }
