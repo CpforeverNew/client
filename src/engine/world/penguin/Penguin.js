@@ -117,14 +117,21 @@ export default class Penguin extends BaseContainer {
         let frame = ([25, 26].includes(_frame))
             ? this.getSecretFrame(_frame)
             : _frame
-            
+        
         for (let sprite of sprites) {
             if (sprite.animating) return
 
+            
+            if (sprite.texture.key.includes("puffle") && [39,36,44,45,42,43,37,51,71].includes(frame)) {
+                frame = 26;
+            } else if (sprite.texture.key.includes("puffle") && [52].includes(frame)) {
+                frame = 13
+            } 
             let key = `${sprite.texture.key}_${frame}`
             if (!this.world.anims.exists(key)) {
-                this.createAnim(sprite.texture.key, frame)
-            }
+                key = this.createAnim(sprite.texture.key, frame)
+            }  
+
 
             if (this.checkAnim(key)) {
                 sprite.visible = true
@@ -151,6 +158,7 @@ export default class Penguin extends BaseContainer {
             frameRate: 24,
             repeat: animation.repeat || 0
         })
+        return `${key}_${frame}`
     }
 
     generateFrames(key, frame, animation) {
