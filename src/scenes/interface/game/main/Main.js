@@ -759,6 +759,9 @@ export default class Main extends BaseScene {
         this.chatInput.clearText()
 
         this.network.send('send_message', { message: text })
+
+        this.game.scene.getScene('InterfaceController')
+            .showTextBalloon(this.world.client.penguin.id, text)
     }
 
     onSearch() {

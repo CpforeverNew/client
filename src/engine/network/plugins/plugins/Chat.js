@@ -14,7 +14,9 @@ export default class Chat extends Plugin {
     }
 
     sendMessage(args) {
-        if (this.world.room.isReady) {
+        const id = this.world.client.penguin.id
+
+        if (this.world.room.isReady && args.id !== id) {
             this.interface.showTextBalloon(args.id, args.message)
         }
     }
