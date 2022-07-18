@@ -77,7 +77,10 @@
                     "type": "Image",
                     "id": "0d50ae91-0a3d-472f-a967-1439d1742954",
                     "label": "goldBar_1",
-                    "components": [],
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => {this.onRoomClick(430,72,520)}",
                     "texture": {
                         "key": "elevator",
                         "frame": "goldBar"
@@ -102,7 +105,10 @@
                     "id": "76b85769-fe83-42fe-a2d3-db9c27660646",
                     "label": "puffleBtn1",
                     "scope": "CLASS",
-                    "components": [],
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => {this.onRoomClick(432)}",
                     "texture": {
                         "key": "elevator",
                         "frame": "puffleBtn"
@@ -115,7 +121,10 @@
                     "id": "30f76050-609f-407e-aa75-6c342107d1fe",
                     "label": "puffleBtn2",
                     "scope": "CLASS",
-                    "components": [],
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => {this.onRoomClick(430,72,520)}",
                     "texture": {
                         "key": "elevator",
                         "frame": "puffleBtn"

@@ -143,6 +143,18 @@ export default class Elevator extends BaseContainer {
         const goldBarSimpleButton = new SimpleButton(goldBar);
         goldBarSimpleButton.callback = () => {this.onRoomClick(432)};
 
+        // goldBar_1 (components)
+        const goldBar_1SimpleButton = new SimpleButton(goldBar_1);
+        goldBar_1SimpleButton.callback = () => {this.onRoomClick(430,72,520)};
+
+        // puffleBtn1 (components)
+        const puffleBtn1SimpleButton = new SimpleButton(puffleBtn1);
+        puffleBtn1SimpleButton.callback = () => {this.onRoomClick(432)};
+
+        // puffleBtn2 (components)
+        const puffleBtn2SimpleButton = new SimpleButton(puffleBtn2);
+        puffleBtn2SimpleButton.callback = () => {this.onRoomClick(430,72,520)};
+
         // grey_button (components)
         const grey_buttonButton = new Button(grey_button);
         grey_buttonButton.spriteName = "grey-button";
@@ -185,12 +197,14 @@ export default class Elevator extends BaseContainer {
         this.eatAndDress.visible = true;
     }
 
-    onRoomClick(id) {
+    onRoomClick(id,x=0,y=0) {
         let room = this.crumbs.scenes.rooms[id]
         if (this.world.room.key == room.key) return
+        if (x==0) x = room.x
+        if (y==0) y = room.y
 
         this.closeElevator();
-        this.world.client.sendJoinRoom(id, room.key, room.x, room.y)
+        this.world.client.sendJoinRoom(id, room.key, x, y)
     }
     /* END-USER-CODE */
 }
