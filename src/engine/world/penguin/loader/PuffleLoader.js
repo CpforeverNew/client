@@ -16,13 +16,6 @@ export default class PuffleLoader extends BaseLoader {
         let tricks = ["_jumpforward","_jumpspin","_nuzzle","_roll","_sandonhead","_speak"]
         let allArrays1 = types.concat(tricks);
         let allArrays = [""].concat(allArrays1);
-        let interval = setInterval(() => {
-            if (this.checkIfExist(mainKey, allArrays)) {
-                console.log(this.checkIfExist(mainKey, allArrays))
-                this.onFileComplete(mainKey, puffle)
-                clearInterval(interval)
-            }
-        }, 100)
         if(!this.textureExists(mainKey)) this.multiatlas(mainKey, `sprites/${puffle}.json`)
         for (const element of types) {
             if(!this.textureExists(mainKey + element)) this.multiatlas(mainKey + element, `${element.substring(1)}/${puffle}.json`)
@@ -30,6 +23,13 @@ export default class PuffleLoader extends BaseLoader {
         for (const element of tricks) {
             if(!this.textureExists(mainKey + element)) this.multiatlas(mainKey + element, `tricks/${puffle}/${element.substring(1)}.json`)
         }
+        let interval = setInterval(() => {
+            if (this.checkIfExist(mainKey, allArrays)) {
+                this.onFileComplete(mainKey, puffle)
+                clearInterval(interval)
+            }
+        }, 100)
+
         this.start()
     }
 

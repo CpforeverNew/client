@@ -42,7 +42,7 @@ export default class Puffles extends Plugin {
     }
 
     getPuffleColor(args) {
-        if (!this.world.room) return
+        // if (!this.world.room) return
 
         let penguin = this.world.room.penguins[args.penguinId]
         let playercard = this.world.interface.main.playerCard
