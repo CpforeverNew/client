@@ -44,7 +44,7 @@ export default class Puffle extends BaseContainer {
 
         this.sprite = this.room.add.sprite(this.xpos, this.ypos, `puffle_${this.color}`, '1_1')
 
-        this.sprite.scale = 1.25
+        this.sprite.scale = 1.1
         
         this.x = this.sprite.x
         this.y = this.sprite.y

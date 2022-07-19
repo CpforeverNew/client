@@ -119,7 +119,7 @@ if (localStorage.clientMode == "legacy") {
         },
         411: {
             key: 'Beacon',
-            scene: require('@rooms/old/beacon/ffc/Beacon').default,
+            scene: require('@rooms/old/beacon/Beacon').default,
             x: 410,
             y: 800
         },        

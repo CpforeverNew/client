@@ -270,7 +270,6 @@ export default class PuffleCare extends BaseContainer {
         if (this.world.room.key == room.key) return
         if (x==0) x = room.x
         if (y==0) y = room.y
-        console.log(room)
         this.world.network.send("walk_puffle", {puffle: this.args.puffleId})
         this.world.client.sendJoinRoom(id, room.key, x, y)
     }
