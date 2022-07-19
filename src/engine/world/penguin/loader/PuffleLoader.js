@@ -10,7 +10,7 @@ export default class PuffleLoader extends BaseLoader {
         this.keyPrefix = 'puffle_'
     }
 
-    loadPuffle(puffle) {
+    loadPuffle(penguin,puffle) {
         let mainKey = this.getKey(puffle)
         let types = ["_adopt", "_dig", "_dive", "_eat", "_hydrant", "_maxed", "_scratchpost", "_splash","_tireswing","_weightlifting"]
         let tricks = ["_jumpforward","_jumpspin","_nuzzle","_roll","_sandonhead","_speak"]
@@ -25,7 +25,7 @@ export default class PuffleLoader extends BaseLoader {
         }
         let interval = setInterval(() => {
             if (this.checkIfExist(mainKey, allArrays)) {
-                this.onFileComplete(mainKey, puffle)
+                this.onFileComplete(mainKey, puffle, penguin)
                 clearInterval(interval)
             }
         }, 100)
@@ -40,7 +40,7 @@ export default class PuffleLoader extends BaseLoader {
         return true;
     }
 
-    onFileComplete(key, puffle) {
+    onFileComplete(key, puffle,penguin) {
         if (!this.textureExists(key)) {
             return
         }
@@ -61,8 +61,8 @@ export default class PuffleLoader extends BaseLoader {
         this.createAnim(`puffle_${puffle}_roll`, 'Sprite')
         this.createAnim(`puffle_${puffle}_standonhead`, 'Sprite')
         this.createAnim(`puffle_${puffle}_speak`, 'Sprite')
-
-        this.penguin.penguinLoader.loadPuffle(this.penguin, puffle)
+        console.log(penguin)
+        this.penguin.penguinLoader.loadPuffle(penguin, puffle)
     }
 
     createAnim(key, frame) {

@@ -75,7 +75,7 @@ export default class PenguinLoader extends SpriteLoader {
 
     addPuffle(penguin, puffle) {
         let color = this.world.crumbs.puffles[puffle].name
-        this.ploader.loadPuffle(color)
+        this.ploader.loadPuffle(penguin,color)
     }
 
     loadPuffle(penguin, color) {
