@@ -126,7 +126,11 @@ export default class Penguin extends BaseContainer {
                 frame = 26;
             } else if (sprite.texture.key.includes("puffle") && [52].includes(frame)) {
                 frame = 13
-            } 
+            } else {
+                frame = ([25, 26].includes(_frame))
+                    ? this.getSecretFrame(_frame)
+                    : _frame
+            }
             let key = `${sprite.texture.key}_${frame}`
             if (!this.world.anims.exists(key)) {
                 key = this.createAnim(sprite.texture.key, frame)
