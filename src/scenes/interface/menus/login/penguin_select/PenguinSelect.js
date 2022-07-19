@@ -139,6 +139,7 @@ export default class PenguinSelect extends BaseScene {
             let object = new size(this, 0, 0)
 
             object.paperDoll.loadDoll(penguin)
+			console.log(object)
             object.username.text = penguin.username.toUpperCase()
             object.button.callback = () => this.onPenguinClick(penguin)
 

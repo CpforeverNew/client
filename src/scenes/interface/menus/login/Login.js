@@ -41,27 +41,27 @@ export default class Login extends BaseScene {
         const createButton = this.add.sprite(760, 728, "login", "large-button");
 
         // forgotButton
-        const forgotButton = this.add.sprite(760, 604, "login", "small-button");
+        const forgotButton = this.add.sprite(760, 605, "login", "small-button");
 
         // note
-        this.add.image(1182, 556, "login", "note");
+        this.add.image(1182, 557, "login", "note");
 
         // backText
-        const backText = this.add.text(760, 876, "", {});
+        const backText = this.add.text(760, 877, "", {});
         backText.setOrigin(0.5, 0.5);
         backText.text = "Back";
         backText.setStyle({ "align": "right", "color": "#ffffffff", "fontFamily": "Burbank Small", "fontSize": "30px" });
         backText.setLineSpacing(25);
 
         // registerText2
-        const registerText2 = this.add.text(760, 747, "", {});
+        const registerText2 = this.add.text(760, 748, "", {});
         registerText2.setOrigin(0.5, 0.5);
         registerText2.text = "Create a free account now";
         registerText2.setStyle({ "align": "right", "color": "#ffffffff", "fontFamily": "Burbank Small", "fontSize": "35px" });
         registerText2.setLineSpacing(25);
 
         // registerText
-        const registerText = this.add.text(760, 713, "", {});
+        const registerText = this.add.text(760, 714, "", {});
         registerText.setOrigin(0.5, 0.5);
         registerText.text = "Don't have a penguin?";
         registerText.setStyle({ "align": "right", "color": "#000000ff", "fontFamily": "Burbank Small", "fontSize": "30px" });
@@ -137,12 +137,17 @@ export default class Login extends BaseScene {
         createButtonAnimation.onHover = true;
 
         // forgotButton (components)
-        new SimpleButton(forgotButton);
+        const forgotButtonSimpleButton = new SimpleButton(forgotButton);
+        forgotButtonSimpleButton.callback = () => {window.open('https://cpforever.org/manage/reset', '_blank').focus();};
         const forgotButtonAnimation = new Animation(forgotButton);
         forgotButtonAnimation.key = "small-button";
         forgotButtonAnimation.end = 3;
         forgotButtonAnimation.repeat = 0;
         forgotButtonAnimation.onHover = true;
+
+        // forgotText (components)
+        const forgotTextSimpleButton = new SimpleButton(forgotText);
+        forgotTextSimpleButton.callback = () => {window.open('https://cpforever.org/manage/reset', '_blank').focus();};
 
         // loginButton (components)
         const loginButtonButton = new Button(loginButton);

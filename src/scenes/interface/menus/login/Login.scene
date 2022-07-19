@@ -74,6 +74,7 @@
                 "SimpleButton",
                 "Animation"
             ],
+            "SimpleButton.callback": "() => {window.open('https://cpforever.org/manage/reset', '_blank').focus();}",
             "Animation.key": "small-button",
             "Animation.end": 3,
             "Animation.repeat": 0,
@@ -83,7 +84,7 @@
                 "frame": "small-button"
             },
             "x": 760,
-            "y": 604
+            "y": 605
         },
         {
             "type": "Image",
@@ -95,7 +96,7 @@
                 "frame": "note"
             },
             "x": 1182,
-            "y": 556
+            "y": 557
         },
         {
             "type": "Text",
@@ -103,7 +104,7 @@
             "label": "backText",
             "components": [],
             "x": 760,
-            "y": 876,
+            "y": 877,
             "originX": 0.5,
             "originY": 0.5,
             "text": "Back",
@@ -119,7 +120,7 @@
             "label": "registerText2",
             "components": [],
             "x": 760,
-            "y": 747,
+            "y": 748,
             "originX": 0.5,
             "originY": 0.5,
             "text": "Create a free account now",
@@ -135,7 +136,7 @@
             "label": "registerText",
             "components": [],
             "x": 760,
-            "y": 713,
+            "y": 714,
             "originX": 0.5,
             "originY": 0.5,
             "text": "Don't have a penguin?",
@@ -149,7 +150,10 @@
             "type": "Text",
             "id": "731adc13-a878-47cf-866b-555084400e4c",
             "label": "forgotText",
-            "components": [],
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => {window.open('https://cpforever.org/manage/reset', '_blank').focus();}",
             "x": 760,
             "y": 604,
             "originX": 0.5,

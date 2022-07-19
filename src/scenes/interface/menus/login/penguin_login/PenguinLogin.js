@@ -126,12 +126,18 @@ export default class PenguinLogin extends BaseScene {
         forgetButtonAnimation.onHover = true;
 
         // forgotButton (components)
-        new SimpleButton(forgotButton);
+        const forgotButtonSimpleButton = new SimpleButton(forgotButton);
+        forgotButtonSimpleButton.callback = () => {window.open('https://cpforever.org/manage/reset', '_blank').focus();};
         const forgotButtonAnimation = new Animation(forgotButton);
         forgotButtonAnimation.key = "small-button";
         forgotButtonAnimation.end = 3;
         forgotButtonAnimation.repeat = 0;
         forgotButtonAnimation.onHover = true;
+
+        // forgotText (components)
+        const forgotTextSimpleButton = new SimpleButton(forgotText);
+        forgotTextSimpleButton.callback = () => {window.open('https://cpforever.org/manage/reset', '_blank').focus();};
+
 
         // loginButton (components)
         const loginButtonButton = new Button(loginButton);

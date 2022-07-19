@@ -87,6 +87,7 @@
                 "SimpleButton",
                 "Animation"
             ],
+            "SimpleButton.callback": "() => {window.open('https://cpforever.org/manage/reset', '_blank').focus();}",
             "Animation.key": "small-button",
             "Animation.end": 3,
             "Animation.repeat": 0,
@@ -135,7 +136,10 @@
             "type": "Text",
             "id": "f5278893-baa5-40e6-89e8-ef1e7c0a142c",
             "label": "forgotText",
-            "components": [],
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => {window.open('https://cpforever.org/manage/reset', '_blank').focus();}",
             "x": 929,
             "y": 604,
             "originX": 0.5,

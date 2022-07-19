@@ -123,7 +123,7 @@ export default class Settings extends BaseContainer {
         // button (components)
         const buttonButton = new Button(button);
         buttonButton.spriteName = "help-button";
-        buttonButton.callback = () => this.onManagePress();
+        buttonButton.callback = () => {window.open('https://cpforever.org/manage', '_blank').focus();};
 
         // checkbox (components)
         const checkboxSimpleButton = new SimpleButton(checkbox);
