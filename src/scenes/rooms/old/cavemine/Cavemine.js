@@ -18,7 +18,7 @@ export default class Cavemine extends RoomScene {
 
 
         /* START-USER-CTR-CODE */
-        this.timer = 3500
+        this.timer = 1000
         this.roomTriggers = {
          'minehat': () => this.interface.prompt.showItem(429),
          'lake': () => this.unimplementedPrompt(),
@@ -27,6 +27,7 @@ export default class Cavemine extends RoomScene {
         }
 
         this.coinsEarned = 0;
+        this.checkCoins = true;
         // this.prevX = 0;
         // this.prevY = 0;
         this.x = 0;
@@ -126,6 +127,10 @@ export default class Cavemine extends RoomScene {
     get miningError() {
         return this.world.client.miningError
     }
+    get client() {
+        return this.world.client
+    }
+
     create() {
         super.create()
         this.coin0001.depth = 1000;
@@ -163,14 +168,29 @@ export default class Cavemine extends RoomScene {
         return false
     }
 
+    coinsAmount() {
+        let prob = Math.random();
+        if (prob >= .975) return 100
+        else if (prob >= .95) return 90
+        else if (prob >= .90) return 75
+        else if (prob >= .75) return 50
+        else if (prob >= .50) return 25
+        else if (prob >= .35) return 10
+        return 5
+    }
+    
     checkMining() {
         let penguin = this.world.client.penguin;
+        if (!this.client.checkMining) {
+            this.client.checkMining = true
+        }
         if (this.matter.containsPoint(this.triggers[3], penguin.x, penguin.y) && this.x == penguin.x && this.y == penguin.y  && penguin.frame == 26) {
             const allEqual = arr => arr.every( v => v === arr[0] )
+            console.log(allEqual([penguin.body, penguin.feet, penguin.hand, penguin.neck, penguin.face]))
             if ([429].includes(penguin.head) && allEqual([penguin.body, penguin.feet, penguin.hand, penguin.neck, penguin.face]))  {
-                let coinValues = [5, 5, 5, 10, 10, 10, 25, 25, 50, 100];
-                if (this.probability(.3)) {
-                    let coinsToGive = coinValues[Math.floor(Math.random() * coinValues.length)]
+                if (this.probability(.04) && this.client.checkMining) {
+                    this.client.checkMining = false;
+                    let coinsToGive = this.coinsAmount();
                     this.addMiningCoins(penguin, coinsToGive);
                     if (this.errorHandling(penguin)) {
                         this.resetMining(penguin)
@@ -179,6 +199,7 @@ export default class Cavemine extends RoomScene {
                         this.coin0001.visible = true;
                         this.coin0001.playReverse({key:'coin', repeat: 0}).once('animationcomplete', () => {
                             this.coin0001.visible = false;
+                            this.client.checkMining = true;
                         }, this);
                     }
                 }

@@ -26,6 +26,7 @@ export default class MiniGame extends Plugin {
     }
 
     resetMiningError(args) {
+        this.client.checkMining = true;
         this.client.miningError = 0;
     }
 }
