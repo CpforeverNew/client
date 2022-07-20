@@ -5,7 +5,7 @@ if (localStorage.clientMode == "legacy") {
     rooms = {
         100: {
             key: 'Town',
-            scene: require('@rooms/old/town/fof/Town').default,
+            scene: require('@rooms/old/town/ffc/Town').default,
             x: 760,
             y: 660
         },
@@ -23,7 +23,7 @@ if (localStorage.clientMode == "legacy") {
         },
         120: {
             key: 'Dance',
-            scene: require('@rooms/old/dance/fof/Dance').default,
+            scene: require('@rooms/old/dance/Dance').default,
             x: 360,
             y: 560
         },
@@ -41,7 +41,7 @@ if (localStorage.clientMode == "legacy") {
         },
         200: {
             key: 'Village',
-            scene: require('@rooms/old/village/fof/Village').default,
+            scene: require('@rooms/old/village/Village').default,
             x: 800,
             y: 640
         },
@@ -71,7 +71,7 @@ if (localStorage.clientMode == "legacy") {
         },
         300: {
             key: 'Plaza',
-            scene: require('@rooms/old/plaza/fof/Plaza').default,
+            scene: require('@rooms/old/plaza/ffc/Plaza').default,
             x: 760,
             y: 680
         },
@@ -107,7 +107,7 @@ if (localStorage.clientMode == "legacy") {
         },
         400: {
             key: 'Beach',
-            scene: require('@rooms/old/beach/fof/Beach').default,
+            scene: require('@rooms/old/beach/ffc/Beach').default,
             x: 840,
             y: 680
         },
@@ -143,13 +143,13 @@ if (localStorage.clientMode == "legacy") {
         }, 
         800: {
             key: 'Dock',
-            scene: require('@rooms/old/dock/fof/Dock').default,
+            scene: require('@rooms/old/dock/ffc/Dock').default,
             x: 800,
             y: 400
         },
         801: {
             key: 'Forts',
-            scene: require('@rooms/old/forts/fof/Forts').default,
+            scene: require('@rooms/old/forts/Forts').default,
             x: 960,
             y: 610
         },
@@ -173,13 +173,13 @@ if (localStorage.clientMode == "legacy") {
         },
         805: {
             key: 'Berg',
-            scene: require('@rooms/old/berg/fof/Berg').default,
+            scene: require('@rooms/old/berg/Berg').default,
             x: 652,
             y: 448
         },
         806: {
             key: 'Cave',
-            scene: require('@rooms/old/cave/fof/Cave').default,
+            scene: require('@rooms/old/cave/Cave').default,
             x: 780,
             y: 700
         },
@@ -197,25 +197,19 @@ if (localStorage.clientMode == "legacy") {
         },
         809: {
             key: 'Forest',
-            scene: require('@rooms/old/forest/fof/Forest').default,
+            scene: require('@rooms/old/forest/ffc/Forest').default,
             x: 760,
             y: 430
         },
         810: {
             key: 'Cove',
-            scene: require('@rooms/old/cove/fof/Cove').default,
+            scene: require('@rooms/old/cove/Cove').default,
             x: 840,
             y: 480
         },
         813: {
             key: 'Cavemine',
             scene: require('@rooms/old/cavemine/Cavemine').default,
-            x: 840,
-            y: 480
-        },
-        852: {
-            key: 'Fofparty',
-            scene: require('@rooms/old/fofparty/Fofparty').default,
             x: 840,
             y: 480
         },
@@ -402,7 +396,7 @@ if (localStorage.clientMode == "vanilla") {
         },
         411: {
             key: 'Beacon',
-            scene: require('@rooms/old/beacon/fof/Beacon').default,
+            scene: require('@rooms/old/beacon/Beacon').default,
             x: 410,
             y: 800
         },
@@ -493,12 +487,6 @@ if (localStorage.clientMode == "vanilla") {
         813: {
             key: 'Cavemine',
             scene: require('@rooms/old/cavemine/Cavemine').default,
-            x: 840,
-            y: 480
-        },
-        852: {
-            key: 'Fofparty',
-            scene: require('@rooms/old/fofparty/Fofparty').default,
             x: 840,
             y: 480
         },
