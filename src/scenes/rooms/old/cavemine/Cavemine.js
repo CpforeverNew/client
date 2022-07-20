@@ -180,14 +180,13 @@ export default class Cavemine extends RoomScene {
     }
     
     checkMining() {
-        let penguin = this.world.client.penguin;
+        let penguin = this.world.client.penguin
         if (!this.client.checkMining) {
             this.client.checkMining = true
         }
         if (this.matter.containsPoint(this.triggers[3], penguin.x, penguin.y) && this.x == penguin.x && this.y == penguin.y  && penguin.frame == 26) {
             const allEqual = arr => arr.every( v => v === arr[0] )
-            console.log(allEqual([penguin.body, penguin.feet, penguin.hand, penguin.neck, penguin.face]))
-            if ([429].includes(penguin.head) && allEqual([penguin.body, penguin.feet, penguin.hand, penguin.neck, penguin.face]))  {
+            if ([429].includes(penguin.items.all.head.id) && allEqual([penguin.items.all.body.id, penguin.items.all.feet.id, penguin.items.all.hand.id, penguin.items.all.neck.id, penguin.items.all.face.id]))  {
                 if (this.probability(.04) && this.client.checkMining) {
                     this.client.checkMining = false;
                     let coinsToGive = this.coinsAmount();
