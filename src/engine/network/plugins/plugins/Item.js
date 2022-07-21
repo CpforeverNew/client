@@ -16,6 +16,8 @@ export default class Item extends Plugin {
     }
 
     updatePlayer(args) {
+        if (this.client.penguin.hasPuffle && args.item == 35016) return;
+
         if (!this.world.room.isReady) {
             return this.world.room.updateWaiting(args.id, { [args.slot]: args.item })
         }

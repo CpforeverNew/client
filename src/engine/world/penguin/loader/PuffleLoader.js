@@ -61,7 +61,6 @@ export default class PuffleLoader extends BaseLoader {
         this.createAnim(`puffle_${puffle}_roll`, 'Sprite')
         this.createAnim(`puffle_${puffle}_standonhead`, 'Sprite')
         this.createAnim(`puffle_${puffle}_speak`, 'Sprite')
-        console.log(penguin)
         this.penguin.penguinLoader.loadPuffle(penguin, puffle)
     }
 
