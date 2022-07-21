@@ -756,6 +756,7 @@ export default class Main extends BaseScene {
     onChatSend() {
         let text = this.chatInput.text
         text = text.replace(/[^\x00-\x7F]/g, "");
+        if (text.replace(" ", "").length < 1) return;
 
         this.chatInput.clearText()
 
