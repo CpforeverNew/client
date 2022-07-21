@@ -121,8 +121,7 @@ export default class Penguin extends BaseContainer {
         for (let sprite of sprites) {
             if (sprite.animating) return
 
-            
-            if (sprite.texture.key.includes("puffle") && [39,36,44,45,42,43,37,51,71].includes(frame)) {
+            if (sprite.texture.key.includes("puffle") && [63,32,39,36,44,45,42,43,37,51,71].includes(frame)) {
                 frame = 26;
             } else if (sprite.texture.key.includes("puffle") && [52].includes(frame)) {
                 frame = 13
