@@ -107,7 +107,7 @@ export default class Puffles extends Plugin {
                 puffle.destroy()
             }
 
-        }
+        } 
 
         penguin.puffle = args.puffle
         this.network.send('get_puffle_color', {puffle: args.puffle, penguinId: args.user})
