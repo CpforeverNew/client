@@ -88,7 +88,7 @@
                 "Button"
             ],
             "Button.spriteName": "blue-button",
-            "Button.callback": "() => this.onPuffleClick()",
+            "Button.callback": "() => this.pufflesMenu.visible = true",
             "texture": {
                 "key": "main",
                 "frame": "blue-button"
@@ -127,7 +127,7 @@
                 "frame": "blue-button"
             },
             "x": 306,
-            "y": 930
+            "y": 931
         },
         {
             "type": "Image",
@@ -139,7 +139,7 @@
                 "frame": "emotes.png"
             },
             "x": 306,
-            "y": 928
+            "y": 929
         },
         {
             "type": "Image",
@@ -158,7 +158,7 @@
                 "frame": "blue-button"
             },
             "x": 366,
-            "y": 930
+            "y": 931
         },
         {
             "type": "Image",
@@ -171,7 +171,7 @@
                 "frame": "action-icon"
             },
             "x": 366,
-            "y": 926
+            "y": 927
         },
         {
             "type": "Image",
@@ -190,7 +190,7 @@
                 "frame": "blue-button"
             },
             "x": 426,
-            "y": 930
+            "y": 931
         },
         {
             "type": "Image",
@@ -203,7 +203,7 @@
                 "frame": "snowball-icon"
             },
             "x": 426,
-            "y": 930
+            "y": 931
         },
         {
             "type": "Image",
@@ -222,7 +222,7 @@
                 "frame": "blue-button"
             },
             "x": 1026,
-            "y": 930
+            "y": 931
         },
         {
             "type": "Image",
@@ -235,7 +235,7 @@
                 "frame": "chat-send0001"
             },
             "x": 1027,
-            "y": 928
+            "y": 929
         },
         {
             "type": "Image",
@@ -254,7 +254,7 @@
                 "frame": "blue-button"
             },
             "x": 1086,
-            "y": 930
+            "y": 931
         },
         {
             "type": "Image",
@@ -267,7 +267,7 @@
                 "frame": "playercard0001.png"
             },
             "x": 1086,
-            "y": 927
+            "y": 928
         },
         {
             "type": "Image",
@@ -286,7 +286,7 @@
                 "frame": "blue-button"
             },
             "x": 1146,
-            "y": 930
+            "y": 931
         },
         {
             "type": "Image",
@@ -299,7 +299,7 @@
                 "frame": "buddies-icon"
             },
             "x": 1146,
-            "y": 928
+            "y": 929
         },
         {
             "type": "Image",
@@ -318,7 +318,7 @@
                 "frame": "blue-button"
             },
             "x": 1206,
-            "y": 930
+            "y": 931
         },
         {
             "type": "Image",
@@ -331,7 +331,7 @@
                 "frame": "igloo-icon"
             },
             "x": 1206,
-            "y": 928
+            "y": 929
         },
         {
             "type": "Image",
@@ -350,7 +350,7 @@
                 "frame": "blue-button"
             },
             "x": 1266,
-            "y": 930
+            "y": 931
         },
         {
             "type": "Image",
@@ -363,7 +363,7 @@
                 "frame": "help-icon"
             },
             "x": 1266,
-            "y": 928
+            "y": 929
         },
         {
             "type": "Container",
@@ -372,7 +372,7 @@
             "scope": "CLASS",
             "components": [],
             "x": 1155,
-            "y": 857,
+            "y": 858,
             "visible": false,
             "list": [
                 {
@@ -415,7 +415,7 @@
             "scope": "CLASS",
             "components": [],
             "x": 760,
-            "y": 2,
+            "y": 3,
             "nestedPrefabs": []
         },
         {
@@ -431,7 +431,7 @@
                 "key": "main",
                 "frame": "crosshair"
             },
-            "y": 1100,
+            "y": 1101,
             "visible": false
         },
         {
@@ -450,7 +450,7 @@
                 "frame": "map-button"
             },
             "x": 90,
-            "y": 888
+            "y": 889
         },
         {
             "type": "Image",
@@ -468,7 +468,7 @@
                 "frame": "buddy-button"
             },
             "x": 269,
-            "y": 58,
+            "y": 59,
             "visible": false
         },
         {
@@ -487,7 +487,7 @@
                 "frame": "mail-button"
             },
             "x": 170,
-            "y": 45
+            "y": 46
         },
         {
             "type": "Image",
@@ -505,7 +505,7 @@
                 "frame": "news-button"
             },
             "x": 70,
-            "y": 61
+            "y": 62
         },
         {
             "type": "Container",
@@ -514,7 +514,7 @@
             "scope": "CLASS",
             "components": [],
             "x": 70,
-            "y": 161,
+            "y": 162,
             "visible": false,
             "list": [
                 {
@@ -558,7 +558,7 @@
             "scope": "CLASS",
             "components": [],
             "x": 760,
-            "y": 460,
+            "y": 461,
             "visible": false,
             "nestedPrefabs": []
         },
@@ -574,7 +574,7 @@
             "scope": "CLASS",
             "components": [],
             "x": 760,
-            "y": 480,
+            "y": 481,
             "visible": false,
             "nestedPrefabs": []
         },
@@ -631,7 +631,7 @@
             "scope": "CLASS",
             "components": [],
             "x": 760,
-            "y": 480,
+            "y": 481,
             "visible": false,
             "nestedPrefabs": []
         },
@@ -647,7 +647,7 @@
             "scope": "CLASS",
             "components": [],
             "x": 760,
-            "y": 480,
+            "y": 481,
             "visible": false,
             "nestedPrefabs": []
         },
@@ -663,7 +663,7 @@
             "scope": "CLASS",
             "components": [],
             "x": 760,
-            "y": 480,
+            "y": 481,
             "visible": false,
             "nestedPrefabs": []
         },
@@ -679,7 +679,7 @@
             "scope": "CLASS",
             "components": [],
             "x": 366,
-            "y": 872,
+            "y": 873,
             "visible": false,
             "nestedPrefabs": []
         },
@@ -695,7 +695,23 @@
             "scope": "CLASS",
             "components": [],
             "x": 306,
-            "y": 902,
+            "y": 906,
+            "visible": false,
+            "nestedPrefabs": []
+        },
+        {
+            "prefabId": "354b1452-525c-4f8a-8d7b-839eca9cc1c0",
+            "id": "9db83153-b0a5-4484-917a-2d9f77419df4",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "pufflesMenu",
+            "scope": "CLASS",
+            "components": [],
+            "x": 246,
+            "y": 858,
             "visible": false,
             "nestedPrefabs": []
         },

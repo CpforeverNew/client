@@ -26,6 +26,7 @@ import Manage from '../manage/Manage'
 import Prompt from '../prompt/Prompt'
 import Snitch from '../snitch/Snitch'
 import Elevator from '../elevator/Elevator'
+import PufflesMenu from '../floating/puffles/PufflesMenu'
 
 /* START OF COMPILED CODE */
 
@@ -120,6 +121,8 @@ export default class Main extends BaseScene {
         this.actionsMenu;
         /** @type {EmotesMenu} */
         this.emotesMenu;
+        /** @type {PufflesMenu} */
+        this.pufflesMenu;
         /** @type {Safe} */
         this.safe;
         /** @type {Waddle} */
@@ -182,55 +185,55 @@ export default class Main extends BaseScene {
         const puffle_icon = this.add.image(245, 929, "main", "puffle-icon-disabled");
 
         // emote_button
-        const emote_button = this.add.image(306, 930, "main", "blue-button");
+        const emote_button = this.add.image(306, 931, "main", "blue-button");
 
         // emote_icon
-        const emote_icon = this.add.image(306, 928, "chatbar", "emotes.png");
+        const emote_icon = this.add.image(306, 929, "chatbar", "emotes.png");
 
         // action_button
-        const action_button = this.add.image(366, 930, "main", "blue-button");
+        const action_button = this.add.image(366, 931, "main", "blue-button");
 
         // action_icon
-        const action_icon = this.add.image(366, 926, "main", "action-icon");
+        const action_icon = this.add.image(366, 927, "main", "action-icon");
 
         // snowball_button
-        const snowball_button = this.add.image(426, 930, "main", "blue-button");
+        const snowball_button = this.add.image(426, 931, "main", "blue-button");
 
         // snowball_icon
-        const snowball_icon = this.add.image(426, 930, "main", "snowball-icon");
+        const snowball_icon = this.add.image(426, 931, "main", "snowball-icon");
 
         // chat_send_button
-        const chat_send_button = this.add.image(1026, 930, "main", "blue-button");
+        const chat_send_button = this.add.image(1026, 931, "main", "blue-button");
 
         // chat_send_icon
-        const chat_send_icon = this.add.image(1027, 928, "main", "chat-send0001");
+        const chat_send_icon = this.add.image(1027, 929, "main", "chat-send0001");
 
         // player_button
-        const player_button = this.add.image(1086, 930, "main", "blue-button");
+        const player_button = this.add.image(1086, 931, "main", "blue-button");
 
         // badge_member
-        const badge_member = this.add.image(1086, 927, "chatbar", "playercard0001.png");
+        const badge_member = this.add.image(1086, 928, "chatbar", "playercard0001.png");
 
         // buddies_button
-        const buddies_button = this.add.image(1146, 930, "main", "blue-button");
+        const buddies_button = this.add.image(1146, 931, "main", "blue-button");
 
         // buddies_icon
-        const buddies_icon = this.add.image(1146, 928, "main", "buddies-icon");
+        const buddies_icon = this.add.image(1146, 929, "main", "buddies-icon");
 
         // igloo_button
-        const igloo_button = this.add.image(1206, 930, "main", "blue-button");
+        const igloo_button = this.add.image(1206, 931, "main", "blue-button");
 
         // igloo_icon
-        const igloo_icon = this.add.image(1206, 928, "main", "igloo-icon");
+        const igloo_icon = this.add.image(1206, 929, "main", "igloo-icon");
 
         // help_button
-        const help_button = this.add.image(1266, 930, "main", "blue-button");
+        const help_button = this.add.image(1266, 931, "main", "blue-button");
 
         // help_icon
-        const help_icon = this.add.image(1266, 928, "main", "help-icon");
+        const help_icon = this.add.image(1266, 929, "main", "help-icon");
 
         // onlinePopup
-        const onlinePopup = this.add.container(1155, 857);
+        const onlinePopup = this.add.container(1155, 858);
         onlinePopup.visible = false;
 
         // popup
@@ -244,28 +247,28 @@ export default class Main extends BaseScene {
         onlinePopup.add(popupText);
 
         // chatLog
-        const chatLog = new ChatLog(this, 760, 2);
+        const chatLog = new ChatLog(this, 760, 3);
         this.add.existing(chatLog);
 
         // crosshair
-        const crosshair = this.add.image(0, 1100, "main", "crosshair");
+        const crosshair = this.add.image(0, 1101, "main", "crosshair");
         crosshair.visible = false;
 
         // map_button
-        const map_button = this.add.sprite(90, 888, "main", "map-button");
+        const map_button = this.add.sprite(90, 889, "main", "map-button");
 
         // request_button
-        const request_button = this.add.image(269, 58, "main", "buddy-button");
+        const request_button = this.add.image(269, 59, "main", "buddy-button");
         request_button.visible = false;
 
         // mail_btn
-        const mail_btn = this.add.sprite(170, 45, "main", "mail-button");
+        const mail_btn = this.add.sprite(170, 46, "main", "mail-button");
 
         // news_button
-        const news_button = this.add.image(70, 61, "main", "news-button");
+        const news_button = this.add.image(70, 62, "main", "news-button");
 
         // mod_btn
-        const mod_btn = this.add.container(70, 161);
+        const mod_btn = this.add.container(70, 162);
         mod_btn.visible = false;
 
         // mod_button
@@ -277,12 +280,12 @@ export default class Main extends BaseScene {
         mod_btn.add(mod_m);
 
         // modActions
-        const modActions = new ModActions(this, 760, 460);
+        const modActions = new ModActions(this, 760, 461);
         this.add.existing(modActions);
         modActions.visible = false;
 
         // moderator
-        const moderator = new Moderator(this, 760, 480);
+        const moderator = new Moderator(this, 760, 481);
         this.add.existing(moderator);
         moderator.visible = false;
 
@@ -300,29 +303,34 @@ export default class Main extends BaseScene {
         widgetLayer.add(playerCard);
 
         // settings
-        const settings = new Settings(this, 760, 480);
+        const settings = new Settings(this, 760, 481);
         this.add.existing(settings);
         settings.visible = false;
 
         // manage
-        const manage = new Manage(this, 760, 480);
+        const manage = new Manage(this, 760, 481);
         this.add.existing(manage);
         manage.visible = false;
 
         // snitch
-        const snitch = new Snitch(this, 760, 480);
+        const snitch = new Snitch(this, 760, 481);
         this.add.existing(snitch);
         snitch.visible = false;
 
         // actionsMenu
-        const actionsMenu = new ActionsMenu(this, 366, 872);
+        const actionsMenu = new ActionsMenu(this, 366, 873);
         this.add.existing(actionsMenu);
         actionsMenu.visible = false;
 
         // emotesMenu
-        const emotesMenu = new EmotesMenu(this, 306, 902);
+        const emotesMenu = new EmotesMenu(this, 306, 906);
         this.add.existing(emotesMenu);
         emotesMenu.visible = false;
+
+        // pufflesMenu
+        const pufflesMenu = new PufflesMenu(this, 246, 858);
+        this.add.existing(pufflesMenu);
+        pufflesMenu.visible = false;
 
         // safe
         const safe = new Safe(this, 244, 933);
@@ -401,7 +409,7 @@ export default class Main extends BaseScene {
         // puffle_button (components)
         const puffle_buttonButton = new Button(puffle_button);
         puffle_buttonButton.spriteName = "blue-button";
-        puffle_buttonButton.callback = () => this.onPuffleClick();
+        puffle_buttonButton.callback = () => this.pufflesMenu.visible = true;
 
         // emote_button (components)
         const emote_buttonButton = new Button(emote_button);
@@ -543,6 +551,7 @@ export default class Main extends BaseScene {
         this.snitch = snitch;
         this.actionsMenu = actionsMenu;
         this.emotesMenu = emotesMenu;
+        this.pufflesMenu = pufflesMenu;
         this.safe = safe;
         this.waddle = waddle;
         this.findFour = findFour;
