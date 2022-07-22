@@ -65,6 +65,7 @@ export default class PufflesMenu extends FloatingMenu {
         // coinbag (components)
         const coinbagButton = new Button(coinbag);
         coinbagButton.spriteName = "coinbag";
+        coinbagButton.callback = () => {this.puffleDig()};
 
         // jumpspin (components)
         const jumpspinButton = new Button(jumpspin);
@@ -111,12 +112,19 @@ export default class PufflesMenu extends FloatingMenu {
 
     playPuffleAnim(anim) {
         let penguin = this.world.client.penguin;
-        penguin.playPuffleAnim(anim);
+
+        if (!this.playing) {
+            this.playing = true;
+        }
+
+        if (this.playing) {
+            penguin.playPuffleAnim(anim);
+        }
     }
 
-    puffleDig(anim) {
+    puffleDig() {
         let coins = this.getRandomInt(50, 300);
-        this.playPuffleAnim(anim)
+        this.playPuffleAnim('dig')
     }
 
     getRandomInt(min, max) {

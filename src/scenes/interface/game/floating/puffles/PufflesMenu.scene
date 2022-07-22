@@ -67,6 +67,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "coinbag",
+                    "Button.callback": "() => {this.puffleDig()}",
                     "texture": {
                         "key": "pufflePopup",
                         "frame": "coinbag"
