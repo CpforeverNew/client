@@ -1,12 +1,14 @@
 import RoomScene from '@scenes/rooms/RoomScene'
-
-import { Animation, Button, MoveTo, Zone } from '@components/components'
-import { setInterval, setTimeout } from 'core-js';
-
+import { setInterval } from 'core-js';
 
 /* START OF COMPILED CODE */
 
 export default class Cavemine extends RoomScene {
+    errorTypeToCode = {
+        'tooFewCoinsForPayout': 1,
+        'coinsRewardedTooSoon': 2,
+        'coinsExceedMaxAMount': 3,
+    }
 
     constructor() {
         super("Cavemine");
@@ -18,12 +20,18 @@ export default class Cavemine extends RoomScene {
 
 
         /* START-USER-CTR-CODE */
-        this.timer = 1000
+        this.timer = 2500
         this.roomTriggers = {
-         'minehat': () => this.interface.prompt.showItem(429),
-         'lake': () => this.unimplementedPrompt(),
-         'mine': () => this.triggerRoom(808, 1200, 400),
-         'minearea' : () => this.coinsInterval = setInterval(() => this.checkMining(), this.timer)
+            'minehat': () => this.interface.prompt.showItem(429),
+            'lake': () => this.unimplementedPrompt(),
+            'mine': () => this.triggerRoom(808, 1200, 400),
+            'minearea' : () => {
+                if (this.coinsInterval) {
+                    clearInterval(this.coinsInterval)
+                }
+
+                this.coinsInterval = setInterval(() => this.checkMining(), this.timer)
+            }
         }
 
         this.coinsEarned = 0;
@@ -32,9 +40,6 @@ export default class Cavemine extends RoomScene {
         // this.prevY = 0;
         this.x = 0;
         this.y = 0;
-        this.probability = function(n) {
-            return !!n && Math.random() <= n;
-       };
         /* END-USER-CTR-CODE */
     }
 
@@ -147,24 +152,47 @@ export default class Cavemine extends RoomScene {
         return this.world.client.penguin.frame
     }
 
+    probability(n) {
+        return !!n && Math.random() <= n
+    }
+
     addMiningCoins(penguin, coins) {
-        if ([1,2,3].includes(this.miningError)) return
-        let resp = this.network.send('add_mine_coins', {id: penguin.id, coins: coins, timer:this.timer, miningId:this.randomId})
+        const errorCodes = Object.values(this.errorTypeToCode)
+
+        if (errorCodes.includes(this.miningError)) {
+            return
+        }
+
+        this.network.send('add_mine_coins', {
+            id: penguin.id,
+            coins: coins,
+            timer: this.timer,
+            miningId: this.randomId
+        })
     }
 
     resetMining(penguin) {
-        this.network.send("delete_mine", {miningId:this.randomId})
+        if (this.randomId !== undefined) {
+            this.network.send("delete_mine", { miningId: this.randomId })
+        }
+
         this.randomId = (Math.random() + 1).toString(36).substring(7);
+
         this.x = penguin.x;
         this.y = penguin.y;
-        clearInterval(this.coinsInterval)
+    }
+
+    miningShouldBeReset(penguin) {
+        return this.randomId === undefined
+            || this.miningError === 2
+            || this.playerCoordinatesHaveChanged(penguin)
     }
 
     errorHandling(penguin) {
         if (this.randomId === undefined) return false 
         else if (this.miningError == 2) return true
         else if (this.miningError == 1 && (this.x != penguin.x || this.y != penguin.y)) return true
-        else if (this.x != penguin.x || this.y != penguin.y) return true
+        else if (this.x != penguin.x || this.y != penguin.y){console.info(this.x, this.y, penguin.x, penguin.y); return true}
         return false
     }
 
@@ -178,39 +206,75 @@ export default class Cavemine extends RoomScene {
         else if (prob >= .35) return 10
         return 5
     }
-    
-    checkMining() {
-        let penguin = this.world.client.penguin
-        if (!this.client.checkMining) {
-            this.client.checkMining = true
-        }
-        if (this.matter.containsPoint(this.triggers[3], penguin.x, penguin.y) && this.x == penguin.x && this.y == penguin.y  && penguin.frame == 26) {
-            const allEqual = arr => arr.every( v => v === arr[0] )
-            if ([429].includes(penguin.items.all.head.id) && allEqual([penguin.items.all.body.id, penguin.items.all.feet.id, penguin.items.all.hand.id, penguin.items.all.neck.id, penguin.items.all.face.id]))  {
-                if (this.probability(.04) && this.client.checkMining) {
-                    this.client.checkMining = false;
-                    let coinsToGive = this.coinsAmount();
-                    this.addMiningCoins(penguin, coinsToGive);
-                    if (this.errorHandling(penguin)) {
-                        this.resetMining(penguin)
-                    } else if (this.miningError == 0) {
-                        this.coin0001.setPosition(penguin.x + 5, penguin.y-120)
-                        this.coin0001.visible = true;
-                        this.coin0001.playReverse({key:'coin', repeat: 0}).once('animationcomplete', () => {
-                            this.coin0001.visible = false;
-                            this.client.checkMining = true;
-                        }, this);
-                    }
-                }
+
+    playerOnlyHasHelmetEquipped(allItems) {
+        const itemsAsArray = Object.entries(allItems)
+
+        return itemsAsArray.every(pair => {
+            const [itemType, value] = pair
+
+            switch (itemType) {
+                case 'head':
+                    return value.id === 429
+                case 'flag':
+                case 'color':
+                case 'photo':
+                    return true
+                default:
+                    return value.id === 0
             }
-        } else if (this.errorHandling(penguin)) {
-            this.resetMining(penguin)
-        } else if (this.x == 0 && this.y == 0) {
-            this.randomId = (Math.random() + 1).toString(36).substring(7);
-            this.x = penguin.x;
-            this.y = penguin.y; 
-        } else {
-            clearInterval(this.coinsInterval);
+        })
+    }
+
+    playerIsDrillingInMiningArea(penguin) {
+        return this.matter.containsPoint(this.triggers[3], penguin.x, penguin.y)
+            && this.x === penguin.x
+            && this.y === penguin.y
+            && penguin.frame === 26
+    }
+
+    playerCoordinatesHaveChanged(penguin) {
+        return penguin.x !== this.x
+            || penguin.y !== this.y
+    }
+
+    showCoinRewardToPlayer(penguin) {
+        this.coin0001.setPosition(penguin.x + 5, penguin.y - 120)
+
+        this.coin0001.visible = true
+
+        const animation = this.coin0001.playReverse({
+            key:'coin',
+            repeat: 0,
+        })
+
+        animation.once('animationcomplete', () => {
+            this.coin0001.visible = false
+            this.client.checkMining = true
+        }, this);
+    }
+
+    checkMining() {
+        const penguin = this.world.client.penguin
+
+        this.client.checkMining = true
+
+        if (this.miningShouldBeReset(penguin)) {
+            return this.resetMining(penguin)
+        }
+
+        if (!this.playerOnlyHasHelmetEquipped(penguin.items.all) || !this.playerIsDrillingInMiningArea(penguin)) {
+            return
+        }
+
+        if (this.probability(.04)) {
+            this.client.checkMining = false
+
+            this.addMiningCoins(penguin, this.coinsAmount())
+
+            if (!this.miningError && !this.miningShouldBeReset(penguin)) {
+                return this.showCoinRewardToPlayer(penguin)
+            }
         }
     }
 
