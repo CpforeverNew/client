@@ -115,7 +115,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "roll",
-                    "Button.callback": "() => {this.playPuffleAnim(\"jumpspin\")}",
+                    "Button.callback": "() => {this.playPuffleAnim(\"roll\")}",
                     "texture": {
                         "key": "pufflePopup",
                         "frame": "roll"
