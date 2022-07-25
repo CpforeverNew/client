@@ -10,6 +10,14 @@ export default class Cavemine extends RoomScene {
         'coinsExceedMaxAMount': 3,
     }
 
+    /**
+     * @todo There's likely a better way to handle this, e.g. maybe we could make
+     * an API request that the server can return these IDs from, so that there's
+     * only one "source of truth" for this data (crumbs, database, wherever). But
+     * as of right now these IDs aren't likely to change anytime soon.
+     */
+    hardHatIds = [403, 429, 674, 1133, 1765, 10403, 10429, 11133, 35033]
+
     constructor() {
         super("Cavemine");
 
@@ -205,7 +213,7 @@ export default class Cavemine extends RoomScene {
 
             switch (itemType) {
                 case 'head':
-                    return value.id === 429
+                    return this.hardHatIds.some(id => id === value.id)
                 case 'flag':
                 case 'color':
                 case 'photo':
