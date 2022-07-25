@@ -138,6 +138,7 @@ export default class Cavemine extends RoomScene {
     get miningError() {
         return this.world.client.miningError
     }
+
     get client() {
         return this.world.client
     }
@@ -173,23 +174,23 @@ export default class Cavemine extends RoomScene {
             id: penguin.id,
             coins: coins,
             timer: this.timer,
-            miningId: this.randomId
+            miningId: this.miningSessionId
         })
     }
 
-    resetMining(penguin) {
-        if (this.randomId !== undefined) {
-            this.network.send("delete_mine", { miningId: this.randomId })
+    resetMiningSession(penguin) {
+        if (this.miningSessionId !== undefined) {
+            this.network.send("delete_mine", { miningId: this.miningSessionId })
         }
 
-        this.randomId = (Math.random() + 1).toString(36).substring(7);
+        this.miningSessionId = (Math.random() + 1).toString(36).substring(7);
 
         this.x = penguin.x;
         this.y = penguin.y;
     }
 
-    miningShouldBeReset(penguin) {
-        return this.randomId === undefined
+    miningSessionShouldBeReset(penguin) {
+        return this.miningSessionId === undefined
             || this.miningError === 2
             || this.playerCoordinatesHaveChanged(penguin)
     }
@@ -226,8 +227,7 @@ export default class Cavemine extends RoomScene {
 
     playerIsDrillingInMiningArea(penguin) {
         return this.matter.containsPoint(this.triggers[3], penguin.x, penguin.y)
-            && this.x === penguin.x
-            && this.y === penguin.y
+            && !this.playerCoordinatesHaveChanged(penguin)
             && penguin.frame === 26
     }
 
@@ -242,27 +242,24 @@ export default class Cavemine extends RoomScene {
         this.coin0001.visible = true
 
         const animation = this.coin0001.playReverse({
-            key:'coin',
+            key: 'coin',
             repeat: 0,
         })
 
         animation.once('animationcomplete', () => {
             this.coin0001.visible = false
-            this.client.checkMining = true
         }, this);
     }
 
     checkMining() {
         const penguin = this.world.client.penguin
 
-        this.client.checkMining = true
-
         if (penguin.room.key !== this.key) {
             return clearInterval(this.coinsInterval)
         }
 
-        if (this.miningShouldBeReset(penguin)) {
-            return this.resetMining(penguin)
+        if (this.miningSessionShouldBeReset(penguin)) {
+            return this.resetMiningSession(penguin)
         }
 
         if (!this.playerOnlyHasHelmetEquipped(penguin.items.all) || !this.playerIsDrillingInMiningArea(penguin)) {
@@ -270,11 +267,9 @@ export default class Cavemine extends RoomScene {
         }
 
         if (this.probability(.04)) {
-            this.client.checkMining = false
-
             this.addMiningCoins(penguin, this.coinsAmount())
 
-            if (!this.miningError && !this.miningShouldBeReset(penguin)) {
+            if (!this.miningError && !this.miningSessionShouldBeReset(penguin)) {
                 return this.showCoinRewardToPlayer(penguin)
             }
         }
