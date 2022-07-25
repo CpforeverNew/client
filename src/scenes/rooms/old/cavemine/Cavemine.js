@@ -26,11 +26,9 @@ export default class Cavemine extends RoomScene {
             'lake': () => this.unimplementedPrompt(),
             'mine': () => this.triggerRoom(808, 1200, 400),
             'minearea' : () => {
-                if (this.coinsInterval) {
-                    clearInterval(this.coinsInterval)
+                if (!this.coinsInterval) {
+                    this.coinsInterval = setInterval(() => this.checkMining(), this.timer)
                 }
-
-                this.coinsInterval = setInterval(() => this.checkMining(), this.timer)
             }
         }
 
