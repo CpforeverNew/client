@@ -249,6 +249,10 @@ export default class Cavemine extends RoomScene {
 
         this.client.checkMining = true
 
+        if (penguin.room.key !== this.key) {
+            return clearInterval(this.coinsInterval)
+        }
+
         if (this.miningShouldBeReset(penguin)) {
             return this.resetMining(penguin)
         }
