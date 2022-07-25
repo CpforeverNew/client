@@ -105,6 +105,12 @@ if (localStorage.clientMode == "legacy") {
             x: 240,
             y: 660
         },
+        341: {
+            key: 'Theatre',
+            scene: require('@rooms/old/theatre/Theatre').default,
+            x: 240,
+            y: 660
+        },
         400: {
             key: 'Beach',
             scene: require('@rooms/old/beach/ffc/Beach').default,
