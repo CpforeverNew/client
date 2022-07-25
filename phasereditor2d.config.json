@@ -3,5 +3,6 @@
         "assets/media/clothing",
         "assets/media/furniture"
     ],
-    "playUrl": "http://localhost:8080"
+    "playUrl": "http://localhost:8080",
+    "flags": ["-max-number-files", "10000"]
 }
