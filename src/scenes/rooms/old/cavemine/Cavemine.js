@@ -188,14 +188,6 @@ export default class Cavemine extends RoomScene {
             || this.playerCoordinatesHaveChanged(penguin)
     }
 
-    errorHandling(penguin) {
-        if (this.randomId === undefined) return false 
-        else if (this.miningError == 2) return true
-        else if (this.miningError == 1 && (this.x != penguin.x || this.y != penguin.y)) return true
-        else if (this.x != penguin.x || this.y != penguin.y){console.info(this.x, this.y, penguin.x, penguin.y); return true}
-        return false
-    }
-
     coinsAmount() {
         let prob = Math.random();
         if (prob >= .975) return 100
