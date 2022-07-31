@@ -89,7 +89,7 @@ if (localStorage.clientMode == "legacy") {
         },
         321: {
             key: 'DojoExt',
-            scene: require('@rooms/old/dojoext/Dojoext').default,
+            scene: require('@rooms/old/dojoext/DojoExt').default,
             x: 780,
             y: 790
         },
@@ -253,7 +253,7 @@ if (localStorage.clientMode == "legacy") {
         },
         927: {
             key: 'PuffleRescue',
-            scene: require('@games/pufflerescue/puffleRescue').default
+            scene: require('@games/pufflerescue/PuffleRescue').default
         },
         909: {
             key: 'ThinIce',
@@ -261,11 +261,11 @@ if (localStorage.clientMode == "legacy") {
         },
         908: {
             key: 'BeanCounters',
-            scene: require('@games/beanCounters/BeanCounters').default
+            scene: require('@games/beanCounters/beanCounters').default
         },
         911: {
             key: 'YumYuck',
-            scene: require('@games/yumYuck/YumYuck').default
+            scene: require('@games/yumYuck/yumYuck').default
         },
         928: {
             key: 'PuffleLaunch',
@@ -378,7 +378,7 @@ if (localStorage.clientMode == "vanilla") {
         },
         321: {
             key: 'DojoExt',
-            scene: require('@rooms/new/dojoext/Dojoext').default,
+            scene: require('@rooms/new/dojoext/DojoExt').default,
             x: 780,
             y: 790
         },
