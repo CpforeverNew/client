@@ -1,0 +1,30 @@
+name: Build Client
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Fetch Assets
+      uses: actions/checkout@v3
+      with:
+        repository: 'CpforeverNew/assets'
+        ssh-key: ${{ secrets.ASSETS_DEPLOY_KEY }}
+        path: './assets'
+
+    - name: Use Node.js latest
+      uses: actions/setup-node@v3
+      with:
+        node-version: latest
+
+    - name: Build
+      run: |
+        npm install
+        npm run build-crumbs
+        npm run build
+    
