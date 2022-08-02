@@ -176,6 +176,9 @@ export default class Forts extends RoomScene {
 
         super.create();
 
+        this.bounds = this.hitbox.getBounds()
+        this.tower.on('animationcomplete', () => this.onTowerAnimComplete())
+
         this.blue_flag.play('blueflag')
         this.red_flag.play('redflag')
 
