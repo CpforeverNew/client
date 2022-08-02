@@ -77,6 +77,10 @@ export default class Main extends BaseScene {
         this.help_button;
         /** @type {Phaser.GameObjects.Image} */
         this.help_icon;
+        /** @type {Phaser.GameObjects.Image} */
+        this.chat_button;
+        /** @type {Phaser.GameObjects.Image} */
+        this.chat_icon;
         /** @type {Phaser.GameObjects.Container} */
         this.onlinePopup;
         /** @type {Phaser.GameObjects.Image} */
@@ -129,10 +133,6 @@ export default class Main extends BaseScene {
         this.waddle;
         /** @type {FindFour} */
         this.findFour;
-        /** @type {Phaser.GameObjects.Image} */
-        this.chat_button;
-        /** @type {Phaser.GameObjects.Image} */
-        this.chat_icon;
         /** @type {Phaser.GameObjects.Container} */
         this.stampEarned;
         /** @type {Phaser.GameObjects.Image} */
@@ -231,6 +231,12 @@ export default class Main extends BaseScene {
 
         // help_icon
         const help_icon = this.add.image(1266, 929, "main", "help-icon");
+
+        // chat_button
+        const chat_button = this.add.image(486, 930, "main", "blue-button");
+
+        // chat_icon
+        const chat_icon = this.add.image(486, 929, "main", "chat-icon");
 
         // onlinePopup
         const onlinePopup = this.add.container(1155, 858);
@@ -347,12 +353,6 @@ export default class Main extends BaseScene {
         this.add.existing(findFour);
         findFour.visible = false;
 
-        // chat_button
-        const chat_button = this.add.image(486, 930, "main", "blue-button");
-
-        // chat_icon
-        const chat_icon = this.add.image(486, 929, "main", "chat-icon");
-
         // stampEarned
         const stampEarned = this.add.container(933, -150);
 
@@ -467,6 +467,13 @@ export default class Main extends BaseScene {
         const help_buttonShowHint = new ShowHint(help_button);
         help_buttonShowHint.text = "Edit Account";
 
+        // chat_button (components)
+        const chat_buttonButton = new Button(chat_button);
+        chat_buttonButton.spriteName = "blue-button";
+        chat_buttonButton.callback = () => this.safe.visible = true;
+        const chat_buttonShowHint = new ShowHint(chat_button);
+        chat_buttonShowHint.text = "Messages";
+
         // crosshair (components)
         const crosshairSimpleButton = new SimpleButton(crosshair);
         crosshairSimpleButton.callback = () => this.onCrosshairClick();
@@ -501,13 +508,6 @@ export default class Main extends BaseScene {
         mod_buttonSimpleButton.hoverOutCallback = () => this.onModOut();
         mod_buttonSimpleButton.callback = () => this.onModClick();
 
-        // chat_button (components)
-        const chat_buttonButton = new Button(chat_button);
-        chat_buttonButton.spriteName = "blue-button";
-        chat_buttonButton.callback = () => this.safe.visible = true;
-        const chat_buttonShowHint = new ShowHint(chat_button);
-        chat_buttonShowHint.text = "Messages";
-
         this.pinContainer = pinContainer;
         this.dock = dock;
         this.chat_box = chat_box;
@@ -529,6 +529,8 @@ export default class Main extends BaseScene {
         this.igloo_icon = igloo_icon;
         this.help_button = help_button;
         this.help_icon = help_icon;
+        this.chat_button = chat_button;
+        this.chat_icon = chat_icon;
         this.onlinePopup = onlinePopup;
         this.popup = popup;
         this.popupText = popupText;
@@ -555,8 +557,6 @@ export default class Main extends BaseScene {
         this.safe = safe;
         this.waddle = waddle;
         this.findFour = findFour;
-        this.chat_button = chat_button;
-        this.chat_icon = chat_icon;
         this.stampEarned = stampEarned;
         this.stampEarnedBg = stampEarnedBg;
         this.stampEarnedImage = stampEarnedImage;

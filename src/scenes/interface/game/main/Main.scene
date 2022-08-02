@@ -366,6 +366,38 @@
             "y": 929
         },
         {
+            "type": "Image",
+            "id": "1336b11c-fc2a-4b8c-8db0-9b3244d95b57",
+            "label": "chat_button",
+            "scope": "CLASS",
+            "components": [
+                "Button",
+                "ShowHint"
+            ],
+            "Button.spriteName": "blue-button",
+            "Button.callback": "() => this.safe.visible = true",
+            "ShowHint.text": "Messages",
+            "texture": {
+                "key": "main",
+                "frame": "blue-button"
+            },
+            "x": 486,
+            "y": 930
+        },
+        {
+            "type": "Image",
+            "id": "980ed16f-2969-4e44-ad27-f3f28486ae8f",
+            "label": "chat_icon",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "main",
+                "frame": "chat-icon"
+            },
+            "x": 486,
+            "y": 929
+        },
+        {
             "type": "Container",
             "id": "fcd23835-76eb-4b24-bcc1-920fa5429d8f",
             "label": "onlinePopup",
@@ -762,38 +794,6 @@
             "y": 472,
             "visible": false,
             "nestedPrefabs": []
-        },
-        {
-            "type": "Image",
-            "id": "1336b11c-fc2a-4b8c-8db0-9b3244d95b57",
-            "label": "chat_button",
-            "scope": "CLASS",
-            "components": [
-                "Button",
-                "ShowHint"
-            ],
-            "Button.spriteName": "blue-button",
-            "Button.callback": "() => this.safe.visible = true",
-            "ShowHint.text": "Messages",
-            "texture": {
-                "key": "main",
-                "frame": "blue-button"
-            },
-            "x": 486,
-            "y": 930
-        },
-        {
-            "type": "Image",
-            "id": "980ed16f-2969-4e44-ad27-f3f28486ae8f",
-            "label": "chat_icon",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "main",
-                "frame": "chat-icon"
-            },
-            "x": 486,
-            "y": 929
         },
         {
             "type": "Container",
