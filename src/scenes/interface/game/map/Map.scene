@@ -28,6 +28,7 @@
                     "components": [
                         "Interactive"
                     ],
+                    "scaleY": 1.2143341261502665,
                     "isFilled": true,
                     "fillColor": "#000000",
                     "fillAlpha": 0.2,

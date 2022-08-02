@@ -18,6 +18,7 @@ export default class Map extends BaseContainer {
 
         // block
         const block = scene.add.rectangle(0, 0, 1520, 960);
+        block.scaleY = 1.2143341261502665;
         block.isFilled = true;
         block.fillColor = 0;
         block.fillAlpha = 0.2;
