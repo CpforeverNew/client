@@ -35,1557 +35,1069 @@ export default class ClothingCatalog extends Book {
         this.load.pack("catalogs-master-pack", "assets/media/interface/catalogs/catalogs-master-pack.json");
         this.load.pack("jul22-pack", "assets/media/interface/catalogs/clothing/july22/jul22-pack.json");
         this.load.pack("may22-clothing", "assets/media/interface/catalogs/clothing/may22-clothing.json");
+        this.load.pack("aug22-pack", "assets/media/interface/catalogs/clothing/aug22/aug22-pack.json");
     }
 
     /** @returns {void} */
     _create() {
 
         // block
-        const block = this.add.rectangle(760, 480, 1520, 960);
+        const block = this.add.rectangle(760, 484, 1520, 960);
         block.isFilled = true;
         block.fillColor = 0;
         block.fillAlpha = 0.2;
 
-        // page16
-        const page16 = this.add.container(-1, 0);
-        page16.visible = false;
-
-        // page16_done
-        const page16_done = this.add.image(765, 432, "jul22", "page16_done");
-        page16.add(page16_done);
-
-        // close_left_16
-        const close_left_16 = this.add.image(486, 38, "clothingcatalog", "close_left");
-        close_left_16.setOrigin(0, 0);
-        page16.add(close_left_16);
-
-        // page_left_16
-        const page_left_16 = this.add.image(485, 588, "clothingcatalog", "page_left");
-        page_left_16.setOrigin(0, 0);
-        page16.add(page_left_16);
-
         // page15
-        const page15 = this.add.container(763, 463);
-        page15.scaleX = 0.94175026927846;
-        page15.scaleY = 0.94175026927846;
+        const page15 = this.add.container(0, 6);
         page15.visible = false;
 
-        // page12_bg
-        const page12_bg = this.add.image(0, 0, "june22clothing", "page12");
-        page15.add(page12_bg);
+        // p16
+        const p16 = this.add.image(0, -77, "aug-22", "page/page0015.png");
+        p16.setOrigin(0, 0);
+        page15.add(p16);
 
-        // flag_button_7187
-        const flag_button_7187 = this.add.ellipse(-384, -229, 75, 75);
-        flag_button_7187.fillColor = 50917;
-        flag_button_7187.fillAlpha = 0.5;
-        page15.add(flag_button_7187);
+        // pageLeft_1
+        const pageLeft_1 = this.add.image(492, 590, "clothingcatalog", "page_left");
+        pageLeft_1.setOrigin(0, 0);
+        page15.add(pageLeft_1);
 
-        // flag_button_7186
-        const flag_button_7186 = this.add.ellipse(-483, -230, 75, 75);
-        flag_button_7186.fillColor = 50917;
-        flag_button_7186.fillAlpha = 0.5;
-        page15.add(flag_button_7186);
-
-        // flag_button_7188
-        const flag_button_7188 = this.add.ellipse(-273, -227, 75, 75);
-        flag_button_7188.fillColor = 50917;
-        flag_button_7188.fillAlpha = 0.5;
-        page15.add(flag_button_7188);
-
-        // flag_button_7189
-        const flag_button_7189 = this.add.ellipse(-166, -229, 75, 75);
-        flag_button_7189.fillColor = 50917;
-        flag_button_7189.fillAlpha = 0.5;
-        page15.add(flag_button_7189);
-
-        // flag_button_7185
-        const flag_button_7185 = this.add.ellipse(-538, -144, 75, 75);
-        flag_button_7185.fillColor = 50917;
-        flag_button_7185.fillAlpha = 0.5;
-        page15.add(flag_button_7185);
-
-        // flag_button_7184
-        const flag_button_7184 = this.add.ellipse(-427, -135, 75, 75);
-        flag_button_7184.fillColor = 50917;
-        flag_button_7184.fillAlpha = 0.5;
-        page15.add(flag_button_7184);
-
-        // flag_button_7183
-        const flag_button_7183 = this.add.ellipse(-318, -139, 75, 75);
-        flag_button_7183.fillColor = 50917;
-        flag_button_7183.fillAlpha = 0.5;
-        page15.add(flag_button_7183);
-
-        // flag_button_7182
-        const flag_button_7182 = this.add.ellipse(-223, -140, 75, 75);
-        flag_button_7182.fillColor = 50917;
-        flag_button_7182.fillAlpha = 0.5;
-        page15.add(flag_button_7182);
-
-        // flag_button_7148
-        const flag_button_7148 = this.add.ellipse(-106, -139, 75, 75);
-        flag_button_7148.fillColor = 50917;
-        flag_button_7148.fillAlpha = 0.5;
-        page15.add(flag_button_7148);
-
-        // flag_button_514
-        const flag_button_514 = this.add.ellipse(-544, -43, 75, 75);
-        flag_button_514.fillColor = 50917;
-        flag_button_514.fillAlpha = 0.5;
-        page15.add(flag_button_514);
-
-        // flag_button_533
-        const flag_button_533 = this.add.ellipse(-427, -41, 75, 75);
-        flag_button_533.fillColor = 50917;
-        flag_button_533.fillAlpha = 0.5;
-        page15.add(flag_button_533);
-
-        // flag_button_502
-        const flag_button_502 = this.add.ellipse(-322, -47, 75, 75);
-        flag_button_502.fillColor = 50917;
-        flag_button_502.fillAlpha = 0.5;
-        page15.add(flag_button_502);
-
-        // flag_button_7096
-        const flag_button_7096 = this.add.ellipse(-219, -45, 75, 75);
-        flag_button_7096.fillColor = 50917;
-        flag_button_7096.fillAlpha = 0.5;
-        page15.add(flag_button_7096);
-
-        // flag_button_504
-        const flag_button_504 = this.add.ellipse(-110, -41, 75, 75);
-        flag_button_504.fillColor = 50917;
-        flag_button_504.fillAlpha = 0.5;
-        page15.add(flag_button_504);
-
-        // flag_button_538
-        const flag_button_538 = this.add.ellipse(-534, 51, 75, 75);
-        flag_button_538.fillColor = 50917;
-        flag_button_538.fillAlpha = 0.5;
-        page15.add(flag_button_538);
-
-        // flag_button_529
-        const flag_button_529 = this.add.ellipse(-427, 47, 75, 75);
-        flag_button_529.fillColor = 50917;
-        flag_button_529.fillAlpha = 0.5;
-        page15.add(flag_button_529);
-
-        // flag_button_505
-        const flag_button_505 = this.add.ellipse(-324, 49, 75, 75);
-        flag_button_505.fillColor = 50917;
-        flag_button_505.fillAlpha = 0.5;
-        page15.add(flag_button_505);
-
-        // flag_button_500
-        const flag_button_500 = this.add.ellipse(-221, 47, 75, 75);
-        flag_button_500.fillColor = 50917;
-        flag_button_500.fillAlpha = 0.5;
-        page15.add(flag_button_500);
-
-        // flag_button_535
-        const flag_button_535 = this.add.ellipse(-110, 49, 75, 75);
-        flag_button_535.fillColor = 50917;
-        flag_button_535.fillAlpha = 0.5;
-        page15.add(flag_button_535);
-
-        // flag_button_525
-        const flag_button_525 = this.add.ellipse(-538, 144, 75, 75);
-        flag_button_525.fillColor = 50917;
-        flag_button_525.fillAlpha = 0.5;
-        page15.add(flag_button_525);
-
-        // flag_button_506
-        const flag_button_506 = this.add.ellipse(-428, 142, 75, 75);
-        flag_button_506.fillColor = 50917;
-        flag_button_506.fillAlpha = 0.5;
-        page15.add(flag_button_506);
-
-        // flag_button_536
-        const flag_button_536 = this.add.ellipse(-325, 144, 75, 75);
-        flag_button_536.fillColor = 50917;
-        flag_button_536.fillAlpha = 0.5;
-        page15.add(flag_button_536);
-
-        // flag_button_540
-        const flag_button_540 = this.add.ellipse(-221, 144, 75, 75);
-        flag_button_540.fillColor = 50917;
-        flag_button_540.fillAlpha = 0.5;
-        page15.add(flag_button_540);
-
-        // flag_button_507
-        const flag_button_507 = this.add.ellipse(-109, 144, 75, 75);
-        flag_button_507.fillColor = 50917;
-        flag_button_507.fillAlpha = 0.5;
-        page15.add(flag_button_507);
-
-        // flag_button_542
-        const flag_button_542 = this.add.ellipse(-544, 240, 75, 75);
-        flag_button_542.fillColor = 50917;
-        flag_button_542.fillAlpha = 0.5;
-        page15.add(flag_button_542);
-
-        // flag_button_546
-        const flag_button_546 = this.add.ellipse(-431, 236, 75, 75);
-        flag_button_546.fillColor = 50917;
-        flag_button_546.fillAlpha = 0.5;
-        page15.add(flag_button_546);
-
-        // flag_button_548
-        const flag_button_548 = this.add.ellipse(-321, 236, 75, 75);
-        flag_button_548.fillColor = 50917;
-        flag_button_548.fillAlpha = 0.5;
-        page15.add(flag_button_548);
-
-        // flag_button_530
-        const flag_button_530 = this.add.ellipse(-219, 240, 75, 75);
-        flag_button_530.fillColor = 50917;
-        flag_button_530.fillAlpha = 0.5;
-        page15.add(flag_button_530);
-
-        // flag_button_508
-        const flag_button_508 = this.add.ellipse(-111, 239, 75, 75);
-        flag_button_508.fillColor = 50917;
-        flag_button_508.fillAlpha = 0.5;
-        page15.add(flag_button_508);
-
-        // flag_button_541
-        const flag_button_541 = this.add.ellipse(408.9185791015625, -230.4365997314453, 75, 75);
-        flag_button_541.fillColor = 50917;
-        flag_button_541.fillAlpha = 0.5;
-        page15.add(flag_button_541);
-
-        // flag_button_519
-        const flag_button_519 = this.add.ellipse(508.3985595703125, -227.6732635498047, 75, 75);
-        flag_button_519.fillColor = 50917;
-        flag_button_519.fillAlpha = 0.5;
-        page15.add(flag_button_519);
-
-        // flag_button_545
-        const flag_button_545 = this.add.ellipse(103, -109, 75, 75);
-        flag_button_545.fillColor = 50917;
-        flag_button_545.fillAlpha = 0.5;
-        page15.add(flag_button_545);
-
-        // flag_button_531
-        const flag_button_531 = this.add.ellipse(199, -112, 75, 75);
-        flag_button_531.fillColor = 50917;
-        flag_button_531.fillAlpha = 0.5;
-        page15.add(flag_button_531);
-
-        // flag_button_527
-        const flag_button_527 = this.add.ellipse(308, -112, 75, 75);
-        flag_button_527.fillColor = 50917;
-        flag_button_527.fillAlpha = 0.5;
-        page15.add(flag_button_527);
-
-        // flag_button_524
-        const flag_button_524 = this.add.ellipse(410, -114, 75, 75);
-        flag_button_524.fillColor = 50917;
-        flag_button_524.fillAlpha = 0.5;
-        page15.add(flag_button_524);
-
-        // flag_button_501
-        const flag_button_501 = this.add.ellipse(507, -112, 75, 75);
-        flag_button_501.fillColor = 50917;
-        flag_button_501.fillAlpha = 0.5;
-        page15.add(flag_button_501);
-
-        // flag_button_511
-        const flag_button_511 = this.add.ellipse(102, 9, 75, 75);
-        flag_button_511.fillColor = 50917;
-        flag_button_511.fillAlpha = 0.5;
-        page15.add(flag_button_511);
-
-        // flag_button_528
-        const flag_button_528 = this.add.ellipse(206, 7, 75, 75);
-        flag_button_528.fillColor = 50917;
-        flag_button_528.fillAlpha = 0.5;
-        page15.add(flag_button_528);
-
-        // flag_button_534
-        const flag_button_534 = this.add.ellipse(305, 9, 75, 75);
-        flag_button_534.fillColor = 50917;
-        flag_button_534.fillAlpha = 0.5;
-        page15.add(flag_button_534);
-
-        // flag_button_512
-        const flag_button_512 = this.add.ellipse(404, 8, 75, 75);
-        flag_button_512.fillColor = 50917;
-        flag_button_512.fillAlpha = 0.5;
-        page15.add(flag_button_512);
-
-        // flag_button_520
-        const flag_button_520 = this.add.ellipse(511, 9, 75, 75);
-        flag_button_520.fillColor = 50917;
-        flag_button_520.fillAlpha = 0.5;
-        page15.add(flag_button_520);
-
-        // flag_button_513
-        const flag_button_513 = this.add.ellipse(102, 130, 75, 75);
-        flag_button_513.fillColor = 50917;
-        flag_button_513.fillAlpha = 0.5;
-        page15.add(flag_button_513);
-
-        // flag_button_7095
-        const flag_button_7095 = this.add.ellipse(200, 130, 75, 75);
-        flag_button_7095.fillColor = 50917;
-        flag_button_7095.fillAlpha = 0.5;
-        page15.add(flag_button_7095);
-
-        // flag_button_543
-        const flag_button_543 = this.add.ellipse(307, 131, 75, 75);
-        flag_button_543.fillColor = 50917;
-        flag_button_543.fillAlpha = 0.5;
-        page15.add(flag_button_543);
-
-        // flag_button_522
-        const flag_button_522 = this.add.ellipse(405, 128, 75, 75);
-        flag_button_522.fillColor = 50917;
-        flag_button_522.fillAlpha = 0.5;
-        page15.add(flag_button_522);
-
-        // flag_button_547
-        const flag_button_547 = this.add.ellipse(508, 135, 75, 75);
-        flag_button_547.fillColor = 50917;
-        flag_button_547.fillAlpha = 0.5;
-        page15.add(flag_button_547);
-
-        // flag_button_537
-        const flag_button_537 = this.add.ellipse(98, 251, 75, 75);
-        flag_button_537.fillColor = 50917;
-        flag_button_537.fillAlpha = 0.5;
-        page15.add(flag_button_537);
-
-        // flag_button_517
-        const flag_button_517 = this.add.ellipse(203, 248, 75, 75);
-        flag_button_517.fillColor = 50917;
-        flag_button_517.fillAlpha = 0.5;
-        page15.add(flag_button_517);
-
-        // flag_button_526
-        const flag_button_526 = this.add.ellipse(303, 250, 75, 75);
-        flag_button_526.fillColor = 50917;
-        flag_button_526.fillAlpha = 0.5;
-        page15.add(flag_button_526);
-
-        // flag_button_518
-        const flag_button_518 = this.add.ellipse(407, 250, 75, 75);
-        flag_button_518.fillColor = 50917;
-        flag_button_518.fillAlpha = 0.5;
-        page15.add(flag_button_518);
-
-        // flag_button_539
-        const flag_button_539 = this.add.ellipse(506, 252, 75, 75);
-        flag_button_539.fillColor = 50917;
-        flag_button_539.fillAlpha = 0.5;
-        page15.add(flag_button_539);
-
-        // flag_button_523
-        const flag_button_523 = this.add.ellipse(103, -344, 75, 75);
-        flag_button_523.fillColor = 50917;
-        flag_button_523.fillAlpha = 0.5;
-        page15.add(flag_button_523);
-
-        // flag_button_503
-        const flag_button_503 = this.add.ellipse(306, -229, 75, 75);
-        flag_button_503.fillColor = 50917;
-        flag_button_503.fillAlpha = 0.5;
-        page15.add(flag_button_503);
-
-        // flag_button_510
-        const flag_button_510 = this.add.ellipse(202, -229, 75, 75);
-        flag_button_510.fillColor = 50917;
-        flag_button_510.fillAlpha = 0.5;
-        page15.add(flag_button_510);
-
-        // flag_button_509
-        const flag_button_509 = this.add.ellipse(100, -231, 75, 75);
-        flag_button_509.fillColor = 50917;
-        flag_button_509.fillAlpha = 0.5;
-        page15.add(flag_button_509);
-
-        // flag_button_521
-        const flag_button_521 = this.add.ellipse(513, -341, 75, 75);
-        flag_button_521.fillColor = 50917;
-        flag_button_521.fillAlpha = 0.5;
-        page15.add(flag_button_521);
-
-        // flag_button_516
-        const flag_button_516 = this.add.ellipse(405, -348, 75, 75);
-        flag_button_516.fillColor = 50917;
-        flag_button_516.fillAlpha = 0.5;
-        page15.add(flag_button_516);
-
-        // flag_button_544
-        const flag_button_544 = this.add.ellipse(304, -343, 75, 75);
-        flag_button_544.fillColor = 50917;
-        flag_button_544.fillAlpha = 0.5;
-        page15.add(flag_button_544);
-
-        // flag_button_515
-        const flag_button_515 = this.add.ellipse(201, -344, 75, 75);
-        flag_button_515.fillColor = 50917;
-        flag_button_515.fillAlpha = 0.5;
-        page15.add(flag_button_515);
-
-        // page_left_15_1
-        const page_left_15_1 = this.add.image(-625, 123, "clothingcatalog", "page_left");
-        page_left_15_1.setOrigin(0, 0);
-        page15.add(page_left_15_1);
-
-        // close_right_15_1
-        const close_right_15_1 = this.add.image(491, -424, "clothingcatalog", "close_right");
-        close_right_15_1.setOrigin(0, 0);
-        page15.add(close_right_15_1);
-
-        // page_right_15_1
-        const page_right_15_1 = this.add.image(491, 126, "clothingcatalog", "page_right");
-        page_right_15_1.setOrigin(0, 0);
-        page15.add(page_right_15_1);
-
-        // close_left_15_1
-        const close_left_15_1 = this.add.image(-625, -424, "clothingcatalog", "close_left");
-        close_left_15_1.setOrigin(0, 0);
-        page15.add(close_left_15_1);
+        // closeLeft
+        const closeLeft = this.add.image(491, 39, "clothingcatalog", "close_left");
+        closeLeft.setOrigin(0, 0);
+        page15.add(closeLeft);
 
         // page14
-        const page14 = this.add.container(-1, 0);
+        const page14 = this.add.container(0, -3);
         page14.visible = false;
 
-        // page14_done
-        const page14_done = this.add.image(765, 432, "jul22", "page14_done");
-        page14.add(page14_done);
+        // p15
+        const p15 = this.add.image(0, 0, "clothingcatalog", "page/page0015");
+        p15.setOrigin(0, 0);
+        page14.add(p15);
 
-        // close_left_15
-        const close_left_15 = this.add.image(195, 38, "clothingcatalog", "close_left");
-        close_left_15.setOrigin(0, 0);
-        page14.add(close_left_15);
+        // us
+        const us = new FlagButton(this, 1231, 685);
+        page14.add(us);
 
-        // bg_holder_1_1b
-        const bg_holder_1_1b = this.add.image(337, 619, "jul22", "bg_holder");
-        page14.add(bg_holder_1_1b);
+        // turkey
+        const turkey = new FlagButton(this, 1112, 685);
+        page14.add(turkey);
 
-        // bg_2_1b
-        const bg_2_1b = this.add.image(338, 619, "jul22", "bg_7");
-        page14.add(bg_2_1b);
+        // switzerland
+        const switzerland = new FlagButton(this, 987, 685);
+        page14.add(switzerland);
 
-        // shadow_bg_1_1b
-        const shadow_bg_1_1b = this.add.image(337, 626, "jul22", "shadow_bg");
-        page14.add(shadow_bg_1_1b);
+        // sweden
+        const sweden = new FlagButton(this, 872, 685);
+        page14.add(sweden);
 
-        // bg_holder_1_1_1_1
-        const bg_holder_1_1_1_1 = this.add.image(1193, 619, "jul22", "bg_holder");
-        page14.add(bg_holder_1_1_1_1);
+        // spain
+        const spain = new FlagButton(this, 1231, 547);
+        page14.add(spain);
 
-        // bg_2_1_1_1
-        const bg_2_1_1_1 = this.add.image(1194, 619, "jul22", "bg_12");
-        page14.add(bg_2_1_1_1);
+        // sa
+        const sa = new FlagButton(this, 1112, 547);
+        page14.add(sa);
 
-        // shadow_bg_1_1_1_1
-        const shadow_bg_1_1_1_1 = this.add.image(1193, 626, "jul22", "shadow_bg");
-        page14.add(shadow_bg_1_1_1_1);
+        // russia
+        const russia = new FlagButton(this, 987, 547);
+        page14.add(russia);
 
-        // page_right_15
-        const page_right_15 = this.add.image(1207, 587, "clothingcatalog", "page_right");
-        page_right_15.setOrigin(0, 0);
-        page14.add(page_right_15);
+        // portugal
+        const portugal = new FlagButton(this, 872, 547);
+        page14.add(portugal);
 
-        // close_right_15
-        const close_right_15 = this.add.image(1206, 38, "clothingcatalog", "close_right");
-        close_right_15.setOrigin(0, 0);
-        page14.add(close_right_15);
+        // poland
+        const poland = new FlagButton(this, 1231, 408);
+        page14.add(poland);
 
-        // page_left_15
-        const page_left_15 = this.add.image(193, 586, "clothingcatalog", "page_left");
-        page_left_15.setOrigin(0, 0);
-        page14.add(page_left_15);
+        // norway
+        const norway = new FlagButton(this, 1112, 408);
+        page14.add(norway);
 
-        // coin_1_1_1_1_2_1_1_1_1_1_1_1_1_1b
-        const coin_1_1_1_1_2_1_1_1_1_1_1_1_1_1b = this.add.image(1040, 148, "jul22", "coin");
-        page14.add(coin_1_1_1_1_2_1_1_1_1_1_1_1_1_1b);
+        // nz
+        const nz = new FlagButton(this, 991, 408);
+        page14.add(nz);
 
-        // bg_holderb
-        const bg_holderb = this.add.image(337, 359, "jul22", "bg_holder");
-        page14.add(bg_holderb);
+        // netherlands
+        const netherlands = new FlagButton(this, 872, 408);
+        page14.add(netherlands);
 
-        // bg_1b
-        const bg_1b = this.add.image(338, 359, "jul22", "bg_5");
-        page14.add(bg_1b);
+        // mexico
+        const mexico = new FlagButton(this, 1230, 270);
+        page14.add(mexico);
 
-        // shadow_bgb
-        const shadow_bgb = this.add.image(337, 366, "jul22", "shadow_bg");
-        page14.add(shadow_bgb);
+        // korea
+        const korea = new FlagButton(this, 1113, 271);
+        page14.add(korea);
 
-        // bg_holder_1b
-        const bg_holder_1b = this.add.image(603, 359, "jul22", "bg_holder");
-        page14.add(bg_holder_1b);
+        // japan
+        const japan = new FlagButton(this, 988, 271);
+        page14.add(japan);
 
-        // bg_2b
-        const bg_2b = this.add.image(604, 359, "jul22", "bg_6");
-        page14.add(bg_2b);
+        // jamaica
+        const jamaica = new FlagButton(this, 871, 270);
+        page14.add(jamaica);
 
-        // shadow_bg_1b
-        const shadow_bg_1b = this.add.image(603, 366, "jul22", "shadow_bg");
-        page14.add(shadow_bg_1b);
+        // italy
+        const italy = new FlagButton(this, 1230, 129);
+        page14.add(italy);
 
-        // bg_holder_1_1_1b
-        const bg_holder_1_1_1b = this.add.image(603, 619, "jul22", "bg_holder");
-        page14.add(bg_holder_1_1_1b);
+        // israel
+        const israel = new FlagButton(this, 1113, 129);
+        page14.add(israel);
 
-        // bg_2_1_1b
-        const bg_2_1_1b = this.add.image(604, 619, "jul22", "bg_8");
-        page14.add(bg_2_1_1b);
+        // ireland
+        const ireland = new FlagButton(this, 986, 129);
+        page14.add(ireland);
 
-        // shadow_bg_1_1_1b
-        const shadow_bg_1_1_1b = this.add.image(603, 626, "jul22", "shadow_bg");
-        page14.add(shadow_bg_1_1_1b);
+        // india
+        const india = new FlagButton(this, 871, 129);
+        page14.add(india);
 
-        // bg_holder_1_1_2
-        const bg_holder_1_1_2 = this.add.image(927, 619, "jul22", "bg_holder");
-        page14.add(bg_holder_1_1_2);
+        // hungary
+        const hungary = new FlagButton(this, 657, 676);
+        page14.add(hungary);
 
-        // bg_2_1_2
-        const bg_2_1_2 = this.add.image(928, 619, "jul22", "bg_11");
-        page14.add(bg_2_1_2);
+        // uk
+        const uk = new FlagButton(this, 536, 677);
+        page14.add(uk);
 
-        // shadow_bg_1_1_2
-        const shadow_bg_1_1_2 = this.add.image(927, 626, "jul22", "shadow_bg");
-        page14.add(shadow_bg_1_1_2);
+        // germany
+        const germany = new FlagButton(this, 417, 677);
+        page14.add(germany);
 
-        // bg_holder_1_2
-        const bg_holder_1_2 = this.add.image(1193, 359, "jul22", "bg_holder");
-        page14.add(bg_holder_1_2);
+        // france
+        const france = new FlagButton(this, 295, 676);
+        page14.add(france);
 
-        // bg_2_2
-        const bg_2_2 = this.add.image(1194, 359, "jul22", "bg_10");
-        page14.add(bg_2_2);
+        // finland
+        const finland = new FlagButton(this, 652, 517);
+        page14.add(finland);
 
-        // shadow_bg_1_2
-        const shadow_bg_1_2 = this.add.image(1193, 366, "jul22", "shadow_bg");
-        page14.add(shadow_bg_1_2);
+        // egypt
+        const egypt = new FlagButton(this, 532, 517);
+        page14.add(egypt);
 
-        // bg_holder_2
-        const bg_holder_2 = this.add.image(927, 359, "jul22", "bg_holder");
-        page14.add(bg_holder_2);
+        // denmark
+        const denmark = new FlagButton(this, 413, 517);
+        page14.add(denmark);
 
-        // bg_1_1
-        const bg_1_1 = this.add.image(928, 359, "jul22", "bg_9");
-        page14.add(bg_1_1);
+        // colombia
+        const colombia = new FlagButton(this, 294, 518);
+        page14.add(colombia);
 
-        // shadow_bg_2
-        const shadow_bg_2 = this.add.image(927, 366, "jul22", "shadow_bg");
-        page14.add(shadow_bg_2);
+        // china
+        const china = new FlagButton(this, 656, 366);
+        page14.add(china);
+
+        // chile
+        const chile = new FlagButton(this, 537, 364);
+        page14.add(chile);
+
+        // canada
+        const canada = new FlagButton(this, 416, 364);
+        page14.add(canada);
+
+        // brazil
+        const brazil = new FlagButton(this, 295, 365);
+        page14.add(brazil);
+
+        // belize
+        const belize = new FlagButton(this, 656, 210);
+        page14.add(belize);
+
+        // belgium
+        const belgium = new FlagButton(this, 535, 210);
+        page14.add(belgium);
+
+        // australia
+        const australia = new FlagButton(this, 418, 211);
+        page14.add(australia);
+
+        // argentina
+        const argentina = new FlagButton(this, 295, 210);
+        page14.add(argentina);
 
         // page13
-        const page13 = this.add.container(-1, 0);
+        const page13 = this.add.container(0, -6);
         page13.visible = false;
 
-        // page13_done
-        const page13_done = this.add.image(765, 432, "jul22", "page13_done");
-        page13.add(page13_done);
+        // p13
+        const p13 = this.add.image(0, -77, "aug-22", "page/page0013.png");
+        p13.setOrigin(0, 0);
+        page13.add(p13);
 
-        // close_left_14
-        const close_left_14 = this.add.image(195, 38, "clothingcatalog", "close_left");
-        close_left_14.setOrigin(0, 0);
-        page13.add(close_left_14);
+        // photoButton8
+        const photoButton8 = new PhotoButton(this, 608, 639);
+        page13.add(photoButton8);
 
-        // bg_holder_1_1_1
-        const bg_holder_1_1_1 = this.add.image(1193, 619, "jul22", "bg_holder");
-        page13.add(bg_holder_1_1_1);
+        // photoButton5
+        const photoButton5 = new PhotoButton(this, 348, 379);
+        page13.add(photoButton5);
 
-        // bg_2_1_1
-        const bg_2_1_1 = this.add.image(1194, 619, "jul22", "bg_4");
-        page13.add(bg_2_1_1);
+        // photoButton6
+        const photoButton6 = new PhotoButton(this, 608, 379);
+        page13.add(photoButton6);
 
-        // shadow_bg_1_1_1
-        const shadow_bg_1_1_1 = this.add.image(1193, 626, "jul22", "shadow_bg");
-        page13.add(shadow_bg_1_1_1);
+        // photoButton7
+        const photoButton7 = new PhotoButton(this, 348, 639);
+        page13.add(photoButton7);
 
-        // page_right_14
-        const page_right_14 = this.add.image(1207, 587, "clothingcatalog", "page_right");
-        page_right_14.setOrigin(0, 0);
-        page13.add(page_right_14);
+        // photo5
+        const photo5 = this.add.image(348, 379, "aug-22", "photo/5.png");
+        photo5.scaleX = 0.5;
+        photo5.scaleY = 0.5;
+        page13.add(photo5);
 
-        // close_right_14
-        const close_right_14 = this.add.image(1206, 38, "clothingcatalog", "close_right");
-        close_right_14.setOrigin(0, 0);
-        page13.add(close_right_14);
+        // photo6
+        const photo6 = this.add.image(611, 379, "aug-22", "photo/6.png");
+        photo6.scaleX = 0.43;
+        photo6.scaleY = 0.43;
+        page13.add(photo6);
 
-        // page_left_14
-        const page_left_14 = this.add.image(193, 586, "clothingcatalog", "page_left");
-        page_left_14.setOrigin(0, 0);
-        page13.add(page_left_14);
+        // photo7
+        const photo7 = this.add.image(348, 639, "aug-22", "photo/7.png");
+        photo7.scaleX = 0.5;
+        photo7.scaleY = 0.5;
+        page13.add(photo7);
 
-        // small_buy0001_png_1_2_2_2_2_1_1_1_2_1_1
-        const small_buy0001_png_1_2_2_2_2_1_1_1_2_1_1 = this.add.image(610, 659, "Sep2005", "small-buy0001.png");
-        page13.add(small_buy0001_png_1_2_2_2_2_1_1_1_2_1_1);
+        // photo8
+        const photo8 = this.add.image(608, 644, "aug-22", "photo/8.png");
+        photo8.scaleX = 0.5;
+        photo8.scaleY = 0.5;
+        page13.add(photo8);
 
-        // small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1_1_1
-        const small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1_1_1 = this.add.image(587, 123, "Sep2005", "small-buy0001.png");
-        page13.add(small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1_1_1);
+        // penguin5
+        const penguin5 = this.add.image(348, 389, "clothingcatalog", "photo/penguin");
+        page13.add(penguin5);
 
-        // coin_1_1_1_1_2_1_1_1_1_1_2_1
-        const coin_1_1_1_1_2_1_1_1_1_1_2_1 = this.add.image(492, 114, "jul22", "coin");
-        page13.add(coin_1_1_1_1_2_1_1_1_1_1_2_1);
+        // penguin6
+        const penguin6 = this.add.image(608, 389, "clothingcatalog", "photo/penguin");
+        page13.add(penguin6);
 
-        // coin_1_1_1_1_2_1_1_1_1_1_1_1_1
-        const coin_1_1_1_1_2_1_1_1_1_1_1_1_1 = this.add.image(411, 672, "jul22", "coin");
-        page13.add(coin_1_1_1_1_2_1_1_1_1_1_1_1_1);
+        // penguin7
+        const penguin7 = this.add.image(348, 649, "clothingcatalog", "photo/penguin");
+        page13.add(penguin7);
 
-        // coin_1_1_1_1_2_1_1_1_1_1_1_1_1_1
-        const coin_1_1_1_1_2_1_1_1_1_1_1_1_1_1 = this.add.image(1184, 189, "jul22", "coin");
-        page13.add(coin_1_1_1_1_2_1_1_1_1_1_1_1_1_1);
+        // penguin8
+        const penguin8 = this.add.image(608, 649, "clothingcatalog", "photo/penguin");
+        page13.add(penguin8);
 
-        // bg_holder
-        const bg_holder = this.add.image(927, 359, "jul22", "bg_holder");
-        page13.add(bg_holder);
+        // photoButton9
+        const photoButton9 = new PhotoButton(this, 930, 375);
+        page13.add(photoButton9);
 
-        // bg_1
-        const bg_1 = this.add.image(928, 359, "jul22", "bg_1");
-        page13.add(bg_1);
+        // photoButton10
+        const photoButton10 = new PhotoButton(this, 1190, 375);
+        page13.add(photoButton10);
 
-        // shadow_bg
-        const shadow_bg = this.add.image(927, 366, "jul22", "shadow_bg");
-        page13.add(shadow_bg);
+        // photoButton11
+        const photoButton11 = new PhotoButton(this, 930, 635);
+        page13.add(photoButton11);
 
-        // bg_holder_1
-        const bg_holder_1 = this.add.image(1193, 359, "jul22", "bg_holder");
-        page13.add(bg_holder_1);
+        // photoButton12
+        const photoButton12 = new PhotoButton(this, 1190, 635);
+        page13.add(photoButton12);
 
-        // bg_2
-        const bg_2 = this.add.image(1194, 359, "jul22", "bg_2");
-        page13.add(bg_2);
+        // photo9
+        const photo9 = this.add.image(930, 375, "aug-22", "photo/9.png");
+        photo9.scaleX = 0.5;
+        photo9.scaleY = 0.5;
+        page13.add(photo9);
 
-        // shadow_bg_1
-        const shadow_bg_1 = this.add.image(1193, 366, "jul22", "shadow_bg");
-        page13.add(shadow_bg_1);
+        // photo10
+        const photo10 = this.add.image(1190, 375, "aug-22", "photo/10.png");
+        photo10.scaleX = 0.5;
+        photo10.scaleY = 0.5;
+        page13.add(photo10);
 
-        // bg_holder_1_1
-        const bg_holder_1_1 = this.add.image(927, 619, "jul22", "bg_holder");
-        page13.add(bg_holder_1_1);
+        // photo11
+        const photo11 = this.add.image(930, 628, "aug-22", "photo/11.png");
+        photo11.scaleX = 0.5;
+        photo11.scaleY = 0.5;
+        page13.add(photo11);
 
-        // bg_2_1
-        const bg_2_1 = this.add.image(928, 619, "jul22", "bg_3");
-        page13.add(bg_2_1);
+        // photo12
+        const photo12 = this.add.image(1190, 635, "aug-22", "photo/12.png");
+        photo12.scaleX = 0.5;
+        photo12.scaleY = 0.5;
+        page13.add(photo12);
 
-        // shadow_bg_1_1
-        const shadow_bg_1_1 = this.add.image(927, 626, "jul22", "shadow_bg");
-        page13.add(shadow_bg_1_1);
+        // penguin9
+        const penguin9 = this.add.image(930, 385, "clothingcatalog", "photo/penguin");
+        page13.add(penguin9);
+
+        // penguin10
+        const penguin10 = this.add.image(1190, 385, "clothingcatalog", "photo/penguin");
+        page13.add(penguin10);
+
+        // penguin11
+        const penguin11 = this.add.image(930, 645, "clothingcatalog", "photo/penguin");
+        page13.add(penguin11);
+
+        // penguin12
+        const penguin12 = this.add.image(1190, 645, "clothingcatalog", "photo/penguin");
+        page13.add(penguin12);
 
         // page12
-        const page12 = this.add.container(-1, 0);
+        const page12 = this.add.container(0, 0);
         page12.visible = false;
 
-        // page12_done
-        const page12_done = this.add.image(765, 432, "jul22", "page12_done");
-        page12.add(page12_done);
+        // p12
+        const p12 = this.add.image(0, -80, "aug-22", "page/page0012.png");
+        p12.setOrigin(0, 0);
+        page12.add(p12);
 
-        // close_left_13
-        const close_left_13 = this.add.image(195, 38, "clothingcatalog", "close_left");
-        close_left_13.setOrigin(0, 0);
-        page12.add(close_left_13);
+        // tag_53
+        const tag_53 = new Tag2(this, 609, 489);
+        tag_53.angle = 12;
+        page12.add(tag_53);
 
-        // page_right_13
-        const page_right_13 = this.add.image(1207, 587, "clothingcatalog", "page_right");
-        page_right_13.setOrigin(0, 0);
-        page12.add(page_right_13);
+        // tag_54
+        const tag_54 = new Tag1(this, 286, 598);
+        tag_54.angle = -30;
+        page12.add(tag_54);
 
-        // close_right_13
-        const close_right_13 = this.add.image(1206, 38, "clothingcatalog", "close_right");
-        close_right_13.setOrigin(0, 0);
-        page12.add(close_right_13);
+        // tag_55
+        const tag_55 = new Tag1(this, 220, 259);
+        tag_55.angle = -18;
+        page12.add(tag_55);
 
-        // page_left_13
-        const page_left_13 = this.add.image(193, 586, "clothingcatalog", "page_left");
-        page_left_13.setOrigin(0, 0);
-        page12.add(page_left_13);
+        // tag_56
+        const tag_56 = new Tag1(this, 420, 163);
+        tag_56.angle = 19;
+        page12.add(tag_56);
 
-        // small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1
-        const small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1 = this.add.image(1052, 492, "Sep2005", "small-buy0001.png");
-        page12.add(small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1);
+        // photoButton4
+        const photoButton4 = new PhotoButton(this, 1170, 628);
+        page12.add(photoButton4);
 
-        // small_buy0001_png_1_2_2_2_2_1_1_1_1_2
-        const small_buy0001_png_1_2_2_2_2_1_1_1_1_2 = this.add.image(295, 238, "Sep2005", "small-buy0001.png");
-        page12.add(small_buy0001_png_1_2_2_2_2_1_1_1_1_2);
+        // photoButton3
+        const photoButton3 = new PhotoButton(this, 910, 629);
+        page12.add(photoButton3);
 
-        // small_buy0001_png_1_2_2_2_2_1_1_1_2
-        const small_buy0001_png_1_2_2_2_2_1_1_1_2 = this.add.image(919, 739, "Sep2005", "small-buy0001.png");
-        page12.add(small_buy0001_png_1_2_2_2_2_1_1_1_2);
+        // photoButton2
+        const photoButton2 = new PhotoButton(this, 1170, 369);
+        page12.add(photoButton2);
 
-        // small_buy0001_png_1_2_2_2_2_1_1_2
-        const small_buy0001_png_1_2_2_2_2_1_1_2 = this.add.image(885, 492, "Sep2005", "small-buy0001.png");
-        page12.add(small_buy0001_png_1_2_2_2_2_1_1_2);
+        // photoButton1
+        const photoButton1 = new PhotoButton(this, 910, 369);
+        page12.add(photoButton1);
 
-        // big_coin_1
-        const big_coin_1 = this.add.image(1035, 196, "jul22", "big_coin");
-        page12.add(big_coin_1);
+        // photo4
+        const photo4 = this.add.image(1170, 630, "aug-22", "photo/4.png");
+        photo4.scaleX = 0.5;
+        photo4.scaleY = 0.5;
+        page12.add(photo4);
 
-        // coin_1_1_1_1_2_1_1_1_1_1_2
-        const coin_1_1_1_1_2_1_1_1_1_1_2 = this.add.image(346, 179, "jul22", "coin");
-        page12.add(coin_1_1_1_1_2_1_1_1_1_1_2);
+        // photo3
+        const photo3 = this.add.image(918, 631, "aug-22", "photo/3.png");
+        photo3.scaleX = 0.5;
+        photo3.scaleY = 0.5;
+        page12.add(photo3);
 
-        // small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1_1
-        const small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1_1 = this.add.image(1218, 492, "Sep2005", "small-buy0001.png");
-        page12.add(small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1_1);
+        // photo2
+        const photo2 = this.add.image(1170, 367, "aug-22", "photo/2.png");
+        photo2.scaleX = 0.5;
+        photo2.scaleY = 0.5;
+        page12.add(photo2);
 
-        // small_buy0001_png_1_2_2_2_2_1_1_1_2_1
-        const small_buy0001_png_1_2_2_2_2_1_1_1_2_1 = this.add.image(1154, 739, "Sep2005", "small-buy0001.png");
-        page12.add(small_buy0001_png_1_2_2_2_2_1_1_1_2_1);
+        // photo1
+        const photo1 = this.add.image(910, 367, "aug-22", "photo/1.png");
+        photo1.scaleX = 0.5;
+        photo1.scaleY = 0.5;
+        page12.add(photo1);
 
-        // sec-rocker_1
-        const sec_rocker_1 = this.add.ellipse(510, 88, 128, 128);
-        sec_rocker_1.scaleX = 0.3423781066406252;
-        sec_rocker_1.scaleY = 0.3011570029001281;
-        sec_rocker_1.isFilled = true;
-        sec_rocker_1.fillAlpha = 0;
-        page12.add(sec_rocker_1);
+        // penguin4
+        const penguin4 = this.add.image(1170, 640, "clothingcatalog", "photo/penguin");
+        page12.add(penguin4);
+
+        // penguin3
+        const penguin3 = this.add.image(910, 638, "clothingcatalog", "photo/penguin");
+        page12.add(penguin3);
+
+        // penguin2
+        const penguin2 = this.add.image(1170, 380, "clothingcatalog", "photo/penguin");
+        page12.add(penguin2);
+
+        // penguin1
+        const penguin1 = this.add.image(910, 377, "clothingcatalog", "photo/penguin");
+        page12.add(penguin1);
+
+        // secret_7
+        const secret_7 = this.add.rectangle(339, 110, 135, 160);
+        secret_7.scaleX = 0.4281282457840876;
+        secret_7.scaleY = 0.5520472126275546;
+        secret_7.alpha = 0.00001;
+        secret_7.isFilled = true;
+        secret_7.fillColor = 65280;
+        page12.add(secret_7);
 
         // page11
-        const page11 = this.add.container(-1, 0);
+        const page11 = this.add.container(0, 3);
         page11.visible = false;
 
-        // page11_done
-        const page11_done = this.add.image(765, 432, "jul22", "page11_done");
-        page11.add(page11_done);
+        // p11
+        const p11 = this.add.image(0, -82, "aug-22", "page/page0011.png");
+        p11.setOrigin(0, 0);
+        page11.add(p11);
 
-        // close_left_12
-        const close_left_12 = this.add.image(195, 38, "clothingcatalog", "close_left");
-        close_left_12.setOrigin(0, 0);
-        page11.add(close_left_12);
+        // tag_50
+        const tag_50 = new Tag1(this, 285, 280);
+        tag_50.angle = -22;
+        page11.add(tag_50);
 
-        // page_right_12
-        const page_right_12 = this.add.image(1207, 587, "clothingcatalog", "page_right");
-        page_right_12.setOrigin(0, 0);
-        page11.add(page_right_12);
+        // tag_51
+        const tag_51 = new Tag2(this, 1196, 527);
+        tag_51.angle = 14;
+        page11.add(tag_51);
 
-        // close_right_12
-        const close_right_12 = this.add.image(1206, 38, "clothingcatalog", "close_right");
-        close_right_12.setOrigin(0, 0);
-        page11.add(close_right_12);
+        // tag_52
+        const tag_52 = new Tag2(this, 1129, 198);
+        tag_52.angle = -22;
+        page11.add(tag_52);
 
-        // page_left_12
-        const page_left_12 = this.add.image(193, 586, "clothingcatalog", "page_left");
-        page_left_12.setOrigin(0, 0);
-        page11.add(page_left_12);
-
-        // small_buy0001_png_1_2_2_2_2_1
-        const small_buy0001_png_1_2_2_2_2_1 = this.add.image(575, 425, "Sep2005", "small-buy0001.png");
-        page11.add(small_buy0001_png_1_2_2_2_2_1);
-
-        // coin_1_1_1_1_2_1_1_1_1_1
-        const coin_1_1_1_1_2_1_1_1_1_1 = this.add.image(927, 286, "jul22", "coin");
-        page11.add(coin_1_1_1_1_2_1_1_1_1_1);
-
-        // coin_1_1_1_1_2_1_1_1_1_1_1
-        const coin_1_1_1_1_2_1_1_1_1_1_1 = this.add.image(933, 650, "jul22", "coin");
-        page11.add(coin_1_1_1_1_2_1_1_1_1_1_1);
-
-        // big_coin
-        const big_coin = this.add.image(458, 187, "jul22", "big_coin");
-        page11.add(big_coin);
-
-        // small_buy0001_png_1_2_2_2_2_1_1
-        const small_buy0001_png_1_2_2_2_2_1_1 = this.add.image(361, 718, "Sep2005", "small-buy0001.png");
-        page11.add(small_buy0001_png_1_2_2_2_2_1_1);
-
-        // small_buy0001_png_1_2_2_2_2_1_1_1
-        const small_buy0001_png_1_2_2_2_2_1_1_1 = this.add.image(593, 718, "Sep2005", "small-buy0001.png");
-        page11.add(small_buy0001_png_1_2_2_2_2_1_1_1);
-
-        // small_buy0001_png_1_2_2_2_2_1_1_1_1
-        const small_buy0001_png_1_2_2_2_2_1_1_1_1 = this.add.image(1027, 220, "Sep2005", "small-buy0001.png");
-        page11.add(small_buy0001_png_1_2_2_2_2_1_1_1_1);
-
-        // small_buy0001_png_1_2_2_2_2_1_1_1_1_1
-        const small_buy0001_png_1_2_2_2_2_1_1_1_1_1 = this.add.image(893, 544, "Sep2005", "small-buy0001.png");
-        page11.add(small_buy0001_png_1_2_2_2_2_1_1_1_1_1);
+        // secret_6
+        const secret_6 = this.add.rectangle(1033, 108, 135, 160);
+        secret_6.scaleX = 0.6456573414587834;
+        secret_6.scaleY = 0.5520472126275546;
+        secret_6.alpha = 0.00001;
+        secret_6.isFilled = true;
+        secret_6.fillColor = 65280;
+        page11.add(secret_6);
 
         // page10
-        const page10 = this.add.container(-1, 0);
+        const page10 = this.add.container(0, 1);
         page10.visible = false;
 
-        // page10_done
-        const page10_done = this.add.image(765, 432, "jul22", "page10_done");
-        page10.add(page10_done);
+        // p10
+        const p10 = this.add.image(0, -82, "aug-22", "page/page0010.png");
+        p10.setOrigin(0, 0);
+        page10.add(p10);
 
-        // close_left_11
-        const close_left_11 = this.add.image(195, 38, "clothingcatalog", "close_left");
-        close_left_11.setOrigin(0, 0);
-        page10.add(close_left_11);
+        // tag_46
+        const tag_46 = new Tag1(this, 339, 419);
+        tag_46.angle = -11;
+        page10.add(tag_46);
 
-        // page_right_11
-        const page_right_11 = this.add.image(1207, 587, "clothingcatalog", "page_right");
-        page_right_11.setOrigin(0, 0);
-        page10.add(page_right_11);
+        // tag_47
+        const tag_47 = new Tag1(this, 842, 359);
+        tag_47.angle = -21;
+        page10.add(tag_47);
 
-        // close_right_11
-        const close_right_11 = this.add.image(1206, 38, "clothingcatalog", "close_right");
-        close_right_11.setOrigin(0, 0);
-        page10.add(close_right_11);
+        // tag_48
+        const tag_48 = new Tag2(this, 1159, 672);
+        tag_48.angle = 16;
+        page10.add(tag_48);
 
-        // page_left_11
-        const page_left_11 = this.add.image(193, 586, "clothingcatalog", "page_left");
-        page_left_11.setOrigin(0, 0);
-        page10.add(page_left_11);
+        // tag_49
+        const tag_49 = new Tag2(this, 581, 501);
+        tag_49.angle = -44;
+        page10.add(tag_49);
 
-        // coin_1_1_1_1_2_1_1_1_1
-        const coin_1_1_1_1_2_1_1_1_1 = this.add.image(930, 266, "jul22", "coin");
-        page10.add(coin_1_1_1_1_2_1_1_1_1);
-
-        // small_buy0001_png_1_2_2_2_2
-        const small_buy0001_png_1_2_2_2_2 = this.add.image(884, 336, "Sep2005", "small-buy0001.png");
-        page10.add(small_buy0001_png_1_2_2_2_2);
-
-        // buy2_3_1_1_1_1_1_1_1_1
-        const buy2_3_1_1_1_1_1_1_1_1 = this.add.image(522, 486, "clothingcatalog", "buy2");
-        buy2_3_1_1_1_1_1_1_1_1.angle = 30;
-        buy2_3_1_1_1_1_1_1_1_1.setOrigin(0, 0);
-        page10.add(buy2_3_1_1_1_1_1_1_1_1);
+        // secret_5
+        const secret_5 = this.add.rectangle(373, 254, 135, 160);
+        secret_5.scaleX = 0.6456573414587834;
+        secret_5.scaleY = 0.283438579871872;
+        secret_5.alpha = 0.00001;
+        secret_5.isFilled = true;
+        secret_5.fillColor = 65280;
+        page10.add(secret_5);
 
         // page9
-        const page9 = this.add.container(-1, 0);
+        const page9 = this.add.container(0, 1);
         page9.visible = false;
 
-        // page9_done
-        const page9_done = this.add.image(765, 432, "jul22", "page9_done");
-        page9.add(page9_done);
+        // p9
+        const p9 = this.add.image(0, -83, "aug-22", "page/page0009.png");
+        p9.setOrigin(0, 0);
+        page9.add(p9);
 
-        // coin_1_1_1_1_2_2_1
-        const coin_1_1_1_1_2_2_1 = this.add.image(1288, 743, "jul22", "coin");
-        page9.add(coin_1_1_1_1_2_2_1);
+        // tag_39
+        const tag_39 = new Tag1(this, 320, 220);
+        tag_39.angle = 24;
+        page9.add(tag_39);
 
-        // close_left_10
-        const close_left_10 = this.add.image(195, 38, "clothingcatalog", "close_left");
-        close_left_10.setOrigin(0, 0);
-        page9.add(close_left_10);
+        // tag_40
+        const tag_40 = new Tag2(this, 609, 430);
+        tag_40.angle = 15;
+        page9.add(tag_40);
 
-        // page_right_10
-        const page_right_10 = this.add.image(1207, 587, "clothingcatalog", "page_right");
-        page_right_10.setOrigin(0, 0);
-        page9.add(page_right_10);
+        // tag_41
+        const tag_41 = new Tag1(this, 304, 474);
+        tag_41.angle = -17;
+        page9.add(tag_41);
 
-        // close_right_10
-        const close_right_10 = this.add.image(1206, 38, "clothingcatalog", "close_right");
-        close_right_10.setOrigin(0, 0);
-        page9.add(close_right_10);
+        // tag_42
+        const tag_42 = new Tag1(this, 303, 605);
+        tag_42.angle = -18;
+        page9.add(tag_42);
 
-        // page_left_10
-        const page_left_10 = this.add.image(193, 586, "clothingcatalog", "page_left");
-        page_left_10.setOrigin(0, 0);
-        page9.add(page_left_10);
+        // tag_43
+        const tag_43 = new Tag1(this, 958, 120);
+        tag_43.angle = 14;
+        page9.add(tag_43);
 
-        // coin_1_1_1_1_1_1_1_1
-        const coin_1_1_1_1_1_1_1_1 = this.add.image(1267, 393, "jul22", "coin");
-        page9.add(coin_1_1_1_1_1_1_1_1);
+        // tag_44
+        const tag_44 = new Tag1(this, 803, 326);
+        tag_44.angle = -18;
+        page9.add(tag_44);
 
-        // coin_1_2_1_1
-        const coin_1_2_1_1 = this.add.image(642, 112, "jul22", "coin");
-        page9.add(coin_1_2_1_1);
+        // tag_45
+        const tag_45 = new Tag2(this, 1141, 439);
+        tag_45.angle = 16;
+        page9.add(tag_45);
 
-        // coin_1_1_1_1_2_1_1_1
-        const coin_1_1_1_1_2_1_1_1 = this.add.image(1205, 118, "jul22", "coin");
-        page9.add(coin_1_1_1_1_2_1_1_1);
-
-        // small_buy0001_png_1_2_2_2
-        const small_buy0001_png_1_2_2_2 = this.add.image(467, 183, "Sep2005", "small-buy0001.png");
-        page9.add(small_buy0001_png_1_2_2_2);
-
-        // small_buy0001_png_1_2_2_2_1
-        const small_buy0001_png_1_2_2_2_1 = this.add.image(1072, 179, "Sep2005", "small-buy0001.png");
-        page9.add(small_buy0001_png_1_2_2_2_1);
-
-        // small_buy0001_png_1_2_2_2_1_1
-        const small_buy0001_png_1_2_2_2_1_1 = this.add.image(1232, 452, "Sep2005", "small-buy0001.png");
-        page9.add(small_buy0001_png_1_2_2_2_1_1);
-
-        // small_buy0001_png_1_2_2_2_1_1_1
-        const small_buy0001_png_1_2_2_2_1_1_1 = this.add.image(864, 740, "Sep2005", "small-buy0001.png");
-        page9.add(small_buy0001_png_1_2_2_2_1_1_1);
-
-        // sec-rocker
-        const sec_rocker = this.add.ellipse(408, 537, 128, 128);
-        sec_rocker.scaleX = 0.3423781066406252;
-        sec_rocker.scaleY = 0.3011570029001281;
-        sec_rocker.isFilled = true;
-        sec_rocker.fillAlpha = 0;
-        page9.add(sec_rocker);
-
-        // sec-suprema
-        const sec_suprema = this.add.ellipse(959, 366, 128, 128);
-        sec_suprema.scaleX = 0.3423781066406252;
-        sec_suprema.scaleY = 0.3011570029001281;
-        sec_suprema.isFilled = true;
-        sec_suprema.fillAlpha = 0;
-        page9.add(sec_suprema);
+        // secret
+        const secret = this.add.rectangle(1049, 233, 135, 160);
+        secret.scaleX = 0.7568619808686627;
+        secret.scaleY = 0.4100258205122569;
+        secret.alpha = 0.00001;
+        secret.isFilled = true;
+        secret.fillColor = 65280;
+        page9.add(secret);
 
         // page8
-        const page8 = this.add.container(-1, 0);
+        const page8 = this.add.container(0, 2);
         page8.visible = false;
 
-        // page8_done
-        const page8_done = this.add.image(765, 432, "jul22", "page8_done");
-        page8.add(page8_done);
+        // p8
+        const p8 = this.add.image(0, -83, "aug-22", "page/page0008.png");
+        p8.setOrigin(0, 0);
+        page8.add(p8);
 
-        // close_left_9
-        const close_left_9 = this.add.image(195, 38, "clothingcatalog", "close_left");
-        close_left_9.setOrigin(0, 0);
-        page8.add(close_left_9);
+        // tag_35
+        const tag_35 = new Tag1(this, 817, 154);
+        tag_35.angle = 18;
+        page8.add(tag_35);
 
-        // page_right_9
-        const page_right_9 = this.add.image(1207, 587, "clothingcatalog", "page_right");
-        page_right_9.setOrigin(0, 0);
-        page8.add(page_right_9);
+        // tag_36
+        const tag_36 = new Tag2(this, 997, 410);
+        tag_36.angle = -11;
+        page8.add(tag_36);
 
-        // close_right_9
-        const close_right_9 = this.add.image(1206, 38, "clothingcatalog", "close_right");
-        close_right_9.setOrigin(0, 0);
-        page8.add(close_right_9);
+        // tag_31
+        const tag_31 = new Tag2(this, 443, 119);
+        tag_31.angle = -20;
+        page8.add(tag_31);
 
-        // page_left_9
-        const page_left_9 = this.add.image(193, 586, "clothingcatalog", "page_left");
-        page_left_9.setOrigin(0, 0);
-        page8.add(page_left_9);
+        // tag_38
+        const tag_38 = new Tag1(this, 979, 502);
+        tag_38.angle = 23;
+        page8.add(tag_38);
 
-        // coin_1_1_1_1_2_1_1
-        const coin_1_1_1_1_2_1_1 = this.add.image(960, 139, "jul22", "coin");
-        page8.add(coin_1_1_1_1_2_1_1);
+        // tag_37
+        const tag_37 = new Tag2(this, 1196, 426);
+        tag_37.angle = -51;
+        page8.add(tag_37);
 
-        // coin_1_2_1
-        const coin_1_2_1 = this.add.image(427, 133, "jul22", "coin");
-        page8.add(coin_1_2_1);
+        // tag_34
+        const tag_34 = new Tag1(this, 540, 218);
+        tag_34.angle = 36;
+        page8.add(tag_34);
 
-        // coin_1_1_2_1
-        const coin_1_1_2_1 = this.add.image(396, 754, "jul22", "coin");
-        page8.add(coin_1_1_2_1);
+        // tag_33
+        const tag_33 = new Tag1(this, 293, 329);
+        tag_33.angle = 22;
+        page8.add(tag_33);
 
-        // coin_1_1_1_2_1
-        const coin_1_1_1_2_1 = this.add.image(718, 593, "jul22", "coin");
-        page8.add(coin_1_1_1_2_1);
+        // tag_32
+        const tag_32 = new Tag1(this, 252, 666);
+        tag_32.angle = -20;
+        page8.add(tag_32);
 
-        // coin_1_1_1_1_2_2
-        const coin_1_1_1_1_2_2 = this.add.image(1005, 713, "jul22", "coin");
-        page8.add(coin_1_1_1_1_2_2);
-
-        // coin_1_1_1_1_1_1_1
-        const coin_1_1_1_1_1_1_1 = this.add.image(691, 132, "jul22", "coin");
-        page8.add(coin_1_1_1_1_1_1_1);
-
-        // small_buy0001_png_1_2_2
-        const small_buy0001_png_1_2_2 = this.add.image(292, 194, "Sep2005", "small-buy0001.png");
-        page8.add(small_buy0001_png_1_2_2);
-
-        // small_buy0001_png_1_2_2_1
-        const small_buy0001_png_1_2_2_1 = this.add.image(620, 189, "Sep2005", "small-buy0001.png");
-        page8.add(small_buy0001_png_1_2_2_1);
-
-        // small_buy0001_png_1_2_2_1_1
-        const small_buy0001_png_1_2_2_1_1 = this.add.image(617, 375, "Sep2005", "small-buy0001.png");
-        page8.add(small_buy0001_png_1_2_2_1_1);
-
-        // small_buy0001_png_1_2_2_1_1_1
-        const small_buy0001_png_1_2_2_1_1_1 = this.add.image(592, 730, "Sep2005", "small-buy0001.png");
-        page8.add(small_buy0001_png_1_2_2_1_1_1);
-
-        // small_buy0001_png_1_2_2_1_1_1_1
-        const small_buy0001_png_1_2_2_1_1_1_1 = this.add.image(1073, 124, "Sep2005", "small-buy0001.png");
-        page8.add(small_buy0001_png_1_2_2_1_1_1_1);
-
-        // small_buy0001_png_1_2_2_1_1_1_1_1
-        const small_buy0001_png_1_2_2_1_1_1_1_1 = this.add.image(1178, 679, "Sep2005", "small-buy0001.png");
-        page8.add(small_buy0001_png_1_2_2_1_1_1_1_1);
-
-        // sec-bcowboy
-        const sec_bcowboy = this.add.ellipse(450, 481, 128, 128);
-        sec_bcowboy.scaleX = 0.3423781066406252;
-        sec_bcowboy.scaleY = 0.3011570029001281;
-        sec_bcowboy.isFilled = true;
-        sec_bcowboy.fillAlpha = 0;
-        page8.add(sec_bcowboy);
-
-        // sec-cvest
-        const sec_cvest = this.add.ellipse(1220, 281, 128, 128);
-        sec_cvest.scaleX = 0.3423781066406252;
-        sec_cvest.scaleY = 0.3011570029001281;
-        sec_cvest.isFilled = true;
-        sec_cvest.fillAlpha = 0;
-        page8.add(sec_cvest);
-
-        // sec-cbell
-        const sec_cbell = this.add.ellipse(1155, 181, 128, 128);
-        sec_cbell.scaleX = 0.3423781066406252;
-        sec_cbell.scaleY = 0.3011570029001281;
-        sec_cbell.isFilled = true;
-        sec_cbell.fillAlpha = 0;
-        page8.add(sec_cbell);
+        // secret_4
+        const secret_4 = this.add.rectangle(1255, 307, 135, 160);
+        secret_4.scaleX = 0.7568619808686627;
+        secret_4.scaleY = 0.4100258205122569;
+        secret_4.alpha = 0.00001;
+        secret_4.isFilled = true;
+        secret_4.fillColor = 65280;
+        page8.add(secret_4);
 
         // page7
-        const page7 = this.add.container(-1, 0);
+        const page7 = this.add.container(0, 4);
         page7.visible = false;
 
-        // page7_done
-        const page7_done = this.add.image(765, 432, "jul22", "page7_done");
-        page7.add(page7_done);
+        // p7
+        const p7 = this.add.image(0, -85, "aug-22", "page/page0007.png");
+        p7.setOrigin(0, 0);
+        page7.add(p7);
 
-        // close_left_8
-        const close_left_8 = this.add.image(195, 38, "clothingcatalog", "close_left");
-        close_left_8.setOrigin(0, 0);
-        page7.add(close_left_8);
+        // tag_26
+        const tag_26 = new Tag1(this, 373, 97);
+        tag_26.angle = 23;
+        page7.add(tag_26);
 
-        // page_right_8
-        const page_right_8 = this.add.image(1207, 587, "clothingcatalog", "page_right");
-        page_right_8.setOrigin(0, 0);
-        page7.add(page_right_8);
+        // tag_27
+        const tag_27 = new Tag2(this, 590, 472);
+        tag_27.angle = -25;
+        page7.add(tag_27);
 
-        // close_right_8
-        const close_right_8 = this.add.image(1206, 38, "clothingcatalog", "close_right");
-        close_right_8.setOrigin(0, 0);
-        page7.add(close_right_8);
+        // tag_28
+        const tag_28 = new Tag1(this, 820, 109);
+        tag_28.angle = 17;
+        page7.add(tag_28);
 
-        // page_left_8
-        const page_left_8 = this.add.image(193, 586, "clothingcatalog", "page_left");
-        page_left_8.setOrigin(0, 0);
-        page7.add(page_left_8);
+        // tag_29
+        const tag_29 = new Tag2(this, 1120, 165);
+        tag_29.angle = -16;
+        page7.add(tag_29);
 
-        // coin_1_1_1_1_1_1
-        const coin_1_1_1_1_1_1 = this.add.image(908, 450, "jul22", "coin");
-        page7.add(coin_1_1_1_1_1_1);
+        // tag_30
+        const tag_30 = new Tag1(this, 806, 466);
+        tag_30.angle = -19;
+        page7.add(tag_30);
 
-        // coin_1_1_1_1_2
-        const coin_1_1_1_1_2 = this.add.image(1175, 738, "jul22", "coin");
-        page7.add(coin_1_1_1_1_2);
-
-        // coin_1_1_1_2
-        const coin_1_1_1_2 = this.add.image(709, 555, "jul22", "coin");
-        page7.add(coin_1_1_1_2);
-
-        // coin_1_1_2
-        const coin_1_1_2 = this.add.image(610, 733, "jul22", "coin");
-        page7.add(coin_1_1_2);
-
-        // coin_1_2
-        const coin_1_2 = this.add.image(687, 102, "jul22", "coin");
-        page7.add(coin_1_2);
-
-        // coin_1_1_1_1_2_1
-        const coin_1_1_1_1_2_1 = this.add.image(1244, 105, "jul22", "coin");
-        page7.add(coin_1_1_1_1_2_1);
-
-        // small_buy0001_png_1_2
-        const small_buy0001_png_1_2 = this.add.image(638, 173, "Sep2005", "small-buy0001.png");
-        page7.add(small_buy0001_png_1_2);
-
-        // small_buy0001_png_1_2_1
-        const small_buy0001_png_1_2_1 = this.add.image(644, 428, "Sep2005", "small-buy0001.png");
-        page7.add(small_buy0001_png_1_2_1);
-
-        // small_buy0001_png_1_2_1_1
-        const small_buy0001_png_1_2_1_1 = this.add.image(401, 724, "Sep2005", "small-buy0001.png");
-        page7.add(small_buy0001_png_1_2_1_1);
-
-        // small_buy0001_png_1_2_1_1_1
-        const small_buy0001_png_1_2_1_1_1 = this.add.image(944, 724, "Sep2005", "small-buy0001.png");
-        page7.add(small_buy0001_png_1_2_1_1_1);
-
-        // small_buy0001_png_1_2_1_1_1_1
-        const small_buy0001_png_1_2_1_1_1_1 = this.add.image(878, 516, "Sep2005", "small-buy0001.png");
-        page7.add(small_buy0001_png_1_2_1_1_1_1);
-
-        // small_buy0001_png_1_2_1_1_1_1_1
-        const small_buy0001_png_1_2_1_1_1_1_1 = this.add.image(1187, 169, "Sep2005", "small-buy0001.png");
-        page7.add(small_buy0001_png_1_2_1_1_1_1_1);
-
-        // sec-free
-        const sec_free = this.add.ellipse(870, 201, 128, 128);
-        sec_free.scaleX = 0.3423781066406252;
-        sec_free.scaleY = 0.3011570029001281;
-        sec_free.isFilled = true;
-        sec_free.fillAlpha = 0;
-        page7.add(sec_free);
-
-        // sec-sidetied
-        const sec_sidetied = this.add.ellipse(500, 233, 128, 128);
-        sec_sidetied.scaleX = 0.3423781066406252;
-        sec_sidetied.scaleY = 0.3011570029001281;
-        sec_sidetied.isFilled = true;
-        sec_sidetied.fillAlpha = 0;
-        page7.add(sec_sidetied);
-
-        // sec-fire
-        const sec_fire = this.add.ellipse(1095, 510, 128, 128);
-        sec_fire.scaleX = 0.3423781066406252;
-        sec_fire.scaleY = 0.3011570029001281;
-        sec_fire.isFilled = true;
-        sec_fire.fillAlpha = 0;
-        page7.add(sec_fire);
+        // secret_3
+        const secret_3 = this.add.rectangle(744, 335, 135, 160);
+        secret_3.scaleX = 0.33405165689980654;
+        secret_3.scaleY = 0.31826832497179797;
+        secret_3.alpha = 0.00001;
+        secret_3.isFilled = true;
+        secret_3.fillColor = 65280;
+        page7.add(secret_3);
 
         // page6
-        const page6 = this.add.container(-1, 0);
+        const page6 = this.add.container(0, 0);
         page6.visible = false;
 
-        // page6_done
-        const page6_done = this.add.image(765, 432, "jul22", "page6_done");
-        page6.add(page6_done);
+        // p6
+        const p6 = this.add.image(0, -81, "aug-22", "page/page0006.png");
+        p6.setOrigin(0, 0);
+        page6.add(p6);
 
-        // close_left_7
-        const close_left_7 = this.add.image(195, 38, "clothingcatalog", "close_left");
-        close_left_7.setOrigin(0, 0);
-        page6.add(close_left_7);
+        // tag_21
+        const tag_21 = new Tag2(this, 573, 367);
+        tag_21.angle = 24;
+        page6.add(tag_21);
 
-        // page_right_7
-        const page_right_7 = this.add.image(1207, 587, "clothingcatalog", "page_right");
-        page_right_7.setOrigin(0, 0);
-        page6.add(page_right_7);
+        // tag_23
+        const tag_23 = new Tag1(this, 800, 258);
+        tag_23.angle = -17;
+        page6.add(tag_23);
 
-        // close_right_7
-        const close_right_7 = this.add.image(1206, 38, "clothingcatalog", "close_right");
-        close_right_7.setOrigin(0, 0);
-        page6.add(close_right_7);
+        // tag_24
+        const tag_24 = new Tag2(this, 1199, 385);
+        tag_24.angle = -18;
+        page6.add(tag_24);
 
-        // page_left_7
-        const page_left_7 = this.add.image(193, 586, "clothingcatalog", "page_left");
-        page_left_7.setOrigin(0, 0);
-        page6.add(page_left_7);
+        // tag_25
+        const tag_25 = new Tag1(this, 945, 483);
+        tag_25.angle = 19;
+        page6.add(tag_25);
 
-        // coin_1
-        const coin_1 = this.add.image(578, 84, "jul22", "coin");
-        page6.add(coin_1);
+        // tag_22
+        const tag_22 = new Tag2(this, 1078, 105);
+        tag_22.angle = 10;
+        page6.add(tag_22);
 
-        // coin_1_1
-        const coin_1_1 = this.add.image(948, 134, "jul22", "coin");
-        page6.add(coin_1_1);
-
-        // coin_1_1_1
-        const coin_1_1_1 = this.add.image(1234, 169, "jul22", "coin");
-        page6.add(coin_1_1_1);
-
-        // coin_1_1_1_1
-        const coin_1_1_1_1 = this.add.image(588, 755, "jul22", "coin");
-        page6.add(coin_1_1_1_1);
-
-        // coin_1_1_1_1_1
-        const coin_1_1_1_1_1 = this.add.image(984, 757, "jul22", "coin");
-        page6.add(coin_1_1_1_1_1);
-
-        // small_buy0001_png_1
-        const small_buy0001_png_1 = this.add.image(659, 148, "Sep2005", "small-buy0001.png");
-        page6.add(small_buy0001_png_1);
-
-        // small_buy0001_png_1_1
-        const small_buy0001_png_1_1 = this.add.image(667, 693, "Sep2005", "small-buy0001.png");
-        page6.add(small_buy0001_png_1_1);
-
-        // small_buy0001_png_1_1_1
-        const small_buy0001_png_1_1_1 = this.add.image(905, 192, "Sep2005", "small-buy0001.png");
-        page6.add(small_buy0001_png_1_1_1);
-
-        // small_buy0001_png_1_1_1_1
-        const small_buy0001_png_1_1_1_1 = this.add.image(1236, 236, "Sep2005", "small-buy0001.png");
-        page6.add(small_buy0001_png_1_1_1_1);
-
-        // small_buy0001_png_1_1_1_1_1
-        const small_buy0001_png_1_1_1_1_1 = this.add.image(1169, 730, "Sep2005", "small-buy0001.png");
-        page6.add(small_buy0001_png_1_1_1_1_1);
-
-        // sec-darkvision
-        const sec_darkvision = this.add.ellipse(556, 262, 128, 128);
-        sec_darkvision.scaleX = 0.3423781066406252;
-        sec_darkvision.scaleY = 0.3011570029001281;
-        sec_darkvision.isFilled = true;
-        sec_darkvision.fillAlpha = 0;
-        page6.add(sec_darkvision);
-
-        // sec-suit
-        const sec_suit = this.add.ellipse(281, 518, 128, 128);
-        sec_suit.scaleX = 0.3423781066406252;
-        sec_suit.scaleY = 0.3011570029001281;
-        sec_suit.isFilled = true;
-        sec_suit.fillAlpha = 0;
-        page6.add(sec_suit);
-
-        // sec-mb
-        const sec_mb = this.add.ellipse(1096, 307, 128, 128);
-        sec_mb.scaleX = 0.3423781066406252;
-        sec_mb.scaleY = 0.3011570029001281;
-        sec_mb.isFilled = true;
-        sec_mb.fillAlpha = 0;
-        page6.add(sec_mb);
+        // secret_2
+        const secret_2 = this.add.rectangle(395, 124, 135, 160);
+        secret_2.scaleX = 0.20330625988017983;
+        secret_2.scaleY = 0.31826832497179797;
+        secret_2.alpha = 0.00001;
+        secret_2.isFilled = true;
+        secret_2.fillColor = 65280;
+        page6.add(secret_2);
 
         // page5
-        const page5 = this.add.container(1, 0);
+        const page5 = this.add.container(0, -1);
         page5.visible = false;
 
-        // page5_done
-        const page5_done = this.add.image(765, 432, "jul22", "page5_done");
-        page5.add(page5_done);
+        // p5
+        const p5 = this.add.image(0, -81, "aug-22", "page/page0005.png");
+        p5.setOrigin(0, 0);
+        page5.add(p5);
 
-        // close_left_6
-        const close_left_6 = this.add.image(195, 38, "clothingcatalog", "close_left");
-        close_left_6.setOrigin(0, 0);
-        page5.add(close_left_6);
+        // tag_11
+        const tag_11 = new Tag1(this, 449, 74);
+        tag_11.angle = 17;
+        page5.add(tag_11);
 
-        // page_right_6
-        const page_right_6 = this.add.image(1207, 587, "clothingcatalog", "page_right");
-        page_right_6.setOrigin(0, 0);
-        page5.add(page_right_6);
+        // tag_12
+        const tag_12 = new Tag2(this, 606, 526);
+        tag_12.angle = 36;
+        page5.add(tag_12);
 
-        // close_right_6
-        const close_right_6 = this.add.image(1206, 38, "clothingcatalog", "close_right");
-        close_right_6.setOrigin(0, 0);
-        page5.add(close_right_6);
+        // tag_13
+        const tag_13 = new Tag2(this, 488, 659);
+        tag_13.angle = 21;
+        page5.add(tag_13);
 
-        // page_left_6
-        const page_left_6 = this.add.image(193, 586, "clothingcatalog", "page_left");
-        page_left_6.setOrigin(0, 0);
-        page5.add(page_left_6);
+        // tag_14
+        const tag_14 = new Tag2(this, 334, 260);
+        tag_14.angle = -44;
+        page5.add(tag_14);
 
-        // buy1_3_1_1
-        const buy1_3_1_1 = this.add.image(257, 543, "clothingcatalog", "buy1");
-        buy1_3_1_1.angle = -26;
-        buy1_3_1_1.setOrigin(0, 0);
-        page5.add(buy1_3_1_1);
+        // tag_16
+        const tag_16 = new Tag1(this, 912, 235);
+        tag_16.scaleX = 0.7;
+        tag_16.scaleY = 0.7;
+        tag_16.angle = 9;
+        page5.add(tag_16);
 
-        // buy2_3_1_1_1
-        const buy2_3_1_1_1 = this.add.image(592, 234, "clothingcatalog", "buy2");
-        buy2_3_1_1_1.angle = -33;
-        buy2_3_1_1_1.setOrigin(0, 0);
-        page5.add(buy2_3_1_1_1);
+        // tag_17
+        const tag_17 = new Tag1(this, 1083, 181);
+        tag_17.scaleX = 0.7;
+        tag_17.scaleY = 0.7;
+        tag_17.angle = 9;
+        page5.add(tag_17);
 
-        // buy2_3_1_1_1_1
-        const buy2_3_1_1_1_1 = this.add.image(520, 651, "clothingcatalog", "buy2");
-        buy2_3_1_1_1_1.angle = 20;
-        buy2_3_1_1_1_1.setOrigin(0, 0);
-        page5.add(buy2_3_1_1_1_1);
+        // tag_18
+        const tag_18 = new Tag1(this, 1049, 754);
+        tag_18.scaleX = 0.7;
+        tag_18.scaleY = 0.7;
+        tag_18.angle = -25;
+        page5.add(tag_18);
 
-        // buy2_3_1_1_1_1_1
-        const buy2_3_1_1_1_1_1 = this.add.image(1175, 164, "clothingcatalog", "buy2");
-        buy2_3_1_1_1_1_1.angle = 20;
-        buy2_3_1_1_1_1_1.setOrigin(0, 0);
-        page5.add(buy2_3_1_1_1_1_1);
+        // tag_15
+        const tag_15 = new Tag2(this, 947, 335);
+        tag_15.scaleX = 0.7;
+        tag_15.scaleY = 0.7;
+        tag_15.angle = 16;
+        page5.add(tag_15);
 
-        // buy2_3_1_1_1_1_1_1
-        const buy2_3_1_1_1_1_1_1 = this.add.image(1078, 645, "clothingcatalog", "buy2");
-        buy2_3_1_1_1_1_1_1.angle = 14;
-        buy2_3_1_1_1_1_1_1.setOrigin(0, 0);
-        page5.add(buy2_3_1_1_1_1_1_1);
+        // tag_20
+        const tag_20 = new Tag2(this, 1118, 553);
+        tag_20.scaleX = 0.7;
+        tag_20.scaleY = 0.7;
+        tag_20.angle = 7;
+        page5.add(tag_20);
 
-        // buy2_3_1_1_1_1_1_1_1
-        const buy2_3_1_1_1_1_1_1_1 = this.add.image(924, 360, "clothingcatalog", "buy2");
-        buy2_3_1_1_1_1_1_1_1.angle = -32.00000000000006;
-        buy2_3_1_1_1_1_1_1_1.setOrigin(0, 0);
-        page5.add(buy2_3_1_1_1_1_1_1_1);
+        // tag_19
+        const tag_19 = new Tag2(this, 957, 660);
+        tag_19.scaleX = 0.7;
+        tag_19.scaleY = 0.7;
+        tag_19.angle = 7;
+        page5.add(tag_19);
 
-        // sec-blacksneak
-        const sec_blacksneak = this.add.ellipse(627, 404, 128, 128);
-        sec_blacksneak.scaleX = 0.3423781066406252;
-        sec_blacksneak.scaleY = 0.3011570029001281;
-        sec_blacksneak.isFilled = true;
-        sec_blacksneak.fillAlpha = 0;
-        page5.add(sec_blacksneak);
-
-        // sec-rugby
-        const sec_rugby = this.add.ellipse(903, 662, 128, 128);
-        sec_rugby.scaleX = 0.3423781066406252;
-        sec_rugby.scaleY = 0.3011570029001281;
-        sec_rugby.isFilled = true;
-        sec_rugby.fillAlpha = 0;
-        page5.add(sec_rugby);
+        // secret_1
+        const secret_1 = this.add.rectangle(949, 114, 135, 160);
+        secret_1.scaleX = 0.4001033463251785;
+        secret_1.scaleY = 0.5104989480990085;
+        secret_1.alpha = 0.00001;
+        secret_1.isFilled = true;
+        secret_1.fillColor = 65280;
+        page5.add(secret_1);
 
         // page4
-        const page4 = this.add.container(-1, 0);
+        const page4 = this.add.container(0, -8);
         page4.visible = false;
 
-        // page4_done
-        const page4_done = this.add.image(765, 432, "jul22", "page4_done");
-        page4.add(page4_done);
+        // p4
+        const p4 = this.add.image(0, -76, "aug-22", "page/page0004.png");
+        p4.setOrigin(0, 0);
+        page4.add(p4);
 
-        // close_left_5
-        const close_left_5 = this.add.image(195, 38, "clothingcatalog", "close_left");
-        close_left_5.setOrigin(0, 0);
-        page4.add(close_left_5);
+        // tag_4
+        const tag_4 = new Tag1(this, 213, 364);
+        tag_4.scaleX = 0.7;
+        tag_4.scaleY = 0.7;
+        tag_4.angle = -41;
+        page4.add(tag_4);
 
-        // page_right_5
-        const page_right_5 = this.add.image(1207, 587, "clothingcatalog", "page_right");
-        page_right_5.setOrigin(0, 0);
-        page4.add(page_right_5);
+        // tag_5
+        const tag_5 = new Tag1(this, 375, 305);
+        tag_5.scaleX = 0.7;
+        tag_5.scaleY = 0.7;
+        tag_5.angle = -41;
+        page4.add(tag_5);
 
-        // close_right_5
-        const close_right_5 = this.add.image(1206, 38, "clothingcatalog", "close_right");
-        close_right_5.setOrigin(0, 0);
-        page4.add(close_right_5);
+        // tag_7
+        const tag_7 = new Tag1(this, 206, 593);
+        tag_7.scaleX = 0.7;
+        tag_7.scaleY = 0.7;
+        tag_7.angle = -32.00000000000006;
+        page4.add(tag_7);
 
-        // page_left_5
-        const page_left_5 = this.add.image(193, 586, "clothingcatalog", "page_left");
-        page_left_5.setOrigin(0, 0);
-        page4.add(page_left_5);
+        // tag_8
+        const tag_8 = new Tag1(this, 421, 575);
+        tag_8.scaleX = 0.7;
+        tag_8.scaleY = 0.7;
+        tag_8.angle = -32.00000000000006;
+        page4.add(tag_8);
 
-        // buy2_3_1_1
-        const buy2_3_1_1 = this.add.image(624, 497, "clothingcatalog", "buy2");
-        buy2_3_1_1.angle = 33;
-        buy2_3_1_1.setOrigin(0, 0);
-        page4.add(buy2_3_1_1);
+        // tag_9
+        const tag_9 = new Tag1(this, 540, 692);
+        tag_9.scaleX = 0.7;
+        tag_9.scaleY = 0.7;
+        tag_9.angle = -32.00000000000006;
+        page4.add(tag_9);
 
-        // buy2_3_2_3
-        const buy2_3_2_3 = this.add.image(551, 192, "clothingcatalog", "buy2");
-        buy2_3_2_3.angle = 25;
-        buy2_3_2_3.setOrigin(0, 0);
-        page4.add(buy2_3_2_3);
+        // tag_10
+        const tag_10 = new Tag1(this, 333, 708);
+        tag_10.scaleX = 0.7;
+        tag_10.scaleY = 0.7;
+        tag_10.angle = -32.00000000000006;
+        page4.add(tag_10);
 
-        // buy2_3_2_3_1
-        const buy2_3_2_3_1 = this.add.image(1168, 143, "clothingcatalog", "buy2");
-        buy2_3_2_3_1.angle = 25;
-        buy2_3_2_3_1.setOrigin(0, 0);
-        page4.add(buy2_3_2_3_1);
+        // tag_6
+        const tag_6 = new Tag2(this, 671, 319);
+        tag_6.scaleX = 0.7;
+        tag_6.scaleY = 0.7;
+        tag_6.angle = 23;
+        page4.add(tag_6);
 
-        // buy1_3_1
-        const buy1_3_1 = this.add.image(855, 398, "clothingcatalog", "buy1");
-        buy1_3_1.angle = -26;
-        buy1_3_1.setOrigin(0, 0);
-        page4.add(buy1_3_1);
-
-        // sec-bluehockey
-        const sec_bluehockey = this.add.ellipse(390, 531, 128, 128);
-        sec_bluehockey.scaleX = 0.3423781066406252;
-        sec_bluehockey.scaleY = 0.3011570029001281;
-        sec_bluehockey.isFilled = true;
-        sec_bluehockey.fillAlpha = 0;
-        page4.add(sec_bluehockey);
-
-        // sec-greenface
-        const sec_greenface = this.add.ellipse(1104, 600, 128, 128);
-        sec_greenface.scaleX = 0.3423781066406252;
-        sec_greenface.scaleY = 0.3011570029001281;
-        sec_greenface.isFilled = true;
-        sec_greenface.fillAlpha = 0;
-        page4.add(sec_greenface);
-
-        // sec-yellowface
-        const sec_yellowface = this.add.ellipse(807, 430, 128, 128);
-        sec_yellowface.scaleX = 0.3423781066406252;
-        sec_yellowface.scaleY = 0.3011570029001281;
-        sec_yellowface.isFilled = true;
-        sec_yellowface.fillAlpha = 0;
-        page4.add(sec_yellowface);
+        // secret_hex_3
+        const secret_hex_3 = this.add.rectangle(1054, 708, 135, 160);
+        secret_hex_3.scaleX = 0.8126942847066034;
+        secret_hex_3.scaleY = 0.4066250432874592;
+        secret_hex_3.alpha = 0.00001;
+        secret_hex_3.isFilled = true;
+        secret_hex_3.fillColor = 65280;
+        page4.add(secret_hex_3);
 
         // page3
-        const page3 = this.add.container(-1, 0);
+        const page3 = this.add.container(0, -3);
         page3.visible = false;
 
-        // page3_done
-        const page3_done = this.add.image(765, 432, "jul22", "page3_done");
-        page3.add(page3_done);
+        // p3
+        const p3 = this.add.image(0, -80, "aug-22", "page/page0003.png");
+        p3.setOrigin(0, 0);
+        page3.add(p3);
 
-        // buy1_3
-        const buy1_3 = this.add.image(789, 81, "clothingcatalog", "buy1");
-        buy1_3.angle = -7;
-        buy1_3.setOrigin(0, 0);
-        page3.add(buy1_3);
+        // tag2
+        const tag2 = new Tag2(this, 575, 310);
+        tag2.angle = -24;
+        page3.add(tag2);
 
-        // buy1_1_3
-        const buy1_1_3 = this.add.image(823, 352, "clothingcatalog", "buy1");
-        buy1_1_3.angle = -26;
-        buy1_1_3.setOrigin(0, 0);
-        page3.add(buy1_1_3);
+        // tag_3
+        const tag_3 = new Tag2(this, 1173, 530);
+        tag_3.angle = 20;
+        page3.add(tag_3);
 
-        // buy2_3
-        const buy2_3 = this.add.image(497, 369, "clothingcatalog", "buy2");
-        buy2_3.angle = -18;
-        buy2_3.setOrigin(0, 0);
-        page3.add(buy2_3);
+        // tag1
+        const tag1 = new Tag1(this, 325, 138);
+        tag1.angle = 20;
+        page3.add(tag1);
 
-        // close_left_3
-        const close_left_3 = this.add.image(195, 38, "clothingcatalog", "close_left");
-        close_left_3.setOrigin(0, 0);
-        page3.add(close_left_3);
+        // tag_2
+        const tag_2 = new Tag1(this, 839, 678);
+        tag_2.angle = -35.00000000000006;
+        page3.add(tag_2);
 
-        // page_right_3
-        const page_right_3 = this.add.image(1207, 587, "clothingcatalog", "page_right");
-        page_right_3.setOrigin(0, 0);
-        page3.add(page_right_3);
+        // tag_1
+        const tag_1 = new Tag1(this, 923, 298);
+        tag_1.angle = 65;
+        page3.add(tag_1);
 
-        // close_right_3
-        const close_right_3 = this.add.image(1206, 38, "clothingcatalog", "close_right");
-        close_right_3.setOrigin(0, 0);
-        page3.add(close_right_3);
+        // tag
+        const tag = new Tag1(this, 236, 526);
+        tag.angle = -26;
+        page3.add(tag);
 
-        // page_left_3
-        const page_left_3 = this.add.image(193, 586, "clothingcatalog", "page_left");
-        page_left_3.setOrigin(0, 0);
-        page3.add(page_left_3);
-
-        // buy2_3_1
-        const buy2_3_1 = this.add.image(596, 636, "clothingcatalog", "buy2");
-        buy2_3_1.angle = 33;
-        buy2_3_1.setOrigin(0, 0);
-        page3.add(buy2_3_1);
-
-        // buy2_3_2
-        const buy2_3_2 = this.add.image(1153, 630, "clothingcatalog", "buy2");
-        buy2_3_2.angle = 25;
-        buy2_3_2.setOrigin(0, 0);
-        page3.add(buy2_3_2);
-
-        // buy2_3_2_1
-        const buy2_3_2_1 = this.add.image(1104, 186, "clothingcatalog", "buy2");
-        buy2_3_2_1.angle = -44;
-        buy2_3_2_1.setOrigin(0, 0);
-        page3.add(buy2_3_2_1);
-
-        // buy2_3_2_2
-        const buy2_3_2_2 = this.add.image(1191, 503, "clothingcatalog", "buy2");
-        buy2_3_2_2.angle = -31;
-        buy2_3_2_2.setOrigin(0, 0);
-        page3.add(buy2_3_2_2);
-
-        // sec-redbackpack
-        const sec_redbackpack = this.add.ellipse(1107, 607, 128, 128);
-        sec_redbackpack.scaleX = 0.3423781066406252;
-        sec_redbackpack.scaleY = 0.3011570029001281;
-        sec_redbackpack.isFilled = true;
-        sec_redbackpack.fillAlpha = 0;
-        page3.add(sec_redbackpack);
-
-        // sec-redhockey
-        const sec_redhockey = this.add.ellipse(710, 205, 128, 128);
-        sec_redhockey.scaleX = 0.3423781066406252;
-        sec_redhockey.scaleY = 0.3011570029001281;
-        sec_redhockey.isFilled = true;
-        sec_redhockey.fillAlpha = 0;
-        page3.add(sec_redhockey);
+        // secret_hex_2
+        const secret_hex_2 = this.add.rectangle(809, 212, 135, 160);
+        secret_hex_2.scaleX = 0.3217586194875338;
+        secret_hex_2.scaleY = 0.325132808240461;
+        secret_hex_2.alpha = 0.00001;
+        secret_hex_2.isFilled = true;
+        secret_hex_2.fillColor = 65280;
+        page3.add(secret_hex_2);
 
         // page2
-        const page2 = this.add.container(-1, 0);
+        const page2 = this.add.container(0, 0);
         page2.visible = false;
 
-        // page2_done
-        const page2_done = this.add.image(765, 432, "jul22", "page2_done");
-        page2.add(page2_done);
+        // p2
+        const p2 = this.add.image(0, -82, "aug-22", "page/page0002.png");
+        p2.setOrigin(0, 0);
+        page2.add(p2);
 
-        // blue
-        const blue = this.add.image(554, 225, "jul22", "blue");
-        page2.add(blue);
+        // aqua
+        const aqua = new ColorButton(this, 687, 270);
+        aqua.scaleX = 0.7;
+        aqua.scaleY = 0.7;
+        aqua.tintTopLeft = 4718591;
+        aqua.tintTopRight = 4718591;
+        aqua.tintBottomLeft = 4718591;
+        aqua.tintBottomRight = 4718591;
+        page2.add(aqua);
 
-        // green
-        const green = this.add.image(629, 225, "jul22", "green");
-        page2.add(green);
-
-        // salmon
-        const salmon = this.add.image(704, 225, "jul22", "salmon");
-        page2.add(salmon);
-
-        // black
-        const black = this.add.image(590, 300, "jul22", "black");
-        page2.add(black);
-
-        // red
-        const red = this.add.image(665, 300, "jul22", "red");
-        page2.add(red);
-
-        // yellow
-        const yellow = this.add.image(554, 375, "jul22", "yellow");
-        page2.add(yellow);
+        // lime
+        const lime = new ColorButton(this, 653, 497);
+        lime.scaleX = 0.7;
+        lime.scaleY = 0.7;
+        lime.tintFill = false;
+        lime.tintTopLeft = 7536384;
+        lime.tintTopRight = 7536384;
+        lime.tintBottomLeft = 7536384;
+        lime.tintBottomRight = 7536384;
+        page2.add(lime);
 
         // purple
-        const purple = this.add.image(629, 375, "jul22", "purple");
+        const purple = new ColorButton(this, 578, 345);
+        purple.scaleX = 0.7;
+        purple.scaleY = 0.7;
+        purple.tintFill = false;
+        purple.tintTopLeft = 6619289;
+        purple.tintTopRight = 6619289;
+        purple.tintBottomLeft = 6619289;
+        purple.tintBottomRight = 6619289;
         page2.add(purple);
 
-        // darkgreen
-        const darkgreen = this.add.image(704, 375, "jul22", "darkgreen");
-        page2.add(darkgreen);
-
-        // arctic
-        const arctic = this.add.image(554, 450, "jul22", "arctic");
-        page2.add(arctic);
-
-        // brown
-        const brown = this.add.image(629, 450, "jul22", "brown");
-        page2.add(brown);
+        // darkGreen
+        const darkGreen = new ColorButton(this, 654, 345);
+        darkGreen.scaleX = 0.7;
+        darkGreen.scaleY = 0.7;
+        darkGreen.tintFill = false;
+        darkGreen.tintTopLeft = 25856;
+        darkGreen.tintTopRight = 25856;
+        darkGreen.tintBottomLeft = 25856;
+        darkGreen.tintBottomRight = 25856;
+        page2.add(darkGreen);
 
         // pink
-        const pink = this.add.image(704, 450, "jul22", "pink");
+        const pink = new ColorButton(this, 617, 422);
+        pink.scaleX = 0.7;
+        pink.scaleY = 0.7;
+        pink.tintFill = false;
+        pink.tintTopLeft = 16724633;
+        pink.tintTopRight = 16724633;
+        pink.tintBottomLeft = 16724633;
+        pink.tintBottomRight = 16724633;
         page2.add(pink);
 
+        // lightblue
+        const lightblue = new ColorButton(this, 578, 497);
+        lightblue.scaleX = 0.7;
+        lightblue.scaleY = 0.7;
+        lightblue.tintFill = false;
+        lightblue.tintTopLeft = 39372;
+        lightblue.tintTopRight = 39372;
+        lightblue.tintBottomLeft = 39372;
+        lightblue.tintBottomRight = 39372;
+        page2.add(lightblue);
+
+        // yellow
+        const yellow = new ColorButton(this, 503, 345);
+        yellow.scaleX = 0.7;
+        yellow.scaleY = 0.7;
+        yellow.tintFill = false;
+        yellow.tintTopLeft = 16763904;
+        yellow.tintTopRight = 16763904;
+        yellow.tintBottomLeft = 16763904;
+        yellow.tintBottomRight = 16763904;
+        page2.add(yellow);
+
+        // peach
+        const peach = new ColorButton(this, 654, 194);
+        peach.scaleX = 0.7;
+        peach.scaleY = 0.7;
+        peach.tintFill = false;
+        peach.tintTopLeft = 16737637;
+        peach.tintTopRight = 16737637;
+        peach.tintBottomLeft = 16737637;
+        peach.tintBottomRight = 16737637;
+        page2.add(peach);
+
+        // brown
+        const brown = new ColorButton(this, 542, 422);
+        brown.scaleX = 0.7;
+        brown.scaleY = 0.7;
+        brown.tintFill = false;
+        brown.tintTopLeft = 10052864;
+        brown.tintTopRight = 10052864;
+        brown.tintBottomLeft = 10052864;
+        brown.tintBottomRight = 10052864;
+        page2.add(brown);
+
         // orange
-        const orange = this.add.image(554, 525, "jul22", "orange");
+        const orange = new ColorButton(this, 503, 497);
+        orange.scaleX = 0.7;
+        orange.scaleY = 0.7;
+        orange.tintFill = false;
+        orange.tintTopLeft = 16737536;
+        orange.tintTopRight = 16737536;
+        orange.tintBottomLeft = 16737536;
+        orange.tintBottomRight = 16737536;
         page2.add(orange);
 
-        // lblue
-        const lblue = this.add.image(629, 525, "jul22", "lblue");
-        page2.add(lblue);
+        // green
+        const green = new ColorButton(this, 578, 194);
+        green.scaleX = 0.7;
+        green.scaleY = 0.7;
+        green.tintFill = false;
+        green.tintTopLeft = 39168;
+        green.tintTopRight = 39168;
+        green.tintBottomLeft = 39168;
+        green.tintBottomRight = 39168;
+        page2.add(green);
 
-        // lgreen
-        const lgreen = this.add.image(704, 525, "jul22", "lgreen");
-        page2.add(lgreen);
+        // red
+        const red = new ColorButton(this, 617, 270);
+        red.scaleX = 0.7;
+        red.scaleY = 0.7;
+        red.tintFill = false;
+        red.tintTopLeft = 13369344;
+        red.tintTopRight = 13369344;
+        red.tintBottomLeft = 13369344;
+        red.tintBottomRight = 13369344;
+        page2.add(red);
 
-        // coin
-        const coin = this.add.image(692, 614, "jul22", "coin");
-        page2.add(coin);
+        // blue
+        const blue = new ColorButton(this, 503, 194);
+        blue.scaleX = 0.7;
+        blue.scaleY = 0.7;
+        blue.tintFill = false;
+        blue.tintTopLeft = 12901;
+        blue.tintTopRight = 12901;
+        blue.tintBottomLeft = 12901;
+        blue.tintBottomRight = 12901;
+        page2.add(blue);
 
-        // sec-redviking
-        const sec_redviking = this.add.ellipse(272, 557, 128, 128);
-        sec_redviking.scaleX = 0.7631339150761072;
-        sec_redviking.scaleY = 0.740531067432945;
-        sec_redviking.isFilled = true;
-        sec_redviking.fillAlpha = 0;
-        page2.add(sec_redviking);
+        // black
+        const black = new ColorButton(this, 541, 269);
+        black.scaleX = 0.7;
+        black.scaleY = 0.7;
+        black.tintFill = false;
+        black.tintTopLeft = 3289650;
+        black.tintTopRight = 3289650;
+        black.tintBottomLeft = 3289650;
+        black.tintBottomRight = 3289650;
+        page2.add(black);
 
-        // buy1
-        const buy1 = this.add.image(942, 162, "clothingcatalog", "buy1");
-        buy1.angle = -7;
-        buy1.setOrigin(0, 0);
-        page2.add(buy1);
-
-        // buy1_1
-        const buy1_1 = this.add.image(833, 536, "clothingcatalog", "buy1");
-        buy1_1.angle = 39;
-        buy1_1.setOrigin(0, 0);
-        page2.add(buy1_1);
-
-        // buy2
-        const buy2 = this.add.image(1152, 346, "clothingcatalog", "buy2");
-        buy2.angle = -18;
-        buy2.setOrigin(0, 0);
-        page2.add(buy2);
-
-        // close_left
-        const close_left = this.add.image(195, 38, "clothingcatalog", "close_left");
-        close_left.setOrigin(0, 0);
-        page2.add(close_left);
-
-        // page_right_4
-        const page_right_4 = this.add.image(1207, 587, "clothingcatalog", "page_right");
-        page_right_4.setOrigin(0, 0);
-        page2.add(page_right_4);
-
-        // close_right_4
-        const close_right_4 = this.add.image(1206, 38, "clothingcatalog", "close_right");
-        close_right_4.setOrigin(0, 0);
-        page2.add(close_right_4);
-
-        // page_left_1
-        const page_left_1 = this.add.image(193, 586, "clothingcatalog", "page_left");
-        page_left_1.setOrigin(0, 0);
-        page2.add(page_left_1);
+        // secret_hex
+        const secret_hex = this.add.rectangle(263, 565, 135, 160);
+        secret_hex.scaleX = 0.5714166201025659;
+        secret_hex.scaleY = 0.5682791587991533;
+        secret_hex.alpha = 0.00001;
+        secret_hex.isFilled = true;
+        secret_hex.fillColor = 65280;
+        page2.add(secret_hex);
 
         // page1
-        const page1 = this.add.container(-2, 0);
+        const page1 = this.add.container(0, 0);
         page1.visible = false;
 
-        // page1_done
-        const page1_done = this.add.image(765, 432, "jul22", "page1_done");
-        page1.add(page1_done);
+        // p1
+        const p1 = this.add.image(0, -82, "aug-22", "page/page0001.png");
+        p1.setOrigin(0, 0);
+        page1.add(p1);
 
-        // close_right_4_1
-        const close_right_4_1 = this.add.image(914, 39, "clothingcatalog", "close_right");
-        close_right_4_1.setOrigin(0, 0);
-        page1.add(close_right_4_1);
+        // pageFront
+        const pageFront = this.add.image(469, 42, "clothingcatalog", "page_front");
+        pageFront.setOrigin(0, 0);
+        page1.add(pageFront);
 
-        // page_right_4_1
-        const page_right_4_1 = this.add.image(914, 588, "clothingcatalog", "page_right");
-        page_right_4_1.setOrigin(0, 0);
-        page1.add(page_right_4_1);
+        // closeRight_1
+        const closeRight_1 = this.add.image(925, 37, "clothingcatalog", "close_right");
+        closeRight_1.setOrigin(0, 0);
+        page1.add(closeRight_1);
+
+        // secret_hex_1
+        const secret_hex_1 = this.add.rectangle(646, 315, 135, 160);
+        secret_hex_1.scaleX = 0.9433455353966516;
+        secret_hex_1.scaleY = 0.5104989480990085;
+        secret_hex_1.alpha = 0.00001;
+        secret_hex_1.isFilled = true;
+        secret_hex_1.fillColor = 65280;
+        page1.add(secret_hex_1);
 
         // buttons
-        const buttons = this.add.container(189, 40);
+        const buttons = this.add.container(189, 41);
         buttons.visible = false;
 
         // coins
@@ -1596,1126 +1108,461 @@ export default class ClothingCatalog extends Book {
         buttons.add(coins);
 
         // page_left
-        const page_left = this.add.image(-43, 519, "catalogs-master", "prevpagebtn");
+        const page_left = this.add.image(2, 548, "catalogs-master", "prevpagebtn");
         page_left.setOrigin(0, 0);
-        page_left.visible = false;
         buttons.add(page_left);
 
         // page_right_1
-        const page_right_1 = this.add.image(1095, 517, "catalogs-master", "nextpagebtn");
+        const page_right_1 = this.add.image(1031, 546, "catalogs-master", "nextpagebtn");
         page_right_1.setOrigin(0, 0);
-        page_right_1.visible = false;
         buttons.add(page_right_1);
 
         // close_right_1
-        const close_right_1 = this.add.image(1092, -31, "catalogs-master", "catclosebtn");
+        const close_right_1 = this.add.image(1030, 2, "catalogs-master", "catclosebtn");
         close_right_1.setOrigin(0, 0);
-        close_right_1.visible = false;
         buttons.add(close_right_1);
 
         // lists
-        const pages = [page1, page2, page3, page4, page5, page6, page7, page8, page9, page10, page11, page12, page13, page14, page15, page16];
+        const pages = [page1, page2, page3, page4, page5, page6, page7, page8, page9, page10, page11, page12, page13, page14, page15];
 
         // block (components)
         new Interactive(block);
 
-        // close_left_16 (components)
-        const close_left_16Button = new Button(close_left_16);
-        close_left_16Button.spriteName = "close_left";
-        close_left_16Button.callback = () => this.close();
-        close_left_16Button.activeFrame = false;
-
-        // page_left_16 (components)
-        const page_left_16Button = new Button(page_left_16);
-        page_left_16Button.spriteName = "page_left";
-        page_left_16Button.callback = () => this.prevPage();
-        page_left_16Button.activeFrame = false;
-
-        // flag_button_7187 (components)
-        const flag_button_7187SimpleButton = new SimpleButton(flag_button_7187);
-        flag_button_7187SimpleButton.callback = () => this.buy(7187);
-
-        // flag_button_7186 (components)
-        const flag_button_7186SimpleButton = new SimpleButton(flag_button_7186);
-        flag_button_7186SimpleButton.callback = () => this.buy(7186);
-
-        // flag_button_7188 (components)
-        const flag_button_7188SimpleButton = new SimpleButton(flag_button_7188);
-        flag_button_7188SimpleButton.callback = () => this.buy(7188);
-
-        // flag_button_7189 (components)
-        const flag_button_7189SimpleButton = new SimpleButton(flag_button_7189);
-        flag_button_7189SimpleButton.callback = () => this.buy(7189);
-
-        // flag_button_7185 (components)
-        const flag_button_7185SimpleButton = new SimpleButton(flag_button_7185);
-        flag_button_7185SimpleButton.callback = () => this.buy(7185);
-
-        // flag_button_7184 (components)
-        const flag_button_7184SimpleButton = new SimpleButton(flag_button_7184);
-        flag_button_7184SimpleButton.callback = () => this.buy(7184);
-
-        // flag_button_7183 (components)
-        const flag_button_7183SimpleButton = new SimpleButton(flag_button_7183);
-        flag_button_7183SimpleButton.callback = () => this.buy(7183);
-
-        // flag_button_7182 (components)
-        const flag_button_7182SimpleButton = new SimpleButton(flag_button_7182);
-        flag_button_7182SimpleButton.callback = () => this.buy(7182);
-
-        // flag_button_7148 (components)
-        const flag_button_7148SimpleButton = new SimpleButton(flag_button_7148);
-        flag_button_7148SimpleButton.callback = () => this.buy(7148);
-
-        // flag_button_514 (components)
-        const flag_button_514SimpleButton = new SimpleButton(flag_button_514);
-        flag_button_514SimpleButton.callback = () => this.buy(514);
-
-        // flag_button_533 (components)
-        const flag_button_533SimpleButton = new SimpleButton(flag_button_533);
-        flag_button_533SimpleButton.callback = () => this.buy(533);
-
-        // flag_button_502 (components)
-        const flag_button_502SimpleButton = new SimpleButton(flag_button_502);
-        flag_button_502SimpleButton.callback = () => this.buy(502);
-
-        // flag_button_7096 (components)
-        const flag_button_7096SimpleButton = new SimpleButton(flag_button_7096);
-        flag_button_7096SimpleButton.callback = () => this.buy(7096);
-
-        // flag_button_504 (components)
-        const flag_button_504SimpleButton = new SimpleButton(flag_button_504);
-        flag_button_504SimpleButton.callback = () => this.buy(504);
-
-        // flag_button_538 (components)
-        const flag_button_538SimpleButton = new SimpleButton(flag_button_538);
-        flag_button_538SimpleButton.callback = () => this.buy(538);
-
-        // flag_button_529 (components)
-        const flag_button_529SimpleButton = new SimpleButton(flag_button_529);
-        flag_button_529SimpleButton.callback = () => this.buy(529);
-
-        // flag_button_505 (components)
-        const flag_button_505SimpleButton = new SimpleButton(flag_button_505);
-        flag_button_505SimpleButton.callback = () => this.buy(505);
-
-        // flag_button_500 (components)
-        const flag_button_500SimpleButton = new SimpleButton(flag_button_500);
-        flag_button_500SimpleButton.callback = () => this.buy(500);
-
-        // flag_button_535 (components)
-        const flag_button_535SimpleButton = new SimpleButton(flag_button_535);
-        flag_button_535SimpleButton.callback = () => this.buy(535);
-
-        // flag_button_525 (components)
-        const flag_button_525SimpleButton = new SimpleButton(flag_button_525);
-        flag_button_525SimpleButton.callback = () => this.buy(525);
-
-        // flag_button_506 (components)
-        const flag_button_506SimpleButton = new SimpleButton(flag_button_506);
-        flag_button_506SimpleButton.callback = () => this.buy(506);
-
-        // flag_button_536 (components)
-        const flag_button_536SimpleButton = new SimpleButton(flag_button_536);
-        flag_button_536SimpleButton.callback = () => this.buy(536);
-
-        // flag_button_540 (components)
-        const flag_button_540SimpleButton = new SimpleButton(flag_button_540);
-        flag_button_540SimpleButton.callback = () => this.buy(540);
-
-        // flag_button_507 (components)
-        const flag_button_507SimpleButton = new SimpleButton(flag_button_507);
-        flag_button_507SimpleButton.callback = () => this.buy(507);
-
-        // flag_button_542 (components)
-        const flag_button_542SimpleButton = new SimpleButton(flag_button_542);
-        flag_button_542SimpleButton.callback = () => this.buy(542);
-
-        // flag_button_546 (components)
-        const flag_button_546SimpleButton = new SimpleButton(flag_button_546);
-        flag_button_546SimpleButton.callback = () => this.buy(546);
-
-        // flag_button_548 (components)
-        const flag_button_548SimpleButton = new SimpleButton(flag_button_548);
-        flag_button_548SimpleButton.callback = () => this.buy(548);
-
-        // flag_button_530 (components)
-        const flag_button_530SimpleButton = new SimpleButton(flag_button_530);
-        flag_button_530SimpleButton.callback = () => this.buy(530);
-
-        // flag_button_508 (components)
-        const flag_button_508SimpleButton = new SimpleButton(flag_button_508);
-        flag_button_508SimpleButton.callback = () => this.buy(508);
-
-        // flag_button_541 (components)
-        const flag_button_541SimpleButton = new SimpleButton(flag_button_541);
-        flag_button_541SimpleButton.callback = () => this.buy(541);
-
-        // flag_button_519 (components)
-        const flag_button_519SimpleButton = new SimpleButton(flag_button_519);
-        flag_button_519SimpleButton.callback = () => this.buy(519);
-
-        // flag_button_545 (components)
-        const flag_button_545SimpleButton = new SimpleButton(flag_button_545);
-        flag_button_545SimpleButton.callback = () => this.buy(545);
-
-        // flag_button_531 (components)
-        const flag_button_531SimpleButton = new SimpleButton(flag_button_531);
-        flag_button_531SimpleButton.callback = () => this.buy(531);
-
-        // flag_button_527 (components)
-        const flag_button_527SimpleButton = new SimpleButton(flag_button_527);
-        flag_button_527SimpleButton.callback = () => this.buy(527);
-
-        // flag_button_524 (components)
-        const flag_button_524SimpleButton = new SimpleButton(flag_button_524);
-        flag_button_524SimpleButton.callback = () => this.buy(524);
-
-        // flag_button_501 (components)
-        const flag_button_501SimpleButton = new SimpleButton(flag_button_501);
-        flag_button_501SimpleButton.callback = () => this.buy(501);
-
-        // flag_button_511 (components)
-        const flag_button_511SimpleButton = new SimpleButton(flag_button_511);
-        flag_button_511SimpleButton.callback = () => this.buy(511);
-
-        // flag_button_528 (components)
-        const flag_button_528SimpleButton = new SimpleButton(flag_button_528);
-        flag_button_528SimpleButton.callback = () => this.buy(528);
-
-        // flag_button_534 (components)
-        const flag_button_534SimpleButton = new SimpleButton(flag_button_534);
-        flag_button_534SimpleButton.callback = () => this.buy(534);
-
-        // flag_button_512 (components)
-        const flag_button_512SimpleButton = new SimpleButton(flag_button_512);
-        flag_button_512SimpleButton.callback = () => this.buy(512);
-
-        // flag_button_520 (components)
-        const flag_button_520SimpleButton = new SimpleButton(flag_button_520);
-        flag_button_520SimpleButton.callback = () => this.buy(520);
-
-        // flag_button_513 (components)
-        const flag_button_513SimpleButton = new SimpleButton(flag_button_513);
-        flag_button_513SimpleButton.callback = () => this.buy(513);
-
-        // flag_button_7095 (components)
-        const flag_button_7095SimpleButton = new SimpleButton(flag_button_7095);
-        flag_button_7095SimpleButton.callback = () => this.buy(7095);
-
-        // flag_button_543 (components)
-        const flag_button_543SimpleButton = new SimpleButton(flag_button_543);
-        flag_button_543SimpleButton.callback = () => this.buy(543);
-
-        // flag_button_522 (components)
-        const flag_button_522SimpleButton = new SimpleButton(flag_button_522);
-        flag_button_522SimpleButton.callback = () => this.buy(522);
-
-        // flag_button_547 (components)
-        const flag_button_547SimpleButton = new SimpleButton(flag_button_547);
-        flag_button_547SimpleButton.callback = () => this.buy(547);
-
-        // flag_button_537 (components)
-        const flag_button_537SimpleButton = new SimpleButton(flag_button_537);
-        flag_button_537SimpleButton.callback = () => this.buy(537);
-
-        // flag_button_517 (components)
-        const flag_button_517SimpleButton = new SimpleButton(flag_button_517);
-        flag_button_517SimpleButton.callback = () => this.buy(517);
-
-        // flag_button_526 (components)
-        const flag_button_526SimpleButton = new SimpleButton(flag_button_526);
-        flag_button_526SimpleButton.callback = () => this.buy(526);
-
-        // flag_button_518 (components)
-        const flag_button_518SimpleButton = new SimpleButton(flag_button_518);
-        flag_button_518SimpleButton.callback = () => this.buy(518);
-
-        // flag_button_539 (components)
-        const flag_button_539SimpleButton = new SimpleButton(flag_button_539);
-        flag_button_539SimpleButton.callback = () => this.buy(539);
-
-        // flag_button_523 (components)
-        const flag_button_523SimpleButton = new SimpleButton(flag_button_523);
-        flag_button_523SimpleButton.callback = () => this.buy(523);
-
-        // flag_button_503 (components)
-        const flag_button_503SimpleButton = new SimpleButton(flag_button_503);
-        flag_button_503SimpleButton.callback = () => this.buy(503);
-
-        // flag_button_510 (components)
-        const flag_button_510SimpleButton = new SimpleButton(flag_button_510);
-        flag_button_510SimpleButton.callback = () => this.buy(510);
-
-        // flag_button_509 (components)
-        const flag_button_509SimpleButton = new SimpleButton(flag_button_509);
-        flag_button_509SimpleButton.callback = () => this.buy(509);
-
-        // flag_button_521 (components)
-        const flag_button_521SimpleButton = new SimpleButton(flag_button_521);
-        flag_button_521SimpleButton.callback = () => this.buy(521);
-
-        // flag_button_516 (components)
-        const flag_button_516SimpleButton = new SimpleButton(flag_button_516);
-        flag_button_516SimpleButton.callback = () => this.buy(516);
-
-        // flag_button_544 (components)
-        const flag_button_544SimpleButton = new SimpleButton(flag_button_544);
-        flag_button_544SimpleButton.callback = () => this.buy(544);
-
-        // flag_button_515 (components)
-        const flag_button_515SimpleButton = new SimpleButton(flag_button_515);
-        flag_button_515SimpleButton.callback = () => this.buy(515);
-
-        // page_left_15_1 (components)
-        const page_left_15_1Button = new Button(page_left_15_1);
-        page_left_15_1Button.spriteName = "page_left";
-        page_left_15_1Button.callback = () => this.prevPage();
-        page_left_15_1Button.activeFrame = false;
-
-        // close_right_15_1 (components)
-        const close_right_15_1Button = new Button(close_right_15_1);
-        close_right_15_1Button.spriteName = "close_right";
-        close_right_15_1Button.callback = () => this.close();
-        close_right_15_1Button.activeFrame = false;
-
-        // page_right_15_1 (components)
-        const page_right_15_1Button = new Button(page_right_15_1);
-        page_right_15_1Button.spriteName = "page_right";
-        page_right_15_1Button.callback = () => this.nextPage();
-        page_right_15_1Button.activeFrame = false;
-
-        // close_left_15_1 (components)
-        const close_left_15_1Button = new Button(close_left_15_1);
-        close_left_15_1Button.spriteName = "close_left";
-        close_left_15_1Button.callback = () => this.close();
-        close_left_15_1Button.activeFrame = false;
-
-        // close_left_15 (components)
-        const close_left_15Button = new Button(close_left_15);
-        close_left_15Button.spriteName = "close_left";
-        close_left_15Button.callback = () => this.close();
-        close_left_15Button.activeFrame = false;
-
-        // bg_holder_1_1b (components)
-        const bg_holder_1_1bButton = new Button(bg_holder_1_1b);
-        bg_holder_1_1bButton.spriteName = "bg_holder";
-        bg_holder_1_1bButton.callback = () => this.interface.prompt.showItem(952);
-        bg_holder_1_1bButton.activeFrame = false;
-
-        // bg_holder_1_1_1_1 (components)
-        const bg_holder_1_1_1_1Button = new Button(bg_holder_1_1_1_1);
-        bg_holder_1_1_1_1Button.spriteName = "bg_holder";
-        bg_holder_1_1_1_1Button.callback = () => this.interface.prompt.showItem(909);
-        bg_holder_1_1_1_1Button.activeFrame = false;
-
-        // page_right_15 (components)
-        const page_right_15Button = new Button(page_right_15);
-        page_right_15Button.spriteName = "page_right";
-        page_right_15Button.callback = () => this.nextPage();
-        page_right_15Button.activeFrame = false;
-
-        // close_right_15 (components)
-        const close_right_15Button = new Button(close_right_15);
-        close_right_15Button.spriteName = "close_right";
-        close_right_15Button.callback = () => this.close();
-        close_right_15Button.activeFrame = false;
-
-        // page_left_15 (components)
-        const page_left_15Button = new Button(page_left_15);
-        page_left_15Button.spriteName = "page_left";
-        page_left_15Button.callback = () => this.prevPage();
-        page_left_15Button.activeFrame = false;
-
-        // bg_holderb (components)
-        const bg_holderbButton = new Button(bg_holderb);
-        bg_holderbButton.spriteName = "bg_holder";
-        bg_holderbButton.callback = () => this.interface.prompt.showItem(938);
-        bg_holderbButton.activeFrame = false;
-
-        // bg_holder_1b (components)
-        const bg_holder_1bButton = new Button(bg_holder_1b);
-        bg_holder_1bButton.spriteName = "bg_holder";
-        bg_holder_1bButton.callback = () => this.interface.prompt.showItem(994);
-        bg_holder_1bButton.activeFrame = false;
-
-        // bg_holder_1_1_1b (components)
-        const bg_holder_1_1_1bButton = new Button(bg_holder_1_1_1b);
-        bg_holder_1_1_1bButton.spriteName = "bg_holder";
-        bg_holder_1_1_1bButton.callback = () => this.interface.prompt.showItem(946);
-        bg_holder_1_1_1bButton.activeFrame = false;
-
-        // bg_holder_1_1_2 (components)
-        const bg_holder_1_1_2Button = new Button(bg_holder_1_1_2);
-        bg_holder_1_1_2Button.spriteName = "bg_holder";
-        bg_holder_1_1_2Button.callback = () => this.interface.prompt.showItem(937);
-        bg_holder_1_1_2Button.activeFrame = false;
-
-        // bg_holder_1_2 (components)
-        const bg_holder_1_2Button = new Button(bg_holder_1_2);
-        bg_holder_1_2Button.spriteName = "bg_holder";
-        bg_holder_1_2Button.callback = () => this.interface.prompt.showItem(991);
-        bg_holder_1_2Button.activeFrame = false;
-
-        // bg_holder_2 (components)
-        const bg_holder_2Button = new Button(bg_holder_2);
-        bg_holder_2Button.spriteName = "bg_holder";
-        bg_holder_2Button.callback = () => this.interface.prompt.showItem(947);
-        bg_holder_2Button.activeFrame = false;
-
-        // close_left_14 (components)
-        const close_left_14Button = new Button(close_left_14);
-        close_left_14Button.spriteName = "close_left";
-        close_left_14Button.callback = () => this.close();
-        close_left_14Button.activeFrame = false;
-
-        // bg_holder_1_1_1 (components)
-        const bg_holder_1_1_1Button = new Button(bg_holder_1_1_1);
-        bg_holder_1_1_1Button.spriteName = "bg_holder";
-        bg_holder_1_1_1Button.callback = () => this.interface.prompt.showItem(966);
-        bg_holder_1_1_1Button.activeFrame = false;
-
-        // page_right_14 (components)
-        const page_right_14Button = new Button(page_right_14);
-        page_right_14Button.spriteName = "page_right";
-        page_right_14Button.callback = () => this.nextPage();
-        page_right_14Button.activeFrame = false;
-
-        // close_right_14 (components)
-        const close_right_14Button = new Button(close_right_14);
-        close_right_14Button.spriteName = "close_right";
-        close_right_14Button.callback = () => this.close();
-        close_right_14Button.activeFrame = false;
-
-        // page_left_14 (components)
-        const page_left_14Button = new Button(page_left_14);
-        page_left_14Button.spriteName = "page_left";
-        page_left_14Button.callback = () => this.prevPage();
-        page_left_14Button.activeFrame = false;
-
-        // small_buy0001_png_1_2_2_2_2_1_1_1_2_1_1 (components)
-        const small_buy0001_png_1_2_2_2_2_1_1_1_2_1_1Button = new Button(small_buy0001_png_1_2_2_2_2_1_1_1_2_1_1);
-        small_buy0001_png_1_2_2_2_2_1_1_1_2_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1_1_1_2_1_1Button.callback = () => this.interface.prompt.showItem(383);
-
-        // small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1_1_1 (components)
-        const small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1_1_1Button = new Button(small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1_1_1);
-        small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1_1_1Button.callback = () => this.interface.prompt.showItem(832);
-
-        // bg_holder (components)
-        const bg_holderButton = new Button(bg_holder);
-        bg_holderButton.spriteName = "bg_holder";
-        bg_holderButton.callback = () => this.interface.prompt.showItem(9000);
-        bg_holderButton.activeFrame = false;
-
-        // bg_holder_1 (components)
-        const bg_holder_1Button = new Button(bg_holder_1);
-        bg_holder_1Button.spriteName = "bg_holder";
-        bg_holder_1Button.callback = () => this.interface.prompt.showItem(929);
-        bg_holder_1Button.activeFrame = false;
-
-        // bg_holder_1_1 (components)
-        const bg_holder_1_1Button = new Button(bg_holder_1_1);
-        bg_holder_1_1Button.spriteName = "bg_holder";
-        bg_holder_1_1Button.callback = () => this.interface.prompt.showItem(997);
-        bg_holder_1_1Button.activeFrame = false;
-
-        // close_left_13 (components)
-        const close_left_13Button = new Button(close_left_13);
-        close_left_13Button.spriteName = "close_left";
-        close_left_13Button.callback = () => this.close();
-        close_left_13Button.activeFrame = false;
-
-        // page_right_13 (components)
-        const page_right_13Button = new Button(page_right_13);
-        page_right_13Button.spriteName = "page_right";
-        page_right_13Button.callback = () => this.nextPage();
-        page_right_13Button.activeFrame = false;
-
-        // close_right_13 (components)
-        const close_right_13Button = new Button(close_right_13);
-        close_right_13Button.spriteName = "close_right";
-        close_right_13Button.callback = () => this.close();
-        close_right_13Button.activeFrame = false;
-
-        // page_left_13 (components)
-        const page_left_13Button = new Button(page_left_13);
-        page_left_13Button.spriteName = "page_left";
-        page_left_13Button.callback = () => this.prevPage();
-        page_left_13Button.activeFrame = false;
-
-        // small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1 (components)
-        const small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1Button = new Button(small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1);
-        small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1Button.callback = () => this.interface.prompt.showItem(271);
-
-        // small_buy0001_png_1_2_2_2_2_1_1_1_1_2 (components)
-        const small_buy0001_png_1_2_2_2_2_1_1_1_1_2Button = new Button(small_buy0001_png_1_2_2_2_2_1_1_1_1_2);
-        small_buy0001_png_1_2_2_2_2_1_1_1_1_2Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1_1_1_1_2Button.callback = () => this.interface.prompt.showItem(139);
-
-        // small_buy0001_png_1_2_2_2_2_1_1_1_2 (components)
-        const small_buy0001_png_1_2_2_2_2_1_1_1_2Button = new Button(small_buy0001_png_1_2_2_2_2_1_1_1_2);
-        small_buy0001_png_1_2_2_2_2_1_1_1_2Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1_1_1_2Button.callback = () => this.interface.prompt.showItem(269);
-
-        // small_buy0001_png_1_2_2_2_2_1_1_2 (components)
-        const small_buy0001_png_1_2_2_2_2_1_1_2Button = new Button(small_buy0001_png_1_2_2_2_2_1_1_2);
-        small_buy0001_png_1_2_2_2_2_1_1_2Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1_1_2Button.callback = () => this.interface.prompt.showItem(273);
-
-        // small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1_1 (components)
-        const small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1_1Button = new Button(small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1_1);
-        small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1_1_1_1_1_1_1Button.callback = () => this.interface.prompt.showItem(270);
-
-        // small_buy0001_png_1_2_2_2_2_1_1_1_2_1 (components)
-        const small_buy0001_png_1_2_2_2_2_1_1_1_2_1Button = new Button(small_buy0001_png_1_2_2_2_2_1_1_1_2_1);
-        small_buy0001_png_1_2_2_2_2_1_1_1_2_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1_1_1_2_1Button.callback = () => this.interface.prompt.showItem(830);
-
-        // sec_rocker_1 (components)
-        const sec_rocker_1SimpleButton = new SimpleButton(sec_rocker_1);
-        sec_rocker_1SimpleButton.callback = () => this.interface.prompt.showItem(382);
-
-        // close_left_12 (components)
-        const close_left_12Button = new Button(close_left_12);
-        close_left_12Button.spriteName = "close_left";
-        close_left_12Button.callback = () => this.close();
-        close_left_12Button.activeFrame = false;
-
-        // page_right_12 (components)
-        const page_right_12Button = new Button(page_right_12);
-        page_right_12Button.spriteName = "page_right";
-        page_right_12Button.callback = () => this.nextPage();
-        page_right_12Button.activeFrame = false;
-
-        // close_right_12 (components)
-        const close_right_12Button = new Button(close_right_12);
-        close_right_12Button.spriteName = "close_right";
-        close_right_12Button.callback = () => this.close();
-        close_right_12Button.activeFrame = false;
-
-        // page_left_12 (components)
-        const page_left_12Button = new Button(page_left_12);
-        page_left_12Button.spriteName = "page_left";
-        page_left_12Button.callback = () => this.prevPage();
-        page_left_12Button.activeFrame = false;
-
-        // small_buy0001_png_1_2_2_2_2_1 (components)
-        const small_buy0001_png_1_2_2_2_2_1Button = new Button(small_buy0001_png_1_2_2_2_2_1);
-        small_buy0001_png_1_2_2_2_2_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1Button.callback = () => this.interface.prompt.showItem(831);
-
-        // small_buy0001_png_1_2_2_2_2_1_1 (components)
-        const small_buy0001_png_1_2_2_2_2_1_1Button = new Button(small_buy0001_png_1_2_2_2_2_1_1);
-        small_buy0001_png_1_2_2_2_2_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1_1Button.callback = () => this.interface.prompt.showItem(267);
-
-        // small_buy0001_png_1_2_2_2_2_1_1_1 (components)
-        const small_buy0001_png_1_2_2_2_2_1_1_1Button = new Button(small_buy0001_png_1_2_2_2_2_1_1_1);
-        small_buy0001_png_1_2_2_2_2_1_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1_1_1Button.callback = () => this.interface.prompt.showItem(272);
-
-        // small_buy0001_png_1_2_2_2_2_1_1_1_1 (components)
-        const small_buy0001_png_1_2_2_2_2_1_1_1_1Button = new Button(small_buy0001_png_1_2_2_2_2_1_1_1_1);
-        small_buy0001_png_1_2_2_2_2_1_1_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1_1_1_1Button.callback = () => this.interface.prompt.showItem(125);
-
-        // small_buy0001_png_1_2_2_2_2_1_1_1_1_1 (components)
-        const small_buy0001_png_1_2_2_2_2_1_1_1_1_1Button = new Button(small_buy0001_png_1_2_2_2_2_1_1_1_1_1);
-        small_buy0001_png_1_2_2_2_2_1_1_1_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1_1_1_1_1Button.callback = () => this.interface.prompt.showItem(384);
-
-        // close_left_11 (components)
-        const close_left_11Button = new Button(close_left_11);
-        close_left_11Button.spriteName = "close_left";
-        close_left_11Button.callback = () => this.close();
-        close_left_11Button.activeFrame = false;
-
-        // page_right_11 (components)
-        const page_right_11Button = new Button(page_right_11);
-        page_right_11Button.spriteName = "page_right";
-        page_right_11Button.callback = () => this.nextPage();
-        page_right_11Button.activeFrame = false;
-
-        // close_right_11 (components)
-        const close_right_11Button = new Button(close_right_11);
-        close_right_11Button.spriteName = "close_right";
-        close_right_11Button.callback = () => this.close();
-        close_right_11Button.activeFrame = false;
-
-        // page_left_11 (components)
-        const page_left_11Button = new Button(page_left_11);
-        page_left_11Button.spriteName = "page_left";
-        page_left_11Button.callback = () => this.prevPage();
-        page_left_11Button.activeFrame = false;
-
-        // small_buy0001_png_1_2_2_2_2 (components)
-        const small_buy0001_png_1_2_2_2_2Button = new Button(small_buy0001_png_1_2_2_2_2);
-        small_buy0001_png_1_2_2_2_2Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2Button.callback = () => this.interface.prompt.showItem(833);
-
-        // buy2_3_1_1_1_1_1_1_1_1 (components)
-        const buy2_3_1_1_1_1_1_1_1_1Button = new Button(buy2_3_1_1_1_1_1_1_1_1);
-        buy2_3_1_1_1_1_1_1_1_1Button.spriteName = "buy2";
-        buy2_3_1_1_1_1_1_1_1_1Button.callback = () => this.interface.prompt.showItem(4011);
-
-        // close_left_10 (components)
-        const close_left_10Button = new Button(close_left_10);
-        close_left_10Button.spriteName = "close_left";
-        close_left_10Button.callback = () => this.close();
-        close_left_10Button.activeFrame = false;
-
-        // page_right_10 (components)
-        const page_right_10Button = new Button(page_right_10);
-        page_right_10Button.spriteName = "page_right";
-        page_right_10Button.callback = () => this.nextPage();
-        page_right_10Button.activeFrame = false;
-
-        // close_right_10 (components)
-        const close_right_10Button = new Button(close_right_10);
-        close_right_10Button.spriteName = "close_right";
-        close_right_10Button.callback = () => this.close();
-        close_right_10Button.activeFrame = false;
-
-        // page_left_10 (components)
-        const page_left_10Button = new Button(page_left_10);
-        page_left_10Button.spriteName = "page_left";
-        page_left_10Button.callback = () => this.prevPage();
-        page_left_10Button.activeFrame = false;
-
-        // small_buy0001_png_1_2_2_2 (components)
-        const small_buy0001_png_1_2_2_2Button = new Button(small_buy0001_png_1_2_2_2);
-        small_buy0001_png_1_2_2_2Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2Button.callback = () => this.interface.prompt.showItem(841);
-
-        // small_buy0001_png_1_2_2_2_1 (components)
-        const small_buy0001_png_1_2_2_2_1Button = new Button(small_buy0001_png_1_2_2_2_1);
-        small_buy0001_png_1_2_2_2_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_1Button.callback = () => this.interface.prompt.showItem(732);
-
-        // small_buy0001_png_1_2_2_2_1_1 (components)
-        const small_buy0001_png_1_2_2_2_1_1Button = new Button(small_buy0001_png_1_2_2_2_1_1);
-        small_buy0001_png_1_2_2_2_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_1_1Button.callback = () => this.interface.prompt.showItem(842);
-
-        // small_buy0001_png_1_2_2_2_1_1_1 (components)
-        const small_buy0001_png_1_2_2_2_1_1_1Button = new Button(small_buy0001_png_1_2_2_2_1_1_1);
-        small_buy0001_png_1_2_2_2_1_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_1_1_1Button.callback = () => this.interface.prompt.showItem(388);
-
-        // sec_rocker (components)
-        const sec_rockerSimpleButton = new SimpleButton(sec_rocker);
-        sec_rockerSimpleButton.callback = () => this.interface.prompt.showItem(650);
-
-        // sec_suprema (components)
-        const sec_supremaSimpleButton = new SimpleButton(sec_suprema);
-        sec_supremaSimpleButton.callback = () => this.interface.prompt.showItem(677);
-
-        // close_left_9 (components)
-        const close_left_9Button = new Button(close_left_9);
-        close_left_9Button.spriteName = "close_left";
-        close_left_9Button.callback = () => this.close();
-        close_left_9Button.activeFrame = false;
-
-        // page_right_9 (components)
-        const page_right_9Button = new Button(page_right_9);
-        page_right_9Button.spriteName = "page_right";
-        page_right_9Button.callback = () => this.nextPage();
-        page_right_9Button.activeFrame = false;
-
-        // close_right_9 (components)
-        const close_right_9Button = new Button(close_right_9);
-        close_right_9Button.spriteName = "close_right";
-        close_right_9Button.callback = () => this.close();
-        close_right_9Button.activeFrame = false;
-
-        // page_left_9 (components)
-        const page_left_9Button = new Button(page_left_9);
-        page_left_9Button.spriteName = "page_left";
-        page_left_9Button.callback = () => this.prevPage();
-        page_left_9Button.activeFrame = false;
-
-        // small_buy0001_png_1_2_2 (components)
-        const small_buy0001_png_1_2_2Button = new Button(small_buy0001_png_1_2_2);
-        small_buy0001_png_1_2_2Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2Button.callback = () => this.interface.prompt.showItem(843);
-
-        // small_buy0001_png_1_2_2_1 (components)
-        const small_buy0001_png_1_2_2_1Button = new Button(small_buy0001_png_1_2_2_1);
-        small_buy0001_png_1_2_2_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_1Button.callback = () => this.interface.prompt.showItem(433);
-
-        // small_buy0001_png_1_2_2_1_1 (components)
-        const small_buy0001_png_1_2_2_1_1Button = new Button(small_buy0001_png_1_2_2_1_1);
-        small_buy0001_png_1_2_2_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_1_1Button.callback = () => this.interface.prompt.showItem(730);
-
-        // small_buy0001_png_1_2_2_1_1_1 (components)
-        const small_buy0001_png_1_2_2_1_1_1Button = new Button(small_buy0001_png_1_2_2_1_1_1);
-        small_buy0001_png_1_2_2_1_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_1_1_1Button.callback = () => this.interface.prompt.showItem(368);
-
-        // small_buy0001_png_1_2_2_1_1_1_1 (components)
-        const small_buy0001_png_1_2_2_1_1_1_1Button = new Button(small_buy0001_png_1_2_2_1_1_1_1);
-        small_buy0001_png_1_2_2_1_1_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_1_1_1_1Button.callback = () => this.interface.prompt.showItem(434);
-
-        // small_buy0001_png_1_2_2_1_1_1_1_1 (components)
-        const small_buy0001_png_1_2_2_1_1_1_1_1Button = new Button(small_buy0001_png_1_2_2_1_1_1_1_1);
-        small_buy0001_png_1_2_2_1_1_1_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_1_1_1_1_1Button.callback = () => this.interface.prompt.showItem(844);
-
-        // sec_bcowboy (components)
-        const sec_bcowboySimpleButton = new SimpleButton(sec_bcowboy);
-        sec_bcowboySimpleButton.callback = () => this.interface.prompt.showItem(6022);
-
-        // sec_cvest (components)
-        const sec_cvestSimpleButton = new SimpleButton(sec_cvest);
-        sec_cvestSimpleButton.callback = () => this.interface.prompt.showItem(217);
-
-        // sec_cbell (components)
-        const sec_cbellSimpleButton = new SimpleButton(sec_cbell);
-        sec_cbellSimpleButton.callback = () => this.interface.prompt.showItem(5035);
-
-        // close_left_8 (components)
-        const close_left_8Button = new Button(close_left_8);
-        close_left_8Button.spriteName = "close_left";
-        close_left_8Button.callback = () => this.close();
-        close_left_8Button.activeFrame = false;
-
-        // page_right_8 (components)
-        const page_right_8Button = new Button(page_right_8);
-        page_right_8Button.spriteName = "page_right";
-        page_right_8Button.callback = () => this.nextPage();
-        page_right_8Button.activeFrame = false;
-
-        // close_right_8 (components)
-        const close_right_8Button = new Button(close_right_8);
-        close_right_8Button.spriteName = "close_right";
-        close_right_8Button.callback = () => this.close();
-        close_right_8Button.activeFrame = false;
-
-        // page_left_8 (components)
-        const page_left_8Button = new Button(page_left_8);
-        page_left_8Button.spriteName = "page_left";
-        page_left_8Button.callback = () => this.prevPage();
-        page_left_8Button.activeFrame = false;
-
-        // small_buy0001_png_1_2 (components)
-        const small_buy0001_png_1_2Button = new Button(small_buy0001_png_1_2);
-        small_buy0001_png_1_2Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2Button.callback = () => this.interface.prompt.showItem(839);
-
-        // small_buy0001_png_1_2_1 (components)
-        const small_buy0001_png_1_2_1Button = new Button(small_buy0001_png_1_2_1);
-        small_buy0001_png_1_2_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_1Button.callback = () => this.interface.prompt.showItem(731);
-
-        // small_buy0001_png_1_2_1_1 (components)
-        const small_buy0001_png_1_2_1_1Button = new Button(small_buy0001_png_1_2_1_1);
-        small_buy0001_png_1_2_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_1_1Button.callback = () => this.interface.prompt.showItem(386);
-
-        // small_buy0001_png_1_2_1_1_1 (components)
-        const small_buy0001_png_1_2_1_1_1Button = new Button(small_buy0001_png_1_2_1_1_1);
-        small_buy0001_png_1_2_1_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_1_1_1Button.callback = () => this.interface.prompt.showItem(387);
-
-        // small_buy0001_png_1_2_1_1_1_1 (components)
-        const small_buy0001_png_1_2_1_1_1_1Button = new Button(small_buy0001_png_1_2_1_1_1_1);
-        small_buy0001_png_1_2_1_1_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_1_1_1_1Button.callback = () => this.interface.prompt.showItem(728);
-
-        // small_buy0001_png_1_2_1_1_1_1_1 (components)
-        const small_buy0001_png_1_2_1_1_1_1_1Button = new Button(small_buy0001_png_1_2_1_1_1_1_1);
-        small_buy0001_png_1_2_1_1_1_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_1_1_1_1_1Button.callback = () => this.interface.prompt.showItem(840);
-
-        // sec_free (components)
-        const sec_freeSimpleButton = new SimpleButton(sec_free);
-        sec_freeSimpleButton.callback = () => this.interface.prompt.showItem(1028);
-
-        // sec_sidetied (components)
-        const sec_sidetiedSimpleButton = new SimpleButton(sec_sidetied);
-        sec_sidetiedSimpleButton.callback = () => this.interface.prompt.showItem(658);
-
-        // sec_fire (components)
-        const sec_fireSimpleButton = new SimpleButton(sec_fire);
-        sec_fireSimpleButton.callback = () => this.interface.prompt.showItem(670);
-
-        // close_left_7 (components)
-        const close_left_7Button = new Button(close_left_7);
-        close_left_7Button.spriteName = "close_left";
-        close_left_7Button.callback = () => this.close();
-        close_left_7Button.activeFrame = false;
-
-        // page_right_7 (components)
-        const page_right_7Button = new Button(page_right_7);
-        page_right_7Button.spriteName = "page_right";
-        page_right_7Button.callback = () => this.nextPage();
-        page_right_7Button.activeFrame = false;
-
-        // close_right_7 (components)
-        const close_right_7Button = new Button(close_right_7);
-        close_right_7Button.spriteName = "close_right";
-        close_right_7Button.callback = () => this.close();
-        close_right_7Button.activeFrame = false;
-
-        // page_left_7 (components)
-        const page_left_7Button = new Button(page_left_7);
-        page_left_7Button.spriteName = "page_left";
-        page_left_7Button.callback = () => this.prevPage();
-        page_left_7Button.activeFrame = false;
-
-        // small_buy0001_png_1 (components)
-        const small_buy0001_png_1Button = new Button(small_buy0001_png_1);
-        small_buy0001_png_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1Button.callback = () => this.interface.prompt.showItem(101);
-
-        // small_buy0001_png_1_1 (components)
-        const small_buy0001_png_1_1Button = new Button(small_buy0001_png_1_1);
-        small_buy0001_png_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_1Button.callback = () => this.interface.prompt.showItem(4000);
-
-        // small_buy0001_png_1_1_1 (components)
-        const small_buy0001_png_1_1_1Button = new Button(small_buy0001_png_1_1_1);
-        small_buy0001_png_1_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_1_1Button.callback = () => this.interface.prompt.showItem(4001);
-
-        // small_buy0001_png_1_1_1_1 (components)
-        const small_buy0001_png_1_1_1_1Button = new Button(small_buy0001_png_1_1_1_1);
-        small_buy0001_png_1_1_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_1_1_1Button.callback = () => this.interface.prompt.showItem(3000);
-
-        // small_buy0001_png_1_1_1_1_1 (components)
-        const small_buy0001_png_1_1_1_1_1Button = new Button(small_buy0001_png_1_1_1_1_1);
-        small_buy0001_png_1_1_1_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_1_1_1_1Button.callback = () => this.interface.prompt.showItem(6001);
-
-        // sec_darkvision (components)
-        const sec_darkvisionSimpleButton = new SimpleButton(sec_darkvision);
-        sec_darkvisionSimpleButton.callback = () => this.interface.prompt.showItem(102);
-
-        // sec_suit (components)
-        const sec_suitSimpleButton = new SimpleButton(sec_suit);
-        sec_suitSimpleButton.callback = () => this.interface.prompt.showItem(261);
-
-        // sec_mb (components)
-        const sec_mbSimpleButton = new SimpleButton(sec_mb);
-        sec_mbSimpleButton.callback = () => this.interface.prompt.showItem(5001);
-
-        // close_left_6 (components)
-        const close_left_6Button = new Button(close_left_6);
-        close_left_6Button.spriteName = "close_left";
-        close_left_6Button.callback = () => this.close();
-        close_left_6Button.activeFrame = false;
-
-        // page_right_6 (components)
-        const page_right_6Button = new Button(page_right_6);
-        page_right_6Button.spriteName = "page_right";
-        page_right_6Button.callback = () => this.nextPage();
-        page_right_6Button.activeFrame = false;
-
-        // close_right_6 (components)
-        const close_right_6Button = new Button(close_right_6);
-        close_right_6Button.spriteName = "close_right";
-        close_right_6Button.callback = () => this.close();
-        close_right_6Button.activeFrame = false;
-
-        // page_left_6 (components)
-        const page_left_6Button = new Button(page_left_6);
-        page_left_6Button.spriteName = "page_left";
-        page_left_6Button.callback = () => this.prevPage();
-        page_left_6Button.activeFrame = false;
-
-        // buy1_3_1_1 (components)
-        const buy1_3_1_1Button = new Button(buy1_3_1_1);
-        buy1_3_1_1Button.spriteName = "buy1";
-        buy1_3_1_1Button.callback = () => this.interface.prompt.showItem(281);
-
-        // buy2_3_1_1_1 (components)
-        const buy2_3_1_1_1Button = new Button(buy2_3_1_1_1);
-        buy2_3_1_1_1Button.spriteName = "buy2";
-        buy2_3_1_1_1Button.callback = () => this.interface.prompt.showItem(6002);
-
-        // buy2_3_1_1_1_1 (components)
-        const buy2_3_1_1_1_1Button = new Button(buy2_3_1_1_1_1);
-        buy2_3_1_1_1_1Button.spriteName = "buy2";
-        buy2_3_1_1_1_1Button.callback = () => this.interface.prompt.showItem(6004);
-
-        // buy2_3_1_1_1_1_1 (components)
-        const buy2_3_1_1_1_1_1Button = new Button(buy2_3_1_1_1_1_1);
-        buy2_3_1_1_1_1_1Button.spriteName = "buy2";
-        buy2_3_1_1_1_1_1Button.callback = () => this.interface.prompt.showItem(6003);
-
-        // buy2_3_1_1_1_1_1_1 (components)
-        const buy2_3_1_1_1_1_1_1Button = new Button(buy2_3_1_1_1_1_1_1);
-        buy2_3_1_1_1_1_1_1Button.spriteName = "buy2";
-        buy2_3_1_1_1_1_1_1Button.callback = () => this.interface.prompt.showItem(6006);
-
-        // buy2_3_1_1_1_1_1_1_1 (components)
-        const buy2_3_1_1_1_1_1_1_1Button = new Button(buy2_3_1_1_1_1_1_1_1);
-        buy2_3_1_1_1_1_1_1_1Button.spriteName = "buy2";
-        buy2_3_1_1_1_1_1_1_1Button.callback = () => this.interface.prompt.showItem(6005);
-
-        // sec_blacksneak (components)
-        const sec_blacksneakSimpleButton = new SimpleButton(sec_blacksneak);
-        sec_blacksneakSimpleButton.callback = () => this.interface.prompt.showItem(352);
-
-        // sec_rugby (components)
-        const sec_rugbySimpleButton = new SimpleButton(sec_rugby);
-        sec_rugbySimpleButton.callback = () => this.interface.prompt.showItem(781);
-
-        // close_left_5 (components)
-        const close_left_5Button = new Button(close_left_5);
-        close_left_5Button.spriteName = "close_left";
-        close_left_5Button.callback = () => this.close();
-        close_left_5Button.activeFrame = false;
-
-        // page_right_5 (components)
-        const page_right_5Button = new Button(page_right_5);
-        page_right_5Button.spriteName = "page_right";
-        page_right_5Button.callback = () => this.nextPage();
-        page_right_5Button.activeFrame = false;
-
-        // close_right_5 (components)
-        const close_right_5Button = new Button(close_right_5);
-        close_right_5Button.spriteName = "close_right";
-        close_right_5Button.callback = () => this.close();
-        close_right_5Button.activeFrame = false;
-
-        // page_left_5 (components)
-        const page_left_5Button = new Button(page_left_5);
-        page_left_5Button.spriteName = "page_left";
-        page_left_5Button.callback = () => this.prevPage();
-        page_left_5Button.activeFrame = false;
-
-        // buy2_3_1_1 (components)
-        const buy2_3_1_1Button = new Button(buy2_3_1_1);
-        buy2_3_1_1Button.spriteName = "buy2";
-        buy2_3_1_1Button.callback = () => this.interface.prompt.showItem(219);
-
-        // buy2_3_2_3 (components)
-        const buy2_3_2_3Button = new Button(buy2_3_2_3);
-        buy2_3_2_3Button.spriteName = "buy2";
-        buy2_3_2_3Button.callback = () => this.interface.prompt.showItem(111);
-
-        // buy2_3_2_3_1 (components)
-        const buy2_3_2_3_1Button = new Button(buy2_3_2_3_1);
-        buy2_3_2_3_1Button.spriteName = "buy2";
-        buy2_3_2_3_1Button.callback = () => this.interface.prompt.showItem(1006);
-
-        // buy1_3_1 (components)
-        const buy1_3_1Button = new Button(buy1_3_1);
-        buy1_3_1Button.spriteName = "buy1";
-        buy1_3_1Button.callback = () => this.interface.prompt.showItem(4010);
-
-        // sec_bluehockey (components)
-        const sec_bluehockeySimpleButton = new SimpleButton(sec_bluehockey);
-        sec_bluehockeySimpleButton.callback = () => this.interface.prompt.showItem(278);
-
-        // sec_greenface (components)
-        const sec_greenfaceSimpleButton = new SimpleButton(sec_greenface);
-        sec_greenfaceSimpleButton.callback = () => this.interface.prompt.showItem(2018);
-
-        // sec_yellowface (components)
-        const sec_yellowfaceSimpleButton = new SimpleButton(sec_yellowface);
-        sec_yellowfaceSimpleButton.callback = () => this.interface.prompt.showItem(2019);
-
-        // buy1_3 (components)
-        const buy1_3Button = new Button(buy1_3);
-        buy1_3Button.spriteName = "buy1";
-        buy1_3Button.callback = () => this.interface.prompt.showItem(1005);
-
-        // buy1_1_3 (components)
-        const buy1_1_3Button = new Button(buy1_1_3);
-        buy1_1_3Button.spriteName = "buy1";
-        buy1_1_3Button.callback = () => this.interface.prompt.showItem(314);
-
-        // buy2_3 (components)
-        const buy2_3Button = new Button(buy2_3);
-        buy2_3Button.spriteName = "buy2";
-        buy2_3Button.callback = () => this.interface.prompt.showItem(4008);
-
-        // close_left_3 (components)
-        const close_left_3Button = new Button(close_left_3);
-        close_left_3Button.spriteName = "close_left";
-        close_left_3Button.callback = () => this.close();
-        close_left_3Button.activeFrame = false;
-
-        // page_right_3 (components)
-        const page_right_3Button = new Button(page_right_3);
-        page_right_3Button.spriteName = "page_right";
-        page_right_3Button.callback = () => this.nextPage();
-        page_right_3Button.activeFrame = false;
-
-        // close_right_3 (components)
-        const close_right_3Button = new Button(close_right_3);
-        close_right_3Button.spriteName = "close_right";
-        close_right_3Button.callback = () => this.close();
-        close_right_3Button.activeFrame = false;
-
-        // page_left_3 (components)
-        const page_left_3Button = new Button(page_left_3);
-        page_left_3Button.spriteName = "page_left";
-        page_left_3Button.callback = () => this.prevPage();
-        page_left_3Button.activeFrame = false;
-
-        // buy2_3_1 (components)
-        const buy2_3_1Button = new Button(buy2_3_1);
-        buy2_3_1Button.spriteName = "buy2";
-        buy2_3_1Button.callback = () => this.interface.prompt.showItem(3004);
-
-        // buy2_3_2 (components)
-        const buy2_3_2Button = new Button(buy2_3_2);
-        buy2_3_2Button.spriteName = "buy2";
-        buy2_3_2Button.callback = () => this.interface.prompt.showItem(222);
-
-        // buy2_3_2_1 (components)
-        const buy2_3_2_1Button = new Button(buy2_3_2_1);
-        buy2_3_2_1Button.spriteName = "buy2";
-        buy2_3_2_1Button.callback = () => this.interface.prompt.showItem(4009);
-
-        // buy2_3_2_2 (components)
-        const buy2_3_2_2Button = new Button(buy2_3_2_2);
-        buy2_3_2_2Button.spriteName = "buy2";
-        buy2_3_2_2Button.callback = () => this.interface.prompt.showItem(312);
-
-        // sec_redbackpack (components)
-        const sec_redbackpackSimpleButton = new SimpleButton(sec_redbackpack);
-        sec_redbackpackSimpleButton.callback = () => this.interface.prompt.showItem(306);
-
-        // sec_redhockey (components)
-        const sec_redhockeySimpleButton = new SimpleButton(sec_redhockey);
-        sec_redhockeySimpleButton.callback = () => this.interface.prompt.showItem(277);
-
-        // blue (components)
-        const blueButton = new Button(blue);
-        blueButton.spriteName = "blue";
-        blueButton.callback = () => this.interface.prompt.showItem(1);
-
-        // green (components)
-        const greenButton = new Button(green);
-        greenButton.spriteName = "green";
-        greenButton.callback = () => this.interface.prompt.showItem(2);
-
-        // salmon (components)
-        const salmonButton = new Button(salmon);
-        salmonButton.spriteName = "salmon";
-        salmonButton.callback = () => this.interface.prompt.showItem(10);
-
-        // black (components)
-        const blackButton = new Button(black);
-        blackButton.spriteName = "black";
-        blackButton.callback = () => this.interface.prompt.showItem(4);
-
-        // red (components)
-        const redButton = new Button(red);
-        redButton.spriteName = "red";
-        redButton.callback = () => this.interface.prompt.showItem(5);
-
-        // yellow (components)
-        const yellowButton = new Button(yellow);
-        yellowButton.spriteName = "yellow";
-        yellowButton.callback = () => this.interface.prompt.showItem(7);
-
-        // purple (components)
-        const purpleButton = new Button(purple);
-        purpleButton.spriteName = "purple";
-        purpleButton.callback = () => this.interface.prompt.showItem(8);
-
-        // darkgreen (components)
-        const darkgreenButton = new Button(darkgreen);
-        darkgreenButton.spriteName = "darkgreen";
-        darkgreenButton.callback = () => this.interface.prompt.showItem(11);
-
-        // arctic (components)
-        const arcticButton = new Button(arctic);
-        arcticButton.spriteName = "arctic";
-        arcticButton.callback = () => this.interface.prompt.showItem(16);
-
-        // brown (components)
-        const brownButton = new Button(brown);
-        brownButton.spriteName = "brown";
-        brownButton.callback = () => this.interface.prompt.showItem(9);
-
-        // pink (components)
-        const pinkButton = new Button(pink);
-        pinkButton.spriteName = "pink";
-        pinkButton.callback = () => this.interface.prompt.showItem(3);
-
-        // orange (components)
-        const orangeButton = new Button(orange);
-        orangeButton.spriteName = "orange";
-        orangeButton.callback = () => this.interface.prompt.showItem(6);
-
-        // lblue (components)
-        const lblueButton = new Button(lblue);
-        lblueButton.spriteName = "lblue";
-        lblueButton.callback = () => this.interface.prompt.showItem(12);
-
-        // lgreen (components)
-        const lgreenButton = new Button(lgreen);
-        lgreenButton.spriteName = "lgreen";
-        lgreenButton.callback = () => this.interface.prompt.showItem(13);
-
-        // sec_redviking (components)
-        const sec_redvikingSimpleButton = new SimpleButton(sec_redviking);
-        sec_redvikingSimpleButton.callback = () => this.interface.prompt.showItem(452);
-
-        // buy1 (components)
-        const buy1Button = new Button(buy1);
-        buy1Button.spriteName = "buy1";
-        buy1Button.callback = () => this.interface.prompt.showItem(1004);
-
-        // buy1_1 (components)
-        const buy1_1Button = new Button(buy1_1);
-        buy1_1Button.spriteName = "buy1";
-        buy1_1Button.callback = () => this.interface.prompt.showItem(5002);
-
-        // buy2 (components)
-        const buy2Button = new Button(buy2);
-        buy2Button.spriteName = "buy2";
-        buy2Button.callback = () => this.interface.prompt.showItem(4007);
-
-        // close_left (components)
-        const close_leftButton = new Button(close_left);
-        close_leftButton.spriteName = "close_left";
-        close_leftButton.callback = () => this.close();
-        close_leftButton.activeFrame = false;
-
-        // page_right_4 (components)
-        const page_right_4Button = new Button(page_right_4);
-        page_right_4Button.spriteName = "page_right";
-        page_right_4Button.callback = () => this.nextPage();
-        page_right_4Button.activeFrame = false;
-
-        // close_right_4 (components)
-        const close_right_4Button = new Button(close_right_4);
-        close_right_4Button.spriteName = "close_right";
-        close_right_4Button.callback = () => this.close();
-        close_right_4Button.activeFrame = false;
-
-        // page_left_1 (components)
-        const page_left_1Button = new Button(page_left_1);
-        page_left_1Button.spriteName = "page_left";
-        page_left_1Button.callback = () => this.prevPage();
-        page_left_1Button.activeFrame = false;
-
-        // close_right_4_1 (components)
-        const close_right_4_1Button = new Button(close_right_4_1);
-        close_right_4_1Button.spriteName = "close_right";
-        close_right_4_1Button.callback = () => this.close();
-        close_right_4_1Button.activeFrame = false;
-
-        // page_right_4_1 (components)
-        const page_right_4_1Button = new Button(page_right_4_1);
-        page_right_4_1Button.spriteName = "page_right";
-        page_right_4_1Button.callback = () => this.nextPage();
-        page_right_4_1Button.activeFrame = false;
+        // pageLeft_1 (components)
+        const pageLeft_1Button = new Button(pageLeft_1);
+        pageLeft_1Button.spriteName = "page_left";
+        pageLeft_1Button.callback = () => this.prevPage();
+        pageLeft_1Button.activeFrame = false;
+        pageLeft_1Button.pixelPerfect = true;
+
+        // closeLeft (components)
+        const closeLeftButton = new Button(closeLeft);
+        closeLeftButton.spriteName = "close_left";
+        closeLeftButton.callback = () => this.close();
+        closeLeftButton.pixelPerfect = true;
+
+        // us (prefab fields)
+        us.item = 501;
+
+        // turkey (prefab fields)
+        turkey.item = 521;
+
+        // switzerland (prefab fields)
+        switzerland.item = 520;
+
+        // sweden (prefab fields)
+        sweden.item = 519;
+
+        // spain (prefab fields)
+        spain.item = 518;
+
+        // sa (prefab fields)
+        sa.item = 526;
+
+        // russia (prefab fields)
+        russia.item = 517;
+
+        // portugal (prefab fields)
+        portugal.item = 525;
+
+        // poland (prefab fields)
+        poland.item = 516;
+
+        // norway (prefab fields)
+        norway.item = 515;
+
+        // nz (prefab fields)
+        nz.item = 523;
+
+        // netherlands (prefab fields)
+        netherlands.item = 514;
+
+        // mexico (prefab fields)
+        mexico.item = 522;
+
+        // korea (prefab fields)
+        korea.item = 513;
+
+        // japan (prefab fields)
+        japan.item = 512;
+
+        // jamaica (prefab fields)
+        jamaica.item = 534;
+
+        // italy (prefab fields)
+        italy.item = 528;
+
+        // israel (prefab fields)
+        israel.item = 511;
+
+        // ireland (prefab fields)
+        ireland.item = 524;
+
+        // india (prefab fields)
+        india.item = 527;
+
+        // hungary (prefab fields)
+        hungary.item = 531;
+
+        // uk (prefab fields)
+        uk.item = 503;
+
+        // germany (prefab fields)
+        germany.item = 510;
+
+        // france (prefab fields)
+        france.item = 509;
+
+        // finland (prefab fields)
+        finland.item = 508;
+
+        // egypt (prefab fields)
+        egypt.item = 530;
+
+        // denmark (prefab fields)
+        denmark.item = 507;
+
+        // colombia (prefab fields)
+        colombia.item = 536;
+
+        // china (prefab fields)
+        china.item = 506;
+
+        // chile (prefab fields)
+        chile.item = 535;
+
+        // canada (prefab fields)
+        canada.item = 500;
+
+        // brazil (prefab fields)
+        brazil.item = 505;
+
+        // belize (prefab fields)
+        belize.item = 529;
+
+        // belgium (prefab fields)
+        belgium.item = 504;
+
+        // australia (prefab fields)
+        australia.item = 502;
+
+        // argentina (prefab fields)
+        argentina.item = 533;
+
+        // photoButton8 (prefab fields)
+        photoButton8.item = 938;
+
+        // photoButton5 (prefab fields)
+        photoButton5.item = 9014;
+
+        // photoButton6 (prefab fields)
+        photoButton6.item = 9013;
+
+        // photoButton7 (prefab fields)
+        photoButton7.item = 937;
+
+        // photoButton9 (prefab fields)
+        photoButton9.item = 9011;
+
+        // photoButton10 (prefab fields)
+        photoButton10.item = 978;
+
+        // photoButton11 (prefab fields)
+        photoButton11.item = 933;
+
+        // photoButton12 (prefab fields)
+        photoButton12.item = 936;
+
+        // tag_53 (prefab fields)
+        tag_53.item = 4024;
+
+        // tag_54 (prefab fields)
+        tag_54.item = 175;
+
+        // tag_55 (prefab fields)
+        tag_55.item = 5010;
+
+        // tag_56 (prefab fields)
+        tag_56.item = 658;
+
+        // photoButton4 (prefab fields)
+        photoButton4.item = 908;
+
+        // photoButton3 (prefab fields)
+        photoButton3.item = 925;
+
+        // photoButton2 (prefab fields)
+        photoButton2.item = 904;
+
+        // photoButton1 (prefab fields)
+        photoButton1.item = 9016;
+
+        // secret_7 (components)
+        const secret_7SimpleButton = new SimpleButton(secret_7);
+        secret_7SimpleButton.callback = () => this.interface.prompt.showItem(6073);;
+
+        // tag_50 (prefab fields)
+        tag_50.item = 10213;
+
+        // tag_51 (prefab fields)
+        tag_51.item = 249;
+
+        // tag_52 (prefab fields)
+        tag_52.item = 657;
+
+        // secret_6 (components)
+        const secret_6SimpleButton = new SimpleButton(secret_6);
+        secret_6SimpleButton.callback = () => this.interface.prompt.showItem(4448);;
+
+        // tag_46 (prefab fields)
+        tag_46.item = 1026;
+
+        // tag_47 (prefab fields)
+        tag_47.item = 243;
+
+        // tag_48 (prefab fields)
+        tag_48.item = 365;
+
+        // tag_49 (prefab fields)
+        tag_49.item = 14041;
+
+        // secret_5 (components)
+        const secret_5SimpleButton = new SimpleButton(secret_5);
+        secret_5SimpleButton.callback = () => this.interface.prompt.showItem(4147);;
+
+        // tag_39 (prefab fields)
+        tag_39.item = 1021;
+
+        // tag_40 (prefab fields)
+        tag_40.item = 4023;
+
+        // tag_41 (prefab fields)
+        tag_41.item = 179;
+
+        // tag_42 (prefab fields)
+        tag_42.item = 5011;
+
+        // tag_43 (prefab fields)
+        tag_43.item = 11020;
+
+        // tag_44 (prefab fields)
+        tag_44.item = 10380;
+
+        // tag_45 (prefab fields)
+        tag_45.item = 226;
+
+        // secret (components)
+        const secretSimpleButton = new SimpleButton(secret);
+        secretSimpleButton.callback = () => this.interface.prompt.showItem(1595);;
+
+        // tag_35 (prefab fields)
+        tag_35.item = 1030;
+
+        // tag_36 (prefab fields)
+        tag_36.item = 4050;
+
+        // tag_31 (prefab fields)
+        tag_31.item = 5014;
+
+        // tag_38 (prefab fields)
+        tag_38.item = 10236;
+
+        // tag_37 (prefab fields)
+        tag_37.item = 10401;
+
+        // tag_34 (prefab fields)
+        tag_34.item = 234;
+
+        // tag_33 (prefab fields)
+        tag_33.item = 1027;
+
+        // tag_32 (prefab fields)
+        tag_32.item = 4049;
+
+        // secret_4 (components)
+        const secret_4SimpleButton = new SimpleButton(secret_4);
+        secret_4SimpleButton.callback = () => this.interface.prompt.showItem(443);;
+
+        // tag_26 (prefab fields)
+        tag_26.item = 1029;
+
+        // tag_27 (prefab fields)
+        tag_27.item = 4047;
+
+        // tag_28 (prefab fields)
+        tag_28.item = 5015;
+
+        // tag_29 (prefab fields)
+        tag_29.item = 1028;
+
+        // tag_30 (prefab fields)
+        tag_30.item = 4048;
+
+        // secret_3 (components)
+        const secret_3SimpleButton = new SimpleButton(secret_3);
+        secret_3SimpleButton.callback = () => this.interface.prompt.showItem(24080);;
+
+        // tag_21 (prefab fields)
+        tag_21.item = 4063;
+
+        // tag_23 (prefab fields)
+        tag_23.item = 4044;
+
+        // tag_24 (prefab fields)
+        tag_24.item = 484;
+
+        // tag_25 (prefab fields)
+        tag_25.item = 4043;
+
+        // tag_22 (prefab fields)
+        tag_22.item = 402;
+
+        // secret_2 (components)
+        const secret_2SimpleButton = new SimpleButton(secret_2);
+        secret_2SimpleButton.callback = () => this.interface.prompt.showItem(2047);;
+
+        // tag_11 (prefab fields)
+        tag_11.item = 652;
+
+        // tag_12 (prefab fields)
+        tag_12.item = 377;
+
+        // tag_13 (prefab fields)
+        tag_13.item = 378;
+
+        // tag_14 (prefab fields)
+        tag_14.item = 10671;
+
+        // tag_16 (prefab fields)
+        tag_16.item = 4057;
+
+        // tag_17 (prefab fields)
+        tag_17.item = 206;
+
+        // tag_18 (prefab fields)
+        tag_18.item = 4062;
+
+        // tag_15 (prefab fields)
+        tag_15.item = 4059;
+
+        // tag_20 (prefab fields)
+        tag_20.item = 4061;
+
+        // tag_19 (prefab fields)
+        tag_19.item = 781;
+
+        // secret_1 (components)
+        const secret_1SimpleButton = new SimpleButton(secret_1);
+        secret_1SimpleButton.callback = () => this.interface.prompt.showItem(353);;
+
+        // tag_4 (prefab fields)
+        tag_4.item = 1539;
+
+        // tag_5 (prefab fields)
+        tag_5.item = 1038;
+
+        // tag_7 (prefab fields)
+        tag_7.item = 221;
+
+        // tag_8 (prefab fields)
+        tag_8.item = 222;
+
+        // tag_9 (prefab fields)
+        tag_9.item = 223;
+
+        // tag_10 (prefab fields)
+        tag_10.item = 224;
+
+        // tag_6 (prefab fields)
+        tag_6.item = 406;
+
+        // secret_hex_3 (components)
+        const secret_hex_3SimpleButton = new SimpleButton(secret_hex_3);
+        secret_hex_3SimpleButton.callback = () => this.interface.prompt.showItem(262);;
+
+        // tag2 (prefab fields)
+        tag2.item = 3013;
+
+        // tag_3 (prefab fields)
+        tag_3.item = 4058;
+
+        // tag1 (prefab fields)
+        tag1.item = 1039;
+
+        // tag_2 (prefab fields)
+        tag_2.item = 3012;
+
+        // tag_1 (prefab fields)
+        tag_1.item = 10662;
+
+        // tag (prefab fields)
+        tag.item = 4060;
+
+        // secret_hex_2 (components)
+        const secret_hex_2SimpleButton = new SimpleButton(secret_hex_2);
+        secret_hex_2SimpleButton.callback = () => this.interface.prompt.showItem(250);;
+
+        // aqua (prefab fields)
+        aqua.item = 15;
+
+        // lime (prefab fields)
+        lime.item = 13;
+
+        // purple (prefab fields)
+        purple.item = 8;
+
+        // darkGreen (prefab fields)
+        darkGreen.item = 11;
+
+        // pink (prefab fields)
+        pink.item = 3;
+
+        // lightblue (prefab fields)
+        lightblue.item = 12;
+
+        // yellow (prefab fields)
+        yellow.item = 7;
+
+        // peach (prefab fields)
+        peach.item = 10;
+
+        // brown (prefab fields)
+        brown.item = 9;
+
+        // orange (prefab fields)
+        orange.item = 6;
+
+        // green (prefab fields)
+        green.item = 2;
+
+        // red (prefab fields)
+        red.item = 5;
+
+        // blue (prefab fields)
+        blue.item = 1;
+
+        // black (prefab fields)
+        black.item = 4;
+
+        // secret_hex (components)
+        const secret_hexSimpleButton = new SimpleButton(secret_hex);
+        secret_hexSimpleButton.callback = () => this.interface.prompt.showItem(240);;
+
+        // pageFront (components)
+        const pageFrontButton = new Button(pageFront);
+        pageFrontButton.spriteName = "page_front";
+        pageFrontButton.callback = () => this.nextPage();
+        pageFrontButton.activeFrame = false;
+
+        // closeRight_1 (components)
+        const closeRight_1Button = new Button(closeRight_1);
+        closeRight_1Button.spriteName = "close_right";
+        closeRight_1Button.callback = () => this.close();
+        closeRight_1Button.pixelPerfect = true;
+
+        // secret_hex_1 (components)
+        const secret_hex_1SimpleButton = new SimpleButton(secret_hex_1);
+        secret_hex_1SimpleButton.callback = () => this.interface.prompt.showItem(783);;
 
         // page_left (components)
         const page_leftButton = new Button(page_left);
