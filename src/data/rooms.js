@@ -262,11 +262,11 @@ rooms = {
 	},
 	908: {
 		key: 'BeanCounters',
-		scene: require('@games/beanCounters/beanCounters').default
+		scene: require('@games/beancounters/beanCounters').default
 	},
 	911: {
 		key: 'YumYuck',
-		scene: require('@games/yumYuck/yumYuck').default
+		scene: require('@games/yumyuck/yumYuck').default
 	},
 	928: {
 		key: 'PuffleLaunch',
