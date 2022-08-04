@@ -105,3 +105,9 @@ dist
 
 assets/
 package-lock.json
+
+# Mac files
+.DS_Store
+
+# Yarn
+yarn.lock

@@ -267,10 +267,18 @@
             "y": 351
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "94bb990e-2ae4-4cc0-b070-5ee6ecddbb02",
-            "label": "catalog_small0001",
-            "components": [],
+            "label": "catalog_small",
+            "components": [
+                "SimpleButton",
+                "Animation"
+            ],
+            "Animation.key": "catalog_small",
+            "Animation.end": 7,
+            "Animation.repeat": 0,
+            "Animation.autoPlay": false,
+            "Animation.onHover": true,
             "texture": {
                 "key": "lodge",
                 "frame": "catalog_small0001"

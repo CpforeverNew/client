@@ -111,9 +111,9 @@ export default class Lodge extends RoomScene {
         // rods
         this.add.image(828, 351, "lodge", "rods");
 
-        // catalog_small0001
-        const catalog_small0001 = this.add.image(838, 263, "lodge", "catalog_small0001");
-        catalog_small0001.setOrigin(0, 0);
+        // catalog_small
+        const catalog_small = this.add.sprite(838, 263, "lodge", "catalog_small0001");
+        catalog_small.setOrigin(0, 0);
 
         // catalog_small_tape
         const catalog_small_tape = this.add.image(855, 261, "lodge", "catalog_small_tape");
@@ -214,6 +214,15 @@ export default class Lodge extends RoomScene {
         const fishing_doorMoveTo = new MoveTo(fishing_door);
         fishing_doorMoveTo.x = 960;
         fishing_doorMoveTo.y = 460;
+
+        // catalog_small (components)
+        new SimpleButton(catalog_small);
+        const catalog_smallAnimation = new Animation(catalog_small);
+        catalog_smallAnimation.key = "catalog_small";
+        catalog_smallAnimation.end = 7;
+        catalog_smallAnimation.repeat = 0;
+        catalog_smallAnimation.autoPlay = false;
+        catalog_smallAnimation.onHover = true;
 
         // bait (components)
         const baitButton = new Button(bait);
