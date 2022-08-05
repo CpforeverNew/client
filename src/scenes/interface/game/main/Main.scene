@@ -909,6 +909,40 @@
             "y": 35,
             "visible": false,
             "nestedPrefabs": []
+        },
+        {
+            "type": "Image",
+            "id": "35bda80d-87ef-428b-9de3-0b7016501c49",
+            "label": "news_button_1",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.daily.visible = true",
+            "texture": {
+                "key": "daily",
+                "frame": "dailyrewardiconn"
+            },
+            "x": 1447,
+            "y": 60,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "prefabId": "58912eae-df4c-439d-97cf-58e295071ee7",
+            "id": "11210c29-5acc-43c9-a204-bb4edfd51047",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "daily",
+            "scope": "CLASS",
+            "components": [],
+            "x": 0,
+            "y": 0,
+            "visible": false,
+            "nestedPrefabs": []
         }
     ],
     "plainObjects": [],

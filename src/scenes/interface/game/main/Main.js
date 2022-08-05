@@ -27,6 +27,7 @@ import Prompt from '../prompt/Prompt'
 import Snitch from '../snitch/Snitch'
 import Elevator from '../elevator/Elevator'
 import PufflesMenu from '../floating/puffles/PufflesMenu'
+import Daily from '../daily/Daily'
 
 /* START OF COMPILED CODE */
 
@@ -149,6 +150,10 @@ export default class Main extends BaseScene {
         this.prompt;
         /** @type {Elevator} */
         this.elevator;
+        /** @type {Phaser.GameObjects.Image} */
+        this.news_button_1;
+        /** @type {Daily} */
+        this.daily;
         /** @type {Array<PlayerCard|Buddy|Moderator>} */
         this.hideOnSleep;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|ChatLog>} */
@@ -396,6 +401,16 @@ export default class Main extends BaseScene {
         this.add.existing(elevator);
         elevator.visible = false;
 
+        // news_button_1
+        const news_button_1 = this.add.image(1447, 60, "daily", "dailyrewardiconn");
+        news_button_1.scaleX = 0.5;
+        news_button_1.scaleY = 0.5;
+
+        // daily
+        const daily = new Daily(this, 0, 0);
+        this.add.existing(daily);
+        daily.visible = false;
+
         // lists
         const hideOnSleep = [playerCard, buddy, moderator];
         const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, puffle_icon, puffle_button_disabled, chat_box, map_button, news_button, mod_m, chatLog, badge_member, emote_icon];
@@ -508,6 +523,10 @@ export default class Main extends BaseScene {
         mod_buttonSimpleButton.hoverOutCallback = () => this.onModOut();
         mod_buttonSimpleButton.callback = () => this.onModClick();
 
+        // news_button_1 (components)
+        const news_button_1SimpleButton = new SimpleButton(news_button_1);
+        news_button_1SimpleButton.callback = () => this.daily.visible = true;
+
         this.pinContainer = pinContainer;
         this.dock = dock;
         this.chat_box = chat_box;
@@ -565,6 +584,8 @@ export default class Main extends BaseScene {
         this.puffleCare = puffleCare;
         this.prompt = prompt;
         this.elevator = elevator;
+        this.news_button_1 = news_button_1;
+        this.daily = daily;
         this.hideOnSleep = hideOnSleep;
         this.interfaceList = interfaceList;
 

@@ -319,6 +319,9 @@ export default class CoinsPrompt extends BaseContainer {
         if (game == "Gift from a moderator!") {
             this.icon.setFrame("icons/aquagrabber")
             this.gameName.text = "Gift from a moderator!"
+        } else if (game == "Daily Reward"){
+            this.icon.visible = false
+            this.gameName.text = "Daily Reward!"
         }
         else {
             this.icon.setFrame(`icons/${game.toLowerCase()}`)

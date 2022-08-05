@@ -1,0 +1,86 @@
+{
+    "id": "58912eae-df4c-439d-97cf-58e295071ee7",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "f080b823-d3ff-4e3b-badb-383128bd666b",
+            "label": "container_1",
+            "components": [],
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "5cc6fd93-145c-4fb2-bd93-db49984845a4",
+                    "label": "rectangle_1",
+                    "components": [],
+                    "x": 747,
+                    "y": 489,
+                    "scaleX": 12.32593886918683,
+                    "scaleY": 7.834142659641338,
+                    "alpha": 0.2,
+                    "isFilled": true,
+                    "fillColor": "#000000",
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Image",
+                    "id": "f4d6c815-8155-43dd-a4d0-f9c6c3cd8910",
+                    "label": "bg_png",
+                    "components": [],
+                    "texture": {
+                        "key": "daily",
+                        "frame": "bg"
+                    },
+                    "x": 768,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "d91a1c04-0e36-4dfd-a8fe-f82bbe086f47",
+                    "label": "claim_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "claim_button",
+                    "Button.callback": "() => this.claimDaily()",
+                    "texture": {
+                        "key": "daily",
+                        "frame": "claim_button"
+                    },
+                    "x": 756,
+                    "y": 656
+                },
+                {
+                    "type": "Image",
+                    "id": "30fedf53-78a1-40f2-aaad-22297d02c185",
+                    "label": "gift_png",
+                    "components": [],
+                    "texture": {
+                        "key": "daily",
+                        "frame": "gift"
+                    },
+                    "x": 759,
+                    "y": 475
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
