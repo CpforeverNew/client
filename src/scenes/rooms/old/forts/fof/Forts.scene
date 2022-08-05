@@ -432,6 +432,18 @@
             "fillAlpha": 0,
             "width": 128,
             "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "1d28c7b4-e303-4898-ba4d-2a8d96065d83",
+            "label": "hitbox_1",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1347,
+            "y": 155,
+            "visible": false,
+            "width": 70,
+            "height": 75
         }
     ],
     "plainObjects": [],

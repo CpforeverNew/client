@@ -32,6 +32,8 @@ export default class Forts extends RoomScene {
         this.bluecan;
         /** @type {Phaser.GameObjects.Ellipse} */
         this.redcan;
+        /** @type {Phaser.GameObjects.Rectangle} */
+        this.hitbox_1;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Ellipse|Phaser.GameObjects.Sprite>} */
         this.sort;
 
@@ -43,7 +45,7 @@ export default class Forts extends RoomScene {
             'rink': () => this.triggerRoom(802, 780, 340),
             'plaza': () => this.triggerRoom(300, 340, 660)
         }
-		this.music='277'
+        this.music='277'
 
         /* END-USER-CTR-CODE */
     }
@@ -182,6 +184,10 @@ export default class Forts extends RoomScene {
         redcan.isFilled = true;
         redcan.fillAlpha = 0;
 
+        // hitbox_1
+        const hitbox_1 = this.add.rectangle(1347, 155, 70, 75);
+        hitbox_1.visible = false;
+
         // lists
         const sort = [blue_fort_bottom, blue_fort_top, blue_fort_net, blue_fort_ropes, red_fort_top, red_fort_bottom, bluecan, blue_fort_cannon, red_fort_cannon, redcan];
 
@@ -216,6 +222,7 @@ export default class Forts extends RoomScene {
         this.red_fort_cannon = red_fort_cannon;
         this.bluecan = bluecan;
         this.redcan = redcan;
+        this.hitbox_1 = hitbox_1;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -229,6 +236,9 @@ export default class Forts extends RoomScene {
         this.stampCompletion = 0
 
         super.create();
+
+        this.bounds = this.hitbox.getBounds();
+        this.tower.on('animationcomplete', () => this.onTowerAnimComplete());
 
         this.blue_flag0001.play('fofblue')
         this.red_flag0001.play('fofred')
