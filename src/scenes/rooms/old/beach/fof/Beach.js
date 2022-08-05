@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import { Button, MoveTo, SimpleButton } from '@components/components'
+import { Button, MoveTo, SimpleButton, Zone } from '@components/components'
 
 
 /* START OF COMPILED CODE */
@@ -220,6 +220,14 @@ export default class Beach extends RoomScene {
         // rightballoons
         this.add.image(1441, 397, "fof-beach", "rightballoons");
 
+        // rectangle_1
+        const rectangle_1 = this.add.rectangle(320, 211, 128, 128);
+        rectangle_1.scaleX = 0.8525382572298971;
+        rectangle_1.scaleY = 3.7797494689976006;
+        rectangle_1.alpha = 0.5;
+        rectangle_1.isFilled = true;
+        rectangle_1.fillColor = 65280;
+
         // lists
         const sort = [bucket, chair_1_front, chair_1, chair_2_front, chair_2, net, fish, buoy, cage, brick_wall, sign_1, fence, warning, rightrock, leftrocks, leftfence];
 
@@ -235,6 +243,10 @@ export default class Beach extends RoomScene {
         const bucketSimpleButton = new SimpleButton(bucket);
         bucketSimpleButton.hoverCallback = () => this.onBucketOver();
         bucketSimpleButton.pixelPerfect = true;
+
+        // rectangle_1 (components)
+        const rectangle_1Zone = new Zone(rectangle_1);
+        rectangle_1Zone.callback = () => this.onZoneClick();
 
         this.scloudbeach = scloudbeach;
         this.bucket = bucket;
@@ -280,7 +292,7 @@ export default class Beach extends RoomScene {
             onComplete: () => this.cloudTween()
         });
     }
-	
+
     onBucketOver() {
         let frame = this.bucket.frame.name
         frame = frame.substr(frame.length - 4)
@@ -305,6 +317,10 @@ export default class Beach extends RoomScene {
             default:
                 break
         }
+    }
+
+    onZoneClick(){
+        this.triggerRoom(411, 530, 530)
     }
 
     /* END-USER-CODE */

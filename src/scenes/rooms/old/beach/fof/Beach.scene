@@ -646,6 +646,24 @@
             },
             "x": 1441,
             "y": 397
+        },
+        {
+            "type": "Rectangle",
+            "id": "6172f6d0-572f-45a8-87f3-6dc09b154b05",
+            "label": "rectangle_1",
+            "components": [
+                "Zone"
+            ],
+            "Zone.callback": "() => this.onZoneClick()",
+            "x": 320,
+            "y": 211,
+            "scaleX": 0.8525382572298971,
+            "scaleY": 3.7797494689976006,
+            "alpha": 0.5,
+            "isFilled": true,
+            "fillColor": "#00ff00",
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],
