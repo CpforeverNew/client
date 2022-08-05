@@ -8,7 +8,11 @@ export default class Bloon extends RoomScene {
         super("Bloon");
 
         /* START-USER-CTR-CODE */
-    // Write your code here.
+        this.roomTriggers = {
+          'fofparty': () => this.doTriggerStuff(),
+      }
+
+    this.triggerEnabled = false;
     /* END-USER-CTR-CODE */
     }
 
@@ -35,6 +39,8 @@ export default class Bloon extends RoomScene {
 
   // Write your code here
 
+
+  
   create() {
     super.create();
     var video = this.add.video(-185, -20, "bloon-bg");
@@ -42,6 +48,28 @@ export default class Bloon extends RoomScene {
     video.setScale(1.5);
     video.setLoop(true);
     video.play();
+
+    this.time.addEvent({
+      delay: 60000,
+      callback: this.enableTrigger,
+      callbackScope: this,
+      loop: false
+    });
+
+  }
+
+  enableTrigger() {
+    this.triggerEnabled = true;
+  }
+
+  doTriggerStuff() {
+    if(this.triggerEnabled) {
+      this.triggerEnabled = false;
+      this.time.clearPendingEvents();
+      this.triggerRoom(852, 1240, 660) // go to bloon room
+    }else{
+      this.triggerRoom(809, 1240, 660) // go to forest
+    }
   }
 
   /* END-USER-CODE */
