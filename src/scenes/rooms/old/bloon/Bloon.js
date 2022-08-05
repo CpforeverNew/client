@@ -37,9 +37,9 @@ export default class Bloon extends RoomScene {
 
   create() {
     super.create();
-    var video = this.add.video(-135, 10, "bloon-bg");
+    var video = this.add.video(-185, -20, "bloon-bg");
     video.setOrigin(0, 0);
-    video.setScale(1.4);
+    video.setScale(1.5);
     video.setLoop(true);
     video.play();
   }
