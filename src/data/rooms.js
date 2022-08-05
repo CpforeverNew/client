@@ -6,7 +6,7 @@ let type = localStorage.clientMode == "vanilla" ? 'new' : 'old';
 rooms = {
 	100: {
 		key: 'Town',
-		scene: require(`@rooms/${type}/town/ffc/Town`).default,
+		scene: require(`@rooms/${type}/town/fof/Town`).default,
 		x: 760,
 		y: 660
 	},
@@ -24,7 +24,7 @@ rooms = {
 	},
 	120: {
 		key: 'Dance',
-		scene: require(`@rooms/${type}/dance/Dance`).default,
+		scene: require(`@rooms/${type}/dance/fof/Dance`).default,
 		x: 360,
 		y: 560
 	},
@@ -42,7 +42,7 @@ rooms = {
 	},
 	200: {
 		key: 'Village',
-		scene: require(`@rooms/${type}/village/Village`).default,
+		scene: require(`@rooms/${type}/village/fof/Village`).default,
 		x: 800,
 		y: 640
 	},
@@ -72,7 +72,7 @@ rooms = {
 	},
 	300: {
 		key: 'Plaza',
-		scene: require(`@rooms/${type}/plaza/ffc/Plaza`).default,
+		scene: require(`@rooms/${type}/plaza/fof/Plaza`).default,
 		x: 760,
 		y: 680
 	},
@@ -114,7 +114,7 @@ rooms = {
 	},
 	400: {
 		key: 'Beach',
-		scene: require(`@rooms/${type}/beach/ffc/Beach`).default,
+		scene: require(`@rooms/${type}/beach/fof/Beach`).default,
 		x: 840,
 		y: 680
 	},
@@ -126,7 +126,7 @@ rooms = {
 	},
 	411: {
 		key: 'Beacon',
-		scene: require(`@rooms/old/beacon/Beacon`).default,
+		scene: require(`@rooms/old/beacon/fof/Beacon`).default,
 		x: 410,
 		y: 800
 	},
@@ -150,13 +150,13 @@ rooms = {
 	},
 	800: {
 		key: 'Dock',
-		scene: require(`@rooms/${type}/dock/ffc/Dock`).default,
+		scene: require(`@rooms/${type}/dock/fof/Dock`).default,
 		x: 800,
 		y: 400
 	},
 	801: {
 		key: 'Forts',
-		scene: require(`@rooms/${type}/forts/Forts`).default,
+		scene: require(`@rooms/${type}/forts/fof/Forts`).default,
 		x: 960,
 		y: 610
 	},
@@ -180,13 +180,13 @@ rooms = {
 	},
 	805: {
 		key: 'Berg',
-		scene: require(`@rooms/old/berg/Berg`).default,
+		scene: require(`@rooms/old/berg/fof/Berg`).default,
 		x: 652,
 		y: 448
 	},
 	806: {
 		key: 'Cave',
-		scene: require(`@rooms/${type}/cave/Cave`).default,
+		scene: require(`@rooms/${type}/cave/fof/Cave`).default,
 		x: 780,
 		y: 700
 	},
@@ -204,19 +204,25 @@ rooms = {
 	},
 	809: {
 		key: 'Forest',
-		scene: require(`@rooms/${type}/forest/ffc/Forest`).default,
+		scene: require(`@rooms/${type}/forest/fof/Forest`).default,
 		x: 760,
 		y: 430
 	},
 	810: {
 		key: 'Cove',
-		scene: require(`@rooms/${type}/cove/Cove`).default,
+		scene: require(`@rooms/${type}/cove/fof/Cove`).default,
 		x: 840,
 		y: 480
 	},
 	813: {
 		key: 'Cavemine',
 		scene: require(`@rooms/old/cavemine/Cavemine`).default,
+		x: 840,
+		y: 480
+	},
+	899: {
+		key: 'Bloon',
+		scene: require(`@rooms/old/bloon/Bloon`).default,
 		x: 840,
 		y: 480
 	},
@@ -262,11 +268,11 @@ rooms = {
 	},
 	908: {
 		key: 'BeanCounters',
-		scene: require('@games/beancounters/beanCounters').default
+		scene: require('@games/beanCounters/beanCounters').default
 	},
 	911: {
 		key: 'YumYuck',
-		scene: require('@games/yumyuck/yumYuck').default
+		scene: require('@games/yumYuck/yumYuck').default
 	},
 	928: {
 		key: 'PuffleLaunch',
