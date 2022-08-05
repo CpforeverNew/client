@@ -9,11 +9,8 @@
         "exportClass": true,
         "superClassName": "Book",
         "preloadPackFiles": [
-            "client/assets/media/interface/catalogs/clothing/sep05-pack.json",
-            "client/assets/media/interface/catalogs/clothing/clothingcatalog-pack.json",
             "client/assets/media/interface/catalogs/catalogs-master-pack.json",
-            "client/assets/media/interface/catalogs/clothing/july22/jul22-pack.json",
-            "client/assets/media/interface/catalogs/clothing/may22-clothing.json",
+            "client/assets/media/interface/catalogs/clothing/clothingcatalog-pack.json",
             "client/assets/media/interface/catalogs/clothing/aug22/aug22-pack.json"
         ],
         "createMethodName": "_create",

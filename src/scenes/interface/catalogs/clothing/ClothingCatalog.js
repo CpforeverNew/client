@@ -30,11 +30,8 @@ export default class ClothingCatalog extends Book {
     /** @returns {void} */
     preload() {
 
-        this.load.pack("sep05-pack", "assets/media/interface/catalogs/clothing/sep05-pack.json");
-        this.load.pack("clothingcatalog-pack", "assets/media/interface/catalogs/clothing/clothingcatalog-pack.json");
         this.load.pack("catalogs-master-pack", "assets/media/interface/catalogs/catalogs-master-pack.json");
-        this.load.pack("jul22-pack", "assets/media/interface/catalogs/clothing/july22/jul22-pack.json");
-        this.load.pack("may22-clothing", "assets/media/interface/catalogs/clothing/may22-clothing.json");
+        this.load.pack("clothingcatalog-pack", "assets/media/interface/catalogs/clothing/clothingcatalog-pack.json");
         this.load.pack("aug22-pack", "assets/media/interface/catalogs/clothing/aug22/aug22-pack.json");
     }
 
