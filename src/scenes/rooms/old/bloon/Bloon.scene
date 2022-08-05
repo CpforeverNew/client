@@ -8,7 +8,7 @@
         "superClassName": "RoomScene",
         "preloadMethodName": "_preload",
         "preloadPackFiles": [
-            "CPWorldsClient/assets/media/rooms/bloon/bloon-pack.json"
+            "client/assets/media/rooms/old/bloon/bloon-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Bloon",

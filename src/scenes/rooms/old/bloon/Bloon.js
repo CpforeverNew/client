@@ -15,7 +15,14 @@ export default class Bloon extends RoomScene {
     /** @returns {void} */
     _preload() {
 
-        this.load.pack("bloon-pack", "assets/media/rooms/bloon/bloon-pack.json");
+        this.load.pack("bloon-pack", "assets/media/rooms/old/bloon/bloon-pack.json");
+        this.load.video(
+          "bloon-bg",
+          "assets/media/rooms/old/bloon/Bloon-Bg.webm",
+          "loadeddata",
+          false,
+          true
+        );
     }
 
     /** @returns {void} */
