@@ -699,6 +699,15 @@ export default class ClothingCatalog extends Book {
         secret_2.fillColor = 65280;
         page6.add(secret_2);
 
+        // secret_8
+        const secret_8 = this.add.rectangle(1148, 553, 135, 160);
+        secret_8.scaleX = 0.27415249482365367;
+        secret_8.scaleY = 0.20421483864519346;
+        secret_8.alpha = 0.00001;
+        secret_8.isFilled = true;
+        secret_8.fillColor = 65280;
+        page6.add(secret_8);
+
         // page5
         const page5 = this.add.container(0, -1);
         page5.visible = false;
@@ -845,6 +854,15 @@ export default class ClothingCatalog extends Book {
         secret_hex_3.isFilled = true;
         secret_hex_3.fillColor = 65280;
         page4.add(secret_hex_3);
+
+        // secret_hex_4
+        const secret_hex_4 = this.add.rectangle(602, 119, 135, 160);
+        secret_hex_4.scaleX = 0.8126942847066034;
+        secret_hex_4.scaleY = 0.4066250432874592;
+        secret_hex_4.alpha = 0.00001;
+        secret_hex_4.isFilled = true;
+        secret_hex_4.fillColor = 65280;
+        page4.add(secret_hex_4);
 
         // page3
         const page3 = this.add.container(0, -3);
@@ -1418,6 +1436,10 @@ export default class ClothingCatalog extends Book {
         const secret_2SimpleButton = new SimpleButton(secret_2);
         secret_2SimpleButton.callback = () => this.interface.prompt.showItem(2047);;
 
+        // secret_8 (components)
+        const secret_8SimpleButton = new SimpleButton(secret_8);
+        secret_8SimpleButton.callback = () => this.interface.prompt.showItem(117);;
+
         // tag_11 (prefab fields)
         tag_11.item = 652;
 
@@ -1476,6 +1498,10 @@ export default class ClothingCatalog extends Book {
         // secret_hex_3 (components)
         const secret_hex_3SimpleButton = new SimpleButton(secret_hex_3);
         secret_hex_3SimpleButton.callback = () => this.interface.prompt.showItem(262);;
+
+        // secret_hex_4 (components)
+        const secret_hex_4SimpleButton = new SimpleButton(secret_hex_4);
+        secret_hex_4SimpleButton.callback = () => this.interface.prompt.showItem(412);;
 
         // tag2 (prefab fields)
         tag2.item = 3013;

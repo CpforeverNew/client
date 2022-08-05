@@ -1983,6 +1983,24 @@
                     "fillColor": "#00ff00",
                     "width": 135,
                     "height": 160
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "7dc72d7f-2ff6-4f4b-8472-60993a29b326",
+                    "label": "secret_8",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(117);",
+                    "x": 1148,
+                    "y": 553,
+                    "scaleX": 0.27415249482365367,
+                    "scaleY": 0.20421483864519346,
+                    "alpha": 0.00001,
+                    "isFilled": true,
+                    "fillColor": "#00ff00",
+                    "width": 135,
+                    "height": 160
                 }
             ]
         },
@@ -2382,6 +2400,24 @@
                     "SimpleButton.callback": "() => this.interface.prompt.showItem(262);",
                     "x": 1054,
                     "y": 708,
+                    "scaleX": 0.8126942847066034,
+                    "scaleY": 0.4066250432874592,
+                    "alpha": 0.00001,
+                    "isFilled": true,
+                    "fillColor": "#00ff00",
+                    "width": 135,
+                    "height": 160
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "3ae57c0c-7433-441c-a834-75b98ec121f7",
+                    "label": "secret_hex_4",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(412);",
+                    "x": 602,
+                    "y": 119,
                     "scaleX": 0.8126942847066034,
                     "scaleY": 0.4066250432874592,
                     "alpha": 0.00001,
