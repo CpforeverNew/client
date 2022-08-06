@@ -66,7 +66,7 @@ export default class Bloon extends RoomScene {
     if(this.triggerEnabled) {
       this.triggerEnabled = false;
       this.time.clearPendingEvents();
-      this.triggerRoom(852, 1240, 660) // go to bloon room
+      this.triggerRoom(898, 902, 632) // go to bloon room
     }else{
       this.triggerRoom(809, 1240, 660) // go to forest
     }

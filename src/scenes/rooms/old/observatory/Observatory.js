@@ -17,9 +17,10 @@ export default class Observatory extends RoomScene {
 
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
-            'bloon': () => this.triggerRoom(300, 1240, 660), // todo change
-            'trigger_2': () => this.triggerRoom(807, 500, 800), // todo change
-            'trigger_3': () => this.triggerRoom(810, 520, 416), // todo change
+            'bloon': () => this.triggerRoom(899, 784, 598), 
+            'trigger_2': () => this.triggerRoom(230, 500, 800), 
+            'trigger_3': () => null,
+            'jetpack': () => this.interface.prompt.showItem(3028)
         }
         /* END-USER-CTR-CODE */
     }
