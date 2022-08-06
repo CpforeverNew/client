@@ -3,6 +3,7 @@ import ItemPrompt from '@scenes/interface/prompts/ItemPrompt'
 import LoadingPrompt from '@scenes/interface/prompts/LoadingPrompt'
 import WindowPrompt from '@scenes/interface/prompts/WindowPrompt'
 import CoinsPrompt from '@scenes/interface/prompts/CoinsPrompt'
+import FurniturePrompt from '@scenes/interface/prompts/FurniturePrompt'
 
 
 export default class PromptController {
@@ -15,12 +16,14 @@ export default class PromptController {
         this.loading = new LoadingPrompt(_interface, 760, 480)
         this.window = new WindowPrompt(_interface, 760, 480)
 		this.coins = new CoinsPrompt(_interface, 760, 480)
+        this.furniture = new FurniturePrompt(_interface, 760, 480)
 
         _interface.add.existing(this.error)
         _interface.add.existing(this.item)
         _interface.add.existing(this.loading)
         _interface.add.existing(this.window)
 		_interface.add.existing(this.coins)
+        _interface.add.existing(this.furniture)
     }
 
     showError(text, buttonText = 'Okay', callback = () =>{ this.error.visible = false; this.error.disconnectOverwrite = false}, disconnectOverwrite) {
@@ -51,6 +54,11 @@ export default class PromptController {
 	
 	showCoins(game, coins) {
         this.coins.show(game, coins)
+        this.setCursor()
+    }
+
+    showFurnitureFree(item) {
+        this.furniture.show(item)
         this.setCursor()
     }
 

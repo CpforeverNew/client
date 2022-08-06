@@ -1,0 +1,93 @@
+{
+    "id": "431d2f20-7fef-43aa-be3b-accfe8970857",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapEnabled": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "23f88913-1cd1-45a5-a204-a7815f376ee3",
+            "label": "container_1",
+            "components": [],
+            "x": 720,
+            "y": 512,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "65d08e23-ed1f-4b89-aadb-317fcc8b63cc",
+                    "label": "bg",
+                    "components": [
+                        "NineSlice"
+                    ],
+                    "NineSlice.corner": 50,
+                    "x": 76.58309116834062,
+                    "isFilled": true,
+                    "fillColor": "#0280CD",
+                    "width": 750,
+                    "height": 360
+                },
+                {
+                    "type": "Text",
+                    "id": "c21ad03a-e0d1-4977-8e0f-10dd71f10655",
+                    "label": "name",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 75,
+                    "y": -92,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "random name\n",
+                    "fixedWidth": 420,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "color": "#000000"
+                },
+                {
+                    "prefabId": "48dfbf63-271b-4c3d-9fcc-6406eb7a0754",
+                    "id": "9953ae37-9011-4d98-839b-2badfe3b0583",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "singleButton",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 75,
+                    "y": 96,
+                    "nestedPrefabs": []
+                },
+                {
+                    "type": "Text",
+                    "id": "ed32dd98-d196-4e7c-bfd6-1990b5b80d72",
+                    "label": "text",
+                    "components": [],
+                    "x": -154,
+                    "y": -49,
+                    "text": "has been added to your igloo inventory.",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "25px",
+                    "color": "#000000ff"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
