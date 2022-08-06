@@ -225,6 +225,12 @@ if (localStorage.clientMode == "legacy") {
 			x: 1000,
 			y: 560
 		},
+		898: {
+			key: 'Observatory',
+			scene: require(`@rooms/old/observatory/Observatory`).default,
+			x: 760,
+			y: 660
+		},
 		899: {
 			key: 'Bloon',
 			scene: require(`@rooms/old/bloon/Bloon`).default,

@@ -1,0 +1,86 @@
+{
+    "id": "71e7d128-1246-4462-888b-eda41daa2ea9",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/observatory/observatory-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Observatory",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "f0677e4d-4a65-44c5-aeb1-e841e7e85b3c",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "observatory",
+                "frame": "bg"
+            },
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "fc61549b-e0c7-4caf-b371-4e14913cff8b",
+            "label": "blueboard",
+            "components": [],
+            "texture": {
+                "key": "observatory",
+                "frame": "blueboard"
+            },
+            "x": 1453,
+            "y": 604
+        },
+        {
+            "type": "Image",
+            "id": "7eccd517-15c4-4fcf-a2dc-66d9f6573bba",
+            "label": "table",
+            "components": [],
+            "texture": {
+                "key": "observatory",
+                "frame": "table"
+            },
+            "x": 1241,
+            "y": 764
+        },
+        {
+            "type": "Image",
+            "id": "002f9619-8d18-4fc7-94f6-fc90af050f66",
+            "label": "jetpack",
+            "components": [],
+            "texture": {
+                "key": "observatory",
+                "frame": "jetpack"
+            },
+            "x": 668,
+            "y": 500
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "a5962a06-1dad-4334-991a-eb18e325a828",
+            "label": "sort",
+            "objectIds": [
+                "fc61549b-e0c7-4caf-b371-4e14913cff8b",
+                "002f9619-8d18-4fc7-94f6-fc90af050f66",
+                "7eccd517-15c4-4fcf-a2dc-66d9f6573bba"
+            ]
+        }
+    ]
+}
