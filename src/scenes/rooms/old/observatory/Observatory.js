@@ -1,4 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
+import { Animation } from '@components/components'
+
 
 /* START OF COMPILED CODE */
 
@@ -7,15 +9,19 @@ export default class Observatory extends RoomScene {
     constructor() {
         super("Observatory");
 
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.shooting_star0001;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
 
+        /* START-USER-CTR-CODE */
         this.roomTriggers = {
             'bloon': () => this.triggerRoom(300, 1240, 660), // todo change
             'trigger_2': () => this.triggerRoom(807, 500, 800), // todo change
             'trigger_3': () => this.triggerRoom(810, 520, 416), // todo change
         }
+        /* END-USER-CTR-CODE */
     }
 
     /** @returns {void} */
@@ -26,6 +32,13 @@ export default class Observatory extends RoomScene {
 
     /** @returns {void} */
     _create() {
+
+        // stars
+        const stars = this.add.image(0, 0, "observatory", "stars");
+        stars.setOrigin(0, 0);
+
+        // shooting_star0001
+        const shooting_star0001 = this.add.sprite(766, -119, "observatory", "shooting_star0001");
 
         // bg
         const bg = this.add.image(0, 0, "observatory", "bg");
@@ -43,6 +56,7 @@ export default class Observatory extends RoomScene {
         // lists
         const sort = [blueboard, jetpack, table];
 
+        this.shooting_star0001 = shooting_star0001;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -51,8 +65,10 @@ export default class Observatory extends RoomScene {
 
     /* START-USER-CODE */
 
-    // Write your code here
-
+    create() {
+        super.create()
+        this.shooting_star0001.play('shooting_stars')
+    }
     /* END-USER-CODE */
 }
 

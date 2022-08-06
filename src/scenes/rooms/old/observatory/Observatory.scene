@@ -18,6 +18,31 @@
     "displayList": [
         {
             "type": "Image",
+            "id": "38db3485-7479-4d65-9892-4f17d7b69f54",
+            "label": "stars",
+            "components": [],
+            "texture": {
+                "key": "observatory",
+                "frame": "stars"
+            },
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "dd21941d-fe2c-4daf-9e2e-6f3bd4246326",
+            "label": "shooting_star0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "observatory",
+                "frame": "shooting_star0001"
+            },
+            "x": 766,
+            "y": -119
+        },
+        {
+            "type": "Image",
             "id": "f0677e4d-4a65-44c5-aeb1-e841e7e85b3c",
             "label": "bg",
             "components": [],
