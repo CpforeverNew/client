@@ -653,7 +653,7 @@ export default class Main extends BaseScene {
             visibility: 'hidden'
         }
 
-        this.search = new TextInput(this, 814, 118, 'text', searchstyle, () => this.onSearch(), 48, true, 'search', false, true)
+        this.search = new TextInput(this, 814, 128, 'text', searchstyle, () => this.onSearch(), 48, true, 'search', false, true)
 
         // Mod actions
 

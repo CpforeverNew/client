@@ -3,6 +3,7 @@ import BaseContainer from '@scenes/base/BaseContainer'
 import { Button, Interactive, NineSlice, SimpleButton } from '@components/components'
 
 import TextInput from '@engine/interface/text/TextInput'
+import RoomItem from './RoomItem';
 
 
 /* START OF COMPILED CODE */
@@ -12,6 +13,8 @@ export default class Moderator extends BaseContainer {
     constructor(scene, x, y) {
         super(scene, x ?? 760, y ?? 480);
 
+        /** @type {Phaser.GameObjects.Container} */
+        this.verify;
         /** @type {Phaser.GameObjects.Container} */
         this.player8;
         /** @type {Phaser.GameObjects.Image} */
@@ -60,25 +63,62 @@ export default class Moderator extends BaseContainer {
         this.name_btn1;
         /** @type {Phaser.GameObjects.Text} */
         this.name_txt1;
+        /** @type {Phaser.GameObjects.Container} */
+        this.roomSelector;
+        /** @type {Phaser.GameObjects.Container} */
+        this.main;
+        /** @type {RoomItem[]} */
+        this.items;
 
+
+        // verify
+        const verify = scene.add.container(-760, -480);
+        verify.visible = false;
+        this.add(verify);
 
         // block
-        const block = scene.add.rectangle(0, 0, 1520, 960);
+        const block = scene.add.rectangle(766, 484, 1520, 960);
         block.isFilled = true;
         block.fillColor = 0;
         block.fillAlpha = 0.2;
-        this.add(block);
+        verify.add(block);
 
         // rectangle
-        const rectangle = scene.add.rectangle(0, -32, 700, 770);
+        const rectangle = scene.add.rectangle(766, 452, 700, 770);
         rectangle.isFilled = true;
         rectangle.fillColor = 164045;
-        this.add(rectangle);
+        verify.add(rectangle);
+
+        // small_button
+        const small_button = scene.add.image(826, 125, "login", "small-button0001");
+        small_button.scaleX = 0.9;
+        small_button.scaleY = 0.9;
+        verify.add(small_button);
+
+        // verify_btn
+        const verify_btn = scene.add.image(534, 125, "login", "save-button");
+        verify_btn.scaleX = 0.5;
+        verify_btn.scaleY = 0.5;
+        verify.add(verify_btn);
+
+        // text
+        const text = scene.add.text(494, 106, "", {});
+        text.text = "Verify";
+        text.setStyle({ "fontFamily": "Burbank Small", "fontSize": "30px", "fontStyle": "bold" });
+        verify.add(text);
+
+        // x_button
+        const x_button = scene.add.image(1062, 122, "main", "blue-button");
+        verify.add(x_button);
+
+        // blue_x
+        const blue_x = scene.add.image(1062, 120, "main", "blue-x");
+        verify.add(blue_x);
 
         // player8
-        const player8 = scene.add.container(0, 280);
+        const player8 = scene.add.container(766, 773);
         player8.visible = false;
-        this.add(player8);
+        verify.add(player8);
 
         // name_btn8
         const name_btn8 = scene.add.image(0, 0, "login", "larger-button0001");
@@ -133,9 +173,9 @@ export default class Moderator extends BaseContainer {
         usernameControls8.add(accept_btn_7);
 
         // player7
-        const player7 = scene.add.container(0, 199);
+        const player7 = scene.add.container(766, 691);
         player7.visible = false;
-        this.add(player7);
+        verify.add(player7);
 
         // name_btn7
         const name_btn7 = scene.add.image(0, 0, "login", "larger-button0001");
@@ -190,9 +230,9 @@ export default class Moderator extends BaseContainer {
         usernameControls7.add(accept_btn_6);
 
         // player6
-        const player6 = scene.add.container(0, 120);
+        const player6 = scene.add.container(766, 611);
         player6.visible = false;
-        this.add(player6);
+        verify.add(player6);
 
         // name_btn6
         const name_btn6 = scene.add.image(0, 0, "login", "larger-button0001");
@@ -247,9 +287,9 @@ export default class Moderator extends BaseContainer {
         usernameControls6.add(accept_btn_5);
 
         // player5
-        const player5 = scene.add.container(0, 40);
+        const player5 = scene.add.container(766, 530);
         player5.visible = false;
-        this.add(player5);
+        verify.add(player5);
 
         // name_btn5
         const name_btn5 = scene.add.image(0, 0, "login", "larger-button0001");
@@ -304,9 +344,9 @@ export default class Moderator extends BaseContainer {
         usernameControls5.add(accept_btn_4);
 
         // player4
-        const player4 = scene.add.container(0, -40);
+        const player4 = scene.add.container(766, 449);
         player4.visible = false;
-        this.add(player4);
+        verify.add(player4);
 
         // name_btn4
         const name_btn4 = scene.add.image(0, 0, "login", "larger-button0001");
@@ -361,9 +401,9 @@ export default class Moderator extends BaseContainer {
         usernameControls4.add(accept_btn_3);
 
         // player3
-        const player3 = scene.add.container(0, -120);
+        const player3 = scene.add.container(766, 368);
         player3.visible = false;
-        this.add(player3);
+        verify.add(player3);
 
         // name_btn3
         const name_btn3 = scene.add.image(0, 0, "login", "larger-button0001");
@@ -418,9 +458,9 @@ export default class Moderator extends BaseContainer {
         usernameControls3.add(accept_btn_2);
 
         // player2
-        const player2 = scene.add.container(0, -200);
+        const player2 = scene.add.container(766, 287);
         player2.visible = false;
-        this.add(player2);
+        verify.add(player2);
 
         // name_btn2
         const name_btn2 = scene.add.image(0, 0, "login", "larger-button0001");
@@ -475,9 +515,9 @@ export default class Moderator extends BaseContainer {
         usernameControls2.add(accept_btn_1);
 
         // player1
-        const player1 = scene.add.container(0, -280);
+        const player1 = scene.add.container(766, 206);
         player1.visible = false;
-        this.add(player1);
+        verify.add(player1);
 
         // name_btn1
         const name_btn1 = scene.add.image(0, 0, "login", "larger-button0001");
@@ -531,43 +571,143 @@ export default class Moderator extends BaseContainer {
         const accept_btn = scene.add.ellipse(13, 0, 60, 60);
         usernameControls1.add(accept_btn);
 
-        // x_button
-        const x_button = scene.add.image(296, -364, "main", "blue-button");
-        this.add(x_button);
-
-        // blue_x
-        const blue_x = scene.add.image(296, -366, "main", "blue-x");
-        this.add(blue_x);
-
-        // verify_btn
-        const verify_btn = scene.add.image(-232, -361, "login", "save-button");
-        verify_btn.scaleX = 0.5;
-        verify_btn.scaleY = 0.5;
-        this.add(verify_btn);
-
-        // text
-        const text = scene.add.text(-272, -380, "", {});
-        text.text = "Verify";
-        text.setStyle({ "fontFamily": "Burbank Small", "fontSize": "30px", "fontStyle": "bold" });
-        this.add(text);
-
-        // small_button
-        const small_button = scene.add.image(60, -361, "login", "small-button0001");
-        small_button.scaleX = 0.9;
-        small_button.scaleY = 0.9;
-        this.add(small_button);
-
         // magnifying_handle
-        const magnifying_handle = scene.add.rectangle(227, -349, 4, 15);
+        const magnifying_handle = scene.add.rectangle(993, 136, 4, 15);
         magnifying_handle.angle = -45.00000000000006;
         magnifying_handle.isFilled = true;
-        this.add(magnifying_handle);
+        verify.add(magnifying_handle);
 
         // magnifying_body
-        const magnifying_body = scene.add.ellipse(211, -365, 30, 30);
+        const magnifying_body = scene.add.ellipse(977, 118, 30, 30);
         magnifying_body.isStroked = true;
         magnifying_body.lineWidth = 3;
-        this.add(magnifying_body);
+        verify.add(magnifying_body);
+
+        // roomSelector
+        const roomSelector = scene.add.container(-760, -480);
+        roomSelector.visible = false;
+        this.add(roomSelector);
+
+        // rectangle_2
+        const rectangle_2 = scene.add.rectangle(784, 481, 770, 770);
+        rectangle_2.isFilled = true;
+        rectangle_2.fillColor = 164045;
+        roomSelector.add(rectangle_2);
+
+        // x_button_2
+        const x_button_2 = scene.add.image(1116, 141, "main", "blue-button");
+        roomSelector.add(x_button_2);
+
+        // blue_x_2
+        const blue_x_2 = scene.add.image(1116, 139, "main", "blue-x");
+        roomSelector.add(blue_x_2);
+
+        // text_4
+        const text_4 = scene.add.text(661, 138, "", {});
+        text_4.text = "Room Selector\n";
+        text_4.setStyle({ "fontFamily": "Burbank Small", "fontSize": "35px", "fontStyle": "bold" });
+        roomSelector.add(text_4);
+
+        // scroller_png
+        const scroller_png = scene.add.image(1120, 496, "friends", "scroller.png");
+        scroller_png.scaleY = 1.3;
+        roomSelector.add(scroller_png);
+
+        // up_button
+        const up_button = scene.add.image(1120, 256, "main", "blue-button");
+        roomSelector.add(up_button);
+
+        // down_button
+        const down_button = scene.add.image(1120, 736, "main", "blue-button");
+        roomSelector.add(down_button);
+
+        // blue_arrow_1
+        const blue_arrow_1 = scene.add.image(1120, 736, "main", "blue-arrow");
+        blue_arrow_1.flipY = true;
+        roomSelector.add(blue_arrow_1);
+
+        // blue_arrow
+        const blue_arrow = scene.add.image(1120, 256, "main", "blue-arrow");
+        roomSelector.add(blue_arrow);
+
+        // roomitem_6
+        const roomitem_6 = new RoomItem(scene, 608, 736);
+        roomSelector.add(roomitem_6);
+
+        // roomitem_5
+        const roomitem_5 = new RoomItem(scene, 608, 656);
+        roomSelector.add(roomitem_5);
+
+        // roomitem_4
+        const roomitem_4 = new RoomItem(scene, 608, 576);
+        roomSelector.add(roomitem_4);
+
+        // roomitem_3
+        const roomitem_3 = new RoomItem(scene, 608, 496);
+        roomSelector.add(roomitem_3);
+
+        // roomitem_2
+        const roomitem_2 = new RoomItem(scene, 608, 416);
+        roomSelector.add(roomitem_2);
+
+        // roomitem_1
+        const roomitem_1 = new RoomItem(scene, 608, 336);
+        roomSelector.add(roomitem_1);
+
+        // roomitem
+        const roomitem = new RoomItem(scene, 608, 256);
+        roomSelector.add(roomitem);
+
+        // main
+        const main = scene.add.container(-760, -480);
+        this.add(main);
+
+        // rectangle_1
+        const rectangle_1 = scene.add.rectangle(784, 480, 400, 770);
+        rectangle_1.isFilled = true;
+        rectangle_1.fillColor = 164045;
+        main.add(rectangle_1);
+
+        // verify_btn_1
+        const verify_btn_1 = scene.add.image(795, 272, "main", "help-button");
+        verify_btn_1.scaleX = 0.5;
+        verify_btn_1.scaleY = 0.5;
+        main.add(verify_btn_1);
+
+        // text_2
+        const text_2 = scene.add.text(709, 253, "", {});
+        text_2.text = "Verify Users";
+        text_2.setStyle({ "fontFamily": "Burbank Small", "fontSize": "30px", "fontStyle": "bold" });
+        main.add(text_2);
+
+        // text_1
+        const text_1 = scene.add.text(704, 165, "", {});
+        text_1.text = "Mod Menu";
+        text_1.setStyle({ "fontFamily": "Burbank Small", "fontSize": "35px", "fontStyle": "bold" });
+        main.add(text_1);
+
+        // x_button_1
+        const x_button_1 = scene.add.image(929, 147, "main", "blue-button");
+        main.add(x_button_1);
+
+        // blue_x_1
+        const blue_x_1 = scene.add.image(929, 145, "main", "blue-x");
+        main.add(blue_x_1);
+
+        // room_btn_2
+        const room_btn_2 = scene.add.image(795, 363, "main", "help-button");
+        room_btn_2.scaleX = 0.5;
+        room_btn_2.scaleY = 0.5;
+        main.add(room_btn_2);
+
+        // text_3
+        const text_3 = scene.add.text(750, 344, "", {});
+        text_3.text = "Rooms\n";
+        text_3.setStyle({ "fontFamily": "Burbank Small", "fontSize": "30px", "fontStyle": "bold" });
+        main.add(text_3);
+
+        // lists
+        const items = [roomitem, roomitem_1, roomitem_2, roomitem_3, roomitem_4, roomitem_5, roomitem_6];
 
         // block (components)
         new Interactive(block);
@@ -575,6 +715,17 @@ export default class Moderator extends BaseContainer {
         // rectangle (components)
         const rectangleNineSlice = new NineSlice(rectangle);
         rectangleNineSlice.corner = 50;
+
+        // verify_btn (components)
+        const verify_btnButton = new Button(verify_btn);
+        verify_btnButton.spriteName = "save-button";
+        verify_btnButton.callback = () => this.network.send('get_unverified_users');
+        verify_btnButton.activeFrame = false;
+
+        // x_button (components)
+        const x_buttonButton = new Button(x_button);
+        x_buttonButton.spriteName = "blue-button";
+        x_buttonButton.callback = () => this.close();
 
         // name_btn8 (components)
         const name_btn8SimpleButton = new SimpleButton(name_btn8);
@@ -688,17 +839,49 @@ export default class Moderator extends BaseContainer {
         const accept_btnSimpleButton = new SimpleButton(accept_btn);
         accept_btnSimpleButton.callback = () => this.acceptUsername(this.name_txt1);
 
-        // x_button (components)
-        const x_buttonButton = new Button(x_button);
-        x_buttonButton.spriteName = "blue-button";
-        x_buttonButton.callback = () => this.close();
+        // rectangle_2 (components)
+        const rectangle_2NineSlice = new NineSlice(rectangle_2);
+        rectangle_2NineSlice.corner = 50;
 
-        // verify_btn (components)
-        const verify_btnButton = new Button(verify_btn);
-        verify_btnButton.spriteName = "save-button";
-        verify_btnButton.callback = () => this.network.send('get_unverified_users');
-        verify_btnButton.activeFrame = false;
+        // x_button_2 (components)
+        const x_button_2Button = new Button(x_button_2);
+        x_button_2Button.spriteName = "blue-button";
+        x_button_2Button.callback = () => this.closeRoomSelector();
 
+        // up_button (components)
+        const up_buttonButton = new Button(up_button);
+        up_buttonButton.spriteName = "blue-button";
+        up_buttonButton.callback = () => this.prevPage();
+        up_buttonButton.activeFrame = false;
+
+        // down_button (components)
+        const down_buttonButton = new Button(down_button);
+        down_buttonButton.spriteName = "blue-button";
+        down_buttonButton.callback = () => this.nextPage();
+        down_buttonButton.activeFrame = false;
+
+        // rectangle_1 (components)
+        const rectangle_1NineSlice = new NineSlice(rectangle_1);
+        rectangle_1NineSlice.corner = 50;
+
+        // verify_btn_1 (components)
+        const verify_btn_1Button = new Button(verify_btn_1);
+        verify_btn_1Button.spriteName = "help-button";
+        verify_btn_1Button.callback = () => this.verifyButton();
+        verify_btn_1Button.activeFrame = false;
+
+        // x_button_1 (components)
+        const x_button_1Button = new Button(x_button_1);
+        x_button_1Button.spriteName = "blue-button";
+        x_button_1Button.callback = () => { this.visible = false };
+
+        // room_btn_2 (components)
+        const room_btn_2Button = new Button(room_btn_2);
+        room_btn_2Button.spriteName = "help-button";
+        room_btn_2Button.callback = () => this.roomButton();
+        room_btn_2Button.activeFrame = false;
+
+        this.verify = verify;
         this.player8 = player8;
         this.name_btn8 = name_btn8;
         this.name_txt8 = name_txt8;
@@ -723,8 +906,14 @@ export default class Moderator extends BaseContainer {
         this.player1 = player1;
         this.name_btn1 = name_btn1;
         this.name_txt1 = name_txt1;
+        this.roomSelector = roomSelector;
+        this.main = main;
+        this.items = items;
 
         /* START-USER-CTR-CODE */
+        this.page = 1
+        this.pageSize = 7
+        this.roomArray = []
         /* END-USER-CTR-CODE */
     }
 
@@ -734,7 +923,7 @@ export default class Moderator extends BaseContainer {
     load() {
         this.network.send('get_unverified_users')
         var searchbar = document.getElementById("search")
-        searchbar.style.visibility = 'visible'
+        searchbar.style.visibility = 'hidden'
     }
 
     showUsers(users) {
@@ -812,7 +1001,7 @@ export default class Moderator extends BaseContainer {
         this.network.send('get_player', {
             id: gameObject.userID
         })
-		this.visible = false
+        this.visible = false
     }
 
     acceptUsername(gameObject) {
@@ -824,9 +1013,79 @@ export default class Moderator extends BaseContainer {
     }
 
     close(){
-        this.visible = false
+        this.verify.visible = false
+        this.roomSelector.visible = false
+        this.main.visible = true
         var searchbar = document.getElementById("search")
         searchbar.style.visibility = 'hidden'
+    }
+
+    closeRoomSelector(){
+        this.roomSelector.visible = false
+        this.main.visible = true
+    }
+
+    roomButton() {
+        this.roomSelector.visible = true
+        this.main.visible = false
+
+
+        var rooms = this.crumbs.scenes.rooms
+
+        for (var key in rooms) {
+            var id = key
+            var room = rooms[key]
+
+            if(room.x == null) // Skip MiniGame rooms
+                continue
+
+            this.roomArray.push([id, room])
+
+        }
+
+       this.showPage()
+    }
+
+    get maxPage() {
+        return Math.ceil(this.roomArray.length / this.pageSize)
+    }
+
+    showPage(){
+        let page = this.roomArray.slice((this.page - 1) * this.pageSize, this.page * this.pageSize)
+        console.log(page)
+
+        for (let [index, item] of this.items.entries()) {
+            let igloo = page[index];
+
+            if (igloo) {
+                item.setItem(igloo, 100)
+            } else {
+                item.setItem(null)
+            }
+        }
+    }
+
+    prevPage() {
+        let page = this.page - 1
+        if (page < 1) return
+
+        this.page = page
+        this.showPage()
+    }
+
+    nextPage() {
+        let page = this.page + 1
+        if (page > this.maxPage) return
+
+        this.page = page
+        this.showPage()
+    }
+
+    verifyButton(){
+        var searchbar = document.getElementById("search")
+        searchbar.style.visibility = 'visible'
+        this.verify.visible = true
+        this.main.visible = false
     }
 
     /* END-USER-CODE */
