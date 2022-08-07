@@ -6,6 +6,7 @@ export default class Actions extends Plugin {
     constructor(network) {
         super(network)
         this.events = {
+            'send_drag_position': this.send_drag_position,
             'send_position': this.sendPosition,
             'send_frame': this.sendFrame,
             'snowball': this.snowball
@@ -14,6 +15,21 @@ export default class Actions extends Plugin {
 
     get room() {
         return this.world.room
+    }
+
+    
+    send_drag_position(args) {
+        if (!this.room.isReady) {
+            return this.room.updateWaiting(args.id, { x: args.x, y: args.y, frame: 1 })
+        }
+
+        if (this.room.penguins[args.id]){
+            this.room.penguins[args.id].setPos(args.x, args.y)
+
+            // update the name tag position
+            this.room.penguins[args.id].nameTag.x = args.x
+            this.room.penguins[args.id].nameTag.y = args.y + 40
+        } 
     }
 
     sendPosition(args) {
