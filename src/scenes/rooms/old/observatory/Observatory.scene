@@ -62,7 +62,7 @@
                 "key": "observatory",
                 "frame": "blueboard"
             },
-            "x": 1453,
+            "x": 1455,
             "y": 604
         },
         {
@@ -74,8 +74,8 @@
                 "key": "observatory",
                 "frame": "table"
             },
-            "x": 1241,
-            "y": 764
+            "x": 1231,
+            "y": 763
         },
         {
             "type": "Image",
@@ -86,8 +86,8 @@
                 "key": "observatory",
                 "frame": "jetpack"
             },
-            "x": 668,
-            "y": 500
+            "x": 658,
+            "y": 502
         }
     ],
     "plainObjects": [],

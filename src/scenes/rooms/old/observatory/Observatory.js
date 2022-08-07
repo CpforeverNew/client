@@ -46,13 +46,13 @@ export default class Observatory extends RoomScene {
         bg.setOrigin(0, 0);
 
         // blueboard
-        const blueboard = this.add.image(1453, 604, "observatory", "blueboard");
+        const blueboard = this.add.image(1455, 604, "observatory", "blueboard");
 
         // table
-        const table = this.add.image(1241, 764, "observatory", "table");
+        const table = this.add.image(1231, 763, "observatory", "table");
 
         // jetpack
-        const jetpack = this.add.image(668, 500, "observatory", "jetpack");
+        const jetpack = this.add.image(658, 502, "observatory", "jetpack");
 
         // lists
         const sort = [blueboard, jetpack, table];
