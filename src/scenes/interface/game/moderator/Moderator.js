@@ -1052,7 +1052,6 @@ export default class Moderator extends BaseContainer {
 
     showPage(){
         let page = this.roomArray.slice((this.page - 1) * this.pageSize, this.page * this.pageSize)
-        console.log(page)
 
         for (let [index, item] of this.items.entries()) {
             let igloo = page[index];

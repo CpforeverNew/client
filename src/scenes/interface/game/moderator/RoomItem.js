@@ -8,13 +8,15 @@ export default class RoomItem extends BaseContainer {
     constructor(scene, x, y) {
         super(scene, x ?? 630, y ?? 496);
 
+        /** @type {Phaser.GameObjects.Image} */
+        this.button;
         /** @type {Phaser.GameObjects.Text} */
         this.text_1;
 
 
-        // larger_button0001
-        const larger_button0001 = scene.add.image(154, 0, "login", "larger-button0001");
-        this.add(larger_button0001);
+        // button
+        const button = scene.add.image(154, 0, "login", "larger-button0001");
+        this.add(button);
 
         // text_1
         const text_1 = scene.add.text(-102, -16, "", {});
@@ -22,11 +24,12 @@ export default class RoomItem extends BaseContainer {
         text_1.setStyle({ "fixedWidth":500,"fixedHeight":35,"fontFamily": "Burbank Small", "fontSize": "25px" });
         this.add(text_1);
 
-        // larger_button0001 (components)
-        const larger_button0001SimpleButton = new SimpleButton(larger_button0001);
-        larger_button0001SimpleButton.callback = () =>  this.onClick();
-        larger_button0001SimpleButton.pixelPerfect = true;
+        // button (components)
+        const buttonSimpleButton = new SimpleButton(button);
+        buttonSimpleButton.callback = () =>  this.onClick();
+        buttonSimpleButton.pixelPerfect = true;
 
+        this.button = button;
         this.text_1 = text_1;
 
         /* START-USER-CTR-CODE */
@@ -38,8 +41,6 @@ export default class RoomItem extends BaseContainer {
     /* START-USER-CODE */
 
     setItem(room) {
-
-        console.log(room)
 
         if (!room) {
             return this.clearItem()
@@ -57,8 +58,8 @@ export default class RoomItem extends BaseContainer {
 
     onClick() {
         if(this.room) {
-            console.log("join room", this.room[0])
-            this.world.client.sendJoinRoom(this.room[0], this.room[1].key, this.room[1].x,this.room[1].y, 80)
+            if(this.world.room.id != this.room[0])
+                this.world.client.sendJoinRoom(this.room[0], this.room[1].key, this.room[1].x,this.room[1].y, 80)
         }
     }
 

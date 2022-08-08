@@ -25,7 +25,8 @@
                 {
                     "type": "Image",
                     "id": "8ed78636-4c41-42b3-90b2-f4aecffda59c",
-                    "label": "larger_button0001",
+                    "label": "button",
+                    "scope": "CLASS",
                     "components": [
                         "SimpleButton"
                     ],
