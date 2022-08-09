@@ -1,0 +1,328 @@
+{
+    "id": "f5327c80-de71-4cf6-898b-b4f0edabf92a",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/winterparty/yeticave/yeti-cave-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "YetiCave",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "5384a2ae-0431-4615-bc5e-02c5fc4f4649",
+            "label": "bg_png",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "bg"
+            },
+            "y": -19,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "b90f7c32-6a3e-4103-bb51-0efb3c1bf98c",
+            "label": "cave_spike_png",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "cave_spike"
+            },
+            "x": 1086,
+            "y": 282
+        },
+        {
+            "type": "Image",
+            "id": "397798b0-b120-47de-bbd6-9fe9d99ff5cc",
+            "label": "cave_ballon_png",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "cave_ballon"
+            },
+            "x": 1283,
+            "y": 245
+        },
+        {
+            "type": "Image",
+            "id": "eb2973b4-282e-496a-83bd-7e2ac0916cd1",
+            "label": "back_cave_png",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "back_cave"
+            },
+            "x": 695,
+            "y": 235
+        },
+        {
+            "type": "Image",
+            "id": "32f2467b-bdfb-40ff-8ce7-5ef2d2484fd9",
+            "label": "diggerr_back_png",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "diggerr_back"
+            },
+            "x": 1229,
+            "y": 627
+        },
+        {
+            "type": "Image",
+            "id": "848322bf-35d3-4ebe-ab25-50ba0577bdc2",
+            "label": "digger_chair_png",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "digger_chair"
+            },
+            "x": 1152,
+            "y": 620
+        },
+        {
+            "type": "Image",
+            "id": "568e3c60-d074-4c6a-b336-9ad9d3998bbd",
+            "label": "digger_cab_png",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "digger_cab"
+            },
+            "x": 1161,
+            "y": 681
+        },
+        {
+            "type": "Image",
+            "id": "936f3453-03cd-431d-bc57-4bf293c70ed3",
+            "label": "digger_front_png",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "digger_front"
+            },
+            "x": 988,
+            "y": 784
+        },
+        {
+            "type": "Sprite",
+            "id": "9a42adad-4555-428b-bd33-9aeaf6d6aea2",
+            "label": "tv",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "tv0001"
+            },
+            "x": 170,
+            "y": 743
+        },
+        {
+            "type": "Image",
+            "id": "bbb8f38b-4f83-42dd-8ca6-78774d060ad2",
+            "label": "fg_png",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "fg"
+            },
+            "x": -33,
+            "y": -27,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "e72f2726-b4f0-4d79-bc4b-2413ac242e98",
+            "label": "prize_sign0001_png",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "prize_sign0001"
+            },
+            "x": 717,
+            "y": 328
+        },
+        {
+            "type": "Image",
+            "id": "71c2578b-0f96-49ab-a9ae-d27233593088",
+            "label": "crate_of_yeti_png",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "crate_of_yeti"
+            },
+            "x": 711,
+            "y": 407
+        },
+        {
+            "type": "Image",
+            "id": "fea83ea6-ef57-4f9c-bd35-89e1dfdafe3d",
+            "label": "fire_stick0001_png",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "fire_stick0001"
+            },
+            "x": 961,
+            "y": 379
+        },
+        {
+            "type": "Image",
+            "id": "727f4e58-c84d-4568-b9b3-7f994bab9652",
+            "label": "fire_stick0001_png_1",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "fire_stick0001"
+            },
+            "x": 371,
+            "y": 371
+        },
+        {
+            "type": "Sprite",
+            "id": "981441bc-35f2-45f3-bb0e-12c5d0f7c7e0",
+            "label": "back_fire_right",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "back_fire0001"
+            },
+            "x": 958,
+            "y": 370
+        },
+        {
+            "type": "Sprite",
+            "id": "cb8f1932-362c-4ebc-87a2-807c9a674110",
+            "label": "back_fire_left",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "back_fire0001"
+            },
+            "x": 368,
+            "y": 364
+        },
+        {
+            "type": "Image",
+            "id": "13c9c628-ef7f-4fbf-b02e-3c7d60ef36ba",
+            "label": "left_ballons_png",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "left_ballons"
+            },
+            "x": 48,
+            "y": 481
+        },
+        {
+            "type": "Image",
+            "id": "0a4d486d-b3b6-44eb-85aa-a41d21aa489a",
+            "label": "right_ballons_png",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "right_ballons"
+            },
+            "x": 1505,
+            "y": 488
+        },
+        {
+            "type": "Image",
+            "id": "2914c3c3-2785-4ce7-a34a-18f4d2a5f91b",
+            "label": "fish_box_png",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "fish_box"
+            },
+            "x": 326,
+            "y": 685
+        },
+        {
+            "type": "Image",
+            "id": "e11f83cf-41c7-4010-9408-0c397e615da1",
+            "label": "chair_back_png",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "chair_back"
+            },
+            "x": 428,
+            "y": 705
+        },
+        {
+            "type": "Image",
+            "id": "64cd6b11-bbed-4607-836e-67b5798c67d6",
+            "label": "table_png",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "table"
+            },
+            "x": 549,
+            "y": 775
+        },
+        {
+            "type": "Image",
+            "id": "b9def6fd-6cc1-42f4-8485-8cee0cf3317e",
+            "label": "chair_front_png",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "chair_front"
+            },
+            "x": 443,
+            "y": 763
+        },
+        {
+            "type": "Image",
+            "id": "54bbf814-2410-461c-8003-c57d1959f7ff",
+            "label": "small_stick_png",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "small_stick"
+            },
+            "x": 547,
+            "y": 709
+        },
+        {
+            "type": "Sprite",
+            "id": "7efd5633-6199-443c-94c2-20905bf179c7",
+            "label": "small_fire",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "yeticave",
+                "frame": "small_fire0001"
+            },
+            "x": 545,
+            "y": 651
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "a4bb519a-83cd-4cef-88cb-ab60c51da3d5",
+            "label": "sort"
+        }
+    ]
+}

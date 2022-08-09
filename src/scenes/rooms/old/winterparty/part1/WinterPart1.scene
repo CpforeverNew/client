@@ -1,0 +1,96 @@
+{
+    "id": "1315b4d2-3852-4c57-a4ba-b51376e1912b",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/winterparty/part1/winterparty-part1-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "WinterPart1",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "79d4f3af-c798-43bf-8d3d-3353a744866f",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "winterparty-part1",
+                "frame": "bg"
+            },
+            "x": 770,
+            "y": 482
+        },
+        {
+            "type": "Image",
+            "id": "1765994e-5337-4c35-b3ca-425319bb3eca",
+            "label": "cave",
+            "components": [],
+            "texture": {
+                "key": "winterparty-part1",
+                "frame": "cave"
+            },
+            "x": 771,
+            "y": 396
+        },
+        {
+            "type": "Image",
+            "id": "b8e0b624-976e-421b-9d77-9f831643076f",
+            "label": "left_flag",
+            "components": [],
+            "texture": {
+                "key": "winterparty-part1",
+                "frame": "left_flag"
+            },
+            "x": 591,
+            "y": 624
+        },
+        {
+            "type": "Image",
+            "id": "194c0a82-9484-432b-8a84-783d78976f40",
+            "label": "right_flag",
+            "components": [],
+            "texture": {
+                "key": "winterparty-part1",
+                "frame": "right_flag"
+            },
+            "x": 959,
+            "y": 619
+        },
+        {
+            "type": "Image",
+            "id": "73064e97-e1cb-4f50-bb81-15ec06725303",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "winterparty-part1",
+                "frame": "fg"
+            },
+            "x": 769,
+            "y": 570
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "fde5b4d3-dbce-48dd-9b58-be1a60fbf0ed",
+            "label": "sort",
+            "objectIds": [
+                "1765994e-5337-4c35-b3ca-425319bb3eca"
+            ]
+        }
+    ]
+}

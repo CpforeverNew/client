@@ -156,7 +156,7 @@
                 "Button"
             ],
             "Button.spriteName": "sshop-book",
-            "Button.callback": "() => this.interface.loadExternal('ClothingCatalog')",
+            "Button.callback": "() => this.interface.loadExternal('SportsCatalog')",
             "Button.activeFrame": false,
             "texture": {
                 "key": "sport-og",

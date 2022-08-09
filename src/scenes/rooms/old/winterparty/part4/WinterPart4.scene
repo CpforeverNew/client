@@ -1,0 +1,60 @@
+{
+    "id": "89fc16f3-c4dd-464a-b54c-8b45f26d7fd3",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/winterparty/part4/winterparty-part4-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "WinterPart4",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "07a6a54a-97b3-4fc0-b68c-83a9b985164d",
+            "label": "bg_png",
+            "components": [],
+            "texture": {
+                "key": "winterparty-part4",
+                "frame": "bg.png"
+            },
+            "x": 765,
+            "y": 459
+        },
+        {
+            "type": "Image",
+            "id": "642de33e-fd9a-4343-8518-596dfb33ec2f",
+            "label": "fg_png",
+            "components": [],
+            "texture": {
+                "key": "winterparty-part4",
+                "frame": "fg.png"
+            },
+            "x": 766,
+            "y": 623
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "5f4aa107-1a80-42d2-8453-867f9cbac0cd",
+            "label": "sort",
+            "objectIds": [
+                "642de33e-fd9a-4343-8518-596dfb33ec2f"
+            ]
+        }
+    ]
+}

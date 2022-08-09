@@ -1,0 +1,382 @@
+{
+    "id": "a21bd8dc-c539-4563-88c1-f89d6c820cec",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/village/winter/village-winter-pack.json",
+            "client/assets/media/rooms/old/village/village-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Village",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "1b32e053-ce06-431a-885f-cfccb24643c8",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "village-winter",
+                "frame": "bg"
+            },
+            "x": 703,
+            "y": 492
+        },
+        {
+            "type": "Image",
+            "id": "89281028-6916-40be-b5c3-5566eb7c9a11",
+            "label": "lift",
+            "components": [],
+            "texture": {
+                "key": "village",
+                "frame": "lift"
+            },
+            "x": 343,
+            "y": 182
+        },
+        {
+            "type": "Sprite",
+            "id": "098b8825-ec32-458f-b48e-3db7c040a6dc",
+            "label": "chair",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "chair",
+            "Animation.end": 179,
+            "Animation.repeatDelay": 1500,
+            "texture": {
+                "key": "village",
+                "frame": "chair0001"
+            },
+            "x": 287,
+            "y": 131
+        },
+        {
+            "type": "Image",
+            "id": "1edcdf61-e5a4-44d4-b13a-96d6dcec24ae",
+            "label": "maze_map_box0001",
+            "components": [],
+            "texture": {
+                "key": "village-winter",
+                "frame": "maze_map_box0001"
+            },
+            "x": 399,
+            "y": 319
+        },
+        {
+            "type": "Rectangle",
+            "id": "43de9fd7-c335-45bb-bd24-5cd7c1d96a12",
+            "label": "zone_1",
+            "components": [
+                "Zone"
+            ],
+            "Zone.hoverCallback": "() => this.onSnowmanOver()",
+            "x": 423,
+            "y": 317,
+            "scaleX": 1.8757759515503634,
+            "scaleY": 1.9736394342343848,
+            "alpha": 0.5,
+            "isFilled": true,
+            "fillColor": "#00ff00",
+            "width": 135,
+            "height": 160
+        },
+        {
+            "type": "Image",
+            "id": "27d31af7-9e96-4df4-98b2-3ff229d1f0eb",
+            "label": "button0001",
+            "components": [],
+            "texture": {
+                "key": "village-winter",
+                "frame": "button0001"
+            },
+            "x": 502,
+            "y": 442
+        },
+        {
+            "type": "Image",
+            "id": "a5f9b300-7b2c-4805-92a9-99e54a416793",
+            "label": "stairs",
+            "components": [],
+            "texture": {
+                "key": "village-winter",
+                "frame": "stairs"
+            },
+            "x": 981,
+            "y": 430
+        },
+        {
+            "type": "Image",
+            "id": "4ceac5cb-00d0-4f65-aa48-a7ac1a195bd1",
+            "label": "door0001",
+            "components": [],
+            "texture": {
+                "key": "village-winter",
+                "frame": "door0001"
+            },
+            "x": 1110,
+            "y": 293
+        },
+        {
+            "type": "Image",
+            "id": "59697f1b-6bd9-447b-b0b9-c357af9166b6",
+            "label": "lodge_front",
+            "components": [],
+            "texture": {
+                "key": "village-winter",
+                "frame": "lodge_front"
+            },
+            "x": 1095,
+            "y": 372
+        },
+        {
+            "type": "Image",
+            "id": "1c270f51-ab08-4cae-aca6-67e5c9be8b67",
+            "label": "lodge_snow",
+            "components": [],
+            "texture": {
+                "key": "village-winter",
+                "frame": "lodge_snow"
+            },
+            "x": 1131,
+            "y": 419
+        },
+        {
+            "type": "Image",
+            "id": "f21b1b0b-126f-433f-84a3-629435e739fb",
+            "label": "top_of_mnt0001",
+            "components": [],
+            "texture": {
+                "key": "village-winter",
+                "frame": "top_of_mnt0001"
+            },
+            "x": 177,
+            "y": 328
+        },
+        {
+            "type": "Image",
+            "id": "48fb3197-9983-46d0-b16c-bc6b5a27caf7",
+            "label": "left_ballons",
+            "components": [],
+            "texture": {
+                "key": "village-winter",
+                "frame": "left_ballons"
+            },
+            "x": 86,
+            "y": 516
+        },
+        {
+            "type": "Image",
+            "id": "c32e9c77-b8d9-4121-87eb-1d71deb54c6b",
+            "label": "snow_maze_sign",
+            "components": [],
+            "texture": {
+                "key": "village-winter",
+                "frame": "snow_maze_sign"
+            },
+            "x": 754,
+            "y": 287
+        },
+        {
+            "type": "Image",
+            "id": "93413215-9038-4f58-95fa-9f6cece6c884",
+            "label": "tours_booth0001",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.prompt.showItem(428)",
+            "texture": {
+                "key": "village-winter",
+                "frame": "tours_booth0001"
+            },
+            "x": 214,
+            "y": 626
+        },
+        {
+            "type": "Image",
+            "id": "8ad3051e-f375-4f19-8ab5-6d29cdaf0ff0",
+            "label": "tree_stump",
+            "components": [],
+            "texture": {
+                "key": "village-winter",
+                "frame": "tree_stump"
+            },
+            "x": 810,
+            "y": 775
+        },
+        {
+            "type": "Image",
+            "id": "1022e5b5-9874-4aad-b7b6-eae6011d0b07",
+            "label": "right_tree_stump",
+            "components": [],
+            "texture": {
+                "key": "village-winter",
+                "frame": "right_tree_stump"
+            },
+            "x": 1115,
+            "y": 642
+        },
+        {
+            "type": "Image",
+            "id": "5c61e1c7-86f7-4ebd-a8fe-8c4223139c51",
+            "label": "snow_drinks",
+            "components": [],
+            "texture": {
+                "key": "village-winter",
+                "frame": "snow_drinks"
+            },
+            "x": 974,
+            "y": 679
+        },
+        {
+            "type": "Image",
+            "id": "277749e0-7026-4979-9013-ad2c78394e77",
+            "label": "phone",
+            "components": [],
+            "texture": {
+                "key": "village",
+                "frame": "phone"
+            },
+            "x": 1378,
+            "y": 276
+        },
+        {
+            "type": "Image",
+            "id": "09f3fbf3-10d2-4e55-be17-ae7856791611",
+            "label": "phone_snow",
+            "components": [],
+            "texture": {
+                "key": "village",
+                "frame": "phone_snow"
+            },
+            "x": 1372,
+            "y": 555,
+            "originX": 0.509090909090909,
+            "originY": 0.5272727272727272
+        },
+        {
+            "type": "Image",
+            "id": "6b823372-839c-45f0-b7b7-5e67e10c5ff0",
+            "label": "red_dougnut",
+            "components": [],
+            "texture": {
+                "key": "village-winter",
+                "frame": "red_dougnut"
+            },
+            "x": 1481,
+            "y": 511
+        },
+        {
+            "type": "Image",
+            "id": "a52992a1-cabc-448c-9d19-be665da9df89",
+            "label": "phone_door",
+            "components": [],
+            "texture": {
+                "key": "village",
+                "frame": "phone_door"
+            },
+            "x": 1358,
+            "y": 347,
+            "originX": 0.22797927461139897,
+            "originY": 0.6206896551724138
+        },
+        {
+            "type": "Image",
+            "id": "fc3e9fd8-8fb0-4a1e-9fcb-1c8f6e35b28b",
+            "label": "right_ballons",
+            "components": [],
+            "texture": {
+                "key": "village-winter",
+                "frame": "right_ballons"
+            },
+            "x": 1472,
+            "y": 460
+        },
+        {
+            "type": "Sprite",
+            "id": "084a842f-1642-44ea-96fa-cf5a634219ec",
+            "label": "smoke",
+            "scope": "CLASS",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "smoke",
+            "Animation.end": 5,
+            "texture": {
+                "key": "village-winter",
+                "frame": "smoke0001"
+            },
+            "x": 1116,
+            "y": 31
+        },
+        {
+            "type": "Image",
+            "id": "903cf342-a1f4-404d-986e-63832192648c",
+            "label": "bottom_tree_stump",
+            "components": [],
+            "texture": {
+                "key": "village-winter",
+                "frame": "bottom_tree_stump"
+            },
+            "x": 1094,
+            "y": 816
+        },
+        {
+            "type": "Sprite",
+            "id": "11b4fe1c-ff73-49b3-b496-00bc34333f6f",
+            "label": "snow_man",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "village-winter",
+                "frame": "snow_man0001"
+            },
+            "x": 1351,
+            "y": 466
+        },
+        {
+            "type": "Rectangle",
+            "id": "bdde9288-0f68-44a8-aab3-af30a952f4af",
+            "label": "zone",
+            "components": [
+                "Zone"
+            ],
+            "Zone.hoverCallback": "() => this.onSnowmanOver()",
+            "x": 1359,
+            "y": 519,
+            "scaleX": 1.1722589486945634,
+            "scaleY": 1.6065297728351975,
+            "alpha": 0.5,
+            "isFilled": true,
+            "fillColor": "#00ff00",
+            "width": 135,
+            "height": 160
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "d0be6973-a3b7-49d9-ad52-4527d6fb00d3",
+            "label": "sort",
+            "objectIds": [
+                "93413215-9038-4f58-95fa-9f6cece6c884",
+                "8ad3051e-f375-4f19-8ab5-6d29cdaf0ff0",
+                "5c61e1c7-86f7-4ebd-a8fe-8c4223139c51",
+                "59697f1b-6bd9-447b-b0b9-c357af9166b6"
+            ]
+        }
+    ]
+}

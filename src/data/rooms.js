@@ -225,6 +225,72 @@ if (localStorage.clientMode == "legacy") {
 			x: 1000,
 			y: 560
 		},
+		841: {
+			key: 'WinterPart1',
+			scene: require(`@rooms/old/winterparty/part1/WinterPart1`).default,
+			x: 1000,
+			y: 560
+		},
+		842: {
+			key: 'WinterPart2',
+			scene: require(`@rooms/old/winterparty/part2/WinterPart2`).default,
+			x: 1000,
+			y: 560
+		},
+		843: {
+			key: 'WinterPart3',
+			scene: require(`@rooms/old/winterparty/part3/WinterPart3`).default,
+			x: 1000,
+			y: 560
+		},
+		844: {
+			key: 'WinterPart4',
+			scene: require(`@rooms/old/winterparty/part4/WinterPart4`).default,
+			x: 1000,
+			y: 560
+		},
+		845: {
+			key: 'WinterPart5',
+			scene: require(`@rooms/old/winterparty/part5/WinterPart5`).default,
+			x: 1000,
+			y: 560
+		},
+		846: {
+			key: 'WinterPart6',
+			scene: require(`@rooms/old/winterparty/part6/WinterPart6`).default,
+			x: 1000,
+			y: 560
+		},
+		847: {
+			key: 'WinterPart7',
+			scene: require(`@rooms/old/winterparty/part7/WinterPart7`).default,
+			x: 1000,
+			y: 560
+		},
+		848: {
+			key: 'WinterPart8',
+			scene: require(`@rooms/old/winterparty/part8/WinterPart8`).default,
+			x: 1000,
+			y: 560
+		},
+		849: {
+			key: 'WinterPart9',
+			scene: require(`@rooms/old/winterparty/part9/WinterPart9`).default,
+			x: 1000,
+			y: 560
+		},
+		850: {
+			key: 'WinterPart10',
+			scene: require(`@rooms/old/winterparty/part10/WinterPart10`).default,
+			x: 1000,
+			y: 560
+		},
+		861: {
+			key: 'YetiCave',
+			scene: require(`@rooms/old/winterparty/yeticave/YetiCave`).default,
+			x: 234, 
+			y: 547
+		},
 		898: {
 			key: 'Observatory',
 			scene: require(`@rooms/old/observatory/Observatory`).default,

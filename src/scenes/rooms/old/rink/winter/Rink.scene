@@ -1,0 +1,149 @@
+{
+    "id": "ddbf4e8a-5699-4a18-84bb-6c421d3aa227",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/rink/winter/rink-winter-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Rink",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "8e5a8690-c717-46ac-b037-bddb7c8e2ec2",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "rink-winter",
+                "frame": "bg"
+            },
+            "x": 763,
+            "y": 386
+        },
+        {
+            "type": "Image",
+            "id": "de0017a9-eca0-4732-82be-f5acd115c9a8",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "rink-winter",
+                "frame": "fg"
+            },
+            "x": 773,
+            "y": 509
+        },
+        {
+            "type": "Image",
+            "id": "1eec43c7-ea7a-4491-bcb9-5c079c54fc0d",
+            "label": "door0001",
+            "components": [],
+            "texture": {
+                "key": "rink-winter",
+                "frame": "door0001"
+            },
+            "x": 781,
+            "y": 271
+        },
+        {
+            "type": "Image",
+            "id": "4e8099c4-ac6d-4f0a-8bae-101680011d43",
+            "label": "left_glass",
+            "components": [],
+            "texture": {
+                "key": "rink-winter",
+                "frame": "left_glass"
+            },
+            "x": 479,
+            "y": 245
+        },
+        {
+            "type": "Image",
+            "id": "798752be-339d-405b-afa6-dba4ce10d2fe",
+            "label": "puck",
+            "components": [],
+            "texture": {
+                "key": "rink-winter",
+                "frame": "puck"
+            },
+            "x": 802,
+            "y": 481
+        },
+        {
+            "type": "Image",
+            "id": "a4059ebb-ab23-4063-8bd1-7dd3587f9d22",
+            "label": "goal_left_back",
+            "components": [],
+            "texture": {
+                "key": "rink-winter",
+                "frame": "goal_left_back"
+            },
+            "x": 310,
+            "y": 426
+        },
+        {
+            "type": "Image",
+            "id": "5601e1d3-e750-4d82-ae03-22e4b92ee538",
+            "label": "goal_left",
+            "components": [],
+            "texture": {
+                "key": "rink-winter",
+                "frame": "goal_left"
+            },
+            "x": 272,
+            "y": 465
+        },
+        {
+            "type": "Image",
+            "id": "603f3c88-fc2b-40f4-8785-bc885173c822",
+            "label": "goal_right_back",
+            "components": [],
+            "texture": {
+                "key": "rink-winter",
+                "frame": "goal_right_back"
+            },
+            "x": 1254,
+            "y": 433
+        },
+        {
+            "type": "Image",
+            "id": "ae746773-d7ef-432e-83e6-38919964af7f",
+            "label": "goal_right",
+            "components": [],
+            "texture": {
+                "key": "rink-winter",
+                "frame": "goal_right"
+            },
+            "x": 1291,
+            "y": 467
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "6d6d5fae-d1f8-4bcd-a35d-8a2c43027744",
+            "label": "sort",
+            "objectIds": [
+                "5601e1d3-e750-4d82-ae03-22e4b92ee538",
+                "a4059ebb-ab23-4063-8bd1-7dd3587f9d22",
+                "4e8099c4-ac6d-4f0a-8bae-101680011d43",
+                "ae746773-d7ef-432e-83e6-38919964af7f",
+                "603f3c88-fc2b-40f4-8785-bc885173c822",
+                "798752be-339d-405b-afa6-dba4ce10d2fe"
+            ]
+        }
+    ]
+}

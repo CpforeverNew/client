@@ -133,7 +133,7 @@ export default class Sport extends RoomScene {
         // sshop_book (components)
         const sshop_bookButton = new Button(sshop_book);
         sshop_bookButton.spriteName = "sshop-book";
-        sshop_bookButton.callback = () => this.interface.loadExternal('ClothingCatalog');
+        sshop_bookButton.callback = () => this.interface.loadExternal('SportsCatalog');
         sshop_bookButton.activeFrame = false;
 
         // speakersport (components)
