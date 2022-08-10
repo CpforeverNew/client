@@ -12,6 +12,8 @@ export default class Mtn extends RoomScene {
     constructor() {
         super("Mtn");
 
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.free_item;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
         /** @type {MtnSeat[]} */
@@ -206,6 +208,14 @@ export default class Mtn extends RoomScene {
         // left_ballons
         this.add.image(420, 209, "mnt-winter", "left_ballons");
 
+        // free_item
+        const free_item = this.add.ellipse(1069, 394, 128, 128);
+        free_item.scaleX = 1.002455848298564;
+        free_item.scaleY = 1.6468006679738743;
+        free_item.angle = 125;
+        free_item.isFilled = true;
+        free_item.fillAlpha = 0;
+
         // lists
         const sort = [penguin_run, express, pole];
         const seats100 = [mtnSeat4, mtnSeat3, mtnSeat2, mtnSeat1];
@@ -285,6 +295,7 @@ export default class Mtn extends RoomScene {
         // zone1 (components)
         new MoveTo(zone1);
 
+        this.free_item = free_item;
         this.sort = sort;
         this.seats100 = seats100;
         this.seats101 = seats101;
@@ -296,6 +307,19 @@ export default class Mtn extends RoomScene {
 
 
     /* START-USER-CODE */
+
+        create() {
+            super.create();
+            this.roomZones = {
+                'free_item': { 
+                    key: this.free_item,
+                    callback: () => this.interface.prompt.showItem(1104)
+                }
+            }
+    
+            super.addZones()
+        }
+
         triggerWaddle(id) {
         if (this.world.client.activeSeat) {
             return

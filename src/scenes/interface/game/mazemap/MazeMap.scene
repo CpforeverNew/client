@@ -1,0 +1,117 @@
+{
+    "id": "f3d7dfcf-efff-45f6-a98d-ca27f63aa4a9",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [
+            "client/assets/media/interface/game/maze_map/mazemap-pack.json"
+        ],
+        "sceneKey": "MazeMap",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "0b28ea84-6909-4161-939a-b97ed193c255",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 770,
+            "y": 526,
+            "scaleX": 1.0519071908795616,
+            "scaleY": 1.2143341261502665,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.2,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Sprite",
+            "id": "8846fb85-ec46-4040-95ed-cf5a4450fcf9",
+            "label": "maze_map",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "maze_map",
+                "frame": "maze_map0001"
+            },
+            "x": 757,
+            "y": 862
+        },
+        {
+            "type": "Image",
+            "id": "7042ebb3-b606-4363-8fe8-92ec56f3365e",
+            "label": "grey_button",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "grey-button",
+            "Button.callback": "() => this.scene.stop();",
+            "texture": {
+                "key": "main",
+                "frame": "grey-button"
+            },
+            "x": 1421,
+            "y": 75
+        },
+        {
+            "type": "Image",
+            "id": "b1673689-23f4-4dfb-b939-bc175719985e",
+            "label": "grey_x",
+            "components": [],
+            "texture": {
+                "key": "main",
+                "frame": "grey-x"
+            },
+            "x": 1423,
+            "y": 74
+        },
+        {
+            "type": "Image",
+            "id": "305eb9a5-664b-4980-938c-fa20eb1b844c",
+            "label": "show_button",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "show_button",
+            "Button.callback": "() => this.showMap()",
+            "texture": {
+                "key": "maze_map",
+                "frame": "show_button"
+            },
+            "x": 1359,
+            "y": 809
+        },
+        {
+            "type": "Image",
+            "id": "77fbed2e-c317-4514-93b3-e617587f748a",
+            "label": "hide_button",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "hide_button",
+            "Button.callback": "() => this.onHideMap()",
+            "texture": {
+                "key": "maze_map",
+                "frame": "hide_button"
+            },
+            "x": 1359,
+            "y": 809
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

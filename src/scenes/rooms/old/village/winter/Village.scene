@@ -59,9 +59,10 @@
             "y": 131
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "1edcdf61-e5a4-44d4-b13a-96d6dcec24ae",
-            "label": "maze_map_box0001",
+            "label": "maze_map_box",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "village-winter",
@@ -77,7 +78,9 @@
             "components": [
                 "Zone"
             ],
-            "Zone.hoverCallback": "() => this.onSnowmanOver()",
+            "Zone.hoverCallback": "() => this.maze_map_box.play(\"maze_map_box_hover\");",
+            "Zone.hoverOutCallback": "() => this.maze_map_box.play(\"maze_map_box_unhover\");",
+            "Zone.callback": "() => this.onMapClick()",
             "x": 423,
             "y": 317,
             "scaleX": 1.8757759515503634,
@@ -145,7 +148,7 @@
                 "key": "village-winter",
                 "frame": "lodge_snow"
             },
-            "x": 1131,
+            "x": 1123,
             "y": 419
         },
         {
@@ -181,8 +184,8 @@
                 "key": "village-winter",
                 "frame": "snow_maze_sign"
             },
-            "x": 754,
-            "y": 287
+            "x": 762,
+            "y": 280
         },
         {
             "type": "Image",

@@ -561,6 +561,22 @@
             },
             "x": 420,
             "y": 209
+        },
+        {
+            "type": "Ellipse",
+            "id": "3fdc1832-47f8-49f8-affe-227467cdd402",
+            "label": "free_item",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1069,
+            "y": 394,
+            "scaleX": 1.002455848298564,
+            "scaleY": 1.6468006679738743,
+            "angle": 125,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],

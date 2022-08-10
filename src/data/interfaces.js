@@ -10,7 +10,8 @@ const interfaces = {
 	'Fishing': require('@scenes/interface/catalogs/fishing/Fishing').default,
 	'Stampbook': require('@scenes/interface/game/stampbook/Stampbook').default,
     'SportsCatalog': require('@scenes/interface/catalogs/sports/SportsCatalog').default,
-    'CostumeCatalog': require('@scenes/interface/catalogs/costume/CostumeCatalog').default
+    'CostumeCatalog': require('@scenes/interface/catalogs/costume/CostumeCatalog').default,
+    'MazeMap': require('@scenes/interface/game/mazemap/MazeMap').default,
 }
 
 export default interfaces

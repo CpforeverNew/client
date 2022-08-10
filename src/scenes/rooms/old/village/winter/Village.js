@@ -9,6 +9,8 @@ export default class Village extends RoomScene {
         super("Village");
 
         /** @type {Phaser.GameObjects.Sprite} */
+        this.maze_map_box;
+        /** @type {Phaser.GameObjects.Sprite} */
         this.smoke;
         /** @type {Phaser.GameObjects.Sprite} */
         this.snow_man;
@@ -48,8 +50,8 @@ export default class Village extends RoomScene {
         // chair
         const chair = this.add.sprite(287, 131, "village", "chair0001");
 
-        // maze_map_box0001
-        this.add.image(399, 319, "village-winter", "maze_map_box0001");
+        // maze_map_box
+        const maze_map_box = this.add.sprite(399, 319, "village-winter", "maze_map_box0001");
 
         // zone_1
         const zone_1 = this.add.rectangle(423, 317, 135, 160);
@@ -72,7 +74,7 @@ export default class Village extends RoomScene {
         const lodge_front = this.add.image(1095, 372, "village-winter", "lodge_front");
 
         // lodge_snow
-        this.add.image(1131, 419, "village-winter", "lodge_snow");
+        this.add.image(1123, 419, "village-winter", "lodge_snow");
 
         // top_of_mnt0001
         this.add.image(177, 328, "village-winter", "top_of_mnt0001");
@@ -81,7 +83,7 @@ export default class Village extends RoomScene {
         this.add.image(86, 516, "village-winter", "left_ballons");
 
         // snow_maze_sign
-        this.add.image(754, 287, "village-winter", "snow_maze_sign");
+        this.add.image(762, 280, "village-winter", "snow_maze_sign");
 
         // tours_booth0001
         const tours_booth0001 = this.add.image(214, 626, "village-winter", "tours_booth0001");
@@ -140,7 +142,9 @@ export default class Village extends RoomScene {
 
         // zone_1 (components)
         const zone_1Zone = new Zone(zone_1);
-        zone_1Zone.hoverCallback = () => this.onSnowmanOver();
+        zone_1Zone.hoverCallback = () => this.maze_map_box.play("maze_map_box_hover");;
+        zone_1Zone.hoverOutCallback = () => this.maze_map_box.play("maze_map_box_unhover");;
+        zone_1Zone.callback = () => this.onMapClick();
 
         // tours_booth0001 (components)
         const tours_booth0001SimpleButton = new SimpleButton(tours_booth0001);
@@ -155,6 +159,7 @@ export default class Village extends RoomScene {
         const zoneZone = new Zone(zone);
         zoneZone.hoverCallback = () => this.onSnowmanOver();
 
+        this.maze_map_box = maze_map_box;
         this.smoke = smoke;
         this.snow_man = snow_man;
         this.sort = sort;
@@ -171,6 +176,15 @@ export default class Village extends RoomScene {
 
         super.create();
         this.smoke.play("smoke");
+    }
+
+    onMapClick() {
+        // open the map interface
+        this.interface.loadExternal("MazeMap");
+    }
+
+    onMapOver() {
+        this.maze_map_box.play("maze_map_box");
     }
 
     onSnowmanOver(){
