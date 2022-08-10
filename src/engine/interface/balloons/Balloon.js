@@ -31,6 +31,7 @@ export default class Balloon extends BaseContainer {
             15 // Corner slice
         )
 
+        this.balloon.flipX = true
         this.balloon.setOrigin(0.5, 0.5)
         this.balloon.angle = 180
         this.balloon.setOrigin(0.5, 0)
@@ -50,7 +51,8 @@ export default class Balloon extends BaseContainer {
             },
             [0, 110, 0, 15] // Non-uniform corner slice
         )
-
+        
+        pointer.flipX = true
         pointer.setOrigin(0.5, 0.5)
         pointer.angle = 180
         pointer.setOrigin(0.5, 1)
