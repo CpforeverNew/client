@@ -15,6 +15,8 @@ export default class RoomScene extends BaseScene {
         this.block = null
         // Trigger collision bodies
         this.triggers = null
+        // Walk through Triggers
+        this.walkThrough = null
 
         // If room is fully loaded
         this.isReady = false
@@ -180,6 +182,7 @@ export default class RoomScene extends BaseScene {
         this.matter.world.setBounds(0, 0, this.game.config.width, this.game.config.height)
         this.block = this.addBody('block', 0x111111)
         this.triggers = this.addTriggers()
+        this.walkThrough = this.addWalkThrough()
     }
 
     addBody(key, color = null) {
@@ -212,6 +215,22 @@ export default class RoomScene extends BaseScene {
         return triggers
 
     }
+
+    addWalkThrough() {
+        if (!this.roomWalkThroughTriggers) return null
+ 
+        let triggers = []
+
+        for (let t in this.roomWalkThroughTriggers) {
+            let trigger = this.addBody(t, 0x00FF00)
+
+            trigger.callback = this.roomWalkThroughTriggers[t]
+            triggers.push(trigger)
+        }
+        return triggers
+
+    }
+
 	addZones() {
 		if (!this.roomZones) return null
 		

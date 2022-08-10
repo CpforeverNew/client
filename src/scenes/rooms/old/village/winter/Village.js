@@ -22,7 +22,7 @@ export default class Village extends RoomScene {
             'dock': () => this.triggerRoom(800, 436, 280),
             'beach': () => this.triggerRoom(400, 920, 360),
             'mtn': () => this.triggerRoom(230, 840, 320),
-            'snow_maze_1': () => this.triggerRoom(230, 840, 320),
+            'snow_maze_1': () => this.triggerRoom(849, 767, 658),
             'phone': null
         }
         this.music='280'

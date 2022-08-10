@@ -8,6 +8,9 @@ export default class WinterPart10 extends RoomScene {
     constructor() {
         super("WinterPart10");
 
+        /** @type {Phaser.GameObjects.Image[]} */
+        this.sort;
+
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
             'trigger_1': () => this.triggerRoom(847, 758, 838),
@@ -16,13 +19,15 @@ export default class WinterPart10 extends RoomScene {
             'trigger_4': () => this.triggerRoom(849, 1426, 720),
             'trigger_5': () => this.triggerRoom(849, 1416, 473),
             'trigger_6': () => this.triggerRoom(849, 1427, 223),
+        }
+
+        this.roomWalkThroughTriggers = {
             'entry_trigger_1': () => this.entryTrigger(1),
             'entry_trigger_2': () => this.entryTrigger(2),
             'entry_trigger_3': () => this.entryTrigger(3),
             'entry_trigger_4': () => this.entryTrigger(4),
             'entry_trigger_5': () => this.entryTrigger(5),
             'entry_trigger_6': () => this.entryTrigger(6),
-        
         }
         /* END-USER-CTR-CODE */
     }
@@ -40,10 +45,16 @@ export default class WinterPart10 extends RoomScene {
         this.add.image(760, 475, "winter-part10", "bg");
 
         // fg
-        this.add.image(763, 492, "winter-part10", "fg");
+        const fg = this.add.image(763, 492, "winter-part10", "fg");
+
+        // lists
+        const sort = [fg];
+
+        this.sort = sort;
 
         this.events.emit("scene-awake");
     }
+
 
     /* START-USER-CODE */
 
@@ -56,7 +67,6 @@ export default class WinterPart10 extends RoomScene {
     }
 
     entryTrigger(id) {
-        console.log('entryTrigger', id);
         switch (id) {
             case 2:
             case 6:

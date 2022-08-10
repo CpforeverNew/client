@@ -13,7 +13,18 @@ export default class WinterPart6 extends RoomScene {
 
 
         /* START-USER-CTR-CODE */
+
         this.roomTriggers = {
+            'trigger_1': () => this.triggerRoom(843, 194, 845),
+            'trigger_2': () => this.triggerRoom(847, 63, 231),
+            'trigger_3': () => this.triggerRoom(847, 62, 484),
+            'trigger_4': () => this.triggerRoom(847, 46, 747),
+            'trigger_5': () => this.triggerRoom(849, 758, 67),
+            'trigger_6': () => this.triggerRoom(845, 1445, 720),
+            'trigger_7': () => this.triggerRoom(845, 1454, 489),
+        }
+
+        this.roomWalkThroughTriggers = {
             'entry_trigger_1': () => this.entryTrigger(1),
             'entry_trigger_2': () => this.entryTrigger(2),
             'entry_trigger_3': () => this.entryTrigger(3),

@@ -30,6 +30,40 @@
         },
         {
             "type": "Image",
+            "id": "f8ed4dd1-fb5b-424c-b870-40c445df49b4",
+            "label": "cave_glow",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "winterparty-part1",
+                "frame": "cave_glow0002"
+            },
+            "x": 781,
+            "y": 479,
+            "visible": false
+        },
+        {
+            "type": "Rectangle",
+            "id": "031a6a00-af04-47f9-98b8-c57a28d99df6",
+            "label": "zone",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.cave_glow.visible = true",
+            "SimpleButton.hoverOutCallback": "() => this.cave_glow.visible = false",
+            "x": 784,
+            "y": 456,
+            "scaleX": 1.8596476067378762,
+            "scaleY": 1.1003240383378348,
+            "alpha": 0.00001,
+            "isFilled": true,
+            "fillColor": "#00ff00",
+            "width": 135,
+            "height": 160
+        },
+        {
+            "type": "Image",
             "id": "1765994e-5337-4c35-b3ca-425319bb3eca",
             "label": "cave",
             "components": [],

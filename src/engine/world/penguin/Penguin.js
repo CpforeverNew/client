@@ -243,6 +243,11 @@ export default class Penguin extends BaseContainer {
             this.updateBalloon()
         }
 
+        // check for triggers when penguin is moving
+        if (this.room.walkThrough) {
+            this.checkWalkTriggers();
+        }
+
         let xoffset = this.x - this.prevX
         let yoffset = this.y - this.prevY
 
@@ -253,6 +258,19 @@ export default class Penguin extends BaseContainer {
 
         this.prevX = this.x
         this.prevY = this.y
+    }
+
+    /**
+     * Check whether the penguin is over a trigger and execute the trigger if it is
+     */
+    checkWalkTriggers(){
+        let x = this.x
+        let y = this.y
+        for (let trigger of this.room.walkThrough) {
+            if (this.room.matter.containsPoint(trigger, x, y)) {
+                if (trigger.callback) return trigger.callback()
+            }
+        }
     }
 
     onMoveComplete() {

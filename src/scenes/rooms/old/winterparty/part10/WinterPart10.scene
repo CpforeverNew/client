@@ -47,5 +47,14 @@
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 3
-    }
+    },
+    "lists": [
+        {
+            "id": "577025bb-dab3-4d40-8879-740b2abdcf54",
+            "label": "sort",
+            "objectIds": [
+                "26c85b02-ef8c-4cd8-8bca-f5356b65ac7e"
+            ]
+        }
+    ]
 }

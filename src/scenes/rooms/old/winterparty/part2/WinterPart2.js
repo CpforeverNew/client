@@ -13,7 +13,12 @@ export default class WinterPart2 extends RoomScene {
 
 
         /* START-USER-CTR-CODE */
-        // Write your code here.
+        this.roomTriggers =  {
+            "trigger_1" : () => this.triggerRoom(843,73,496),
+            "trigger_2" : () => this.triggerRoom(845,224,36),
+            "trigger_3" : () => this.triggerRoom(845,501,47),
+            "trigger_4" : () => this.triggerRoom(845,751,83),
+        }
         /* END-USER-CTR-CODE */
     }
 
