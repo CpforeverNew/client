@@ -56,6 +56,66 @@
         },
         {
             "type": "Image",
+            "id": "f4b4a4a9-8847-4839-8a06-ff5686ec63aa",
+            "label": "shadow_popcorn_bottom",
+            "components": [],
+            "texture": {
+                "key": "theatre",
+                "frame": "shadow_popcorn_bottom"
+            },
+            "x": 1417,
+            "y": 760
+        },
+        {
+            "type": "Image",
+            "id": "a17d798e-4a81-465a-999a-2fa963e19ad8",
+            "label": "shadow_popcorn_abovebottom",
+            "components": [],
+            "texture": {
+                "key": "theatre",
+                "frame": "shadow_popcorn_abovebottom"
+            },
+            "x": 1412,
+            "y": 766
+        },
+        {
+            "type": "Image",
+            "id": "e1cc4af7-ca75-4011-b157-fd3d2a66eb74",
+            "label": "popcorn",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "popcorn"
+            },
+            "x": 1412,
+            "y": 759
+        },
+        {
+            "type": "Image",
+            "id": "d3717137-e1aa-47c0-b917-3711f1ece9c5",
+            "label": "shadow_popcorn_top",
+            "components": [],
+            "texture": {
+                "key": "theatre",
+                "frame": "shadow_popcorn_top"
+            },
+            "x": 1412,
+            "y": 753
+        },
+        {
+            "type": "Image",
+            "id": "7eb4134d-e13e-4a80-82b2-c8cd4ef19c7c",
+            "label": "shadow_popcorn_undertop",
+            "components": [],
+            "texture": {
+                "key": "theatre",
+                "frame": "shadow_popcorn_undertop"
+            },
+            "x": 1414,
+            "y": 759
+        },
+        {
+            "type": "Image",
             "id": "eb66cf58-14dc-4c80-8dc1-0fb3efae1755",
             "label": "right_terrace_back_curtain",
             "components": [],

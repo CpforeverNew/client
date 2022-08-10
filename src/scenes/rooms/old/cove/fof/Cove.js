@@ -162,14 +162,14 @@ export default class Cove extends RoomScene {
         hut_stool.setOrigin(0.5, 0.5185185185185185);
 
         // firework
-        const firework = this.add.image(259, 340, "firework");
-        firework.scaleX = 0.13976192905485785;
-        firework.scaleY = 0.13976192905485785;
-        firework.alpha = 0.5;
-        firework.alphaTopLeft = 0.5;
-        firework.alphaTopRight = 0.5;
-        firework.alphaBottomLeft = 0.5;
-        firework.alphaBottomRight = 0.5;
+        //const firework = this.add.image(259, 340, "firework");
+        //firework.scaleX = 0.13976192905485785;
+        //firework.scaleY = 0.13976192905485785;
+        //firework.alpha = 0.5;
+        //firework.alphaTopLeft = 0.5;
+        //firework.alphaTopRight = 0.5;
+        //firework.alphaBottomLeft = 0.5;
+        //firework.alphaBottomRight = 0.5;
 
         // surftop
         this.add.image(1306, 293, "fof-cove", "surftop");
@@ -239,8 +239,8 @@ export default class Cove extends RoomScene {
         fireAnimation.end = 10;
 
         // firework (components)
-        const fireworkSimpleButton = new SimpleButton(firework);
-        fireworkSimpleButton.callback = () => this.interface.prompt.showItem(614);
+        //const fireworkSimpleButton = new SimpleButton(firework);
+        //fireworkSimpleButton.callback = () => this.interface.prompt.showItem(614);
 
         this.smallcloud = smallcloud;
         this.mediumcloud = mediumcloud;
