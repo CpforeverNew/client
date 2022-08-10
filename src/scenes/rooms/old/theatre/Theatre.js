@@ -10,7 +10,29 @@ export default class Theatre extends RoomScene {
         super("Theatre");
 
         /** @type {Phaser.GameObjects.Rectangle} */
+        this.screen_back_1;
+        /** @type {Phaser.GameObjects.Rectangle} */
         this.screen_placeholder;
+        /** @type {Phaser.GameObjects.Image} */
+        this.left_screen_column;
+        /** @type {Phaser.GameObjects.Image} */
+        this.right_screen_column;
+        /** @type {Phaser.GameObjects.Image} */
+        this.top_arch;
+        /** @type {Phaser.GameObjects.Image} */
+        this.right_wall;
+        /** @type {Phaser.GameObjects.Image} */
+        this.left_wall;
+        /** @type {Phaser.GameObjects.Image} */
+        this.left_terrace;
+        /** @type {Phaser.GameObjects.Image} */
+        this.right_terrace;
+        /** @type {Phaser.GameObjects.Image} */
+        this.right_column;
+        /** @type {Phaser.GameObjects.Image} */
+        this.left_column;
+        /** @type {Phaser.GameObjects.Image} */
+        this.stage_lights;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
@@ -36,16 +58,21 @@ export default class Theatre extends RoomScene {
         // bg_png
         this.add.image(760, 396, "theatre", "bg.png");
 
+        // screen_back_1
+        const screen_back_1 = this.add.rectangle(775, 310, 636, 382);
+        screen_back_1.isFilled = true;
+        screen_back_1.fillColor = 0;
+
+        // screen_placeholder
+        const screen_placeholder = this.add.rectangle(775, 307, 636, 382);
+        screen_placeholder.isFilled = true;
+        screen_placeholder.fillColor = 0;
+
         // right_terrace_back_curtain
-        this.add.image(1448, 261, "theatre", "right_terrace_back_curtain");
+        this.add.image(1448, 254, "theatre", "right_terrace_back_curtain");
 
         // left_terrace_back_curtain
         this.add.image(76, 254, "theatre", "left_terrace_back_curtain");
-
-        // screen_placeholder
-        const screen_placeholder = this.add.rectangle(775, 305, 636, 382);
-        screen_placeholder.isFilled = true;
-        screen_placeholder.fillColor = 0;
 
         // chair1
         const chair1 = this.add.image(203, 730, "theatre", "chair1");
@@ -63,13 +90,22 @@ export default class Theatre extends RoomScene {
         const chair5 = this.add.image(615, 813, "theatre", "chair5");
 
         // left_screen_column
-        this.add.image(443, 258, "theatre", "left_screen_column");
+        const left_screen_column = this.add.image(439, 258, "theatre", "left_screen_column");
 
         // right_screen_column
-        this.add.image(1108, 258, "theatre", "right_screen_column");
+        const right_screen_column = this.add.image(1110, 258, "theatre", "right_screen_column");
+
+        // right_screen_column_2
+        const right_screen_column_2 = this.add.image(1022, 99, "theatre", "right_screen_column");
+        right_screen_column_2.angle = -90;
+
+        // right_screen_column_1
+        const right_screen_column_1 = this.add.image(521, 99, "theatre", "right_screen_column");
+        right_screen_column_1.scaleX = -1;
+        right_screen_column_1.angle = 90;
 
         // top_arch
-        this.add.image(768, 242, "theatre", "top_arch");
+        const top_arch = this.add.image(768, 245, "theatre", "top_arch");
 
         // chair10
         const chair10 = this.add.image(1347, 735, "theatre", "chair10");
@@ -113,52 +149,63 @@ export default class Theatre extends RoomScene {
         // chair17
         const chair17 = this.add.image(1077, 887, "theatre", "chair17");
 
+        // right_terrace_back
+        this.add.image(1398, 213, "theatre", "right_terrace_back");
+
+        // left_terrace_back
+        this.add.image(137, 215, "theatre", "left_terrace_back");
+
+        // left_terrace_chair_left
+        this.add.image(94, 316, "theatre", "left_terrace_chair_left");
+
+        // right_terrace_chair_left
+        this.add.image(1438, 325, "theatre", "right_terrace_chair_left");
+
+        // left_terrace_chair_left_leftarm_png
+        this.add.image(81, 351, "theatre", "left_terrace_chair_left_leftarm.png");
+
+        // right_terrace_chair_right_leftarm
+        this.add.image(1455, 346, "theatre", "right_terrace_chair_right_leftarm");
+
         // chair16
         const chair16 = this.add.image(958, 904, "theatre", "chair16");
 
-        // left_wall
-        this.add.image(191, 405, "theatre", "left_wall");
-
-        // right_terrace_back
-        this.add.image(1397, 217, "theatre", "right_terrace_back");
-
         // right_wall
-        this.add.image(1348, 401, "theatre", "right_wall");
+        const right_wall = this.add.image(1348, 398, "theatre", "right_wall");
 
-        // left_terrace_back
-        this.add.image(137, 223, "theatre", "left_terrace_back");
-
-        // left_terrace_chair_left
-        this.add.image(94, 322, "theatre", "left_terrace_chair_left");
-
-        // right_terrace_chair_left
-        this.add.image(1437, 329, "theatre", "right_terrace_chair_left");
-
-        // right_terrace_chair_right_leftarm
-        this.add.image(1454, 350, "theatre", "right_terrace_chair_right_leftarm");
+        // left_wall
+        const left_wall = this.add.image(191, 397, "theatre", "left_wall");
 
         // left_terrace
-        this.add.image(113, 358, "theatre", "left_terrace");
+        const left_terrace = this.add.image(113, 350, "theatre", "left_terrace");
 
         // right_terrace
-        this.add.image(1421, 353, "theatre", "right_terrace");
+        const right_terrace = this.add.image(1422, 348, "theatre", "right_terrace");
 
         // right_column
-        this.add.image(1393, 469, "theatre", "right_column");
-
-        // left_terrace_chair_left_leftarm_png
-        this.add.image(90, 357, "theatre", "left_terrace_chair_left_leftarm.png");
+        const right_column = this.add.image(1393, 466, "theatre", "right_column");
 
         // left_column
-        this.add.image(141, 465, "theatre", "left_column");
+        const left_column = this.add.image(141, 465, "theatre", "left_column");
 
         // stage_lights
-        this.add.image(762, 95, "theatre", "stage_lights");
+        const stage_lights = this.add.image(762, 95, "theatre", "stage_lights");
 
         // lists
         const sort = [chair16, chair17, chair18, chair19, chair20, chair15, chair14, chair13, chair12, chair11, chair6, chair7, chair8, chair9, chair10, chair5, chair4, chair3, chair2, chair1];
 
+        this.screen_back_1 = screen_back_1;
         this.screen_placeholder = screen_placeholder;
+        this.left_screen_column = left_screen_column;
+        this.right_screen_column = right_screen_column;
+        this.top_arch = top_arch;
+        this.right_wall = right_wall;
+        this.left_wall = left_wall;
+        this.left_terrace = left_terrace;
+        this.right_terrace = right_terrace;
+        this.right_column = right_column;
+        this.left_column = left_column;
+        this.stage_lights = stage_lights;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -181,6 +228,23 @@ export default class Theatre extends RoomScene {
 
     create() {
         super.create();
+
+        this.left_screen_column.depth = 1;
+        this.right_screen_column.depth = 1;
+
+        this.top_arch.depth = 2;
+
+        this.left_wall.depth = 3;
+        this.right_wall.depth = 3;
+
+        this.left_terrace.depth = 4;
+        this.right_terrace.depth = 4;
+
+        this.left_column.depth = 5;
+        this.right_column.depth = 5;
+
+        this.stage_lights.depth = 6;
+
         this.network.send('get_stream');
     }
 

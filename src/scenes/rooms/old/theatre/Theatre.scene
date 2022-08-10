@@ -29,6 +29,32 @@
             "y": 396
         },
         {
+            "type": "Rectangle",
+            "id": "5a9f4974-dd1b-46e5-a8d9-b0c1ee1e6627",
+            "label": "screen_back_1",
+            "scope": "CLASS",
+            "components": [],
+            "x": 775,
+            "y": 310,
+            "isFilled": true,
+            "fillColor": "#000",
+            "width": 636,
+            "height": 382
+        },
+        {
+            "type": "Rectangle",
+            "id": "3b91bd31-618b-49ac-be1e-74e69e8c579e",
+            "label": "screen_placeholder",
+            "scope": "CLASS",
+            "components": [],
+            "x": 775,
+            "y": 307,
+            "isFilled": true,
+            "fillColor": "#000",
+            "width": 636,
+            "height": 382
+        },
+        {
             "type": "Image",
             "id": "eb66cf58-14dc-4c80-8dc1-0fb3efae1755",
             "label": "right_terrace_back_curtain",
@@ -38,7 +64,7 @@
                 "frame": "right_terrace_back_curtain"
             },
             "x": 1448,
-            "y": 261
+            "y": 254
         },
         {
             "type": "Image",
@@ -51,19 +77,6 @@
             },
             "x": 76,
             "y": 254
-        },
-        {
-            "type": "Rectangle",
-            "id": "3b91bd31-618b-49ac-be1e-74e69e8c579e",
-            "label": "screen_placeholder",
-            "scope": "CLASS",
-            "components": [],
-            "x": 775,
-            "y": 305,
-            "isFilled": true,
-            "fillColor": "#000",
-            "width": 636,
-            "height": 382
         },
         {
             "type": "Image",
@@ -129,37 +142,67 @@
             "type": "Image",
             "id": "c7a7cfb7-4f70-40f8-833c-8d639d04e462",
             "label": "left_screen_column",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "theatre",
                 "frame": "left_screen_column"
             },
-            "x": 443,
+            "x": 439,
             "y": 258
         },
         {
             "type": "Image",
             "id": "68e58e2c-8b90-4cda-998a-9c1af25264cc",
             "label": "right_screen_column",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "theatre",
                 "frame": "right_screen_column"
             },
-            "x": 1108,
+            "x": 1110,
             "y": 258
+        },
+        {
+            "type": "Image",
+            "id": "386f8542-efae-45f5-847c-c41a679cdd44",
+            "label": "right_screen_column_2",
+            "components": [],
+            "texture": {
+                "key": "theatre",
+                "frame": "right_screen_column"
+            },
+            "x": 1022,
+            "y": 99,
+            "angle": -90
+        },
+        {
+            "type": "Image",
+            "id": "0cf63683-d43e-4f4f-8fc5-679351fb4694",
+            "label": "right_screen_column_1",
+            "components": [],
+            "texture": {
+                "key": "theatre",
+                "frame": "right_screen_column"
+            },
+            "x": 521,
+            "y": 99,
+            "scaleX": -1,
+            "angle": 90
         },
         {
             "type": "Image",
             "id": "24ab425e-960a-473b-a89c-558ab733b470",
             "label": "top_arch",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "theatre",
                 "frame": "top_arch"
             },
             "x": 768,
-            "y": 242
+            "y": 245
         },
         {
             "type": "Image",
@@ -331,6 +374,78 @@
         },
         {
             "type": "Image",
+            "id": "d58f5aea-02fd-41f9-9443-b3c29ac30801",
+            "label": "right_terrace_back",
+            "components": [],
+            "texture": {
+                "key": "theatre",
+                "frame": "right_terrace_back"
+            },
+            "x": 1398,
+            "y": 213
+        },
+        {
+            "type": "Image",
+            "id": "7ba7805b-9ba8-4ad7-859a-717f92ea2775",
+            "label": "left_terrace_back",
+            "components": [],
+            "texture": {
+                "key": "theatre",
+                "frame": "left_terrace_back"
+            },
+            "x": 137,
+            "y": 215
+        },
+        {
+            "type": "Image",
+            "id": "95a821a1-60c1-43b6-a709-1dfcea8a3bd5",
+            "label": "left_terrace_chair_left",
+            "components": [],
+            "texture": {
+                "key": "theatre",
+                "frame": "left_terrace_chair_left"
+            },
+            "x": 94,
+            "y": 316
+        },
+        {
+            "type": "Image",
+            "id": "b09c7f75-1c69-44de-9b01-2e954c489d8f",
+            "label": "right_terrace_chair_left",
+            "components": [],
+            "texture": {
+                "key": "theatre",
+                "frame": "right_terrace_chair_left"
+            },
+            "x": 1438,
+            "y": 325
+        },
+        {
+            "type": "Image",
+            "id": "51806fc6-e04f-4608-8a1f-d87b7d0cb75f",
+            "label": "left_terrace_chair_left_leftarm_png",
+            "components": [],
+            "texture": {
+                "key": "theatre",
+                "frame": "left_terrace_chair_left_leftarm.png"
+            },
+            "x": 81,
+            "y": 351
+        },
+        {
+            "type": "Image",
+            "id": "f4c08610-c8ec-4147-9051-3e373b69fbeb",
+            "label": "right_terrace_chair_right_leftarm",
+            "components": [],
+            "texture": {
+                "key": "theatre",
+                "frame": "right_terrace_chair_right_leftarm"
+            },
+            "x": 1455,
+            "y": 346
+        },
+        {
+            "type": "Image",
             "id": "54b7473e-318f-4967-9e15-3a45195ed9dc",
             "label": "chair16",
             "components": [],
@@ -343,140 +458,74 @@
         },
         {
             "type": "Image",
-            "id": "04f02eb3-36ee-43da-a780-4c91fdae2800",
-            "label": "left_wall",
-            "components": [],
-            "texture": {
-                "key": "theatre",
-                "frame": "left_wall"
-            },
-            "x": 191,
-            "y": 405
-        },
-        {
-            "type": "Image",
-            "id": "d58f5aea-02fd-41f9-9443-b3c29ac30801",
-            "label": "right_terrace_back",
-            "components": [],
-            "texture": {
-                "key": "theatre",
-                "frame": "right_terrace_back"
-            },
-            "x": 1397,
-            "y": 217
-        },
-        {
-            "type": "Image",
             "id": "24846134-f0af-418a-a42e-6b132c9dddbe",
             "label": "right_wall",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "theatre",
                 "frame": "right_wall"
             },
             "x": 1348,
-            "y": 401
+            "y": 398
         },
         {
             "type": "Image",
-            "id": "7ba7805b-9ba8-4ad7-859a-717f92ea2775",
-            "label": "left_terrace_back",
+            "id": "04f02eb3-36ee-43da-a780-4c91fdae2800",
+            "label": "left_wall",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "theatre",
-                "frame": "left_terrace_back"
+                "frame": "left_wall"
             },
-            "x": 137,
-            "y": 223
-        },
-        {
-            "type": "Image",
-            "id": "95a821a1-60c1-43b6-a709-1dfcea8a3bd5",
-            "label": "left_terrace_chair_left",
-            "components": [],
-            "texture": {
-                "key": "theatre",
-                "frame": "left_terrace_chair_left"
-            },
-            "x": 94,
-            "y": 322
-        },
-        {
-            "type": "Image",
-            "id": "b09c7f75-1c69-44de-9b01-2e954c489d8f",
-            "label": "right_terrace_chair_left",
-            "components": [],
-            "texture": {
-                "key": "theatre",
-                "frame": "right_terrace_chair_left"
-            },
-            "x": 1437,
-            "y": 329
-        },
-        {
-            "type": "Image",
-            "id": "f4c08610-c8ec-4147-9051-3e373b69fbeb",
-            "label": "right_terrace_chair_right_leftarm",
-            "components": [],
-            "texture": {
-                "key": "theatre",
-                "frame": "right_terrace_chair_right_leftarm"
-            },
-            "x": 1454,
-            "y": 350
+            "x": 191,
+            "y": 397
         },
         {
             "type": "Image",
             "id": "d34e5aae-b318-4925-993d-1852ec402a14",
             "label": "left_terrace",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "theatre",
                 "frame": "left_terrace"
             },
             "x": 113,
-            "y": 358
+            "y": 350
         },
         {
             "type": "Image",
             "id": "b67d1283-c386-49b1-8aee-06ceae4685f6",
             "label": "right_terrace",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "theatre",
                 "frame": "right_terrace"
             },
-            "x": 1421,
-            "y": 353
+            "x": 1422,
+            "y": 348
         },
         {
             "type": "Image",
             "id": "90fc0459-68af-4c63-ad28-9a05f89dc848",
             "label": "right_column",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "theatre",
                 "frame": "right_column"
             },
             "x": 1393,
-            "y": 469
-        },
-        {
-            "type": "Image",
-            "id": "51806fc6-e04f-4608-8a1f-d87b7d0cb75f",
-            "label": "left_terrace_chair_left_leftarm_png",
-            "components": [],
-            "texture": {
-                "key": "theatre",
-                "frame": "left_terrace_chair_left_leftarm.png"
-            },
-            "x": 90,
-            "y": 357
+            "y": 466
         },
         {
             "type": "Image",
             "id": "07c64ad1-61d3-4762-87c9-573f603ef9fe",
             "label": "left_column",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "theatre",
@@ -489,6 +538,7 @@
             "type": "Image",
             "id": "789115c2-fbeb-446e-8f0e-742309f6c355",
             "label": "stage_lights",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "theatre",
