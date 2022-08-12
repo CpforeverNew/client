@@ -514,7 +514,7 @@ export default class Main extends BaseScene {
         // news_button (components)
         const news_buttonButton = new Button(news_button);
         news_buttonButton.spriteName = "news-button";
-        news_buttonButton.callback = () => window.open('https://discord.gg/cpf', '_blank').focus();;
+        news_buttonButton.callback = () => window.open('https://www.cpforever.net/news', '_blank').focus();;
         news_buttonButton.activeFrame = false;
 
         // mod_button (components)
