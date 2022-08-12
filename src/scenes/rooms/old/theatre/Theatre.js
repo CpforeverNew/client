@@ -213,10 +213,6 @@ export default class Theatre extends RoomScene {
         // lists
         const sort = [chair16, chair17, chair18, chair19, chair20, chair15, chair14, chair13, chair12, chair11, chair6, chair7, chair8, chair9, chair10, chair5, chair4, chair3, chair2, chair1];
 
-        // popcorn (components)
-        const popcornSimpleButton = new SimpleButton(popcorn);
-        popcornSimpleButton.callback = () => this.interface.prompt.showItem(7032);
-
         this.screen_back_1 = screen_back_1;
         this.screen_placeholder = screen_placeholder;
         this.popcorn = popcorn;
