@@ -106,7 +106,10 @@
             "type": "Image",
             "id": "7eb4134d-e13e-4a80-82b2-c8cd4ef19c7c",
             "label": "shadow_popcorn_undertop",
-            "components": [],
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.prompt.showItem(7032);",
             "texture": {
                 "key": "theatre",
                 "frame": "shadow_popcorn_undertop"
