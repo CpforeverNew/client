@@ -3914,9 +3914,9 @@ export default class Stampbook extends Book {
 		this.stampInfoTitle.text = this.crumbs.stamps[this.stampsOnPage[pos].id].name
 		this.stampInfoBody.text = this.crumbs.stamps[this.stampsOnPage[pos].id].description
 
-		if (this.stampInfoBody.height === 93) this.stampInfoTitle.y = -175
-		if (this.stampInfoBody.height === 62) this.stampInfoTitle.y = -162
-		if (this.stampInfoBody.height === 31) this.stampInfoTitle.y = -149
+		if (Math.round(this.stampInfoBody.height) === 92) this.stampInfoTitle.y = -175
+		if (Math.round(this.stampInfoBody.height) === 61) this.stampInfoTitle.y = -162
+		if (Math.round(this.stampInfoBody.height) === 31) this.stampInfoTitle.y = -149
 
         this.stampInfoBg.nineSliceObject.resize(300, this.stampInfoBody.height + 65)
     }
