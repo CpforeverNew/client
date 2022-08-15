@@ -49,55 +49,8 @@ export default class Plaza extends RoomScene {
         const bg = this.add.image(-18, -2, "plaza", "bg");
         bg.setOrigin(0, 0);
 
-        // red_carpet
-        const red_carpet = this.add.image(649, 656, "plaza-red-carpet", "red_carpet");
-        red_carpet.angle = -2;
-
-        // right_pole_3
-        const right_pole_3 = this.add.image(777, 547, "plaza-red-carpet", "right_pole_3");
-        right_pole_3.angle = -5;
-
-        // right_red_rope_2
-        const right_red_rope_2 = this.add.image(789, 550, "plaza-red-carpet", "right_red_rope_2");
-        right_red_rope_2.angle = -5;
-
-        // right_pole_2
-        const right_pole_2 = this.add.image(785, 613, "plaza-red-carpet", "right_pole_2");
-        right_pole_2.angle = -5;
-
-        // right_red_rope_1
-        const right_red_rope_1 = this.add.image(787, 624, "plaza-red-carpet", "right_red_rope_1");
-        right_red_rope_1.angle = -5;
-
-        // right_pole_1
-        const right_pole_1 = this.add.image(793, 696, "plaza-red-carpet", "right_pole_1");
-        right_pole_1.angle = -5;
-
-        // star_3
-        const star_3 = this.add.image(802, 489, "plaza-red-carpet", "star_3");
-        star_3.scaleX = 0.8;
-        star_3.scaleY = 0.8;
-
-        // star_2
-        const star_2 = this.add.image(645, 500, "plaza-red-carpet", "star_2");
-        star_2.scaleX = 0.9;
-        star_2.scaleY = 0.9;
-        star_2.angle = -10;
-
         // image
         this.add.image(765, 225, "plazasky");
-
-        // camera_left
-        this.add.image(427, 760, "plaza-red-carpet", "camera_left");
-
-        // camera_right
-        this.add.image(786, 802, "plaza-red-carpet", "camera_right");
-
-        // video_cam_1
-        this.add.image(877, 716, "plaza-red-carpet", "video_cam_1");
-
-        // video_cam_2
-        this.add.image(887, 576, "plaza-red-carpet", "video_cam_2");
 
         // strings
         this.add.image(782, 137, "fof-plaza", "strings");
@@ -117,23 +70,8 @@ export default class Plaza extends RoomScene {
         pet_door.setOrigin(0.473118, 0.678218);
 
         // cave_door
-        const cave_door = this.add.image(562, 510, "plaza", "cave_door");
+        const cave_door = this.add.image(564, 510, "plaza", "cave_door");
         cave_door.setOrigin(0.473684, 0.781513);
-
-        // left_pole_3
-        this.add.image(594, 542, "plaza-red-carpet", "left_pole_3");
-
-        // left_red_rope_2
-        this.add.image(562, 547, "plaza-red-carpet", "left_red_rope_2");
-
-        // left_pole_2
-        this.add.image(546, 604, "plaza-red-carpet", "left_pole_2");
-
-        // left_red_rope_1
-        this.add.image(520, 619, "plaza-red-carpet", "left_red_rope_1");
-
-        // left_pole_1
-        this.add.image(502, 688, "plaza-red-carpet", "left_pole_1");
 
         // pizza_door
         const pizza_door = this.add.image(1194, 410, "plaza", "pizza_door");
@@ -147,7 +85,7 @@ export default class Plaza extends RoomScene {
         this.add.image(847, 221, "plaza", "stage_screen");
 
         // stage_lights_front
-        this.add.sprite(853, 166, "plaza", "stage_lights_front0001");
+        const stage_lights_front = this.add.sprite(853, 166, "plaza", "stage_lights_front0001");
 
         // lights
         const lights = this.add.image(130, 834.1071262380094, "fof-plaza", "lights");
@@ -174,10 +112,9 @@ export default class Plaza extends RoomScene {
         text.setOrigin(0.5, 0.49333333333333335);
 
         // text_1
-        const text_1 = this.add.text(768, 212, "", {});
-        text_1.text = "PENGUIN THEATRE\nGRAND OPENING";
-        text_1.setStyle({ "align": "center", "color": "#352b2bff", "fontFamily": "Burbank Small", "fontSize": "20px" });
-        text_1.setLineSpacing(-3);
+        const text_1 = this.add.text(751, 197, "", {});
+        text_1.text = "TEAM BLUE'S\nRALLY DEBUT";
+        text_1.setStyle({ "align": "center", "color": "#352b2bff", "fontFamily": "Burbank Small", "fontSize": "32px" });
 
         // balloon
         const balloon = this.add.image(64.93834387525126, 903.7989802521776, "fof-plaza", "balloon");
@@ -203,6 +140,65 @@ export default class Plaza extends RoomScene {
 
         // lists
         const sort = [lamp, tickets, balloon, lights];
+
+        // pet_door (components)
+        const pet_doorButton = new Button(pet_door);
+        pet_doorButton.spriteName = "pet_door";
+        pet_doorButton.activeFrame = false;
+        pet_doorButton.pixelPerfect = true;
+        const pet_doorMoveTo = new MoveTo(pet_door);
+        pet_doorMoveTo.x = 340;
+        pet_doorMoveTo.y = 540;
+
+        // cave_door (components)
+        const cave_doorButton = new Button(cave_door);
+        cave_doorButton.spriteName = "cave_door";
+        cave_doorButton.activeFrame = false;
+        cave_doorButton.pixelPerfect = true;
+        const cave_doorMoveTo = new MoveTo(cave_door);
+        cave_doorMoveTo.x = 560;
+        cave_doorMoveTo.y = 500;
+
+        // pizza_door (components)
+        const pizza_doorButton = new Button(pizza_door);
+        pizza_doorButton.spriteName = "pizza_door";
+        pizza_doorButton.activeFrame = false;
+        pizza_doorButton.pixelPerfect = true;
+        const pizza_doorMoveTo = new MoveTo(pizza_door);
+        pizza_doorMoveTo.x = 1152;
+        pizza_doorMoveTo.y = 500;
+
+        // stage_lights_back (components)
+        const stage_lights_backAnimation = new Animation(stage_lights_back);
+        stage_lights_backAnimation.key = "stage_lights_back";
+        stage_lights_backAnimation.end = 16;
+
+        // stage_lights_front (components)
+        const stage_lights_frontAnimation = new Animation(stage_lights_front);
+        stage_lights_frontAnimation.key = "stage_lights_front";
+        stage_lights_frontAnimation.end = 16;
+
+        // stage_door_1 (components)
+        const stage_door_1Button = new Button(stage_door_1);
+        stage_door_1Button.spriteName = "stage_door_1";
+        stage_door_1Button.activeFrame = false;
+        const stage_door_1MoveTo = new MoveTo(stage_door_1);
+        stage_door_1MoveTo.x = 730;
+        stage_door_1MoveTo.y = 460;
+
+        // stage_door_2 (components)
+        const stage_door_2Button = new Button(stage_door_2);
+        stage_door_2Button.spriteName = "stage_door_2";
+        stage_door_2Button.activeFrame = false;
+        const stage_door_2MoveTo = new MoveTo(stage_door_2);
+        stage_door_2MoveTo.x = 960;
+        stage_door_2MoveTo.y = 460;
+
+        // tickets (components)
+        new SimpleButton(tickets);
+        const ticketsMoveTo = new MoveTo(tickets);
+        ticketsMoveTo.x = 846;
+        ticketsMoveTo.y = 426;
 
         this.propplaza = propplaza;
         this.greenhats = greenhats;
