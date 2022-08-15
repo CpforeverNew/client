@@ -93,7 +93,7 @@ export default class PenguinLoader extends SpriteLoader {
   }
 
   onPenguinDrag(id, pointer) {
-    if (this.world.client.penguin.rank >= 4) {
+    if (this.world.client.penguin.rank < 5) {
       return;
     }
     // check if shift is pressed
