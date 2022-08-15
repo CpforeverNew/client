@@ -19,9 +19,6 @@ export default class Actions extends Plugin {
 
     
     send_drag_position(args) {
-        if (!this.room.isReady) {
-            return this.room.updateWaiting(args.id, { x: args.x, y: args.y, frame: 1 })
-        }
 
         if (this.room.penguins[args.id]){
             this.room.penguins[args.id].setPos(args.x, args.y)
