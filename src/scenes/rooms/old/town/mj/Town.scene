@@ -176,6 +176,18 @@
             "fillAlpha": 0,
             "width": 128,
             "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "754e9b81-a006-413c-b68e-44601fe495c7",
+            "label": "door_png",
+            "components": [],
+            "texture": {
+                "key": "town-mj-2022",
+                "frame": "door.png"
+            },
+            "x": 716,
+            "y": 355
         }
     ],
     "plainObjects": [],

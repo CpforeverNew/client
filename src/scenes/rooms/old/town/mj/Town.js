@@ -84,6 +84,9 @@ export default class Town extends RoomScene {
         free_item.isFilled = true;
         free_item.fillAlpha = 0;
 
+        // door_png
+        this.add.image(716, 355, "town-mj-2022", "door.png");
+
         // lists
         const sort = [table2_png, chair_png_1, chair_png, table1_png];
 
