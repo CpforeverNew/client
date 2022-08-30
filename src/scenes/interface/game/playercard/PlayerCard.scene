@@ -139,7 +139,7 @@
                             "fixedWidth": 300,
                             "fontFamily": "Burbank Small",
                             "fontSize": "24px",
-                            "color": "#000000ff"
+                            "color": "#ffffffff"
                         },
                         {
                             "type": "Text",
@@ -155,7 +155,7 @@
                             "fixedWidth": 300,
                             "fontFamily": "Burbank Small",
                             "fontSize": "24px",
-                            "color": "#000000ff"
+                            "color": "#ffffffff"
                         },
                         {
                             "type": "Image",
@@ -186,7 +186,7 @@
                     "fontFamily": "Burbank Small",
                     "fontSize": "32px",
                     "fontStyle": "bold",
-                    "color": "#000000ff"
+                    "color": "#ffffffff"
                 },
                 {
                     "type": "Image",

@@ -384,7 +384,8 @@
                                 "key": "main",
                                 "frame": "tab-arrow"
                             },
-                            "angle": -90
+                            "angle": -90,
+                            "tintFill": true
                         }
                     ]
                 }

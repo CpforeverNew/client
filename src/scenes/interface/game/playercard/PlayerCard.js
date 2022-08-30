@@ -74,14 +74,14 @@ export default class PlayerCard extends BaseContainer {
         const coins = scene.add.text(50, -27, "", {});
         coins.setOrigin(0.5, 0.5);
         coins.text = "Your Coins: 000000";
-        coins.setStyle({ "color": "#000000ff", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "24px" });
+        coins.setStyle({ "color": "#ffffffff", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "24px" });
         stats.add(coins);
 
         // stamps
         const stamps = scene.add.text(50, 23, "", {});
         stamps.setOrigin(0.5, 0.5);
         stamps.text = "Your Stamps: 69/420";
-        stamps.setStyle({ "color": "#000000ff", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "24px" });
+        stamps.setStyle({ "color": "#ffffffff", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "24px" });
         stats.add(stamps);
 
         // card_stamp
@@ -92,7 +92,7 @@ export default class PlayerCard extends BaseContainer {
         const username = scene.add.text(0, -238, "", {});
         username.setOrigin(0.5, 0.5);
         username.text = "Username";
-        username.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":360,"fontFamily": "Burbank Small", "fontSize": "32px", "fontStyle": "bold" });
+        username.setStyle({ "align": "center", "color": "#ffffffff", "fixedWidth":360,"fontFamily": "Burbank Small", "fontSize": "32px", "fontStyle": "bold" });
         this.add(username);
 
         // card_badge_member

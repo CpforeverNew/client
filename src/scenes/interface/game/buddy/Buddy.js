@@ -28,7 +28,7 @@ export default class Buddy extends BaseContainer {
         const text = scene.add.text(0, -236, "", {});
         text.setOrigin(0.5, 0.5);
         text.text = "Your Friends";
-        text.setStyle({ "align": "center", "color": "#000000", "fixedWidth":420,"fontFamily": "Burbank Small", "fontSize": "30px" });
+        text.setStyle({ "align": "center", "color": "#ffffffff", "fixedWidth":420,"fontFamily": "Burbank Small", "fontSize": "30px" });
         this.add(text);
 
         // x_button
@@ -222,13 +222,13 @@ export default class Buddy extends BaseContainer {
         })
     }
 
-	filterUsername(penguin) {
-		if (penguin.username_approved == 1) {
+    filterUsername(penguin) {
+        if (penguin.username_approved == 1) {
             return penguin.username
         } else {
             return "P" + penguin.id
         }
-	}
+    }
 
     /**
      * Gets the client ignores array, sorted alphabetically.

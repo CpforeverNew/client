@@ -49,7 +49,7 @@
                     "align": "center",
                     "fontFamily": "Burbank Small",
                     "fontSize": "30px",
-                    "color": "#000000"
+                    "color": "#ffffffff"
                 },
                 {
                     "type": "Image",

@@ -125,6 +125,7 @@ export default class Inventory extends BaseContainer {
         // arrow
         const arrow = scene.add.image(0, 0, "main", "tab-arrow");
         arrow.angle = -90;
+        arrow.tintFill = true;
         tab.add(arrow);
 
         // lists

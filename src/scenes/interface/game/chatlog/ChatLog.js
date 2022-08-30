@@ -32,6 +32,7 @@ export default class ChatLog extends BaseContainer {
 
         // arrow
         const arrow = scene.add.image(0, 2, "downarrow");
+        arrow.tintFill = true;
         tab.add(arrow);
 
         // bg (components)
@@ -116,11 +117,11 @@ export default class ChatLog extends BaseContainer {
 
             container.id = message.id
             container.text.text = message.message
-			if (message.filtered) {
-            	container.text.setColor('#ff0000')
-        	} else {
-            	container.text.setColor('#000000')
-        	}
+            if (message.filtered) {
+                container.text.setColor('#ff0000')
+            } else {
+                container.text.setColor('#000000')
+            }
         }
 
         if (this.dragging) {

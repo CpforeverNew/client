@@ -59,7 +59,8 @@
                     "originY": 0.5,
                     "fixedWidth": 270,
                     "fontFamily": "Burbank Small",
-                    "fontSize": "24px"
+                    "fontSize": "24px",
+                    "color": "#ffffffff"
                 }
             ]
         }
