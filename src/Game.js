@@ -3,11 +3,21 @@ import Network from '@engine/network/Network'
 
 import cpforever from './data/game'
 
+import * as Sentry from "@sentry/browser";
+import { BrowserTracing } from "@sentry/tracing";
 
 export default class Game extends Phaser.Game {
 
     constructor(config) {
         super(config)
+
+        
+        Sentry.init({
+            dsn: "https://f7e3403138e048508f9c37c678744cc9@o1384363.ingest.sentry.io/6702712",
+            integrations: [new BrowserTracing()],
+        
+            tracesSampleRate: 1.0,
+        });
 
         if (window.location.hostname == 'play.cpforever.org' || window.location.hostname == 'localhost' || window.location.hostname.match(/^[0-9].+$/) != null) {
             this.crumbs = config.crumbs
