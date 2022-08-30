@@ -8,7 +8,7 @@ import RoomScene from '@scenes/rooms/RoomScene'
 export default class Rink extends RoomScene {
 
     constructor() {
-        super("Rink-MJ");
+        super("Rink");
 
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;

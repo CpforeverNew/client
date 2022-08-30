@@ -11,7 +11,7 @@
             "client/assets/media/rooms/old/rink/mj/rink-mj-pack.json"
         ],
         "createMethodName": "_create",
-        "sceneKey": "Rink-MJ",
+        "sceneKey": "Rink",
         "borderWidth": 1520,
         "borderHeight": 960
     },
