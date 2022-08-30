@@ -10,11 +10,9 @@ export default class Town extends RoomScene {
     constructor() {
         super("Town");
 
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.lights10001;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.speaker10001;
-        /** @type {Array<any>} */
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.free_item;
+        /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
 
@@ -35,78 +33,61 @@ export default class Town extends RoomScene {
     /** @returns {void} */
     _preload() {
 
-        this.load.pack("town-pack", "assets/media/rooms/old/town/mj/town-pack.json");
+        this.load.pack("town-mj-2022-pack", "assets/media/rooms/old/town/mj/town-mj-2022-pack.json");
     }
 
     /** @returns {void} */
     _create() {
 
-        // sky1
-        this.add.image(763, 379, "town1", "sky1");
+        // its_a_sky_lol_png
+        this.add.image(761, 394, "town-mj-2022", "its_a_sky_lol.png");
 
-        // mountain2
-        this.add.image(792, 638, "mountain2");
+        // bg_png
+        this.add.image(773, 503, "town-mj-2022", "bg.png");
 
-        // stadium6
-        this.add.image(1275, 442, "stadium6");
+        // right_png
+        this.add.image(1327, 515, "town-mj-2022", "right.png");
 
-        // grid1
-        this.add.image(771, 488, "town1", "grid1");
+        // box2_png
+        this.add.image(1289, 581, "town-mj-2022", "box2.png");
 
-        // ld2
-        this.add.image(463, 67, "town1", "ld2");
+        // box1_png
+        this.add.image(1235, 610, "town-mj-2022", "box1.png");
 
-        // dance1
-        this.add.image(757, 212, "town1", "dance1");
+        // boombox_png
+        this.add.image(1122, 615, "town-mj-2022", "boombox.png");
 
-        // roof
-        this.add.image(758, 129, "roof");
+        // left_png
+        this.add.image(134, 444, "town-mj-2022", "left.png");
 
-        // coffeemj_1
-        this.add.image(386, 337, "coffeemj");
+        // fg_png
+        this.add.image(796, 690, "town-mj-2022", "fg.png");
 
-        // bd1
-        this.add.image(771, 258, "town1", "bd1");
+        // chair_png
+        const chair_png = this.add.image(311, 567, "town-mj-2022", "chair.png");
 
-        // gift1
-        this.add.image(1203, 373, "town1", "gift1");
+        // table1_png
+        const table1_png = this.add.image(373, 580, "town-mj-2022", "table1.png");
 
-        // right_sign_1
-        const right_sign_1 = this.add.image(1390, 389, "town2", "right_sign");
-        right_sign_1.setOrigin(0, 0);
+        // chair_png_1
+        const chair_png_1 = this.add.image(328, 681, "town-mj-2022", "chair.png");
 
-        // left_sign_1
-        const left_sign_1 = this.add.image(114, 497, "town2", "left_sign");
-        left_sign_1.setOrigin(0, 0);
+        // table2_png
+        const table2_png = this.add.image(395, 710, "town-mj-2022", "table2.png");
 
-        // lights10001
-        const lights10001 = this.add.sprite(807, 100, "town1", "lights10001");
-
-        // speaker10001
-        const speaker10001 = this.add.sprite(868, 397, "town1", "speaker10001");
-
-        // objects1
-        this.add.image(1039, 240, "town1", "objects1");
-
-        // objects2
-        this.add.image(1278, 302, "town1", "objects2");
-
-        // cdoor
-        const cdoor = this.add.image(343, 507, "town1", "cdoor");
-
-        // bottom1
-        const bottom1 = this.add.image(-52, 1039, "town1", "bottom1");
-        bottom1.setOrigin(0, 1);
+        // free_item
+        const free_item = this.add.ellipse(1121, 612, 128, 128);
+        free_item.scaleX = 0.5598797556135802;
+        free_item.scaleY = 0.7623470865408281;
+        free_item.angle = 125;
+        free_item.alpha = 0.0001;
+        free_item.isFilled = true;
+        free_item.fillAlpha = 0;
 
         // lists
-        const sort = [];
+        const sort = [table2_png, chair_png_1, chair_png, table1_png];
 
-        // cdoor (components)
-        const cdoorButton = new Button(cdoor);
-        cdoorButton.spriteName = "cdoor";
-
-        this.lights10001 = lights10001;
-        this.speaker10001 = speaker10001;
+        this.free_item = free_item;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -114,35 +95,19 @@ export default class Town extends RoomScene {
 
 
     /* START-USER-CODE */
-    create() {
-    super.create()
-       this.lights10001.play("mjtown_lights");
-       this.speaker10001.play("mjtown_speaker");
-    }
+        create() {
+            super.create();
+            this.roomZones = {
+                'free_item': { 
+                    key: this.free_item,
+                    callback: () => this.interface.prompt.showItem(5016)
+                }
+            }
 
-    onCoffeeDoorOver() {
-        this.cdoor10001.setFrame('cdoor10001')
-        // this.canopy_lights.__Animation.play()
-        // this.disco_lights.__Animation.play()
-    }
+            super.addZones()
+        }
 
-    onCoffeeDoorOut() {
-        this.cdoor10001.setFrame('cdoor10002')
-        // this.canopy_lights.__Animation.stop()
-        // this.disco_lights.__Animation.stop()
-    }
 
-    onCanopyOver() {
-        this.disco.setFrame('disco-hover')
-        this.canopy_lights.__Animation.play()
-        this.disco_lights.__Animation.play()
-    }
-
-    onCanopyOut() {
-        this.disco.setFrame('disco')
-        this.canopy_lights.__Animation.stop()
-        this.disco_lights.__Animation.stop()
-    }
 
     /* END-USER-CODE */
 }

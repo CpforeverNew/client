@@ -8,7 +8,7 @@
         "superClassName": "RoomScene",
         "preloadMethodName": "_preload",
         "preloadPackFiles": [
-            "client/assets/media/rooms/old/town/mj/town-pack.json"
+            "client/assets/media/rooms/old/town/mj/town-mj-2022-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Town",
@@ -18,226 +18,164 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "530093a8-f1aa-43ac-9bc4-f6688982946d",
-            "label": "sky1",
+            "id": "59243a0b-ff6b-4407-8ef9-fbcc66d71611",
+            "label": "its_a_sky_lol_png",
             "components": [],
             "texture": {
-                "key": "town1",
-                "frame": "sky1"
+                "key": "town-mj-2022",
+                "frame": "its_a_sky_lol.png"
             },
-            "x": 763,
-            "y": 379
+            "x": 761,
+            "y": 394
         },
         {
             "type": "Image",
-            "id": "b563fbdc-9e57-4d34-a042-5455979d04d8",
-            "label": "mountain2",
+            "id": "0d289c78-7b88-4603-b397-3d147cb6ca2e",
+            "label": "bg_png",
             "components": [],
             "texture": {
-                "key": "mountain2"
+                "key": "town-mj-2022",
+                "frame": "bg.png"
             },
-            "x": 792,
-            "y": 638
+            "x": 773,
+            "y": 503
         },
         {
             "type": "Image",
-            "id": "7e4621db-2220-4b32-99ce-56bfde154adf",
-            "label": "stadium6",
+            "id": "63e34b56-0a64-4069-b6c8-955074d35c2a",
+            "label": "right_png",
             "components": [],
             "texture": {
-                "key": "stadium6"
+                "key": "town-mj-2022",
+                "frame": "right.png"
             },
-            "x": 1275,
-            "y": 442
+            "x": 1327,
+            "y": 515
         },
         {
             "type": "Image",
-            "id": "2af27725-b239-470a-9750-5e81e79e266a",
-            "label": "grid1",
+            "id": "d93d26fe-71a7-45b8-9d26-ae1d402e6fc1",
+            "label": "box2_png",
             "components": [],
             "texture": {
-                "key": "town1",
-                "frame": "grid1"
+                "key": "town-mj-2022",
+                "frame": "box2.png"
             },
-            "x": 771,
-            "y": 488
+            "x": 1289,
+            "y": 581
         },
         {
             "type": "Image",
-            "id": "aa3ea443-2f43-4e91-9f5c-41114429969d",
-            "label": "ld2",
+            "id": "15899976-de03-4441-b9a0-f92fe2045555",
+            "label": "box1_png",
             "components": [],
             "texture": {
-                "key": "town1",
-                "frame": "ld2"
+                "key": "town-mj-2022",
+                "frame": "box1.png"
             },
-            "x": 463,
-            "y": 67
+            "x": 1235,
+            "y": 610
         },
         {
             "type": "Image",
-            "id": "e93f64f4-9ea2-4aea-a17f-d9e3c5ea40db",
-            "label": "dance1",
+            "id": "9969ffcf-47e2-41f1-a27c-6fee05c6f416",
+            "label": "boombox_png",
             "components": [],
             "texture": {
-                "key": "town1",
-                "frame": "dance1"
+                "key": "town-mj-2022",
+                "frame": "boombox.png"
             },
-            "x": 757,
-            "y": 212
+            "x": 1122,
+            "y": 615
         },
         {
             "type": "Image",
-            "id": "93e0ad9d-0f0e-420c-b6a9-cb76c9289a14",
-            "label": "roof",
+            "id": "7c961cbe-4c3f-4d73-854d-639c46e8b4f2",
+            "label": "left_png",
             "components": [],
             "texture": {
-                "key": "roof"
+                "key": "town-mj-2022",
+                "frame": "left.png"
             },
-            "x": 758,
-            "y": 129
+            "x": 134,
+            "y": 444
         },
         {
             "type": "Image",
-            "id": "483e06da-c4f4-493c-bfa0-825048f04017",
-            "label": "coffeemj_1",
+            "id": "33663c91-d7ee-4bb7-b8fc-edb804e0f369",
+            "label": "fg_png",
             "components": [],
             "texture": {
-                "key": "coffeemj"
+                "key": "town-mj-2022",
+                "frame": "fg.png"
             },
-            "x": 386,
-            "y": 337
+            "x": 796,
+            "y": 690
         },
         {
             "type": "Image",
-            "id": "85771a9d-cd0b-490c-a9ad-6e06373b359e",
-            "label": "bd1",
+            "id": "433f5b36-d558-4c9f-867f-25b5855d5348",
+            "label": "chair_png",
             "components": [],
             "texture": {
-                "key": "town1",
-                "frame": "bd1"
+                "key": "town-mj-2022",
+                "frame": "chair.png"
             },
-            "x": 771,
-            "y": 258
+            "x": 311,
+            "y": 567
         },
         {
             "type": "Image",
-            "id": "447f4fa7-76ad-49c2-b9d4-ee484744f1ed",
-            "label": "gift1",
+            "id": "72451798-6798-42ff-8da6-ba3a4e6df8ad",
+            "label": "table1_png",
             "components": [],
             "texture": {
-                "key": "town1",
-                "frame": "gift1"
+                "key": "town-mj-2022",
+                "frame": "table1.png"
             },
-            "x": 1203,
-            "y": 373
+            "x": 373,
+            "y": 580
         },
         {
             "type": "Image",
-            "id": "0e908a1a-1d85-4f0d-9c9a-4523c86e6bc3",
-            "label": "right_sign_1",
+            "id": "271caa7e-6e8e-4300-a61b-432456e1a544",
+            "label": "chair_png_1",
             "components": [],
             "texture": {
-                "key": "town2",
-                "frame": "right_sign"
+                "key": "town-mj-2022",
+                "frame": "chair.png"
             },
-            "x": 1390,
-            "y": 389,
-            "originX": 0,
-            "originY": 0
+            "x": 328,
+            "y": 681
         },
         {
             "type": "Image",
-            "id": "f827a172-ffe2-471c-90b6-b62c1c107a49",
-            "label": "left_sign_1",
+            "id": "929682fc-2eae-4a3f-adf2-4649b4eb5409",
+            "label": "table2_png",
             "components": [],
             "texture": {
-                "key": "town2",
-                "frame": "left_sign"
+                "key": "town-mj-2022",
+                "frame": "table2.png"
             },
-            "x": 114,
-            "y": 497,
-            "originX": 0,
-            "originY": 0
+            "x": 395,
+            "y": 710
         },
         {
-            "type": "Sprite",
-            "id": "cb69219a-0c3a-4f41-9a4f-6be35df5b5ed",
-            "label": "lights10001",
+            "type": "Ellipse",
+            "id": "dc98704f-cab5-41ed-a63f-eb267246f271",
+            "label": "free_item",
             "scope": "CLASS",
             "components": [],
-            "texture": {
-                "key": "town1",
-                "frame": "lights10001"
-            },
-            "x": 807,
-            "y": 100
-        },
-        {
-            "type": "Sprite",
-            "id": "dd8c3c37-f49c-41c6-987c-304367b3513e",
-            "label": "speaker10001",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "town1",
-                "frame": "speaker10001"
-            },
-            "x": 868,
-            "y": 397
-        },
-        {
-            "type": "Image",
-            "id": "b4ccac4c-145f-438b-ad1d-38fe660330ed",
-            "label": "objects1",
-            "components": [],
-            "texture": {
-                "key": "town1",
-                "frame": "objects1"
-            },
-            "x": 1039,
-            "y": 240
-        },
-        {
-            "type": "Image",
-            "id": "81636ed6-97e0-4228-95d8-aa41ee2947ec",
-            "label": "objects2",
-            "components": [],
-            "texture": {
-                "key": "town1",
-                "frame": "objects2"
-            },
-            "x": 1278,
-            "y": 302
-        },
-        {
-            "type": "Image",
-            "id": "e4b4a1da-c17f-4885-8c10-5976a02f2579",
-            "label": "cdoor",
-            "components": [
-                "Button"
-            ],
-            "Button.spriteName": "cdoor",
-            "texture": {
-                "key": "town1",
-                "frame": "cdoor"
-            },
-            "x": 343,
-            "y": 507
-        },
-        {
-            "type": "Image",
-            "id": "1fa11237-3052-4b1b-b1bc-e432049f6f9e",
-            "label": "bottom1",
-            "components": [],
-            "texture": {
-                "key": "town1",
-                "frame": "bottom1"
-            },
-            "x": -52,
-            "y": 1039,
-            "originX": 0,
-            "originY": 1
+            "x": 1121,
+            "y": 612,
+            "scaleX": 0.5598797556135802,
+            "scaleY": 0.7623470865408281,
+            "angle": 125,
+            "alpha": 0.0001,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],
@@ -250,7 +188,13 @@
     "lists": [
         {
             "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
-            "label": "sort"
+            "label": "sort",
+            "objectIds": [
+                "929682fc-2eae-4a3f-adf2-4649b4eb5409",
+                "271caa7e-6e8e-4300-a61b-432456e1a544",
+                "433f5b36-d558-4c9f-867f-25b5855d5348",
+                "72451798-6798-42ff-8da6-ba3a4e6df8ad"
+            ]
         }
     ]
 }
