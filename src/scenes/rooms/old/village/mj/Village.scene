@@ -18,214 +18,103 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "0547e328-4d9e-4ae5-a5bd-fb355f7d5b31",
+            "id": "4f17d2e6-1140-41fb-9c4a-2135f70bd643",
             "label": "bg",
             "components": [],
             "texture": {
-                "key": "village",
+                "key": "skimj",
                 "frame": "bg"
             },
-            "x": -25,
-            "y": -15,
-            "originX": 0,
-            "originY": 0
+            "x": 771,
+            "y": 409
         },
         {
             "type": "Image",
-            "id": "8f355d69-ebb4-4d3a-88da-8435a41f5dee",
-            "label": "lodge_door",
-            "components": [
-                "Button",
-                "MoveTo"
-            ],
-            "Button.spriteName": "lodge_door",
-            "Button.activeFrame": false,
-            "MoveTo.x": 1000,
-            "MoveTo.y": 400,
-            "texture": {
-                "key": "village",
-                "frame": "lodge_door"
-            },
-            "x": 1075,
-            "y": 318,
-            "originX": 0.27807486631016043,
-            "originY": 0.5560538116591929
-        },
-        {
-            "type": "Image",
-            "id": "3b82c03d-5f38-4e67-b46e-8805be857584",
-            "label": "lodge_stairs",
+            "id": "d99e48a4-2344-407b-8d88-ebe2eadac104",
+            "label": "door10001",
             "components": [],
             "texture": {
-                "key": "village",
-                "frame": "lodge_stairs"
+                "key": "skimj",
+                "frame": "Door10001"
             },
-            "x": 972,
-            "y": 444
+            "x": 1173,
+            "y": 320
         },
         {
             "type": "Image",
-            "id": "1de1a3a5-5ec0-4245-837b-abfc34de7285",
-            "label": "lodge_front",
+            "id": "66daeaf0-8726-4cb6-86f5-b7b0885e05e7",
+            "label": "lodge1",
             "components": [],
             "texture": {
-                "key": "village",
-                "frame": "lodge_front"
+                "key": "skimj",
+                "frame": "Lodge1"
             },
-            "x": 1087,
-            "y": 389,
-            "originX": 0.4807692307692308,
-            "originY": 0.5352112676056338
+            "x": 1206,
+            "y": 281
         },
         {
             "type": "Image",
-            "id": "f8c4cf76-a72b-462f-be61-522c13bbc662",
-            "label": "lodge_snow",
+            "id": "f35eb296-b1ef-4dc6-ac85-6ac8a16393ab",
+            "label": "sportsShop",
             "components": [],
             "texture": {
-                "key": "village",
-                "frame": "lodge_snow"
+                "key": "skimj",
+                "frame": "SportsShop"
             },
-            "x": 1104,
-            "y": 429,
-            "originX": 0.5368217054263565,
-            "originY": 0.4838709677419355
+            "x": 782,
+            "y": 366
         },
         {
             "type": "Image",
-            "id": "f0381b07-f18b-4510-9dc6-506b9b011521",
-            "label": "phone",
+            "id": "4103a68f-875e-4950-aa20-fffd2f2026de",
+            "label": "sign3",
             "components": [],
             "texture": {
-                "key": "village",
-                "frame": "phone"
+                "key": "skimj",
+                "frame": "Sign3"
             },
-            "x": 1373,
-            "y": 316
+            "x": 113,
+            "y": 673
         },
         {
             "type": "Image",
-            "id": "482889f5-4705-4747-ada5-8711b4fe9935",
-            "label": "phone_door",
-            "components": [
-                "Button",
-                "MoveTo"
-            ],
-            "Button.spriteName": "phone_door",
-            "Button.activeFrame": false,
-            "MoveTo.x": 1340,
-            "MoveTo.y": 480,
-            "texture": {
-                "key": "village",
-                "frame": "phone_door"
-            },
-            "x": 1350,
-            "y": 387,
-            "originX": 0.22797927461139897,
-            "originY": 0.6206896551724138
-        },
-        {
-            "type": "Image",
-            "id": "70f6f844-57c4-44d2-8fb2-48a153053776",
-            "label": "phone_snow",
+            "id": "7552b6cf-4f23-4ed2-94fc-4f86a14e65b3",
+            "label": "sign4",
             "components": [],
             "texture": {
-                "key": "village",
-                "frame": "phone_snow"
+                "key": "skimj",
+                "frame": "Sign4"
             },
-            "x": 1361,
-            "y": 595,
-            "originX": 0.509090909090909,
-            "originY": 0.5272727272727272
+            "x": 385,
+            "y": 666
         },
         {
             "type": "Image",
-            "id": "846691f5-1c86-454a-8c41-b6f10da5def6",
+            "id": "cdfc87c8-57d4-471a-bda4-64a37c71809d",
+            "label": "tourStand0001",
+            "components": [],
+            "texture": {
+                "key": "skimj",
+                "frame": "TourStand0001"
+            },
+            "x": 125,
+            "y": 319
+        },
+        {
+            "type": "Image",
+            "id": "fa68cdf7-cdd7-4705-81e5-f05998e7cea8",
             "label": "lift",
             "components": [],
             "texture": {
                 "key": "village",
                 "frame": "lift"
             },
-            "x": 348,
-            "y": 200
+            "x": 274,
+            "y": 178
         },
         {
             "type": "Sprite",
-            "id": "fdecd243-800b-4abf-b11f-d1bd9eddb82b",
-            "label": "smoke",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "smoke",
-            "Animation.end": 5,
-            "texture": {
-                "key": "village",
-                "frame": "smoke0001"
-            },
-            "x": 1110,
-            "y": 32
-        },
-        {
-            "type": "Image",
-            "id": "90385a83-2876-4b63-acb7-cc4d4f0e540f",
-            "label": "left_sign",
-            "components": [],
-            "texture": {
-                "key": "village",
-                "frame": "left_sign"
-            },
-            "x": 133,
-            "y": 677,
-            "originX": 0.4444444444444444,
-            "originY": 0.5217391304347826
-        },
-        {
-            "type": "Image",
-            "id": "00dfc36c-a436-4c05-af2e-c3a1a3cefd30",
-            "label": "right_sign",
-            "components": [],
-            "texture": {
-                "key": "village",
-                "frame": "right_sign"
-            },
-            "x": 1471,
-            "y": 668,
-            "originX": 0.4861111111111111,
-            "originY": 0.7831325301204819
-        },
-        {
-            "type": "Image",
-            "id": "e8099f35-1e7b-451e-a295-ad3348c46dd4",
-            "label": "tours",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => this.interface.prompt.showItem(428)",
-            "texture": {
-                "key": "village",
-                "frame": "tours"
-            },
-            "x": 792,
-            "y": 483,
-            "originY": 0.8846153846153846
-        },
-        {
-            "type": "Image",
-            "id": "b11a8fd1-6631-47b7-afb6-828357023244",
-            "label": "tours_text",
-            "components": [],
-            "texture": {
-                "key": "village",
-                "frame": "tours_text"
-            },
-            "x": 794,
-            "y": 505.2201404552512,
-            "originY": 3.9212529261510674
-        },
-        {
-            "type": "Sprite",
-            "id": "afa23f89-e095-4594-9ade-31a3e78ae5ae",
+            "id": "945a0fd0-698c-4f63-a2fe-65c019a4863a",
             "label": "chair",
             "components": [
                 "Animation"
@@ -237,8 +126,152 @@
                 "key": "village",
                 "frame": "chair0001"
             },
-            "x": 292,
-            "y": 150
+            "x": 218,
+            "y": 128
+        },
+        {
+            "type": "Image",
+            "id": "aa34be63-717e-410b-9c22-9655049b89f7",
+            "label": "sign2",
+            "components": [],
+            "texture": {
+                "key": "skimj",
+                "frame": "Sign2"
+            },
+            "x": 1475,
+            "y": 632
+        },
+        {
+            "type": "Image",
+            "id": "604bdaca-42d8-4b5e-b9e4-853fac92281b",
+            "label": "sledge1",
+            "components": [],
+            "texture": {
+                "key": "skimj",
+                "frame": "Sledge1"
+            },
+            "x": 1440,
+            "y": 443
+        },
+        {
+            "type": "Image",
+            "id": "8ec15551-95be-4375-b5a2-e248bf02428d",
+            "label": "tuba10001",
+            "components": [],
+            "texture": {
+                "key": "skimj",
+                "frame": "Tuba10001"
+            },
+            "x": 922,
+            "y": 356
+        },
+        {
+            "type": "Image",
+            "id": "d2b99be2-a4b0-4e32-912a-fd6993b88f61",
+            "label": "stand50001",
+            "components": [],
+            "texture": {
+                "key": "skimj",
+                "frame": "Stand50001"
+            },
+            "x": 872,
+            "y": 443
+        },
+        {
+            "type": "Image",
+            "id": "730ea085-47f9-4ad2-b714-ade8e62598cc",
+            "label": "stand80001",
+            "components": [],
+            "texture": {
+                "key": "skimj",
+                "frame": "Stand80001"
+            },
+            "x": 757,
+            "y": 449
+        },
+        {
+            "type": "Image",
+            "id": "190d8e10-7fdf-4bf3-9ca8-eaa5a571a7fc",
+            "label": "stand10001",
+            "components": [],
+            "texture": {
+                "key": "skimj",
+                "frame": "Stand10001"
+            },
+            "x": 847,
+            "y": 475
+        },
+        {
+            "type": "Image",
+            "id": "5a3b4df8-b425-42c3-81db-1133055bde6d",
+            "label": "stand20001",
+            "components": [],
+            "texture": {
+                "key": "skimj",
+                "frame": "Stand20001"
+            },
+            "x": 774,
+            "y": 476
+        },
+        {
+            "type": "Image",
+            "id": "2ab215ae-eee2-4d2c-b408-1015461f85d6",
+            "label": "stand30001",
+            "components": [],
+            "texture": {
+                "key": "skimj",
+                "frame": "Stand30001"
+            },
+            "x": 694,
+            "y": 478
+        },
+        {
+            "type": "Image",
+            "id": "00dfa90a-f555-44a3-9ede-3f570c356a6b",
+            "label": "stand40001",
+            "components": [],
+            "texture": {
+                "key": "skimj",
+                "frame": "Stand40001"
+            },
+            "x": 955,
+            "y": 420
+        },
+        {
+            "type": "Image",
+            "id": "a8a061ed-7b34-46fb-a116-1e364986dfb9",
+            "label": "stand60001",
+            "components": [],
+            "texture": {
+                "key": "skimj",
+                "frame": "Stand60001"
+            },
+            "x": 577,
+            "y": 423
+        },
+        {
+            "type": "Image",
+            "id": "9521779a-65ee-4b5f-9b74-b5697629bb55",
+            "label": "stand70001",
+            "components": [],
+            "texture": {
+                "key": "skimj",
+                "frame": "Stand70001"
+            },
+            "x": 660,
+            "y": 443
+        },
+        {
+            "type": "Image",
+            "id": "cfb3d491-2027-4f7e-b97a-606282bd27aa",
+            "label": "sign1",
+            "components": [],
+            "texture": {
+                "key": "skimj",
+                "frame": "Sign1"
+            },
+            "x": 964,
+            "y": 483
         }
     ],
     "plainObjects": [],
@@ -253,8 +286,16 @@
             "id": "528d71e2-a474-4325-aa76-2ccaa2e1016f",
             "label": "sort",
             "objectIds": [
-                "e8099f35-1e7b-451e-a295-ad3348c46dd4",
-                "b11a8fd1-6631-47b7-afb6-828357023244"
+                "00dfa90a-f555-44a3-9ede-3f570c356a6b",
+                "cfb3d491-2027-4f7e-b97a-606282bd27aa",
+                "d2b99be2-a4b0-4e32-912a-fd6993b88f61",
+                "190d8e10-7fdf-4bf3-9ca8-eaa5a571a7fc",
+                "5a3b4df8-b425-42c3-81db-1133055bde6d",
+                "730ea085-47f9-4ad2-b714-ade8e62598cc",
+                "2ab215ae-eee2-4d2c-b408-1015461f85d6",
+                "9521779a-65ee-4b5f-9b74-b5697629bb55",
+                "a8a061ed-7b34-46fb-a116-1e364986dfb9",
+                "7552b6cf-4f23-4ed2-94fc-4f86a14e65b3"
             ]
         }
     ]
