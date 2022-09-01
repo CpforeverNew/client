@@ -113,7 +113,8 @@ export default class Cove extends RoomScene {
         const boards = this.add.image(1103, 386, "cove-mj", "boards");
 
         // fg
-        this.add.image(770, 586, "cove-mj", "fg");
+        const fg = this.add.image(792.0570678710938, 960.9702284357126, "cove-mj", "fg");
+        fg.setOrigin(0.5141482162246213, 0.9946836076532171);
 
         // hut_stool
         const hut_stool = this.add.image(1310, 493, "cove-mj", "hut_stool");
@@ -146,23 +147,31 @@ export default class Cove extends RoomScene {
         // rock_4
         this.add.image(1498, 579, "cove-mj", "rock_4");
 
-        // night
-        this.add.image(778, 472, "cove-mj", "night");
-
         // overlay
         this.add.image(764, 383, "cove-mj", "overlay");
 
+        // left_col
+        const left_col = this.add.image(339, 682.676166522136, "cove-mj", "left_col");
+        left_col.setOrigin(0.5, 0.9493929996101704);
+
+        // right_col
+        const right_col = this.add.image(677.7344360351562, 549.7494720351319, "cove-mj", "right_col");
+        right_col.setOrigin(0.6102772594144312, 0.9154386383444097);
+
         // fire3
-        const fire3 = this.add.sprite(912, 465, "cove-mj", "fire30001");
+        const fire3 = this.add.sprite(908.1837839975032, 532.419816044111, "cove-mj", "fire30001");
+        fire3.setOrigin(0.44978663154609416, 0.9957339415008164);
 
         // fire1
-        const fire1 = this.add.sprite(341, 428, "cove-mj", "fire10001");
+        const fire1 = this.add.sprite(337.81982048049593, 591.9194946289062, "cove-mj", "fire10001");
+        fire1.setOrigin(0.4421785454167145, 1.7052903921409466);
 
         // fire
-        const fire = this.add.sprite(680, 304, "cove-mj", "fire10001");
+        const fire = this.add.sprite(679.4850121308865, 452.4977777896873, "cove-mj", "fire10001");
+        fire.setOrigin(0.5270011206534677, 1.5992484496094643);
 
         // lists
-        const sort = [water_water_15, water_water_1, water_water_2, water_water_3, water_water_4, water_water_5, water_water_6, water_water_7, water_water_8, water_water_9, water_water_10, water_water_11, water_water_12, water_water_13, water_water_14, fire3, fire, fire1, boards, chair_arm];
+        const sort = [water_water_15, water_water_1, water_water_2, water_water_3, water_water_4, water_water_5, water_water_6, water_water_7, water_water_8, water_water_9, water_water_10, water_water_11, water_water_12, water_water_13, water_water_14, fire3, fire, fire1, boards, chair_arm, left_col, right_col, fg];
 
         // hut (components)
         const hutButton = new Button(hut);
