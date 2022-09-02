@@ -5,7 +5,7 @@ if (localStorage.clientMode == "legacy") {
 	rooms = {
 		100: {
 			key: 'Town',
-			scene: require(`@rooms/old/town/Town`).default,
+			scene: require(`@rooms/old/town/mj/Town`).default,
 			x: 760,
 			y: 660
 		},
@@ -23,7 +23,7 @@ if (localStorage.clientMode == "legacy") {
 		},
 		120: {
 			key: 'Dance',
-			scene: require(`@rooms/old/dance/Dance`).default,
+			scene: require(`@rooms/old/dance/mj/Dance`).default,
 			x: 360,
 			y: 560
 		},
@@ -41,7 +41,7 @@ if (localStorage.clientMode == "legacy") {
 		},
 		200: {
 			key: 'Village',
-			scene: require(`@rooms/old/village/Village`).default,
+			scene: require(`@rooms/old/village/mj/Village`).default,
 			x: 800,
 			y: 640
 		},
@@ -113,7 +113,7 @@ if (localStorage.clientMode == "legacy") {
 		},
 		400: {
 			key: 'Beach',
-			scene: require(`@rooms/old/beach/Beach`).default,
+			scene: require(`@rooms/old/beach/mj/Beach`).default,
 			x: 840,
 			y: 680
 		},
@@ -155,13 +155,13 @@ if (localStorage.clientMode == "legacy") {
 		},
 		801: {
 			key: 'Forts',
-			scene: require(`@rooms/old/forts/Forts`).default,
+			scene: require(`@rooms/old/forts/mj/Forts`).default,
 			x: 960,
 			y: 610
 		},
 		802: {
 			key: 'Rink',
-			scene: require(`@rooms/old/rink/Rink`).default,
+		scene: require(`@rooms/old/rink/mj/Rink`).default,
 			x: 770,
 			y: 400
 		},
@@ -209,7 +209,7 @@ if (localStorage.clientMode == "legacy") {
 		},
 		810: {
 			key: 'Cove',
-			scene: require(`@rooms/old/cove/Cove`).default,
+			scene: require(`@rooms/old/cove/mj/Cove`).default,
 			x: 840,
 			y: 480
 		},

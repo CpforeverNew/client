@@ -10,13 +10,7 @@ export default class Beach extends RoomScene {
     constructor() {
         super("Beach");
 
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.campfire0001;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.flame10001;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.radio10001;
-        /** @type {Array<any>} */
+        /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
 
@@ -28,7 +22,6 @@ export default class Beach extends RoomScene {
             'lighthouse': () => this.triggerRoom(410, 530, 530),
             'ship': null
         }
-        this.roomAnims = true
         this.music = '583'
 
         /* END-USER-CTR-CODE */
@@ -37,79 +30,63 @@ export default class Beach extends RoomScene {
     /** @returns {void} */
     _preload() {
 
-        this.load.pack("beach-pack", "assets/media/rooms/old/beach/beach-pack.json");
+        this.load.pack("beach-mj-pack", "assets/media/rooms/old/beach/mj/beach-mj-pack.json");
     }
 
     /** @returns {void} */
     _create() {
 
-        // sky11
-        this.add.image(764, 320, "beachmj", "sky11");
+        // bg
+        this.add.image(789, 333, "beach-mj", "bg");
 
-        // lighthous123
-        const lighthous123 = this.add.image(-46, -19, "lighthous123");
-        lighthous123.setOrigin(0, 0);
+        // live_sign
+        this.add.image(519, 212, "beach-mj", "live_sign");
 
-        // lighthouse_door
-        const lighthouse_door = this.add.image(383, 214, "beach", "lighthouse_door");
-        lighthouse_door.setOrigin(0, 0);
+        // note2
+        this.add.image(611, 349, "beach-mj", "note2");
 
-        // campfire0001
-        const campfire0001 = this.add.sprite(917, 740, "beachmj", "campfire0001");
+        // tree
+        this.add.image(1380, 483, "beach-mj", "tree");
 
-        // flame10001
-        const flame10001 = this.add.sprite(918, 661, "beachmj", "flame10001");
+        // right_balloons
+        const right_balloons = this.add.image(1324, 430, "beach-mj", "right_balloons");
 
-        // bench45
-        this.add.image(798, 695, "bench45");
+        // right_sign
+        this.add.image(1176, 369, "beach-mj", "right_sign");
 
-        // table1
-        this.add.image(1022, 682, "beachmj", "table1");
+        // left_balloons
+        const left_balloons = this.add.image(192, 293, "beach-mj", "left_balloons");
 
-        // balloons1
-        this.add.image(175, 281, "beachmj", "balloons1");
+        // cdplayer
+        this.add.image(375, 417, "beach-mj", "cdplayer0001");
 
-        // board1
-        this.add.image(496, 237, "beachmj", "board1");
+        // note1
+        this.add.image(285, 414, "beach-mj", "note1");
 
-        // radio10001
-        const radio10001 = this.add.sprite(359, 399, "beachmj", "radio10001");
+        // fire_pit
+        this.add.image(928, 751, "beach-mj", "fire_pit");
 
-        // sign3
-        this.add.image(263, 422, "beachmj", "sign3");
+        // fire0001
+        this.add.image(929, 674, "beach-mj", "fire0001");
 
-        // sign2
-        this.add.image(269, 401, "beachmj", "sign2");
+        // bench
+        const bench = this.add.image(753, 691, "beach-mj", "bench");
 
-        // sign1
-        this.add.image(603, 346, "beachmj", "sign1");
+        // bench2
+        this.add.image(1072, 634, "beach-mj", "bench2");
 
-        // signs4
-        this.add.image(832, 465, "beachmj", "signs4");
-
-        // sign6
-        this.add.image(974, 400, "beachmj", "sign6");
-
-        // sign5
-        this.add.image(735, 420, "beachmj", "sign5");
-
-        // balloons2
-        this.add.image(1307, 414, "beachmj", "balloons2");
+        // door
+        const door = this.add.image(457, 311, "beach-mj", "door");
 
         // lists
-        const sort = [];
+        const sort = [bench, right_balloons, left_balloons];
 
-        // lighthouse_door (components)
-        const lighthouse_doorButton = new Button(lighthouse_door);
-        lighthouse_doorButton.spriteName = "lighthouse_door";
-        lighthouse_doorButton.activeFrame = false;
-        const lighthouse_doorMoveTo = new MoveTo(lighthouse_door);
-        lighthouse_doorMoveTo.x = 480;
-        lighthouse_doorMoveTo.y = 400;
+        // door (components)
+        const doorButton = new Button(door);
+        doorButton.spriteName = "door";
+        doorButton.activeFrame = false;
+        new MoveTo(door);
 
-        this.campfire0001 = campfire0001;
-        this.flame10001 = flame10001;
-        this.radio10001 = radio10001;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -119,36 +96,9 @@ export default class Beach extends RoomScene {
     /* START-USER-CODE */
     create() {
         super.create();
-        this.campfire0001.play("mjbeach_campfire");
-        this.flame10001.play("mjbeach_flame");
-        this.radio10001.play("mjbeach_radio");
     }
 
-    onBucketOver() {
-        let frame = this.bucket.frame.name
-        frame = frame.substr(frame.length - 4)
 
-        switch (frame) {
-            case '0001':
-            case '0346':
-                this.bucket.play('bucket1')
-                break
-            case '0070':
-                this.bucket.play('bucket2')
-                break
-            case '0137':
-                this.bucket.play('bucket3')
-                break
-            case '0210':
-                this.bucket.play('bucket4')
-                break
-            case '0269':
-                this.bucket.play('bucket5')
-                break
-            default:
-                break
-        }
-    }
 
     /* END-USER-CODE */
 }
