@@ -9,7 +9,9 @@
         "exportClass": true,
         "superClassName": "Book",
         "preloadPackFiles": [
-            "yukon/assets/media/interface/catalogs/clothing/clothingcatalog-pack.json"
+            "client/assets/media/interface/catalogs/clothing/clothingcatalog-pack.json",
+            "client/assets/media/interface/catalogs/catalogs-master-pack.json",
+            "client/assets/media/interface/catalogs/furniture/furniturecatalog-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "ClothingCatalog",
