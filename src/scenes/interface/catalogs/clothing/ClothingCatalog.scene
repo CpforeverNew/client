@@ -9,9 +9,7 @@
         "exportClass": true,
         "superClassName": "Book",
         "preloadPackFiles": [
-            "client/assets/media/interface/catalogs/catalogs-master-pack.json",
-            "client/assets/media/interface/catalogs/clothing/clothingcatalog-pack.json",
-            "client/assets/media/interface/catalogs/clothing/aug22/aug22-pack.json"
+            "yukon/assets/media/interface/catalogs/clothing/clothingcatalog-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "ClothingCatalog",
@@ -27,7 +25,7 @@
                 "Interactive"
             ],
             "x": 760,
-            "y": 484,
+            "y": 480,
             "isFilled": true,
             "fillColor": "#000000",
             "fillAlpha": 0.2,
@@ -36,28 +34,26 @@
         },
         {
             "type": "Container",
-            "id": "fea4ba6a-f231-498f-934f-0b331e9085c4",
-            "label": "page15",
+            "id": "675179ab-dd98-4484-a396-c358b892188f",
+            "label": "page13",
             "components": [],
-            "y": 6,
             "visible": false,
             "list": [
                 {
                     "type": "Image",
-                    "id": "2f20d721-a5d5-47f4-ac15-0f9c2efe649c",
+                    "id": "553fc638-78d1-40b0-8765-3b0757846aa0",
                     "label": "p16",
                     "components": [],
                     "texture": {
-                        "key": "aug-22",
-                        "frame": "page/page0015.png"
+                        "key": "clothingcatalog",
+                        "frame": "page/page0016"
                     },
-                    "y": -77,
                     "originX": 0,
                     "originY": 0
                 },
                 {
                     "type": "Image",
-                    "id": "0ee2c894-3644-46b9-984c-7b9a3c197fc7",
+                    "id": "fa756cc7-864e-4cff-8a4a-9df8047d2dfc",
                     "label": "pageLeft_1",
                     "components": [
                         "Button"
@@ -77,7 +73,7 @@
                 },
                 {
                     "type": "Image",
-                    "id": "d518d1e2-47d7-440c-82cf-023a40bae598",
+                    "id": "c6213877-2a97-48d8-a8b9-7190a952bcf1",
                     "label": "closeLeft",
                     "components": [
                         "Button"
@@ -98,15 +94,14 @@
         },
         {
             "type": "Container",
-            "id": "cee96cc0-8590-4a2c-ab4b-b12574b36230",
-            "label": "page14",
+            "id": "a0a3d372-f0bb-455c-b178-24f3fa2faeab",
+            "label": "page12",
             "components": [],
-            "y": -3,
             "visible": false,
             "list": [
                 {
                     "type": "Image",
-                    "id": "535309fb-ae8b-484c-936e-55ee9645ea98",
+                    "id": "ae632605-12e4-4370-aa10-2f4005631f20",
                     "label": "p15",
                     "components": [],
                     "texture": {
@@ -118,7 +113,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "4a13d36d-821d-4c4b-94df-269d189d2c87",
+                    "id": "9df8f2b1-2cbd-4482-8b26-bbc0d81372db",
                     "unlock": [
                         "item",
                         "x",
@@ -132,7 +127,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "c965936d-0090-418d-8595-bc475c66975e",
+                    "id": "4b91bf27-a277-4cb1-ae55-bb260ac153bc",
                     "unlock": [
                         "item",
                         "x",
@@ -146,7 +141,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "c488e988-658d-4faa-91f2-552b424eb2b8",
+                    "id": "cb0a15fd-a82e-4f5f-a31d-1f17989c17b2",
                     "unlock": [
                         "item",
                         "x",
@@ -160,7 +155,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "6bf2fd71-3865-451d-a030-4a930f47bff5",
+                    "id": "008fcd20-d7b6-4245-a939-cb0cca0b2fe2",
                     "unlock": [
                         "item",
                         "x",
@@ -174,7 +169,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "5347d9b5-ecda-40ba-bfdc-f7a05a4e27a6",
+                    "id": "3323256f-22de-4f5a-a9b5-f95fe84827c8",
                     "unlock": [
                         "item",
                         "x",
@@ -188,7 +183,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "cafdadce-3d2a-4096-8b77-4468b880d223",
+                    "id": "60e6a664-8f90-4a6f-a711-817a6154aa30",
                     "unlock": [
                         "item",
                         "x",
@@ -202,7 +197,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "0abdc5f2-1589-4be3-8b02-c7804dc8d7d1",
+                    "id": "0bf95672-ed84-4786-87af-9140d87fc6d9",
                     "unlock": [
                         "item",
                         "x",
@@ -216,7 +211,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "44715654-e50c-4299-a5dc-f78ab9a7b5a9",
+                    "id": "681ff5bf-b692-4267-bebf-ed2b67fc0691",
                     "unlock": [
                         "item",
                         "x",
@@ -230,7 +225,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "1755795c-7da5-4782-ac16-9269b4cbf90a",
+                    "id": "c86159f4-c1a1-4d88-b603-326d54c5ede1",
                     "unlock": [
                         "item",
                         "x",
@@ -244,7 +239,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "556d2a59-71f7-4c31-9410-1f9646bf51dd",
+                    "id": "f8bfeac4-6e5c-4271-aedf-68f947462b9d",
                     "unlock": [
                         "item",
                         "x",
@@ -258,7 +253,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "679ec1fd-61af-4a04-90da-b36d8697e2e8",
+                    "id": "73d119d5-f50b-456a-b153-144eb81a27f2",
                     "unlock": [
                         "item",
                         "x",
@@ -272,7 +267,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "3d8a3a3e-336b-44e6-bce4-e80a61017566",
+                    "id": "28af178b-af3d-46c9-8859-aef646354d34",
                     "unlock": [
                         "item",
                         "x",
@@ -286,7 +281,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "27a00d51-85bc-4f72-abe1-1de5031e40a2",
+                    "id": "c3b7d520-cf44-4a36-8d59-7a2222e1e3e6",
                     "unlock": [
                         "item",
                         "x",
@@ -300,7 +295,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "6eb2dd96-e404-40ff-aa77-d763a48f829a",
+                    "id": "b4e996fc-b19e-4dac-b537-beb7f451b6ba",
                     "unlock": [
                         "item",
                         "x",
@@ -314,7 +309,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "75f1b0fc-d4cb-4d72-9f32-674037d68934",
+                    "id": "e3683d9f-0728-4634-8559-b72203f0ad7f",
                     "unlock": [
                         "item",
                         "x",
@@ -328,7 +323,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "a1a34536-52d0-40e2-8e23-20ea1a89e8ac",
+                    "id": "fa8d5b8e-f783-4cf8-bb51-d7b8d771a6c9",
                     "unlock": [
                         "item",
                         "x",
@@ -342,7 +337,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "62a84254-eca5-4355-b1a8-b461441769df",
+                    "id": "fa0600b0-5d8e-4933-b33d-57053b952017",
                     "unlock": [
                         "item",
                         "x",
@@ -356,7 +351,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "2ebb9df1-4c25-4e52-b0d7-53e270eae8f4",
+                    "id": "fcc54f5a-8d8e-43bb-af26-7aa3e8192496",
                     "unlock": [
                         "item",
                         "x",
@@ -370,7 +365,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "49bed412-482e-4bcb-9f0a-d873516a86e0",
+                    "id": "27c69229-356c-425a-883f-5e9f047b2361",
                     "unlock": [
                         "item",
                         "x",
@@ -384,7 +379,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "471c725a-c0d6-4b15-8073-3aba49857bff",
+                    "id": "4e42a924-b170-4864-8261-266b58d685e8",
                     "unlock": [
                         "item",
                         "x",
@@ -398,7 +393,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "e239c822-cde7-4262-a58d-f824724fe1af",
+                    "id": "37b25253-5431-48e2-a384-7112606b18a0",
                     "unlock": [
                         "item",
                         "x",
@@ -412,7 +407,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "05f24e4e-485a-4a46-9097-449f215e416f",
+                    "id": "6c296b85-3c34-435f-b0e4-d1d3bd50ba9c",
                     "unlock": [
                         "item",
                         "x",
@@ -426,7 +421,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "66ee0c5d-ff2f-46cc-b7ad-c8248af9a682",
+                    "id": "930c8b49-3122-4b21-853d-d3ddde269052",
                     "unlock": [
                         "item",
                         "x",
@@ -440,7 +435,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "dc48ed22-0b57-4fc3-87bd-c3515d5f9873",
+                    "id": "d619ecfa-caba-48d6-b15f-bd2daf168121",
                     "unlock": [
                         "item",
                         "x",
@@ -454,7 +449,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "3af79e91-901c-403c-b5fb-47dfd187df50",
+                    "id": "265318da-5f0f-40ed-9232-5460d3a18481",
                     "unlock": [
                         "item",
                         "x",
@@ -468,7 +463,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "fb60d5be-28d1-4acc-93c9-4c74f076327b",
+                    "id": "55c78ca0-7d40-40bf-9798-7fbbe7a5f490",
                     "unlock": [
                         "item",
                         "x",
@@ -482,7 +477,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "9759d355-337a-4d28-a957-5f4360bc587b",
+                    "id": "b3c142ce-d92a-4224-83ed-12f89245bc9d",
                     "unlock": [
                         "item",
                         "x",
@@ -496,7 +491,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "78a66b57-708a-4d9f-a4dc-154056f4af51",
+                    "id": "f111feab-35bc-4b2c-95e8-6c87454bc74d",
                     "unlock": [
                         "item",
                         "x",
@@ -510,7 +505,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "2e8774f0-0a1f-4e9b-bc7f-8eff741effc7",
+                    "id": "efc9f123-4c75-4452-aee8-315d29115c01",
                     "unlock": [
                         "item",
                         "x",
@@ -524,7 +519,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "163edd2e-a991-472f-afba-1ef2367d3eec",
+                    "id": "0a76b206-3b11-4979-af97-2cb1484c21ed",
                     "unlock": [
                         "item",
                         "x",
@@ -538,7 +533,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "911d10da-d215-40ca-ac48-be6849780755",
+                    "id": "a10810d4-6c8a-43f1-93db-92840baa499f",
                     "unlock": [
                         "item",
                         "x",
@@ -552,7 +547,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "2a39588d-ae97-4480-8092-413e3bb31d17",
+                    "id": "a00b7bb7-876d-4fae-9989-b7e158dc4960",
                     "unlock": [
                         "item",
                         "x",
@@ -566,7 +561,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "08f51c4a-9335-4753-ad0c-c9ad8cba5ca9",
+                    "id": "9178b17f-7bdc-4b41-b6cb-a5abb17226d4",
                     "unlock": [
                         "item",
                         "x",
@@ -580,7 +575,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "42e134be-ff6a-4442-8f35-78588476c0a8",
+                    "id": "62c6e2cd-97ce-4132-b8ec-cd9a5158bddb",
                     "unlock": [
                         "item",
                         "x",
@@ -594,7 +589,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "d9fc7d94-fa8b-4f38-8ea3-66a3e289a58d",
+                    "id": "5aebc471-528f-44d9-aabf-68fd72e71807",
                     "unlock": [
                         "item",
                         "x",
@@ -608,7 +603,7 @@
                 },
                 {
                     "prefabId": "c0258f97-d78b-4395-bd8f-031992f11244",
-                    "id": "038221fe-371f-486e-8af1-6370b9513b0f",
+                    "id": "5cf741cd-4240-437a-b5fa-f259c7311eac",
                     "unlock": [
                         "item",
                         "x",
@@ -624,1655 +619,990 @@
         },
         {
             "type": "Container",
-            "id": "1fd26808-e883-4ca0-8a0d-2812d0ca6430",
-            "label": "page13",
+            "id": "063266fe-1e93-41d7-8749-b429631774bc",
+            "label": "page11",
             "components": [],
-            "y": -6,
             "visible": false,
             "list": [
                 {
                     "type": "Image",
-                    "id": "320d4c55-efc5-4578-ae8f-11758f13981b",
-                    "label": "p13",
+                    "id": "d120f9f9-7afa-4fb7-bb9c-a50aa6350112",
+                    "label": "p11_png",
                     "components": [],
                     "texture": {
-                        "key": "aug-22",
-                        "frame": "page/page0013.png"
+                        "key": "clothing092022",
+                        "frame": "p11.png"
                     },
-                    "y": -77,
                     "originX": 0,
                     "originY": 0
                 },
                 {
-                    "prefabId": "d9f4da97-c017-415a-aec7-cd283c0992b6",
-                    "id": "e0f8bb96-ab0c-4733-afa5-bef1c1cdb058",
+                    "prefabId": "370b66bb-bf9d-4d61-b1a8-c2bd25bdf5cf",
+                    "id": "ece80c0a-6505-4985-a4b9-af64c0652249",
                     "unlock": [
-                        "item",
                         "x",
-                        "y"
+                        "y",
+                        "item"
                     ],
-                    "label": "photoButton8",
-                    "item": 938,
+                    "label": "photoButton_4",
+                    "item": 982,
                     "components": [],
-                    "x": 608,
-                    "y": 639
+                    "x": 344,
+                    "y": 373
                 },
                 {
-                    "prefabId": "d9f4da97-c017-415a-aec7-cd283c0992b6",
-                    "id": "68ff8981-8289-4928-900c-e4f5a7070618",
+                    "prefabId": "370b66bb-bf9d-4d61-b1a8-c2bd25bdf5cf",
+                    "id": "574a0fe4-a819-4029-8ef1-08983c74f68c",
                     "unlock": [
-                        "item",
                         "x",
-                        "y"
+                        "y",
+                        "item"
                     ],
-                    "label": "photoButton5",
-                    "item": 9014,
+                    "label": "photoButton_5",
+                    "item": 904,
                     "components": [],
-                    "x": 348,
+                    "x": 931,
+                    "y": 615
+                },
+                {
+                    "prefabId": "370b66bb-bf9d-4d61-b1a8-c2bd25bdf5cf",
+                    "id": "9749411e-e5d2-4747-96a8-885baa435c35",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "item"
+                    ],
+                    "label": "photoButton_6",
+                    "item": 913,
+                    "components": [],
+                    "x": 1173,
+                    "y": 617
+                },
+                {
+                    "prefabId": "370b66bb-bf9d-4d61-b1a8-c2bd25bdf5cf",
+                    "id": "837cb94e-7b3e-4999-a93f-ce8e86666502",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "item"
+                    ],
+                    "label": "photoButton_7",
+                    "item": 924,
+                    "components": [],
+                    "x": 933,
                     "y": 379
                 },
                 {
-                    "prefabId": "d9f4da97-c017-415a-aec7-cd283c0992b6",
-                    "id": "4a7ed348-59ca-4f82-b188-96f7b52ba515",
+                    "prefabId": "370b66bb-bf9d-4d61-b1a8-c2bd25bdf5cf",
+                    "id": "2071047f-0833-4e73-8174-cfda64f6d579",
                     "unlock": [
-                        "item",
                         "x",
-                        "y"
+                        "y",
+                        "item"
                     ],
-                    "label": "photoButton6",
-                    "item": 9013,
+                    "label": "photoButton_8",
+                    "item": 980,
                     "components": [],
-                    "x": 608,
+                    "x": 1179,
+                    "y": 387
+                },
+                {
+                    "prefabId": "370b66bb-bf9d-4d61-b1a8-c2bd25bdf5cf",
+                    "id": "86f13f89-9249-4664-81f2-565aab43b3dd",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "item"
+                    ],
+                    "label": "photoButton_9",
+                    "item": 983,
+                    "components": [],
+                    "x": 587,
                     "y": 379
                 },
                 {
-                    "prefabId": "d9f4da97-c017-415a-aec7-cd283c0992b6",
-                    "id": "fa71d62f-b53a-4ef3-bd9c-be47e30c394c",
+                    "prefabId": "370b66bb-bf9d-4d61-b1a8-c2bd25bdf5cf",
+                    "id": "a85b8b1c-9479-4102-9a20-2f479907651b",
                     "unlock": [
-                        "item",
                         "x",
-                        "y"
+                        "y",
+                        "item"
                     ],
-                    "label": "photoButton7",
-                    "item": 937,
+                    "label": "photoButton_10",
+                    "item": 981,
                     "components": [],
-                    "x": 348,
-                    "y": 639
+                    "x": 587,
+                    "y": 617
+                },
+                {
+                    "prefabId": "370b66bb-bf9d-4d61-b1a8-c2bd25bdf5cf",
+                    "id": "57706868-a745-4091-97be-d22faa52e90f",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "item"
+                    ],
+                    "label": "photoButton_11",
+                    "item": 923,
+                    "components": [],
+                    "x": 342,
+                    "y": 615
                 },
                 {
                     "type": "Image",
-                    "id": "68fce40f-a935-4ad2-bdc8-29860d2232a9",
-                    "label": "photo5",
+                    "id": "75d40ca6-f074-458b-b0b3-2c3bafbf8a91",
+                    "label": "photo_12",
                     "components": [],
                     "texture": {
-                        "key": "aug-22",
-                        "frame": "photo/5.png"
+                        "key": "clothingcatalog",
+                        "frame": "photo/12"
                     },
                     "x": 348,
+                    "y": 370
+                },
+                {
+                    "type": "Image",
+                    "id": "a7df2e7d-b8e9-4eac-b181-1d3482ea9699",
+                    "label": "photo10_png",
+                    "components": [],
+                    "texture": {
+                        "key": "photos-092022",
+                        "frame": "photo10.png"
+                    },
+                    "x": 578,
+                    "y": 378,
+                    "scaleX": 0.4981654981235354,
+                    "scaleY": 0.4981654981235354
+                },
+                {
+                    "type": "Image",
+                    "id": "b14bad78-d8be-4ec7-a74a-53a90048400c",
+                    "label": "photo12_png",
+                    "components": [],
+                    "texture": {
+                        "key": "photos-092022",
+                        "frame": "photo12.png"
+                    },
+                    "x": 342,
+                    "y": 618,
+                    "scaleX": 0.489695087555974,
+                    "scaleY": 0.489695087555974
+                },
+                {
+                    "type": "Image",
+                    "id": "6b90c08f-414c-4dee-a101-8c7a3633a800",
+                    "label": "photo7_png",
+                    "components": [],
+                    "texture": {
+                        "key": "photos-092022",
+                        "frame": "photo7.png"
+                    },
+                    "x": 931,
                     "y": 379,
-                    "scaleX": 0.5,
-                    "scaleY": 0.5
+                    "scaleX": 0.4874619720931799,
+                    "scaleY": 0.4874619720931799
                 },
                 {
                     "type": "Image",
-                    "id": "7ebe6ffd-f979-420f-8e62-249ba88c89f9",
-                    "label": "photo6",
+                    "id": "0eb25cd8-615b-42f6-a0a9-f26b278d712e",
+                    "label": "photo9_png",
                     "components": [],
                     "texture": {
-                        "key": "aug-22",
-                        "frame": "photo/6.png"
+                        "key": "photos-092022",
+                        "frame": "photo9.png"
                     },
-                    "x": 611,
-                    "y": 379,
-                    "scaleX": 0.43,
-                    "scaleY": 0.43
+                    "x": 588,
+                    "y": 616,
+                    "scaleX": 0.49401105779518206,
+                    "scaleY": 0.49401105779518206
                 },
                 {
                     "type": "Image",
-                    "id": "dbaf9707-a6ef-421d-b179-d229638867f9",
-                    "label": "photo7",
+                    "id": "7dfdf098-ee71-4270-b1c1-0062614f1c94",
+                    "label": "photo8_png",
                     "components": [],
                     "texture": {
-                        "key": "aug-22",
-                        "frame": "photo/7.png"
+                        "key": "photos-092022",
+                        "frame": "photo8.png"
                     },
-                    "x": 348,
-                    "y": 639,
-                    "scaleX": 0.5,
-                    "scaleY": 0.5
+                    "x": 1179,
+                    "y": 382,
+                    "scaleX": 0.51672286960862,
+                    "scaleY": 0.51672286960862
                 },
                 {
                     "type": "Image",
-                    "id": "edf52602-f1c1-409a-ae0a-90cd42c4f155",
-                    "label": "photo8",
+                    "id": "3377337b-fbdc-4d66-8181-fab5026ee419",
+                    "label": "photo5_png",
                     "components": [],
                     "texture": {
-                        "key": "aug-22",
-                        "frame": "photo/8.png"
+                        "key": "photos-092022",
+                        "frame": "photo5.png"
                     },
-                    "x": 608,
-                    "y": 644,
-                    "scaleX": 0.5,
-                    "scaleY": 0.5
+                    "x": 933,
+                    "y": 615,
+                    "scaleX": 0.5023864061703872,
+                    "scaleY": 0.5023864061703872
                 },
                 {
                     "type": "Image",
-                    "id": "7f8ae968-34bb-461f-b02d-5b93192849eb",
-                    "label": "penguin5",
+                    "id": "20c9cf5a-1a0f-4ecd-94f7-93874d83b943",
+                    "label": "photo6_png",
                     "components": [],
                     "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "photo/penguin"
+                        "key": "photos-092022",
+                        "frame": "photo6.png"
                     },
-                    "x": 348,
-                    "y": 389
-                },
-                {
-                    "type": "Image",
-                    "id": "7b942755-b7fa-4c87-a985-1614a5ad4df6",
-                    "label": "penguin6",
-                    "components": [],
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "photo/penguin"
-                    },
-                    "x": 608,
-                    "y": 389
-                },
-                {
-                    "type": "Image",
-                    "id": "37314f42-6228-435b-b177-51578b15618c",
-                    "label": "penguin7",
-                    "components": [],
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "photo/penguin"
-                    },
-                    "x": 348,
-                    "y": 649
-                },
-                {
-                    "type": "Image",
-                    "id": "344a84b1-27c7-4963-a714-3db4e4240e66",
-                    "label": "penguin8",
-                    "components": [],
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "photo/penguin"
-                    },
-                    "x": 608,
-                    "y": 649
-                },
-                {
-                    "prefabId": "d9f4da97-c017-415a-aec7-cd283c0992b6",
-                    "id": "fbf5b959-bb85-4061-852a-d68d98c1d9a7",
-                    "unlock": [
-                        "item",
-                        "x",
-                        "y"
-                    ],
-                    "label": "photoButton9",
-                    "item": 9011,
-                    "components": [],
-                    "x": 930,
-                    "y": 375
-                },
-                {
-                    "prefabId": "d9f4da97-c017-415a-aec7-cd283c0992b6",
-                    "id": "27f47df5-9995-4006-a507-fd7ed04dbadb",
-                    "unlock": [
-                        "item",
-                        "x",
-                        "y"
-                    ],
-                    "label": "photoButton10",
-                    "item": 978,
-                    "components": [],
-                    "x": 1190,
-                    "y": 375
-                },
-                {
-                    "prefabId": "d9f4da97-c017-415a-aec7-cd283c0992b6",
-                    "id": "cdf668b2-3204-4fa1-8ead-28b65f5d1997",
-                    "unlock": [
-                        "item",
-                        "x",
-                        "y"
-                    ],
-                    "label": "photoButton11",
-                    "item": 933,
-                    "components": [],
-                    "x": 930,
-                    "y": 635
-                },
-                {
-                    "prefabId": "d9f4da97-c017-415a-aec7-cd283c0992b6",
-                    "id": "4228c05a-c865-4c17-aae7-a72c815033ba",
-                    "unlock": [
-                        "item",
-                        "x",
-                        "y"
-                    ],
-                    "label": "photoButton12",
-                    "item": 936,
-                    "components": [],
-                    "x": 1190,
-                    "y": 635
-                },
-                {
-                    "type": "Image",
-                    "id": "c3025a04-fbe9-470c-82ec-ab198267f770",
-                    "label": "photo9",
-                    "components": [],
-                    "texture": {
-                        "key": "aug-22",
-                        "frame": "photo/9.png"
-                    },
-                    "x": 930,
-                    "y": 375,
-                    "scaleX": 0.5,
-                    "scaleY": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "a1c54797-f5ab-4e62-8f43-9462f20c4fa3",
-                    "label": "photo10",
-                    "components": [],
-                    "texture": {
-                        "key": "aug-22",
-                        "frame": "photo/10.png"
-                    },
-                    "x": 1190,
-                    "y": 375,
-                    "scaleX": 0.5,
-                    "scaleY": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "d646cb28-2e29-4867-b01b-5ec9f7475278",
-                    "label": "photo11",
-                    "components": [],
-                    "texture": {
-                        "key": "aug-22",
-                        "frame": "photo/11.png"
-                    },
-                    "x": 930,
-                    "y": 628,
-                    "scaleX": 0.5,
-                    "scaleY": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "b79e10bb-0dbf-457b-802e-986e8188a66c",
-                    "label": "photo12",
-                    "components": [],
-                    "texture": {
-                        "key": "aug-22",
-                        "frame": "photo/12.png"
-                    },
-                    "x": 1190,
-                    "y": 635,
-                    "scaleX": 0.5,
-                    "scaleY": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "00e700e7-ce5b-48a4-9a4e-fc27577f5d6b",
-                    "label": "penguin9",
-                    "components": [],
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "photo/penguin"
-                    },
-                    "x": 930,
-                    "y": 385
-                },
-                {
-                    "type": "Image",
-                    "id": "4d21d158-bb87-412b-aa49-f10dc4f4f65b",
-                    "label": "penguin10",
-                    "components": [],
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "photo/penguin"
-                    },
-                    "x": 1190,
-                    "y": 385
-                },
-                {
-                    "type": "Image",
-                    "id": "c18d6183-2b1a-415c-873e-51a45480a8ef",
-                    "label": "penguin11",
-                    "components": [],
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "photo/penguin"
-                    },
-                    "x": 930,
-                    "y": 645
-                },
-                {
-                    "type": "Image",
-                    "id": "373870b7-67ec-4fd3-9bd4-368fef2bb01b",
-                    "label": "penguin12",
-                    "components": [],
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "photo/penguin"
-                    },
-                    "x": 1190,
-                    "y": 645
+                    "x": 1178,
+                    "y": 617,
+                    "scaleX": 0.5202732110448915,
+                    "scaleY": 0.5202732110448915
                 }
             ]
         },
         {
             "type": "Container",
-            "id": "95fb5823-44a6-472d-b79c-d53899a61b4d",
-            "label": "page12",
+            "id": "62510f86-e391-42d1-a705-64a60ce4ab0c",
+            "label": "page10",
             "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
-                    "id": "a3062fea-6766-4a3e-9099-2360b4209e10",
-                    "label": "p12",
+                    "id": "14906395-5355-421b-88d9-f4e44b3878ef",
+                    "label": "p10_png",
                     "components": [],
                     "texture": {
-                        "key": "aug-22",
-                        "frame": "page/page0012.png"
+                        "key": "clothing092022",
+                        "frame": "p10.png"
                     },
-                    "y": -80,
                     "originX": 0,
                     "originY": 0
                 },
                 {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "3fc7c3c9-5da7-47db-af9c-12dc7c907e96",
+                    "prefabId": "370b66bb-bf9d-4d61-b1a8-c2bd25bdf5cf",
+                    "id": "561d2e29-4a08-429a-b5d1-4d0b1e26c189",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
                         "item"
                     ],
-                    "label": "tag_53",
-                    "item": 4024,
+                    "label": "photoButton",
+                    "item": 985,
                     "components": [],
-                    "x": 609,
-                    "y": 489,
-                    "angle": 12
-                },
-                {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "05770580-149b-4f32-a01f-dd755bc29373",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_54",
-                    "item": 175,
-                    "components": [],
-                    "x": 286,
-                    "y": 598,
-                    "angle": -30
-                },
-                {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "97113918-4b68-4254-8b1b-502288f2268c",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_55",
-                    "item": 5010,
-                    "components": [],
-                    "x": 220,
-                    "y": 259,
-                    "angle": -18
-                },
-                {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "8aea2be8-978d-45e1-ad9d-aab6fea4012b",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_56",
-                    "item": 658,
-                    "components": [],
-                    "x": 420,
-                    "y": 163,
-                    "angle": 19
-                },
-                {
-                    "prefabId": "d9f4da97-c017-415a-aec7-cd283c0992b6",
-                    "id": "943bde77-f299-43ff-9840-ddf49085be12",
-                    "unlock": [
-                        "item",
-                        "x",
-                        "y"
-                    ],
-                    "label": "photoButton4",
-                    "item": 908,
-                    "components": [],
-                    "x": 1170,
-                    "y": 628
-                },
-                {
-                    "prefabId": "d9f4da97-c017-415a-aec7-cd283c0992b6",
-                    "id": "71ef2e05-f7f0-40c8-b0e9-b29e17b9c175",
-                    "unlock": [
-                        "item",
-                        "x",
-                        "y"
-                    ],
-                    "label": "photoButton3",
-                    "item": 925,
-                    "components": [],
-                    "x": 910,
-                    "y": 629
-                },
-                {
-                    "prefabId": "d9f4da97-c017-415a-aec7-cd283c0992b6",
-                    "id": "a0e94a42-f6d3-427d-b399-dde52089df38",
-                    "unlock": [
-                        "item",
-                        "x",
-                        "y"
-                    ],
-                    "label": "photoButton2",
-                    "item": 904,
-                    "components": [],
-                    "x": 1170,
-                    "y": 369
-                },
-                {
-                    "prefabId": "d9f4da97-c017-415a-aec7-cd283c0992b6",
-                    "id": "0e915c70-0d46-4ce5-8001-bff1f8c161d3",
-                    "unlock": [
-                        "item",
-                        "x",
-                        "y"
-                    ],
-                    "label": "photoButton1",
-                    "item": 9016,
-                    "components": [],
-                    "x": 910,
-                    "y": 369
-                },
-                {
-                    "type": "Image",
-                    "id": "3ac677e7-7a55-41c9-9bdf-95570a48ecfa",
-                    "label": "photo4",
-                    "components": [],
-                    "texture": {
-                        "key": "aug-22",
-                        "frame": "photo/4.png"
-                    },
-                    "x": 1170,
-                    "y": 630,
-                    "scaleX": 0.5,
-                    "scaleY": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "28d3a072-fafc-423a-acdf-f755d29cc0fa",
-                    "label": "photo3",
-                    "components": [],
-                    "texture": {
-                        "key": "aug-22",
-                        "frame": "photo/3.png"
-                    },
-                    "x": 918,
-                    "y": 631,
-                    "scaleX": 0.5,
-                    "scaleY": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "37555708-4295-4869-b4d4-1e32096b5fd8",
-                    "label": "photo2",
-                    "components": [],
-                    "texture": {
-                        "key": "aug-22",
-                        "frame": "photo/2.png"
-                    },
-                    "x": 1170,
-                    "y": 367,
-                    "scaleX": 0.5,
-                    "scaleY": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "93e6a721-2d1e-4fce-ad3d-b437ca9f8ddc",
-                    "label": "photo1",
-                    "components": [],
-                    "texture": {
-                        "key": "aug-22",
-                        "frame": "photo/1.png"
-                    },
-                    "x": 910,
-                    "y": 367,
-                    "scaleX": 0.5,
-                    "scaleY": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "d5792770-ddfb-4824-a36a-0f9f44f13142",
-                    "label": "penguin4",
-                    "components": [],
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "photo/penguin"
-                    },
-                    "x": 1170,
-                    "y": 640
-                },
-                {
-                    "type": "Image",
-                    "id": "0939e66a-05c0-46ab-9e1e-5d8d16dad321",
-                    "label": "penguin3",
-                    "components": [],
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "photo/penguin"
-                    },
-                    "x": 910,
-                    "y": 638
-                },
-                {
-                    "type": "Image",
-                    "id": "40f8b375-8a95-4528-8869-7e5176d5d3b8",
-                    "label": "penguin2",
-                    "components": [],
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "photo/penguin"
-                    },
-                    "x": 1170,
-                    "y": 380
-                },
-                {
-                    "type": "Image",
-                    "id": "fb3761b7-5f28-4edf-b845-526467f39054",
-                    "label": "penguin1",
-                    "components": [],
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "photo/penguin"
-                    },
-                    "x": 910,
+                    "x": 928,
                     "y": 377
                 },
                 {
-                    "type": "Rectangle",
-                    "id": "508eeb53-e202-4921-a239-2b320f865756",
-                    "label": "secret_7",
-                    "components": [
-                        "SimpleButton"
+                    "prefabId": "370b66bb-bf9d-4d61-b1a8-c2bd25bdf5cf",
+                    "id": "ada854c8-acd8-48b3-a140-16009b3b6bec",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "item"
                     ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(6073);",
-                    "x": 339,
-                    "y": 110,
-                    "scaleX": 0.4281282457840876,
-                    "scaleY": 0.5520472126275546,
-                    "alpha": 0.00001,
-                    "isFilled": true,
-                    "fillColor": "#00ff00",
-                    "width": 135,
-                    "height": 160
-                }
-            ]
-        },
-        {
-            "type": "Container",
-            "id": "6939f768-4d4f-479b-85ec-be0fcb40b210",
-            "label": "page11",
-            "components": [],
-            "y": 3,
-            "visible": false,
-            "list": [
+                    "label": "photoButton_1",
+                    "item": 922,
+                    "components": [],
+                    "x": 1174,
+                    "y": 378
+                },
+                {
+                    "prefabId": "370b66bb-bf9d-4d61-b1a8-c2bd25bdf5cf",
+                    "id": "87508f37-2add-4ffd-99d1-92377a79116b",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "item"
+                    ],
+                    "label": "photoButton_2",
+                    "item": 908,
+                    "components": [],
+                    "x": 928,
+                    "y": 613
+                },
+                {
+                    "prefabId": "370b66bb-bf9d-4d61-b1a8-c2bd25bdf5cf",
+                    "id": "18273fc7-7c35-48b7-b094-8ad87893fe31",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "item"
+                    ],
+                    "label": "photoButton_3",
+                    "item": 986,
+                    "components": [],
+                    "x": 1171,
+                    "y": 615
+                },
                 {
                     "type": "Image",
-                    "id": "41fb2418-875e-4179-92ca-f51daa9614b9",
-                    "label": "p11",
+                    "id": "ca86c038-9256-41c8-acf8-16552c14ec93",
+                    "label": "photo1_png",
                     "components": [],
                     "texture": {
-                        "key": "aug-22",
-                        "frame": "page/page0011.png"
+                        "key": "photos-092022",
+                        "frame": "photo1.png"
                     },
-                    "y": -82,
-                    "originX": 0,
-                    "originY": 0
+                    "x": 933,
+                    "y": 379,
+                    "scaleX": 0.4963472694664711,
+                    "scaleY": 0.4963472694664711
                 },
                 {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "64716d03-ed02-4bde-91a8-38c5d15d1520",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "fcaee2e4-5bab-4c8d-a57e-456b1dfa269b",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_50",
-                    "item": 10213,
+                    "label": "buyButton_37",
+                    "item": 221,
                     "components": [],
-                    "x": 285,
-                    "y": 280,
-                    "angle": -22
+                    "x": 458,
+                    "y": 188,
+                    "scaleX": 1.465489536985481,
+                    "scaleY": 1.465489536985481
                 },
                 {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "afa7dc5e-0a0b-47da-a7b1-b4cffa809750",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "88bf08c0-2eff-444b-9fd1-74a2f4b6decb",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_51",
-                    "item": 249,
+                    "label": "buyButton_38",
+                    "item": 450,
                     "components": [],
-                    "x": 1196,
-                    "y": 527,
-                    "angle": 14
+                    "x": 277,
+                    "y": 406,
+                    "scaleX": 1.465489536985481,
+                    "scaleY": 1.465489536985481
                 },
                 {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "7081d6ae-3f42-48dd-86ce-29ca1e069cd1",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "4d57c1a0-91c6-4cd0-810f-50a1842af9a0",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_52",
-                    "item": 657,
+                    "label": "buyButton_39",
+                    "item": 223,
                     "components": [],
-                    "x": 1129,
-                    "y": 198,
-                    "angle": -22
+                    "x": 259,
+                    "y": 626,
+                    "scaleX": 1.3214803193966163,
+                    "scaleY": 1.3214803193966163
                 },
-                {
-                    "type": "Rectangle",
-                    "id": "11915d80-93c4-440a-9b33-a925a5b02167",
-                    "label": "secret_6",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(4448);",
-                    "x": 1033,
-                    "y": 108,
-                    "scaleX": 0.6456573414587834,
-                    "scaleY": 0.5520472126275546,
-                    "alpha": 0.00001,
-                    "isFilled": true,
-                    "fillColor": "#00ff00",
-                    "width": 135,
-                    "height": 160
-                }
-            ]
-        },
-        {
-            "type": "Container",
-            "id": "f9e7b21e-5b20-4773-8cd0-82d65b6e761e",
-            "label": "page10",
-            "components": [],
-            "y": 1,
-            "visible": false,
-            "list": [
                 {
                     "type": "Image",
-                    "id": "7ed1f213-f5e3-4663-84e0-ad3ac6ddf83f",
-                    "label": "p10",
+                    "id": "0c11a824-c2d9-4e87-a601-141868309d95",
+                    "label": "photo3_png",
                     "components": [],
                     "texture": {
-                        "key": "aug-22",
-                        "frame": "page/page0010.png"
+                        "key": "photos-092022",
+                        "frame": "photo3.png"
                     },
-                    "y": -82,
-                    "originX": 0,
-                    "originY": 0
+                    "x": 1175,
+                    "y": 380,
+                    "scaleX": 0.4963472694664711,
+                    "scaleY": 0.4963472694664711
                 },
                 {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "c1aacc0f-157b-474e-a673-31a87e32c03d",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_46",
-                    "item": 1026,
+                    "type": "Image",
+                    "id": "eb8aa121-4412-4575-be24-06a3b0b36638",
+                    "label": "photo2_png",
                     "components": [],
-                    "x": 339,
-                    "y": 419,
-                    "angle": -11
+                    "texture": {
+                        "key": "photos-092022",
+                        "frame": "photo2.png"
+                    },
+                    "x": 929,
+                    "y": 617,
+                    "scaleX": 0.4963472694664711,
+                    "scaleY": 0.4963472694664711
                 },
                 {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "7c4cc236-2c2a-4740-89fb-6d838a7b0595",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_47",
-                    "item": 243,
+                    "type": "Image",
+                    "id": "f8af2ce5-63ed-4b72-96ff-dabf87cba72d",
+                    "label": "photo_penguin",
                     "components": [],
-                    "x": 842,
-                    "y": 359,
-                    "angle": -21
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "photo/penguin"
+                    },
+                    "x": 929,
+                    "y": 392
                 },
                 {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "9858a42e-9d46-44c7-b1b0-83b9b05a8395",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_48",
-                    "item": 365,
+                    "type": "Image",
+                    "id": "0c50e2e9-0a17-42f7-b647-972e1b34e353",
+                    "label": "photo4_png",
                     "components": [],
-                    "x": 1159,
-                    "y": 672,
-                    "angle": 16
+                    "texture": {
+                        "key": "photos-092022",
+                        "frame": "photo4.png"
+                    },
+                    "x": 1171,
+                    "y": 621,
+                    "scaleX": 0.15338265109085666,
+                    "scaleY": 0.15338265109085666
                 },
                 {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "51589ea6-c574-4eb8-94f6-d0b25479a0d9",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_49",
-                    "item": 14041,
+                    "type": "Image",
+                    "id": "8245283d-5aa4-490b-9fec-85183c7199a5",
+                    "label": "photo_penguin_1",
                     "components": [],
-                    "x": 581,
-                    "y": 501,
-                    "angle": -44
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "photo/penguin"
+                    },
+                    "x": 1171,
+                    "y": 391
                 },
                 {
-                    "type": "Rectangle",
-                    "id": "e21044e8-fcd8-4ef1-8fa6-b8673123984b",
-                    "label": "secret_5",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(4147);",
-                    "x": 373,
-                    "y": 254,
-                    "scaleX": 0.6456573414587834,
-                    "scaleY": 0.283438579871872,
-                    "alpha": 0.00001,
-                    "isFilled": true,
-                    "fillColor": "#00ff00",
-                    "width": 135,
-                    "height": 160
+                    "type": "Image",
+                    "id": "b9c23126-40e8-4d98-9623-198e079730f7",
+                    "label": "photo_penguin_2",
+                    "components": [],
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "photo/penguin"
+                    },
+                    "x": 1167,
+                    "y": 617
+                },
+                {
+                    "type": "Image",
+                    "id": "02426623-98c1-4257-84ed-7a7c8dc9d507",
+                    "label": "photo_penguin_3",
+                    "components": [],
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "photo/penguin"
+                    },
+                    "x": 933,
+                    "y": 621
                 }
             ]
         },
         {
             "type": "Container",
-            "id": "1ab4c26e-2540-4bd1-ac2d-55c6506e5379",
+            "id": "e1e4623b-dd81-4738-9d6f-80ca94c95867",
             "label": "page9",
             "components": [],
-            "y": 1,
             "visible": false,
             "list": [
                 {
                     "type": "Image",
-                    "id": "7ec762e1-57f2-48d4-808e-16206b86e533",
-                    "label": "p9",
+                    "id": "4aeb6ec9-0f31-4b4e-87db-b1d67ad0cc7c",
+                    "label": "p9_png",
                     "components": [],
                     "texture": {
-                        "key": "aug-22",
-                        "frame": "page/page0009.png"
+                        "key": "clothing092022",
+                        "frame": "p9.png"
                     },
-                    "y": -83,
                     "originX": 0,
                     "originY": 0
                 },
                 {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "099502fc-4da1-422a-8925-e652f3ddf0ce",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "5d37429d-1678-4233-bfd8-26f25436d1ce",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_39",
-                    "item": 1021,
+                    "label": "buyButton_32",
+                    "item": 449,
                     "components": [],
-                    "x": 320,
-                    "y": 220,
-                    "angle": 24
+                    "x": 524,
+                    "y": 329,
+                    "scaleX": 1.2866686757465589,
+                    "scaleY": 1.2866686757465589
                 },
                 {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "b5235d39-a8d2-4ab6-b91f-65ee02967e59",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "fe8d61bd-8ee5-4151-8577-33d1a765d64d",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_40",
-                    "item": 4023,
+                    "label": "buyButton_33",
+                    "item": 286,
                     "components": [],
-                    "x": 609,
-                    "y": 430,
-                    "angle": 15
+                    "x": 558,
+                    "y": 602,
+                    "scaleX": 1.3640764452141125,
+                    "scaleY": 1.3640764452141125
                 },
                 {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "13dcd204-69f1-44d3-aee6-a647f2c3133f",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "db47f56c-5475-4f65-9244-3f32af3127f8",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_41",
-                    "item": 179,
+                    "label": "buyButton_34",
+                    "item": 287,
                     "components": [],
-                    "x": 304,
-                    "y": 474,
-                    "angle": -17
+                    "x": 1086,
+                    "y": 182,
+                    "scaleX": 1.3640764452141125,
+                    "scaleY": 1.3640764452141125
                 },
                 {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "c246acee-9fd3-42a5-ba8a-6ed5bdce1776",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "29a05bf0-3deb-4d29-b569-c3bc44f5c9e8",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_42",
-                    "item": 5011,
+                    "label": "buyButton_35",
+                    "item": 411,
                     "components": [],
-                    "x": 303,
-                    "y": 605,
-                    "angle": -18
+                    "x": 858,
+                    "y": 436,
+                    "scaleX": 1.3640764452141125,
+                    "scaleY": 1.3640764452141125
                 },
                 {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "9e907d2e-781c-4fcc-82d9-02d04de4632d",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "8ac7d9d1-3d08-4a48-87ad-afbf995cb6ca",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_43",
-                    "item": 11020,
+                    "label": "buyButton_36",
+                    "item": 764,
                     "components": [],
-                    "x": 958,
-                    "y": 120,
-                    "angle": 14
-                },
-                {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "3d8794d0-425f-476b-9c21-3e954ddb9ec9",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_44",
-                    "item": 10380,
-                    "components": [],
-                    "x": 803,
-                    "y": 326,
-                    "angle": -18
-                },
-                {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "c05cbc70-a56c-4281-8d96-5e28c2a7d56e",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_45",
-                    "item": 226,
-                    "components": [],
-                    "x": 1141,
-                    "y": 439,
-                    "angle": 16
+                    "x": 838,
+                    "y": 629,
+                    "scaleX": 1.2866686757465589,
+                    "scaleY": 1.2866686757465589
                 },
                 {
                     "type": "Rectangle",
-                    "id": "06794d35-50b7-4720-acfb-1386ee5191f5",
-                    "label": "secret",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(1595);",
-                    "x": 1049,
-                    "y": 233,
-                    "scaleX": 0.7568619808686627,
-                    "scaleY": 0.4100258205122569,
-                    "alpha": 0.00001,
+                    "id": "5aa4b2b5-b524-4fb0-9a64-dc4eac15537e",
+                    "label": "rectangle_2",
+                    "components": [],
+                    "x": 463,
+                    "y": 757,
+                    "scaleX": 3.797670284507542,
+                    "scaleY": 0.47051777444395515,
                     "isFilled": true,
-                    "fillColor": "#00ff00",
-                    "width": 135,
-                    "height": 160
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "d29d329d-e032-422f-9d89-717462cb1528",
+                    "label": "rectangle",
+                    "components": [],
+                    "x": 1063,
+                    "y": 757,
+                    "scaleX": 3.797670284507542,
+                    "scaleY": 0.47051777444395515,
+                    "isFilled": true,
+                    "width": 128,
+                    "height": 128
                 }
             ]
         },
         {
             "type": "Container",
-            "id": "7d45ea7e-f700-4b14-b580-685bbf2ac8cf",
+            "id": "216e2f91-26bd-416e-a411-9003ab6e2e89",
             "label": "page8",
             "components": [],
-            "y": 2,
             "visible": false,
             "list": [
                 {
                     "type": "Image",
-                    "id": "7f21abab-adc5-452d-a23f-553656cbecf6",
-                    "label": "p8",
+                    "id": "59e8e8a3-4f95-4426-8b7a-27eb25fe8b9d",
+                    "label": "p8_png",
                     "components": [],
                     "texture": {
-                        "key": "aug-22",
-                        "frame": "page/page0008.png"
+                        "key": "clothing092022",
+                        "frame": "p8.png"
                     },
-                    "y": -83,
                     "originX": 0,
                     "originY": 0
                 },
                 {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "bcf3ade5-3325-4ef5-83ee-4edf4e983503",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "68f13191-91a7-4469-b0ba-76a918def513",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_35",
-                    "item": 1030,
+                    "label": "buyButton_27",
+                    "item": 769,
                     "components": [],
-                    "x": 817,
-                    "y": 154,
-                    "angle": 18
+                    "x": 231,
+                    "y": 305,
+                    "scaleX": 1.3425207199116265,
+                    "scaleY": 1.3425207199116265
                 },
                 {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "077a8c31-a8ca-4109-be30-9ace353b84e3",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "f17fb2e4-bf92-4600-8d74-2f74a7a15ca4",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_36",
-                    "item": 4050,
+                    "label": "buyButton_28",
+                    "item": 457,
                     "components": [],
-                    "x": 997,
-                    "y": 410,
-                    "angle": -11
+                    "x": 489,
+                    "y": 688,
+                    "scaleX": 1.3425207199116265,
+                    "scaleY": 1.3425207199116265
                 },
                 {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "183edb5f-29ac-4c45-a96d-db9ce9239e69",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "000ff50f-0355-4bee-b73b-b10cd6d00708",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_31",
-                    "item": 5014,
+                    "label": "buyButton_29",
+                    "item": 251,
                     "components": [],
-                    "x": 443,
-                    "y": 119,
-                    "angle": -20
+                    "x": 1089,
+                    "y": 242,
+                    "scaleX": 1.3425207199116265,
+                    "scaleY": 1.3425207199116265
                 },
                 {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "82d9c1d4-e6fd-4bc0-8e07-c34fcff9cbef",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "f2efc8dc-cdc6-4e8b-8b40-b5d665c6470f",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_38",
-                    "item": 10236,
+                    "label": "buyButton_30",
+                    "item": 380,
                     "components": [],
-                    "x": 979,
-                    "y": 502,
-                    "angle": 23
+                    "x": 801,
+                    "y": 514,
+                    "scaleX": 1.3425207199116265,
+                    "scaleY": 1.3425207199116265
                 },
                 {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "b4c18786-03b6-4739-bd83-8f74f244c4ef",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "bab3e910-e014-4a78-8f97-b89d4d12990b",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_37",
-                    "item": 10401,
+                    "label": "buyButton_31",
+                    "item": 342,
                     "components": [],
-                    "x": 1196,
-                    "y": 426,
-                    "angle": -51
-                },
-                {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "92f327af-1ee0-44cc-9bd2-bbf13d6d21ae",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_34",
-                    "item": 234,
-                    "components": [],
-                    "x": 540,
-                    "y": 218,
-                    "angle": 36
-                },
-                {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "38d6446a-ad49-4df7-8479-270b1a04b7ce",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_33",
-                    "item": 1027,
-                    "components": [],
-                    "x": 293,
-                    "y": 329,
-                    "angle": 22
-                },
-                {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "ef7df579-d21a-469c-98fc-89285b15845b",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_32",
-                    "item": 4049,
-                    "components": [],
-                    "x": 252,
-                    "y": 666,
-                    "angle": -20
+                    "x": 1097,
+                    "y": 584,
+                    "scaleX": 1.4441812004254455,
+                    "scaleY": 1.4441812004254455
                 },
                 {
                     "type": "Rectangle",
-                    "id": "622af04c-af6c-4a23-a0eb-4e8d72b021a8",
-                    "label": "secret_4",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(443);",
-                    "x": 1255,
-                    "y": 307,
-                    "scaleX": 0.7568619808686627,
-                    "scaleY": 0.4100258205122569,
-                    "alpha": 0.00001,
+                    "id": "93bc9097-a09b-41fd-8417-f5fb6ca3dcad",
+                    "label": "rectangle_3",
+                    "components": [],
+                    "x": 1064,
+                    "y": 761,
+                    "scaleX": 3.666016531273444,
+                    "scaleY": 0.4891409593849487,
                     "isFilled": true,
-                    "fillColor": "#00ff00",
-                    "width": 135,
-                    "height": 160
+                    "width": 128,
+                    "height": 128
                 }
             ]
         },
         {
             "type": "Container",
-            "id": "2d9d0132-f9f5-49cc-83c4-f2e4f8dcb49b",
+            "id": "b414b128-2716-4eb1-bd69-8e92a6c65517",
             "label": "page7",
             "components": [],
-            "y": 4,
             "visible": false,
             "list": [
                 {
                     "type": "Image",
-                    "id": "3f111163-79a2-4fcd-98ed-549552bf5104",
-                    "label": "p7",
+                    "id": "3e93e25a-db66-4a5c-9ea1-93334e27e995",
+                    "label": "p7_png",
                     "components": [],
                     "texture": {
-                        "key": "aug-22",
-                        "frame": "page/page0007.png"
+                        "key": "clothing092022",
+                        "frame": "p7.png"
                     },
-                    "y": -85,
                     "originX": 0,
                     "originY": 0
                 },
                 {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "f6bc5fe0-1c4c-481d-a528-8325f790c264",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "74b17130-0554-46a7-bc40-b7acf1845966",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_26",
-                    "item": 1029,
+                    "label": "buyButton_20",
+                    "item": 478,
                     "components": [],
-                    "x": 373,
-                    "y": 97,
-                    "angle": 23
+                    "x": 558,
+                    "y": 104,
+                    "scaleX": 1.4058721237720457,
+                    "scaleY": 1.4058721237720457
                 },
                 {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "48c6f0d3-2385-4993-b3b7-a925ff9e00a8",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "a88ab8cc-e7d0-41c4-a39a-5a1bb2b6c11d",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_27",
-                    "item": 4047,
+                    "label": "buyButton_21",
+                    "item": 181,
                     "components": [],
-                    "x": 590,
-                    "y": 472,
-                    "angle": -25
+                    "x": 553,
+                    "y": 370,
+                    "scaleX": 1.4058721237720457,
+                    "scaleY": 1.4058721237720457
                 },
                 {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "af60a81c-a57e-4faa-ba3e-763933765d55",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "33c7ce9d-79aa-4825-83da-142382944310",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_28",
-                    "item": 5015,
+                    "label": "buyButton_22",
+                    "item": 768,
                     "components": [],
-                    "x": 820,
-                    "y": 109,
-                    "angle": 17
+                    "x": 559,
+                    "y": 603,
+                    "scaleX": 1.4058721237720457,
+                    "scaleY": 1.4058721237720457
                 },
                 {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "b7c7037b-8497-44ca-8774-0f611f49c113",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "384d0955-8d73-4b8b-bdb7-e103beee94a4",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_29",
-                    "item": 1028,
+                    "label": "buyButton_23",
+                    "item": 308,
                     "components": [],
-                    "x": 1120,
-                    "y": 165,
-                    "angle": -16
+                    "x": 807,
+                    "y": 153,
+                    "scaleX": 1.635651859299817,
+                    "scaleY": 1.635651859299817
                 },
                 {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "b2f8444d-3386-497a-86b0-47b38f8e70e7",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "a069057b-dab0-4703-8cb2-929de56dfa17",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_30",
-                    "item": 4048,
+                    "label": "buyButton_24",
+                    "item": 239,
                     "components": [],
-                    "x": 806,
-                    "y": 466,
-                    "angle": -19
+                    "x": 807,
+                    "y": 429,
+                    "scaleX": 1.1932918920206816,
+                    "scaleY": 1.1932918920206816
                 },
                 {
-                    "type": "Rectangle",
-                    "id": "6615ebe0-117a-43c4-b7eb-0be05cdc5ebc",
-                    "label": "secret_3",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "d87e4f6a-78e1-4e42-8850-a39b162d817c",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY",
+                        "item"
+                    ],
+                    "label": "buyButton_25",
+                    "item": 362,
+                    "components": [],
+                    "x": 1082,
+                    "y": 669,
+                    "scaleX": 1.4058721237720457,
+                    "scaleY": 1.4058721237720457
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "85c09a03-a7a1-4f47-837f-66588828cd57",
+                    "label": "openSecret7",
                     "components": [
                         "SimpleButton"
                     ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(24080);",
-                    "x": 744,
-                    "y": 335,
-                    "scaleX": 0.33405165689980654,
-                    "scaleY": 0.31826832497179797,
-                    "alpha": 0.00001,
+                    "SimpleButton.callback": "() => this.secret7.visible=true",
+                    "x": 799,
+                    "y": 569,
+                    "scaleX": 0.3885326833033877,
+                    "scaleY": 0.3885326833033877,
                     "isFilled": true,
-                    "fillColor": "#00ff00",
-                    "width": 135,
-                    "height": 160
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Container",
+                    "id": "9cc3a2b4-f3d2-4437-bc31-8e160e2bd9a6",
+                    "label": "secret7",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 971,
+                    "y": 603,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "81685b75-82a4-425f-a0dd-65b4fefff809",
+                            "label": "s7_png",
+                            "components": [],
+                            "texture": {
+                                "key": "clothing092022",
+                                "frame": "s7.png"
+                            },
+                            "x": -200,
+                            "y": -200
+                        },
+                        {
+                            "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                            "id": "46a590a1-cf67-4f18-826a-d4f7392951cd",
+                            "unlock": [
+                                "x",
+                                "y",
+                                "scaleX",
+                                "scaleY",
+                                "item"
+                            ],
+                            "label": "buyButton_26",
+                            "item": 131,
+                            "components": [],
+                            "x": -387,
+                            "y": -209,
+                            "scaleX": 1.5312828042208035,
+                            "scaleY": 1.5312828042208035
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "ad715d21-2bf3-4010-8799-7c93dc6cea8c",
+                            "label": "closeSecret7",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.secret7.visible=false",
+                            "x": 6,
+                            "y": -92,
+                            "scaleX": 0.24625156712727328,
+                            "scaleY": 0.24625156712727328,
+                            "isFilled": true,
+                            "fillAlpha": 0,
+                            "width": 128,
+                            "height": 128
+                        }
+                    ]
                 }
             ]
         },
         {
             "type": "Container",
-            "id": "d38e37b5-66cf-4b79-b8c7-62afe935bd42",
+            "id": "7776572e-39a3-4406-a915-c957a8f958e1",
             "label": "page6",
             "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
-                    "id": "37c926d4-b8a0-4e8b-a1a7-aca9e16224de",
-                    "label": "p6",
+                    "id": "754d0677-e37b-4711-a193-d8d78b650768",
+                    "label": "p6_png",
                     "components": [],
                     "texture": {
-                        "key": "aug-22",
-                        "frame": "page/page0006.png"
+                        "key": "clothing092022",
+                        "frame": "p6.png"
                     },
-                    "y": -81,
                     "originX": 0,
                     "originY": 0
                 },
                 {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "688f7d81-b1d5-4c7c-b8a1-8ced31597c70",
+                    "prefabId": "3019821f-f216-486e-8d24-db5f8f3b6fa1",
+                    "id": "2de3bd1c-e9fa-4092-afb1-78bc6419175b",
                     "unlock": [
                         "x",
                         "y",
                         "angle",
-                        "item"
-                    ],
-                    "label": "tag_21",
-                    "item": 4063,
-                    "components": [],
-                    "x": 573,
-                    "y": 367,
-                    "angle": 24
-                },
-                {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "2b79b9e8-867c-4044-94ce-efcf2e3a7972",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_23",
-                    "item": 4044,
-                    "components": [],
-                    "x": 800,
-                    "y": 258,
-                    "angle": -17
-                },
-                {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "a6761deb-1288-4fde-9167-52c4d54e18dd",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_24",
-                    "item": 484,
-                    "components": [],
-                    "x": 1199,
-                    "y": 385,
-                    "angle": -18
-                },
-                {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "967d4b27-a658-45f5-8e41-a9cea048e07d",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_25",
-                    "item": 4043,
-                    "components": [],
-                    "x": 945,
-                    "y": 483,
-                    "angle": 19
-                },
-                {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "9d476e1e-0a51-4a6d-93f5-f0e8ba299d61",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_22",
-                    "item": 402,
-                    "components": [],
-                    "x": 1078,
-                    "y": 105,
-                    "angle": 10
-                },
-                {
-                    "type": "Rectangle",
-                    "id": "e2e749e7-3340-4b50-8de1-415c7ef59d09",
-                    "label": "secret_2",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(2047);",
-                    "x": 395,
-                    "y": 124,
-                    "scaleX": 0.20330625988017983,
-                    "scaleY": 0.31826832497179797,
-                    "alpha": 0.00001,
-                    "isFilled": true,
-                    "fillColor": "#00ff00",
-                    "width": 135,
-                    "height": 160
-                },
-                {
-                    "type": "Rectangle",
-                    "id": "7dc72d7f-2ff6-4f4b-8472-60993a29b326",
-                    "label": "secret_8",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(117);",
-                    "x": 1148,
-                    "y": 553,
-                    "scaleX": 0.27415249482365367,
-                    "scaleY": 0.20421483864519346,
-                    "alpha": 0.00001,
-                    "isFilled": true,
-                    "fillColor": "#00ff00",
-                    "width": 135,
-                    "height": 160
-                }
-            ]
-        },
-        {
-            "type": "Container",
-            "id": "324af91e-1cbb-4415-a8c4-52ff9515d2db",
-            "label": "page5",
-            "components": [],
-            "y": -1,
-            "visible": false,
-            "list": [
-                {
-                    "type": "Image",
-                    "id": "10bf28bf-83fd-4dfd-8f34-1862df4d83a5",
-                    "label": "p5",
-                    "components": [],
-                    "texture": {
-                        "key": "aug-22",
-                        "frame": "page/page0005.png"
-                    },
-                    "y": -81,
-                    "originX": 0,
-                    "originY": 0
-                },
-                {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "31758380-c7f5-4f59-8447-3f1e552d72cb",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_11",
-                    "item": 652,
-                    "components": [],
-                    "x": 449,
-                    "y": 74,
-                    "angle": 17
-                },
-                {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "bc788b0d-e1e9-4ba6-a7d7-672b6c1f841c",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_12",
-                    "item": 377,
-                    "components": [],
-                    "x": 606,
-                    "y": 526,
-                    "angle": 36
-                },
-                {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "16dda246-00a4-40a3-8ed4-2d13e12fd80f",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_13",
-                    "item": 378,
-                    "components": [],
-                    "x": 488,
-                    "y": 659,
-                    "angle": 21
-                },
-                {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "07eceb7c-a074-4edf-a28c-6f958a4cd62b",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_14",
-                    "item": 10671,
-                    "components": [],
-                    "x": 334,
-                    "y": 260,
-                    "angle": -44
-                },
-                {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "f36b668b-3507-4d58-b398-f0645b09877a",
-                    "unlock": [
-                        "x",
-                        "y",
                         "scaleX",
                         "scaleY",
-                        "angle",
                         "item"
                     ],
-                    "label": "tag_16",
-                    "item": 4057,
+                    "label": "tag2",
+                    "item": 464,
                     "components": [],
-                    "x": 912,
-                    "y": 235,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "angle": 9
-                },
-                {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "5ed8b875-d864-45d7-80a1-a6c840a4703d",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "scaleX",
-                        "scaleY",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_17",
-                    "item": 206,
-                    "components": [],
-                    "x": 1083,
-                    "y": 181,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "angle": 9
-                },
-                {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "33503733-e0c8-41a6-ab98-70602256f2ea",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "scaleX",
-                        "scaleY",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_18",
-                    "item": 4062,
-                    "components": [],
-                    "x": 1049,
-                    "y": 754,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "angle": -25
-                },
-                {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "23184380-26f4-4667-8eb8-25f0e2e7ce97",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "scaleX",
-                        "scaleY",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_15",
-                    "item": 4059,
-                    "components": [],
-                    "x": 947,
-                    "y": 335,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
+                    "x": 611,
+                    "y": 274,
+                    "scaleX": 1.0839952769117966,
+                    "scaleY": 1.0839952769117966,
                     "angle": 16
                 },
                 {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "c16a7cad-a539-470a-b566-f3a984f2d8c8",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "scaleX",
-                        "scaleY",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_20",
-                    "item": 4061,
-                    "components": [],
-                    "x": 1118,
-                    "y": 553,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "angle": 7
-                },
-                {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "735d18c0-bce4-4441-8317-19a495a2c9c1",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "scaleX",
-                        "scaleY",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_19",
-                    "item": 781,
-                    "components": [],
-                    "x": 957,
-                    "y": 660,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "angle": 7
-                },
-                {
-                    "type": "Rectangle",
-                    "id": "c05e6b7b-fb31-4794-be1b-47dbe1b2490d",
-                    "label": "secret_1",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(353);",
-                    "x": 949,
-                    "y": 114,
-                    "scaleX": 0.4001033463251785,
-                    "scaleY": 0.5104989480990085,
-                    "alpha": 0.00001,
-                    "isFilled": true,
-                    "fillColor": "#00ff00",
-                    "width": 135,
-                    "height": 160
-                }
-            ]
-        },
-        {
-            "type": "Container",
-            "id": "55d7456e-5f7e-4fec-9b82-d1cf10ec4153",
-            "label": "page4",
-            "components": [],
-            "y": -8,
-            "visible": false,
-            "list": [
-                {
-                    "type": "Image",
-                    "id": "010ced9f-7c56-4cec-baf1-7221501bc99c",
-                    "label": "p4",
-                    "components": [],
-                    "texture": {
-                        "key": "aug-22",
-                        "frame": "page/page0004.png"
-                    },
-                    "y": -76,
-                    "originX": 0,
-                    "originY": 0
-                },
-                {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "6010a8ea-df74-4118-bb32-730d52cfd84f",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "scaleX",
-                        "scaleY",
-                        "item"
-                    ],
-                    "label": "tag_4",
-                    "item": 1539,
-                    "components": [],
-                    "x": 213,
-                    "y": 364,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "angle": -41
-                },
-                {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "6ed5b6cf-c681-4b67-a1d5-0bdd4dbeaad8",
+                    "prefabId": "3019821f-f216-486e-8d24-db5f8f3b6fa1",
+                    "id": "2a98f280-7cab-4d16-98cd-3b7d40d3ee25",
                     "unlock": [
                         "x",
                         "y",
@@ -2282,312 +1612,555 @@
                         "item"
                     ],
                     "label": "tag_5",
-                    "item": 1038,
+                    "item": 785,
                     "components": [],
-                    "x": 375,
-                    "y": 305,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "angle": -41
+                    "x": 614,
+                    "y": 526,
+                    "scaleX": 1.1960305260996156,
+                    "scaleY": 1.1960305260996156,
+                    "angle": 34
                 },
                 {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "a7458bfe-96e4-4087-821b-a1c2c015c579",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "efc5c245-8fa4-4913-91c2-9e3f7fb422da",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
                         "scaleX",
                         "scaleY",
                         "item"
                     ],
-                    "label": "tag_7",
-                    "item": 221,
+                    "label": "buyButton_16",
+                    "item": 108,
                     "components": [],
-                    "x": 206,
-                    "y": 593,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "angle": -32.00000000000006
+                    "x": 860,
+                    "y": 219,
+                    "scaleX": 1.0745081751218968,
+                    "scaleY": 1.0745081751218968
                 },
                 {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "d61a6b2d-b639-4b80-ac8a-b903a9ffa583",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "c815d2ee-d28d-4a81-9d88-0967f66fa3a5",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
                         "scaleX",
                         "scaleY",
                         "item"
                     ],
-                    "label": "tag_8",
-                    "item": 222,
+                    "label": "buyButton_17",
+                    "item": 110,
                     "components": [],
-                    "x": 421,
-                    "y": 575,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "angle": -32.00000000000006
+                    "x": 1115,
+                    "y": 220,
+                    "scaleX": 1.0988044862665898,
+                    "scaleY": 1.0988044862665898
                 },
                 {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "c5b91ff0-0a4c-46b7-87b2-2f6721e15bf1",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "f7175a39-a146-44be-95ba-4923ecc91462",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
                         "scaleX",
                         "scaleY",
                         "item"
                     ],
-                    "label": "tag_9",
-                    "item": 223,
+                    "label": "buyButton_18",
+                    "item": 781,
                     "components": [],
-                    "x": 540,
+                    "x": 1130,
+                    "y": 436,
+                    "scaleX": 1.3401460621551953,
+                    "scaleY": 1.3401460621551953
+                },
+                {
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "c6f63603-f886-4a95-b480-e6af82efbc84",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY",
+                        "item"
+                    ],
+                    "label": "buyButton_19",
+                    "item": 351,
+                    "components": [],
+                    "x": 1143,
                     "y": 692,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "angle": -32.00000000000006
-                },
-                {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "e2b6ec75-164c-4b04-af8e-06c57ff50b99",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "scaleX",
-                        "scaleY",
-                        "item"
-                    ],
-                    "label": "tag_10",
-                    "item": 224,
-                    "components": [],
-                    "x": 333,
-                    "y": 708,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "angle": -32.00000000000006
-                },
-                {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "0bc7cdcf-9584-4343-b84e-5ec32dc5914e",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "scaleX",
-                        "scaleY",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_6",
-                    "item": 406,
-                    "components": [],
-                    "x": 671,
-                    "y": 319,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "angle": 23
-                },
-                {
-                    "type": "Rectangle",
-                    "id": "ab62b2dd-1c94-4574-85fa-3e70e6a3a246",
-                    "label": "secret_hex_3",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(262);",
-                    "x": 1054,
-                    "y": 708,
-                    "scaleX": 0.8126942847066034,
-                    "scaleY": 0.4066250432874592,
-                    "alpha": 0.00001,
-                    "isFilled": true,
-                    "fillColor": "#00ff00",
-                    "width": 135,
-                    "height": 160
-                },
-                {
-                    "type": "Rectangle",
-                    "id": "3ae57c0c-7433-441c-a834-75b98ec121f7",
-                    "label": "secret_hex_4",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(412);",
-                    "x": 602,
-                    "y": 119,
-                    "scaleX": 0.8126942847066034,
-                    "scaleY": 0.4066250432874592,
-                    "alpha": 0.00001,
-                    "isFilled": true,
-                    "fillColor": "#00ff00",
-                    "width": 135,
-                    "height": 160
+                    "scaleX": 1.1981543157440888,
+                    "scaleY": 1.1981543157440888
                 }
             ]
         },
         {
             "type": "Container",
-            "id": "2e8c1d02-cd07-4b62-8dbd-bc4808c1d300",
-            "label": "page3",
+            "id": "ed7d98e2-2102-4467-a0ea-fb8f18a5ecf2",
+            "label": "page5",
             "components": [],
-            "y": -3,
             "visible": false,
             "list": [
                 {
                     "type": "Image",
-                    "id": "2218171e-ee1d-4d9e-8be0-e4d81b71a420",
-                    "label": "p3",
+                    "id": "36a0131a-2671-47af-9f09-15d78c8d6404",
+                    "label": "p5_png",
                     "components": [],
                     "texture": {
-                        "key": "aug-22",
-                        "frame": "page/page0003.png"
+                        "key": "clothing092022",
+                        "frame": "p5.png"
                     },
-                    "y": -80,
                     "originX": 0,
                     "originY": 0
                 },
                 {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "55b9a7e9-fe8d-4037-b25d-a7894a5cd365",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "4c0485e4-94fe-473c-8a04-6153ffcf2c57",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag2",
-                    "item": 3013,
+                    "label": "buyButton_12",
+                    "item": 660,
                     "components": [],
-                    "x": 575,
-                    "y": 310,
-                    "angle": -24
+                    "x": 576,
+                    "y": 253,
+                    "scaleX": 1.1888338579244073,
+                    "scaleY": 1.1888338579244073
                 },
                 {
-                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
-                    "id": "f59b4fd5-4b62-484c-ac22-873fcf8bdfca",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "468beb33-0669-497c-9d26-ffbea850d338",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_3",
-                    "item": 4058,
+                    "label": "buyButton_13",
+                    "item": 782,
                     "components": [],
-                    "x": 1173,
-                    "y": 530,
-                    "angle": 20
+                    "x": 582,
+                    "y": 597,
+                    "scaleX": 1.1888338579244073,
+                    "scaleY": 1.1888338579244073
                 },
                 {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "a230f69d-f41c-40ce-8c2b-7c871ca87f9f",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "ee3d737b-313d-4be0-ad2f-d5612722ff3b",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag1",
-                    "item": 1039,
+                    "label": "buyButton_14",
+                    "item": 417,
                     "components": [],
-                    "x": 325,
-                    "y": 138,
-                    "angle": 20
+                    "x": 829,
+                    "y": 299,
+                    "scaleX": 1.1888338579244073,
+                    "scaleY": 1.1888338579244073
                 },
                 {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "9163b35f-25dc-4ca2-9878-2993d9a1c950",
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "e470489c-fb9e-43a7-9cf5-7cd9d95a7b06",
                     "unlock": [
                         "x",
                         "y",
-                        "angle",
+                        "scaleX",
+                        "scaleY",
                         "item"
                     ],
-                    "label": "tag_2",
-                    "item": 3012,
+                    "label": "buyButton_15",
+                    "item": 780,
                     "components": [],
-                    "x": 839,
-                    "y": 678,
-                    "angle": -35.00000000000006
-                },
-                {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "06c907e6-c1b9-4083-acdb-be5a0213c3db",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag_1",
-                    "item": 10662,
-                    "components": [],
-                    "x": 923,
-                    "y": 298,
-                    "angle": 65
-                },
-                {
-                    "prefabId": "fdabdf4b-9d2e-4a40-a724-14fda606e501",
-                    "id": "b9ccdc88-98f5-4846-a1bf-1df113b57829",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "angle",
-                        "item"
-                    ],
-                    "label": "tag",
-                    "item": 4060,
-                    "components": [],
-                    "x": 236,
-                    "y": 526,
-                    "angle": -26
-                },
-                {
-                    "type": "Rectangle",
-                    "id": "9d796584-115d-41ad-a7ec-66c356c76856",
-                    "label": "secret_hex_2",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(250);",
-                    "x": 809,
-                    "y": 212,
-                    "scaleX": 0.3217586194875338,
-                    "scaleY": 0.325132808240461,
-                    "alpha": 0.00001,
-                    "isFilled": true,
-                    "fillColor": "#00ff00",
-                    "width": 135,
-                    "height": 160
+                    "x": 814,
+                    "y": 658,
+                    "scaleX": 1.1888338579244073,
+                    "scaleY": 1.1888338579244073
                 }
             ]
         },
         {
             "type": "Container",
-            "id": "2288f566-fba0-4f65-b183-1ceed2620d9f",
+            "id": "949b9cb9-749a-4dd8-af3d-c6bf8238d4ac",
+            "label": "page4",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "9e4c8cbf-3f15-44a7-9cd1-bb42154f26a6",
+                    "label": "p4_png",
+                    "components": [],
+                    "texture": {
+                        "key": "clothing092022",
+                        "frame": "p4.png"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "0289d8ff-9812-4132-9571-2bef5c6ead5f",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "item",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_5",
+                    "item": 437,
+                    "components": [],
+                    "x": 590,
+                    "y": 208,
+                    "scaleX": 1.1993652871005305,
+                    "scaleY": 1.1993652871005305
+                },
+                {
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "885802c8-78ae-43db-aaf0-60f2fb0b70ef",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "item",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_6",
+                    "item": 275,
+                    "components": [],
+                    "x": 580,
+                    "y": 424,
+                    "scaleX": 1.1993652871005305,
+                    "scaleY": 1.1993652871005305
+                },
+                {
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "f0de6c9a-db5d-4854-b579-32a865cb98ca",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "item",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_7",
+                    "item": 307,
+                    "components": [],
+                    "x": 233,
+                    "y": 682,
+                    "scaleX": 1.3161013905958374,
+                    "scaleY": 1.3161013905958374
+                },
+                {
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "cdd4d192-dcbf-4841-87a6-9c7c0e9f5f29",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "item",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_8",
+                    "item": 291,
+                    "components": [],
+                    "x": 994,
+                    "y": 683,
+                    "scaleX": 1.3161013905958374,
+                    "scaleY": 1.3161013905958374
+                },
+                {
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "c3b05134-97f5-495f-9072-3dee8f317c78",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "item",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_9",
+                    "item": 324,
+                    "components": [],
+                    "x": 817,
+                    "y": 469,
+                    "scaleX": 1.1993652871005305,
+                    "scaleY": 1.1993652871005305
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "91b672bb-fd08-4b65-9ced-a68203074448",
+                    "label": "openSecretVikingElipse",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.openVikingSecret()",
+                    "x": 915,
+                    "y": 362,
+                    "scaleX": 0.7360761998236621,
+                    "scaleY": 0.44669646199769564,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Container",
+                    "id": "a4a9c7da-23ad-466a-b6da-2e4b41f7db4d",
+                    "label": "secret_4_1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 971,
+                    "y": 603,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "cce9d746-378a-48e2-a109-be0fbe2a34bb",
+                            "label": "s4_1_png",
+                            "components": [],
+                            "texture": {
+                                "key": "clothing092022",
+                                "frame": "s4.1.png"
+                            },
+                            "x": -200,
+                            "y": -200
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "24647c65-917b-4f04-ae94-63c521b57b58",
+                            "label": "closeSecret4_1",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.secret_4_1.visible=false",
+                            "x": 68,
+                            "y": -30,
+                            "scaleX": 0.22265831583794415,
+                            "scaleY": 0.22265831583794415,
+                            "isFilled": true,
+                            "fillAlpha": 0,
+                            "width": 128,
+                            "height": 128
+                        },
+                        {
+                            "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                            "id": "8ced79c9-33db-466c-bc39-c0db7b14b672",
+                            "unlock": [
+                                "x",
+                                "y",
+                                "scaleX",
+                                "scaleY",
+                                "item"
+                            ],
+                            "label": "buyButton_11",
+                            "item": 452,
+                            "components": [],
+                            "x": -404,
+                            "y": -133,
+                            "scaleX": 1.4201108360878758,
+                            "scaleY": 1.4201108360878758
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "1f07e6f9-d5fd-445d-b565-5c8829dc668b",
+                    "label": "secret_4_2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 971,
+                    "y": 603,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "e80c188d-e61f-45b0-a655-35831a14eaef",
+                            "label": "s4_2_png",
+                            "components": [],
+                            "texture": {
+                                "key": "clothing092022",
+                                "frame": "s4.2.png"
+                            },
+                            "x": -200,
+                            "y": -200
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "34ca0e43-bc93-40f3-8c49-85d66a28b625",
+                            "label": "closeSecret4_2",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.secret_4_2.visible=false",
+                            "x": 69,
+                            "y": -31,
+                            "scaleX": 0.24354548154010935,
+                            "scaleY": 0.24354548154010935,
+                            "isFilled": true,
+                            "fillAlpha": 0,
+                            "width": 128,
+                            "height": 128
+                        },
+                        {
+                            "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                            "id": "97b188d3-030a-4f95-82bc-5ee334ab925a",
+                            "unlock": [
+                                "x",
+                                "y",
+                                "scaleX",
+                                "scaleY",
+                                "item"
+                            ],
+                            "label": "buyButton_10",
+                            "item": 456,
+                            "components": [],
+                            "x": -404,
+                            "y": -133,
+                            "scaleX": 1.4201108360878758,
+                            "scaleY": 1.4201108360878758
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "3cb07d17-88a2-49ab-ab28-6e2201aaf7b0",
+            "label": "page3",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "9ec42361-4e50-41c7-af98-2e0c8a6c1515",
+                    "label": "p3_png",
+                    "components": [],
+                    "texture": {
+                        "key": "clothing092022",
+                        "frame": "p3.png"
+                    },
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "dc22f894-6c1a-48cd-a441-7eba1c2d267d",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "item",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_1",
+                    "item": 713,
+                    "components": [],
+                    "x": 556,
+                    "y": 231,
+                    "scaleX": 1.1993652871005305,
+                    "scaleY": 1.1993652871005305
+                },
+                {
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "3199d38b-cb7d-43b9-9a95-7f2bd0da4211",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "item",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_2",
+                    "item": 783,
+                    "components": [],
+                    "x": 826,
+                    "y": 299,
+                    "scaleX": 1.1993652871005305,
+                    "scaleY": 1.1993652871005305
+                },
+                {
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "9ff2bb1a-ab9a-4aa8-8378-86f4117c4790",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "item",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_3",
+                    "item": 784,
+                    "components": [],
+                    "x": 597,
+                    "y": 656,
+                    "scaleX": 1.1993652871005305,
+                    "scaleY": 1.1993652871005305
+                },
+                {
+                    "prefabId": "809374c6-9d8d-45f3-bd77-f4f7c8c710a1",
+                    "id": "8b3cd7bb-c66d-4bfa-bc8d-bb8a53a23039",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "item",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_4",
+                    "item": 381,
+                    "components": [],
+                    "x": 975,
+                    "y": 673,
+                    "scaleX": 1.1993652871005305,
+                    "scaleY": 1.1993652871005305
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "647a8a3a-4d1e-4ac9-9d36-e2abeba085d9",
             "label": "page2",
             "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
-                    "id": "12f6084f-b322-453d-bc00-8724fa084994",
-                    "label": "p2",
+                    "id": "b90e6fa7-0eea-42e6-a9ac-8bf7c58b519d",
+                    "label": "p2_png",
                     "components": [],
                     "texture": {
-                        "key": "aug-22",
-                        "frame": "page/page0002.png"
+                        "key": "clothing092022",
+                        "frame": "p2.png"
                     },
-                    "y": -82,
                     "originX": 0,
                     "originY": 0
                 },
                 {
+                    "type": "Rectangle",
+                    "id": "4dd6bdcc-6328-4ef4-8ccc-a80f502e0bde",
+                    "label": "rectangle_1",
+                    "components": [],
+                    "x": 599,
+                    "y": 452,
+                    "scaleX": 2.0406589362761376,
+                    "scaleY": 3.5256616447022546,
+                    "isFilled": true,
+                    "width": 128,
+                    "height": 128
+                },
+                {
                     "prefabId": "47156044-4e99-49f8-a229-f7d46dbd9624",
-                    "id": "a13e990b-a1b0-4442-ade9-07242526b4c7",
+                    "id": "ded55668-11b4-42c5-96ed-e6ae233b84d0",
                     "unlock": [
                         "tintTopLeft",
                         "tintTopRight",
@@ -2595,17 +2168,13 @@
                         "tintBottomRight",
                         "item",
                         "x",
-                        "y",
-                        "scaleX",
-                        "scaleY"
+                        "y"
                     ],
                     "label": "aqua",
                     "item": 15,
                     "components": [],
-                    "x": 687,
-                    "y": 270,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
+                    "x": -950,
+                    "y": -158,
                     "tintTopLeft": "#47FFFF",
                     "tintTopRight": "#47FFFF",
                     "tintBottomLeft": "#47FFFF",
@@ -2613,7 +2182,7 @@
                 },
                 {
                     "prefabId": "47156044-4e99-49f8-a229-f7d46dbd9624",
-                    "id": "7278b645-fca3-4073-8e3c-e2e8b7bef6e5",
+                    "id": "4862a79e-fb36-4006-9c06-d8d834ea2851",
                     "unlock": [
                         "tintFill",
                         "tintTopLeft",
@@ -2629,10 +2198,10 @@
                     "label": "lime",
                     "item": 13,
                     "components": [],
-                    "x": 653,
-                    "y": 497,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
+                    "x": 642,
+                    "y": 583,
+                    "scaleX": 0.78,
+                    "scaleY": 0.78,
                     "tintTopLeft": "#72FF00",
                     "tintTopRight": "#72FF00",
                     "tintBottomLeft": "#72FF00",
@@ -2641,7 +2210,7 @@
                 },
                 {
                     "prefabId": "47156044-4e99-49f8-a229-f7d46dbd9624",
-                    "id": "302ee07f-d0f5-4848-8f08-145d2739f238",
+                    "id": "741bf2c8-3b82-4e6a-8e59-22fc90ad0150",
                     "unlock": [
                         "tintFill",
                         "tintTopLeft",
@@ -2657,10 +2226,10 @@
                     "label": "purple",
                     "item": 8,
                     "components": [],
-                    "x": 578,
-                    "y": 345,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
+                    "x": 559,
+                    "y": 415,
+                    "scaleX": 0.78,
+                    "scaleY": 0.78,
                     "tintTopLeft": "#650099",
                     "tintTopRight": "#650099",
                     "tintBottomLeft": "#650099",
@@ -2669,7 +2238,7 @@
                 },
                 {
                     "prefabId": "47156044-4e99-49f8-a229-f7d46dbd9624",
-                    "id": "1d89b6b4-3495-40a3-aa87-0f03f4081926",
+                    "id": "9cba8a65-54e5-4542-aa99-fe9fb66218b1",
                     "unlock": [
                         "tintFill",
                         "tintTopLeft",
@@ -2685,10 +2254,10 @@
                     "label": "darkGreen",
                     "item": 11,
                     "components": [],
-                    "x": 654,
-                    "y": 345,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
+                    "x": 643,
+                    "y": 413,
+                    "scaleX": 0.78,
+                    "scaleY": 0.78,
                     "tintTopLeft": "#006500",
                     "tintTopRight": "#006500",
                     "tintBottomLeft": "#006500",
@@ -2697,7 +2266,7 @@
                 },
                 {
                     "prefabId": "47156044-4e99-49f8-a229-f7d46dbd9624",
-                    "id": "ded41b01-a926-468e-bb44-d43e975f076c",
+                    "id": "fdaadf5c-4e67-48fe-bbc3-a104cd25a262",
                     "unlock": [
                         "tintFill",
                         "tintTopLeft",
@@ -2713,10 +2282,10 @@
                     "label": "pink",
                     "item": 3,
                     "components": [],
-                    "x": 617,
-                    "y": 422,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
+                    "x": 602,
+                    "y": 499,
+                    "scaleX": 0.78,
+                    "scaleY": 0.78,
                     "tintTopLeft": "#FF3299",
                     "tintTopRight": "#FF3299",
                     "tintBottomLeft": "#FF3299",
@@ -2725,7 +2294,7 @@
                 },
                 {
                     "prefabId": "47156044-4e99-49f8-a229-f7d46dbd9624",
-                    "id": "614305ed-e594-46a6-9812-b290552334ae",
+                    "id": "b855dce7-7a09-4096-9f57-d7fc59c1b403",
                     "unlock": [
                         "tintFill",
                         "tintTopLeft",
@@ -2741,10 +2310,10 @@
                     "label": "lightblue",
                     "item": 12,
                     "components": [],
-                    "x": 578,
-                    "y": 497,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
+                    "x": 559,
+                    "y": 583,
+                    "scaleX": 0.78,
+                    "scaleY": 0.78,
                     "tintTopLeft": "#0099CC",
                     "tintTopRight": "#0099CC",
                     "tintBottomLeft": "#0099CC",
@@ -2753,7 +2322,7 @@
                 },
                 {
                     "prefabId": "47156044-4e99-49f8-a229-f7d46dbd9624",
-                    "id": "5fa83a99-ee39-406f-8ba4-d6f04cfbe3d2",
+                    "id": "103a0306-7390-45fb-aef7-7bbd41317a5e",
                     "unlock": [
                         "tintFill",
                         "tintTopLeft",
@@ -2769,10 +2338,10 @@
                     "label": "yellow",
                     "item": 7,
                     "components": [],
-                    "x": 503,
-                    "y": 345,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
+                    "x": 475,
+                    "y": 413,
+                    "scaleX": 0.78,
+                    "scaleY": 0.78,
                     "tintTopLeft": "#FFCC00",
                     "tintTopRight": "#FFCC00",
                     "tintBottomLeft": "#FFCC00",
@@ -2781,7 +2350,7 @@
                 },
                 {
                     "prefabId": "47156044-4e99-49f8-a229-f7d46dbd9624",
-                    "id": "e64375b7-a078-4f8d-aab3-d7bfa67e9a4c",
+                    "id": "3c16ee94-ec87-4e58-abac-411cc320dbe9",
                     "unlock": [
                         "tintFill",
                         "tintTopLeft",
@@ -2797,10 +2366,10 @@
                     "label": "peach",
                     "item": 10,
                     "components": [],
-                    "x": 654,
-                    "y": 194,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
+                    "x": 643,
+                    "y": 245,
+                    "scaleX": 0.78,
+                    "scaleY": 0.78,
                     "tintTopLeft": "#FF6565",
                     "tintTopRight": "#FF6565",
                     "tintBottomLeft": "#FF6565",
@@ -2809,7 +2378,7 @@
                 },
                 {
                     "prefabId": "47156044-4e99-49f8-a229-f7d46dbd9624",
-                    "id": "b309ee39-a71c-49d7-88b2-23ea9037e114",
+                    "id": "577468b1-3cb8-40a4-9f99-7aba074c10ec",
                     "unlock": [
                         "tintFill",
                         "tintTopLeft",
@@ -2825,10 +2394,10 @@
                     "label": "brown",
                     "item": 9,
                     "components": [],
-                    "x": 542,
-                    "y": 422,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
+                    "x": 519,
+                    "y": 499,
+                    "scaleX": 0.78,
+                    "scaleY": 0.78,
                     "tintTopLeft": "#996500",
                     "tintTopRight": "#996500",
                     "tintBottomLeft": "#996500",
@@ -2837,7 +2406,7 @@
                 },
                 {
                     "prefabId": "47156044-4e99-49f8-a229-f7d46dbd9624",
-                    "id": "fc8d51f1-4047-4ff9-b8e0-621547ad3a76",
+                    "id": "090d45ba-3bb7-45c2-90ac-b6fa6310218c",
                     "unlock": [
                         "tintFill",
                         "tintTopLeft",
@@ -2853,10 +2422,10 @@
                     "label": "orange",
                     "item": 6,
                     "components": [],
-                    "x": 503,
-                    "y": 497,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
+                    "x": 475,
+                    "y": 583,
+                    "scaleX": 0.78,
+                    "scaleY": 0.78,
                     "tintTopLeft": "#FF6500",
                     "tintTopRight": "#FF6500",
                     "tintBottomLeft": "#FF6500",
@@ -2865,7 +2434,7 @@
                 },
                 {
                     "prefabId": "47156044-4e99-49f8-a229-f7d46dbd9624",
-                    "id": "d86f0cec-2f1c-4ebe-951d-b1d218fb80fa",
+                    "id": "644b1ca9-6b39-469e-a3d3-d081265564aa",
                     "unlock": [
                         "tintFill",
                         "tintTopLeft",
@@ -2881,10 +2450,10 @@
                     "label": "green",
                     "item": 2,
                     "components": [],
-                    "x": 578,
-                    "y": 194,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
+                    "x": 558,
+                    "y": 245,
+                    "scaleX": 0.78,
+                    "scaleY": 0.78,
                     "tintTopLeft": "#009900",
                     "tintTopRight": "#009900",
                     "tintBottomLeft": "#009900",
@@ -2893,7 +2462,7 @@
                 },
                 {
                     "prefabId": "47156044-4e99-49f8-a229-f7d46dbd9624",
-                    "id": "ec68409f-354b-4042-9849-085fb421d63e",
+                    "id": "64310f3c-80db-4498-bfa7-48f2a015a4b1",
                     "unlock": [
                         "tintFill",
                         "tintTopLeft",
@@ -2909,10 +2478,10 @@
                     "label": "red",
                     "item": 5,
                     "components": [],
-                    "x": 617,
-                    "y": 270,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
+                    "x": 602,
+                    "y": 329,
+                    "scaleX": 0.78,
+                    "scaleY": 0.78,
                     "tintTopLeft": "#CC0000",
                     "tintTopRight": "#CC0000",
                     "tintBottomLeft": "#CC0000",
@@ -2921,7 +2490,7 @@
                 },
                 {
                     "prefabId": "47156044-4e99-49f8-a229-f7d46dbd9624",
-                    "id": "8a808955-90a3-463e-ac41-976dfa3731b8",
+                    "id": "fd9ae72b-547d-412d-b808-cebb4860cbd3",
                     "unlock": [
                         "tintFill",
                         "tintTopLeft",
@@ -2937,10 +2506,10 @@
                     "label": "blue",
                     "item": 1,
                     "components": [],
-                    "x": 503,
-                    "y": 194,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
+                    "x": 475,
+                    "y": 245,
+                    "scaleX": 0.78,
+                    "scaleY": 0.78,
                     "tintTopLeft": "#003265",
                     "tintTopRight": "#003265",
                     "tintBottomLeft": "#003265",
@@ -2949,7 +2518,7 @@
                 },
                 {
                     "prefabId": "47156044-4e99-49f8-a229-f7d46dbd9624",
-                    "id": "66321c70-4307-4c55-8c66-b4c93f5b2013",
+                    "id": "15de35ce-2d2f-4a8f-80f6-a3e68b5be282",
                     "unlock": [
                         "tintFill",
                         "tintTopLeft",
@@ -2965,10 +2534,10 @@
                     "label": "black",
                     "item": 4,
                     "components": [],
-                    "x": 541,
-                    "y": 269,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
+                    "x": 519,
+                    "y": 329,
+                    "scaleX": 0.78,
+                    "scaleY": 0.78,
                     "tintTopLeft": "#323232",
                     "tintTopRight": "#323232",
                     "tintBottomLeft": "#323232",
@@ -2976,48 +2545,221 @@
                     "tintFill": false
                 },
                 {
+                    "prefabId": "50d8fd29-2eab-4d31-ad32-1ae1c47e3f1e",
+                    "id": "568aa4d6-848e-4985-b2ef-7df8d51e337e",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "angle",
+                        "scaleX",
+                        "scaleY",
+                        "item"
+                    ],
+                    "label": "tag",
+                    "item": 176,
+                    "components": [],
+                    "x": 794,
+                    "y": 473,
+                    "scaleX": 1.4985333198142567,
+                    "scaleY": 1.4985333198142567,
+                    "angle": 16
+                },
+                {
+                    "prefabId": "50d8fd29-2eab-4d31-ad32-1ae1c47e3f1e",
+                    "id": "ed2f9725-8dd2-4417-9f5e-deb5a1be3ead",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "angle",
+                        "scaleX",
+                        "scaleY",
+                        "item"
+                    ],
+                    "label": "tag_1",
+                    "item": 188,
+                    "components": [],
+                    "x": 838,
+                    "y": 674,
+                    "scaleX": 1.406022420385302,
+                    "scaleY": 1.406022420385302,
+                    "angle": -23
+                },
+                {
+                    "prefabId": "50d8fd29-2eab-4d31-ad32-1ae1c47e3f1e",
+                    "id": "535fee06-a181-48b1-9970-4bcf9b700338",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "angle",
+                        "scaleX",
+                        "scaleY",
+                        "item"
+                    ],
+                    "label": "tag_2",
+                    "item": 177,
+                    "components": [],
+                    "x": 949,
+                    "y": 748,
+                    "scaleX": 1.452140031717185,
+                    "scaleY": 1.452140031717185,
+                    "angle": -44
+                },
+                {
+                    "prefabId": "50d8fd29-2eab-4d31-ad32-1ae1c47e3f1e",
+                    "id": "cc95b3df-6768-4ddb-9ba5-e281d93dc1f6",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "angle",
+                        "scaleX",
+                        "scaleY",
+                        "item"
+                    ],
+                    "label": "tag_3",
+                    "item": 189,
+                    "components": [],
+                    "x": 1053,
+                    "y": 777,
+                    "scaleX": 1.3842181543634866,
+                    "scaleY": 1.3842181543634866,
+                    "angle": -59
+                },
+                {
+                    "prefabId": "714b350d-3862-429b-abc3-cc301ab1aa15",
+                    "id": "e9f27a74-8492-4b8a-941f-20eee75262cd",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "angle",
+                        "scaleX",
+                        "scaleY",
+                        "item"
+                    ],
+                    "label": "tag_4",
+                    "item": 167,
+                    "components": [],
+                    "x": 1248,
+                    "y": 415,
+                    "scaleX": 1.3171066257853319,
+                    "scaleY": 1.3171066257853319,
+                    "angle": 55
+                },
+                {
                     "type": "Rectangle",
-                    "id": "c6d09cee-5891-4ca9-9921-fe1802aba0f2",
-                    "label": "secret_hex",
+                    "id": "ec95af60-8cae-4708-bc42-eafce2b0630a",
+                    "label": "openSecret",
                     "components": [
                         "SimpleButton"
                     ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(240);",
-                    "x": 263,
-                    "y": 565,
-                    "scaleX": 0.5714166201025659,
-                    "scaleY": 0.5682791587991533,
-                    "alpha": 0.00001,
+                    "SimpleButton.callback": "() => this.secret_1.visible=true",
+                    "x": 955,
+                    "y": 393,
+                    "scaleX": 0.6766556121747187,
+                    "scaleY": 0.6766556121747187,
                     "isFilled": true,
-                    "fillColor": "#00ff00",
-                    "width": 135,
-                    "height": 160
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Container",
+                    "id": "2d19fab9-c81b-460e-8132-21cf61a8bcef",
+                    "label": "secret_1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 971,
+                    "y": 603,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "5c81920c-500b-484b-8dcd-41daade8d77b",
+                            "label": "s2_png",
+                            "components": [],
+                            "texture": {
+                                "key": "clothing092022",
+                                "frame": "s2.png"
+                            },
+                            "x": -200,
+                            "y": -200
+                        },
+                        {
+                            "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                            "id": "8274ec02-7a26-4897-94c1-e863946a8d4d",
+                            "unlock": [
+                                "x",
+                                "y",
+                                "scaleX",
+                                "scaleY",
+                                "item"
+                            ],
+                            "label": "buyButton",
+                            "item": 187,
+                            "components": [],
+                            "x": -182,
+                            "y": -194,
+                            "scaleX": 1.5267843727804766,
+                            "scaleY": 1.5267843727804766
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "8b748711-5b14-43d1-a333-863e18af3f88",
+                            "label": "closeSecret",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.secret_1.visible=false",
+                            "x": -335,
+                            "y": -101,
+                            "scaleX": 0.2480241173226403,
+                            "scaleY": 0.2480241173226403,
+                            "isFilled": true,
+                            "fillAlpha": 0,
+                            "width": 128,
+                            "height": 128
+                        }
+                    ]
                 }
             ]
         },
         {
             "type": "Container",
-            "id": "2852ddb0-254f-4575-a4d9-69d95cb26922",
+            "id": "4d6b5a52-5818-4ee0-977e-d5ac0b712b2a",
             "label": "page1",
             "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
-                    "id": "e13def0e-b05e-4bfa-87b3-393ace011903",
+                    "id": "f4bdae25-bf55-4cdf-9987-46f222b57bfb",
                     "label": "p1",
                     "components": [],
                     "texture": {
-                        "key": "aug-22",
-                        "frame": "page/page0001.png"
+                        "key": "clothingcatalog",
+                        "frame": "page/page0001"
                     },
-                    "y": -82,
                     "originX": 0,
                     "originY": 0
                 },
                 {
                     "type": "Image",
-                    "id": "3bbcd8ae-42a2-49c8-83c4-ad1a5e5d1158",
+                    "id": "0b4d8da5-7e4f-465b-8bf8-4b4485d0ec8a",
+                    "label": "p1_png",
+                    "components": [],
+                    "texture": {
+                        "key": "clothing092022",
+                        "frame": "p1.png"
+                    },
+                    "x": 52.17263592119457,
+                    "y": 27.128452413264654,
+                    "scaleX": 0.9358428186142707,
+                    "scaleY": 0.9358428186142707,
+                    "originX": 0.0006189995940105637,
+                    "originY": 0.005338244963006869
+                },
+                {
+                    "type": "Image",
+                    "id": "f654a19b-68e4-48d4-b8aa-b86b55c8c16d",
                     "label": "pageFront",
                     "components": [
                         "Button"
@@ -3036,7 +2778,7 @@
                 },
                 {
                     "type": "Image",
-                    "id": "534744b3-458c-4cac-879f-6860a3c72645",
+                    "id": "2a037fde-ba7a-4915-9a95-a4b7339ade73",
                     "label": "closeRight_1",
                     "components": [
                         "Button"
@@ -3052,24 +2794,6 @@
                     "y": 37,
                     "originX": 0,
                     "originY": 0
-                },
-                {
-                    "type": "Rectangle",
-                    "id": "12a40c4c-d528-4063-8285-55baf8dea8c6",
-                    "label": "secret_hex_1",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(783);",
-                    "x": 646,
-                    "y": 315,
-                    "scaleX": 0.9433455353966516,
-                    "scaleY": 0.5104989480990085,
-                    "alpha": 0.00001,
-                    "isFilled": true,
-                    "fillColor": "#00ff00",
-                    "width": 135,
-                    "height": 160
                 }
             ]
         },
@@ -3079,18 +2803,75 @@
             "label": "buttons",
             "scope": "CLASS",
             "components": [],
-            "x": 189,
+            "x": 190,
             "y": 41,
             "visible": false,
             "list": [
+                {
+                    "type": "Image",
+                    "id": "e96bd1ac-4d0c-4386-a603-47ee34eda922",
+                    "label": "closeRight",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1012,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "c841d72e-5f61-4ade-8f7b-d7ad4b2dab92",
+                    "label": "pageRight",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1012,
+                    "y": 549,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "74940239-aff1-4e28-ad81-55a9d08d3121",
+                    "label": "pageLeft",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "y": 549,
+                    "originX": 0,
+                    "originY": 0
+                },
                 {
                     "type": "Text",
                     "id": "03e2c332-7c90-4eef-b439-0ff416fed521",
                     "label": "coins",
                     "scope": "CLASS",
                     "components": [],
-                    "x": 1134,
-                    "y": 796,
+                    "x": 1130,
+                    "y": 790,
                     "originX": 1,
                     "text": "YOUR COINS:",
                     "fixedWidth": 600,
@@ -3099,66 +2880,6 @@
                     "fontSize": "32px",
                     "stroke": "#000",
                     "strokeThickness": 9
-                },
-                {
-                    "type": "Image",
-                    "id": "97d935ea-f1df-49f2-8de8-b2b1e91be6f2",
-                    "label": "page_left",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "prevpagebtn",
-                    "Button.callback": "() => this.prevPage()",
-                    "Button.activeFrame": false,
-                    "Button.pixelPerfect": true,
-                    "texture": {
-                        "key": "catalogs-master",
-                        "frame": "prevpagebtn"
-                    },
-                    "x": 2,
-                    "y": 548,
-                    "originX": 0,
-                    "originY": 0
-                },
-                {
-                    "type": "Image",
-                    "id": "95e504a4-8a1b-407f-9b60-93956a590e1a",
-                    "label": "page_right_1",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "nextpagebtn",
-                    "Button.callback": "() => this.nextPage()",
-                    "Button.activeFrame": false,
-                    "Button.pixelPerfect": true,
-                    "texture": {
-                        "key": "catalogs-master",
-                        "frame": "nextpagebtn"
-                    },
-                    "x": 1031,
-                    "y": 546,
-                    "originX": 0,
-                    "originY": 0
-                },
-                {
-                    "type": "Image",
-                    "id": "17edf3ea-5f58-48b8-acfc-36eea4bb0335",
-                    "label": "close_right_1",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "catclosebtn",
-                    "Button.callback": "() => this.close()",
-                    "Button.activeFrame": false,
-                    "Button.pixelPerfect": true,
-                    "texture": {
-                        "key": "catalogs-master",
-                        "frame": "catclosebtn"
-                    },
-                    "x": 1030,
-                    "y": 2,
-                    "originX": 0,
-                    "originY": 0
                 }
             ]
         }
@@ -3175,21 +2896,19 @@
             "id": "f5986f3f-53b8-4425-98a1-7981e4c2dc88",
             "label": "pages",
             "objectIds": [
-                "2852ddb0-254f-4575-a4d9-69d95cb26922",
-                "2288f566-fba0-4f65-b183-1ceed2620d9f",
-                "2e8c1d02-cd07-4b62-8dbd-bc4808c1d300",
-                "55d7456e-5f7e-4fec-9b82-d1cf10ec4153",
-                "324af91e-1cbb-4415-a8c4-52ff9515d2db",
-                "d38e37b5-66cf-4b79-b8c7-62afe935bd42",
-                "2d9d0132-f9f5-49cc-83c4-f2e4f8dcb49b",
-                "7d45ea7e-f700-4b14-b580-685bbf2ac8cf",
-                "1ab4c26e-2540-4bd1-ac2d-55c6506e5379",
-                "f9e7b21e-5b20-4773-8cd0-82d65b6e761e",
-                "6939f768-4d4f-479b-85ec-be0fcb40b210",
-                "95fb5823-44a6-472d-b79c-d53899a61b4d",
-                "1fd26808-e883-4ca0-8a0d-2812d0ca6430",
-                "cee96cc0-8590-4a2c-ab4b-b12574b36230",
-                "fea4ba6a-f231-498f-934f-0b331e9085c4"
+                "4d6b5a52-5818-4ee0-977e-d5ac0b712b2a",
+                "647a8a3a-4d1e-4ac9-9d36-e2abeba085d9",
+                "3cb07d17-88a2-49ab-ab28-6e2201aaf7b0",
+                "949b9cb9-749a-4dd8-af3d-c6bf8238d4ac",
+                "ed7d98e2-2102-4467-a0ea-fb8f18a5ecf2",
+                "7776572e-39a3-4406-a915-c957a8f958e1",
+                "b414b128-2716-4eb1-bd69-8e92a6c65517",
+                "216e2f91-26bd-416e-a411-9003ab6e2e89",
+                "e1e4623b-dd81-4738-9d6f-80ca94c95867",
+                "62510f86-e391-42d1-a705-64a60ce4ab0c",
+                "063266fe-1e93-41d7-8749-b429631774bc",
+                "a0a3d372-f0bb-455c-b178-24f3fa2faeab",
+                "675179ab-dd98-4484-a396-c358b892188f"
             ]
         }
     ]
