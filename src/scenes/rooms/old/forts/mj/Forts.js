@@ -18,7 +18,7 @@ export default class Forts extends RoomScene {
         this.am_pm;
         /** @type {Phaser.GameObjects.Text} */
         this.clockTime;
-        /** @type {Array<any>} */
+        /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
 
@@ -96,88 +96,113 @@ export default class Forts extends RoomScene {
         this.add.image(672, 680, "forts-mj", "Stages60001");
 
         // stages50002
-        this.add.image(417, 547, "forts-mj", "Stages50002");
+        const stages50002 = this.add.image(417, 691.6499308424081, "forts-mj", "Stages50002");
+        stages50002.setOrigin(0.5, 1.0005187918422427);
 
         // stages40001
-        this.add.image(657, 485, "forts-mj", "Stages40001");
+        const stages40001 = this.add.image(657, 613.2907124733263, "forts-mj", "Stages40001");
+        stages40001.setOrigin(0.5, 0.9234016913311098);
 
         // stages20001
-        this.add.image(890, 600, "forts-mj", "Stages20001");
+        const stages20001 = this.add.image(890, 674.9079999005328, "forts-mj", "Stages20001");
+        stages20001.setOrigin(0.5, 0.9771210184747311);
 
         // stages90001
-        this.add.image(1059, 535, "forts-mj", "Stages90001");
+        const stages90001 = this.add.image(1059, 619.3791263247381, "forts-mj", "Stages90001");
+        stages90001.setOrigin(0.5, 0.9488251400252026);
 
         // stages30002
-        this.add.image(659, 652, "forts-mj", "Stages30002");
+        const stages30002 = this.add.image(659, 782.0127065763311, "forts-mj", "Stages30002");
+        stages30002.setOrigin(0.5, 0.9962318147310893);
 
         // stages70001
-        this.add.image(806, 459, "forts-mj", "Stages70001");
+        const stages70001 = this.add.image(806, 547.6841837902859, "forts-mj", "Stages70001");
+        stages70001.setOrigin(0.5, 0.9434209189514298);
 
         // stages
-        this.add.image(1268, 441, "forts-mj", "Stages90001");
+        const stages = this.add.image(1268, 519.3520458729711, "forts-mj", "Stages90001");
+        stages.setOrigin(0.5, 0.9167662014519739);
 
         // stages80001
-        this.add.image(1050, 378, "forts-mj", "Stages80001");
+        const stages80001 = this.add.image(1050, 460.65710333851894, "forts-mj", "Stages80001");
+        stages80001.setOrigin(0.5, 0.8862481464416773);
 
         // stages1
-        this.add.image(866, 459, "forts-mj", "Stages1");
+        const stages1 = this.add.image(866, 281.10279173024287, "forts-mj", "Stages1");
+        stages1.setOrigin(0.5, 0.00857124787359909);
 
         // speakers30001
-        this.add.image(482, 627, "forts-mj", "Speakers30001");
+        const speakers30001 = this.add.image(482, 680.6018391317763, "forts-mj", "Speakers30001");
+        speakers30001.setOrigin(0.5, 0.900013724864002);
 
         // speakers10001
-        this.add.image(426, 693, "forts-mj", "Speakers10001");
+        const speakers10001 = this.add.image(426, 743.954834730207, "forts-mj", "Speakers10001");
+        speakers10001.setOrigin(0.5, 0.8563275155958534);
 
         // speakers20001
-        this.add.image(939, 728, "forts-mj", "Speakers20001");
+        const speakers20001 = this.add.image(939, 753.1697671368012, "forts-mj", "Speakers20001");
+        speakers20001.setOrigin(0.5, 0.8701436343647231);
 
         // sign2
-        this.add.image(1302, 706, "forts-mj", "Sign2");
+        const sign2 = this.add.image(1302, 686.423511299569, "forts-mj", "Sign2");
+        sign2.setOrigin(0.5, 0.36682662890581436);
 
         // sign10001
-        this.add.image(1228, 741, "forts-mj", "Sign10001");
+        const sign10001 = this.add.image(1228, 824.8992237893372, "forts-mj", "Sign10001");
+        sign10001.setOrigin(0.5, 0.892052447613725);
 
         // drums50001
-        this.add.image(431, 792, "forts-mj", "Drums50001");
+        const drums50001 = this.add.image(431, 829.0554905069572, "forts-mj", "Drums50001");
+        drums50001.setOrigin(0.5, 0.8194438836806655);
 
         // drums30001
-        this.add.image(453, 816, "forts-mj", "Drums30001");
+        const drums30001 = this.add.image(453, 841.8689273350457, "forts-mj", "Drums30001");
+        drums30001.setOrigin(0.5, 0.8316529145518675);
 
         // drums40001
-        this.add.image(586, 785, "forts-mj", "Drums40001");
+        const drums40001 = this.add.image(586, 812.2672477315346, "forts-mj", "Drums40001");
+        drums40001.setOrigin(0.5, 0.7524745160327273);
 
         // drums20001
-        this.add.image(558, 824, "forts-mj", "Drums20001");
+        const drums20001 = this.add.image(558, 848.4706069385567, "forts-mj", "Drums20001");
+        drums20001.setOrigin(0.5, 0.8652329393814429);
 
         // drums10001
-        this.add.image(510, 799, "forts-mj", "Drums10001");
+        const drums10001 = this.add.image(510, 845.84373328238, "forts-mj", "Drums10001");
+        drums10001.setOrigin(0.5, 0.8659666662685934);
 
         // drums110001
-        this.add.image(1303, 531, "forts-mj", "Drums110001");
+        const drums110001 = this.add.image(1303, 572.3663067898041, "forts-mj", "Drums110001");
+        drums110001.setOrigin(0.5, 0.8566060930155524);
 
         // drums70001
-        this.add.image(1326, 558, "forts-mj", "Drums70001");
+        const drums70001 = this.add.image(1326, 585.3313098432634, "forts-mj", "Drums70001");
+        drums70001.setOrigin(0.5, 0.8504014082469666);
 
         // drums80001
-        this.add.image(1458, 525, "forts-mj", "Drums80001");
+        const drums80001 = this.add.image(1458, 560.4568343912606, "forts-mj", "Drums80001");
+        drums80001.setOrigin(0.5, 0.8283040221413018);
 
         // drums60001
-        this.add.image(1433, 560, "forts-mj", "Drums60001");
+        const drums60001 = this.add.image(1433, 578.4671012454482, "forts-mj", "Drums60001");
+        drums60001.setOrigin(0.5, 0.775628376797735);
 
         // drums90001
-        this.add.image(1384, 539, "forts-mj", "Drums90001");
+        const drums90001 = this.add.image(1384, 586.2757791883475, "forts-mj", "Drums90001");
+        drums90001.setOrigin(0.5, 0.8693420249089652);
 
         // booth2
         this.add.image(195, 628, "forts-mj", "Booth2");
 
         // booth1
-        this.add.image(179, 643, "forts-mj", "Booth1");
+        const booth1 = this.add.image(179, 779.4348044898848, "forts-mj", "Booth1");
+        booth1.setOrigin(0.5, 0.8677487991641099);
 
         // speakers40001
-        this.add.image(1011, 621, "forts-mj", "Speakers40001");
+        const speakers40001 = this.add.image(1011, 621, "forts-mj", "Speakers40001");
 
         // lists
-        const sort = [];
+        const sort = [stages50002, stages80001, stages, stages70001, stages30002, stages90001, stages20001, stages40001, speakers30001, speakers20001, speakers10001, sign2, sign10001, drums50001, drums30001, drums40001, drums20001, drums10001, drums70001, drums110001, drums80001, drums60001, drums90001, booth1, speakers40001];
 
         // tower (components)
         const towerAnimation = new Animation(tower);

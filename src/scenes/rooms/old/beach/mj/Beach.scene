@@ -101,9 +101,10 @@
             "y": 293
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "68305fa3-d7d7-4b71-93a8-f1201968ebb9",
             "label": "cdplayer",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "beach-mj",
@@ -137,9 +138,10 @@
             "y": 751
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "521a6a72-2ce6-4c61-9c74-f017613b2863",
             "label": "fire0001",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "beach-mj",
@@ -188,6 +190,19 @@
             },
             "x": 457,
             "y": 311
+        },
+        {
+            "type": "Sprite",
+            "id": "9bd14a17-3b11-4f10-926c-c6e9f10088a7",
+            "label": "glow0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "beach-mj",
+                "frame": "glow0001"
+            },
+            "x": 422,
+            "y": 60
         }
     ],
     "plainObjects": [],

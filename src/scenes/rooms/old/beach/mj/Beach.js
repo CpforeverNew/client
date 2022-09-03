@@ -10,6 +10,12 @@ export default class Beach extends RoomScene {
     constructor() {
         super("Beach");
 
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.cdplayer;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.fire0001;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.glow0001;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
@@ -58,7 +64,7 @@ export default class Beach extends RoomScene {
         const left_balloons = this.add.image(192, 293, "beach-mj", "left_balloons");
 
         // cdplayer
-        this.add.image(375, 417, "beach-mj", "cdplayer0001");
+        const cdplayer = this.add.sprite(375, 417, "beach-mj", "cdplayer0001");
 
         // note1
         this.add.image(285, 414, "beach-mj", "note1");
@@ -67,7 +73,7 @@ export default class Beach extends RoomScene {
         this.add.image(928, 751, "beach-mj", "fire_pit");
 
         // fire0001
-        this.add.image(929, 674, "beach-mj", "fire0001");
+        const fire0001 = this.add.sprite(929, 674, "beach-mj", "fire0001");
 
         // bench
         const bench = this.add.image(753, 691, "beach-mj", "bench");
@@ -78,6 +84,9 @@ export default class Beach extends RoomScene {
         // door
         const door = this.add.image(457, 311, "beach-mj", "door");
 
+        // glow0001
+        const glow0001 = this.add.sprite(422, 60, "beach-mj", "glow0001");
+
         // lists
         const sort = [bench, right_balloons, left_balloons];
 
@@ -87,6 +96,9 @@ export default class Beach extends RoomScene {
         doorButton.activeFrame = false;
         new MoveTo(door);
 
+        this.cdplayer = cdplayer;
+        this.fire0001 = fire0001;
+        this.glow0001 = glow0001;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -96,6 +108,9 @@ export default class Beach extends RoomScene {
     /* START-USER-CODE */
     create() {
         super.create();
+        this.cdplayer.play("cdplayer");
+        this.fire0001.play("fire");
+        this.glow0001.play("glow");
     }
 
 
