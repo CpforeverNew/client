@@ -65,7 +65,7 @@ if (localStorage.clientMode == "legacy") {
 		},
 		230: {
 			key: 'Mtn',
-			scene: require(`@rooms/old/mtn/Mtn`).default,
+			scene: require(`@rooms/old/mtn/mj/Mtn`).default,
 			x: 760,
 			y: 440
 		},
