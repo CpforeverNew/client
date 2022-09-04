@@ -55,7 +55,7 @@ export default class Beacon extends RoomScene {
         light.setOrigin(0.4636877094550476, 0.8057764213716073);
 
         // crate
-        this.add.image(331, 445, "beacon", "crate");
+        const crate = this.add.image(331, 445, "beacon", "crate");
 
         // telescope
         this.add.image(248, 298, "ffc-beacon", "tele");
@@ -72,6 +72,11 @@ export default class Beacon extends RoomScene {
         jetpackMoveTo.y = 575;
         const jetpackShowHint = new ShowHint(jetpack);
         jetpackShowHint.text = "Jetpack Adventure";
+
+        // crate (components)
+        const crateSimpleButton = new SimpleButton(crate);
+        crateSimpleButton.callback = () => this.interface.prompt.showItem(35601);
+
 
         this.jetpack = jetpack;
         this.sort = sort;

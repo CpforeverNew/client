@@ -170,6 +170,16 @@ export default class Cove extends RoomScene {
         const fire = this.add.sprite(679.4850121308865, 452.4977777896873, "cove-mj", "fire10001");
         fire.setOrigin(0.5270011206534677, 1.5992484496094643);
 
+        // maracas
+        const maracas = this.add.image(259, 340, "maracas");
+        maracas.scaleX = 0.13976192905485785;
+        maracas.scaleY = 0.13976192905485785;
+        maracas.alpha = 0.5;
+        maracas.alphaTopLeft = 0.5;
+        maracas.alphaTopRight = 0.5;
+        maracas.alphaBottomLeft = 0.5;
+        maracas.alphaBottomRight = 0.5;
+        
         // lists
         const sort = [water_water_15, water_water_1, water_water_2, water_water_3, water_water_4, water_water_5, water_water_6, water_water_7, water_water_8, water_water_9, water_water_10, water_water_11, water_water_12, water_water_13, water_water_14, fire3, fire, fire1, boards, chair_arm, left_col, right_col, fg];
 
@@ -195,6 +205,10 @@ export default class Cove extends RoomScene {
         const fireAnimation = new Animation(fire);
         fireAnimation.key = "fire1";
         fireAnimation.end = 11;
+
+        // maracas (components)
+        const maracasSimpleButton = new SimpleButton(maracas);
+        maracasSimpleButton.callback = () => this.interface.prompt.showItem(35420);
 
         this.sort = sort;
 

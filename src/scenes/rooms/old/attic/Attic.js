@@ -125,6 +125,10 @@ export default class Attic extends RoomScene {
         const table4ShowHint = new ShowHint(table4);
         table4ShowHint.text = "Play Find Four";
 
+        // horse (components)
+        const horseSimpleButton = new SimpleButton(horse);
+        horseSimpleButton.callback = () => this.interface.prompt.showItem(18);
+
         this.sort = sort;
 
         this.events.emit("scene-awake");
