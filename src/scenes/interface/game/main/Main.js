@@ -28,6 +28,7 @@ import Snitch from '../snitch/Snitch'
 import Elevator from '../elevator/Elevator'
 import PufflesMenu from '../floating/puffles/PufflesMenu'
 import Daily from '../daily/Daily'
+import MusicJam from '../mj/MusicJam'
 
 /* START OF COMPILED CODE */
 
@@ -154,6 +155,10 @@ export default class Main extends BaseScene {
         this.news_button_1;
         /** @type {Daily} */
         this.daily;
+        /** @type {Phaser.GameObjects.Image} */
+        this.news_button_2;
+        /** @type {MusicJam} */
+        this.musicJam;
         /** @type {Array<PlayerCard|Buddy|Moderator>} */
         this.hideOnSleep;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|ChatLog>} */
@@ -411,6 +416,16 @@ export default class Main extends BaseScene {
         this.add.existing(daily);
         daily.visible = false;
 
+        // news_button_2
+        const news_button_2 = this.add.image(1335, 60, "uimusicjam");
+        news_button_2.scaleX = 0.1;
+        news_button_2.scaleY = 0.1;
+
+        // musicJam
+        const musicJam = new MusicJam(this, 764, 442);
+        this.add.existing(musicJam);
+        musicJam.visible = false;
+
         // lists
         const hideOnSleep = [playerCard, buddy, moderator];
         const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, puffle_icon, puffle_button_disabled, chat_box, map_button, news_button, mod_m, chatLog, badge_member, emote_icon];
@@ -514,7 +529,7 @@ export default class Main extends BaseScene {
         // news_button (components)
         const news_buttonButton = new Button(news_button);
         news_buttonButton.spriteName = "news-button";
-        news_buttonButton.callback = () => window.open('https://www.cpforever.net/news', '_blank').focus();;
+        news_buttonButton.callback = () => window.open('https://discord.gg/cpf', '_blank').focus();;
         news_buttonButton.activeFrame = false;
 
         // mod_button (components)
@@ -526,6 +541,10 @@ export default class Main extends BaseScene {
         // news_button_1 (components)
         const news_button_1SimpleButton = new SimpleButton(news_button_1);
         news_button_1SimpleButton.callback = () => this.daily.visible = true;
+
+        // news_button_2 (components)
+        const news_button_2SimpleButton = new SimpleButton(news_button_2);
+        news_button_2SimpleButton.callback = () => this.musicJam.visible = true;
 
         this.pinContainer = pinContainer;
         this.dock = dock;
@@ -586,6 +605,8 @@ export default class Main extends BaseScene {
         this.elevator = elevator;
         this.news_button_1 = news_button_1;
         this.daily = daily;
+        this.news_button_2 = news_button_2;
+        this.musicJam = musicJam;
         this.hideOnSleep = hideOnSleep;
         this.interfaceList = interfaceList;
 

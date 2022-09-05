@@ -943,6 +943,39 @@
             "y": 0,
             "visible": false,
             "nestedPrefabs": []
+        },
+        {
+            "type": "Image",
+            "id": "dfe5ab3f-3afa-4062-a03c-6c9d3357b342",
+            "label": "news_button_2",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.musicJam.visible = true",
+            "texture": {
+                "key": "uimusicjam"
+            },
+            "x": 1335,
+            "y": 60,
+            "scaleX": 0.1,
+            "scaleY": 0.1
+        },
+        {
+            "prefabId": "1a60ae6c-5d97-47c8-8201-8702b20e18af",
+            "id": "13a872f4-356e-419c-9b95-a26280add8e2",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "musicJam",
+            "scope": "CLASS",
+            "components": [],
+            "x": 764,
+            "y": 442,
+            "visible": false,
+            "nestedPrefabs": []
         }
     ],
     "plainObjects": [],
