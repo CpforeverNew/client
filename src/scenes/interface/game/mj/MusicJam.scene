@@ -189,7 +189,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.interface.prompt.showItem(123)",
+                    "Button.callback": "() => this.interface.prompt.showItem(35607)",
                     "texture": {
                         "key": "mj-ui",
                         "frame": "button"
@@ -207,7 +207,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.interface.prompt.showItem(123)",
+                    "Button.callback": "() => this.interface.prompt.showItem(19)",
                     "texture": {
                         "key": "mj-ui",
                         "frame": "button"
@@ -225,7 +225,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.interface.prompt.showItem(123)",
+                    "Button.callback": "() => this.interface.prompt.showItem(35606)",
                     "texture": {
                         "key": "mj-ui",
                         "frame": "button"
@@ -243,7 +243,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.interface.prompt.showItem(123)",
+                    "Button.callback": "() => this.interface.prompt.showItem(35600)",
                     "texture": {
                         "key": "mj-ui",
                         "frame": "button"
@@ -261,7 +261,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.interface.prompt.showItem(123)",
+                    "Button.callback": "() => this.interface.prompt.showItem(35602)",
                     "texture": {
                         "key": "mj-ui",
                         "frame": "button"
@@ -279,7 +279,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.interface.prompt.showItem(123)",
+                    "Button.callback": "() => this.interface.prompt.showItem(35603)",
                     "texture": {
                         "key": "mj-ui",
                         "frame": "button"
@@ -297,7 +297,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.interface.prompt.showItem(123)",
+                    "Button.callback": "() => this.interface.prompt.showItem(35604)",
                     "texture": {
                         "key": "mj-ui",
                         "frame": "button"
@@ -315,7 +315,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "button",
-                    "Button.callback": "() => this.interface.prompt.showItem(123)",
+                    "Button.callback": "() => this.interface.prompt.showItem(35605)",
                     "texture": {
                         "key": "mj-ui",
                         "frame": "button"

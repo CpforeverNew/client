@@ -150,42 +150,42 @@ export default class MusicJam extends BaseContainer {
         // button_1 (components)
         const button_1Button = new Button(button_1);
         button_1Button.spriteName = "button";
-        button_1Button.callback = () => this.interface.prompt.showItem(123);
+        button_1Button.callback = () => this.interface.prompt.showItem(35607);
 
         // button_2 (components)
         const button_2Button = new Button(button_2);
         button_2Button.spriteName = "button";
-        button_2Button.callback = () => this.interface.prompt.showItem(123);
+        button_2Button.callback = () => this.interface.prompt.showItem(19);
 
         // button_3 (components)
         const button_3Button = new Button(button_3);
         button_3Button.spriteName = "button";
-        button_3Button.callback = () => this.interface.prompt.showItem(123);
+        button_3Button.callback = () => this.interface.prompt.showItem(35606);
 
         // button_4 (components)
         const button_4Button = new Button(button_4);
         button_4Button.spriteName = "button";
-        button_4Button.callback = () => this.interface.prompt.showItem(123);
+        button_4Button.callback = () => this.interface.prompt.showItem(35600);
 
         // button_5 (components)
         const button_5Button = new Button(button_5);
         button_5Button.spriteName = "button";
-        button_5Button.callback = () => this.interface.prompt.showItem(123);
+        button_5Button.callback = () => this.interface.prompt.showItem(35602);
 
         // button_6 (components)
         const button_6Button = new Button(button_6);
         button_6Button.spriteName = "button";
-        button_6Button.callback = () => this.interface.prompt.showItem(123);
+        button_6Button.callback = () => this.interface.prompt.showItem(35603);
 
         // button_7 (components)
         const button_7Button = new Button(button_7);
         button_7Button.spriteName = "button";
-        button_7Button.callback = () => this.interface.prompt.showItem(123);
+        button_7Button.callback = () => this.interface.prompt.showItem(35604);
 
         // button_8 (components)
         const button_8Button = new Button(button_8);
         button_8Button.spriteName = "button";
-        button_8Button.callback = () => this.interface.prompt.showItem(123);
+        button_8Button.callback = () => this.interface.prompt.showItem(35605);
 
         this.eight = eight;
         this.seven = seven;
