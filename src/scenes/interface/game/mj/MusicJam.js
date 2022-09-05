@@ -218,7 +218,7 @@ export default class MusicJam extends BaseContainer {
         const date = new Date();
         const day = date.getDate();
 
-        switch (12) {
+        switch (day) {
 
             case 5:
                 this.one.setFrame("10002")
