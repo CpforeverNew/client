@@ -10,9 +10,7 @@ export default class Town extends RoomScene {
     constructor() {
         super("Town");
 
-        /** @type {Phaser.GameObjects.Ellipse} */
-        this.free_item;
-        /** @type {Phaser.GameObjects.Image[]} */
+        /** @type {Array<any>} */
         this.sort;
 
 
@@ -33,64 +31,81 @@ export default class Town extends RoomScene {
     /** @returns {void} */
     _preload() {
 
-        this.load.pack("town-mj-2022-pack", "assets/media/rooms/old/town/mj/town-mj-2022-pack.json");
+        this.load.pack("town-pack", "assets/media/rooms/old/town/mj/town-pack.json");
     }
 
     /** @returns {void} */
     _create() {
 
-        // its_a_sky_lol_png
-        this.add.image(761, 394, "town-mj-2022", "its_a_sky_lol.png");
+        // sky1
+        this.add.image(760, 405, "town1", "sky1");
 
-        // bg_png
-        this.add.image(773, 503, "town-mj-2022", "bg.png");
+        // grid2
+        this.add.image(768, 642, "town1", "grid2");
 
-        // right_png
-        this.add.image(1327, 515, "town-mj-2022", "right.png");
+        // right
+        this.add.image(1369, 424, "town3", "right");
 
-        // box2_png
-        this.add.image(1289, 581, "town-mj-2022", "box2.png");
+        // grid1
+        this.add.image(800, 481, "town1", "grid1");
 
-        // box1_png
-        this.add.image(1235, 610, "town-mj-2022", "box1.png");
+        // bottom1
+        this.add.image(831, 763, "town1", "bottom1");
 
-        // boombox_png
-        this.add.image(1122, 615, "town-mj-2022", "boombox.png");
+        // lights10001
+        this.add.image(887, 111, "town1", "lights10001");
 
-        // left_png
-        this.add.image(134, 444, "town-mj-2022", "left.png");
+        // left
+        this.add.image(175, 395, "town3", "left");
 
-        // fg_png
-        this.add.image(796, 690, "town-mj-2022", "fg.png");
+        // nightclub
+        this.add.image(829, 187, "town3", "nightclub");
 
-        // chair_png
-        const chair_png = this.add.image(311, 567, "town-mj-2022", "chair.png");
+        // coffe
+        this.add.image(428, 310, "town3", "coffe");
 
-        // table1_png
-        const table1_png = this.add.image(373, 580, "town-mj-2022", "table1.png");
+        // cdoor
+        const cdoor = this.add.image(386, 481, "town1", "cdoor");
 
-        // chair_png_1
-        const chair_png_1 = this.add.image(328, 681, "town-mj-2022", "chair.png");
+        // objects1
+        this.add.image(1110, 267, "town1", "objects1");
 
-        // table2_png
-        const table2_png = this.add.image(395, 710, "town-mj-2022", "table2.png");
+        // cloathing
+        this.add.image(1275, 343, "town3", "cloathing");
 
-        // free_item
-        const free_item = this.add.ellipse(1121, 612, 128, 128);
-        free_item.scaleX = 0.5598797556135802;
-        free_item.scaleY = 0.7623470865408281;
-        free_item.angle = 125;
-        free_item.alpha = 0.0001;
-        free_item.isFilled = true;
-        free_item.fillAlpha = 0;
+        // snow_right
+        this.add.image(1358, 273, "town3", "snow_right");
 
-        // door_png
-        this.add.image(716, 355, "town-mj-2022", "door.png");
+        // objects
+        this.add.image(1099, 212, "town1", "objects1");
+
+        // snow
+        this.add.image(1094, 511, "town3", "snow");
+
+        // speaker10001
+        this.add.image(941, 395, "town1", "speaker10001");
+
+        // bd1
+        this.add.image(843, 216, "town1", "bd1");
+
+        // lights
+        const lights = this.add.sprite(886, 61, "town1", "lights10001");
 
         // lists
-        const sort = [table2_png, chair_png_1, chair_png, table1_png];
+        const sort = [];
 
-        this.free_item = free_item;
+        // cdoor (components)
+        const cdoorButton = new Button(cdoor);
+        cdoorButton.spriteName = "cdoor";
+        cdoorButton.activeFrame = false;
+        cdoorButton.pixelPerfect = true;
+        new MoveTo(cdoor);
+
+        // lights (components)
+        const lightsAnimation = new Animation(lights);
+        lightsAnimation.key = "lights";
+        lightsAnimation.end = 69;
+
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -100,14 +115,6 @@ export default class Town extends RoomScene {
     /* START-USER-CODE */
         create() {
             super.create();
-            this.roomZones = {
-                'free_item': { 
-                    key: this.free_item,
-                    callback: () => this.interface.prompt.showItem(5016)
-                }
-            }
-
-            super.addZones()
         }
 
 
