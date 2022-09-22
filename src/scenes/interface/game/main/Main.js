@@ -156,6 +156,8 @@ export default class Main extends BaseScene {
         this.daily;
         /** @type {MusicJam} */
         this.musicJam;
+        /** @type {Phaser.GameObjects.Text} */
+        this.version;
         /** @type {Array<PlayerCard|Buddy|Moderator>} */
         this.hideOnSleep;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|ChatLog>} */
@@ -418,6 +420,16 @@ export default class Main extends BaseScene {
         this.add.existing(musicJam);
         musicJam.visible = false;
 
+        // version
+        const version = this.add.text(1315, 939, "", {});
+        version.alpha = 0.5;
+        version.alphaTopLeft = 0.5;
+        version.alphaTopRight = 0.5;
+        version.alphaBottomLeft = 0.5;
+        version.alphaBottomRight = 0.5;
+        version.text = "v1.1.1-beta";
+        version.setStyle({ "align": "right", "color": "#000000ff", "fixedWidth":200,"fontFamily": "Burbank Small", "fontSize": "18px", "fontStyle": "bold", "stroke": "#000000ff", "strokeThickness":1,"shadow.stroke":true,"shadow.fill":true});
+
         // lists
         const hideOnSleep = [playerCard, buddy, moderator];
         const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, puffle_icon, puffle_button_disabled, chat_box, map_button, news_button, mod_m, chatLog, badge_member, emote_icon];
@@ -594,6 +606,7 @@ export default class Main extends BaseScene {
         this.news_button_1 = news_button_1;
         this.daily = daily;
         this.musicJam = musicJam;
+        this.version = version;
         this.hideOnSleep = hideOnSleep;
         this.interfaceList = interfaceList;
 
@@ -606,6 +619,9 @@ export default class Main extends BaseScene {
     create() {
 
         this._create()
+
+        // Version
+        this.version.text = "v" + VERSION;
 
         // map
         const map = new Map(this, 760, 460)
