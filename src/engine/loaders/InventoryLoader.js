@@ -13,7 +13,7 @@ export default class InventoryLoader extends BaseLoader {
         this.page
         this.validSlots = ['large-box', 'large-box-hover']
 
-        this.baseURL = '/assets/media/clothing/icon/'
+        this.baseURL = 'https://cdn.cpforever.org/assets/media/clothing/icon/'
         this.keyPrefix = 'clothing/icon/'
 
         this.attachErrorListener()

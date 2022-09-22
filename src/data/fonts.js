@@ -9,7 +9,7 @@ const fonts = {
             'CCFaceFront:i7'
         ],
         urls: [
-            'assets/styles/fonts.css'
+            'https://cdn.cpforever.org/assets/styles/fonts.css'
         ]
     }
 }

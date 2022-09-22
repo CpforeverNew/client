@@ -8,7 +8,7 @@ export default class RuffleManager {
 
 		window.RufflePlayer = window.RufflePlayer || {};
 		window.RufflePlayer.config = {
-			"publicPath": "assets/scripts/lib/ruffle"
+			"publicPath": "https://cdn.cpforever.org/assets/scripts/lib/ruffle"
 		}
 
 		if (localStorage.noRuffle === 'true') return
@@ -81,7 +81,7 @@ export default class RuffleManager {
 		window.getCurrentPostcards = getCurrentPostcards.bind(this)
 
 		this.swfInstance = this.rufflePlayer.load({
-			url: "assets/media/games/swf/sse.swf",
+			url: "https://cdn.cpforever.org/assets/media/games/swf/sse.swf",
 			allowScriptAccess: true,
 			quality: "low",
 			logLevel: (localStorage.getItem('debugMode') === 'true') ? "Trace" : "Error",
@@ -113,7 +113,7 @@ export default class RuffleManager {
 	onSSEInit() {
 		var ruffleplayer = document.getElementsByTagName("ruffle-player")[0]
 
-		ruffleplayer.setMediaPath("/assets/media/games/swf/", "/assets/media/swf/")
+		ruffleplayer.setMediaPath("https://cdn.cpforever.org/assets/media/games/swf/", "https://cdn.cpforever.org/assets/media/swf/")
 
 		console.log("sse + ruffle init")
 

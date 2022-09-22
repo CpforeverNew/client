@@ -3,6 +3,9 @@
     "sceneType": "SCENE",
     "settings": {
         "compilerInsertSpaces": true,
+        "snapEnabled": true,
+        "snapWidth": 128,
+        "snapHeight": 128,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
         "superClassName": "RoomScene",
@@ -125,6 +128,22 @@
             "y": 681,
             "originX": 0.4794520547945205,
             "originY": 0.9397590361445783
+        },
+        {
+            "type": "Ellipse",
+            "id": "16240196-0112-420c-b43d-ff01489b5b91",
+            "label": "free_item",
+            "scope": "CLASS",
+            "components": [],
+            "x": 896,
+            "y": 512,
+            "scaleX": 1.002455848298564,
+            "scaleY": 1.6468006679738743,
+            "angle": 84,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],

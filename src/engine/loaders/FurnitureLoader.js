@@ -8,7 +8,7 @@ export default class FurnitureLoader extends BaseLoader {
     constructor(scene) {
         super(scene)
 
-        this.baseURL = '/assets/media/furniture/sprites/'
+        this.baseURL = 'https://cdn.cpforever.org/assets/media/furniture/sprites/'
         this.keyPrefix = 'furniture/sprites/'
     }
 

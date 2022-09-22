@@ -12,7 +12,7 @@ export default class ClothingLoader extends BaseLoader {
 
         this.equipped = this.penguin.items.equipped
 
-        this.baseURL = '/assets/media/clothing/sprites/'
+        this.baseURL = 'https://cdn.cpforever.org/assets/media/clothing/sprites/'
         this.keyPrefix = 'clothing/sprites/'
     }
 

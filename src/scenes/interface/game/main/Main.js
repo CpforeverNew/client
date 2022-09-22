@@ -155,8 +155,6 @@ export default class Main extends BaseScene {
         this.news_button_1;
         /** @type {Daily} */
         this.daily;
-        /** @type {Phaser.GameObjects.Image} */
-        this.news_button_2;
         /** @type {MusicJam} */
         this.musicJam;
         /** @type {Array<PlayerCard|Buddy|Moderator>} */
@@ -416,11 +414,6 @@ export default class Main extends BaseScene {
         this.add.existing(daily);
         daily.visible = false;
 
-        // news_button_2
-        const news_button_2 = this.add.image(1335, 60, "uimusicjam");
-        news_button_2.scaleX = 0.1;
-        news_button_2.scaleY = 0.1;
-
         // musicJam
         const musicJam = new MusicJam(this, 764, 442);
         this.add.existing(musicJam);
@@ -542,10 +535,6 @@ export default class Main extends BaseScene {
         const news_button_1SimpleButton = new SimpleButton(news_button_1);
         news_button_1SimpleButton.callback = () => this.daily.visible = true;
 
-        // news_button_2 (components)
-        const news_button_2SimpleButton = new SimpleButton(news_button_2);
-        news_button_2SimpleButton.callback = () => this.musicJam.visible = true;
-
         this.pinContainer = pinContainer;
         this.dock = dock;
         this.chat_box = chat_box;
@@ -605,7 +594,6 @@ export default class Main extends BaseScene {
         this.elevator = elevator;
         this.news_button_1 = news_button_1;
         this.daily = daily;
-        this.news_button_2 = news_button_2;
         this.musicJam = musicJam;
         this.hideOnSleep = hideOnSleep;
         this.interfaceList = interfaceList;

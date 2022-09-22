@@ -8,6 +8,8 @@ export default class Forest extends RoomScene {
     constructor() {
         super("Forest");
 
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.free_item;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
@@ -65,9 +67,18 @@ export default class Forest extends RoomScene {
         const sign = this.add.image(1317, 681, "forest", "sign");
         sign.setOrigin(0.4794520547945205, 0.9397590361445783);
 
+        // free_item
+        const free_item = this.add.ellipse(896, 512, 128, 128);
+        free_item.scaleX = 1.002455848298564;
+        free_item.scaleY = 1.6468006679738743;
+        free_item.angle = 84;
+        free_item.isFilled = true;
+        free_item.fillAlpha = 0;
+
         // lists
         const sort = [sign, rail, middle, fg, tree, rock0001];
 
+        this.free_item = free_item;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -75,6 +86,17 @@ export default class Forest extends RoomScene {
 
 
     /* START-USER-CODE */
+    create() {
+        super.create();
+        this.roomZones = {
+            'free_item': { 
+                key: this.free_item,
+                callback: () => this.interface.prompt.showItem(3105)
+            }
+        }
+
+        super.addZones()
+    }
     /* END-USER-CODE */
 }
 

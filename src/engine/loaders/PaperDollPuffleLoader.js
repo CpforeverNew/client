@@ -10,7 +10,7 @@ export default class PaperDollLoader extends BaseLoader {
 
         this.scale = 1
 
-        this.baseURL = '/assets/media/puffles/paper/'
+        this.baseURL = 'https://cdn.cpforever.org/assets/media/puffles/paper/'
         this.keyPrefix = 'puffles_paper/'
     }
 

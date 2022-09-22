@@ -19,6 +19,10 @@ const cpforever = {
     transparent: true,
     roundPixels: true,
 
+    loader: {
+        baseURL: "https://cdn.cpforever.org/"
+    },
+
     dom: {
         createContainer: true
     },
