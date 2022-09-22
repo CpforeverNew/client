@@ -73,11 +73,6 @@ export default class Beacon extends RoomScene {
         const jetpackShowHint = new ShowHint(jetpack);
         jetpackShowHint.text = "Jetpack Adventure";
 
-        // crate (components)
-        const crateSimpleButton = new SimpleButton(crate);
-        crateSimpleButton.callback = () => this.interface.prompt.showItem(35601);
-
-
         this.jetpack = jetpack;
         this.sort = sort;
 
