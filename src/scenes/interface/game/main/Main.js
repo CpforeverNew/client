@@ -15,7 +15,6 @@ import ChatLog from '../chatlog/ChatLog'
 import EmotesMenu from '../floating/emotes/EmotesMenu'
 import Waddle from '../waddle/Waddle'
 import Map from '../map/Map'
-import NewMap from '../map/NewMap'
 import Moderator from '../moderator/Moderator'
 import ModActions from '../modactions/ModActions'
 import PlayerCard from '../playercard/PlayerCard'
@@ -609,7 +608,7 @@ export default class Main extends BaseScene {
         this._create()
 
         // map
-        const map = (localStorage.clientMode == 'vanilla') ? new NewMap(this, 760, 460) : new Map(this, 760, 460)
+        const map = new Map(this, 760, 460)
         this.add.existing(map);
         map.visible = false;
         this.map = map;

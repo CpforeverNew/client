@@ -1,6 +1,6 @@
 {
   "name": "cpforever",
-  "version": "1.8.2-beta",
+  "version": "1.8.3-beta",
   "description": "A rewrite of the Club Penguin client in HTML5",
   "scripts": {
     "devclient": "webpack serve --host=0.0.0.0",

@@ -89,25 +89,15 @@ export default class Load extends BaseScene {
 
         this._create()
 
-        if (localStorage.clientMode == 'legacy') {
-            this.setContent(data.text, data.showBar)
+        this.setContent(data.text, data.showBar)
 
-            this.tween = this.tweens.add({
-                targets: this.spinner,
-                angle: { from: 0, to: 180 },
-                duration: 900,
-                repeat: -1,
-                ease: 'Cubic'
-            })
-        }
-        else {
-			this.spinner.visible = false
-			this.loading.visible = true
-            this.text.setPosition(760, 600)
-            this.setupLoadingAnims()
-            this.setContent(data.text, false)
-        }
-
+        this.tween = this.tweens.add({
+            targets: this.spinner,
+            angle: { from: 0, to: 180 },
+            duration: 900,
+            repeat: -1,
+            ease: 'Cubic'
+        })
 
     }
 
@@ -128,24 +118,17 @@ export default class Load extends BaseScene {
     }
 
     onSleep() {
-        if (localStorage.clientMode == 'legacy') {
-            this.tween.pause()
-            this.spinner.angle = 0
-        }
+        this.tween.pause()
+        this.spinner.angle = 0
+
 		if (this.timeout) clearTimeout(this.timeout)
     }
 
     onWake(sys, data) {
-        if (localStorage.clientMode == 'legacy') { 
-            this.tween.restart()
-            this.tween.play()
+        this.tween.restart()
+        this.tween.play()
 
-            this.setContent(data.text, data.showBar)
-        }
-        else {
-            this.setupLoadingAnims()
-            this.setContent(data.text, false)
-        }
+        this.setContent(data.text, data.showBar)
     }
 
     setContent(text, showBar) {

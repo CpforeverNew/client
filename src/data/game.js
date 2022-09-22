@@ -7,7 +7,6 @@ import pin from './pin'
 
 if (!localStorage.getItem('webgl')) { localStorage.setItem('webgl', 'true')}
 if (!localStorage.getItem('debugMode')) { localStorage.setItem('debugMode', 'false')}
-if (!localStorage.getItem('clientMode')) { localStorage.setItem('clientMode', 'legacy')}
 
 const cpforever = {
     type: (localStorage.getItem('webgl') == 'true')
