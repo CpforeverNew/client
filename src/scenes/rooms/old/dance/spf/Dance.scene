@@ -1,0 +1,327 @@
+{
+    "id": "3edaa929-9744-49dc-a642-962cad4f5492",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/dance/spf/spooky-dance-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Dance",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "9585141b-f633-46a7-9f41-22ced63aed71",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "bg"
+            },
+            "x": 762,
+            "y": 482
+        },
+        {
+            "type": "Sprite",
+            "id": "ad800695-a330-4c04-97da-9c40f7cf9e9d",
+            "label": "dance_floor0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "dance_floor",
+            "Animation.end": 190,
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "dance_floor0001"
+            },
+            "x": 660,
+            "y": 692
+        },
+        {
+            "type": "Sprite",
+            "id": "48343bde-0298-4f9f-b75d-13de1d7797ef",
+            "label": "lights0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "lights",
+            "Animation.end": 80,
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "lights0001"
+            },
+            "x": 665,
+            "y": 100
+        },
+        {
+            "type": "Image",
+            "id": "4fa8a199-049e-40c7-9efd-7ee335b3f412",
+            "label": "stage",
+            "components": [],
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "stage"
+            },
+            "x": 681,
+            "y": 275
+        },
+        {
+            "type": "Image",
+            "id": "efbd1804-461c-4cab-a7f3-2c5b13486943",
+            "label": "door0002",
+            "components": [],
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "door0002"
+            },
+            "x": 162,
+            "y": 445
+        },
+        {
+            "type": "Image",
+            "id": "3586fd4c-25ff-4dbb-983a-c6aa9eae9ead",
+            "label": "light_strip",
+            "components": [],
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "light_strip"
+            },
+            "x": 765,
+            "y": 380
+        },
+        {
+            "type": "Sprite",
+            "id": "9055be6e-e10c-49be-b595-bd9ce83bf195",
+            "label": "right_speaker0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "right_speaker",
+            "Animation.end": 10,
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "right_speaker0001"
+            },
+            "x": 999,
+            "y": 387
+        },
+        {
+            "type": "Image",
+            "id": "6d1cb5b1-33e1-4d67-905b-872ba73fdbc6",
+            "label": "candy_pumkin",
+            "components": [],
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "candy_pumkin"
+            },
+            "x": 1039,
+            "y": 491
+        },
+        {
+            "type": "Image",
+            "id": "9d8333db-1500-4015-950c-c09994644ecf",
+            "label": "fg_speaker_right",
+            "components": [],
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "fg_speaker_right"
+            },
+            "x": 1174,
+            "y": 635
+        },
+        {
+            "type": "Image",
+            "id": "495f3472-8784-4932-be4f-b748b11a9cdf",
+            "label": "fg_speaker_left",
+            "components": [],
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "fg_speaker_left"
+            },
+            "x": 122,
+            "y": 728
+        },
+        {
+            "type": "Image",
+            "id": "3a3c4a80-11ba-49e4-9bf1-e4e023f35c8d",
+            "label": "pumkin_1",
+            "components": [],
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "pumkin_1"
+            },
+            "x": 106,
+            "y": 625
+        },
+        {
+            "type": "Image",
+            "id": "599b9f31-544b-4b70-8380-9c7c2c2da4a4",
+            "label": "pumkin_2",
+            "components": [],
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "pumkin_2"
+            },
+            "x": 1116,
+            "y": 747
+        },
+        {
+            "type": "Sprite",
+            "id": "aa798377-ca8a-4905-9846-9d4b224efcef",
+            "label": "right_top_speaker0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "right_top_speaker",
+            "Animation.end": 10,
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "right_top_speaker0001"
+            },
+            "x": 1084,
+            "y": 153
+        },
+        {
+            "type": "Sprite",
+            "id": "44612dee-d52a-4982-8cf2-669fb063cd2b",
+            "label": "right_top_speaker20001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "right_top_speaker2",
+            "Animation.end": 10,
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "right_top_speaker20001"
+            },
+            "x": 1187,
+            "y": 136
+        },
+        {
+            "type": "Sprite",
+            "id": "9b9298c1-4a67-494a-8ccc-c91ea44b8cfe",
+            "label": "left_top_speaker_20001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "left_top_speaker_2",
+            "Animation.end": 10,
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "left_top_speaker_20001"
+            },
+            "x": 283,
+            "y": 154
+        },
+        {
+            "type": "Sprite",
+            "id": "346ff88e-62a6-447c-a762-892ec00e072c",
+            "label": "left_top_speaker0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "left_top_speaker",
+            "Animation.end": 10,
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "left_top_speaker0001"
+            },
+            "x": 175,
+            "y": 140
+        },
+        {
+            "type": "Image",
+            "id": "d86c0a4b-bd7b-48da-8f70-df91bcf1ec5b",
+            "label": "free_candy_sign",
+            "components": [],
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "free_candy_sign"
+            },
+            "x": 682,
+            "y": 188
+        },
+        {
+            "type": "Sprite",
+            "id": "4c58f3e8-1668-4862-a634-31cd68c19af4",
+            "label": "left_speaker_bottom0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "left_speaker_bottom",
+            "Animation.end": 10,
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "left_speaker_bottom0001"
+            },
+            "x": 342,
+            "y": 374
+        },
+        {
+            "type": "Image",
+            "id": "01fecb1b-44ee-44b9-8f10-c0c9f51de83c",
+            "label": "left_speaker_bottom_cover",
+            "components": [],
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "left_speaker_bottom_cover"
+            },
+            "x": 352,
+            "y": 390
+        },
+        {
+            "type": "Image",
+            "id": "e01b45a6-6a27-4642-9b14-496b1b4cd605",
+            "label": "music_discs",
+            "components": [],
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "music_discs"
+            },
+            "x": 285,
+            "y": 419
+        },
+        {
+            "type": "Image",
+            "id": "8344938c-b854-4d56-90e3-193abb21773f",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "fg"
+            },
+            "x": 737,
+            "y": 33
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "ea8e175e-1cf7-4732-9fcc-55c343477d5f",
+            "label": "sort"
+        },
+        {
+            "id": "f80b8666-fcd4-4a26-a5b2-46de00531095",
+            "label": "animate",
+            "objectIds": [
+                "5554cd5e-9837-4964-b567-012ae8dca542",
+                "9aafe413-97e6-4a22-b3a8-15b3c451b77e",
+                "39eb4617-23b3-48d5-99a7-218f86ce7ce8",
+                "0ccf0804-4712-4d46-998e-8067473eedb4"
+            ]
+        }
+    ]
+}
