@@ -64,7 +64,7 @@ export default class Stampbook extends Book {
 		// creditsbody
 		const creditsbody = this.add.text(471, 228, "", {});
 		creditsbody.setOrigin(0.5, 0);
-		creditsbody.text = "A massive thank you to:\n\namman#8104 - Owner\nSaber#5026 - Owner\nCairo#0001 - Administrator\nLEGOMAN#1112 - Administrator & Designer\nSahmyool#2935 - Administrator & Developer\ndirk#2732 - Developer\nCringe#8547 - Designer\nChigster#6026 - Designer\nhershey#0001 - Designer\nPunkQween#7281 - Designer\n𝒀𝒂𝒛#6140 - Designer\nTeilz#6930 - Designer\nTu8x#3764 - Designer\nbird#6574 - Designer";
+		creditsbody.text = "A massive thank you to:\n\namman #8104 - Owner\nHexeption #1337 - Owner/Dev\nBrock #001 - Owner \nCairo #6640 - Admin\nSaturn #4670  -Admin\nTAS1000 #3270 - Head Developer\nDidac #3177 - Developer\nSmoo #0011 - Developer\nJasper #3110 - Developer \nLucky #5856 - Developer\nLily #3883 - Community Manager\nCarr0tCrunch #2914 - Community Manager \nNike #0777 - Community Manager \nCloud #6127 - Community Manager \n";
 		creditsbody.setStyle({ "color": "#585858ff", "fontFamily": "Burbank Small", "fontSize": "25px" });
 		page38.add(creditsbody);
 
@@ -91,6 +91,13 @@ export default class Stampbook extends Book {
 		// creditsicon
 		const creditsicon = this.add.image(261, 118, "main", "mod");
 		page38.add(creditsicon);
+
+		// creditsbody_1
+		const creditsbody_1 = this.add.text(1026, 228, "", {});
+		creditsbody_1.setOrigin(0.5, 0);
+		creditsbody_1.text = "\n\nJessica #1795 - Community Manager \nLola #6969 - Community Manager \nJempenguin #0116  Community Manager \n Classy #1348 - Community Manager\n Gospel #2500 - Designer\nBiggySlime #4529 - Designer\n Coconut #8024 - Designer \nGooavah #3938 - Designer\nKeyomine#0666 - Designer \nTeilz #6930 Designer";
+		creditsbody_1.setStyle({ "align": "right", "color": "#585858ff", "fontFamily": "Burbank Small", "fontSize": "25px" });
+		page38.add(creditsbody_1);
 
 		// page37
 		const page37 = this.add.container(0, 0);
@@ -2598,6 +2605,7 @@ export default class Stampbook extends Book {
 		this.pagenum38 = pagenum38;
 		this.pagename38 = pagename38;
 		this.communitythanks = communitythanks;
+		this.creditsbody_1 = creditsbody_1;
 		this.page37 = page37;
 		this.pagenum37 = pagenum37;
 		this.pagename37 = pagename37;
@@ -2938,6 +2946,8 @@ export default class Stampbook extends Book {
 	pagename38;
 	/** @type {Phaser.GameObjects.Text} */
 	communitythanks;
+	/** @type {Phaser.GameObjects.Text} */
+	creditsbody_1;
 	/** @type {Phaser.GameObjects.Container} */
 	page37;
 	/** @type {Phaser.GameObjects.Text} */
@@ -3642,7 +3652,7 @@ export default class Stampbook extends Book {
 		this.changeClasp(this.claspId)
 		this.changePattern(this.patternId)
 		this.changeColor(this.colorId)
-		
+
 		this.stampsEarned = (isPlayer) ? this.world.client.stamps : args.stamps
 		this.username.text = (isPlayer) ? this.filterUsername(this.world.client.penguin) : args.username
 

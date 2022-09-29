@@ -145,7 +145,7 @@
                     "x": 471,
                     "y": 228,
                     "originX": 0.5,
-                    "text": "A massive thank you to:\n\namman#8104 - Owner\nSaber#5026 - Owner\nCairo#0001 - Administrator\nLEGOMAN#1112 - Administrator & Designer\nSahmyool#2935 - Administrator & Developer\ndirk#2732 - Developer\nCringe#8547 - Designer\nChigster#6026 - Designer\nhershey#0001 - Designer\nPunkQween#7281 - Designer\n𝒀𝒂𝒛#6140 - Designer\nTeilz#6930 - Designer\nTu8x#3764 - Designer\nbird#6574 - Designer",
+                    "text": "A massive thank you to:\n\namman #8104 - Owner\nHexeption #1337 - Owner/Dev\nBrock #001 - Owner \nCairo #6640 - Admin\nSaturn #4670  -Admin\nTAS1000 #3270 - Head Developer\nDidac #3177 - Developer\nSmoo #0011 - Developer\nJasper #3110 - Developer \nLucky #5856 - Developer\nLily #3883 - Community Manager\nCarr0tCrunch #2914 - Community Manager \nNike #0777 - Community Manager \nCloud #6127 - Community Manager \n",
                     "fontFamily": "Burbank Small",
                     "fontSize": "25px",
                     "color": "#585858ff"
@@ -206,6 +206,21 @@
                     },
                     "x": 261,
                     "y": 118
+                },
+                {
+                    "type": "Text",
+                    "id": "e93e4e4d-5ace-46a0-abf3-19d8a4b66241",
+                    "label": "creditsbody_1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1026,
+                    "y": 228,
+                    "originX": 0.5,
+                    "text": "\n\nJessica #1795 - Community Manager \nLola #6969 - Community Manager \nJempenguin #0116  Community Manager \n Classy #1348 - Community Manager\n Gospel #2500 - Designer\nBiggySlime #4529 - Designer\n Coconut #8024 - Designer \nGooavah #3938 - Designer\nKeyomine#0666 - Designer \nTeilz #6930 Designer",
+                    "align": "right",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "25px",
+                    "color": "#585858ff"
                 }
             ]
         },
