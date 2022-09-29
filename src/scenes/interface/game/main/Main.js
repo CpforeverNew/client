@@ -106,6 +106,8 @@ export default class Main extends BaseScene {
         this.mod_button;
         /** @type {Phaser.GameObjects.Sprite} */
         this.mod_m;
+        /** @type {Phaser.GameObjects.Image} */
+        this.news_button_1;
         /** @type {ModActions} */
         this.modActions;
         /** @type {Moderator} */
@@ -150,12 +152,8 @@ export default class Main extends BaseScene {
         this.prompt;
         /** @type {Elevator} */
         this.elevator;
-        /** @type {Phaser.GameObjects.Image} */
-        this.news_button_1;
         /** @type {Daily} */
         this.daily;
-        /** @type {MusicJam} */
-        this.musicJam;
         /** @type {Phaser.GameObjects.Text} */
         this.version;
         /** @type {Array<PlayerCard|Buddy|Moderator>} */
@@ -294,6 +292,11 @@ export default class Main extends BaseScene {
         const mod_m = this.add.sprite(0, 0, "main", "mod/m");
         mod_btn.add(mod_m);
 
+        // news_button_1
+        const news_button_1 = this.add.image(1447, 60, "daily", "dailyrewardiconn");
+        news_button_1.scaleX = 0.5;
+        news_button_1.scaleY = 0.5;
+
         // modActions
         const modActions = new ModActions(this, 760, 461);
         this.add.existing(modActions);
@@ -405,20 +408,10 @@ export default class Main extends BaseScene {
         this.add.existing(elevator);
         elevator.visible = false;
 
-        // news_button_1
-        const news_button_1 = this.add.image(1447, 60, "daily", "dailyrewardiconn");
-        news_button_1.scaleX = 0.5;
-        news_button_1.scaleY = 0.5;
-
         // daily
         const daily = new Daily(this, 0, 0);
         this.add.existing(daily);
         daily.visible = false;
-
-        // musicJam
-        const musicJam = new MusicJam(this, 764, 442);
-        this.add.existing(musicJam);
-        musicJam.visible = false;
 
         // version
         const version = this.add.text(1315, 939, "", {});
@@ -581,6 +574,7 @@ export default class Main extends BaseScene {
         this.mod_btn = mod_btn;
         this.mod_button = mod_button;
         this.mod_m = mod_m;
+        this.news_button_1 = news_button_1;
         this.modActions = modActions;
         this.moderator = moderator;
         this.widgetLayer = widgetLayer;
@@ -603,9 +597,7 @@ export default class Main extends BaseScene {
         this.puffleCare = puffleCare;
         this.prompt = prompt;
         this.elevator = elevator;
-        this.news_button_1 = news_button_1;
         this.daily = daily;
-        this.musicJam = musicJam;
         this.version = version;
         this.hideOnSleep = hideOnSleep;
         this.interfaceList = interfaceList;
