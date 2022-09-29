@@ -72,8 +72,10 @@
                         "key": "main",
                         "frame": "small-box"
                     },
-                    "x": 32,
-                    "y": -38
+                    "x": 42,
+                    "y": -30,
+                    "scaleX": 0.6,
+                    "scaleY": 0.6
                 },
                 {
                     "type": "Image",
@@ -89,8 +91,10 @@
                         "key": "main",
                         "frame": "small-box"
                     },
-                    "x": 32,
-                    "y": -102
+                    "x": 42,
+                    "y": -112,
+                    "scaleX": 0.6,
+                    "scaleY": 0.6
                 },
                 {
                     "type": "Image",
@@ -106,8 +110,10 @@
                         "key": "main",
                         "frame": "small-box"
                     },
-                    "x": -32,
-                    "y": -102
+                    "x": -41,
+                    "y": -112,
+                    "scaleX": 0.6,
+                    "scaleY": 0.6
                 },
                 {
                     "type": "Image",
@@ -123,8 +129,84 @@
                         "key": "main",
                         "frame": "small-box"
                     },
-                    "x": -32,
-                    "y": -38
+                    "x": -41,
+                    "y": -30,
+                    "scaleX": 0.6,
+                    "scaleY": 0.6
+                },
+                {
+                    "type": "Image",
+                    "id": "e368069d-81b7-4f27-97e9-c53716ee2510",
+                    "label": "sit_right_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-box",
+                    "Button.callback": "() => this.onActionClick(17)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "main",
+                        "frame": "small-box"
+                    },
+                    "y": -29,
+                    "scaleX": 0.6,
+                    "scaleY": 0.6
+                },
+                {
+                    "type": "Image",
+                    "id": "5dadb6c6-7008-4a73-aff6-f9997df4aecd",
+                    "label": "sit_right",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-box",
+                    "Button.callback": "() => this.onActionClick(23)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "main",
+                        "frame": "small-box"
+                    },
+                    "x": 42,
+                    "y": -71,
+                    "scaleX": 0.6,
+                    "scaleY": 0.6
+                },
+                {
+                    "type": "Image",
+                    "id": "5cec9c44-29cd-420d-9cb5-78c4bb0ff1c6",
+                    "label": "sit_right_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-box",
+                    "Button.callback": "() => this.onActionClick(19)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "main",
+                        "frame": "small-box"
+                    },
+                    "x": -41,
+                    "y": -71,
+                    "scaleX": 0.6,
+                    "scaleY": 0.6
+                },
+                {
+                    "type": "Image",
+                    "id": "e56fcced-8dd3-4fd1-b391-c30caf9194de",
+                    "label": "sit",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-box",
+                    "Button.callback": "() => this.onActionClick(21)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "main",
+                        "frame": "small-box"
+                    },
+                    "y": -112,
+                    "scaleX": 0.6,
+                    "scaleY": 0.6
                 },
                 {
                     "type": "Image",
@@ -178,7 +260,8 @@
                         "key": "main",
                         "frame": "sit"
                     },
-                    "y": -70
+                    "x": 1,
+                    "y": -68
                 },
                 {
                     "type": "Image",
