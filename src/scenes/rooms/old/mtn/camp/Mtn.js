@@ -16,15 +16,17 @@ export default class Mtn extends RoomScene {
         this.bgcampnight;
         /** @type {Phaser.GameObjects.Rectangle} */
         this.night;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.hikingzone;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Rectangle>} */
         this.sort;
-        /** @type {MtnSeat[]} */
+        /** @type {Array<any>} */
         this.seats100;
-        /** @type {MtnSeat[]} */
+        /** @type {Array<any>} */
         this.seats101;
-        /** @type {MtnSeat[]} */
+        /** @type {Array<any>} */
         this.seats102;
-        /** @type {MtnSeat[]} */
+        /** @type {Array<any>} */
         this.seats103;
 
 
@@ -116,61 +118,6 @@ export default class Mtn extends RoomScene {
         barrier_1_4.setOrigin(0.5, 0.45901639344262296);
         barrier_1_4.flipX = true;
 
-        // mtnSeat11
-        const mtnSeat11 = new MtnSeat(this, 1155, 638);
-        this.add.existing(mtnSeat11);
-        mtnSeat11.visible = false;
-
-        // mtnSeat10
-        const mtnSeat10 = new MtnSeat(this, 1093, 676);
-        this.add.existing(mtnSeat10);
-        mtnSeat10.visible = false;
-
-        // mtnSeat9
-        const mtnSeat9 = new MtnSeat(this, 955, 744);
-        this.add.existing(mtnSeat9);
-        mtnSeat9.visible = false;
-
-        // mtnSeat8
-        const mtnSeat8 = new MtnSeat(this, 857, 745);
-        this.add.existing(mtnSeat8);
-        mtnSeat8.visible = false;
-
-        // mtnSeat7
-        const mtnSeat7 = new MtnSeat(this, 698, 703);
-        this.add.existing(mtnSeat7);
-        mtnSeat7.visible = false;
-
-        // mtnSeat6
-        const mtnSeat6 = new MtnSeat(this, 561, 673);
-        this.add.existing(mtnSeat6);
-        mtnSeat6.visible = false;
-
-        // mtnSeat5
-        const mtnSeat5 = new MtnSeat(this, 612, 713);
-        this.add.existing(mtnSeat5);
-        mtnSeat5.visible = false;
-
-        // mtnSeat4
-        const mtnSeat4 = new MtnSeat(this, 252, 519);
-        this.add.existing(mtnSeat4);
-        mtnSeat4.visible = false;
-
-        // mtnSeat3
-        const mtnSeat3 = new MtnSeat(this, 307, 550);
-        this.add.existing(mtnSeat3);
-        mtnSeat3.visible = false;
-
-        // mtnSeat2
-        const mtnSeat2 = new MtnSeat(this, 369, 590);
-        this.add.existing(mtnSeat2);
-        mtnSeat2.visible = false;
-
-        // mtnSeat1
-        const mtnSeat1 = new MtnSeat(this, 433, 618);
-        this.add.existing(mtnSeat1);
-        mtnSeat1.visible = false;
-
         // express
         const express = this.add.image(1065, 809, "mtn", "express");
         express.setOrigin(0.4647887323943662, 0.875);
@@ -223,72 +170,24 @@ export default class Mtn extends RoomScene {
         night.fillColor = 0;
         night.fillAlpha = 0.3;
 
+        // hikingzone
+        const hikingzone = this.add.ellipse(719, 298, 128, 128);
+        hikingzone.scaleX = 1.513603229179594;
+        hikingzone.angle = -90;
+        hikingzone.isFilled = true;
+        hikingzone.fillAlpha = 0;
+
         // lists
         const sort = [penguin_run, express, pole, night];
-        const seats100 = [mtnSeat4, mtnSeat3, mtnSeat2, mtnSeat1];
-        const seats101 = [mtnSeat6, mtnSeat5, mtnSeat7];
-        const seats102 = [mtnSeat8, mtnSeat9];
-        const seats103 = [mtnSeat10, mtnSeat11];
+        const seats100 = [];
+        const seats101 = [];
+        const seats102 = [];
+        const seats103 = [];
 
         // chair (components)
         const chairAnimation = new Animation(chair);
         chairAnimation.key = "chair/chair";
         chairAnimation.end = 87;
-
-        // mtnSeat11 (prefab fields)
-        mtnSeat11.sitFrame = 24;
-        mtnSeat11.offsetX = -100;
-        mtnSeat11.offsetY = -70;
-
-        // mtnSeat10 (prefab fields)
-        mtnSeat10.sitFrame = 24;
-        mtnSeat10.offsetX = -100;
-        mtnSeat10.offsetY = -70;
-
-        // mtnSeat9 (prefab fields)
-        mtnSeat9.sitFrame = 17;
-        mtnSeat9.offsetX = -10;
-        mtnSeat9.offsetY = -90;
-
-        // mtnSeat8 (prefab fields)
-        mtnSeat8.sitFrame = 17;
-        mtnSeat8.offsetX = -10;
-        mtnSeat8.offsetY = -90;
-
-        // mtnSeat7 (prefab fields)
-        mtnSeat7.sitFrame = 18;
-        mtnSeat7.offsetX = 10;
-        mtnSeat7.offsetY = -70;
-
-        // mtnSeat6 (prefab fields)
-        mtnSeat6.sitFrame = 18;
-        mtnSeat6.offsetX = 10;
-        mtnSeat6.offsetY = -70;
-
-        // mtnSeat5 (prefab fields)
-        mtnSeat5.sitFrame = 18;
-        mtnSeat5.offsetX = 10;
-        mtnSeat5.offsetY = -110;
-
-        // mtnSeat4 (prefab fields)
-        mtnSeat4.sitFrame = 18;
-        mtnSeat4.offsetX = 90;
-        mtnSeat4.offsetY = -70;
-
-        // mtnSeat3 (prefab fields)
-        mtnSeat3.sitFrame = 18;
-        mtnSeat3.offsetX = 90;
-        mtnSeat3.offsetY = -70;
-
-        // mtnSeat2 (prefab fields)
-        mtnSeat2.sitFrame = 18;
-        mtnSeat2.offsetX = 90;
-        mtnSeat2.offsetY = -70;
-
-        // mtnSeat1 (prefab fields)
-        mtnSeat1.sitFrame = 18;
-        mtnSeat1.offsetX = 90;
-        mtnSeat1.offsetY = -70;
 
         // zone4 (components)
         new MoveTo(zone4);
@@ -304,6 +203,7 @@ export default class Mtn extends RoomScene {
 
         this.bgcampnight = bgcampnight;
         this.night = night;
+        this.hikingzone = hikingzone;
         this.sort = sort;
         this.seats100 = seats100;
         this.seats101 = seats101;
@@ -315,9 +215,19 @@ export default class Mtn extends RoomScene {
 
 
     /* START-USER-CODE */
-	
+
     create() {
         super.create()
+
+        this.roomZones = {
+            'hikingzone': { 
+                key: this.hikingzone,
+                callback: () => this.interface.prompt.showItem(313)
+            }
+        }
+
+        super.addZones()
+
         var now = new Date();
         var timeInHours = now.getUTCHours();
         console.log(timeInHours)
@@ -326,7 +236,7 @@ export default class Mtn extends RoomScene {
             this.night.visible = true
         }
     }
-	
+
         triggerWaddle(id) {
         if (this.world.client.activeSeat) {
             return

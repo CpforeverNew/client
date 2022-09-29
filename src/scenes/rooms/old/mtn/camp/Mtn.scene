@@ -212,237 +212,6 @@
             "flipX": true
         },
         {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
-            "id": "02e8351f-9f29-4051-9849-3bbbddc6f6b2",
-            "unlock": [
-                "frame",
-                "sitFrame",
-                "offsetX",
-                "offsetY",
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "mtnSeat11",
-            "sitFrame": 24,
-            "offsetX": -100,
-            "offsetY": -70,
-            "components": [],
-            "x": 1155,
-            "y": 638,
-            "visible": false
-        },
-        {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
-            "id": "8cc0a685-0b54-41bb-b9e7-4eda7a2d30a4",
-            "unlock": [
-                "frame",
-                "sitFrame",
-                "offsetX",
-                "offsetY",
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "mtnSeat10",
-            "sitFrame": 24,
-            "offsetX": -100,
-            "offsetY": -70,
-            "components": [],
-            "x": 1093,
-            "y": 676,
-            "visible": false
-        },
-        {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
-            "id": "597ca950-0087-4d7f-9de5-8d1c5398a36b",
-            "unlock": [
-                "frame",
-                "sitFrame",
-                "offsetX",
-                "offsetY",
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "mtnSeat9",
-            "sitFrame": 17,
-            "offsetX": -10,
-            "offsetY": -90,
-            "components": [],
-            "x": 955,
-            "y": 744,
-            "visible": false
-        },
-        {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
-            "id": "8a9bb92e-9230-4dbc-8230-8cdee802ff6e",
-            "unlock": [
-                "frame",
-                "sitFrame",
-                "offsetX",
-                "offsetY",
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "mtnSeat8",
-            "sitFrame": 17,
-            "offsetX": -10,
-            "offsetY": -90,
-            "components": [],
-            "x": 857,
-            "y": 745,
-            "visible": false
-        },
-        {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
-            "id": "4c265076-721c-4771-af6a-a97326296074",
-            "unlock": [
-                "frame",
-                "sitFrame",
-                "offsetX",
-                "offsetY",
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "mtnSeat7",
-            "sitFrame": 18,
-            "offsetX": 10,
-            "offsetY": -70,
-            "components": [],
-            "x": 698,
-            "y": 703,
-            "visible": false
-        },
-        {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
-            "id": "20e8b41d-be5a-4d36-a616-0def9e56e144",
-            "unlock": [
-                "frame",
-                "sitFrame",
-                "offsetX",
-                "offsetY",
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "mtnSeat6",
-            "sitFrame": 18,
-            "offsetX": 10,
-            "offsetY": -70,
-            "components": [],
-            "x": 561,
-            "y": 673,
-            "visible": false
-        },
-        {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
-            "id": "4d168170-6546-463f-a9b9-9ba6e5bea7ce",
-            "unlock": [
-                "frame",
-                "sitFrame",
-                "offsetX",
-                "offsetY",
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "mtnSeat5",
-            "sitFrame": 18,
-            "offsetX": 10,
-            "offsetY": -110,
-            "components": [],
-            "x": 612,
-            "y": 713,
-            "visible": false
-        },
-        {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
-            "id": "d5eb78f1-0571-400c-9abc-45fc98cf6944",
-            "unlock": [
-                "frame",
-                "sitFrame",
-                "offsetX",
-                "offsetY",
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "mtnSeat4",
-            "sitFrame": 18,
-            "offsetX": 90,
-            "offsetY": -70,
-            "components": [],
-            "x": 252,
-            "y": 519,
-            "visible": false
-        },
-        {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
-            "id": "39c72255-323b-48ea-a437-2e3915eb61d3",
-            "unlock": [
-                "frame",
-                "sitFrame",
-                "offsetX",
-                "offsetY",
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "mtnSeat3",
-            "sitFrame": 18,
-            "offsetX": 90,
-            "offsetY": -70,
-            "components": [],
-            "x": 307,
-            "y": 550,
-            "visible": false
-        },
-        {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
-            "id": "c2949750-a722-445d-9dc8-31102e520741",
-            "unlock": [
-                "frame",
-                "sitFrame",
-                "offsetX",
-                "offsetY",
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "mtnSeat2",
-            "sitFrame": 18,
-            "offsetX": 90,
-            "offsetY": -70,
-            "components": [],
-            "x": 369,
-            "y": 590,
-            "visible": false
-        },
-        {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
-            "id": "50081472-c653-42f0-a728-d2165700933c",
-            "unlock": [
-                "frame",
-                "sitFrame",
-                "offsetX",
-                "offsetY",
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "mtnSeat1",
-            "sitFrame": 18,
-            "offsetX": 90,
-            "offsetY": -70,
-            "components": [],
-            "x": 433,
-            "y": 618,
-            "visible": false
-        },
-        {
             "type": "Image",
             "id": "85cf3723-7671-4140-a0c0-d0f430f57910",
             "label": "express",
@@ -565,6 +334,21 @@
             "isFilled": true,
             "fillColor": "#000000",
             "fillAlpha": 0.3,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Ellipse",
+            "id": "e632c4f5-6fdb-4051-9b99-63639e83a5de",
+            "label": "hikingzone",
+            "scope": "CLASS",
+            "components": [],
+            "x": 719,
+            "y": 298,
+            "scaleX": 1.513603229179594,
+            "angle": -90,
+            "isFilled": true,
+            "fillAlpha": 0,
             "width": 128,
             "height": 128
         }

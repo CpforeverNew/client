@@ -299,6 +299,18 @@
             },
             "x": 737,
             "y": 33
+        },
+        {
+            "type": "Image",
+            "id": "926b0733-38e5-469f-bba3-bee88ee814b0",
+            "label": "led_lights",
+            "components": [],
+            "texture": {
+                "key": "spooky-dance",
+                "frame": "led_lights"
+            },
+            "x": 451,
+            "y": 300
         }
     ],
     "plainObjects": [],

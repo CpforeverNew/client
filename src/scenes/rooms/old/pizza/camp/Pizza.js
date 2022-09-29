@@ -15,6 +15,8 @@ export default class Pizza extends RoomScene {
         this.fire;
         /** @type {Phaser.GameObjects.Image} */
         this.outsidenight;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.duckzone;
         /** @type {Array<any>} */
         this.sort;
 
@@ -136,6 +138,13 @@ export default class Pizza extends RoomScene {
         // leftbench
         this.add.image(1206, 582, "camp-pizza", "leftbench");
 
+        // duckzone
+        const duckzone = this.add.ellipse(457, 455, 128, 128);
+        duckzone.scaleX = 1.513603229179594;
+        duckzone.angle = -31;
+        duckzone.isFilled = true;
+        duckzone.fillAlpha = 0;
+
         // lists
         const sort = [];
 
@@ -158,6 +167,7 @@ export default class Pizza extends RoomScene {
         this.steam = steam;
         this.fire = fire;
         this.outsidenight = outsidenight;
+        this.duckzone = duckzone;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -170,7 +180,17 @@ export default class Pizza extends RoomScene {
         super.create()
         this.fire.play("pizza-fire")
         this.steam.play("pizza-steam")
-		var now = new Date();
+
+        this.roomZones = {
+            'duckzone': { 
+                key: this.duckzone,
+                callback: () => this.interface.prompt.showItem(292)
+            }
+        }
+
+        super.addZones()
+
+        var now = new Date();
         var timeInHours = now.getUTCHours();
         if (timeInHours > 1 && timeInHours < 13 ) {
             this.outsidenight.visible=true

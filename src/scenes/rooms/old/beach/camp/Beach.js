@@ -129,6 +129,12 @@ export default class Beach extends RoomScene {
         night.fillColor = 0;
         night.fillAlpha = 0.3;
 
+        // bonfire
+        const bonfire = this.add.image(242, 545, "bonfire");
+        bonfire.scaleX = 0.1;
+        bonfire.scaleY = 0.1;
+        bonfire.angle = -4;
+
         // lists
         const sort = [bucket, net, fish, buoy, cage, bench, campfirebeach, bushrock, night];
 
@@ -145,6 +151,11 @@ export default class Beach extends RoomScene {
         bucketSimpleButton.hoverCallback = () => this.onBucketOver();
         bucketSimpleButton.pixelPerfect = true;
 
+        // bonfire (components)
+        const bonfireSimpleButton = new SimpleButton(bonfire);
+        bonfireSimpleButton.callback = () => this.interface.prompt.showItem(569);;
+        bonfireSimpleButton.pixelPerfect = true;
+
         this.bgcampnight = bgcampnight;
         this.bucket = bucket;
         this.ground = ground;
@@ -160,7 +171,7 @@ export default class Beach extends RoomScene {
 
     create() {
         super.create()
-		this.campfirebeach.play('campfirebeach')
+        this.campfirebeach.play('campfirebeach')
         var now = new Date();
         var timeInHours = now.getUTCHours();
         console.log(timeInHours)

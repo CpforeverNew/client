@@ -103,6 +103,9 @@ export default class Dance extends RoomScene {
         // fg
         this.add.image(737, 33, "spooky-dance", "fg");
 
+        // led_lights
+        this.add.image(451, 300, "spooky-dance", "led_lights");
+
         // lists
         const sort = [];
         const animate = [];

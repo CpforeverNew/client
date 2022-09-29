@@ -383,6 +383,21 @@
             },
             "x": 1206,
             "y": 582
+        },
+        {
+            "type": "Ellipse",
+            "id": "e4a8b76d-d71b-4087-8535-9f2c58532409",
+            "label": "duckzone",
+            "scope": "CLASS",
+            "components": [],
+            "x": 457,
+            "y": 455,
+            "scaleX": 1.513603229179594,
+            "angle": -31,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],

@@ -4,7 +4,7 @@ let rooms;
 rooms = {
 	100: {
 		key: 'Town',
-		scene: require(`@rooms/old/town/Town`).default,
+		scene: require(`@rooms/old/town/camp/Town`).default,
 		x: 760,
 		y: 660
 	},
@@ -40,7 +40,7 @@ rooms = {
 	},
 	200: {
 		key: 'Village',
-		scene: require(`@rooms/old/village/Village`).default,
+		scene: require(`@rooms/old/village/camp/Village`).default,
 		x: 800,
 		y: 640
 	},
@@ -64,13 +64,13 @@ rooms = {
 	},
 	230: {
 		key: 'Mtn',
-		scene: require(`@rooms/old/mtn/Mtn`).default,
+		scene: require(`@rooms/old/mtn/camp/Mtn`).default,
 		x: 760,
 		y: 440
 	},
 	300: {
 		key: 'Plaza',
-		scene: require(`@rooms/old/plaza/Plaza`).default,
+		scene: require(`@rooms/old/plaza/camp/Plaza`).default,
 		x: 760,
 		y: 680
 	},
@@ -94,7 +94,7 @@ rooms = {
 	},
 	330: {
 		key: 'Pizza',
-		scene: require(`@rooms/old/pizza/Pizza`).default,
+		scene: require(`@rooms/old/pizza/camp/Pizza`).default,
 		x: 780,
 		y: 790
 	},
@@ -112,7 +112,7 @@ rooms = {
 	},
 	400: {
 		key: 'Beach',
-		scene: require(`@rooms/old/beach/Beach`).default,
+		scene: require(`@rooms/old/beach/camp/Beach`).default,
 		x: 840,
 		y: 680
 	},
@@ -130,13 +130,13 @@ rooms = {
 	},
 	800: {
 		key: 'Dock',
-		scene: require(`@rooms/old/dock/Dock`).default,
+		scene: require(`@rooms/old/dock/camp/Dock`).default,
 		x: 800,
 		y: 400
 	},
 	801: {
 		key: 'Forts',
-		scene: require(`@rooms/old/forts/Forts`).default,
+		scene: require(`@rooms/old/forts/camp/Forts`).default,
 		x: 960,
 		y: 610
 	},
@@ -184,13 +184,13 @@ rooms = {
 	},
 	809: {
 		key: 'Forest',
-		scene: require(`@rooms/old/forest/Forest`).default,
+		scene: require(`@rooms/old/forest/camp/Forest`).default,
 		x: 760,
 		y: 430
 	},
 	810: {
 		key: 'Cove',
-		scene: require(`@rooms/old/cove/Cove`).default,
+		scene: require(`@rooms/old/cove/camp/Cove`).default,
 		x: 840,
 		y: 480
 	},

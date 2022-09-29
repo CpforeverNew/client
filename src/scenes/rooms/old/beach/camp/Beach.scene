@@ -286,6 +286,24 @@
             "fillAlpha": 0.3,
             "width": 128,
             "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "c552736d-7253-4265-bce7-4bf42ab9f2ad",
+            "label": "bonfire",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.prompt.showItem(569);",
+            "SimpleButton.pixelPerfect": true,
+            "texture": {
+                "key": "bonfire"
+            },
+            "x": 242,
+            "y": 545,
+            "scaleX": 0.1,
+            "scaleY": 0.1,
+            "angle": -4
         }
     ],
     "plainObjects": [],

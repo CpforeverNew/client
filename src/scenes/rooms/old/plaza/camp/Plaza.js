@@ -229,7 +229,7 @@ export default class Plaza extends RoomScene {
         var now = new Date();
         var timeInHours = now.getUTCHours();
         console.log(timeInHours)
-        if (timeInHours > 1 && timeInHours < 16 ) {
+        if (timeInHours > 1 && timeInHours < 13 ) {
             this.bgcampnight.visible = true
             this.night.visible = true
             this.campfireplaza.visible = true

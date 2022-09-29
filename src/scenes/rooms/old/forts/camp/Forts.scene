@@ -1,0 +1,367 @@
+{
+    "id": "9cbe9480-ea9d-489f-bc41-8f3cfa8f2b55",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/forts/camp/forts-camp-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Forts",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "7d3336d8-f6c4-4869-b679-a15e9a65f438",
+            "label": "bg_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "bg.png"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "cf19721e-dd38-4e40-9363-6fd2e0e951b5",
+            "label": "plant3_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "plant3.png"
+            },
+            "x": 1008,
+            "y": 222
+        },
+        {
+            "type": "Image",
+            "id": "2012739a-dbc7-4270-bda7-11b2263d6974",
+            "label": "plant5_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "plant5.png"
+            },
+            "x": 1338,
+            "y": 250
+        },
+        {
+            "type": "Image",
+            "id": "d4fdc152-1f0f-4021-9d91-ef7bcbb488e0",
+            "label": "clocktower_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "clocktower.png"
+            },
+            "x": 1187,
+            "y": 179
+        },
+        {
+            "type": "Image",
+            "id": "324aa509-9a90-46b5-9df4-3f9034377ff0",
+            "label": "leftfence_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "leftfence.png"
+            },
+            "x": 590,
+            "y": 430
+        },
+        {
+            "type": "Image",
+            "id": "c4ae6d2e-a124-4ce0-b66b-a3f225d62b80",
+            "label": "bluepole_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "bluepole.png"
+            },
+            "x": 997,
+            "y": 366
+        },
+        {
+            "type": "Image",
+            "id": "beaee1b2-39c1-47a6-92fc-108361b3fbbb",
+            "label": "plant2_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "plant2.png"
+            },
+            "x": 913,
+            "y": 351
+        },
+        {
+            "type": "Image",
+            "id": "6619c0b2-d523-4b55-91fd-cc3c8c2da404",
+            "label": "bluefort_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "bluefort.png"
+            },
+            "x": 1028,
+            "y": 418
+        },
+        {
+            "type": "Image",
+            "id": "3d9fb0c6-a607-411c-b210-298998a6e152",
+            "label": "leftfortleft_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "leftfortleft.png"
+            },
+            "x": 603,
+            "y": 627
+        },
+        {
+            "type": "Image",
+            "id": "472216f6-53e1-4d1d-8db7-d7eae13d3370",
+            "label": "orangepole_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "orangepole.png"
+            },
+            "x": 664,
+            "y": 566
+        },
+        {
+            "type": "Image",
+            "id": "e28e6d7b-ebe7-46f1-bfd6-89d529acb5b0",
+            "label": "leftfortright_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "leftfortright.png"
+            },
+            "x": 708,
+            "y": 674
+        },
+        {
+            "type": "Image",
+            "id": "1dfb5407-9d04-48fe-ab57-95ba38c86344",
+            "label": "middlefence_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "middlefence.png"
+            },
+            "x": 1001,
+            "y": 655
+        },
+        {
+            "type": "Image",
+            "id": "3927e365-30f2-48bb-b982-ee2777880870",
+            "label": "clockinfo_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "clockinfo.png"
+            },
+            "x": 1417,
+            "y": 327
+        },
+        {
+            "type": "Image",
+            "id": "34368371-2521-4e9c-9775-fb2cf9ba4d72",
+            "label": "rightbush_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "rightbush.png"
+            },
+            "x": 1349,
+            "y": 748
+        },
+        {
+            "type": "Image",
+            "id": "7d04bd96-830c-43c3-9ae3-52399960f948",
+            "label": "clockdisplay_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "clockdisplay.png"
+            },
+            "x": 1134,
+            "y": 170
+        },
+        {
+            "type": "Image",
+            "id": "17f071ad-c5a6-4d6b-8fcb-4221363e8ea4",
+            "label": "plant1_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "plant1.png"
+            },
+            "x": 748,
+            "y": 323
+        },
+        {
+            "type": "Image",
+            "id": "cb6c6440-7fb0-4920-b131-10ab9f580edf",
+            "label": "plant4_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "plant4.png"
+            },
+            "x": 1240,
+            "y": 290
+        },
+        {
+            "type": "Image",
+            "id": "377e3518-a001-4a44-bcaf-2568859ed9ab",
+            "label": "rightmostfence_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "rightmostfence.png"
+            },
+            "x": 1376,
+            "y": 432
+        },
+        {
+            "type": "Image",
+            "id": "716111ed-b981-47a2-a0a3-0371a713bdba",
+            "label": "rightsign_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "rightsign.png"
+            },
+            "x": 1300,
+            "y": 695
+        },
+        {
+            "type": "Image",
+            "id": "7b6a922f-6048-4ca3-9a06-65299b5abfad",
+            "label": "directions_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "directions.png"
+            },
+            "x": 404,
+            "y": 371
+        },
+        {
+            "type": "Image",
+            "id": "9e4bd3d4-0225-4640-8623-f839bf4db737",
+            "label": "leftbush_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "leftbush.png"
+            },
+            "x": 236,
+            "y": 830
+        },
+        {
+            "type": "Sprite",
+            "id": "c8ec27de-caa9-45c2-a3a0-e4d79b0e0de7",
+            "label": "orangeflag0001_png",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangeflag",
+            "Animation.end": 16,
+            "Animation.onHover": true,
+            "texture": {
+                "key": "forts",
+                "frame": "orangeflag0001.png"
+            },
+            "x": 628,
+            "y": 456
+        },
+        {
+            "type": "Sprite",
+            "id": "368edc11-1285-48f6-94d5-90e14a613d51",
+            "label": "blueflag10001_png",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "blueflag1",
+            "Animation.end": 16,
+            "texture": {
+                "key": "forts",
+                "frame": "blueflag10001.png"
+            },
+            "x": 969,
+            "y": 257
+        },
+        {
+            "type": "Text",
+            "id": "ef791815-c2e7-4ee9-9c56-ccbf35aabadc",
+            "label": "am_pm",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1187,
+            "y": 135,
+            "angle": 1,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "AM",
+            "fontFamily": "Burbank Small",
+            "fontSize": "20px"
+        },
+        {
+            "type": "Text",
+            "id": "f86415c0-f682-40b5-b467-715d8bffb6a6",
+            "label": "clockTime",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1112,
+            "y": 149,
+            "scaleY": 1.5,
+            "angle": 1,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "12:58",
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "45px"
+        },
+        {
+            "type": "Text",
+            "id": "b7117f18-96a7-4ea8-b00e-5570d6ced06a",
+            "label": "day",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1125,
+            "y": 216,
+            "angle": 2.5,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "WEDNESDAY",
+            "fontFamily": "Burbank Small",
+            "fontSize": "18px",
+            "fontStyle": "bold",
+            "color": "#0d0d0dff"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "1e3d1d79-bbc9-4969-8105-70209fd3fab9",
+            "label": "sort"
+        }
+    ]
+}

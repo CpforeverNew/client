@@ -22,9 +22,9 @@ export default class Start extends BaseScene {
         bg.setOrigin(0, 0);
 
         // pgames
-        const pgames = this.add.image(759, 432, "generic_start");
-        pgames.scaleX = 1.2359848604723156;
-        pgames.scaleY = 1.2359848604723156;
+        const pgames = this.add.image(759, 432, "Camp_Penguin_login");
+        pgames.scaleX = 1.5853090106076604;
+        pgames.scaleY = 1.5539582894967496;
 
         // bottom
         this.add.image(760, 766, "start", "bottom");
@@ -91,7 +91,7 @@ export default class Start extends BaseScene {
     }
 
     onCreateClick() {
-        window.location.href = '/create'
+        window.location.href = 'https://create.cpforever.org'
     }
 
     /* END-USER-CODE */

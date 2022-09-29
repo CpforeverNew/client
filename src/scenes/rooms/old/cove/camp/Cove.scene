@@ -645,6 +645,21 @@
             "originX": 0.5342174858972581,
             "originY": 3.201809182950651,
             "visible": false
+        },
+        {
+            "type": "Ellipse",
+            "id": "ce400e4b-f9dd-40f7-b5ec-5eda065b536c",
+            "label": "tentzone",
+            "scope": "CLASS",
+            "components": [],
+            "x": 205,
+            "y": 541,
+            "scaleX": 1.513603229179594,
+            "angle": -31,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],

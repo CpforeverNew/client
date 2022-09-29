@@ -30,6 +30,8 @@ export default class Cove extends RoomScene {
         this.mallowzone;
         /** @type {Phaser.GameObjects.Image} */
         this.ghost0001;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.tentzone;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|Phaser.GameObjects.Rectangle>} */
         this.sort;
 
@@ -241,6 +243,13 @@ export default class Cove extends RoomScene {
         ghost0001.setOrigin(0.5342174858972581, 3.201809182950651);
         ghost0001.visible = false;
 
+        // tentzone
+        const tentzone = this.add.ellipse(205, 541, 128, 128);
+        tentzone.scaleX = 1.513603229179594;
+        tentzone.angle = -31;
+        tentzone.isFilled = true;
+        tentzone.fillAlpha = 0;
+
         // lists
         const sort = [water_water_15, water_water_1, water_water_2, water_water_3, water_water_4, water_water_5, water_water_6, water_water_7, water_water_8, water_water_9, water_water_10, water_water_11, water_water_12, water_water_13, water_water_14, hut_wall, boards, rock_1, fire, chair_arm, binoculars, silver_board, rock_3, rock_2, rock_4, fg, night, backbridge, frontbridge, bush, signs, mallows, ghost0001];
 
@@ -267,6 +276,7 @@ export default class Cove extends RoomScene {
         this.fall_pit = fall_pit;
         this.mallowzone = mallowzone;
         this.ghost0001 = ghost0001;
+        this.tentzone = tentzone;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -286,6 +296,10 @@ export default class Cove extends RoomScene {
             'mallowzone': { 
                 key: this.mallowzone,
                 callback: () => this.interface.prompt.showItem(348)
+            },
+            'tentzone': { 
+                key: this.tentzone,
+                callback: () => this.interface.prompt.showItem(3246)
             }
         }
 
@@ -293,8 +307,7 @@ export default class Cove extends RoomScene {
 
         var now = new Date();
         var timeInHours = now.getUTCHours();
-        console.log(timeInHours)
-        if (timeInHours > 1 && timeInHours < 20 ) {
+        if (timeInHours > 1 && timeInHours < 13 ) {
             this.nightsky.visible = true
             this.sky.visible = false
             this.night.visible = true
