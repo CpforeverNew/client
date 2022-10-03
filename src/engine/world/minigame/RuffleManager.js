@@ -376,7 +376,9 @@ export default class RuffleManager {
 		this.world.client.inMinigame = false
 
 
-		// todo - send tickets to server
-		console.log(tickets + " tickets")
+		this.world.network.send('end_midway_game', {
+			tickets: tickets
+		});
+
 	}
 }
