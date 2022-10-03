@@ -156,6 +156,8 @@ export default class Main extends BaseScene {
         this.daily;
         /** @type {Phaser.GameObjects.Text} */
         this.version;
+        /** @type {Phaser.GameObjects.Text} */
+        this.tickets;
         /** @type {Array<PlayerCard|Buddy|Moderator>} */
         this.hideOnSleep;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|ChatLog>} */
@@ -423,6 +425,14 @@ export default class Main extends BaseScene {
         version.text = "v1.1.1-beta";
         version.setStyle({ "align": "right", "color": "#000000ff", "fixedWidth":200,"fontFamily": "Burbank Small", "fontSize": "18px", "fontStyle": "bold", "stroke": "#000000ff", "strokeThickness":1,"shadow.stroke":true,"shadow.fill":true});
 
+        // tickets_button
+        const tickets_button = this.add.image(1297, 57, "tickets", "tickets");
+
+        // tickets
+        const tickets = this.add.text(1248, 34, "", {});
+        tickets.text = "0";
+        tickets.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":100,"fontFamily": "CCFaceFront", "fontSize": "17px" });
+
         // lists
         const hideOnSleep = [playerCard, buddy, moderator];
         const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, puffle_icon, puffle_button_disabled, chat_box, map_button, news_button, mod_m, chatLog, badge_member, emote_icon];
@@ -539,6 +549,11 @@ export default class Main extends BaseScene {
         const news_button_1SimpleButton = new SimpleButton(news_button_1);
         news_button_1SimpleButton.callback = () => this.daily.visible = true;
 
+        // tickets_button (components)
+        const tickets_buttonButton = new Button(tickets_button);
+        tickets_buttonButton.spriteName = "tickets";
+        tickets_buttonButton.callback = () => { console.log("tickets")};
+
         this.pinContainer = pinContainer;
         this.dock = dock;
         this.chat_box = chat_box;
@@ -599,6 +614,7 @@ export default class Main extends BaseScene {
         this.elevator = elevator;
         this.daily = daily;
         this.version = version;
+        this.tickets = tickets;
         this.hideOnSleep = hideOnSleep;
         this.interfaceList = interfaceList;
 
@@ -611,6 +627,9 @@ export default class Main extends BaseScene {
     create() {
 
         this._create()
+
+        // Get User tickets
+        this.network.send("get_user_tickets");
 
         // Version
         this.version.text = "v" + VERSION;

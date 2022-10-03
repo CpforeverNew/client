@@ -968,6 +968,37 @@
             "strokeThickness": 1,
             "shadow.stroke": true,
             "shadow.fill": true
+        },
+        {
+            "type": "Image",
+            "id": "a92c0f27-b9ce-4f9d-b544-72d9d610313d",
+            "label": "tickets_button",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "tickets",
+            "Button.callback": "() => { console.log(\"tickets\")}",
+            "texture": {
+                "key": "tickets",
+                "frame": "tickets"
+            },
+            "x": 1297,
+            "y": 57
+        },
+        {
+            "type": "Text",
+            "id": "b0fa11e7-55ca-4a3b-95de-24a6cf4a2168",
+            "label": "tickets",
+            "scope": "PUBLIC",
+            "components": [],
+            "x": 1248,
+            "y": 34,
+            "text": "0",
+            "fixedWidth": 100,
+            "align": "center",
+            "fontFamily": "CCFaceFront",
+            "fontSize": "17px",
+            "color": "#000000ff"
         }
     ],
     "plainObjects": [],

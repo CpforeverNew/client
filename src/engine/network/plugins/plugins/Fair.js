@@ -10,6 +10,6 @@ export default class Fair extends Plugin {
 
   userTickets(args) {
     const tickets = args.tickets;
-    console.log(tickets + " user tickets");
+    this.interface.main.tickets.text = tickets;
   }
 }
