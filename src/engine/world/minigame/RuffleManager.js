@@ -80,6 +80,9 @@ export default class RuffleManager {
 		window.getCurrentPostcards = this.getCurrentPostcards
 		window.getCurrentPostcards = getCurrentPostcards.bind(this)
 
+		window.sendEndMidwayGame = this.sendEndMidwayGame
+		window.sendEndMidwayGame = sendEndMidwayGame.bind(this)
+
 		this.swfInstance = this.rufflePlayer.load({
 			url: "https://cdn.cpforever.org/assets/media/games/swf/sse.swf",
 			allowScriptAccess: true,
@@ -363,5 +366,17 @@ export default class RuffleManager {
 			id6: 16,
 			name6: "Ice Rink"
 		}]
+	}
+	
+	sendEndMidwayGame(tickets, roomid) {
+		document.getElementsByTagName("ruffle-player")[0].style.visibility = "hidden";
+		let room = this.crumbs.scenes.rooms[roomid]
+		this.world.client.sendJoinRoom(roomid, room.key)
+
+		this.world.client.inMinigame = false
+
+
+		// todo - send tickets to server
+		console.log(tickets + " tickets")
 	}
 }
