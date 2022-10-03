@@ -347,7 +347,11 @@ rooms = {
 	1000: {
 		key: 'Paddle',
 		scene: require('@games/paddle/Paddle').default
-	}
+	},
+	1001: {
+		key: 'Spin',
+		scene: require('@games/spin/Spin').default
+	},
 }
 
 
