@@ -1,10 +1,11 @@
 {
-    "id": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+    "id": "119f9e97-30ed-4b46-b9b5-2fa72272a92a",
     "sceneType": "PREFAB",
     "settings": {
         "compilerInsertSpaces": true,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
+        "superClassName": "BaseImage",
         "preloadMethodName": "",
         "preloadPackFiles": [],
         "createMethodName": "",
@@ -20,7 +21,7 @@
                 "Button"
             ],
             "Button.spriteName": "buy",
-            "Button.callback": "() => this.scene.buy(this.item)",
+            "Button.callback": "() => this.interface.prompt.showItem(this.item)",
             "texture": {
                 "key": "furniturecatalog",
                 "frame": "buy"

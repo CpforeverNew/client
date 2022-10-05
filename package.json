@@ -1,6 +1,6 @@
 {
   "name": "cpforever",
-  "version": "1.8.5-beta",
+  "version": "1.8.6-beta",
   "description": "A rewrite of the Club Penguin client in HTML5",
   "scripts": {
     "devclient": "webpack serve --host=0.0.0.0",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/cpforever/client.git"
   },
-  "author": "sahmyool, DirkD",
+  "author": "sahmyool, DirkD, Hexeption",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cpforever/client/issues"
@@ -30,7 +30,8 @@
     "webpack": "^5.51.1",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.3",
-    "webpack-obfuscator": "^3.5.0"
+    "webpack-obfuscator": "^3.5.0",
+    "html-webpack-plugin": "^5.5.0"
   },
   "dependencies": {
     "@sentry/browser": "^7.11.1",

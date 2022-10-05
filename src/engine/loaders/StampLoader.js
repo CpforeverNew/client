@@ -7,7 +7,7 @@ export default class StampLoader extends BaseLoader {
         super(scene)
 		this.scene = scene
 		this.stamp = stamp
-		this.baseURL = 'https://cdn.cpforever.org/assets/media/interface/game/stampbook/stamps/'
+		this.baseURL = window.location.hostname == 'play.cpforever.org' ? 'https://cdn.cpforever.org/assets/media/interface/game/stampbook/stamps/' : '/assets/media/interface/game/stampbook/stamps/'
 		this.keyPrefix = 'stamps/'
     }
 

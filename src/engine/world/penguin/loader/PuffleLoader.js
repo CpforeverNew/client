@@ -6,7 +6,7 @@ export default class PuffleLoader extends BaseLoader {
     constructor(penguin) {
         super(penguin.room)
         this.penguin = penguin
-        this.baseURL = 'https://cdn.cpforever.org/assets/media/puffles/'
+        this.baseURL = window.location.hostname == 'play.cpforever.org' ? 'https://cdn.cpforever.org/assets/media/puffles/' : '/assets/media/puffles/'
         this.keyPrefix = 'puffle_'
     }
 

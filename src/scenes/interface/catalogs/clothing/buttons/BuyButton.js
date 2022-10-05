@@ -6,7 +6,7 @@ import { Button } from '@components/components'
 export default class BuyButton extends Phaser.GameObjects.Image {
 
     constructor(scene, x, y, texture, frame) {
-        super(scene, x ?? 0, y ?? 0, texture || "furniturecatalog", frame ?? "buy");
+        super(scene, x ?? 0, y ?? 0, texture || "clothingcatalog", frame ?? "buy3");
 
         /** @type {number} */
         this.item = 0;
@@ -16,7 +16,7 @@ export default class BuyButton extends Phaser.GameObjects.Image {
 
         // this (components)
         const thisButton = new Button(this);
-        thisButton.spriteName = "buy";
+        thisButton.spriteName = "buy3";
         thisButton.callback = () => this.scene.buy(this.item);
 
         /* START-USER-CTR-CODE */

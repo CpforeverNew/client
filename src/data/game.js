@@ -19,7 +19,7 @@ const cpforever = {
     roundPixels: true,
 
     loader: {
-        baseURL: "https://cdn.cpforever.org/"
+        baseURL:  window.location.hostname == 'play.cpforever.org' ? "https://cdn.cpforever.org/" : ""
     },
 
     dom: {

@@ -9,7 +9,7 @@ const fonts = {
             'CCFaceFront:i7'
         ],
         urls: [
-            'https://cdn.cpforever.org/assets/styles/fonts.css'
+            window.location.hostname == 'play.cpforever.org' ? 'https://cdn.cpforever.org/assets/styles/fonts.css' : '/assets/styles/fonts.css'
         ]
     }
 }

@@ -1,7 +1,9 @@
 const path = require('path')
 const WebpackObfuscator = require('webpack-obfuscator')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const DefinePlugin = require('webpack').DefinePlugin
 
+const timestamp = + Date.now()
 
 let config = {
     mode: 'development',
@@ -70,7 +72,8 @@ let config = {
     },
     plugins: [
         new DefinePlugin({
-            VERSION: JSON.stringify(require('./package.json').version)
+            VERSION: JSON.stringify(require('./package.json').version),
+            TIMESTAMP: timestamp
         })
     ]
 }
@@ -85,7 +88,15 @@ module.exports = (env, argv) => {
                 new WebpackObfuscator({
                     rotateStringArray: true,
                     reservedStrings: ['\s*']
-                }, [])
+                }, []),
+                new HtmlWebpackPlugin({
+                    filename: 'index.html',
+                    inject: false,
+                    template: 'index.ejs',
+                    templateParameters: {
+                        timestamp: timestamp
+                    }
+                }),
             )
         }
     }

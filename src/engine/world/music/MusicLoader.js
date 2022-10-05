@@ -6,7 +6,7 @@ export default class MusicLoader extends BaseLoader {
     constructor(MusicController) {
         super(MusicController)
 		this.MusicController = MusicController
-		this.baseURL = 'https://cdn.cpforever.org/assets/media/music/'
+		this.baseURL = window.location.hostname == 'play.cpforever.org' ? 'https://cdn.cpforever.org/assets/media/music/' : '/assets/media/music/'
 		this.keyPrefix = 'music/'
     }
 
