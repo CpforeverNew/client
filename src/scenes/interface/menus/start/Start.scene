@@ -30,12 +30,12 @@
             "label": "pgames",
             "components": [],
             "texture": {
-                "key": "Camp_Penguin_login"
+                "key": "generic_start"
             },
             "x": 759,
             "y": 432,
-            "scaleX": 1.5853090106076604,
-            "scaleY": 1.5539582894967496
+            "scaleX": 1.2,
+            "scaleY": 1.2
         },
         {
             "type": "Image",
