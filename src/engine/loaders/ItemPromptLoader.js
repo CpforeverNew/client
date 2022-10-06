@@ -10,9 +10,13 @@ export default class ItemPromptLoader extends BaseLoader {
     }
 
     get baseURL() {
+
+        const furniture_url = window.location.hostname == 'play.cpforever.org' ? 'https://cdn.cpforever.org/assets/media/furniture/icon/@5x/' : '/assets/media/furniture/icon/@5x/'
+        const clothing_url = window.location.hostname == 'play.cpforever.org' ? 'https://cdn.cpforever.org/assets/media/clothing/icon/large/' : '/assets/media/clothing/icon/large/'
+
         return (this.prompt.type == 'furniture')
-            ? '/assets/media/furniture/icon/@5x/'
-            : '/assets/media/clothing/icon/large/'
+            ? furniture_url
+            : clothing_url
     }
 
     get keyPrefix() {
