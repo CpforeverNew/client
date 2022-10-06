@@ -175,28 +175,6 @@ export default class IglooCatalog extends Book {
         const page_3_fin = this.add.image(765, 432, "igloojul22", "page_3_fin");
         page3.add(page_3_fin);
 
-        // small_buy0001_png_1_2_2_2_2_1_1_1_1_1
-        const small_buy0001_png_1_2_2_2_2_1_1_1_1_1 = this.add.image(573, 368, "Sep2005", "small-buy0001.png");
-        page3.add(small_buy0001_png_1_2_2_2_2_1_1_1_1_1);
-
-        // small_buy0001_png_1_2_2_2_2_1_1_1_2
-        const small_buy0001_png_1_2_2_2_2_1_1_1_2 = this.add.image(565, 544, "Sep2005", "small-buy0001.png");
-        page3.add(small_buy0001_png_1_2_2_2_2_1_1_1_2);
-
-        // small_buy0001_png_1_2_2_2_2_1_1_2
-        const small_buy0001_png_1_2_2_2_2_1_1_2 = this.add.image(911, 694, "Sep2005", "small-buy0001.png");
-        small_buy0001_png_1_2_2_2_2_1_1_2.scaleX = 1.3328786018674257;
-        small_buy0001_png_1_2_2_2_2_1_1_2.scaleY = 1.3328786018674257;
-        page3.add(small_buy0001_png_1_2_2_2_2_1_1_2);
-
-        // small_buy0001_png_1_2_2_2_2_1_2
-        const small_buy0001_png_1_2_2_2_2_1_2 = this.add.image(572, 712, "Sep2005", "small-buy0001.png");
-        page3.add(small_buy0001_png_1_2_2_2_2_1_2);
-
-        // small_buy0001_png_1_2_2_2_2_2
-        const small_buy0001_png_1_2_2_2_2_2 = this.add.image(562, 204, "Sep2005", "small-buy0001.png");
-        page3.add(small_buy0001_png_1_2_2_2_2_2);
-
         // close_left_1
         const close_left_1 = this.add.image(196, 36, "clothingcatalog", "close_left");
         close_left_1.setOrigin(0, 0);
@@ -217,6 +195,29 @@ export default class IglooCatalog extends Book {
         page_left_1_1.setOrigin(0, 0);
         page3.add(page_left_1_1);
 
+        // floorButton_5
+        const floorButton_5 = new FloorButton(this, 515, 173);
+        page3.add(floorButton_5);
+
+        // floorButton_6
+        const floorButton_6 = new FloorButton(this, 526, 343);
+        page3.add(floorButton_6);
+
+        // floorButton_7
+        const floorButton_7 = new FloorButton(this, 514, 514);
+        page3.add(floorButton_7);
+
+        // floorButton_8
+        const floorButton_8 = new FloorButton(this, 526, 681);
+        page3.add(floorButton_8);
+
+        // floorButton_9
+        const floorButton_9 = new FloorButton(this, 846, 656);
+        floorButton_9.scaleX = 1.3;
+        floorButton_9.scaleY = 1.3;
+        floorButton_9.setOrigin(0, 0);
+        page3.add(floorButton_9);
+
         // page2
         const page2 = this.add.container(0, 0);
         page2.visible = false;
@@ -224,26 +225,6 @@ export default class IglooCatalog extends Book {
         // page_2_fin
         const page_2_fin = this.add.image(765, 432, "igloojul22", "page_2_fin");
         page2.add(page_2_fin);
-
-        // small_buy0001_png_1_2_2_2_2
-        const small_buy0001_png_1_2_2_2_2 = this.add.image(585, 478, "Sep2005", "small-buy0001.png");
-        page2.add(small_buy0001_png_1_2_2_2_2);
-
-        // small_buy0001_png_1_2_2_2_2_1
-        const small_buy0001_png_1_2_2_2_2_1 = this.add.image(587, 685, "Sep2005", "small-buy0001.png");
-        page2.add(small_buy0001_png_1_2_2_2_2_1);
-
-        // small_buy0001_png_1_2_2_2_2_1_1
-        const small_buy0001_png_1_2_2_2_2_1_1 = this.add.image(1147, 705, "Sep2005", "small-buy0001.png");
-        page2.add(small_buy0001_png_1_2_2_2_2_1_1);
-
-        // small_buy0001_png_1_2_2_2_2_1_1_1
-        const small_buy0001_png_1_2_2_2_2_1_1_1 = this.add.image(1147, 464, "Sep2005", "small-buy0001.png");
-        page2.add(small_buy0001_png_1_2_2_2_2_1_1_1);
-
-        // small_buy0001_png_1_2_2_2_2_1_1_1_1
-        const small_buy0001_png_1_2_2_2_2_1_1_1_1 = this.add.image(1145, 244, "Sep2005", "small-buy0001.png");
-        page2.add(small_buy0001_png_1_2_2_2_2_1_1_1_1);
 
         // page_left_1
         const page_left_1 = this.add.image(194, 587, "clothingcatalog", "page_left");
@@ -265,6 +246,26 @@ export default class IglooCatalog extends Book {
         close_left.setOrigin(0, 0);
         page2.add(close_left);
 
+        // floorButton
+        const floorButton = new FloorButton(this, 538, 447);
+        page2.add(floorButton);
+
+        // floorButton_1
+        const floorButton_1 = new FloorButton(this, 539, 656);
+        page2.add(floorButton_1);
+
+        // floorButton_2
+        const floorButton_2 = new FloorButton(this, 1100, 436);
+        page2.add(floorButton_2);
+
+        // floorButton_3
+        const floorButton_3 = new FloorButton(this, 1099, 678);
+        page2.add(floorButton_3);
+
+        // floorButton_4
+        const floorButton_4 = new FloorButton(this, 1100, 215);
+        page2.add(floorButton_4);
+
         // page1
         const page1 = this.add.container(0, 0);
 
@@ -273,7 +274,7 @@ export default class IglooCatalog extends Book {
         page1.add(page_1_fin);
 
         // next_page0001_png
-        const next_page0001_png = this.add.image(984, 691, "Sep2005", "next-page0001.png");
+        const next_page0001_png = this.add.image(991, 698, "catalogs-master", "nextpagebtn");
         page1.add(next_page0001_png);
 
         // close_right_4_1
@@ -400,31 +401,6 @@ export default class IglooCatalog extends Book {
         page_left_1_11Button.callback = () => this.prevPage();
         page_left_1_11Button.activeFrame = false;
 
-        // small_buy0001_png_1_2_2_2_2_1_1_1_1_1 (components)
-        const small_buy0001_png_1_2_2_2_2_1_1_1_1_1Button = new Button(small_buy0001_png_1_2_2_2_2_1_1_1_1_1);
-        small_buy0001_png_1_2_2_2_2_1_1_1_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1_1_1_1_1Button.callback = () => this.unimplementedPrompt();
-
-        // small_buy0001_png_1_2_2_2_2_1_1_1_2 (components)
-        const small_buy0001_png_1_2_2_2_2_1_1_1_2Button = new Button(small_buy0001_png_1_2_2_2_2_1_1_1_2);
-        small_buy0001_png_1_2_2_2_2_1_1_1_2Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1_1_1_2Button.callback = () => this.unimplementedPrompt();
-
-        // small_buy0001_png_1_2_2_2_2_1_1_2 (components)
-        const small_buy0001_png_1_2_2_2_2_1_1_2Button = new Button(small_buy0001_png_1_2_2_2_2_1_1_2);
-        small_buy0001_png_1_2_2_2_2_1_1_2Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1_1_2Button.callback = () => this.unimplementedPrompt();
-
-        // small_buy0001_png_1_2_2_2_2_1_2 (components)
-        const small_buy0001_png_1_2_2_2_2_1_2Button = new Button(small_buy0001_png_1_2_2_2_2_1_2);
-        small_buy0001_png_1_2_2_2_2_1_2Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1_2Button.callback = () => this.unimplementedPrompt();
-
-        // small_buy0001_png_1_2_2_2_2_2 (components)
-        const small_buy0001_png_1_2_2_2_2_2Button = new Button(small_buy0001_png_1_2_2_2_2_2);
-        small_buy0001_png_1_2_2_2_2_2Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_2Button.callback = () => this.unimplementedPrompt();
-
         // close_left_1 (components)
         const close_left_1Button = new Button(close_left_1);
         close_left_1Button.spriteName = "close_left";
@@ -449,30 +425,17 @@ export default class IglooCatalog extends Book {
         page_left_1_1Button.callback = () => this.prevPage();
         page_left_1_1Button.activeFrame = false;
 
-        // small_buy0001_png_1_2_2_2_2 (components)
-        const small_buy0001_png_1_2_2_2_2Button = new Button(small_buy0001_png_1_2_2_2_2);
-        small_buy0001_png_1_2_2_2_2Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2Button.callback = () => this.unimplementedPrompt();
+        // floorButton_5 (prefab fields)
+        floorButton_5.floor = 5;
 
-        // small_buy0001_png_1_2_2_2_2_1 (components)
-        const small_buy0001_png_1_2_2_2_2_1Button = new Button(small_buy0001_png_1_2_2_2_2_1);
-        small_buy0001_png_1_2_2_2_2_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1Button.callback = () => this.unimplementedPrompt();
+        // floorButton_6 (prefab fields)
+        floorButton_6.floor = 0;
 
-        // small_buy0001_png_1_2_2_2_2_1_1 (components)
-        const small_buy0001_png_1_2_2_2_2_1_1Button = new Button(small_buy0001_png_1_2_2_2_2_1_1);
-        small_buy0001_png_1_2_2_2_2_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1_1Button.callback = () => this.unimplementedPrompt();
+        // floorButton_7 (prefab fields)
+        floorButton_7.floor = 3;
 
-        // small_buy0001_png_1_2_2_2_2_1_1_1 (components)
-        const small_buy0001_png_1_2_2_2_2_1_1_1Button = new Button(small_buy0001_png_1_2_2_2_2_1_1_1);
-        small_buy0001_png_1_2_2_2_2_1_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1_1_1Button.callback = () => this.unimplementedPrompt();
-
-        // small_buy0001_png_1_2_2_2_2_1_1_1_1 (components)
-        const small_buy0001_png_1_2_2_2_2_1_1_1_1Button = new Button(small_buy0001_png_1_2_2_2_2_1_1_1_1);
-        small_buy0001_png_1_2_2_2_2_1_1_1_1Button.spriteName = "small-buy0001.png";
-        small_buy0001_png_1_2_2_2_2_1_1_1_1Button.callback = () => this.unimplementedPrompt();
+        // floorButton_8 (prefab fields)
+        floorButton_8.floor = 11;
 
         // page_left_1 (components)
         const page_left_1Button = new Button(page_left_1);
@@ -498,9 +461,24 @@ export default class IglooCatalog extends Book {
         close_leftButton.callback = () => this.close();
         close_leftButton.activeFrame = false;
 
+        // floorButton (prefab fields)
+        floorButton.floor = 14;
+
+        // floorButton_1 (prefab fields)
+        floorButton_1.floor = 13;
+
+        // floorButton_2 (prefab fields)
+        floorButton_2.floor = 7;
+
+        // floorButton_3 (prefab fields)
+        floorButton_3.floor = 12;
+
+        // floorButton_4 (prefab fields)
+        floorButton_4.floor = 9;
+
         // next_page0001_png (components)
         const next_page0001_pngButton = new Button(next_page0001_png);
-        next_page0001_pngButton.spriteName = "next-page0001.png";
+        next_page0001_pngButton.spriteName = "nextpagebtn";
         next_page0001_pngButton.callback = () => this.nextPage();
         next_page0001_pngButton.pixelPerfect = true;
 

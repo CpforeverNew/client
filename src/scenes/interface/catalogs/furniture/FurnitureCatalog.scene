@@ -619,7 +619,7 @@
                         "scaleY"
                     ],
                     "label": "buyButton_5",
-                    "item": 454,
+                    "item": 450,
                     "components": [],
                     "x": 540,
                     "y": 209,
@@ -637,7 +637,7 @@
                         "scaleY"
                     ],
                     "label": "buyButton_6",
-                    "item": 440,
+                    "item": 454,
                     "components": [],
                     "x": 292,
                     "y": 423,
@@ -848,7 +848,6 @@
             "id": "656d8755-0e55-47b6-ab34-f3ab123ef07e",
             "label": "page1",
             "components": [],
-            "visible": false,
             "list": [
                 {
                     "type": "Image",

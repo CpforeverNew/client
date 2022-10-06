@@ -7,7 +7,7 @@
         "snapHeight": 45,
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
-        "superClassName": "BookContainer",
+        "superClassName": "Book",
         "preloadMethodName": "",
         "preloadPackFiles": [],
         "createMethodName": "",
@@ -2291,7 +2291,7 @@
                                 "y"
                             ],
                             "label": "tag_7",
-                            "item": 6022,
+                            "item": 2010,
                             "components": [],
                             "x": 432,
                             "y": 405,
@@ -3142,7 +3142,6 @@
                     "id": "5f2ef7be-9650-4018-9f65-261a7a760d57",
                     "label": "page1",
                     "components": [],
-                    "visible": false,
                     "list": [
                         {
                             "type": "Image",

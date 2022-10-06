@@ -321,7 +321,6 @@ export default class FurnitureCatalog extends Book {
 
         // page1
         const page1 = this.add.container(0, 0);
-        page1.visible = false;
 
         // p1
         const p1 = this.add.image(0, 0, "furniturecatalog", "page/page0001");
@@ -453,10 +452,10 @@ export default class FurnitureCatalog extends Book {
         buyButton_37.item = 184;
 
         // buyButton_5 (prefab fields)
-        buyButton_5.item = 454;
+        buyButton_5.item = 450;
 
         // buyButton_6 (prefab fields)
-        buyButton_6.item = 440;
+        buyButton_6.item = 454;
 
         // buyButton_7 (prefab fields)
         buyButton_7.item = 453;
