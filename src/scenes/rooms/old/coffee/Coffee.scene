@@ -283,6 +283,23 @@
             "y": 135,
             "originX": 0,
             "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "4ab9d94b-6fe0-4957-8087-5cef56e61d20",
+            "label": "spice",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.prompt.showItem(37381);",
+            "SimpleButton.pixelPerfect": true,
+            "texture": {
+                "key": "spice"
+            },
+            "x": 132,
+            "y": 615,
+            "scaleX": 0.5,
+            "scaleY": 0.5
         }
     ],
     "plainObjects": [],

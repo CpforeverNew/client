@@ -108,6 +108,11 @@ export default class Coffee extends RoomScene {
         const door = this.add.image(724, 135, "coffee", "door");
         door.setOrigin(0, 0);
 
+        // spice
+        const spice = this.add.image(132, 615, "spice");
+        spice.scaleX = 0.5;
+        spice.scaleY = 0.5;
+
         // lists
         const sort = [beans, bag, sign_front, sign_back, counter_front, counter_back, table];
 
@@ -146,6 +151,11 @@ export default class Coffee extends RoomScene {
         const doorMoveTo = new MoveTo(door);
         doorMoveTo.x = 750;
         doorMoveTo.y = 392;
+
+        // spice (components)
+        const spiceSimpleButton = new SimpleButton(spice);
+        spiceSimpleButton.callback = () => this.interface.prompt.showItem(37381);;
+        spiceSimpleButton.pixelPerfect = true;
 
         this.board = board;
         this.sort = sort;
