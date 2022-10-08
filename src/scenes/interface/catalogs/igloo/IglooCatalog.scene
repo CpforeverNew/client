@@ -9,7 +9,7 @@
         "preloadPackFiles": [
             "client/assets/media/interface/catalogs/clothing/clothingcatalog-pack.json",
             "client/assets/media/interface/catalogs/igloo/igloocatalog-pack.json",
-            "client/assets/media/interface/catalogs/clothing/sep05-pack.json"
+            "client/assets/media/interface/catalogs/catalogs-master-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "IglooCatalog",

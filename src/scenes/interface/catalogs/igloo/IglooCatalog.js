@@ -29,7 +29,7 @@ export default class IglooCatalog extends Book {
 
         this.load.pack("clothingcatalog-pack", "assets/media/interface/catalogs/clothing/clothingcatalog-pack.json");
         this.load.pack("igloocatalog-pack", "assets/media/interface/catalogs/igloo/igloocatalog-pack.json");
-        this.load.pack("sep05-pack", "assets/media/interface/catalogs/clothing/sep05-pack.json");
+        this.load.pack("catalogs-master-pack", "assets/media/interface/catalogs/catalogs-master-pack.json");
     }
 
     /** @returns {void} */
