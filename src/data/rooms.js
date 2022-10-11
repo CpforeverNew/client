@@ -142,7 +142,7 @@ rooms = {
 	},
 	802: {
 		key: 'Rink',
-	scene: require(`@rooms/old/rink/Rink`).default,
+		scene: require(`@rooms/old/rink/Rink`).default,
 		x: 770,
 		y: 400
 	},
@@ -199,12 +199,6 @@ rooms = {
 		scene: require(`@rooms/old/cavemine/Cavemine`).default,
 		x: 840,
 		y: 480
-	},
-	852: {
-		key: 'Fofparty',
-		scene: require(`@rooms/old/fofparty/Fofparty`).default,
-		x: 1000,
-		y: 560
 	},
 	841: {
 		key: 'WinterPart1',
@@ -277,12 +271,6 @@ rooms = {
 		scene: require(`@rooms/old/observatory/Observatory`).default,
 		x: 760,
 		y: 660
-	},
-	899: {
-		key: 'Bloon',
-		scene: require(`@rooms/old/bloon/Bloon`).default,
-		x: 840,
-		y: 480
 	},
 	916: {
 		key: 'AquaGrabber',
