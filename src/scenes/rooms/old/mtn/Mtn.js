@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import { Animation, Zone, MoveTo } from '@components/components'
+import { Animation, Zone, MoveTo, SimpleButton } from '@components/components'
 
 import MtnSeat from './MtnSeat'
 
@@ -33,7 +33,7 @@ export default class Mtn extends RoomScene {
             'waddle102': () => this.triggerWaddle(102),
             'waddle103': () => this.triggerWaddle(103),
         }
-		this.music = 'mountain'
+        this.music = 'mountain'
 
         this.waddles = {}
         /* END-USER-CTR-CODE */
@@ -196,6 +196,10 @@ export default class Mtn extends RoomScene {
         zone1.isFilled = true;
         zone1.fillColor = 65280;
 
+        // catalog
+        const catalog = this.add.image(1365, 939, "mtn", "catalog");
+        catalog.setOrigin(0, 1);
+
         // lists
         const sort = [penguin_run, express, pole];
         const seats100 = [mtnSeat4, mtnSeat3, mtnSeat2, mtnSeat1];
@@ -207,6 +211,10 @@ export default class Mtn extends RoomScene {
         const chairAnimation = new Animation(chair);
         chairAnimation.key = "chair/chair";
         chairAnimation.end = 87;
+
+        // catalog_small (components)
+        const catalog_smallSimpleButton = new SimpleButton(catalog_small);
+        catalog_smallSimpleButton.callback = () => this.interface.loadExternal('Sled');
 
         // mtnSeat11 (prefab fields)
         mtnSeat11.sitFrame = 24;
@@ -274,6 +282,10 @@ export default class Mtn extends RoomScene {
 
         // zone1 (components)
         new MoveTo(zone1);
+
+        // catalog (components)
+        const catalogSimpleButton = new SimpleButton(catalog);
+        catalogSimpleButton.callback = () => this.interface.loadExternal('Sled');
 
         this.sort = sort;
         this.seats100 = seats100;

@@ -94,7 +94,10 @@
             "type": "Image",
             "id": "cd1933ae-fcd6-41e3-96e7-4b9b0636560b",
             "label": "catalog_small",
-            "components": [],
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.loadExternal('Sled')",
             "texture": {
                 "key": "mtn",
                 "frame": "catalog_small"
@@ -200,7 +203,7 @@
             "flipX": true
         },
         {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
             "id": "02e8351f-9f29-4051-9849-3bbbddc6f6b2",
             "unlock": [
                 "frame",
@@ -221,7 +224,7 @@
             "visible": false
         },
         {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
             "id": "8cc0a685-0b54-41bb-b9e7-4eda7a2d30a4",
             "unlock": [
                 "frame",
@@ -242,7 +245,7 @@
             "visible": false
         },
         {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
             "id": "597ca950-0087-4d7f-9de5-8d1c5398a36b",
             "unlock": [
                 "frame",
@@ -263,7 +266,7 @@
             "visible": false
         },
         {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
             "id": "8a9bb92e-9230-4dbc-8230-8cdee802ff6e",
             "unlock": [
                 "frame",
@@ -284,7 +287,7 @@
             "visible": false
         },
         {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
             "id": "4c265076-721c-4771-af6a-a97326296074",
             "unlock": [
                 "frame",
@@ -305,7 +308,7 @@
             "visible": false
         },
         {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
             "id": "20e8b41d-be5a-4d36-a616-0def9e56e144",
             "unlock": [
                 "frame",
@@ -326,7 +329,7 @@
             "visible": false
         },
         {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
             "id": "4d168170-6546-463f-a9b9-9ba6e5bea7ce",
             "unlock": [
                 "frame",
@@ -347,7 +350,7 @@
             "visible": false
         },
         {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
             "id": "d5eb78f1-0571-400c-9abc-45fc98cf6944",
             "unlock": [
                 "frame",
@@ -368,7 +371,7 @@
             "visible": false
         },
         {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
             "id": "39c72255-323b-48ea-a437-2e3915eb61d3",
             "unlock": [
                 "frame",
@@ -389,7 +392,7 @@
             "visible": false
         },
         {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
             "id": "c2949750-a722-445d-9dc8-31102e520741",
             "unlock": [
                 "frame",
@@ -410,7 +413,7 @@
             "visible": false
         },
         {
-            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
             "id": "50081472-c653-42f0-a728-d2165700933c",
             "unlock": [
                 "frame",
@@ -524,6 +527,23 @@
             "fillColor": "#00ff00",
             "width": 230,
             "height": 90
+        },
+        {
+            "type": "Image",
+            "id": "e6c26e9a-924c-4d3f-a00b-1b957e0b8f0b",
+            "label": "catalog",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.loadExternal('Sled')",
+            "texture": {
+                "key": "mtn",
+                "frame": "catalog"
+            },
+            "x": 1365,
+            "y": 939,
+            "originX": 0,
+            "originY": 1
         }
     ],
     "plainObjects": [],
