@@ -6,7 +6,13 @@ export default class RuffleManager {
 		this.RuffleHolder = RuffleHolder
 		this.crumbs = crumbs
 
+
+		var ruffleBaseAssetURL = window.location.hostname == 'play.cpforever.org' ? "https://cdn.cpforever.org/" : ""
+
 		window.RufflePlayer = window.RufflePlayer || {};
+		window.RufflePlayer.config = {
+			'base': ruffleBaseAssetURL 
+		}
 
 		if (localStorage.noRuffle === 'true') return
 
