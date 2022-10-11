@@ -274,6 +274,7 @@
                 "SimpleButton",
                 "Animation"
             ],
+            "SimpleButton.callback": "() => this.interface.loadExternal('Fishing')",
             "Animation.key": "catalog_small",
             "Animation.end": 7,
             "Animation.repeat": 0,
@@ -384,6 +385,23 @@
             "visible": false,
             "width": 50,
             "height": 50
+        },
+        {
+            "type": "Image",
+            "id": "b93d5e3d-6d6a-4d7c-86ae-26c91fed0f09",
+            "label": "catalog",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.loadExternal('Fishing')",
+            "texture": {
+                "key": "lodge",
+                "frame": "catalog"
+            },
+            "x": 1438,
+            "y": 889,
+            "originX": 0.504,
+            "originY": 0.5046728971962616
         }
     ],
     "plainObjects": [],
@@ -401,7 +419,8 @@
                 "88448b99-23ca-4433-82a8-40b75fe91423",
                 "53e3dc25-0ed5-456d-ab6b-fcf13df0fceb",
                 "c015247e-c4dd-45b4-a287-6530da7dbc01",
-                "982b7015-0e97-4f1c-be35-6780bb3352c4"
+                "982b7015-0e97-4f1c-be35-6780bb3352c4",
+                "b93d5e3d-6d6a-4d7c-86ae-26c91fed0f09"
             ]
         },
         {

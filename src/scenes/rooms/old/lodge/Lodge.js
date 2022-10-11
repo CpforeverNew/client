@@ -147,8 +147,12 @@ export default class Lodge extends RoomScene {
         const ellipse_5 = this.add.ellipse(1172, 724, 50, 50);
         ellipse_5.visible = false;
 
+        // catalog
+        const catalog = this.add.image(1438, 889, "lodge", "catalog");
+        catalog.setOrigin(0.504, 0.5046728971962616);
+
         // lists
-        const sort = [door, footrest, chair, table3];
+        const sort = [door, footrest, chair, table3, catalog];
         const seats104 = [ellipse_1, ellipse];
         const seats105 = [ellipse_3, ellipse_2];
         const seats106 = [ellipse_4, ellipse_5];
@@ -216,7 +220,8 @@ export default class Lodge extends RoomScene {
         fishing_doorMoveTo.y = 460;
 
         // catalog_small (components)
-        new SimpleButton(catalog_small);
+        const catalog_smallSimpleButton = new SimpleButton(catalog_small);
+        catalog_smallSimpleButton.callback = () => this.interface.loadExternal('Fishing');
         const catalog_smallAnimation = new Animation(catalog_small);
         catalog_smallAnimation.key = "catalog_small";
         catalog_smallAnimation.end = 7;
@@ -228,6 +233,10 @@ export default class Lodge extends RoomScene {
         const baitButton = new Button(bait);
         baitButton.spriteName = "bait";
         baitButton.activeFrame = false;
+
+        // catalog (components)
+        const catalogSimpleButton = new SimpleButton(catalog);
+        catalogSimpleButton.callback = () => this.interface.loadExternal('Fishing');
 
         this.bg = bg;
         this.flame = flame;
