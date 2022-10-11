@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import { Animation, Button, MoveTo, ShowHint, Zone } from '@components/components'
+import { Animation, Button, MoveTo, ShowHint, Zone, SimpleButton } from '@components/components'
 
 
 /* START OF COMPILED CODE */
@@ -95,6 +95,30 @@ export default class Dock extends RoomScene {
         zone.isFilled = true;
         zone.fillColor = 65280;
 
+        // boards
+        const boards = this.add.image(1360, 653, "dock", "boards");
+        boards.setOrigin(0.5, 0.7755102040816326);
+
+        // catalog_small
+        const catalog_small = this.add.image(651, -70, "dock", "catalog_small");
+        catalog_small.setOrigin(0, 0);
+
+        // catalog
+        const catalog = this.add.image(58, 43, "dock", "catalog");
+        catalog.setOrigin(0, 0);
+
+        // rectangle_1
+        const rectangle_1 = this.add.rectangle(1433, 884, 128, 128);
+        rectangle_1.alpha = 0.0005;
+        rectangle_1.isFilled = true;
+
+        // rectangle
+        const rectangle = this.add.rectangle(1405, 603, 128, 128);
+        rectangle.scaleX = 0.32564327607105537;
+        rectangle.scaleY = 0.3485774119270397;
+        rectangle.alpha = 0.0005;
+        rectangle.isFilled = true;
+
         // lists
         const sort = [post_3, post_4, post_1, post_2, rings, bollard_2, bollard_1, dock, box];
 
@@ -118,6 +142,14 @@ export default class Dock extends RoomScene {
         // zone (components)
         const zoneZone = new Zone(zone);
         zoneZone.hoverCallback = () => this.onRingsOver();
+
+        // rectangle_1 (components)
+        const rectangle_1SimpleButton = new SimpleButton(rectangle_1);
+        rectangle_1SimpleButton.callback = () => this.interface.loadExternal('Hydro');
+
+        // rectangle (components)
+        const rectangleSimpleButton = new SimpleButton(rectangle);
+        rectangleSimpleButton.callback = () => this.interface.loadExternal('Hydro');
 
         this.boat = boat;
         this.rings = rings;

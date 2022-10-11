@@ -223,6 +223,79 @@
             "fillColor": "#00ff00",
             "width": 135,
             "height": 160
+        },
+        {
+            "type": "Image",
+            "id": "7215f970-87dd-453e-8835-26a00ff4d253",
+            "label": "boards",
+            "components": [],
+            "texture": {
+                "key": "dock",
+                "frame": "boards"
+            },
+            "x": 1360,
+            "y": 653,
+            "originY": 0.7755102040816326
+        },
+        {
+            "type": "Image",
+            "id": "9de0599a-58e0-48f4-b49e-f2c221ae01b0",
+            "label": "catalog_small",
+            "components": [],
+            "texture": {
+                "key": "dock",
+                "frame": "catalog_small"
+            },
+            "x": 651,
+            "y": -70,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "70bbfa98-ac43-4f99-9427-2e37e6d47e77",
+            "label": "catalog",
+            "components": [],
+            "texture": {
+                "key": "dock",
+                "frame": "catalog"
+            },
+            "x": 58,
+            "y": 43,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Rectangle",
+            "id": "d0dce0cd-720f-45f7-a86e-28afeeae7f52",
+            "label": "rectangle_1",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.loadExternal('Hydro')",
+            "x": 1433,
+            "y": 884,
+            "alpha": 0.0005,
+            "isFilled": true,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "805eb167-9a7c-4c5e-befb-7f83f68d3a2d",
+            "label": "rectangle",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.loadExternal('Hydro')",
+            "x": 1405,
+            "y": 603,
+            "scaleX": 0.32564327607105537,
+            "scaleY": 0.3485774119270397,
+            "alpha": 0.0005,
+            "isFilled": true,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],
