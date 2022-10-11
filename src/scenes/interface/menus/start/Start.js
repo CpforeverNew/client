@@ -58,7 +58,9 @@ export default class Start extends BaseScene {
         startText.setStyle({ "align": "center", "fixedWidth":250,"fontFamily": "CCFaceFront", "fontSize": "40px", "fontStyle": "italic", "stroke": "#000000ff", "strokeThickness":10});
 
         // logo
-        this.add.image(760, 680, "cpf_logo");
+        const logo = this.add.image(760, 680, "cpf_logo");
+        logo.scaleX = 0.7;
+        logo.scaleY = 0.7;
 
         // blogButton (components)
         const blogButtonSimpleButton = new SimpleButton(blogButton);

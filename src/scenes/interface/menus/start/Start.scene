@@ -157,7 +157,9 @@
                 "key": "cpf_logo"
             },
             "x": 760,
-            "y": 680
+            "y": 680,
+            "scaleX": 0.7,
+            "scaleY": 0.7
         }
     ],
     "plainObjects": [],
