@@ -154,6 +154,10 @@ export default class Main extends BaseScene {
         this.tickets;
         /** @type {Newspaper} */
         this.newspaper;
+        /** @type {Phaser.GameObjects.Image} */
+        this.mail_new;
+        /** @type {Phaser.GameObjects.Text} */
+        this.mail_text;
         /** @type {Array<PlayerCard|Buddy|Moderator>} */
         this.hideOnSleep;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|ChatLog>} */
@@ -427,6 +431,14 @@ export default class Main extends BaseScene {
         this.add.existing(newspaper);
         newspaper.visible = false;
 
+        // mail_new
+        const mail_new = this.add.image(197, 29, "main", "mail-new");
+
+        // mail_text
+        const mail_text = this.add.text(187, 20, "", {});
+        mail_text.text = "0";
+        mail_text.setStyle({ "align": "center", "fixedWidth":20,"fontFamily": "CCFaceFront", "fontSize": "19px", "fontStyle": "bold" });
+
         // lists
         const hideOnSleep = [playerCard, buddy, moderator];
         const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, puffle_icon, puffle_button_disabled, chat_box, map_button, news_button, mod_m, chatLog, badge_member, emote_icon];
@@ -524,7 +536,7 @@ export default class Main extends BaseScene {
         // mail_btn (components)
         const mail_btnButton = new Button(mail_btn);
         mail_btnButton.spriteName = "mail-button";
-        mail_btnButton.callback = () => {this.world.RuffleManager.handleLoadOtherSwf("mail.swf")};
+        mail_btnButton.callback = () => this.onMailClick();
         mail_btnButton.activeFrame = false;
 
         // news_button (components)
@@ -608,6 +620,8 @@ export default class Main extends BaseScene {
         this.version = version;
         this.tickets = tickets;
         this.newspaper = newspaper;
+        this.mail_new = mail_new;
+        this.mail_text = mail_text;
         this.hideOnSleep = hideOnSleep;
         this.interfaceList = interfaceList;
 
@@ -1031,6 +1045,21 @@ export default class Main extends BaseScene {
 
     onPuffleClick(){
 
+    }
+
+    onMailClick(){
+        this.world.RuffleManager.handleLoadOtherSwf("mail.swf")
+        this.mail_text.text = "0"
+    }
+
+    update() {
+        if(this.mail_text.text == "0"){
+            this.mail_text.visible = false
+            this.mail_new.visible = false
+        }else{
+            this.mail_text.visible = true
+            this.mail_new.visible = true
+        }
     }
 
     /* END-USER-CODE */

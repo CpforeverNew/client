@@ -12,6 +12,9 @@ export default class Postcard extends Plugin {
     }
 
     updatePostcards(args) {
+        var unread = this.interface.main.mail_text.text
+        unread++;
+        this.interface.main.mail_text.text = unread;
         this.world.client.postcards = args.postcards
     }
     

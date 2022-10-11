@@ -512,7 +512,7 @@
                 "Button"
             ],
             "Button.spriteName": "mail-button",
-            "Button.callback": "() => {this.world.RuffleManager.handleLoadOtherSwf(\"mail.swf\")}",
+            "Button.callback": "() => this.onMailClick()",
             "Button.activeFrame": false,
             "texture": {
                 "key": "main",
@@ -995,6 +995,34 @@
             "y": 7,
             "visible": false,
             "nestedPrefabs": []
+        },
+        {
+            "type": "Image",
+            "id": "acee1183-596d-47a4-b9f2-2a3c0a662c14",
+            "label": "mail_new",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "main",
+                "frame": "mail-new"
+            },
+            "x": 197,
+            "y": 29
+        },
+        {
+            "type": "Text",
+            "id": "80a6d5e9-a542-4557-97c1-ecba7aa4013d",
+            "label": "mail_text",
+            "scope": "PUBLIC",
+            "components": [],
+            "x": 187,
+            "y": 20,
+            "text": "0",
+            "fixedWidth": 20,
+            "align": "center",
+            "fontFamily": "CCFaceFront",
+            "fontSize": "19px",
+            "fontStyle": "bold"
         }
     ],
     "plainObjects": [],
