@@ -55,10 +55,10 @@ export default class Beacon extends RoomScene {
         light.setOrigin(0.4636877094550476, 0.8057764213716073);
 
         // crate
-        const crate = this.add.image(331, 445, "beacon", "crate");
+        this.add.image(331, 445, "beacon", "crate");
 
         // telescope
-        this.add.image(248, 298, "ffc-beacon", "tele");
+        const telescope = this.add.image(248, 298, "beacon", "telescope");
 
         // lists
         const sort = [front_rail, light];
@@ -72,6 +72,13 @@ export default class Beacon extends RoomScene {
         jetpackMoveTo.y = 575;
         const jetpackShowHint = new ShowHint(jetpack);
         jetpackShowHint.text = "Jetpack Adventure";
+
+        // telescope (components)
+        const telescopeSimpleButton = new SimpleButton(telescope);
+        telescopeSimpleButton.callback = () => this.interface.loadExternal("Telescope");;
+        const telescopeMoveTo = new MoveTo(telescope);
+        telescopeMoveTo.x = 328;
+        telescopeMoveTo.y = 446;
 
         this.jetpack = jetpack;
         this.sort = sort;

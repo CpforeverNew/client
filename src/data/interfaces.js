@@ -12,6 +12,7 @@ const interfaces = {
     'SportsCatalog': require('@scenes/interface/catalogs/sports/SportsCatalog').default,
     'CostumeCatalog': require('@scenes/interface/catalogs/costume/CostumeCatalog').default,
     'MazeMap': require('@scenes/interface/game/mazemap/MazeMap').default,
+    'Telescope': require('@scenes/interface/game/telescope/Telescope').default,
 }
 
 export default interfaces

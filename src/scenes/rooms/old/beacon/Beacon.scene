@@ -108,10 +108,16 @@
             "type": "Image",
             "id": "2da7e4a6-de9c-41f4-a8f6-15297181c213",
             "label": "telescope",
-            "components": [],
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.callback": "() => this.interface.loadExternal(\"Telescope\");",
+            "MoveTo.x": 328,
+            "MoveTo.y": 446,
             "texture": {
-                "key": "ffc-beacon",
-                "frame": "tele"
+                "key": "beacon",
+                "frame": "telescope"
             },
             "x": 248,
             "y": 298

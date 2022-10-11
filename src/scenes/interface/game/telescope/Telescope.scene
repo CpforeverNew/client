@@ -1,0 +1,65 @@
+{
+    "id": "1d212bdf-be6b-400c-b0d5-bf34f2970c21",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [
+            "client/assets/media/interface/game/telescope/telescope-pack.json"
+        ],
+        "sceneKey": "Telescope",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "5e29c468-f442-40a9-81ed-8504fa002cbf",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "telescope",
+                "frame": "fg"
+            },
+            "x": 760,
+            "y": 454
+        },
+        {
+            "type": "Image",
+            "id": "c67a2969-edec-4c7e-81c2-8b51f68cd71c",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "telescope",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "cd0b81f8-555b-4d46-86b5-1b759216bdeb",
+            "label": "closebtn",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "closebtn",
+            "Button.callback": "() => this.scene.stop();",
+            "texture": {
+                "key": "telescope",
+                "frame": "closebtn"
+            },
+            "x": 1227,
+            "y": 71
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
