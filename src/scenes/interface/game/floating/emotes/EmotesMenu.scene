@@ -29,7 +29,9 @@
                     "label": "safe",
                     "scope": "CLASS",
                     "components": [],
+                    "x": 35,
                     "y": -229,
+                    "scaleX": 1.2555256627640599,
                     "isFilled": true,
                     "fillColor": "#00ffff",
                     "fillAlpha": 0.5,
@@ -58,8 +60,27 @@
                         "key": "main",
                         "frame": "emotes"
                     },
+                    "x": 34,
                     "y": -222,
+                    "scaleX": 1.3602600818283979,
                     "scaleY": 0.8624867995227165
+                },
+                {
+                    "type": "Image",
+                    "id": "958568e1-cd8e-430f-bd79-d591af2cf483",
+                    "label": "emote_19",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-box",
+                    "Button.callback": "() => { this.onEmoteClick(34) }",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "main",
+                        "frame": "small-box"
+                    },
+                    "x": 129,
+                    "y": -63
                 },
                 {
                     "type": "Image",
@@ -571,6 +592,163 @@
                         "frame": "emotes/1-small"
                     },
                     "x": -64,
+                    "y": -383
+                },
+                {
+                    "type": "Image",
+                    "id": "8b44fbfb-46b6-4a62-b0cb-14120946c1da",
+                    "label": "emotes_31",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "emotes/34-small"
+                    },
+                    "x": 129,
+                    "y": -63
+                },
+                {
+                    "type": "Image",
+                    "id": "26fc8fc4-5dfd-4098-8b26-d771d5aee346",
+                    "label": "emote",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-box",
+                    "Button.callback": "() => { this.onEmoteClick(32) }",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "main",
+                        "frame": "small-box"
+                    },
+                    "x": 129,
+                    "y": -127
+                },
+                {
+                    "type": "Image",
+                    "id": "589bf855-9247-4111-a03a-3070c4641811",
+                    "label": "emotes_1",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "emotes/32-small"
+                    },
+                    "x": 129,
+                    "y": -127
+                },
+                {
+                    "type": "Image",
+                    "id": "b83cf054-e97b-44c6-8c7f-54953086084b",
+                    "label": "emote_20",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-box",
+                    "Button.callback": "() => { this.onEmoteClick(33) }",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "main",
+                        "frame": "small-box"
+                    },
+                    "x": 129,
+                    "y": -191
+                },
+                {
+                    "type": "Image",
+                    "id": "992680c8-15a9-4690-be66-d36d1f4078fb",
+                    "label": "emotes_2",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "emotes/33-small"
+                    },
+                    "x": 129,
+                    "y": -191
+                },
+                {
+                    "type": "Image",
+                    "id": "a4f0106b-3f97-4987-bb2a-c03cd7f03994",
+                    "label": "emote_21",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-box",
+                    "Button.callback": "() => { this.onEmoteClick(31) }",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "main",
+                        "frame": "small-box"
+                    },
+                    "x": 129,
+                    "y": -255
+                },
+                {
+                    "type": "Image",
+                    "id": "c5fc935f-9976-4518-9c78-e5c7f68e43c6",
+                    "label": "emotes_3",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "emotes/31-small"
+                    },
+                    "x": 129,
+                    "y": -255
+                },
+                {
+                    "type": "Image",
+                    "id": "9803618c-ee0a-4c98-ab9a-e255283d16e4",
+                    "label": "emote_22",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-box",
+                    "Button.callback": "() => { this.onEmoteClick(35) }",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "main",
+                        "frame": "small-box"
+                    },
+                    "x": 129,
+                    "y": -319
+                },
+                {
+                    "type": "Image",
+                    "id": "4d92b970-f578-49eb-905c-7eca471dab58",
+                    "label": "emotes_4",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "emotes/35-small"
+                    },
+                    "x": 129,
+                    "y": -319
+                },
+                {
+                    "type": "Image",
+                    "id": "d659d43f-108a-4b4b-8832-0ff9a5135973",
+                    "label": "emote_23",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-box",
+                    "Button.callback": "() => { this.onEmoteClick(36) }",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "main",
+                        "frame": "small-box"
+                    },
+                    "x": 129,
+                    "y": -383
+                },
+                {
+                    "type": "Image",
+                    "id": "c15ee047-fae4-40a3-9952-73bc255017f3",
+                    "label": "emotes_5",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "emotes/36-small"
+                    },
+                    "x": 129,
                     "y": -383
                 }
             ]

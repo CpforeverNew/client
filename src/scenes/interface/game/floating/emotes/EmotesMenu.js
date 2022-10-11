@@ -17,7 +17,8 @@ export default class EmotesMenu extends FloatingMenu {
 
 
         // safe
-        const safe = scene.add.rectangle(0, -229, 280, 520);
+        const safe = scene.add.rectangle(35, -229, 280, 520);
+        safe.scaleX = 1.2555256627640599;
         safe.isFilled = true;
         safe.fillColor = 65535;
         safe.fillAlpha = 0.5;
@@ -31,9 +32,14 @@ export default class EmotesMenu extends FloatingMenu {
         this.add(close);
 
         // emotes
-        const emotes = scene.add.image(0, -222, "main", "emotes");
+        const emotes = scene.add.image(34, -222, "main", "emotes");
+        emotes.scaleX = 1.3602600818283979;
         emotes.scaleY = 0.8624867995227165;
         this.add(emotes);
+
+        // emote_19
+        const emote_19 = scene.add.image(129, -63, "main", "small-box");
+        this.add(emote_19);
 
         // emote_18
         const emote_18 = scene.add.image(64, -63, "main", "small-box");
@@ -181,6 +187,56 @@ export default class EmotesMenu extends FloatingMenu {
         const emotes_1_small = scene.add.image(-64, -383, "main", "emotes/1-small");
         this.add(emotes_1_small);
 
+        // emotes_31
+        const emotes_31 = scene.add.image(129, -63, "main", "emotes/34-small");
+        this.add(emotes_31);
+
+        // emote
+        const emote = scene.add.image(129, -127, "main", "small-box");
+        this.add(emote);
+
+        // emotes_1
+        const emotes_1 = scene.add.image(129, -127, "main", "emotes/32-small");
+        this.add(emotes_1);
+
+        // emote_20
+        const emote_20 = scene.add.image(129, -191, "main", "small-box");
+        this.add(emote_20);
+
+        // emotes_2
+        const emotes_2 = scene.add.image(129, -191, "main", "emotes/33-small");
+        this.add(emotes_2);
+
+        // emote_21
+        const emote_21 = scene.add.image(129, -255, "main", "small-box");
+        this.add(emote_21);
+
+        // emotes_3
+        const emotes_3 = scene.add.image(129, -255, "main", "emotes/31-small");
+        this.add(emotes_3);
+
+        // emote_22
+        const emote_22 = scene.add.image(129, -319, "main", "small-box");
+        this.add(emote_22);
+
+        // emotes_4
+        const emotes_4 = scene.add.image(129, -319, "main", "emotes/35-small");
+        this.add(emotes_4);
+
+        // emote_23
+        const emote_23 = scene.add.image(129, -383, "main", "small-box");
+        this.add(emote_23);
+
+        // emotes_5
+        const emotes_5 = scene.add.image(129, -383, "main", "emotes/36-small");
+        this.add(emotes_5);
+
+        // emote_19 (components)
+        const emote_19Button = new Button(emote_19);
+        emote_19Button.spriteName = "small-box";
+        emote_19Button.callback = () => { this.onEmoteClick(34) };
+        emote_19Button.activeFrame = false;
+
         // emote_18 (components)
         const emote_18Button = new Button(emote_18);
         emote_18Button.spriteName = "small-box";
@@ -288,6 +344,36 @@ export default class EmotesMenu extends FloatingMenu {
         emote_1Button.spriteName = "small-box";
         emote_1Button.callback = () => { this.onEmoteClick(1) };
         emote_1Button.activeFrame = false;
+
+        // emote (components)
+        const emoteButton = new Button(emote);
+        emoteButton.spriteName = "small-box";
+        emoteButton.callback = () => { this.onEmoteClick(32) };
+        emoteButton.activeFrame = false;
+
+        // emote_20 (components)
+        const emote_20Button = new Button(emote_20);
+        emote_20Button.spriteName = "small-box";
+        emote_20Button.callback = () => { this.onEmoteClick(33) };
+        emote_20Button.activeFrame = false;
+
+        // emote_21 (components)
+        const emote_21Button = new Button(emote_21);
+        emote_21Button.spriteName = "small-box";
+        emote_21Button.callback = () => { this.onEmoteClick(31) };
+        emote_21Button.activeFrame = false;
+
+        // emote_22 (components)
+        const emote_22Button = new Button(emote_22);
+        emote_22Button.spriteName = "small-box";
+        emote_22Button.callback = () => { this.onEmoteClick(35) };
+        emote_22Button.activeFrame = false;
+
+        // emote_23 (components)
+        const emote_23Button = new Button(emote_23);
+        emote_23Button.spriteName = "small-box";
+        emote_23Button.callback = () => { this.onEmoteClick(36) };
+        emote_23Button.activeFrame = false;
 
         this.safe = safe;
         this.close = close;
