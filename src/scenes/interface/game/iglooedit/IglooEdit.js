@@ -25,6 +25,8 @@ export default class IglooEdit extends BaseScene {
         this.furniture;
         /** @type {GridView} */
         this.gridView;
+        /** @type {IglooMusic} */
+        this.iglooMusic;
 
 
         /* START-USER-CTR-CODE */
@@ -73,6 +75,11 @@ export default class IglooEdit extends BaseScene {
         const button_furniture = this.add.image(1263, 130, "iglooedit", "button/furniture");
         button_furniture.setOrigin(0.5, 0.584);
         controls.add(button_furniture);
+
+        // button_music
+        const button_music = this.add.image(1260, 7, "iglooedit", "button/music");
+        button_music.setOrigin(0.5039370078740157, 0.5);
+        controls.add(button_music);
 
         // furniture
         const furniture = this.add.container(1238, 294);
@@ -144,6 +151,11 @@ export default class IglooEdit extends BaseScene {
         this.add.existing(gridView);
         gridView.visible = false;
 
+        // iglooMusic
+        const iglooMusic = new IglooMusic(this, 760, 480);
+        this.add.existing(iglooMusic);
+        iglooMusic.visible = false;
+
         // button_edit (components)
         const button_editButton = new Button(button_edit);
         button_editButton.spriteName = "button/edit";
@@ -180,6 +192,11 @@ export default class IglooEdit extends BaseScene {
         button_furnitureButton.spriteName = "button/furniture";
         button_furnitureButton.callback = () => this.onFurnitureClick();
         button_furnitureButton.activeFrame = false;
+
+        // button_music (components)
+        const button_musicButton = new Button(button_music);
+        button_musicButton.spriteName = "button/music";
+        button_musicButton.callback = () => this.onMusicClick();
 
         // list (components)
         new Interactive(list);
@@ -226,6 +243,7 @@ export default class IglooEdit extends BaseScene {
         this.button_furniture = button_furniture;
         this.furniture = furniture;
         this.gridView = gridView;
+        this.iglooMusic = iglooMusic;
 
         this.events.emit("scene-awake");
     }
@@ -345,6 +363,10 @@ export default class IglooEdit extends BaseScene {
         for (let control of this.controls.list) {
             control[set]()
         }
+    }
+
+    onMusicClick() {
+        this.iglooMusic.visible = true
     }
 
     /* END-USER-CODE */

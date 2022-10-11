@@ -155,6 +155,23 @@
                     "x": 1263,
                     "y": 130,
                     "originY": 0.584
+                },
+                {
+                    "type": "Image",
+                    "id": "c30f814e-5380-474d-9077-4a18fbcd1492",
+                    "label": "button_music",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "button/music",
+                    "Button.callback": "() => this.onMusicClick()",
+                    "texture": {
+                        "key": "iglooedit",
+                        "frame": "button/music"
+                    },
+                    "x": 1260,
+                    "y": 7,
+                    "originX": 0.5039370078740157
                 }
             ]
         },
@@ -374,6 +391,22 @@
             "components": [],
             "x": 0,
             "y": 0,
+            "visible": false,
+            "nestedPrefabs": []
+        },
+        {
+            "prefabId": "d6cf4a9b-bcc7-4de0-bd9b-d33346f4fd2b",
+            "id": "71c84211-f2af-49bd-8de9-b3a42513ffd9",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "iglooMusic",
+            "scope": "CLASS",
+            "components": [],
+            "x": 760,
+            "y": 480,
             "visible": false,
             "nestedPrefabs": []
         }

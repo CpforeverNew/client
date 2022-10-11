@@ -7,7 +7,8 @@ export default class Igloo extends Plugin {
             'add_furniture': this.addFurniture,
             'update_flooring': this.updateFlooring,
             'get_igloos': this.getIgloos,
-            'get_igloo_open': this.getIglooOpen
+            'get_igloo_open': this.getIglooOpen,
+            'update_music': this.updateMusic,
         }
     }
 
@@ -58,6 +59,13 @@ export default class Igloo extends Plugin {
     getIglooOpen(args) {
         if (args.open) {
             this.interface.main.playerCard.buttons.enableButton('igloo')
+        }
+    }
+
+    updateMusic(args) {
+        console.log("hello")
+        if (!this.world.muteMusic) {
+            this.world.MusicController.addMusic(args.music)
         }
     }
 
