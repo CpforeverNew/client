@@ -1,0 +1,130 @@
+{
+    "id": "ac66851d-33b2-4c9f-b6a5-daa66c683606",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Scene",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "caeefe0e-e09f-46b2-ba11-a1ff414911a8",
+            "label": "container_2",
+            "components": [],
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "5f475531-e906-41e6-9d57-36357f5bd547",
+                    "label": "block",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "x": 770,
+                    "y": 475,
+                    "scaleX": 1.0639518692146546,
+                    "scaleY": 1.0647215971698112,
+                    "isFilled": true,
+                    "fillColor": "#000000",
+                    "fillAlpha": 0.2,
+                    "width": 1520,
+                    "height": 960
+                },
+                {
+                    "type": "Image",
+                    "id": "b3d4eefe-41fc-46ac-a01c-8e77d2b86a9a",
+                    "label": "Page2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "Page2.png"
+                    },
+                    "x": 750,
+                    "y": 475,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2
+                },
+                {
+                    "type": "Image",
+                    "id": "c2df67f7-68f2-4acb-bb9d-6b405fa10dda",
+                    "label": "Page1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "Page1.png"
+                    },
+                    "x": 750,
+                    "y": 475,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "4696e15f-f103-4771-ad5f-5e49e90941e5",
+                    "label": "NextPage_btn",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.nextPage()",
+                    "x": 1090,
+                    "y": 901,
+                    "scaleX": 1.386797632697588,
+                    "scaleY": 0.2707752265507227,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "b6522e39-5faa-42be-95ac-81a55e136f98",
+                    "label": "FrontPage_btn",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.frontPage()",
+                    "x": 1086,
+                    "y": 899,
+                    "scaleX": 1.386797632697588,
+                    "scaleY": 0.2707752265507227,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Image",
+                    "id": "9f527164-c678-4136-9d1e-3afb4d9d1560",
+                    "label": "closebtn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.close();",
+                    "texture": {
+                        "key": "newspaper-btns",
+                        "frame": "closebtn"
+                    },
+                    "x": 1208,
+                    "y": 35
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

@@ -15,6 +15,7 @@ import ChatLog from '../chatlog/ChatLog'
 import EmotesMenu from '../floating/emotes/EmotesMenu'
 import Waddle from '../waddle/Waddle'
 import Map from '../map/Map'
+import Newspaper from '../newspaper/Newspaper'
 import Moderator from '../moderator/Moderator'
 import ModActions from '../modactions/ModActions'
 import PlayerCard from '../playercard/PlayerCard'
@@ -158,6 +159,8 @@ export default class Main extends BaseScene {
         this.version;
         /** @type {Phaser.GameObjects.Text} */
         this.tickets;
+        /** @type {Newspaper} */
+        this.newspaper;
         /** @type {Array<PlayerCard|Buddy|Moderator>} */
         this.hideOnSleep;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|ChatLog>} */
@@ -433,6 +436,14 @@ export default class Main extends BaseScene {
         tickets.text = "0";
         tickets.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":100,"fontFamily": "CCFaceFront", "fontSize": "17px" });
 
+        // news_new
+        this.add.image(96, 90, "main", "news-new");
+
+        // newspaper
+        const newspaper = new Newspaper(this, -28, 7);
+        this.add.existing(newspaper);
+        newspaper.visible = false;
+
         // lists
         const hideOnSleep = [playerCard, buddy, moderator];
         const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, puffle_icon, puffle_button_disabled, chat_box, map_button, news_button, mod_m, chatLog, badge_member, emote_icon];
@@ -536,7 +547,7 @@ export default class Main extends BaseScene {
         // news_button (components)
         const news_buttonButton = new Button(news_button);
         news_buttonButton.spriteName = "news-button";
-        news_buttonButton.callback = () => window.open('https://discord.gg/cpf', '_blank').focus();;
+        news_buttonButton.callback = () => this.newspaper.visible = true;
         news_buttonButton.activeFrame = false;
 
         // mod_button (components)
@@ -615,6 +626,7 @@ export default class Main extends BaseScene {
         this.daily = daily;
         this.version = version;
         this.tickets = tickets;
+        this.newspaper = newspaper;
         this.hideOnSleep = hideOnSleep;
         this.interfaceList = interfaceList;
 
@@ -939,6 +951,11 @@ export default class Main extends BaseScene {
         this.onModOut()
         this.moderator.visible = true
         this.moderator.load()
+    }
+
+    onNewspaperClick() {
+        console.log('News Clicked');
+        this.newspaper.visible = true
     }
 
     onEasterClick() {

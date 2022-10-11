@@ -530,7 +530,7 @@
                 "Button"
             ],
             "Button.spriteName": "news-button",
-            "Button.callback": "() => window.open('https://discord.gg/cpf', '_blank').focus();",
+            "Button.callback": "() => this.newspaper.visible = true",
             "Button.activeFrame": false,
             "texture": {
                 "key": "main",
@@ -999,6 +999,34 @@
             "fontFamily": "CCFaceFront",
             "fontSize": "17px",
             "color": "#000000ff"
+        },
+        {
+            "type": "Image",
+            "id": "abaa21d2-06e9-4600-a776-7bdff961438c",
+            "label": "news_new",
+            "components": [],
+            "texture": {
+                "key": "main",
+                "frame": "news-new"
+            },
+            "x": 96,
+            "y": 90
+        },
+        {
+            "prefabId": "ac66851d-33b2-4c9f-b6a5-daa66c683606",
+            "id": "4517952d-4f2b-446b-a4f9-51ffeaf4bea2",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "newspaper",
+            "scope": "CLASS",
+            "components": [],
+            "x": -28,
+            "y": 7,
+            "visible": false,
+            "nestedPrefabs": []
         }
     ],
     "plainObjects": [],
