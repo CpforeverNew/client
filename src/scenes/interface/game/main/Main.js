@@ -22,13 +22,10 @@ import PlayerCard from '../playercard/PlayerCard'
 import PuffleCare from '../pufflecare/PuffleCare'
 import Safe from '../floating/safe/Safe'
 import Settings from '../settings/Settings'
-import Manage from '../manage/Manage'
 import Prompt from '../prompt/Prompt'
 import Snitch from '../snitch/Snitch'
-import Elevator from '../elevator/Elevator'
 import PufflesMenu from '../floating/puffles/PufflesMenu'
 import Daily from '../daily/Daily'
-import MusicJam from '../mj/MusicJam'
 
 /* START OF COMPILED CODE */
 
@@ -121,8 +118,6 @@ export default class Main extends BaseScene {
         this.playerCard;
         /** @type {Settings} */
         this.settings;
-        /** @type {Manage} */
-        this.manage;
         /** @type {Snitch} */
         this.snitch;
         /** @type {ActionsMenu} */
@@ -151,8 +146,6 @@ export default class Main extends BaseScene {
         this.puffleCare;
         /** @type {Prompt} */
         this.prompt;
-        /** @type {Elevator} */
-        this.elevator;
         /** @type {Daily} */
         this.daily;
         /** @type {Phaser.GameObjects.Text} */
@@ -330,11 +323,6 @@ export default class Main extends BaseScene {
         this.add.existing(settings);
         settings.visible = false;
 
-        // manage
-        const manage = new Manage(this, 760, 481);
-        this.add.existing(manage);
-        manage.visible = false;
-
         // snitch
         const snitch = new Snitch(this, 760, 481);
         this.add.existing(snitch);
@@ -407,11 +395,6 @@ export default class Main extends BaseScene {
         const prompt = new Prompt(this, 0, 0);
         this.add.existing(prompt);
         prompt.visible = false;
-
-        // elevator
-        const elevator = new Elevator(this, 27, 35);
-        this.add.existing(elevator);
-        elevator.visible = false;
 
         // daily
         const daily = new Daily(this, 0, 0);
@@ -607,7 +590,6 @@ export default class Main extends BaseScene {
         this.buddy = buddy;
         this.playerCard = playerCard;
         this.settings = settings;
-        this.manage = manage;
         this.snitch = snitch;
         this.actionsMenu = actionsMenu;
         this.emotesMenu = emotesMenu;
@@ -622,7 +604,6 @@ export default class Main extends BaseScene {
         this.stampEarnedBody = stampEarnedBody;
         this.puffleCare = puffleCare;
         this.prompt = prompt;
-        this.elevator = elevator;
         this.daily = daily;
         this.version = version;
         this.tickets = tickets;

@@ -686,22 +686,6 @@
             "nestedPrefabs": []
         },
         {
-            "prefabId": "f2e8b538-6469-4a45-b23d-beac8cbf03a0",
-            "id": "42ba9bd1-bc37-460b-95b2-e93f5cef7eb7",
-            "unlock": [
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "manage",
-            "scope": "CLASS",
-            "components": [],
-            "x": 760,
-            "y": 481,
-            "visible": false,
-            "nestedPrefabs": []
-        },
-        {
             "prefabId": "660de11c-0cd6-4b68-8d0c-bee940918a4d",
             "id": "c97371c3-1a8a-4fdd-9e73-9e939c9cf527",
             "unlock": [
@@ -909,22 +893,6 @@
             "components": [],
             "x": 0,
             "y": 0,
-            "visible": false,
-            "nestedPrefabs": []
-        },
-        {
-            "prefabId": "9f7a331a-a949-4528-a4c9-d9c59747ebf1",
-            "id": "9db83153-b0a5-4484-917a-2d9f77419df4",
-            "unlock": [
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "elevator",
-            "scope": "CLASS",
-            "components": [],
-            "x": 27,
-            "y": 35,
             "visible": false,
             "nestedPrefabs": []
         },
