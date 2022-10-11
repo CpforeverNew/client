@@ -80,18 +80,6 @@
         },
         {
             "type": "Image",
-            "id": "e1cc4af7-ca75-4011-b157-fd3d2a66eb74",
-            "label": "popcorn",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "popcorn"
-            },
-            "x": 1412,
-            "y": 759
-        },
-        {
-            "type": "Image",
             "id": "d3717137-e1aa-47c0-b917-3711f1ece9c5",
             "label": "shadow_popcorn_top",
             "components": [],
@@ -101,21 +89,6 @@
             },
             "x": 1412,
             "y": 753
-        },
-        {
-            "type": "Image",
-            "id": "7eb4134d-e13e-4a80-82b2-c8cd4ef19c7c",
-            "label": "shadow_popcorn_undertop",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => this.interface.prompt.showItem(7032);",
-            "texture": {
-                "key": "theatre",
-                "frame": "shadow_popcorn_undertop"
-            },
-            "x": 1414,
-            "y": 759
         },
         {
             "type": "Image",

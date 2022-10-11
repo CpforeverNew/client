@@ -16,8 +16,6 @@ export default class Theatre extends RoomScene {
         /** @type {Phaser.GameObjects.Rectangle} */
         this.screen_placeholder;
         /** @type {Phaser.GameObjects.Image} */
-        this.popcorn;
-        /** @type {Phaser.GameObjects.Image} */
         this.left_screen_column;
         /** @type {Phaser.GameObjects.Image} */
         this.right_screen_column;
@@ -78,14 +76,8 @@ export default class Theatre extends RoomScene {
         // shadow_popcorn_abovebottom
         this.add.image(1412, 766, "theatre", "shadow_popcorn_abovebottom");
 
-        // popcorn
-        const popcorn = this.add.image(1412, 759, "popcorn");
-
         // shadow_popcorn_top
         this.add.image(1412, 753, "theatre", "shadow_popcorn_top");
-
-        // shadow_popcorn_undertop
-        const shadow_popcorn_undertop = this.add.image(1414, 759, "theatre", "shadow_popcorn_undertop");
 
         // right_terrace_back_curtain
         this.add.image(1448, 254, "theatre", "right_terrace_back_curtain");
@@ -213,13 +205,8 @@ export default class Theatre extends RoomScene {
         // lists
         const sort = [chair16, chair17, chair18, chair19, chair20, chair15, chair14, chair13, chair12, chair11, chair6, chair7, chair8, chair9, chair10, chair5, chair4, chair3, chair2, chair1];
 
-        // shadow_popcorn_undertop (components)
-        const shadow_popcorn_undertopSimpleButton = new SimpleButton(shadow_popcorn_undertop);
-        shadow_popcorn_undertopSimpleButton.callback = () => this.interface.prompt.showItem(7032);
-
         this.screen_back_1 = screen_back_1;
         this.screen_placeholder = screen_placeholder;
-        this.popcorn = popcorn;
         this.left_screen_column = left_screen_column;
         this.right_screen_column = right_screen_column;
         this.top_arch = top_arch;
