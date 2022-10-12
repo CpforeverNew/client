@@ -1,0 +1,100 @@
+{
+    "id": "adf01cd7-905a-4466-a2dd-ff0496e1456e",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "IglooScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/igloos/buildings/sprites/backyard/backyard-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Backyard",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "811eac2f-31a1-497e-a309-fb46e3eccbb1",
+            "label": "grass_floor",
+            "components": [],
+            "texture": {
+                "key": "backyard",
+                "frame": "grass_floor"
+            },
+            "x": 495,
+            "y": 647
+        },
+        {
+            "type": "Image",
+            "id": "24d66ff1-4520-4aa9-af99-a416f4143205",
+            "label": "floor",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "backyard",
+                "frame": "main_floor"
+            },
+            "x": 938,
+            "y": 622
+        },
+        {
+            "type": "Image",
+            "id": "94c5c99e-53e3-42c1-b4f8-38fd1f0048c2",
+            "label": "walls",
+            "components": [],
+            "texture": {
+                "key": "backyard",
+                "frame": "walls"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "09f92b0a-7aa2-42c2-8f27-6bbe842635ad",
+            "label": "door",
+            "components": [],
+            "texture": {
+                "key": "backyard",
+                "frame": "door"
+            },
+            "x": 719,
+            "y": 245
+        },
+        {
+            "type": "Image",
+            "id": "9050cf08-f3c0-48f6-8f2d-462f4b7cab45",
+            "label": "stairs",
+            "components": [],
+            "texture": {
+                "key": "backyard",
+                "frame": "stairs"
+            },
+            "x": 808,
+            "y": 673
+        },
+        {
+            "type": "Image",
+            "id": "3aef90c6-1977-420a-8da9-a949ae738584",
+            "label": "bottomwall",
+            "components": [],
+            "texture": {
+                "key": "backyard",
+                "frame": "bottomwall"
+            },
+            "x": 957,
+            "y": 817
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

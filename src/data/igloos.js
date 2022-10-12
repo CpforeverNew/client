@@ -70,6 +70,12 @@ const igloos = {
         scene: require('@igloos/splitlevel/SplitLevel').default,
         x: 310,
         y: 700
+    },
+    21: {
+        key: 'Backyard',
+        scene: require('@igloos/backyard/Backyard').default,
+        x: 770,
+        y: 750
     }
 }
 
