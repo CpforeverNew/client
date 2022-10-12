@@ -1,6 +1,4 @@
-import Button from "@scenes/components/Button";
 import IglooScene from "../IglooScene";
-// You can write more code here
 
 
 /* START OF COMPILED CODE */
@@ -10,7 +8,7 @@ export default class Backyard extends IglooScene {
     constructor() {
         super("Backyard");
 
-        /** @type {Phaser.GameObjects.Image} */
+        /** @type {Phaser.GameObjects.Container} */
         this.floor;
 
 
@@ -31,11 +29,20 @@ export default class Backyard extends IglooScene {
     /** @returns {void} */
     _create() {
 
-        // grass_floor
-        this.add.image(495, 647, "backyard", "grass_floor");
-
         // floor
-        const floor = this.add.image(938, 622, "backyard", "main_floor");
+        const floor = this.add.container(0, 0);
+
+        // grass_floor
+        const grass_floor = this.add.image(495, 645, "backyard", "grass_floor");
+        floor.add(grass_floor);
+
+        // floor_1
+        const floor_1 = this.add.image(936, 622, "backyard", "main_floor");
+        floor.add(floor_1);
+
+        // stairs_top
+        const stairs_top = this.add.image(785, 674, "backyard", "stairs_top");
+        floor.add(stairs_top);
 
         // walls
         this.add.image(760, 480, "backyard", "walls");
@@ -44,7 +51,7 @@ export default class Backyard extends IglooScene {
         this.add.image(719, 245, "backyard", "door");
 
         // stairs
-        this.add.image(808, 673, "backyard", "stairs");
+        this.add.image(806, 671, "backyard", "stairs");
 
         // bottomwall
         this.add.image(957, 817, "backyard", "bottomwall");

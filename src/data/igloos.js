@@ -71,11 +71,41 @@ const igloos = {
         x: 310,
         y: 700
     },
+    16: {
+        key: 'IceCastle',
+        scene: require('@igloos/icecastle/IceCastle').default,
+        x: 760,
+        y: 720
+    },
+    20: {
+        key: "JackOLantern",
+        scene: require('@igloos/jackolantern/JackOLantern').default,
+        x: 760,
+        y: 660
+    },
     21: {
         key: 'Backyard',
         scene: require('@igloos/backyard/Backyard').default,
         x: 770,
         y: 750
+    },
+    26: {
+        key: 'Restaurant',
+        scene: require('@igloos/restaurant/Restaurant').default,
+        x: 770,
+        y: 750
+    },
+    27: {
+        key: 'Treehouse',
+        scene: require('@igloos/treehouse/Treehouse').default,
+        x: 770,
+        y: 750
+    },
+    28: {
+        key: "TheatreIgloo",
+        scene: require('@igloos/theatre/TheatreIgloo').default,
+        x: 760,
+        y: 720
     }
 }
 

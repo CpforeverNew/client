@@ -94,6 +94,7 @@
             "id": "6dbd88a1-374f-4771-8459-4a0914b31455",
             "label": "page7",
             "components": [],
+            "visible": false,
             "list": [
                 {
                     "type": "Image",
@@ -1027,7 +1028,6 @@
             "id": "2f9f293f-2e21-4e6c-80f4-da94bf036675",
             "label": "page1",
             "components": [],
-            "visible": false,
             "list": [
                 {
                     "type": "Image",

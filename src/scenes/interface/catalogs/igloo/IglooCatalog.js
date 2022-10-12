@@ -61,6 +61,7 @@ export default class IglooCatalog extends Book {
 
         // page7
         const page7 = this.add.container(0, 0);
+        page7.visible = false;
 
         // page_6
         const page_6 = this.add.image(669, 628, "igloocatalog", "page7");
@@ -335,7 +336,6 @@ export default class IglooCatalog extends Book {
 
         // page1
         const page1 = this.add.container(0, 0);
-        page1.visible = false;
 
         // page
         const page = this.add.image(663, 513, "igloocatalog", "page1");

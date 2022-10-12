@@ -17,29 +17,49 @@
     },
     "displayList": [
         {
-            "type": "Image",
-            "id": "811eac2f-31a1-497e-a309-fb46e3eccbb1",
-            "label": "grass_floor",
-            "components": [],
-            "texture": {
-                "key": "backyard",
-                "frame": "grass_floor"
-            },
-            "x": 495,
-            "y": 647
-        },
-        {
-            "type": "Image",
-            "id": "24d66ff1-4520-4aa9-af99-a416f4143205",
+            "type": "Container",
+            "id": "2d3be0f2-23a4-444d-9dfd-5153e88e5846",
             "label": "floor",
             "scope": "CLASS",
             "components": [],
-            "texture": {
-                "key": "backyard",
-                "frame": "main_floor"
-            },
-            "x": 938,
-            "y": 622
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "97d32ad1-5621-4595-8ce6-87d63e5c6db1",
+                    "label": "grass_floor",
+                    "components": [],
+                    "texture": {
+                        "key": "backyard",
+                        "frame": "grass_floor"
+                    },
+                    "x": 495,
+                    "y": 645
+                },
+                {
+                    "type": "Image",
+                    "id": "d1be938d-ec8b-4c6a-a90b-45d7c92ecdc1",
+                    "label": "floor_1",
+                    "components": [],
+                    "texture": {
+                        "key": "backyard",
+                        "frame": "main_floor"
+                    },
+                    "x": 936,
+                    "y": 622
+                },
+                {
+                    "type": "Image",
+                    "id": "18295f44-2216-4838-8422-29b5975c35b9",
+                    "label": "stairs_top",
+                    "components": [],
+                    "texture": {
+                        "key": "backyard",
+                        "frame": "stairs_top"
+                    },
+                    "x": 785,
+                    "y": 674
+                }
+            ]
         },
         {
             "type": "Image",
@@ -74,8 +94,8 @@
                 "key": "backyard",
                 "frame": "stairs"
             },
-            "x": 808,
-            "y": 673
+            "x": 806,
+            "y": 671
         },
         {
             "type": "Image",
