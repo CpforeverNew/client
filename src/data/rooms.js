@@ -172,7 +172,7 @@ rooms = {
 	},
 	807: {
 		key: 'Shack',
-		scene: require(`@rooms/old/shack/Shack`).default,
+		scene: require(`@rooms/spooky_fair/shack/Shack`).default,
 		x: 760,
 		y: 680
 	},

@@ -1,0 +1,214 @@
+{
+    "id": "30c1f189-6285-497d-8e54-6bf7faec2982",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/spooky_fair/sky/sky-pack.json",
+            "client/assets/media/rooms/spooky_fair/shack/shack-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Shack",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "9a0578ab-b01a-431b-abee-34ed2b576b31",
+            "label": "sky0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "sky",
+            "Animation.end": 282,
+            "texture": {
+                "key": "sky_spooky",
+                "frame": "sky0001"
+            },
+            "x": 932,
+            "y": -3
+        },
+        {
+            "type": "Image",
+            "id": "12bce63d-28eb-4af1-979c-05b652110030",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "shack_halloween",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 501
+        },
+        {
+            "type": "Image",
+            "id": "21c6fa0a-dca5-4057-80a9-fa814c518768",
+            "label": "shack",
+            "components": [],
+            "texture": {
+                "key": "shack_halloween",
+                "frame": "shack"
+            },
+            "x": 825.2277587331206,
+            "y": 445.0889650675174,
+            "originX": 0.4224199300561366,
+            "originY": 0.805148275112529
+        },
+        {
+            "type": "Image",
+            "id": "ec03ce6d-33a1-44f9-8632-39ea4417da44",
+            "label": "track",
+            "components": [],
+            "texture": {
+                "key": "shack_halloween",
+                "frame": "track"
+            },
+            "x": 650,
+            "y": 565
+        },
+        {
+            "type": "Image",
+            "id": "6a1b296e-3942-4ff3-be80-c90f7d335b59",
+            "label": "carts",
+            "components": [],
+            "texture": {
+                "key": "shack_halloween",
+                "frame": "carts"
+            },
+            "x": 596.5179452510395,
+            "y": 561.2993868579348,
+            "originX": 0.5585192435109934,
+            "originY": 0.5677591240653604
+        },
+        {
+            "type": "Image",
+            "id": "16dd1657-2857-48de-941b-8ffee79da250",
+            "label": "right_ash",
+            "components": [],
+            "texture": {
+                "key": "shack_halloween",
+                "frame": "right ash"
+            },
+            "x": 774,
+            "y": 593
+        },
+        {
+            "type": "Image",
+            "id": "19b4378f-36d4-4045-83fa-7bd8f0ecb4ae",
+            "label": "barrel",
+            "components": [],
+            "texture": {
+                "key": "shack_halloween",
+                "frame": "barrel"
+            },
+            "x": 727,
+            "y": 571
+        },
+        {
+            "type": "Image",
+            "id": "bbdb88e9-e550-4723-8ee9-289cf4659875",
+            "label": "left_ash",
+            "components": [],
+            "texture": {
+                "key": "shack_halloween",
+                "frame": "left ash"
+            },
+            "x": 690,
+            "y": 609
+        },
+        {
+            "type": "Image",
+            "id": "4ab10a12-09c5-4b33-a129-bb381c4ffb32",
+            "label": "right_tree",
+            "components": [],
+            "texture": {
+                "key": "shack_halloween",
+                "frame": "right tree"
+            },
+            "x": 1371,
+            "y": 667
+        },
+        {
+            "type": "Image",
+            "id": "cd8d281d-46b8-4df7-ae7b-e0601afe81ee",
+            "label": "topleft_tree",
+            "components": [],
+            "texture": {
+                "key": "shack_halloween",
+                "frame": "topleft tree"
+            },
+            "x": 140,
+            "y": 242
+        },
+        {
+            "type": "Image",
+            "id": "a835a89d-c1e5-4726-884a-34b75a2fe9d0",
+            "label": "bottom_left_tree",
+            "components": [],
+            "texture": {
+                "key": "shack_halloween",
+                "frame": "bottom left tree"
+            },
+            "x": 138,
+            "y": 580
+        },
+        {
+            "type": "Image",
+            "id": "5eb9e589-3423-48d7-9288-833e66f7dc64",
+            "label": "pumpkin",
+            "components": [],
+            "texture": {
+                "key": "shack_halloween",
+                "frame": "pumpkin"
+            },
+            "x": 1067.112419624942,
+            "y": 537.1248657516484,
+            "originX": 0.661498765958707,
+            "originY": 0.7549980515137471
+        },
+        {
+            "type": "Image",
+            "id": "ccf4dfe2-a978-4211-8fda-dc5a8d1c3483",
+            "label": "download__4_",
+            "components": [],
+            "texture": {
+                "key": "shack_halloween",
+                "frame": "download (4)"
+            },
+            "x": 184,
+            "y": 674,
+            "scaleX": 0.2,
+            "scaleY": 0.2
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "fa99ceba-cb6b-4075-adeb-ca040931e294",
+            "label": "sort",
+            "objectIds": [
+                "5eb9e589-3423-48d7-9288-833e66f7dc64",
+                "a835a89d-c1e5-4726-884a-34b75a2fe9d0",
+                "cd8d281d-46b8-4df7-ae7b-e0601afe81ee",
+                "4ab10a12-09c5-4b33-a129-bb381c4ffb32",
+                "bbdb88e9-e550-4723-8ee9-289cf4659875",
+                "19b4378f-36d4-4045-83fa-7bd8f0ecb4ae",
+                "16dd1657-2857-48de-941b-8ffee79da250",
+                "6a1b296e-3942-4ff3-be80-c90f7d335b59",
+                "21c6fa0a-dca5-4057-80a9-fa814c518768",
+                "ccf4dfe2-a978-4211-8fda-dc5a8d1c3483"
+            ]
+        }
+    ]
+}
