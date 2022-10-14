@@ -374,6 +374,28 @@
         },
         {
             "type": "Image",
+            "id": "c8517759-00d0-40ae-b2d3-fa7d2053c670",
+            "label": "candy_candy80002",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"lollipop\" })",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "candy/8-got"
+            },
+            "x": 1223,
+            "y": 850,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "angle": 46,
+            "tintTopLeft": "#5f5f5f",
+            "tintTopRight": "#5f5f5f",
+            "tintBottomLeft": "#5f5f5f",
+            "tintBottomRight": "#5f5f5f"
+        },
+        {
+            "type": "Image",
             "id": "dc243513-66b3-4581-b5fc-2ae958d9f73b",
             "label": "chair19",
             "components": [],

@@ -530,7 +530,6 @@
                 "Button"
             ],
             "Button.spriteName": "news-button",
-            "Button.callback": "() => this.newspaper.visible = true",
             "Button.activeFrame": false,
             "texture": {
                 "key": "main",
@@ -951,7 +950,8 @@
                 "frame": "tickets"
             },
             "x": 1297,
-            "y": 57
+            "y": 57,
+            "visible": false
         },
         {
             "type": "Text",
@@ -961,6 +961,7 @@
             "components": [],
             "x": 1248,
             "y": 34,
+            "visible": false,
             "text": "0",
             "fixedWidth": 100,
             "align": "center",
@@ -978,7 +979,8 @@
                 "frame": "news-new"
             },
             "x": 96,
-            "y": 90
+            "y": 90,
+            "visible": false
         },
         {
             "prefabId": "ac66851d-33b2-4c9f-b6a5-daa66c683606",
@@ -1023,6 +1025,44 @@
             "fontFamily": "CCFaceFront",
             "fontSize": "19px",
             "fontStyle": "bold"
+        },
+        {
+            "type": "Image",
+            "id": "2b74aa90-85a2-4123-ba39-8e53f3c29b5a",
+            "label": "cany_hunt_button",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.huntButton();",
+            "texture": {
+                "key": "daily",
+                "frame": "dailyrewardiconn"
+            },
+            "x": 1340,
+            "y": 63,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "prefabId": "216bddd0-3652-4edf-a93b-25c51186f90c",
+            "id": "5b660194-ea46-4a3a-8fed-af93f7e315bb",
+            "unlock": [
+                "x",
+                "y",
+                "visible",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "candyhunt",
+            "scope": "CLASS",
+            "components": [],
+            "x": 660,
+            "y": 364,
+            "scaleX": 0.7,
+            "scaleY": 0.7,
+            "visible": false,
+            "nestedPrefabs": []
         }
     ],
     "plainObjects": [],

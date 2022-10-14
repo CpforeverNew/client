@@ -26,6 +26,7 @@ import Prompt from '../prompt/Prompt'
 import Snitch from '../snitch/Snitch'
 import PufflesMenu from '../floating/puffles/PufflesMenu'
 import Daily from '../daily/Daily'
+import CandyHunt from '../candyhunt/CandyHunt'
 
 /* START OF COMPILED CODE */
 
@@ -158,6 +159,10 @@ export default class Main extends BaseScene {
         this.mail_new;
         /** @type {Phaser.GameObjects.Text} */
         this.mail_text;
+        /** @type {Phaser.GameObjects.Image} */
+        this.cany_hunt_button;
+        /** @type {CandyHunt} */
+        this.candyhunt;
         /** @type {Array<PlayerCard|Buddy|Moderator>} */
         this.hideOnSleep;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|ChatLog>} */
@@ -417,14 +422,17 @@ export default class Main extends BaseScene {
 
         // tickets_button
         const tickets_button = this.add.image(1297, 57, "tickets", "tickets");
+        tickets_button.visible = false;
 
         // tickets
         const tickets = this.add.text(1248, 34, "", {});
+        tickets.visible = false;
         tickets.text = "0";
         tickets.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":100,"fontFamily": "CCFaceFront", "fontSize": "17px" });
 
         // news_new
-        this.add.image(96, 90, "main", "news-new");
+        const news_new = this.add.image(96, 90, "main", "news-new");
+        news_new.visible = false;
 
         // newspaper
         const newspaper = new Newspaper(this, -28, 7);
@@ -438,6 +446,18 @@ export default class Main extends BaseScene {
         const mail_text = this.add.text(187, 20, "", {});
         mail_text.text = "0";
         mail_text.setStyle({ "align": "center", "fixedWidth":20,"fontFamily": "CCFaceFront", "fontSize": "19px", "fontStyle": "bold" });
+
+        // cany_hunt_button
+        const cany_hunt_button = this.add.image(1340, 63, "daily", "dailyrewardiconn");
+        cany_hunt_button.scaleX = 0.5;
+        cany_hunt_button.scaleY = 0.5;
+
+        // candyhunt
+        const candyhunt = new CandyHunt(this, 660, 364);
+        this.add.existing(candyhunt);
+        candyhunt.scaleX = 0.7;
+        candyhunt.scaleY = 0.7;
+        candyhunt.visible = false;
 
         // lists
         const hideOnSleep = [playerCard, buddy, moderator];
@@ -542,7 +562,6 @@ export default class Main extends BaseScene {
         // news_button (components)
         const news_buttonButton = new Button(news_button);
         news_buttonButton.spriteName = "news-button";
-        news_buttonButton.callback = () => this.newspaper.visible = true;
         news_buttonButton.activeFrame = false;
 
         // mod_button (components)
@@ -559,6 +578,10 @@ export default class Main extends BaseScene {
         const tickets_buttonButton = new Button(tickets_button);
         tickets_buttonButton.spriteName = "tickets";
         tickets_buttonButton.callback = () => { console.log("tickets")};
+
+        // cany_hunt_button (components)
+        const cany_hunt_buttonSimpleButton = new SimpleButton(cany_hunt_button);
+        cany_hunt_buttonSimpleButton.callback = () => this.huntButton();;
 
         this.pinContainer = pinContainer;
         this.dock = dock;
@@ -622,6 +645,8 @@ export default class Main extends BaseScene {
         this.newspaper = newspaper;
         this.mail_new = mail_new;
         this.mail_text = mail_text;
+        this.cany_hunt_button = cany_hunt_button;
+        this.candyhunt = candyhunt;
         this.hideOnSleep = hideOnSleep;
         this.interfaceList = interfaceList;
 
@@ -636,7 +661,7 @@ export default class Main extends BaseScene {
         this._create()
 
         // Get User tickets
-        this.network.send("get_user_tickets");
+        // this.network.send("get_user_tickets");
 
         // Version
         this.version.text = "v" + VERSION;
@@ -1060,6 +1085,11 @@ export default class Main extends BaseScene {
             this.mail_text.visible = true
             this.mail_new.visible = true
         }
+    }
+
+    huntButton(){
+        this.network.send("user_candy_current_collected")
+        this.candyhunt.visible = true
     }
 
     /* END-USER-CODE */

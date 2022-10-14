@@ -1,0 +1,251 @@
+{
+    "id": "216bddd0-3652-4edf-a93b-25c51186f90c",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "1ec545c0-f322-413b-8b1f-e46bc3dd3bc0",
+            "label": "container_1",
+            "components": [],
+            "x": 673,
+            "y": 365,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "f2a5370d-b70c-4ad3-805e-af7dde0c98df",
+                    "label": "rectangle_1",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "x": 103,
+                    "y": 120,
+                    "scaleX": 37.00813530775163,
+                    "scaleY": 20.462035390980397,
+                    "alpha": 0.2,
+                    "isFilled": true,
+                    "fillColor": "#000000",
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Image",
+                    "id": "1f000618-8b05-459f-ac9c-67ff17343a88",
+                    "label": "bg",
+                    "components": [],
+                    "texture": {
+                        "key": "candyhunt",
+                        "frame": "bg"
+                    },
+                    "x": 95,
+                    "y": 131
+                },
+                {
+                    "type": "Image",
+                    "id": "a4a12cc8-d27f-41ac-ae7a-83a24e124d5b",
+                    "label": "continueBtn",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "ctnbtn",
+                    "Button.callback": "() => this.visible = false",
+                    "texture": {
+                        "key": "candyhunt",
+                        "frame": "ctnbtn"
+                    },
+                    "x": -24,
+                    "y": 316
+                },
+                {
+                    "type": "Image",
+                    "id": "b54d0332-50f4-4ebc-be03-9c2b7cf95255",
+                    "label": "claim_prize_disabled",
+                    "scope": "PUBLIC",
+                    "components": [],
+                    "texture": {
+                        "key": "candyhunt",
+                        "frame": "clmbtn"
+                    },
+                    "x": -24,
+                    "y": 226
+                },
+                {
+                    "type": "Image",
+                    "id": "130af115-b6db-4e9f-830f-5de4d6fe84dd",
+                    "label": "claim_prize_active",
+                    "scope": "PUBLIC",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => console.log(\"LETS FUCKING GO\")",
+                    "texture": {
+                        "key": "candyhunt",
+                        "frame": "clmbtn-active"
+                    },
+                    "x": -24,
+                    "y": 226,
+                    "visible": false
+                },
+                {
+                    "type": "Sprite",
+                    "id": "1c22c223-07bc-45ad-a620-189c302d41b5",
+                    "label": "candy_stick",
+                    "scope": "PUBLIC",
+                    "components": [],
+                    "texture": {
+                        "key": "candyhunt",
+                        "frame": "candy/1"
+                    },
+                    "x": -248,
+                    "y": 103
+                },
+                {
+                    "type": "Sprite",
+                    "id": "f531f2f1-5ef2-463f-a5da-33021f423f1a",
+                    "label": "candy_cube",
+                    "scope": "PUBLIC",
+                    "components": [],
+                    "texture": {
+                        "key": "candyhunt",
+                        "frame": "candy/2"
+                    },
+                    "x": -144,
+                    "y": 103
+                },
+                {
+                    "type": "Sprite",
+                    "id": "db7251e3-3410-48e7-9493-5f1ab6fbc127",
+                    "label": "candy_corn",
+                    "scope": "PUBLIC",
+                    "components": [],
+                    "texture": {
+                        "key": "candyhunt",
+                        "frame": "candy/3"
+                    },
+                    "x": -37,
+                    "y": 100
+                },
+                {
+                    "type": "Sprite",
+                    "id": "26e476ac-005e-4ad0-af4d-d655ebb5ba2e",
+                    "label": "candy_borbon",
+                    "scope": "PUBLIC",
+                    "components": [],
+                    "texture": {
+                        "key": "candyhunt",
+                        "frame": "candy/4"
+                    },
+                    "x": 62,
+                    "y": 100
+                },
+                {
+                    "type": "Sprite",
+                    "id": "9a5e7f83-ff1c-4e82-b19f-065f723c2d5a",
+                    "label": "pumkin",
+                    "scope": "PUBLIC",
+                    "components": [],
+                    "texture": {
+                        "key": "candyhunt",
+                        "frame": "candy/5"
+                    },
+                    "x": 173,
+                    "y": 100
+                },
+                {
+                    "type": "Sprite",
+                    "id": "97eb5979-b026-4c75-a1cc-38ca7062ff1d",
+                    "label": "candy_apple",
+                    "scope": "PUBLIC",
+                    "components": [],
+                    "texture": {
+                        "key": "candyhunt",
+                        "frame": "candy/6"
+                    },
+                    "x": 260,
+                    "y": 96
+                },
+                {
+                    "type": "Sprite",
+                    "id": "243209ee-db24-48f3-9db1-b37255aec008",
+                    "label": "candy_bar",
+                    "scope": "PUBLIC",
+                    "components": [],
+                    "texture": {
+                        "key": "candyhunt",
+                        "frame": "candy/7"
+                    },
+                    "x": 355,
+                    "y": 101
+                },
+                {
+                    "type": "Sprite",
+                    "id": "697863a2-b60b-4680-9b05-b467c5720af2",
+                    "label": "lollipop",
+                    "scope": "PUBLIC",
+                    "components": [],
+                    "texture": {
+                        "key": "candyhunt",
+                        "frame": "candy/8"
+                    },
+                    "x": 453,
+                    "y": 101
+                },
+                {
+                    "type": "Image",
+                    "id": "12fe15b3-bcc8-453f-855d-d80827d72eef",
+                    "label": "close_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "closebtn",
+                    "Button.callback": "() => this.visible = false",
+                    "texture": {
+                        "key": "candyhunt",
+                        "frame": "closebtn"
+                    },
+                    "x": 472,
+                    "y": -86
+                },
+                {
+                    "type": "Image",
+                    "id": "554e8a4b-8fae-4a97-bca2-45d34f944290",
+                    "label": "note0001",
+                    "components": [],
+                    "texture": {
+                        "key": "candyhunt",
+                        "frame": "note0001"
+                    },
+                    "x": 439,
+                    "y": 317
+                },
+                {
+                    "type": "Text",
+                    "id": "658abe0b-16b6-4500-b80d-e0bd9bf5c5a9",
+                    "label": "found_text",
+                    "scope": "PUBLIC",
+                    "components": [],
+                    "x": -113,
+                    "y": -8,
+                    "text": "You have found $$ items",
+                    "fontSize": "30px"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
