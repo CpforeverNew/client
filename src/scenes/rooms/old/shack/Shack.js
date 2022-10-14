@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import { Button, MoveTo } from '@components/components'
+import { Button, MoveTo, SimpleButton } from '@components/components'
 
 
 /* START OF COMPILED CODE */
@@ -37,6 +37,11 @@ export default class Shack extends RoomScene {
         // bg
         const bg = this.add.image(-22, 1, "shack", "bg");
         bg.setOrigin(0, 0);
+
+        // candy_candy40002
+        const candy_candy40002 = this.add.image(1021, 496, "candyhunt", "candy/4-got");
+        candy_candy40002.scaleX = 0.5;
+        candy_candy40002.scaleY = 0.5;
 
         // plant
         const plant = this.add.image(-28, 122, "shack", "plant");
@@ -116,6 +121,10 @@ export default class Shack extends RoomScene {
 
         // lists
         const sort = [house, pipe_1, pipe_2, trees_2, barrel, flowers_1, bear, bag, barrel_2, shovel, fence, cart_1, cart_2, tree, flowers, trees_1];
+
+        // candy_candy40002 (components)
+        const candy_candy40002SimpleButton = new SimpleButton(candy_candy40002);
+        candy_candy40002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_borbon" });
 
         // plant_doors (components)
         const plant_doorsButton = new Button(plant_doors);

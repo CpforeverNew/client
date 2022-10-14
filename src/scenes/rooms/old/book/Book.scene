@@ -31,6 +31,21 @@
         },
         {
             "type": "Image",
+            "id": "413c2306-716f-40e8-b471-e83c27a9e9a9",
+            "label": "candy_candy50002",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"pumkin\" })",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "candy/5-got"
+            },
+            "x": 180,
+            "y": 593
+        },
+        {
+            "type": "Image",
             "id": "3c785f09-b7ca-43cf-bf8b-b57183a3bea0",
             "label": "books",
             "components": [

@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import { Button, MoveTo, ShowHint } from '@components/components'
+import { Button, MoveTo, ShowHint, SimpleButton } from '@components/components'
 
 
 /* START OF COMPILED CODE */
@@ -37,6 +37,9 @@ export default class Book extends RoomScene {
         const bg = this.add.image(0, -6, "book", "bg");
         bg.setOrigin(0, 0);
 
+        // candy_candy50002
+        const candy_candy50002 = this.add.image(180, 593, "candyhunt", "candy/5-got");
+
         // books
         const books = this.add.image(241, 267, "book", "books");
         books.setOrigin(0.35501355013550134, 0.28205128205128205);
@@ -71,6 +74,10 @@ export default class Book extends RoomScene {
 
         // lists
         const sort = [table_4, table_2, table_1, table, chair_table, chair_front, chair_back];
+
+        // candy_candy50002 (components)
+        const candy_candy50002SimpleButton = new SimpleButton(candy_candy50002);
+        candy_candy50002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "pumkin" });
 
         // books (components)
         const booksButton = new Button(books);

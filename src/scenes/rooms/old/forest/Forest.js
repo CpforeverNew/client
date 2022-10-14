@@ -1,3 +1,4 @@
+import SimpleButton from '@scenes/components/SimpleButton';
 import RoomScene from '@scenes/rooms/RoomScene'
 
 
@@ -75,8 +76,17 @@ export default class Forest extends RoomScene {
         free_item.isFilled = true;
         free_item.fillAlpha = 0;
 
+        // candy_candy10002
+        const candy_candy10002 = this.add.image(914, 115, "candyhunt", "candy/1-got");
+        candy_candy10002.scaleX = 0.5;
+        candy_candy10002.scaleY = 0.5;
+
         // lists
         const sort = [sign, rail, middle, fg, tree, rock0001];
+
+        // candy_candy10002 (components)
+        const candy_candy10002SimpleButton = new SimpleButton(candy_candy10002);
+        candy_candy10002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_stick" });
 
         this.free_item = free_item;
         this.sort = sort;

@@ -49,6 +49,11 @@ export default class Dojo extends RoomScene {
         // instructions
         this.add.image(673, 451, "new-dojo", "instructions");
 
+        // candy_candy60002
+        const candy_candy60002 = this.add.image(1196, 553, "candyhunt", "candy/6-got");
+        candy_candy60002.scaleX = 0.5;
+        candy_candy60002.scaleY = 0.5;
+
         // cj_spot
         this.add.image(1123, 500, "new-dojo", "cj_spot");
 
@@ -84,6 +89,10 @@ export default class Dojo extends RoomScene {
         const dojodoor_pngMoveTo = new MoveTo(dojodoor_png);
         dojodoor_pngMoveTo.x = 386;
         dojodoor_pngMoveTo.y = 508;
+
+        // candy_candy60002 (components)
+        const candy_candy60002SimpleButton = new SimpleButton(candy_candy60002);
+        candy_candy60002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_apple" });
 
         // cj_mat_bottom (components)
         const cj_mat_bottomButton = new Button(cj_mat_bottom);

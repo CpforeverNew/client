@@ -32,6 +32,24 @@
         },
         {
             "type": "Image",
+            "id": "88bbd90b-8901-41d7-ac9d-db9d35b671d7",
+            "label": "candy_candy30002",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"candy_corn\" })",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "candy/3-got"
+            },
+            "x": 364,
+            "y": 731,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "angle": 17
+        },
+        {
+            "type": "Image",
             "id": "8cb3a29b-3fc4-46e1-bc15-7f2a90764eaf",
             "label": "boiler_door_png",
             "components": [

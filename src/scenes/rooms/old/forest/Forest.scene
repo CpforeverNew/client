@@ -3,7 +3,6 @@
     "sceneType": "SCENE",
     "settings": {
         "compilerInsertSpaces": true,
-        "snapEnabled": true,
         "snapWidth": 128,
         "snapHeight": 128,
         "javaScriptInitFieldsInConstructor": true,
@@ -144,6 +143,23 @@
             "fillAlpha": 0,
             "width": 128,
             "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "1bb106e6-4ee8-43f2-8803-6873a59d2220",
+            "label": "candy_candy10002",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"candy_stick\" })",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "candy/1-got"
+            },
+            "x": 914,
+            "y": 115,
+            "scaleX": 0.5,
+            "scaleY": 0.5
         }
     ],
     "plainObjects": [],
