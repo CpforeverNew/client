@@ -3,6 +3,7 @@
     "sceneType": "PREFAB",
     "settings": {
         "compilerInsertSpaces": true,
+        "snapEnabled": true,
         "exportClass": true,
         "superClassName": "BaseContainer",
         "preloadMethodName": "",
@@ -62,8 +63,8 @@
                         "key": "candyhunt",
                         "frame": "ctnbtn"
                     },
-                    "x": -24,
-                    "y": 316
+                    "x": 95,
+                    "y": 323
                 },
                 {
                     "type": "Image",
@@ -75,8 +76,8 @@
                         "key": "candyhunt",
                         "frame": "clmbtn"
                     },
-                    "x": -24,
-                    "y": 226
+                    "x": 95,
+                    "y": 227
                 },
                 {
                     "type": "Image",
@@ -86,13 +87,13 @@
                     "components": [
                         "SimpleButton"
                     ],
-                    "SimpleButton.callback": "() => console.log(\"LETS FUCKING GO\")",
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(170)",
                     "texture": {
                         "key": "candyhunt",
                         "frame": "clmbtn-active"
                     },
-                    "x": -24,
-                    "y": 226,
+                    "x": 95,
+                    "y": 227,
                     "visible": false
                 },
                 {
@@ -214,18 +215,6 @@
                     },
                     "x": 472,
                     "y": -86
-                },
-                {
-                    "type": "Image",
-                    "id": "554e8a4b-8fae-4a97-bca2-45d34f944290",
-                    "label": "note0001",
-                    "components": [],
-                    "texture": {
-                        "key": "candyhunt",
-                        "frame": "note0001"
-                    },
-                    "x": 439,
-                    "y": 317
                 },
                 {
                     "type": "Text",

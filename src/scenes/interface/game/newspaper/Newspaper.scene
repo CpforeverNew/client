@@ -243,9 +243,9 @@
                             "components": [
                                 "SimpleButton"
                             ],
-                            "SimpleButton.callback": "() =>  window.open('https://cpforever.org/news', '_blank').focus();;",
+                            "SimpleButton.callback": "() =>  window.open('https://cpforever.org/news/2022/10/penguin-of-the-week-harmonystar-23', '_blank').focus();;",
                             "x": 641,
-                            "y": 787,
+                            "y": 772,
                             "scaleX": 5.2408452403848536,
                             "scaleY": 2.2798387206313713,
                             "isFilled": true,

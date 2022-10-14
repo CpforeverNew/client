@@ -431,8 +431,7 @@ export default class Main extends BaseScene {
         tickets.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":100,"fontFamily": "CCFaceFront", "fontSize": "17px" });
 
         // news_new
-        const news_new = this.add.image(96, 90, "main", "news-new");
-        news_new.visible = false;
+        this.add.image(96, 90, "main", "news-new");
 
         // newspaper
         const newspaper = new Newspaper(this, -28, 7);
@@ -448,7 +447,7 @@ export default class Main extends BaseScene {
         mail_text.setStyle({ "align": "center", "fixedWidth":20,"fontFamily": "CCFaceFront", "fontSize": "19px", "fontStyle": "bold" });
 
         // cany_hunt_button
-        const cany_hunt_button = this.add.image(1340, 63, "daily", "dailyrewardiconn");
+        const cany_hunt_button = this.add.image(1340, 58, "candyhunt", "huntbtn");
         cany_hunt_button.scaleX = 0.5;
         cany_hunt_button.scaleY = 0.5;
 
@@ -562,6 +561,7 @@ export default class Main extends BaseScene {
         // news_button (components)
         const news_buttonButton = new Button(news_button);
         news_buttonButton.spriteName = "news-button";
+        news_buttonButton.callback = () => this.newspaper.visible = true;
         news_buttonButton.activeFrame = false;
 
         // mod_button (components)
@@ -580,8 +580,9 @@ export default class Main extends BaseScene {
         tickets_buttonButton.callback = () => { console.log("tickets")};
 
         // cany_hunt_button (components)
-        const cany_hunt_buttonSimpleButton = new SimpleButton(cany_hunt_button);
-        cany_hunt_buttonSimpleButton.callback = () => this.huntButton();;
+        const cany_hunt_buttonButton = new Button(cany_hunt_button);
+        cany_hunt_buttonButton.spriteName = "huntbtn";
+        cany_hunt_buttonButton.callback = () => this.huntButton();;
 
         this.pinContainer = pinContainer;
         this.dock = dock;
