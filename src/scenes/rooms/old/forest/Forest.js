@@ -9,8 +9,6 @@ export default class Forest extends RoomScene {
     constructor() {
         super("Forest");
 
-        /** @type {Phaser.GameObjects.Ellipse} */
-        this.free_item;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
@@ -68,14 +66,6 @@ export default class Forest extends RoomScene {
         const sign = this.add.image(1317, 681, "forest", "sign");
         sign.setOrigin(0.4794520547945205, 0.9397590361445783);
 
-        // free_item
-        const free_item = this.add.ellipse(896, 512, 128, 128);
-        free_item.scaleX = 1.002455848298564;
-        free_item.scaleY = 1.6468006679738743;
-        free_item.angle = 84;
-        free_item.isFilled = true;
-        free_item.fillAlpha = 0;
-
         // candy_candy10002
         const candy_candy10002 = this.add.image(914, 115, "candyhunt", "candy/1-got");
         candy_candy10002.scaleX = 0.5;
@@ -88,7 +78,6 @@ export default class Forest extends RoomScene {
         const candy_candy10002SimpleButton = new SimpleButton(candy_candy10002);
         candy_candy10002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_stick" });
 
-        this.free_item = free_item;
         this.sort = sort;
 
         this.events.emit("scene-awake");

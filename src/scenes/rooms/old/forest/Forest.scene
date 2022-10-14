@@ -129,22 +129,6 @@
             "originY": 0.9397590361445783
         },
         {
-            "type": "Ellipse",
-            "id": "16240196-0112-420c-b43d-ff01489b5b91",
-            "label": "free_item",
-            "scope": "CLASS",
-            "components": [],
-            "x": 896,
-            "y": 512,
-            "scaleX": 1.002455848298564,
-            "scaleY": 1.6468006679738743,
-            "angle": 84,
-            "isFilled": true,
-            "fillAlpha": 0,
-            "width": 128,
-            "height": 128
-        },
-        {
             "type": "Image",
             "id": "1bb106e6-4ee8-43f2-8803-6873a59d2220",
             "label": "candy_candy10002",
