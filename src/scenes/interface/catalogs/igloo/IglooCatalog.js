@@ -417,7 +417,7 @@ export default class IglooCatalog extends Book {
         upgradeButton_21111111.igloo = 16;
 
         // upgradeButton_2_111111 (prefab fields)
-        upgradeButton_2_111111.igloo = 17;
+        upgradeButton_2_111111.igloo = 13;
 
         // page_left_4 (components)
         const page_left_4Button = new Button(page_left_4);
