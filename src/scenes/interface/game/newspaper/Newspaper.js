@@ -135,7 +135,7 @@ export default class Newspaper extends BaseContainer {
         page1.add(nextPage_btn_1);
 
         // NextPage_btn_9
-        const nextPage_btn_9 = scene.add.rectangle(641, 787, 128, 128);
+        const nextPage_btn_9 = scene.add.rectangle(641, 772, 128, 128);
         nextPage_btn_9.scaleX = 5.2408452403848536;
         nextPage_btn_9.scaleY = 2.2798387206313713;
         nextPage_btn_9.isFilled = true;
@@ -208,7 +208,7 @@ export default class Newspaper extends BaseContainer {
 
         // nextPage_btn_9 (components)
         const nextPage_btn_9SimpleButton = new SimpleButton(nextPage_btn_9);
-        nextPage_btn_9SimpleButton.callback = () =>  window.open('https://cpforever.org/news', '_blank').focus();;;
+        nextPage_btn_9SimpleButton.callback = () =>  window.open('https://cpforever.org/news/2022/10/penguin-of-the-week-harmonystar-23', '_blank').focus();;;
 
         // closebtn (components)
         const closebtnSimpleButton = new SimpleButton(closebtn);

@@ -27,15 +27,15 @@ export default class CandyHunt extends BaseContainer {
         this.add(bg);
 
         // continueBtn
-        const continueBtn = scene.add.image(-24, 316, "candyhunt", "ctnbtn");
+        const continueBtn = scene.add.image(95, 323, "candyhunt", "ctnbtn");
         this.add(continueBtn);
 
         // claim_prize_disabled
-        const claim_prize_disabled = scene.add.image(-24, 226, "candyhunt", "clmbtn");
+        const claim_prize_disabled = scene.add.image(95, 227, "candyhunt", "clmbtn");
         this.add(claim_prize_disabled);
 
         // claim_prize_active
-        const claim_prize_active = scene.add.image(-24, 226, "candyhunt", "clmbtn-active");
+        const claim_prize_active = scene.add.image(95, 227, "candyhunt", "clmbtn-active");
         claim_prize_active.visible = false;
         this.add(claim_prize_active);
 
@@ -75,10 +75,6 @@ export default class CandyHunt extends BaseContainer {
         const close_button = scene.add.image(472, -86, "candyhunt", "closebtn");
         this.add(close_button);
 
-        // note0001
-        const note0001 = scene.add.image(439, 317, "candyhunt", "note0001");
-        this.add(note0001);
-
         // found_text
         const found_text = scene.add.text(-113, -8, "", {});
         found_text.text = "You have found $$ items";
@@ -95,7 +91,7 @@ export default class CandyHunt extends BaseContainer {
 
         // claim_prize_active (components)
         const claim_prize_activeSimpleButton = new SimpleButton(claim_prize_active);
-        claim_prize_activeSimpleButton.callback = () => console.log("LETS FUCKING GO");
+        claim_prize_activeSimpleButton.callback = () => this.interface.prompt.showItem(170);
 
         // close_button (components)
         const close_buttonButton = new Button(close_button);

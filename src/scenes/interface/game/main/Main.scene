@@ -530,6 +530,7 @@
                 "Button"
             ],
             "Button.spriteName": "news-button",
+            "Button.callback": "() => this.newspaper.visible = true",
             "Button.activeFrame": false,
             "texture": {
                 "key": "main",
@@ -979,8 +980,7 @@
                 "frame": "news-new"
             },
             "x": 96,
-            "y": 90,
-            "visible": false
+            "y": 90
         },
         {
             "prefabId": "ac66851d-33b2-4c9f-b6a5-daa66c683606",
@@ -1032,15 +1032,16 @@
             "label": "cany_hunt_button",
             "scope": "CLASS",
             "components": [
-                "SimpleButton"
+                "Button"
             ],
-            "SimpleButton.callback": "() => this.huntButton();",
+            "Button.spriteName": "huntbtn",
+            "Button.callback": "() => this.huntButton();",
             "texture": {
-                "key": "daily",
-                "frame": "dailyrewardiconn"
+                "key": "candyhunt",
+                "frame": "huntbtn"
             },
             "x": 1340,
-            "y": 63,
+            "y": 58,
             "scaleX": 0.5,
             "scaleY": 0.5
         },
