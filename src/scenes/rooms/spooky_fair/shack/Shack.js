@@ -36,14 +36,16 @@ export default class Shack extends RoomScene {
         const sky0001 = this.add.sprite(932, -3, "sky_spooky", "sky0001");
 
         // bg
-        this.add.image(760, 501, "shack_halloween", "bg");
+        const bg = this.add.image(760, 501, "shack_halloween", "bg");
+        bg.scaleX = 1.02;
 
         // shack
-        const shack = this.add.image(825.2277587331206, 445.0889650675174, "shack_halloween", "shack");
-        shack.setOrigin(0.4224199300561366, 0.805148275112529);
+        const shack = this.add.image(761.5786196953577, 428.8066026074407, "shack_halloween", "shack");
+        shack.setOrigin(0.3145399337839007, 0.7780110202362959);
 
         // track
-        this.add.image(650, 565, "shack_halloween", "track");
+        const track = this.add.image(507.15943334815415, 491.7294290058801, "shack_halloween", "track");
+        track.setOrigin(0.12111235656284401, 0.07400820833820383);
 
         // carts
         const carts = this.add.image(596.5179452510395, 561.2993868579348, "shack_halloween", "carts");
@@ -59,7 +61,8 @@ export default class Shack extends RoomScene {
         const left_ash = this.add.image(690, 609, "shack_halloween", "left ash");
 
         // right_tree
-        const right_tree = this.add.image(1371, 667, "shack_halloween", "right tree");
+        const right_tree = this.add.image(1449.1009569966384, 746.6323483102981, "shack_halloween", "right tree");
+        right_tree.setOrigin(0.7163461412649262, 0.6274117572964768);
 
         // topleft_tree
         const topleft_tree = this.add.image(140, 242, "shack_halloween", "topleft tree");
@@ -77,7 +80,7 @@ export default class Shack extends RoomScene {
         download__4_.scaleY = 0.2;
 
         // lists
-        const sort = [pumpkin, bottom_left_tree, topleft_tree, right_tree, left_ash, barrel, right_ash, carts, shack, download__4_];
+        const sort = [pumpkin, bottom_left_tree, topleft_tree, right_tree, left_ash, barrel, right_ash, carts, shack, download__4_, track];
 
         // sky0001 (components)
         const sky0001Animation = new Animation(sky0001);
