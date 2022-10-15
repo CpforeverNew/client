@@ -27,6 +27,7 @@ export default class CandyHunt extends Plugin {
     candyHuntCompleted(args) {
         this.interface.main.candyhunt.claim_prize_active.visible = true;
         this.interface.main.candyhunt.claim_prize_disabled.visible = false;
+        this.world.client.stampEarned(188)
     }
 
 }
