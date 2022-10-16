@@ -74,8 +74,8 @@ export default class Beacon extends RoomScene {
         stairtop.setOrigin(0.5738520627114743, 0.3782284025337291);
 
         // bottom
-        const bottom = this.add.image(270, 811, "beacon_halloween", "bottom");
-        bottom.setOrigin(0.19135360574003613, 0.5378882364226661);
+        const bottom = this.add.image(681.6883712955367, 1000.9119738297734, "beacon_halloween", "bottom");
+        bottom.setOrigin(0.49317792686249307, 0.9231052230129088);
 
         // lists
         const sort = [pumpkin, box, bottom, stairtop];
