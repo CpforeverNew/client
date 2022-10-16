@@ -44,7 +44,8 @@ export default class Beacon extends RoomScene {
         this.add.image(790, 725, "beacon_halloween", "ocean");
 
         // fg
-        this.add.image(714, 643, "beacon_halloween", "fg");
+        const fg = this.add.image(387.0507698475818, 544.1375560771464, "beacon_halloween", "fg");
+        fg.setOrigin(0.25853085762836747, 0.3651263112106916);
 
         // topbarrier
         this.add.image(635, 492, "beacon_halloween", "topbarrier");
@@ -54,8 +55,8 @@ export default class Beacon extends RoomScene {
         box.setOrigin(0.752257441868124, 0.16954937305686837);
 
         // pumpkin
-        const pumpkin = this.add.image(693.6383424539985, 481.41105030667677, "beacon_halloween", "pumpkin");
-        pumpkin.setOrigin(0.47185552365480693, 0.6901349136270718);
+        const pumpkin = this.add.image(693.8760814677714, 542.5243092274156, "beacon_halloween", "pumpkin");
+        pumpkin.setOrigin(0.4721686742026109, 0.7717280630848816);
 
         // telescope_1
         const telescope_1 = this.add.image(297, 285, "beacon_halloween", "telescope");
