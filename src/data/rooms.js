@@ -124,7 +124,7 @@ rooms = {
 	},
 	411: {
 		key: 'Beacon',
-		scene: require(`@rooms/old/beacon/Beacon`).default,
+		scene: require(`@rooms/spooky_fair/beacon/Beacon`).default,
 		x: 410,
 		y: 800
 	},
