@@ -20,6 +20,7 @@ export default class ClientController {
         this.id = user.id
         this.coins = user.coins
         this.rank = user.rank
+        this.active = user.activation
 
         this.iglooOpen = false
 
@@ -100,6 +101,10 @@ export default class ClientController {
 
     get isModerator() {
         return this.rank > 3
+    }
+
+    get isActivated() {
+        return this.active
     }
 
     initInventory() {
