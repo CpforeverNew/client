@@ -12,6 +12,7 @@ export default class Penguin extends BaseContainer {
 
         // Assign user attributes
         Object.assign(this, user)
+        this.user = user
         this.room = room
         this.penguinLoader = penguinLoader
 

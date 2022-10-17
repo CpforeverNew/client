@@ -133,16 +133,6 @@ export default class Main extends BaseScene {
         this.waddle;
         /** @type {FindFour} */
         this.findFour;
-        /** @type {Phaser.GameObjects.Container} */
-        this.stampEarned;
-        /** @type {Phaser.GameObjects.Image} */
-        this.stampEarnedBg;
-        /** @type {Phaser.GameObjects.Image} */
-        this.stampEarnedImage;
-        /** @type {Phaser.GameObjects.Text} */
-        this.stampEarnedHeader;
-        /** @type {Phaser.GameObjects.Text} */
-        this.stampEarnedBody;
         /** @type {PuffleCare} */
         this.puffleCare;
         /** @type {Prompt} */
@@ -163,6 +153,16 @@ export default class Main extends BaseScene {
         this.cany_hunt_button;
         /** @type {CandyHunt} */
         this.candyhunt;
+        /** @type {Phaser.GameObjects.Container} */
+        this.stampEarned;
+        /** @type {Phaser.GameObjects.Image} */
+        this.stampEarnedBg;
+        /** @type {Phaser.GameObjects.Image} */
+        this.stampEarnedImage;
+        /** @type {Phaser.GameObjects.Text} */
+        this.stampEarnedHeader;
+        /** @type {Phaser.GameObjects.Text} */
+        this.stampEarnedBody;
         /** @type {Array<PlayerCard|Buddy|Moderator>} */
         this.hideOnSleep;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|ChatLog>} */
@@ -367,34 +367,6 @@ export default class Main extends BaseScene {
         this.add.existing(findFour);
         findFour.visible = false;
 
-        // stampEarned
-        const stampEarned = this.add.container(933, -150);
-
-        // stampEarnedBg
-        const stampEarnedBg = this.add.image(196, 0, "main", "stamps/bg");
-        stampEarnedBg.alpha = 0.7;
-        stampEarnedBg.alphaTopLeft = 0.7;
-        stampEarnedBg.alphaTopRight = 0.7;
-        stampEarnedBg.alphaBottomLeft = 0.7;
-        stampEarnedBg.alphaBottomRight = 0.7;
-        stampEarned.add(stampEarnedBg);
-
-        // stampEarnedImage
-        const stampEarnedImage = this.add.image(0, 70, "main", "stamps/activities0001");
-        stampEarned.add(stampEarnedImage);
-
-        // stampEarnedHeader
-        const stampEarnedHeader = this.add.text(88, 25, "", {});
-        stampEarnedHeader.text = "STAMP EARNED!";
-        stampEarnedHeader.setStyle({ "fixedWidth":380,"fontFamily": "Burbank Small", "fontSize": "40px", "fontStyle": "bold italic" });
-        stampEarned.add(stampEarnedHeader);
-
-        // stampEarnedBody
-        const stampEarnedBody = this.add.text(90, 80, "", {});
-        stampEarnedBody.text = "Stamp Name";
-        stampEarnedBody.setStyle({ "fixedWidth":380,"fontFamily": "Burbank Small", "fontSize": "35px" });
-        stampEarned.add(stampEarnedBody);
-
         // puffleCare
         const puffleCare = new PuffleCare(this, 500, 583);
         this.add.existing(puffleCare);
@@ -457,6 +429,34 @@ export default class Main extends BaseScene {
         candyhunt.scaleX = 0.7;
         candyhunt.scaleY = 0.7;
         candyhunt.visible = false;
+
+        // stampEarned
+        const stampEarned = this.add.container(933, -150);
+
+        // stampEarnedBg
+        const stampEarnedBg = this.add.image(196, 0, "main", "stamps/bg");
+        stampEarnedBg.alpha = 0.7;
+        stampEarnedBg.alphaTopLeft = 0.7;
+        stampEarnedBg.alphaTopRight = 0.7;
+        stampEarnedBg.alphaBottomLeft = 0.7;
+        stampEarnedBg.alphaBottomRight = 0.7;
+        stampEarned.add(stampEarnedBg);
+
+        // stampEarnedImage
+        const stampEarnedImage = this.add.image(0, 70, "main", "stamps/activities0001");
+        stampEarned.add(stampEarnedImage);
+
+        // stampEarnedHeader
+        const stampEarnedHeader = this.add.text(88, 25, "", {});
+        stampEarnedHeader.text = "STAMP EARNED!";
+        stampEarnedHeader.setStyle({ "fixedWidth":380,"fontFamily": "Burbank Small", "fontSize": "40px", "fontStyle": "bold italic" });
+        stampEarned.add(stampEarnedHeader);
+
+        // stampEarnedBody
+        const stampEarnedBody = this.add.text(90, 80, "", {});
+        stampEarnedBody.text = "Stamp Name";
+        stampEarnedBody.setStyle({ "fixedWidth":380,"fontFamily": "Burbank Small", "fontSize": "35px" });
+        stampEarned.add(stampEarnedBody);
 
         // lists
         const hideOnSleep = [playerCard, buddy, moderator];
@@ -633,11 +633,6 @@ export default class Main extends BaseScene {
         this.safe = safe;
         this.waddle = waddle;
         this.findFour = findFour;
-        this.stampEarned = stampEarned;
-        this.stampEarnedBg = stampEarnedBg;
-        this.stampEarnedImage = stampEarnedImage;
-        this.stampEarnedHeader = stampEarnedHeader;
-        this.stampEarnedBody = stampEarnedBody;
         this.puffleCare = puffleCare;
         this.prompt = prompt;
         this.daily = daily;
@@ -648,6 +643,11 @@ export default class Main extends BaseScene {
         this.mail_text = mail_text;
         this.cany_hunt_button = cany_hunt_button;
         this.candyhunt = candyhunt;
+        this.stampEarned = stampEarned;
+        this.stampEarnedBg = stampEarnedBg;
+        this.stampEarnedImage = stampEarnedImage;
+        this.stampEarnedHeader = stampEarnedHeader;
+        this.stampEarnedBody = stampEarnedBody;
         this.hideOnSleep = hideOnSleep;
         this.interfaceList = interfaceList;
 
@@ -707,8 +707,14 @@ export default class Main extends BaseScene {
             color: '#fff'
         }
 
-        this.chatInput = (this.world.client.penguin.rank > 3) ? new TextInput(this, 755, 931, 'text', style, () => this.onChatSend(), 192, true, 'chat', true, true) : new TextInput(this, 755, 931, 'text', style, () => this.onChatSend(), 48, true, 'chat', false, false)
-        this.add.existing(this.chatInput)
+        if(this.world.client.penguin.activation) {
+            this.chatInput = (this.world.client.penguin.rank > 3) ? new TextInput(this, 755, 931, 'text', style, () => this.onChatSend(), 192, true, 'chat', true, true) : new TextInput(this, 755, 931, 'text', style, () => this.onChatSend(), 48, true, 'chat', false, false)
+            this.add.existing(this.chatInput)
+        }else {
+            this.chat_box.visible = false
+            this.chat_send_button.visible = false
+            this.chat_send_icon.visible = false
+        }
 
         // Mod search
 
