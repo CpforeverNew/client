@@ -7,7 +7,7 @@ export default class RuffleManager {
 		this.crumbs = crumbs
 
 
-		var ruffleBaseAssetURL = window.location.hostname == 'play.cpforever.org' ? "https://cdn.cpforever.org/" : ""
+		var ruffleBaseAssetURL = window.location.hostname != 'localhost' ? CDN_URL : ""
 
 		window.RufflePlayer = window.RufflePlayer || {};
 		window.RufflePlayer.config = {
@@ -87,7 +87,7 @@ export default class RuffleManager {
 		window.sendEndMidwayGame = sendEndMidwayGame.bind(this)
 
 		this.swfInstance = this.rufflePlayer.load({
-			url: window.location.hostname == 'play.cpforever.org' ?  "https://cdn.cpforever.org/assets/media/games/swf/sse.swf" : "/assets/media/games/swf/sse.swf",
+			url: window.location.hostname != 'localhost' ? CDN_URL + "assets/media/games/swf/sse.swf" : "/assets/media/games/swf/sse.swf",
 			allowScriptAccess: true,
 			quality: "low",
 			logLevel: (localStorage.getItem('debugMode') === 'true') ? "Trace" : "Error",
@@ -119,7 +119,7 @@ export default class RuffleManager {
 	onSSEInit() {
 		var ruffleplayer = document.getElementsByTagName("ruffle-player")[0]
 
-		ruffleplayer.setMediaPath(window.location.hostname == 'play.cpforever.org' ? "https://cdn.cpforever.org/assets/media/games/swf/" : "/assets/media/games/swf/", window.location.hostname == 'play.cpforever.org' ? "https://cdn.cpforever.org/assets/media/swf/" : "/assets/media/swf/")
+		ruffleplayer.setMediaPath(window.location.hostname != 'localhost' ? CDN_URL + "assets/media/games/swf/" : "/assets/media/games/swf/", window.location.hostname != 'localhost' ? CDN_URL + "assets/media/swf/" : "/assets/media/swf/")
 
 		console.log("sse + ruffle init")
 

@@ -6,6 +6,7 @@
     "devclient": "webpack serve --host=0.0.0.0",
     "editor": "phasereditor2d-launcher -project . -max-number-files 100000 -public",
     "build": "webpack --mode production --env obfuscate=true",
+    "build:stage": "webpack --mode production --env obfuscate=false staging=true",
     "build-crumbs": "node ./utils/build-crumbs.js"
   },
   "repository": {
@@ -24,13 +25,13 @@
     "babel-loader": "^8.2.2",
     "babel-plugin-transform-remove-console": "^6.9.4",
     "core-js": "^3.16.4",
-    "javascript-obfuscator": "^3.0.0",
-    "phasereditor2d-launcher": "^3.32.0",
+    "javascript-obfuscator": "^4.0.0",
+    "phasereditor2d-launcher": "^3.35.0",
     "socket.io-client": "^4.4.1",
-    "webpack": "^5.51.1",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.3",
-    "webpack-obfuscator": "^3.5.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-obfuscator": "^3.5.1",
     "html-webpack-plugin": "^5.5.0"
   },
   "dependencies": {

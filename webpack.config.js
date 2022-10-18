@@ -85,6 +85,9 @@ module.exports = (env, argv) => {
 
         if (env.obfuscate === 'true') {
             config.plugins.push(
+                new DefinePlugin({
+                    CDN_URL: JSON.stringify('https://cdn.cpforever.org/')
+                }),
                 new WebpackObfuscator({
                     rotateStringArray: true,
                     reservedStrings: ['\s*']
@@ -99,7 +102,24 @@ module.exports = (env, argv) => {
                 }),
             )
         }
-    }
+
+        if(env.staging) {
+            config.plugins.push(
+                new DefinePlugin({
+                    STAGING: true,
+                    CDN_URL: JSON.stringify('https://cpf-staging.cpforever.org/')
+                }),
+                new HtmlWebpackPlugin({
+                    filename: 'index-staging.html',
+                    inject: false,
+                    template: 'index-staging.ejs',
+                    templateParameters: {
+                        timestamp: timestamp
+                    }
+                }),
+            )
+        }
+    } 
 
     return config
 }

@@ -6,7 +6,7 @@ export default class PinLoader extends BaseLoader {
     constructor(scene) {
         super(scene)
 		this.scene = scene
-		this.baseURL = window.location.hostname == 'play.cpforever.org' ? 'https://cdn.cpforever.org/assets/media/clothing/icon/' : '/assets/media/clothing/icon/'
+		this.baseURL = window.location.hostname != 'localhost' ? CDN_URL + 'assets/media/clothing/icon/' : '/assets/media/clothing/icon/'
 		this.keyPrefix = 'clothing/icon/'
     }
 
