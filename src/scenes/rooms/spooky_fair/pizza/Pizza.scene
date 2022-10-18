@@ -1,0 +1,609 @@
+{
+    "id": "c0635d9a-a8b5-4489-bfa6-ce6c6b9f8c41",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/spooky_fair/pizza/pizza-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Pizza",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "ea8a6029-7681-4767-8283-611b1574ea81",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "fg"
+            },
+            "x": 760,
+            "y": 509
+        },
+        {
+            "type": "Image",
+            "id": "b60b0140-db4b-46aa-adf7-89f01267d7bc",
+            "label": "back",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "back"
+            },
+            "x": 761,
+            "y": 325
+        },
+        {
+            "type": "Image",
+            "id": "f1791378-cbba-4a7d-8c54-2ea1c20300ee",
+            "label": "stick_thing",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "stick_thing"
+            },
+            "x": 247.1122989536621,
+            "y": 678.673294095665,
+            "originX": 0.8903396035952085,
+            "originY": 0.8866181455100848
+        },
+        {
+            "type": "Image",
+            "id": "358bf446-f3e0-4bfe-98ae-4d23d214a8c8",
+            "label": "chairs",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "chairs"
+            },
+            "x": 498.36463017036283,
+            "y": 609.1769929133328,
+            "originX": 0.5192971906408291,
+            "originY": 0.4787608450802256
+        },
+        {
+            "type": "Image",
+            "id": "18270c0d-3b2e-4c60-b369-77496dd44ad1",
+            "label": "chairs_1",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "chairs"
+            },
+            "x": 761.462403573135,
+            "y": 717.4760410253533,
+            "originX": 0.5196490049760437,
+            "originY": 0.4693112487908536
+        },
+        {
+            "type": "Image",
+            "id": "17ccf3a0-f008-427b-b5ad-0fdcfb324827",
+            "label": "chairs_2",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "chairs"
+            },
+            "x": 1070.951302551008,
+            "y": 678.2732138248242,
+            "originX": 0.5178103617096991,
+            "originY": 0.434851120262002
+        },
+        {
+            "type": "Image",
+            "id": "640ec385-9a64-41c4-9cf6-2d03675bc771",
+            "label": "table_left",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "table_left"
+            },
+            "x": 493.5290787937087,
+            "y": 666.3840510361026,
+            "originX": 0.49719690235883446,
+            "originY": 0.4834434637917866
+        },
+        {
+            "type": "Image",
+            "id": "d3be3bd2-9bc8-4a38-9e95-b35f715af700",
+            "label": "table_mid",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "table_mid"
+            },
+            "x": 760.3877536727096,
+            "y": 780.2342204272954,
+            "originX": 0.47849841160302053,
+            "originY": 0.49515325659330345
+        },
+        {
+            "type": "Image",
+            "id": "bfce396d-9e83-470a-bf57-43bc84eee268",
+            "label": "table_right",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "table_right"
+            },
+            "x": 1069.2154523182646,
+            "y": 736.9174011975838,
+            "originX": 0.4893775403211145,
+            "originY": 0.48049003079682745
+        },
+        {
+            "type": "Image",
+            "id": "f79e7f82-a70b-4843-84f6-29a0817f0a6e",
+            "label": "curtain",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "curtain"
+            },
+            "x": 581,
+            "y": 225
+        },
+        {
+            "type": "Image",
+            "id": "03e177fa-4369-406f-8dc1-254f4d30ae4c",
+            "label": "kitchen",
+            "components": [
+                "Button",
+                "ShowHint",
+                "MoveTo"
+            ],
+            "Button.spriteName": "kitchen",
+            "Button.activeFrame": false,
+            "ShowHint.text": "Pizzatron 3000",
+            "MoveTo.x": 401,
+            "MoveTo.y": 395,
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "kitchen"
+            },
+            "x": 394.2410244745684,
+            "y": 311.88984437199446,
+            "originX": 0.5096954327120424,
+            "originY": 0.7031227484765886
+        },
+        {
+            "type": "Sprite",
+            "id": "4380c1b0-bf7d-4528-9539-fd1925106723",
+            "label": "door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door",
+            "Button.activeFrame": false,
+            "MoveTo.x": 832,
+            "MoveTo.y": 404,
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "door"
+            },
+            "x": 840,
+            "y": 271
+        },
+        {
+            "type": "Image",
+            "id": "37194e2f-ab43-49d5-b306-b2d5fdf60e19",
+            "label": "desk",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "desk"
+            },
+            "x": 541.315293853818,
+            "y": 489.22679814443796,
+            "originX": 0.49030340299233777,
+            "originY": 0.943648457370368
+        },
+        {
+            "type": "Sprite",
+            "id": "fd2bf9d7-f34d-44c7-a33e-7caeef8ceead",
+            "label": "book0001",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onBookOver()",
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "book0001"
+            },
+            "x": 596.2813124114932,
+            "y": 508.1639848961451,
+            "originX": 0.5319500619691578,
+            "originY": 3.0025623355899276
+        },
+        {
+            "type": "Image",
+            "id": "eb320aa7-89ad-428b-b27e-dfe9d06b45b9",
+            "label": "cooker",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "cooker"
+            },
+            "x": 190.45015323751974,
+            "y": 767.6048685810243,
+            "originX": 0.8163312457142796,
+            "originY": 0.8566801563579624
+        },
+        {
+            "type": "Sprite",
+            "id": "52295ac4-d4a1-46e4-bbd4-c4c12322458f",
+            "label": "register0001",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onRegOver()",
+            "SimpleButton.pixelPerfect": true,
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "register0001"
+            },
+            "x": 471.49621719664947,
+            "y": 515.8652896666431,
+            "originX": 0.5614445282332197,
+            "originY": 1.976606627219758
+        },
+        {
+            "type": "Image",
+            "id": "299a2dad-5bcd-4050-a5db-3683805d68f0",
+            "label": "leftbags",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "leftbags"
+            },
+            "x": 100.72894394618835,
+            "y": 915.5701868460388,
+            "originX": 0.4550953942079217,
+            "originY": 0.7009100900857692
+        },
+        {
+            "type": "Image",
+            "id": "a87cd780-503f-4305-a632-6c0a67c403a6",
+            "label": "kitchensymbol0001",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "kitchensymbol0001"
+            },
+            "x": 390,
+            "y": 37
+        },
+        {
+            "type": "Image",
+            "id": "cc31280e-6bac-4dac-9373-d2eff5a30b49",
+            "label": "menu",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "menu"
+            },
+            "x": 229,
+            "y": 172
+        },
+        {
+            "type": "Image",
+            "id": "9f95af20-2e20-4515-89d5-dcebefe4f1f8",
+            "label": "pianoshadow",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "pianoshadow"
+            },
+            "x": 1278,
+            "y": 437
+        },
+        {
+            "type": "Image",
+            "id": "05a1c988-44c0-4dc6-aae0-50f003b2ad72",
+            "label": "pianochair",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "pianochair"
+            },
+            "x": 1286.3819637088964,
+            "y": 453.7983992021412,
+            "originX": 0.5090324425418064,
+            "originY": 0.33109332446823536
+        },
+        {
+            "type": "Image",
+            "id": "49189297-4821-4b5f-8313-1713f6b7fa59",
+            "label": "candle",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "candle"
+            },
+            "x": 1044.6180362911036,
+            "y": 411.6989858437421,
+            "originX": 0.4856045446989962,
+            "originY": 0.9145891126688762
+        },
+        {
+            "type": "Image",
+            "id": "2dc3e7e0-cfdb-4176-803c-3c21c09ccc9c",
+            "label": "fish0001",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "fish0001"
+            },
+            "x": 1045,
+            "y": 132
+        },
+        {
+            "type": "Image",
+            "id": "207b1cc0-21be-4bf3-a791-95f6dfcc42a3",
+            "label": "pumpkinshadow",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "pumpkinshadow"
+            },
+            "x": 1433,
+            "y": 899
+        },
+        {
+            "type": "Image",
+            "id": "5be5d115-8035-4a58-a881-072ba869b91f",
+            "label": "pumpkin",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "pumpkin"
+            },
+            "x": 1426.1612430757186,
+            "y": 860.5813538642221,
+            "originX": 0.485746070354408,
+            "originY": 0.6790997004170268
+        },
+        {
+            "type": "Sprite",
+            "id": "621bbb57-98ad-4fdb-b42f-cf21f66fe1a1",
+            "label": "flame0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "flame",
+            "Animation.end": 14,
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "flame0001"
+            },
+            "x": 499,
+            "y": 583,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "type": "Sprite",
+            "id": "b8972c80-b82a-420d-bceb-3fcdd154bdd4",
+            "label": "flame",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "flame",
+            "Animation.end": 14,
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "flame0001"
+            },
+            "x": 761,
+            "y": 695,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "type": "Sprite",
+            "id": "1019ec36-cff2-44eb-9f82-faede20bc4ad",
+            "label": "flame_1",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "flame",
+            "Animation.end": 14,
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "flame0001"
+            },
+            "x": 1068,
+            "y": 654,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "type": "Sprite",
+            "id": "d8281468-632f-4f71-be72-e4d92f5e2e59",
+            "label": "flame_2",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "flame",
+            "Animation.end": 14,
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "flame0001"
+            },
+            "x": 1007,
+            "y": 266,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "type": "Sprite",
+            "id": "6c9136b3-c0d1-4521-9e4e-6bb20852931d",
+            "label": "flame_3",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "flame",
+            "Animation.end": 14,
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "flame0001"
+            },
+            "x": 1022,
+            "y": 255,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "type": "Sprite",
+            "id": "e8915c85-0d6a-408e-a86e-78493184218f",
+            "label": "flame_4",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "flame",
+            "Animation.end": 14,
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "flame0001"
+            },
+            "x": 1045,
+            "y": 239,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "type": "Sprite",
+            "id": "b9262897-1e62-451c-b636-7a745c80a8db",
+            "label": "flame_5",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "flame",
+            "Animation.end": 14,
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "flame0001"
+            },
+            "x": 1071,
+            "y": 254,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "type": "Sprite",
+            "id": "be3addbe-78f1-4a69-b2a1-7184ff4e9f00",
+            "label": "flame_6",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "flame",
+            "Animation.end": 14,
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "flame0001"
+            },
+            "x": 1088,
+            "y": 268,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "type": "Image",
+            "id": "cd8e1307-f50a-4676-88a6-b53d657da53b",
+            "label": "piano",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "piano"
+            },
+            "x": 1317,
+            "y": 242
+        },
+        {
+            "type": "Sprite",
+            "id": "16a423a7-b491-44d5-b6ba-0069ad67dad0",
+            "label": "fire0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fire",
+            "Animation.end": 8,
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "fire0001"
+            },
+            "x": 111,
+            "y": 772
+        },
+        {
+            "type": "Sprite",
+            "id": "797fa7ff-3b9b-4eb0-90e6-add40023afa0",
+            "label": "smoke0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "smoke",
+            "Animation.end": 5,
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "smoke0001"
+            },
+            "x": 43,
+            "y": 190
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "fbd9b42a-8e35-4ff1-897b-b203942a3729",
+            "label": "sort",
+            "objectIds": [
+                "797fa7ff-3b9b-4eb0-90e6-add40023afa0",
+                "16a423a7-b491-44d5-b6ba-0069ad67dad0",
+                "cd8e1307-f50a-4676-88a6-b53d657da53b",
+                "be3addbe-78f1-4a69-b2a1-7184ff4e9f00",
+                "b9262897-1e62-451c-b636-7a745c80a8db",
+                "e8915c85-0d6a-408e-a86e-78493184218f",
+                "6c9136b3-c0d1-4521-9e4e-6bb20852931d",
+                "d8281468-632f-4f71-be72-e4d92f5e2e59",
+                "1019ec36-cff2-44eb-9f82-faede20bc4ad",
+                "b8972c80-b82a-420d-bceb-3fcdd154bdd4",
+                "621bbb57-98ad-4fdb-b42f-cf21f66fe1a1",
+                "5be5d115-8035-4a58-a881-072ba869b91f",
+                "49189297-4821-4b5f-8313-1713f6b7fa59",
+                "05a1c988-44c0-4dc6-aae0-50f003b2ad72",
+                "299a2dad-5bcd-4050-a5db-3683805d68f0",
+                "eb320aa7-89ad-428b-b27e-dfe9d06b45b9",
+                "fd2bf9d7-f34d-44c7-a33e-7caeef8ceead",
+                "37194e2f-ab43-49d5-b306-b2d5fdf60e19",
+                "4380c1b0-bf7d-4528-9539-fd1925106723",
+                "03e177fa-4369-406f-8dc1-254f4d30ae4c",
+                "f79e7f82-a70b-4843-84f6-29a0817f0a6e",
+                "bfce396d-9e83-470a-bf57-43bc84eee268",
+                "d3be3bd2-9bc8-4a38-9e95-b35f715af700",
+                "640ec385-9a64-41c4-9cf6-2d03675bc771",
+                "17ccf3a0-f008-427b-b5ad-0fdcfb324827",
+                "18270c0d-3b2e-4c60-b369-77496dd44ad1",
+                "358bf446-f3e0-4bfe-98ae-4d23d214a8c8",
+                "f1791378-cbba-4a7d-8c54-2ea1c20300ee",
+                "52295ac4-d4a1-46e4-bbd4-c4c12322458f"
+            ]
+        }
+    ]
+}

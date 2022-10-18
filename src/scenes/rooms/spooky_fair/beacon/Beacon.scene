@@ -1,0 +1,207 @@
+{
+    "id": "ab63c5d1-6616-4523-baa6-214d0b6f8938",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/spooky_fair/sky/sky-pack.json",
+            "client/assets/media/rooms/spooky_fair/beacon/beacon-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Beacon",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "e38730bb-718e-4e9f-81c0-2aa39e29c94b",
+            "label": "sky0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "sky",
+            "Animation.end": 282,
+            "texture": {
+                "key": "sky_spooky",
+                "frame": "sky0001"
+            },
+            "x": 888,
+            "y": 14,
+            "scaleX": 1.2292763795703783,
+            "scaleY": 1.2292763795703783
+        },
+        {
+            "type": "Image",
+            "id": "ce5cbe2d-1f8d-42a6-ac3f-075019949814",
+            "label": "ocean",
+            "components": [],
+            "texture": {
+                "key": "beacon_halloween",
+                "frame": "ocean"
+            },
+            "x": 790,
+            "y": 725
+        },
+        {
+            "type": "Image",
+            "id": "6ed31111-bb7e-4dee-a39e-d2638ca2a8d5",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "beacon_halloween",
+                "frame": "fg"
+            },
+            "x": 387.0507698475818,
+            "y": 544.1375560771464,
+            "originX": 0.25853085762836747,
+            "originY": 0.3651263112106916
+        },
+        {
+            "type": "Image",
+            "id": "4bb5e756-e151-48da-889c-d194973881fe",
+            "label": "topbarrier",
+            "components": [],
+            "texture": {
+                "key": "beacon_halloween",
+                "frame": "topbarrier"
+            },
+            "x": 635,
+            "y": 492
+        },
+        {
+            "type": "Image",
+            "id": "c860d526-eb36-4652-87e9-78ac0754e162",
+            "label": "box",
+            "components": [],
+            "texture": {
+                "key": "beacon_halloween",
+                "frame": "box"
+            },
+            "x": 367.8205563766963,
+            "y": 406.93765113429373,
+            "originX": 0.752257441868124,
+            "originY": 0.16954937305686837
+        },
+        {
+            "type": "Image",
+            "id": "267c3d1c-97ff-4c09-a162-872ee58a8ae5",
+            "label": "pumpkin",
+            "components": [],
+            "texture": {
+                "key": "beacon_halloween",
+                "frame": "pumpkin"
+            },
+            "x": 693.8760814677714,
+            "y": 542.5243092274156,
+            "originX": 0.4721686742026109,
+            "originY": 0.7717280630848816
+        },
+        {
+            "type": "Image",
+            "id": "e8fbe72c-16dc-4217-9d32-e957ccd0eb4d",
+            "label": "telescope_1",
+            "components": [
+                "MoveTo",
+                "SimpleButton"
+            ],
+            "MoveTo.x": 335,
+            "MoveTo.y": 413,
+            "SimpleButton.callback": "() => this.interface.loadExternal(\"TelescopeSpooky\");",
+            "texture": {
+                "key": "beacon_halloween",
+                "frame": "telescope"
+            },
+            "x": 297,
+            "y": 285
+        },
+        {
+            "type": "Image",
+            "id": "72809c8b-5b6d-4423-81ff-16fc449f80a7",
+            "label": "jetpack_1",
+            "components": [],
+            "texture": {
+                "key": "beacon_halloween",
+                "frame": "jetpack"
+            },
+            "x": 1322.3420043493293,
+            "y": 703.542903664104,
+            "originX": 0.49564846063936474,
+            "originY": 0.6792766571936238
+        },
+        {
+            "type": "Sprite",
+            "id": "4c4297ab-1d23-4ac4-8a09-e0dad0b645c4",
+            "label": "landing",
+            "components": [
+                "Button",
+                "ShowHint",
+                "MoveTo"
+            ],
+            "Button.spriteName": "landing",
+            "Button.activeFrame": false,
+            "ShowHint.text": "Jetpack Adventure",
+            "MoveTo.x": 1331,
+            "MoveTo.y": 579,
+            "texture": {
+                "key": "beacon_halloween",
+                "frame": "landing"
+            },
+            "x": 1321.17621023904,
+            "y": 564.1174239103713,
+            "originX": 0.4805872411541319,
+            "originY": 0.4810607230772021
+        },
+        {
+            "type": "Image",
+            "id": "aae81985-4552-448d-bd2a-92fd88d45d3f",
+            "label": "stairtop",
+            "components": [],
+            "texture": {
+                "key": "beacon_halloween",
+                "frame": "stairtop"
+            },
+            "x": 233,
+            "y": 582,
+            "originX": 0.5738520627114743,
+            "originY": 0.3782284025337291
+        },
+        {
+            "type": "Image",
+            "id": "d75671a4-78fb-4a17-9e0c-ec47156396e2",
+            "label": "bottom",
+            "components": [],
+            "texture": {
+                "key": "beacon_halloween",
+                "frame": "bottom"
+            },
+            "x": 681.6883712955367,
+            "y": 1000.9119738297734,
+            "originX": 0.49317792686249307,
+            "originY": 0.9231052230129088
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "1bc796af-8118-4a54-b624-39e93ad42d65",
+            "label": "sort",
+            "objectIds": [
+                "267c3d1c-97ff-4c09-a162-872ee58a8ae5",
+                "c860d526-eb36-4652-87e9-78ac0754e162",
+                "d75671a4-78fb-4a17-9e0c-ec47156396e2",
+                "aae81985-4552-448d-bd2a-92fd88d45d3f"
+            ]
+        }
+    ]
+}
