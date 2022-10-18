@@ -1,0 +1,69 @@
+{
+    "id": "9b303ee8-33d3-480b-af10-7a916efbee6e",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [
+            "client/assets/media/interface/game/verify/verify-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Verify",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "abeae216-e94c-4c91-919b-02bc42bc690d",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "verify",
+                "frame": "bg"
+            },
+            "x": 1198,
+            "y": 515,
+            "scaleX": 0.834,
+            "scaleY": 0.83
+        },
+        {
+            "type": "Sprite",
+            "id": "34173cb4-fd61-4dc2-a373-db65fab4b838",
+            "label": "verifyPopUp000",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "verify",
+                "frame": "VerifyPopUp000"
+            },
+            "x": 1196,
+            "y": 513
+        },
+        {
+            "type": "Image",
+            "id": "38960732-19c5-4e96-b7e2-bc27dd4f7aa9",
+            "label": "verify_btn",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "verify-btn",
+            "Button.callback": "() => window.open('https://cpforever.org/manage', '_blank').focus()",
+            "texture": {
+                "key": "verify",
+                "frame": "verify-btn"
+            },
+            "x": 1374,
+            "y": 654
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

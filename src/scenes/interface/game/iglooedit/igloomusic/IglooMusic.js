@@ -112,28 +112,28 @@ export default class IglooMusic extends BaseContainer {
         musicItem.bold = false;
 
         // musicItem_1 (prefab fields)
-        musicItem_1.name = "Beware the Dragon";
-        musicItem_1.musicId = 286;
+        musicItem_1.name = "Carnival Fun";
+        musicItem_1.musicId = 598;
         musicItem_1.bold = true;
 
         // musicItem_2 (prefab fields)
-        musicItem_2.name = "Planet Y";
-        musicItem_2.musicId = 38;
-        musicItem_2.bold = false;
+        musicItem_2.name = "Halloween Dance";
+        musicItem_2.musicId = 224;
+        musicItem_2.bold = true;
 
         // musicItem_3 (prefab fields)
-        musicItem_3.name = "Pre-historic Rock";
-        musicItem_3.musicId = 35;
-        musicItem_3.bold = false;
+        musicItem_3.name = "Haunted Disco";
+        musicItem_3.musicId = 223;
+        musicItem_3.bold = true;
 
         // musicItem_4 (prefab fields)
-        musicItem_4.name = "The Royal Court";
-        musicItem_4.musicId = 233;
+        musicItem_4.name = "The Ringmaster";
+        musicItem_4.musicId = 297;
         musicItem_4.bold = true;
 
         // musicItem_5 (prefab fields)
-        musicItem_5.name = "Puffle Party";
-        musicItem_5.musicId = 259;
+        musicItem_5.name = "Carnival Fun";
+        musicItem_5.musicId = 598;
         musicItem_5.bold = false;
 
         // musicItem_6 (prefab fields)
@@ -147,8 +147,8 @@ export default class IglooMusic extends BaseContainer {
         musicItem_7.bold = false;
 
         // musicItem_8 (prefab fields)
-        musicItem_8.name = "To Battle!";
-        musicItem_8.musicId = 236;
+        musicItem_8.name = "Night of the Living Sled";
+        musicItem_8.musicId = 513;
         musicItem_8.bold = true;
 
         // musicItem_9 (prefab fields)
@@ -157,8 +157,8 @@ export default class IglooMusic extends BaseContainer {
         musicItem_9.bold = false;
 
         // musicItem_10 (prefab fields)
-        musicItem_10.name = "Icy Serenade";
-        musicItem_10.musicId = 256;
+        musicItem_10.name = "What Lurks in the Night";
+        musicItem_10.musicId = 514;
         musicItem_10.bold = true;
 
         // musicItem_11 (prefab fields)

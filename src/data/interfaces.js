@@ -13,6 +13,7 @@ const interfaces = {
     'MazeMap': require('@scenes/interface/game/mazemap/MazeMap').default,
     'Telescope': require('@scenes/interface/game/telescope/Telescope').default,
     'TelescopeSpooky': require('@scenes/interface/game/telescope/spooky_fair/Telescope').default,
+    'Verify': require('@scenes/interface/game/verify/Verify').default,
 }
 
 export default interfaces

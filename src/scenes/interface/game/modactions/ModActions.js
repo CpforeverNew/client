@@ -39,6 +39,8 @@ export default class ModActions extends BaseContainer {
         this.joindate_txt;
         /** @type {Phaser.GameObjects.Text} */
         this.username_status_txt;
+        /** @type {Phaser.GameObjects.Text} */
+        this.activated_txt;
 
 
         // block
@@ -234,6 +236,13 @@ export default class ModActions extends BaseContainer {
         username_status_txt.setStyle({ "color": "#000000ff", "fixedWidth":180,"fontFamily": "Burbank Small", "fontSize": "20px" });
         this.add(username_status_txt);
 
+        // activated_txt
+        const activated_txt = scene.add.text(335, 235, "", {});
+        activated_txt.setOrigin(0.5, 0.5);
+        activated_txt.text = "activated: no";
+        activated_txt.setStyle({ "color": "#000000ff", "fixedWidth":180,"fontFamily": "Burbank Small", "fontSize": "20px" });
+        this.add(activated_txt);
+
         // block (components)
         new Interactive(block);
 
@@ -297,6 +306,7 @@ export default class ModActions extends BaseContainer {
         this.banned_until_txt = banned_until_txt;
         this.joindate_txt = joindate_txt;
         this.username_status_txt = username_status_txt;
+        this.activated_txt = activated_txt;
 
         /* START-USER-CTR-CODE */
 
@@ -360,6 +370,9 @@ export default class ModActions extends BaseContainer {
         if (!bancount || bancount == 0) { this.ban_count_txt.text = "banned 0 times" }
         else if (bancount == 1) { this.ban_count_txt.text = "banned 1 time" }
         else { this.ban_count_txt.text = "banned " + bancount + " times" }
+
+        if(penguin.activation == 1) this.activated_txt.text = "activated: yes"
+        if(penguin.activation == 0) this.activated_txt.text = "activated: no"
 
         // Paper doll
         this.paperDoll.loadDoll(items, penguin.isClient)

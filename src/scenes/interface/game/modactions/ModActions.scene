@@ -527,6 +527,22 @@
                     "fontFamily": "Burbank Small",
                     "fontSize": "20px",
                     "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "82ab48c0-d4aa-4988-a046-835d5ec08e84",
+                    "label": "activated_txt",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 335,
+                    "y": 235,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "activated: no",
+                    "fixedWidth": 180,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "color": "#000000ff"
                 }
             ]
         }

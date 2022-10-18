@@ -714,6 +714,7 @@ export default class Main extends BaseScene {
             this.chat_box.visible = false
             this.chat_send_button.visible = false
             this.chat_send_icon.visible = false
+            this.interface.loadExternal('Verify')
         }
 
         // Mod search
