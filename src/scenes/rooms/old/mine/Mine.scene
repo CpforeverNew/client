@@ -175,6 +175,25 @@
             "scaleY": 1.01
         },
         {
+            "type": "Image",
+            "id": "e4de8a87-b27c-44de-828c-0bd982fe1ff7",
+            "label": "candy_candy30002",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"candy_corn\" })",
+            "SimpleButton.pixelPerfect": true,
+            "texture": {
+                "key": "candyhunt",
+                "frame": "candy/3-got"
+            },
+            "x": 644,
+            "y": 312,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "angle": 17
+        },
+        {
             "type": "Rectangle",
             "id": "cfb71630-f86d-44d4-8a6a-7088e9657f41",
             "label": "rectangle",
@@ -244,6 +263,7 @@
             ],
             "MoveTo.x": 590,
             "MoveTo.y": 380,
+            "SimpleButton.pixelPerfect": true,
             "texture": {
                 "key": "new-mine",
                 "frame": "puffle_rescue_table"

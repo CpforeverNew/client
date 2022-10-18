@@ -56,11 +56,6 @@ export default class Pet extends RoomScene {
         const black = this.add.sprite(92, 375, "pet", "black/black0001");
         black.setOrigin(0.56875, 0.9064039408866995);
 
-        // candy_candy70002
-        const candy_candy70002 = this.add.image(1159, 335, "candyhunt", "candy/7-got");
-        candy_candy70002.scaleX = 0.5;
-        candy_candy70002.scaleY = 0.5;
-
         // post
         const post = this.add.image(1084, 439, "pet", "post");
         post.setOrigin(0.5220125786163522, 0.8860103626943006);
@@ -155,10 +150,6 @@ export default class Pet extends RoomScene {
         // lists
         const penEyes = [eyesPink, eyesBlue, eyesPurple, eyesGreen, eyesBlack];
         const sort = [bedFront, bedBack, house1, house2, house3, bowls, post, sack, os];
-
-        // candy_candy70002 (components)
-        const candy_candy70002SimpleButton = new SimpleButton(candy_candy70002);
-        candy_candy70002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_bar" });
 
         // os (components)
         const osSimpleButton = new SimpleButton(os);

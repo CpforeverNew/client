@@ -72,6 +72,11 @@ export default class Dance extends RoomScene {
         const floor_frame = this.add.image(646, 696, "dance", "floor/frame");
         floor_frame.setOrigin(0.5006273525721455, 0.5);
 
+        // candy_candy70002
+        const candy_candy70002 = this.add.image(750, 307, "candyhunt", "candy/7-got");
+        candy_candy70002.scaleX = 0.5;
+        candy_candy70002.scaleY = 0.5;
+
         // floor
         const floor = this.add.sprite(646, 693, "dance", "floor/floor0001");
 
@@ -250,6 +255,10 @@ export default class Dance extends RoomScene {
         // lists
         const sort = [speaker_3, speaker_1, boiler, box, dj_speaker, mixer, puffle_speaker];
         const animate = [dj_box_headphones_front, dj_box_lights, dj_mixer_slider, dj_mixer_lights, dj_mixer_tables, dj_mixer_tables_under, dj_speaker_sound, dj_box_headphones_back];
+
+        // candy_candy70002 (components)
+        const candy_candy70002SimpleButton = new SimpleButton(candy_candy70002);
+        candy_candy70002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_bar" });
 
         // floor (components)
         const floorAnimation = new Animation(floor);

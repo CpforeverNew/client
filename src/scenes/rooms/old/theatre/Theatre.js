@@ -151,16 +151,6 @@ export default class Theatre extends RoomScene {
         // chair20
         const chair20 = this.add.image(1396, 843, "theatre", "chair20");
 
-        // candy_candy80002
-        const candy_candy80002 = this.add.image(1223, 850, "candyhunt", "candy/8-got");
-        candy_candy80002.scaleX = 0.5;
-        candy_candy80002.scaleY = 0.5;
-        candy_candy80002.angle = 46;
-        candy_candy80002.tintTopLeft = 6250335;
-        candy_candy80002.tintTopRight = 6250335;
-        candy_candy80002.tintBottomLeft = 6250335;
-        candy_candy80002.tintBottomRight = 6250335;
-
         // chair19
         const chair19 = this.add.image(1301, 859, "theatre", "chair19");
 
@@ -214,10 +204,6 @@ export default class Theatre extends RoomScene {
 
         // lists
         const sort = [chair16, chair17, chair18, chair19, chair20, chair15, chair14, chair13, chair12, chair11, chair6, chair7, chair8, chair9, chair10, chair5, chair4, chair3, chair2, chair1];
-
-        // candy_candy80002 (components)
-        const candy_candy80002SimpleButton = new SimpleButton(candy_candy80002);
-        candy_candy80002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "lollipop" });
 
         this.screen_back_1 = screen_back_1;
         this.screen_placeholder = screen_placeholder;

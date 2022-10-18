@@ -39,12 +39,6 @@ export default class Boiler extends RoomScene {
         bg_png.scaleX = 1.02;
         bg_png.scaleY = 1.02;
 
-        // candy_candy30002
-        const candy_candy30002 = this.add.image(364, 731, "candyhunt", "candy/3-got");
-        candy_candy30002.scaleX = 0.5;
-        candy_candy30002.scaleY = 0.5;
-        candy_candy30002.angle = 17;
-
         // boiler_door_png
         const boiler_door_png = this.add.image(582, 363, "boiler", "boiler-door.png");
         boiler_door_png.scaleX = 1.02;
@@ -72,10 +66,6 @@ export default class Boiler extends RoomScene {
 
         // smoke
         const smoke = this.add.sprite(250, 198, "boiler", "smoke0001.png");
-
-        // candy_candy30002 (components)
-        const candy_candy30002SimpleButton = new SimpleButton(candy_candy30002);
-        candy_candy30002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_corn" });
 
         // boiler_door_png (components)
         const boiler_door_pngButton = new Button(boiler_door_png);

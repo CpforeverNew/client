@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import { Animation, Button } from '@components/components'
+import {Animation, Button, SimpleButton} from '@components/components'
 
 
 /* START OF COMPILED CODE */
@@ -51,6 +51,11 @@ export default class Forts extends RoomScene {
         // bg
         const bg = this.add.image(-35, -18, "forts", "bg");
         bg.setOrigin(0, 0);
+
+        // candy_candy10002
+        const candy_candy10002 = this.add.image(68, 490, "candyhunt", "candy/1-got");
+        candy_candy10002.scaleX = 0.5;
+        candy_candy10002.scaleY = 0.5;
 
         // red_fort
         const red_fort = this.add.image(603, 655, "forts", "red_fort");
@@ -132,6 +137,10 @@ export default class Forts extends RoomScene {
 
         // lists
         const sort = [red_flag, red_pole, blue_pole, blue_flag, blue_fort, red_fort_front, red_fort, snowballs];
+
+        // candy_candy10002 (components)
+        const candy_candy10002SimpleButton = new SimpleButton(candy_candy10002);
+        candy_candy10002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_stick" });
 
         // tower (components)
         const towerAnimation = new Animation(tower);

@@ -91,7 +91,7 @@ export default class CandyHunt extends BaseContainer {
 
         // claim_prize_active (components)
         const claim_prize_activeSimpleButton = new SimpleButton(claim_prize_active);
-        claim_prize_activeSimpleButton.callback = () => this.interface.prompt.showItem(170);
+        claim_prize_activeSimpleButton.callback = () => this.interface.prompt.showItem(246);
 
         // close_button (components)
         const close_buttonButton = new Button(close_button);

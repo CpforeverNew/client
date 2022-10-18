@@ -25,7 +25,7 @@ export default class Beach extends RoomScene {
             'ship': null
         }
         this.roomAnims = true
-		this.music = '583'
+        this.music = '583'
 
         /* END-USER-CTR-CODE */
     }
@@ -50,6 +50,11 @@ export default class Beach extends RoomScene {
         // cage
         const cage = this.add.image(232, 352, "beach", "cage");
         cage.setOrigin(0.4935064935064935, 0.5);
+
+        // candy_candy20002
+        const candy_candy20002 = this.add.image(227, 417, "candyhunt", "candy/2-got");
+        candy_candy20002.scaleX = 0.5;
+        candy_candy20002.scaleY = 0.5;
 
         // buoy
         const buoy = this.add.image(194, 428, "beach", "buoy");
@@ -105,6 +110,10 @@ export default class Beach extends RoomScene {
         const lighthouse_doorMoveTo = new MoveTo(lighthouse_door);
         lighthouse_doorMoveTo.x = 480;
         lighthouse_doorMoveTo.y = 400;
+
+        // candy_candy20002 (components)
+        const candy_candy20002SimpleButton = new SimpleButton(candy_candy20002);
+        candy_candy20002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_cube" });
 
         // bucket (components)
         const bucketSimpleButton = new SimpleButton(bucket);

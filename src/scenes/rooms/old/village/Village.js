@@ -76,6 +76,11 @@ export default class Village extends RoomScene {
         const left_sign = this.add.image(133, 677, "village", "left_sign");
         left_sign.setOrigin(0.4444444444444444, 0.5217391304347826);
 
+        // candy_candy60002
+        const candy_candy60002 = this.add.image(869, 471, "candyhunt", "candy/6-got");
+        candy_candy60002.scaleX = 0.5;
+        candy_candy60002.scaleY = 0.5;
+
         // right_sign
         const right_sign = this.add.image(1471, 668, "village", "right_sign");
         right_sign.setOrigin(0.4861111111111111, 0.7831325301204819);
@@ -115,9 +120,14 @@ export default class Village extends RoomScene {
         smokeAnimation.key = "smoke";
         smokeAnimation.end = 5;
 
+        // candy_candy60002 (components)
+        const candy_candy60002SimpleButton = new SimpleButton(candy_candy60002);
+        candy_candy60002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_apple" });
+
         // tours (components)
         const toursSimpleButton = new SimpleButton(tours);
         toursSimpleButton.callback = () => this.interface.prompt.showItem(428);
+        toursSimpleButton.pixelPerfect = true;
 
         // chair (components)
         const chairAnimation = new Animation(chair);
