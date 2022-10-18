@@ -1,0 +1,730 @@
+{
+    "id": "cc4e6afb-f709-4ed1-b70d-352d2df86599",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/spooky_fair/mtn/mtn-pack.json",
+            "client/assets/media/rooms/spooky_fair/sky/sky-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Mtn",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "ce8495b7-b4e2-4150-b784-3a9fcd9a12fd",
+            "label": "sky0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "sky",
+            "Animation.end": 282,
+            "texture": {
+                "key": "sky_spooky",
+                "frame": "sky0001"
+            },
+            "x": 932,
+            "y": -25
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "02e8351f-9f29-4051-9849-3bbbddc6f6b2",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "mtnSeat11",
+            "sitFrame": 24,
+            "offsetX": -100,
+            "offsetY": -70,
+            "components": [],
+            "x": 1155,
+            "y": 638,
+            "visible": false
+        },
+        {
+            "type": "Rectangle",
+            "id": "ef9b8944-1657-4c42-93e1-635ccc3f68d1",
+            "label": "zone4",
+            "components": [
+                "MoveTo"
+            ],
+            "x": 1127,
+            "y": 657,
+            "angle": -33,
+            "visible": false,
+            "alpha": 0.5,
+            "isFilled": true,
+            "fillColor": "#00ff00",
+            "width": 180,
+            "height": 90
+        },
+        {
+            "type": "Rectangle",
+            "id": "d637b1ba-4403-4f67-8df7-3e2a39c20182",
+            "label": "zone3",
+            "components": [
+                "MoveTo"
+            ],
+            "x": 899,
+            "y": 753,
+            "visible": false,
+            "alpha": 0.5,
+            "isFilled": true,
+            "fillColor": "#00ff00",
+            "width": 180,
+            "height": 90
+        },
+        {
+            "type": "Rectangle",
+            "id": "fae5d3e7-f9ac-4eb1-af04-c7191621bab5",
+            "label": "zone2",
+            "components": [
+                "MoveTo"
+            ],
+            "x": 633,
+            "y": 709,
+            "angle": 11,
+            "visible": false,
+            "alpha": 0.5,
+            "isFilled": true,
+            "fillColor": "#00ff00",
+            "width": 200,
+            "height": 90
+        },
+        {
+            "type": "Rectangle",
+            "id": "e7292dc1-8f98-4fc6-b456-4d5a059a7447",
+            "label": "zone1",
+            "components": [
+                "MoveTo"
+            ],
+            "x": 334,
+            "y": 568,
+            "angle": 33,
+            "visible": false,
+            "alpha": 0.5,
+            "isFilled": true,
+            "fillColor": "#00ff00",
+            "width": 230,
+            "height": 90
+        },
+        {
+            "type": "Image",
+            "id": "aa291ae0-f72b-417c-aef9-3d1f2676bd15",
+            "label": "ocean",
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "ocean"
+            },
+            "x": 749,
+            "y": 598,
+            "scaleX": 1.0240811995855759,
+            "scaleY": 1.0240811995855759
+        },
+        {
+            "type": "Image",
+            "id": "5feeb9ff-5084-4189-bd50-de159abae1c2",
+            "label": "mountain_1",
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "mountain"
+            },
+            "x": 765,
+            "y": 589,
+            "scaleX": 1.0171740286255455,
+            "scaleY": 1.0171740286255455
+        },
+        {
+            "type": "Image",
+            "id": "8c65ffb4-4671-4fea-a485-7d4f394ad183",
+            "label": "shadowz",
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "shadowz"
+            },
+            "x": 761,
+            "y": 391
+        },
+        {
+            "type": "Image",
+            "id": "e91941f1-2f63-41f2-801d-e66823ed72af",
+            "label": "sled_1",
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "sled"
+            },
+            "x": 492,
+            "y": 250
+        },
+        {
+            "type": "Image",
+            "id": "99b5ae80-661e-47ab-86f6-c59b64d96a65",
+            "label": "leftpumpkin",
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "leftpumpkin"
+            },
+            "x": 452.258545887274,
+            "y": 345.6880095200287,
+            "originX": 0.512338685169353,
+            "originY": 0.7163125743752241
+        },
+        {
+            "type": "Image",
+            "id": "a5948690-8ecf-439f-94e3-495058b6dc7d",
+            "label": "shopsled0001",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.loadExternal('Sled')",
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "shopsled0001"
+            },
+            "x": 502,
+            "y": 229
+        },
+        {
+            "type": "Image",
+            "id": "8e58f25b-aefb-4730-8b4b-6dfb9fc48d6e",
+            "label": "scarecrowshadow",
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "scarecrowshadow"
+            },
+            "x": 835,
+            "y": 458
+        },
+        {
+            "type": "Image",
+            "id": "5be6c3ba-e892-495c-a695-4a2620c69f1c",
+            "label": "feathers",
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "feathers"
+            },
+            "x": 736,
+            "y": 363
+        },
+        {
+            "type": "Image",
+            "id": "a374504b-6732-427f-aa9e-38463a335640",
+            "label": "scarecrow",
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "scarecrow"
+            },
+            "x": 739.9123718582066,
+            "y": 360.4742311492396,
+            "originX": 0.5875911057077164,
+            "originY": 0.9308535469947135
+        },
+        {
+            "type": "Image",
+            "id": "d32a22dc-ea58-4acf-9540-bbfbdcca04ba",
+            "label": "rightpumpkin",
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "rightpumpkin"
+            },
+            "x": 1176,
+            "y": 466.4294636327547,
+            "originY": 0.7064801846308959
+        },
+        {
+            "type": "Image",
+            "id": "c40983af-04cb-4786-bc06-5ff305893647",
+            "label": "express0001",
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "express0001"
+            },
+            "x": 1083,
+            "y": 770
+        },
+        {
+            "type": "Sprite",
+            "id": "540e7496-11cc-4fc9-8d52-691130393e34",
+            "label": "track0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "track",
+            "Animation.end": 87,
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "track0001"
+            },
+            "x": 1140,
+            "y": 297,
+            "scaleX": 1.0286146830746499,
+            "scaleY": 1.0286146830746499
+        },
+        {
+            "type": "Image",
+            "id": "6c4c57f5-d8be-4f7a-8a6b-04819f639dea",
+            "label": "railing",
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "railing"
+            },
+            "x": 879.2628255360394,
+            "y": 206.53636172175777,
+            "scaleX": 1.0613720767924026,
+            "scaleY": 1.0613720767924026,
+            "originX": 0.2861106382987247,
+            "originY": 0.30997233946917774
+        },
+        {
+            "type": "Image",
+            "id": "1c5792fa-1ebb-4c76-80a3-3844bf374b53",
+            "label": "barrier_1",
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "barrier_1"
+            },
+            "x": 282,
+            "y": 533,
+            "originY": 0.45901639344262296
+        },
+        {
+            "type": "Image",
+            "id": "74c6b487-49c2-4d99-91de-5cbcd18b710c",
+            "label": "barrier_1_1",
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "barrier_1_1"
+            },
+            "x": 341,
+            "y": 572,
+            "originY": 0.45901639344262296
+        },
+        {
+            "type": "Image",
+            "id": "3f89ca97-4ee3-4e70-a2c7-cc6c53d3a3bd",
+            "label": "barrier_1_2",
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "barrier_1_2"
+            },
+            "x": 404,
+            "y": 612,
+            "originY": 0.45901639344262296
+        },
+        {
+            "type": "Image",
+            "id": "c083ad69-215c-4727-aa47-c688074f9421",
+            "label": "barrier_1_3",
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "barrier_1_3"
+            },
+            "x": 584,
+            "y": 697,
+            "angle": -15,
+            "originY": 0.45901639344262296
+        },
+        {
+            "type": "Image",
+            "id": "2d86727f-e5d7-4a89-a46d-846b9a9f71d9",
+            "label": "barrier_2",
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "barrier_2"
+            },
+            "x": 654,
+            "y": 707,
+            "originX": 0.48,
+            "originY": 0.47761194029850745
+        },
+        {
+            "type": "Image",
+            "id": "41ffb611-2532-4e73-8664-f5143a98ab87",
+            "label": "barrier_2_1",
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "barrier_2"
+            },
+            "x": 902,
+            "y": 747,
+            "originX": 0.48,
+            "originY": 0.47761194029850745
+        },
+        {
+            "type": "Image",
+            "id": "c78f0d5e-64d2-4bf0-a7bf-d520a4b369a4",
+            "label": "barrier_1_4",
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "barrier_1_4"
+            },
+            "x": 1120,
+            "y": 651,
+            "originY": 0.45901639344262296
+        },
+        {
+            "type": "Image",
+            "id": "e6c26e9a-924c-4d3f-a00b-1b957e0b8f0b",
+            "label": "catalog",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.loadExternal('Sled')",
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "shop"
+            },
+            "x": 1365,
+            "y": 939,
+            "originX": 0,
+            "originY": 1
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "8cc0a685-0b54-41bb-b9e7-4eda7a2d30a4",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "texture"
+            ],
+            "label": "mtnSeat10",
+            "sitFrame": 24,
+            "offsetX": -100,
+            "offsetY": -70,
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "mtnSeat1"
+            },
+            "x": 1093,
+            "y": 676,
+            "visible": false
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "597ca950-0087-4d7f-9de5-8d1c5398a36b",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "texture"
+            ],
+            "label": "mtnSeat9",
+            "sitFrame": 17,
+            "offsetX": -10,
+            "offsetY": -90,
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "mtnSeat1"
+            },
+            "x": 955,
+            "y": 744,
+            "visible": false
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "8a9bb92e-9230-4dbc-8230-8cdee802ff6e",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "texture"
+            ],
+            "label": "mtnSeat8",
+            "sitFrame": 17,
+            "offsetX": -10,
+            "offsetY": -90,
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "mtnSeat1"
+            },
+            "x": 857,
+            "y": 745,
+            "visible": false
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "4c265076-721c-4771-af6a-a97326296074",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "texture"
+            ],
+            "label": "mtnSeat7",
+            "sitFrame": 18,
+            "offsetX": 10,
+            "offsetY": -70,
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "mtnSeat1"
+            },
+            "x": 698,
+            "y": 703,
+            "visible": false
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "20e8b41d-be5a-4d36-a616-0def9e56e144",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "texture"
+            ],
+            "label": "mtnSeat6",
+            "sitFrame": 18,
+            "offsetX": 10,
+            "offsetY": -70,
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "mtnSeat1"
+            },
+            "x": 561,
+            "y": 673,
+            "visible": false
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "4d168170-6546-463f-a9b9-9ba6e5bea7ce",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "texture"
+            ],
+            "label": "mtnSeat5",
+            "sitFrame": 18,
+            "offsetX": 10,
+            "offsetY": -110,
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "mtnSeat1"
+            },
+            "x": 612,
+            "y": 713,
+            "visible": false
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "d5eb78f1-0571-400c-9abc-45fc98cf6944",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "texture"
+            ],
+            "label": "mtnSeat4",
+            "sitFrame": 18,
+            "offsetX": 90,
+            "offsetY": -70,
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "mtnSeat1"
+            },
+            "x": 252,
+            "y": 519,
+            "visible": false
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "39c72255-323b-48ea-a437-2e3915eb61d3",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "texture"
+            ],
+            "label": "mtnSeat3",
+            "sitFrame": 18,
+            "offsetX": 90,
+            "offsetY": -70,
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "mtnSeat1"
+            },
+            "x": 307,
+            "y": 550,
+            "visible": false
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "c2949750-a722-445d-9dc8-31102e520741",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "texture"
+            ],
+            "label": "mtnSeat2",
+            "sitFrame": 18,
+            "offsetX": 90,
+            "offsetY": -70,
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "mtnSeat1"
+            },
+            "x": 369,
+            "y": 590,
+            "visible": false
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "50081472-c653-42f0-a728-d2165700933c",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "texture"
+            ],
+            "label": "mtnSeat1",
+            "sitFrame": 18,
+            "offsetX": 90,
+            "offsetY": -70,
+            "components": [],
+            "texture": {
+                "key": "mtn_halloween",
+                "frame": "mtnSeat1"
+            },
+            "x": 433,
+            "y": 618,
+            "visible": false
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "5ae19c1d-cf39-4d6e-a5fa-935dde376775",
+            "label": "sort",
+            "objectIds": [
+                "6c4c57f5-d8be-4f7a-8a6b-04819f639dea",
+                "c40983af-04cb-4786-bc06-5ff305893647",
+                "d32a22dc-ea58-4acf-9540-bbfbdcca04ba",
+                "a374504b-6732-427f-aa9e-38463a335640",
+                "a5948690-8ecf-439f-94e3-495058b6dc7d",
+                "99b5ae80-661e-47ab-86f6-c59b64d96a65"
+            ]
+        },
+        {
+            "id": "50ae0d6b-f6fe-43cd-95bf-30cca672f3b5",
+            "label": "seats100",
+            "objectIds": [
+                "d5eb78f1-0571-400c-9abc-45fc98cf6944",
+                "39c72255-323b-48ea-a437-2e3915eb61d3",
+                "c2949750-a722-445d-9dc8-31102e520741",
+                "50081472-c653-42f0-a728-d2165700933c"
+            ]
+        },
+        {
+            "id": "b7d373e1-2011-49f3-bcab-780ba486d3a2",
+            "label": "seats101",
+            "objectIds": [
+                "20e8b41d-be5a-4d36-a616-0def9e56e144",
+                "4d168170-6546-463f-a9b9-9ba6e5bea7ce",
+                "4c265076-721c-4771-af6a-a97326296074"
+            ]
+        },
+        {
+            "id": "8516ca30-9631-4346-a00e-49dd0c77be70",
+            "label": "seats102",
+            "objectIds": [
+                "8a9bb92e-9230-4dbc-8230-8cdee802ff6e",
+                "597ca950-0087-4d7f-9de5-8d1c5398a36b"
+            ]
+        },
+        {
+            "id": "40251ac7-a077-49fa-a22f-5ab7edfd2970",
+            "label": "seats103",
+            "objectIds": [
+                "8cc0a685-0b54-41bb-b9e7-4eda7a2d30a4",
+                "02e8351f-9f29-4051-9849-3bbbddc6f6b2"
+            ]
+        }
+    ]
+}
