@@ -30,8 +30,9 @@
                 "key": "sky_spooky",
                 "frame": "sky0001"
             },
-            "x": 932,
-            "y": -3
+            "x": 596,
+            "y": 40,
+            "flipX": true
         },
         {
             "type": "Image",

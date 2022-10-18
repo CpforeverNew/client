@@ -9,7 +9,8 @@
         "preloadMethodName": "_preload",
         "preloadPackFiles": [
             "client/assets/media/rooms/old/sport/sport-pack.json",
-            "client/assets/media/rooms/old/rink/spf/rink-spf-pack.json"
+            "client/assets/media/rooms/old/rink/spf/rink-spf-pack.json",
+            "client/assets/media/rooms/spooky_fair/sky/sky-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Rink",
@@ -17,6 +18,22 @@
         "borderHeight": 960
     },
     "displayList": [
+        {
+            "type": "Sprite",
+            "id": "24399511-8aff-42a8-bd64-16d7489c8ae4",
+            "label": "sky0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "sky",
+            "Animation.end": 282,
+            "texture": {
+                "key": "sky_spooky",
+                "frame": "sky0001"
+            },
+            "x": 945,
+            "y": 32
+        },
         {
             "type": "Image",
             "id": "1cbd9670-8af9-419a-a0a4-06e6d95c1257",

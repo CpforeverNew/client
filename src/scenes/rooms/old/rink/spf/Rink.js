@@ -1,4 +1,4 @@
-import { Button, Interactive, SimpleButton } from '@components/components'
+import { Button, Interactive, SimpleButton, Animation } from '@components/components'
 
 import RoomScene from '@scenes/rooms/RoomScene'
 
@@ -29,10 +29,14 @@ export default class Rink extends RoomScene {
 
         this.load.pack("sport-pack", "assets/media/rooms/old/sport/sport-pack.json");
         this.load.pack("rink-spf-pack", "assets/media/rooms/old/rink/spf/rink-spf-pack.json");
+        this.load.pack("sky-pack", "assets/media/rooms/spooky_fair/sky/sky-pack.json");
     }
 
     /** @returns {void} */
     _create() {
+
+        // sky0001
+        const sky0001 = this.add.sprite(945, 32, "sky_spooky", "sky0001");
 
         // bg
         const bg = this.add.image(-24, 53, "rink-spf", "bg");
@@ -135,6 +139,11 @@ export default class Rink extends RoomScene {
 
         // lists
         const sort = [fg, ball, goal_back, goal, goal_back_1, goal_1, snacks, sports_door0001, sports, right_bleachers, bleachers_rail_1, bleachers_rail, left_bleachers, fish_dogs, stand_middle, stand_base, stand_top, trash, rink_border, book_sports, light, snacks_door0001];
+
+        // sky0001 (components)
+        const sky0001Animation = new Animation(sky0001);
+        sky0001Animation.key = "sky";
+        sky0001Animation.end = 282;
 
         // sports_door0001 (components)
         const sports_door0001Button = new Button(sports_door0001);

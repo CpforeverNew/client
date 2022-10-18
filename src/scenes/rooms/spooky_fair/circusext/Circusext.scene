@@ -1,0 +1,172 @@
+{
+    "id": "f2522e7f-9ac2-46ea-a791-e4121e062820",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/spooky_fair/circusext/circusext-pack.json",
+            "client/assets/media/rooms/spooky_fair/sky/sky-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Circusext",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "0b2e0261-9451-46a9-a7a5-cedc1fd71090",
+            "label": "sky0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "sky",
+            "Animation.end": 282,
+            "texture": {
+                "key": "sky_spooky",
+                "frame": "sky0001"
+            },
+            "x": 1049,
+            "y": 105
+        },
+        {
+            "type": "Image",
+            "id": "709b91f6-dfb6-44f6-912e-5a7e9ebe0b6d",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "circusext",
+                "frame": "bg"
+            },
+            "x": 824,
+            "y": 497
+        },
+        {
+            "type": "Sprite",
+            "id": "d9a00c8e-6c01-4563-a86f-803c14f7e105",
+            "label": "tent_back",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "tent_back",
+            "MoveTo.x": 928,
+            "MoveTo.y": 486,
+            "texture": {
+                "key": "circusext",
+                "frame": "tent_back"
+            },
+            "x": 952,
+            "y": 373
+        },
+        {
+            "type": "Image",
+            "id": "627df20e-43a2-4358-a503-24e3bad7f0bc",
+            "label": "tent",
+            "components": [],
+            "texture": {
+                "key": "circusext",
+                "frame": "tent"
+            },
+            "x": 1062,
+            "y": 277
+        },
+        {
+            "type": "Image",
+            "id": "882aa7bb-34bd-4178-a5b0-bbc256015a6f",
+            "label": "ballon",
+            "components": [],
+            "texture": {
+                "key": "circusext",
+                "frame": "ballon"
+            },
+            "x": 972,
+            "y": 381
+        },
+        {
+            "type": "Sprite",
+            "id": "9deed4cd-9709-4b27-95fd-3432d94e894c",
+            "label": "prize_back",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "prize_back",
+            "texture": {
+                "key": "circusext",
+                "frame": "prize_back"
+            },
+            "x": 311,
+            "y": 276,
+            "scaleX": 0.9034546949414113
+        },
+        {
+            "type": "Image",
+            "id": "0c1b6e5c-858c-41d5-9528-d685f931c367",
+            "label": "prize",
+            "components": [],
+            "texture": {
+                "key": "circusext",
+                "frame": "prize"
+            },
+            "x": 321,
+            "y": 288
+        },
+        {
+            "type": "Image",
+            "id": "b98b809e-697c-4b81-940c-2d4952548d41",
+            "label": "barrel",
+            "components": [],
+            "texture": {
+                "key": "circusext",
+                "frame": "barrel"
+            },
+            "x": 729,
+            "y": 503
+        },
+        {
+            "type": "Image",
+            "id": "2395de7d-e9b4-4b18-a17f-d0848004465e",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "circusext",
+                "frame": "fg"
+            },
+            "x": 761,
+            "y": 857.5292228448918,
+            "originY": 0.7940023883689293
+        },
+        {
+            "type": "Image",
+            "id": "ffbe5754-d4f2-4e59-a2e6-80c55397f88f",
+            "label": "scary",
+            "components": [],
+            "texture": {
+                "key": "circusext",
+                "frame": "scary"
+            },
+            "x": 968,
+            "y": 158
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "10a3d8d2-8d82-427f-9bad-ad6759811d12",
+            "label": "sort",
+            "objectIds": [
+                "2395de7d-e9b4-4b18-a17f-d0848004465e"
+            ]
+        }
+    ]
+}

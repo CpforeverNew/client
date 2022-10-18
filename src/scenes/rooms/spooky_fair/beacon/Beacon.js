@@ -36,7 +36,7 @@ export default class Beacon extends RoomScene {
     _create() {
 
         // sky0001
-        const sky0001 = this.add.sprite(888, 14, "sky_spooky", "sky0001");
+        const sky0001 = this.add.sprite(888, 113, "sky_spooky", "sky0001");
         sky0001.scaleX = 1.2292763795703783;
         sky0001.scaleY = 1.2292763795703783;
 

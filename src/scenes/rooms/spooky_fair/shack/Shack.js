@@ -33,7 +33,8 @@ export default class Shack extends RoomScene {
     _create() {
 
         // sky0001
-        const sky0001 = this.add.sprite(932, -3, "sky_spooky", "sky0001");
+        const sky0001 = this.add.sprite(596, 40, "sky_spooky", "sky0001");
+        sky0001.flipX = true;
 
         // bg
         const bg = this.add.image(760, 501, "shack_halloween", "bg");

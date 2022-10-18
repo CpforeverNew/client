@@ -22,7 +22,7 @@ rooms = {
 	},
 	120: {
 		key: 'Dance',
-		scene: require(`@rooms/old/dance/Dance`).default,
+		scene: require(`@rooms/old/dance/spf/Dance`).default,
 		x: 360,
 		y: 560
 	},
@@ -40,7 +40,7 @@ rooms = {
 	},
 	200: {
 		key: 'Village',
-		scene: require(`@rooms/old/village/Village`).default,
+		scene: require(`@rooms/spooky_fair/village/Village`).default,
 		x: 800,
 		y: 640
 	},
@@ -70,7 +70,7 @@ rooms = {
 	},
 	300: {
 		key: 'Plaza',
-		scene: require(`@rooms/old/plaza/Plaza`).default,
+		scene: require(`@rooms/spooky_fair/plaza/Plaza`).default,
 		x: 760,
 		y: 680
 	},
@@ -94,7 +94,7 @@ rooms = {
 	},
 	330: {
 		key: 'Pizza',
-		scene: require(`@rooms/old/pizza/Pizza`).default,
+		scene: require(`@rooms/spooky_fair/pizza/Pizza`).default,
 		x: 780,
 		y: 790
 	},
@@ -142,7 +142,7 @@ rooms = {
 	},
 	802: {
 		key: 'Rink',
-		scene: require(`@rooms/old/rink/Rink`).default,
+		scene: require(`@rooms/old/rink/spf/Rink`).default,
 		x: 770,
 		y: 400
 	},
@@ -269,6 +269,12 @@ rooms = {
 	898: {
 		key: 'Observatory',
 		scene: require(`@rooms/old/observatory/Observatory`).default,
+		x: 760,
+		y: 660
+	},
+	899: {
+		key: 'Circusext',
+		scene: require(`@rooms/spooky_fair/circusext/Circusext`).default,
 		x: 760,
 		y: 660
 	},

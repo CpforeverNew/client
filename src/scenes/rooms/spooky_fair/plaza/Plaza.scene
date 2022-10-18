@@ -1,0 +1,246 @@
+{
+    "id": "34a23df6-0ab3-4da8-aec4-9d62e3340082",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/spooky_fair/plaza/plaza-spf-pack.json",
+            "client/assets/media/rooms/spooky_fair/sky/sky-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Plaza",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "aa606968-6654-49af-9bb6-661ed19ef55c",
+            "label": "sky0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "sky",
+            "Animation.end": 282,
+            "texture": {
+                "key": "sky_spooky",
+                "frame": "sky0001"
+            },
+            "x": 936,
+            "y": 95
+        },
+        {
+            "type": "Image",
+            "id": "c8f390b2-f192-460b-a522-85ad5aeb9585",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "plaza-spf",
+                "frame": "bg"
+            },
+            "x": 650,
+            "y": 387
+        },
+        {
+            "type": "Image",
+            "id": "7fc2f8bc-26d3-436b-a99a-b8bd4494106b",
+            "label": "glow",
+            "components": [],
+            "texture": {
+                "key": "plaza-spf",
+                "frame": "glow"
+            },
+            "x": 735,
+            "y": 413
+        },
+        {
+            "type": "Image",
+            "id": "adb1c17c-4ee3-41b0-aab4-eb658a7340c5",
+            "label": "puffle",
+            "components": [],
+            "texture": {
+                "key": "plaza-spf",
+                "frame": "puffle"
+            },
+            "x": 209,
+            "y": 226
+        },
+        {
+            "type": "Image",
+            "id": "d98dc688-565b-421c-9e14-08333a181d2d",
+            "label": "trees",
+            "components": [],
+            "texture": {
+                "key": "plaza-spf",
+                "frame": "trees"
+            },
+            "x": 759,
+            "y": 490
+        },
+        {
+            "type": "Image",
+            "id": "876ff4cc-e6ac-45ff-8757-6f7d9673ad4f",
+            "label": "sewer",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "sewer",
+            "texture": {
+                "key": "plaza-spf",
+                "frame": "sewer"
+            },
+            "x": 566,
+            "y": 472
+        },
+        {
+            "type": "Image",
+            "id": "317b386b-850b-4a2f-919e-020e69418629",
+            "label": "tickets",
+            "components": [],
+            "texture": {
+                "key": "plaza-spf",
+                "frame": "tickets"
+            },
+            "x": 844,
+            "y": 469.45245422832465,
+            "originY": 0.9970561809053845
+        },
+        {
+            "type": "Image",
+            "id": "db5dfa0d-c3bd-4731-b85d-cce6aec7aaeb",
+            "label": "pumkin1",
+            "components": [],
+            "texture": {
+                "key": "plaza-spf",
+                "frame": "pumkin1"
+            },
+            "x": 120,
+            "y": 644
+        },
+        {
+            "type": "Image",
+            "id": "40459f40-bbec-4373-97d6-fcffd255122e",
+            "label": "pumkin2",
+            "components": [],
+            "texture": {
+                "key": "plaza-spf",
+                "frame": "pumkin2"
+            },
+            "x": 1418,
+            "y": 727
+        },
+        {
+            "type": "Image",
+            "id": "d49e2784-1d23-426c-a235-a5aecbf0ed46",
+            "label": "pumkin3",
+            "components": [],
+            "texture": {
+                "key": "plaza-spf",
+                "frame": "pumkin3"
+            },
+            "x": 1389,
+            "y": 862
+        },
+        {
+            "type": "Image",
+            "id": "13e4885f-e2ff-42a2-a136-c3ba6ae312cf",
+            "label": "pizza_trick",
+            "components": [],
+            "texture": {
+                "key": "plaza-spf",
+                "frame": "pizza_trick"
+            },
+            "x": 406,
+            "y": 851,
+            "scaleX": 0.76,
+            "scaleY": 0.75,
+            "angle": 1
+        },
+        {
+            "type": "Image",
+            "id": "7d0b765a-03cc-4a0a-9893-996ea1da4755",
+            "label": "overlay",
+            "components": [],
+            "texture": {
+                "key": "plaza-spf",
+                "frame": "overlay"
+            },
+            "x": 755,
+            "y": 965.9504536945924,
+            "originY": 0.9690993906799709
+        },
+        {
+            "type": "Sprite",
+            "id": "97eb2922-1255-43b1-8a68-eebb22bec4d7",
+            "label": "pet_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "pet_door",
+            "texture": {
+                "key": "plaza-spf",
+                "frame": "pet_door"
+            },
+            "x": 335,
+            "y": 494
+        },
+        {
+            "type": "Sprite",
+            "id": "7fb844ea-215e-49a1-9fa4-dc5071b95652",
+            "label": "left_stage_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "left_stage_door",
+            "MoveTo.x": 730,
+            "MoveTo.y": 460,
+            "texture": {
+                "key": "plaza-spf",
+                "frame": "left_stage_door"
+            },
+            "x": 733,
+            "y": 389
+        },
+        {
+            "type": "Sprite",
+            "id": "b5301a1e-e977-4997-b19e-08b2ceaa7cfe",
+            "label": "right_stage_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "right_stage_door",
+            "MoveTo.x": 960,
+            "MoveTo.y": 460,
+            "texture": {
+                "key": "plaza-spf",
+                "frame": "right_stage_door"
+            },
+            "x": 958,
+            "y": 390
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "9c185332-22f1-4d89-8194-2666eda5e6ad",
+            "label": "sort",
+            "objectIds": [
+                "317b386b-850b-4a2f-919e-020e69418629",
+                "7d0b765a-03cc-4a0a-9893-996ea1da4755"
+            ]
+        }
+    ]
+}
