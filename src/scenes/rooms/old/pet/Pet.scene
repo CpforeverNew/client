@@ -48,23 +48,6 @@
         },
         {
             "type": "Image",
-            "id": "48e5a088-2393-41c8-803e-fdefa5a5c3cb",
-            "label": "candy_candy70002",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"candy_bar\" })",
-            "texture": {
-                "key": "candyhunt",
-                "frame": "candy/7-got"
-            },
-            "x": 1159,
-            "y": 335,
-            "scaleX": 0.5,
-            "scaleY": 0.5
-        },
-        {
-            "type": "Image",
             "id": "761bd4ac-b103-4f1f-a969-9cd62098769a",
             "label": "post",
             "components": [],

@@ -77,23 +77,6 @@
         },
         {
             "type": "Image",
-            "id": "ca5c0456-1794-448d-8836-4d54e85d3e0c",
-            "label": "candy_candy60002",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"candy_apple\" })",
-            "texture": {
-                "key": "candyhunt",
-                "frame": "candy/6-got"
-            },
-            "x": 1196,
-            "y": 553,
-            "scaleX": 0.5,
-            "scaleY": 0.5
-        },
-        {
-            "type": "Image",
             "id": "bd47b07a-6222-4405-9a81-69ad858dbcaf",
             "label": "cj_spot",
             "components": [],

@@ -66,17 +66,8 @@ export default class Forest extends RoomScene {
         const sign = this.add.image(1317, 681, "forest", "sign");
         sign.setOrigin(0.4794520547945205, 0.9397590361445783);
 
-        // candy_candy10002
-        const candy_candy10002 = this.add.image(914, 115, "candyhunt", "candy/1-got");
-        candy_candy10002.scaleX = 0.5;
-        candy_candy10002.scaleY = 0.5;
-
         // lists
         const sort = [sign, rail, middle, fg, tree, rock0001];
-
-        // candy_candy10002 (components)
-        const candy_candy10002SimpleButton = new SimpleButton(candy_candy10002);
-        candy_candy10002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_stick" });
 
         this.sort = sort;
 
@@ -85,17 +76,7 @@ export default class Forest extends RoomScene {
 
 
     /* START-USER-CODE */
-    create() {
-        super.create();
-        this.roomZones = {
-            'free_item': { 
-                key: this.free_item,
-                callback: () => this.interface.prompt.showItem(3105)
-            }
-        }
 
-        super.addZones()
-    }
     /* END-USER-CODE */
 }
 

@@ -87,7 +87,7 @@
                     "components": [
                         "SimpleButton"
                     ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(170)",
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(246)",
                     "texture": {
                         "key": "candyhunt",
                         "frame": "clmbtn-active"

@@ -50,11 +50,6 @@ export default class Beacon extends RoomScene {
         const front_rail = this.add.image(712.179443359375, 961.9216962032965, "beacon", "front_rail");
         front_rail.setOrigin(0.5044360693840665, 1.0296666844575377);
 
-        // candy_candy20002
-        const candy_candy20002 = this.add.image(393, 414, "candyhunt", "candy/2-got");
-        candy_candy20002.scaleX = 0.5;
-        candy_candy20002.scaleY = 0.5;
-
         // light
         const light = this.add.image(685.0591748129182, 577.2994823523711, "beacon", "light");
         light.setOrigin(0.4636877094550476, 0.8057764213716073);
@@ -77,10 +72,6 @@ export default class Beacon extends RoomScene {
         jetpackMoveTo.y = 575;
         const jetpackShowHint = new ShowHint(jetpack);
         jetpackShowHint.text = "Jetpack Adventure";
-
-        // candy_candy20002 (components)
-        const candy_candy20002SimpleButton = new SimpleButton(candy_candy20002);
-        candy_candy20002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_cube" });
 
         // telescope (components)
         const telescopeSimpleButton = new SimpleButton(telescope);

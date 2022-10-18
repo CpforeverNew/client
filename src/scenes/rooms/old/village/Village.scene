@@ -182,6 +182,23 @@
         },
         {
             "type": "Image",
+            "id": "8022e3d1-b690-4bec-bd64-6ed94e722700",
+            "label": "candy_candy60002",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"candy_apple\" })",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "candy/6-got"
+            },
+            "x": 869,
+            "y": 471,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "type": "Image",
             "id": "00dfc36c-a436-4c05-af2e-c3a1a3cefd30",
             "label": "right_sign",
             "components": [],
@@ -202,6 +219,7 @@
                 "SimpleButton"
             ],
             "SimpleButton.callback": "() => this.interface.prompt.showItem(428)",
+            "SimpleButton.pixelPerfect": true,
             "texture": {
                 "key": "village",
                 "frame": "tours"

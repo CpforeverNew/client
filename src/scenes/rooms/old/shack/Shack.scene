@@ -32,23 +32,6 @@
         },
         {
             "type": "Image",
-            "id": "c0a0a49c-a770-43bf-bde3-51fd77704fd1",
-            "label": "candy_candy40002",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"candy_borbon\" })",
-            "texture": {
-                "key": "candyhunt",
-                "frame": "candy/4-got"
-            },
-            "x": 1021,
-            "y": 496,
-            "scaleX": 0.5,
-            "scaleY": 0.5
-        },
-        {
-            "type": "Image",
             "id": "ff7b1ff6-a9df-445d-8653-ccaab4b6525d",
             "label": "plant",
             "components": [],

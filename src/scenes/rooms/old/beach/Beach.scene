@@ -66,6 +66,23 @@
         },
         {
             "type": "Image",
+            "id": "30f20a9a-4f4e-429a-9bf2-172754c2da0e",
+            "label": "candy_candy20002",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"candy_cube\" })",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "candy/2-got"
+            },
+            "x": 227,
+            "y": 417,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "type": "Image",
             "id": "b2b4b1cb-12e9-4604-9913-ed9514d3f98c",
             "label": "buoy",
             "components": [],

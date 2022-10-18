@@ -55,6 +55,23 @@
             "originX": 0.5006273525721455
         },
         {
+            "type": "Image",
+            "id": "56e9a21f-2899-488b-acc0-8ed033576362",
+            "label": "candy_candy70002",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"candy_bar\" })",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "candy/7-got"
+            },
+            "x": 750,
+            "y": 307,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
             "type": "Sprite",
             "id": "071b8517-dbfc-456d-b91b-94f2f3c51ffa",
             "label": "floor",
