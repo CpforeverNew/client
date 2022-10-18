@@ -19,7 +19,7 @@ export default class Game extends Phaser.Game {
             tracesSampleRate: 1.0,
         });
 
-        if (window.location.hostname == 'play.cpforever.org' || window.location.hostname == 'localhost' || window.location.hostname.match(/^[0-9].+$/) != null) {
+        if (window.location.hostname == 'play.cpforever.org' || window.location.hostname == 'staging.cpforever.org' || window.location.hostname == 'localhost' || window.location.hostname.match(/^[0-9].+$/) != null) {
             this.crumbs = config.crumbs
             this.network = new Network(this)
 

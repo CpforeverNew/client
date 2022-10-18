@@ -11,8 +11,8 @@ export default class ItemPromptLoader extends BaseLoader {
 
     get baseURL() {
 
-        const furniture_url = window.location.hostname == 'play.cpforever.org' ? 'https://cdn.cpforever.org/assets/media/furniture/icon/@5x/' : '/assets/media/furniture/icon/@5x/'
-        const clothing_url = window.location.hostname == 'play.cpforever.org' ? 'https://cdn.cpforever.org/assets/media/clothing/icon/large/' : '/assets/media/clothing/icon/large/'
+        const furniture_url = window.location.hostname != 'localhost' ? CDN_URL + 'assets/media/furniture/icon/@5x/' : '/assets/media/furniture/icon/@5x/'
+        const clothing_url = window.location.hostname != 'localhost' ? CDN_URL + 'assets/media/clothing/icon/large/' : '/assets/media/clothing/icon/large/'
 
         return (this.prompt.type == 'furniture')
             ? furniture_url
