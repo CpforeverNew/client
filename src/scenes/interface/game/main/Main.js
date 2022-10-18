@@ -796,13 +796,15 @@ export default class Main extends BaseScene {
     }
 
     onSleep(sys, data) {
-        if (data.clearChat) {
-            this.chatInput.clearText()
-            this.chatLog.clearMessages()
-        }
+        if(this.world.client.penguin.activation) {
+            if (data.clearChat) {
+                this.chatInput.clearText()
+                this.chatLog.clearMessages()
+            }
 
-        if (this.chatLog.open) {
-            this.chatLog.onTabClick()
+            if (this.chatLog.open) {
+                this.chatLog.onTabClick()
+            }
         }
 
         this.stopCrosshair()
