@@ -1,0 +1,304 @@
+{
+    "id": "c0bebcae-c620-485b-a4c5-875e70b1fee8",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/spooky_fair/village/village-pack.json",
+            "client/assets/media/rooms/spooky_fair/sky/sky-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Village",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "c002182f-7971-4b48-b441-db895a3af370",
+            "label": "sky0001",
+            "components": [],
+            "texture": {
+                "key": "sky_spooky",
+                "frame": "sky0001"
+            },
+            "x": 1032,
+            "y": -23
+        },
+        {
+            "type": "Image",
+            "id": "ae103dce-a797-4e9b-bcdb-a15482ed4644",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "village_halloween",
+                "frame": "bg"
+            },
+            "x": 729,
+            "y": 478
+        },
+        {
+            "type": "Image",
+            "id": "b3b5b1df-f72a-4d7f-a34e-d3275ca1e717",
+            "label": "trees_shadow",
+            "components": [],
+            "texture": {
+                "key": "village_halloween",
+                "frame": "trees shadow"
+            },
+            "x": 754,
+            "y": 175
+        },
+        {
+            "type": "Image",
+            "id": "3cb4bb7e-9c7e-4522-8a9e-12939a353097",
+            "label": "fish_room",
+            "components": [],
+            "texture": {
+                "key": "village_halloween",
+                "frame": "fish room"
+            },
+            "x": 1093,
+            "y": 429
+        },
+        {
+            "type": "Image",
+            "id": "2a40f467-1961-4de9-b947-e709fe04afb9",
+            "label": "fence",
+            "components": [],
+            "texture": {
+                "key": "village_halloween",
+                "frame": "fence"
+            },
+            "x": 225,
+            "y": 346
+        },
+        {
+            "type": "Image",
+            "id": "eed97c8f-067b-445c-b552-ee301658c453",
+            "label": "bottom_costume",
+            "components": [],
+            "texture": {
+                "key": "village_halloween",
+                "frame": "bottom costume"
+            },
+            "x": 654.6333640881813,
+            "y": 337.42591498196043,
+            "originX": 0.6668813901726748,
+            "originY": 0.5382650441086291
+        },
+        {
+            "type": "Image",
+            "id": "48f9091c-0d04-4e8b-8b65-e7f7763ecaf1",
+            "label": "costume_top0001",
+            "components": [],
+            "texture": {
+                "key": "village_halloween",
+                "frame": "costume top0001"
+            },
+            "x": 647.1341416427867,
+            "y": 451.54393455916886,
+            "originX": 0.4872307517953811,
+            "originY": 0.914769140890163
+        },
+        {
+            "type": "Image",
+            "id": "290d02d0-1e88-402d-a8c1-58948747c770",
+            "label": "snowfront",
+            "components": [],
+            "texture": {
+                "key": "village_halloween",
+                "frame": "snowfront"
+            },
+            "x": 1105,
+            "y": 416
+        },
+        {
+            "type": "Container",
+            "id": "0a335b9a-ba32-4999-a6cf-7d4cd753f2fd",
+            "label": "container_2",
+            "components": [],
+            "x": 1217,
+            "y": 353,
+            "list": [
+                {
+                    "type": "Container",
+                    "id": "c8e14b74-fc5e-4dd2-b15f-cc1e7aa40ca1",
+                    "label": "container_1",
+                    "components": [],
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "da2b55f9-3e32-4c2e-8073-1b00efdae34a",
+                            "label": "epf",
+                            "components": [],
+                            "texture": {
+                                "key": "village_halloween",
+                                "frame": "epf"
+                            },
+                            "x": 64.72601361572356,
+                            "y": 169.0290214382892,
+                            "originX": 0.5940567143554701,
+                            "originY": 0.7519160669652747
+                        },
+                        {
+                            "type": "Image",
+                            "id": "45e8b326-6388-4912-b8b8-e013a909b19f",
+                            "label": "tree",
+                            "components": [],
+                            "texture": {
+                                "key": "village_halloween",
+                                "frame": "tree"
+                            },
+                            "x": -1179.5434565435273,
+                            "y": 288.46229179765703,
+                            "originX": 0.375436793492366,
+                            "originY": 0.6156712774561973
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "0b03cfb0-cf11-4d4a-a9e1-ea8a335d29af",
+            "label": "eyes0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "eyes",
+            "Animation.end": 127,
+            "texture": {
+                "key": "village_halloween",
+                "frame": "eyes0001"
+            },
+            "x": 1134,
+            "y": 293
+        },
+        {
+            "type": "Image",
+            "id": "dd1c5b11-c6ac-4c3d-ae65-a7c13e85005c",
+            "label": "leftleaves",
+            "components": [],
+            "texture": {
+                "key": "village_halloween",
+                "frame": "leftleaves"
+            },
+            "x": 526,
+            "y": 711
+        },
+        {
+            "type": "Image",
+            "id": "4567cc5b-79b0-4578-8e0e-e28f6db8271b",
+            "label": "rightleaves",
+            "components": [],
+            "texture": {
+                "key": "village_halloween",
+                "frame": "rightleaves"
+            },
+            "x": 991,
+            "y": 662
+        },
+        {
+            "type": "Image",
+            "id": "ebe0d690-e1d9-4a65-b7b2-7c16e4e98a6f",
+            "label": "plank",
+            "components": [],
+            "texture": {
+                "key": "village_halloween",
+                "frame": "plank"
+            },
+            "x": 640,
+            "y": 553
+        },
+        {
+            "type": "Image",
+            "id": "79fa40e6-f4a6-4189-ada3-f25a29997644",
+            "label": "door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door",
+            "Button.activeFrame": false,
+            "MoveTo.x": 1040,
+            "MoveTo.y": 321,
+            "texture": {
+                "key": "village_halloween",
+                "frame": "door"
+            },
+            "x": 1036,
+            "y": 298
+        },
+        {
+            "type": "Image",
+            "id": "ce1f31ec-9289-4056-a757-cdf42d38a890",
+            "label": "wood",
+            "components": [],
+            "texture": {
+                "key": "village_halloween",
+                "frame": "wood"
+            },
+            "x": 1087,
+            "y": 692
+        },
+        {
+            "type": "Image",
+            "id": "9ac2f359-8fcc-4d5d-978b-b57af2f034c9",
+            "label": "tours0001",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.prompt.showItem(428)",
+            "texture": {
+                "key": "village_halloween",
+                "frame": "tours0001"
+            },
+            "x": 261.4244760345749,
+            "y": 731.176403319818,
+            "originX": 0.5252301210910462,
+            "originY": 0.6736207727329341
+        },
+        {
+            "type": "Sprite",
+            "id": "fc3f112d-6116-49be-a264-db039239131d",
+            "label": "ghost0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "village_halloween",
+                "frame": "ghost0001"
+            },
+            "x": 541.6251187717811,
+            "y": 498.21392594748824,
+            "originX": 0.8719637230388408,
+            "originY": 0.7622248916553525
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "528d71e2-a474-4325-aa76-2ccaa2e1016f",
+            "label": "sort",
+            "objectIds": [
+                "b3b5b1df-f72a-4d7f-a34e-d3275ca1e717",
+                "2a40f467-1961-4de9-b947-e709fe04afb9",
+                "eed97c8f-067b-445c-b552-ee301658c453",
+                "48f9091c-0d04-4e8b-8b65-e7f7763ecaf1",
+                "0a335b9a-ba32-4999-a6cf-7d4cd753f2fd",
+                "9ac2f359-8fcc-4d5d-978b-b57af2f034c9",
+                "fc3f112d-6116-49be-a264-db039239131d"
+            ]
+        }
+    ]
+}
