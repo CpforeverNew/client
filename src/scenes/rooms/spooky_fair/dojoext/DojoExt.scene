@@ -1,0 +1,125 @@
+{
+    "id": "093782cd-f849-4003-9438-d99bcececf9c",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/spooky_fair/dojoext/dojoext-pack.json",
+            "client/assets/media/rooms/spooky_fair/sky/sky-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "DojoExt",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "f80f46b5-1acf-4d17-a92c-3abbaae2eac4",
+            "label": "sky0001",
+            "components": [],
+            "texture": {
+                "key": "sky_spooky",
+                "frame": "sky0001"
+            },
+            "x": 951,
+            "y": -32
+        },
+        {
+            "type": "Image",
+            "id": "21e0e81d-fa63-476a-b753-3eb520b03112",
+            "label": "dojo",
+            "components": [],
+            "texture": {
+                "key": "dojoext_halloween",
+                "frame": "dojo"
+            },
+            "x": 760,
+            "y": 484
+        },
+        {
+            "type": "Sprite",
+            "id": "62861faa-03f5-4327-848a-b027fa8e15b1",
+            "label": "dojo_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door",
+            "Button.activeFrame": false,
+            "MoveTo.x": 780,
+            "MoveTo.y": 610,
+            "texture": {
+                "key": "dojoext_halloween",
+                "frame": "door"
+            },
+            "x": 682,
+            "y": 425,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "7f02aced-c71f-4a6b-9ead-a23366ca6b9b",
+            "label": "door_top",
+            "components": [],
+            "texture": {
+                "key": "dojoext_halloween",
+                "frame": "woodblock"
+            },
+            "x": 689,
+            "y": 430,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "e175567a-ce48-480b-9b58-f0c4b21263dd",
+            "label": "front",
+            "components": [],
+            "texture": {
+                "key": "dojoext_halloween",
+                "frame": "front"
+            },
+            "x": 646.8618380517114,
+            "y": 818.7671749385655,
+            "originX": 0.4271830039317995,
+            "originY": 0.6442923649678788
+        },
+        {
+            "type": "Image",
+            "id": "6c4412f1-7f08-40a5-93e2-5c270fcb4ee2",
+            "label": "pumpkin",
+            "components": [],
+            "texture": {
+                "key": "dojoext_halloween",
+                "frame": "pumpkin"
+            },
+            "x": 535.0838531467068,
+            "y": 630.7935134874159,
+            "originX": 0.4727462910907179,
+            "originY": 0.41423097490314165
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "09507045-c43d-47ba-bb5e-e528ddec4255",
+            "label": "sort",
+            "objectIds": [
+                "6c4412f1-7f08-40a5-93e2-5c270fcb4ee2",
+                "e175567a-ce48-480b-9b58-f0c4b21263dd"
+            ]
+        }
+    ]
+}
