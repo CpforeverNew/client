@@ -7,8 +7,8 @@
         "exportClass": true,
         "superClassName": "BaseScene",
         "preloadPackFiles": [
-            "client/assets/media/interface/game/telescope/telescope-pack.json",
-            "client/assets/media/rooms/spooky_fair/sky/sky-pack.json"
+            "client/assets/media/interface/game/telescope/spooky/spookyscope-pack.json",
+            "client/assets/media/interface/game/telescope/telescope-pack.json"
         ],
         "sceneKey": "TelescopeSpooky",
         "borderWidth": 1520,
@@ -16,22 +16,18 @@
     },
     "displayList": [
         {
-            "type": "Sprite",
-            "id": "ed8c088c-b1fb-4319-8770-de2ad66f66a1",
-            "label": "sky0001",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "sky",
-            "Animation.end": 282,
+            "type": "Image",
+            "id": "dae4317b-7308-4f44-a5ea-36357050386f",
+            "label": "symbol_1_png",
+            "components": [],
             "texture": {
-                "key": "sky_spooky",
-                "frame": "sky0001"
+                "key": "spookyscope",
+                "frame": "Symbol 1.png"
             },
-            "x": 612,
-            "y": 62,
-            "scaleX": 2.030033267239942,
-            "scaleY": 2.030033267239942
+            "x": 783,
+            "y": 444,
+            "scaleX": 1.0635171602955034,
+            "scaleY": 1.0635171602955034
         },
         {
             "type": "Image",
