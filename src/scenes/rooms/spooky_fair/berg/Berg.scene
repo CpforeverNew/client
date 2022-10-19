@@ -1,0 +1,583 @@
+{
+    "id": "9ff4714b-cf34-44af-8e58-37e954cba84a",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 1156,
+        "snapHeight": 231,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/spooky_fair/sky/sky-pack.json",
+            "client/assets/media/rooms/spooky_fair/berg/berg-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Berg",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "a13b8d24-5c00-4df0-a1f1-ac66a7d1b6d4",
+            "label": "sky0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "sky",
+            "Animation.end": 282,
+            "texture": {
+                "key": "sky_spooky",
+                "frame": "sky0001"
+            },
+            "x": 947,
+            "y": -89
+        },
+        {
+            "type": "Image",
+            "id": "a09ac835-9eec-4555-a7fc-aedc87e71ef7",
+            "label": "clouds",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "clouds"
+            },
+            "x": 1353,
+            "y": 183
+        },
+        {
+            "type": "Image",
+            "id": "f4c3ae5e-72cc-4d08-b66f-82f194e0e109",
+            "label": "cloudleft",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "cloudleft"
+            },
+            "x": 194,
+            "y": 212
+        },
+        {
+            "type": "Image",
+            "id": "fce48035-637b-4586-b7b8-35569fcbbede",
+            "label": "cpi",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "cpi"
+            },
+            "x": 963,
+            "y": 141
+        },
+        {
+            "type": "Image",
+            "id": "a7ae4896-9fd8-41e3-9432-d71cae1a0898",
+            "label": "water",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "water"
+            },
+            "x": 763,
+            "y": 580
+        },
+        {
+            "type": "Sprite",
+            "id": "2296c17c-feee-4548-92b1-afd51c788d50",
+            "label": "waterbublle0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "waterbublle",
+            "Animation.end": 12,
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "waterbublle0001"
+            },
+            "x": 700,
+            "y": 777
+        },
+        {
+            "type": "Image",
+            "id": "1579cba3-0719-4e49-b947-8a3afdd1ce1d",
+            "label": "pumpkin",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "pumpkin"
+            },
+            "x": 688,
+            "y": 513
+        },
+        {
+            "type": "Sprite",
+            "id": "48ba548c-4c4e-4bda-a048-ddf411996f85",
+            "label": "aqua",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "ShowHint",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onAquaOver()",
+            "SimpleButton.callback": "() => this.onAquaClick()",
+            "SimpleButton.pixelPerfect": true,
+            "ShowHint.text": "Aqua Grabber",
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "aqua grabber0001"
+            },
+            "x": 1258.7042236328125,
+            "y": 335.0486800543836,
+            "originX": 0.5116484184297339,
+            "originY": 0.43207409897260873
+        },
+        {
+            "type": "Image",
+            "id": "552d6a49-5b7a-469b-82da-88a36a95a870",
+            "label": "lefteye0006",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "lefteye0006"
+            },
+            "x": 511,
+            "y": 417
+        },
+        {
+            "type": "Image",
+            "id": "1965a7f9-5c2a-49f1-b289-c0618dda1bbe",
+            "label": "lefteye0002",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "lefteye0002"
+            },
+            "x": 511,
+            "y": 417
+        },
+        {
+            "type": "Image",
+            "id": "5516d0d4-3932-439a-953a-b12ea0ce4a36",
+            "label": "lefteye0003",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "lefteye0003"
+            },
+            "x": 511,
+            "y": 417
+        },
+        {
+            "type": "Image",
+            "id": "f5a275e4-1c51-445a-8014-bae188016d3f",
+            "label": "lefteye0004",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "lefteye0004"
+            },
+            "x": 511,
+            "y": 417
+        },
+        {
+            "type": "Image",
+            "id": "b5ca8af8-222a-4dd9-bc51-d30eee1362d6",
+            "label": "lefteye0005",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "lefteye0005"
+            },
+            "x": 511,
+            "y": 417
+        },
+        {
+            "type": "Image",
+            "id": "f55a7847-b0c4-4697-aa3a-5fde271f9b6f",
+            "label": "righteye0006",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "righteye0006"
+            },
+            "x": 846,
+            "y": 351
+        },
+        {
+            "type": "Image",
+            "id": "1273eddf-1104-462c-89a6-d47a5ae66931",
+            "label": "righteye",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "righteye"
+            },
+            "x": 846,
+            "y": 351
+        },
+        {
+            "type": "Image",
+            "id": "f56c2b95-90a4-4f88-96c7-6172290df5b9",
+            "label": "righteye0002",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "righteye0002"
+            },
+            "x": 846,
+            "y": 351
+        },
+        {
+            "type": "Image",
+            "id": "0c58b628-0755-46f3-8505-a1d37728ed44",
+            "label": "righteye0003",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "righteye0003"
+            },
+            "x": 846,
+            "y": 351
+        },
+        {
+            "type": "Image",
+            "id": "a717a789-7a31-481b-b4c9-053e90f96bd1",
+            "label": "righteye0004",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "righteye0004"
+            },
+            "x": 846,
+            "y": 351
+        },
+        {
+            "type": "Image",
+            "id": "a98e5f82-f874-46b9-88d8-6c3af897c741",
+            "label": "righteye0005",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "righteye0005"
+            },
+            "x": 846,
+            "y": 351
+        },
+        {
+            "type": "Image",
+            "id": "02ab83b0-4e63-4cb2-be52-5541f7cb6c96",
+            "label": "nose0006",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "nose0006"
+            },
+            "x": 813,
+            "y": 478
+        },
+        {
+            "type": "Image",
+            "id": "17469a91-5261-453c-bdc9-f45f79810d22",
+            "label": "nose0002",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "nose0002"
+            },
+            "x": 813,
+            "y": 478
+        },
+        {
+            "type": "Image",
+            "id": "651f49e1-1a9f-45ca-b7a4-01951fd91633",
+            "label": "nose0003",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "nose0003"
+            },
+            "x": 813,
+            "y": 478
+        },
+        {
+            "type": "Image",
+            "id": "d083ae0a-f68a-4fce-ac78-86f52bdaaec0",
+            "label": "nose0004",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "nose0004"
+            },
+            "x": 813,
+            "y": 478
+        },
+        {
+            "type": "Image",
+            "id": "3da339e6-d7e4-4973-8274-d1bce1017c5d",
+            "label": "nose0005",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "nose0005"
+            },
+            "x": 813,
+            "y": 478
+        },
+        {
+            "type": "Image",
+            "id": "54c17204-ef23-4feb-8da5-476f3cd22c9c",
+            "label": "smile10002",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "smile10002"
+            },
+            "x": 614,
+            "y": 618
+        },
+        {
+            "type": "Image",
+            "id": "2cf578c7-46a5-4661-a123-370c41017b18",
+            "label": "smile10003",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "smile10003"
+            },
+            "x": 614,
+            "y": 618
+        },
+        {
+            "type": "Image",
+            "id": "bab38b1b-c47a-4411-8ea2-d5d1d3005763",
+            "label": "smile10004",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "smile10004"
+            },
+            "x": 614,
+            "y": 618
+        },
+        {
+            "type": "Image",
+            "id": "89bf7370-135a-45ff-b25d-3a2df2ff64f8",
+            "label": "smile10005",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "smile10005"
+            },
+            "x": 614,
+            "y": 618
+        },
+        {
+            "type": "Image",
+            "id": "fb2952aa-cb04-4847-91e0-e03ccf840ec1",
+            "label": "2smile0006",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "2smile0006"
+            },
+            "x": 802,
+            "y": 624
+        },
+        {
+            "type": "Image",
+            "id": "a0fae597-a110-4efd-9e7f-798d7b2bce31",
+            "label": "2smile0002",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "2smile0002"
+            },
+            "x": 802,
+            "y": 624
+        },
+        {
+            "type": "Image",
+            "id": "c21fbbd4-cad2-42ae-95b4-80c07e701d5a",
+            "label": "2smile0003",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "2smile0003"
+            },
+            "x": 802,
+            "y": 624
+        },
+        {
+            "type": "Image",
+            "id": "7b6a034e-e88b-4e08-8431-c801f8144bf4",
+            "label": "2smile0004",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "2smile0004"
+            },
+            "x": 802,
+            "y": 624
+        },
+        {
+            "type": "Image",
+            "id": "07dbc347-e530-4263-84d9-5338f4068cf9",
+            "label": "3smile0006",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "3smile0006"
+            },
+            "x": 799,
+            "y": 605
+        },
+        {
+            "type": "Image",
+            "id": "7ac069a9-d92c-47cf-adc2-edf2f88097d8",
+            "label": "3smile0002",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "3smile0002"
+            },
+            "x": 799,
+            "y": 605
+        },
+        {
+            "type": "Image",
+            "id": "c2ddcc1e-1e88-4b94-bcdc-2c469c10c999",
+            "label": "3smile0003",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "3smile0003"
+            },
+            "x": 799,
+            "y": 605
+        },
+        {
+            "type": "Image",
+            "id": "a395adcb-695e-41ed-89a9-b3454b38cbc4",
+            "label": "3smile0004",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "3smile0004"
+            },
+            "x": 799,
+            "y": 605
+        },
+        {
+            "type": "Image",
+            "id": "4fad55b1-6782-4de5-a916-0aaa8f01318c",
+            "label": "3smile0005",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "3smile0005"
+            },
+            "x": 799,
+            "y": 605
+        },
+        {
+            "type": "Image",
+            "id": "5f6d2008-e84e-4c72-8375-c3404624eff8",
+            "label": "2smile0005",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "2smile0005"
+            },
+            "x": 802,
+            "y": 624
+        },
+        {
+            "type": "Image",
+            "id": "158d1b2f-8d24-4429-bbff-d0d1584cedd8",
+            "label": "smile10006",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "smile10006"
+            },
+            "x": 614,
+            "y": 618
+        },
+        {
+            "type": "Image",
+            "id": "94a09d79-1a1b-4652-bc28-8b34c8f0bd12",
+            "label": "4smile0006",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "4smile0006"
+            },
+            "x": 1066,
+            "y": 496
+        },
+        {
+            "type": "Image",
+            "id": "b58e85a7-d88f-4e9a-84cf-c8d66eeae79f",
+            "label": "4smile0002",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "4smile0002"
+            },
+            "x": 1066,
+            "y": 496
+        },
+        {
+            "type": "Image",
+            "id": "0750019e-b355-4c94-b34d-5a2eb58b1ff3",
+            "label": "4smile0003",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "4smile0003"
+            },
+            "x": 1066,
+            "y": 496
+        },
+        {
+            "type": "Image",
+            "id": "10acb481-7a69-4327-bafa-06ef1ae9e82f",
+            "label": "4smile0004",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "4smile0004"
+            },
+            "x": 1066,
+            "y": 496
+        },
+        {
+            "type": "Image",
+            "id": "8fa1a3de-dc17-4749-9fde-b723071a066b",
+            "label": "4smile0005",
+            "components": [],
+            "texture": {
+                "key": "berg_halloween",
+                "frame": "4smile0005"
+            },
+            "x": 1066,
+            "y": 496
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "039e3e86-31a4-42f2-81bf-d675f82a58fa",
+            "label": "sort"
+        }
+    ]
+}
