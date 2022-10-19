@@ -50,7 +50,7 @@ export default class Mtn extends RoomScene {
     _create() {
 
         // sky0001
-        const sky0001 = this.add.sprite(932, -25, "sky_spooky", "sky0001");
+        const sky0001 = this.add.sprite(932, 49, "sky_spooky", "sky0001");
 
         // mtnSeat11
         const mtnSeat11 = new MtnSeat(this, 1155, 638);

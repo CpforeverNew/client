@@ -64,7 +64,7 @@ rooms = {
 	},
 	230: {
 		key: 'Mtn',
-		scene: require(`@rooms/old/mtn/Mtn`).default,
+		scene: require(`@rooms/spooky_fair/mtn/Mtn`).default,
 		x: 760,
 		y: 440
 	},
@@ -88,7 +88,7 @@ rooms = {
 	},
 	321: {
 		key: 'DojoExt',
-		scene: require(`@rooms/old/dojoext/DojoExt`).default,
+		scene: require(`@rooms/spooky_fair/dojoext/DojoExt`).default,
 		x: 780,
 		y: 790
 	},
@@ -130,7 +130,7 @@ rooms = {
 	},
 	800: {
 		key: 'Dock',
-		scene: require(`@rooms/old/dock/Dock`).default,
+		scene: require(`@rooms/spooky_fair/dock/Dock`).default,
 		x: 800,
 		y: 400
 	},
