@@ -21,28 +21,23 @@ export default class Telescope extends BaseScene {
     /** @returns {void} */
     preload() {
 
+        this.load.pack("spookyscope-pack", "assets/media/interface/game/telescope/spooky/spookyscope-pack.json");
         this.load.pack("telescope-pack", "assets/media/interface/game/telescope/telescope-pack.json");
-        this.load.pack("sky-pack", "assets/media/rooms/spooky_fair/sky/sky-pack.json");
     }
 
     /** @returns {void} */
     create() {
 
-        // sky0001
-        const sky0001 = this.add.sprite(612, 62, "sky_spooky", "sky0001");
-        sky0001.scaleX = 2.030033267239942;
-        sky0001.scaleY = 2.030033267239942;
+        // symbol_1_png
+        const symbol_1_png = this.add.image(783, 444, "spookyscope", "Symbol 1.png");
+        symbol_1_png.scaleX = 1.0635171602955034;
+        symbol_1_png.scaleY = 1.0635171602955034;
 
         // bg
         this.add.image(760, 480, "telescope", "bg");
 
         // closebtn
         const closebtn = this.add.image(1227, 71, "telescope", "closebtn");
-
-        // sky0001 (components)
-        const sky0001Animation = new Animation(sky0001);
-        sky0001Animation.key = "sky";
-        sky0001Animation.end = 282;
 
         // closebtn (components)
         const closebtnButton = new Button(closebtn);
