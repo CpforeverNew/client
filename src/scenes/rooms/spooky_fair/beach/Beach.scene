@@ -1,0 +1,458 @@
+{
+    "id": "3dc29af0-0ce4-4bd3-8d10-32d859ad3250",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/spooky_fair/sky/sky-pack.json",
+            "client/assets/media/rooms/spooky_fair/beach/beach-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Beach",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "1ce1be5c-e2ba-41b4-856e-786bfb8e9198",
+            "label": "sky0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "sky",
+            "Animation.end": 282,
+            "texture": {
+                "key": "sky_spooky",
+                "frame": "sky0001"
+            },
+            "x": 913,
+            "y": -23
+        },
+        {
+            "type": "Sprite",
+            "id": "fc05b15a-4004-469b-b77b-224706454c30",
+            "label": "glow_3",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "glow",
+            "Animation.end": 45,
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "glow0001"
+            },
+            "x": 288,
+            "y": 181
+        },
+        {
+            "type": "Image",
+            "id": "6b9b30e4-87dc-4c42-aec5-67a79bbafb0b",
+            "label": "lighthouseback",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "lighthouseback"
+            },
+            "x": 290,
+            "y": 111
+        },
+        {
+            "type": "Sprite",
+            "id": "b476c641-fc34-4622-abcb-c7d854e7f32e",
+            "label": "glow_4",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "glow",
+            "Animation.end": 45,
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "glow0001"
+            },
+            "x": 290,
+            "y": 21
+        },
+        {
+            "type": "Image",
+            "id": "297c5585-23d4-4f95-a74f-49c9e3b3f8f6",
+            "label": "leftlamp_1",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "leftlamp"
+            },
+            "x": 291,
+            "y": 183
+        },
+        {
+            "type": "Image",
+            "id": "e044232f-089a-4588-80ef-cb90d1a84723",
+            "label": "leftlamp_2",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "leftlamp"
+            },
+            "x": 288,
+            "y": 22
+        },
+        {
+            "type": "Image",
+            "id": "6631def8-b073-40c9-a21f-b831336c2ec3",
+            "label": "bg_1",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "bg"
+            },
+            "x": 783,
+            "y": 481
+        },
+        {
+            "type": "Image",
+            "id": "3d180c28-6b07-4f87-af1b-79f7e8df8fac",
+            "label": "bonfire",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "bonfire"
+            },
+            "x": 785.4596053972214,
+            "y": 754.4388600364173,
+            "originX": 0.5462273518973845,
+            "originY": 0.6328198915022678
+        },
+        {
+            "type": "Image",
+            "id": "041d47ed-7a9f-4a6f-be20-ae102f7ca214",
+            "label": "righttree",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "righttree"
+            },
+            "x": 1282.0050279039772,
+            "y": 171.84410708950077,
+            "originX": 0.4981504461833568,
+            "originY": 0.2512059272179837
+        },
+        {
+            "type": "Image",
+            "id": "088e300e-67c4-4df5-bc18-df6fcf48b220",
+            "label": "rightpumpkin",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "rightpumpkin"
+            },
+            "x": 1312.0600438447532,
+            "y": 585.2794738629618,
+            "originX": 0.48746725126337576,
+            "originY": 0.6484141297758135
+        },
+        {
+            "type": "Sprite",
+            "id": "2b2b2984-4c8e-4131-9efe-125df69f818b",
+            "label": "bulb0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bulb",
+            "Animation.end": 30,
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "bulb0001"
+            },
+            "x": 1163,
+            "y": 135
+        },
+        {
+            "type": "Image",
+            "id": "2a77f44e-6e53-4731-954b-8fa8838d2f5a",
+            "label": "ligthhousesticks",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "ligthhousesticks"
+            },
+            "x": 726.7119801897902,
+            "y": 321.82116865708184,
+            "originX": 0.6418022143586259,
+            "originY": 0.47837523456341124
+        },
+        {
+            "type": "Image",
+            "id": "f70a2c91-bcb5-4b40-8927-edab63ce5622",
+            "label": "ligthhousesticks_1",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "ligthhousesticks"
+            },
+            "x": 309,
+            "y": 414
+        },
+        {
+            "type": "Image",
+            "id": "e3ca44f5-098a-4fcb-b4b0-cbf2c7e4c7bd",
+            "label": "sled",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "sled"
+            },
+            "x": 305.2191871027827,
+            "y": 443.51154497873915,
+            "originX": 1.0749683596632253,
+            "originY": 0.6260137736262165
+        },
+        {
+            "type": "Image",
+            "id": "cebb9dcf-bd4f-4fc3-9979-31f020626b7b",
+            "label": "lefttree",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "lefttree"
+            },
+            "x": 314.0888787090833,
+            "y": 453.3817970954502,
+            "originX": 0.6500798227559971,
+            "originY": 0.7555257991122276
+        },
+        {
+            "type": "Image",
+            "id": "1b980eb7-bd8c-4ab4-a68b-15b3c72a95f5",
+            "label": "rocks",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "rocks"
+            },
+            "x": 456,
+            "y": 575
+        },
+        {
+            "type": "Sprite",
+            "id": "0615f79e-d7f7-4bd5-91ad-aea8f22d4f2d",
+            "label": "glow0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "glow",
+            "Animation.end": 45,
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "glow0001"
+            },
+            "x": 170,
+            "y": 542
+        },
+        {
+            "type": "Sprite",
+            "id": "600c681c-41c3-4b2e-8034-a79fac4506ae",
+            "label": "leftlamp",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "leftlamp"
+            },
+            "x": 170,
+            "y": 541
+        },
+        {
+            "type": "Image",
+            "id": "696ae3af-002c-4cbf-8ef5-2c36c95d296a",
+            "label": "leftpumpkin",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "leftpumpkin"
+            },
+            "x": 358.9399561552468,
+            "y": 497.2794738629618,
+            "originX": 0.5134279450749546,
+            "originY": 0.6683503561636093
+        },
+        {
+            "type": "Image",
+            "id": "0045520e-4527-470d-afee-b5004f6b4570",
+            "label": "door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door",
+            "Button.activeFrame": false,
+            "MoveTo.x": 454,
+            "MoveTo.y": 362,
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "door"
+            },
+            "x": 447,
+            "y": 312
+        },
+        {
+            "type": "Image",
+            "id": "78c060ab-b480-4da8-ba3a-b96a4f64e795",
+            "label": "rightchair",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "rightchair"
+            },
+            "x": 1051.37561018018,
+            "y": 494.5906872072073,
+            "originX": 0.5642165080834249,
+            "originY": 0.46872190098355304
+        },
+        {
+            "type": "Image",
+            "id": "03a18140-e0bc-4719-8f9f-b346228c8718",
+            "label": "armrightchair",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "armrightchair"
+            },
+            "x": 1025,
+            "y": 527.2953436036037,
+            "originY": 0.47696410275140094
+        },
+        {
+            "type": "Image",
+            "id": "90e805b5-9ce2-4e4d-9419-1daee1b2217a",
+            "label": "leftchair",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "leftchair"
+            },
+            "x": 955.6597195795794,
+            "y": 524.2391725825823,
+            "originX": 0.5731796937846921,
+            "originY": 0.5576165914865898
+        },
+        {
+            "type": "Image",
+            "id": "b05023f7-ac78-47d4-aa67-53fe75270c1a",
+            "label": "armleftchair",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "armleftchair"
+            },
+            "x": 929.9775315915915,
+            "y": 559.955063183183,
+            "originX": 0.5530337545545535,
+            "originY": 0.5750477658790851
+        },
+        {
+            "type": "Image",
+            "id": "b5910e1e-af1a-4bf6-8b94-6d1f04306d44",
+            "label": "sign0001",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "sign0001"
+            },
+            "x": 488,
+            "y": 181
+        },
+        {
+            "type": "Sprite",
+            "id": "a344cf2d-71fd-4c00-9fed-e8e831fddc95",
+            "label": "glow_2",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "glow",
+            "Animation.end": 45,
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "glow0001"
+            },
+            "x": 840,
+            "y": 70
+        },
+        {
+            "type": "Image",
+            "id": "69c3aa92-8a20-42e5-9177-862e4720613c",
+            "label": "treelampmidleft",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "treelampmidleft"
+            },
+            "x": 840,
+            "y": 55
+        },
+        {
+            "type": "Image",
+            "id": "acc2c7f5-0ae6-4bcf-8149-f552b31cdbc1",
+            "label": "othersiderockslol",
+            "components": [],
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "othersiderockslol"
+            },
+            "x": 633.5559841871043,
+            "y": 367.36910906245964,
+            "originX": 0.6555576727060474,
+            "originY": 0.604551687505833
+        },
+        {
+            "type": "Sprite",
+            "id": "917c67da-7caa-473f-a99c-f596df7cd861",
+            "label": "eyes0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "eyes",
+            "Animation.end": 127,
+            "texture": {
+                "key": "beach_halloween",
+                "frame": "eyes0001"
+            },
+            "x": 1400.4677210507841,
+            "y": 189.5706515630424,
+            "originX": -0.08663734869912462,
+            "originY": -0.2683607685664219
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "1bc796af-8118-4a54-b624-39e93ad42d65",
+            "label": "sort",
+            "objectIds": [
+                "3d180c28-6b07-4f87-af1b-79f7e8df8fac",
+                "041d47ed-7a9f-4a6f-be20-ae102f7ca214",
+                "088e300e-67c4-4df5-bc18-df6fcf48b220",
+                "2a77f44e-6e53-4731-954b-8fa8838d2f5a",
+                "cebb9dcf-bd4f-4fc3-9979-31f020626b7b",
+                "696ae3af-002c-4cbf-8ef5-2c36c95d296a",
+                "03a18140-e0bc-4719-8f9f-b346228c8718",
+                "78c060ab-b480-4da8-ba3a-b96a4f64e795",
+                "90e805b5-9ce2-4e4d-9419-1daee1b2217a",
+                "b05023f7-ac78-47d4-aa67-53fe75270c1a",
+                "600c681c-41c3-4b2e-8034-a79fac4506ae",
+                "e3ca44f5-098a-4fcb-b4b0-cbf2c7e4c7bd",
+                "acc2c7f5-0ae6-4bcf-8149-f552b31cdbc1",
+                "917c67da-7caa-473f-a99c-f596df7cd861"
+            ]
+        }
+    ]
+}
