@@ -1102,7 +1102,7 @@
                         "y"
                     ],
                     "label": "photoButton1",
-                    "item": 928,
+                    "item": 9006,
                     "components": [],
                     "x": 925,
                     "y": 376
@@ -2562,7 +2562,7 @@
                         "y"
                     ],
                     "label": "tag_7",
-                    "item": 6022,
+                    "item": 2010,
                     "components": [],
                     "x": 432,
                     "y": 405,
