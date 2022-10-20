@@ -1537,7 +1537,7 @@ export default class ClothingCatalog extends Book {
         photoButton2.item = 971;
 
         // photoButton1 (prefab fields)
-        photoButton1.item = 928;
+        photoButton1.item = 9006;
 
         // tag_16 (prefab fields)
         tag_16.item = 233;
@@ -1744,7 +1744,7 @@ export default class ClothingCatalog extends Book {
         tag_6.item = 4109;
 
         // tag_7 (prefab fields)
-        tag_7.item = 6022;
+        tag_7.item = 2010;
 
         // secret_8 (components)
         const secret_8SimpleButton = new SimpleButton(secret_8);
