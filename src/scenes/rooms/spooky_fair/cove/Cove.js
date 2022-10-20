@@ -21,7 +21,7 @@ export default class Cove extends RoomScene {
             'fap': () => this.triggerGame('Paddle', 1000),
         }
         //this.roomAnims = true
-        this.music = 341;
+        this.music = 251;
         this.roomAnims = true;
 
         /* END-USER-CTR-CODE */
@@ -39,6 +39,14 @@ export default class Cove extends RoomScene {
 
         // bg
         this.add.image(760, 480, "cove-spooky", "bg");
+
+        // cautiontapemid
+        const cautiontapemid = this.add.image(928, 657, "cove-spooky", "cautiontapemid");
+        cautiontapemid.setOrigin(0.47923192611842114, 0.7493505292680174);
+
+        // cautiontapeleft
+        const cautiontapeleft = this.add.image(541, 757, "cove-spooky", "cautiontapeleft");
+        cautiontapeleft.setOrigin(0.583146805902277, 0.6820915049259868);
 
         // fg
         const fg = this.add.image(244.7765564475827, 934.5816920217306, "cove-spooky", "fg");
@@ -66,12 +74,12 @@ export default class Cove extends RoomScene {
         this.add.image(1437, 465, "cove-spooky", "hutright");
 
         // bigcage
-        const bigcage = this.add.image(1017.5237423646623, 409.8883906089823, "cove-spooky", "bigcage");
-        bigcage.setOrigin(0.35955616652634226, 0.864049397171473);
+        const bigcage = this.add.image(1144.870899626359, 437.77582283463465, "cove-spooky", "bigcage");
+        bigcage.setOrigin(0.9464094596938811, 1.0280930763967868);
 
         // shackleftwall
-        const shackleftwall = this.add.image(1085.712456095566, 449.97204728265524, "cove-spooky", "shackleftwall");
-        shackleftwall.setOrigin(0.4489252619455246, 0.724536422446753);
+        const shackleftwall = this.add.image(1081.0627165402236, 466.88698158996147, "cove-spooky", "shackleftwall");
+        shackleftwall.setOrigin(0.427886198873283, 0.7858225101399036);
 
         // antennae0001
         const antennae0001 = this.add.sprite(1024.6777695965204, 476.25565399429564, "cove-spooky", "antennae0001");
@@ -108,7 +116,8 @@ export default class Cove extends RoomScene {
         const pcdesk = this.add.image(789, 301, "cove-spooky", "pcdesk");
 
         // tapedcat
-        this.add.image(1035, 389, "cove-spooky", "tapedcat");
+        const tapedcat = this.add.image(1038.925347628277, 540.7801082933771, "cove-spooky", "tapedcat");
+        tapedcat.setOrigin(0.5785069525655399, 3.597553230477084);
 
         // chairfar
         const chairfar = this.add.image(698, 296, "cove-spooky", "chairfar");
@@ -118,8 +127,16 @@ export default class Cove extends RoomScene {
         const chairnear = this.add.image(737, 317, "cove-spooky", "chairnear");
         chairnear.setOrigin(0.36370320735149403, 0.017939764948439182);
 
+        // binoculars
+        const binoculars = this.add.image(595, 270, "cove-spooky", "binoculars");
+        binoculars.angle = -30;
+
+        // cautiontaperight
+        const cautiontaperight = this.add.image(1328.6298038817763, 631.3701961182237, "cove-spooky", "cautiontaperight");
+        cautiontaperight.setOrigin(0.4582598269510632, 0.7707201135182815);
+
         // lists
-        const sort = [shackleftwall, bigcage, hutroof, jolleft_1, jolleft, roofnbeams, orangethingy, antennae0001, fire0001, pcdesk, jolright, smolcage, chairnear, chairfar];
+        const sort = [shackleftwall, bigcage, hutroof, jolleft_1, jolleft, roofnbeams, orangethingy, antennae0001, fire0001, pcdesk, jolright, smolcage, chairnear, chairfar, tapedcat, cautiontapemid, cautiontapeleft, cautiontaperight];
 
         // fap (components)
         new SimpleButton(fap);
@@ -144,6 +161,14 @@ export default class Cove extends RoomScene {
         const net0001Animation = new Animation(net0001);
         net0001Animation.key = "net";
         net0001Animation.end = 150;
+
+        // tapedcat (components)
+        const tapedcatSimpleButton = new SimpleButton(tapedcat);
+        tapedcatSimpleButton.callback = () => this.interface.loadExternal('Waves');
+
+        // binoculars (components)
+        const binocularsButton = new Button(binoculars);
+        binocularsButton.spriteName = "binoculars";
 
         this.sort = sort;
 
