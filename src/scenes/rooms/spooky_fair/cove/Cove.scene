@@ -8,7 +8,8 @@
         "superClassName": "RoomScene",
         "preloadMethodName": "_preload",
         "preloadPackFiles": [
-            "client/assets/media/rooms/spooky_fair/cove/cove-pack.json"
+            "client/assets/media/rooms/spooky_fair/cove/cove-pack.json",
+            "client/assets/media/rooms/old/cove/cove-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Cove",
@@ -18,275 +19,315 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "68f3a825-9ee2-4dfb-825f-16a6e6979942",
-            "label": "bg_png",
+            "id": "ad10098b-7c43-4a89-b841-4cad07bb5a37",
+            "label": "bg",
             "components": [],
             "texture": {
                 "key": "cove-spooky",
-                "frame": "bg.png"
+                "frame": "bg"
             },
-            "x": 734,
-            "y": 367
+            "x": 760,
+            "y": 480
         },
         {
             "type": "Image",
-            "id": "4a1e7748-e577-4b67-8ab2-25528a3d932e",
-            "label": "beegcage_png",
+            "id": "19e460ef-9cb5-4eb4-8a3c-755ad7c27882",
+            "label": "fg",
             "components": [],
             "texture": {
                 "key": "cove-spooky",
-                "frame": "beegcage.png"
+                "frame": "fg"
             },
-            "x": 1033,
-            "y": 424,
-            "originX": 0.38727394169535945,
-            "originY": 0.8855872759513305
+            "x": 244.7765564475827,
+            "y": 934.5816920217306,
+            "originX": 0.47719506799922146,
+            "originY": 0.9411158381479438
         },
         {
             "type": "Image",
-            "id": "b0add0cc-2ed9-4143-be1f-714e21db6986",
-            "label": "fg_png",
-            "components": [],
-            "texture": {
-                "key": "cove-spooky",
-                "frame": "fg.png"
-            },
-            "x": 768,
-            "y": 692
-        },
-        {
-            "type": "Image",
-            "id": "4a675ed4-123a-450a-aaef-bed25fc8b110",
-            "label": "hutinterior_png",
+            "id": "0a364f2d-091b-406b-8b97-6fc8ace68222",
+            "label": "fap",
             "components": [
-                "Button",
-                "MoveTo"
+                "SimpleButton",
+                "MoveTo",
+                "ShowHint"
             ],
-            "Button.spriteName": "hutinterior.png",
-            "Button.activeFrame": false,
-            "MoveTo.x": 1250,
-            "MoveTo.y": 500,
+            "MoveTo.x": 300,
+            "MoveTo.y": 550,
+            "ShowHint.text": "Feed-A-Puffle",
             "texture": {
                 "key": "cove-spooky",
-                "frame": "hutinterior.png"
+                "frame": "fap"
             },
-            "x": 1293.6133016720987,
-            "y": 484.43555027868314,
-            "originX": 0.4638973141234566,
-            "originY": 0.4921777513934157
+            "x": 294.6660991304181,
+            "y": 451.1139848259839,
+            "originX": 0.7057889601678863,
+            "originY": 0.633016620875223
         },
         {
             "type": "Image",
-            "id": "b2ee3a43-1e42-4ee5-9df1-3df5642e386d",
-            "label": "hutrightwall_png",
+            "id": "0a35d529-a6e6-4c58-884c-42eb583dbebc",
+            "label": "jolleft",
             "components": [],
             "texture": {
                 "key": "cove-spooky",
-                "frame": "hutrightwall.png"
+                "frame": "jolleft"
             },
-            "x": 1433,
-            "y": 514
+            "x": 145.03504907242026,
+            "y": 543.1051472172608,
+            "originX": 0.5745067786718551,
+            "originY": 0.7291790786995034
         },
         {
             "type": "Image",
-            "id": "396d2394-59ce-468a-b6a7-826d30666a62",
-            "label": "feedapuffle_png",
+            "id": "d89c347e-32fd-443e-9fd1-e8bbe1d415a1",
+            "label": "jolleft_1",
+            "components": [],
+            "texture": {
+                "key": "cove-spooky",
+                "frame": "jolleft"
+            },
+            "x": 173.05257360863038,
+            "y": 596.5963849491557,
+            "originX": 0.6117601680077825,
+            "originY": 0.7100808221412109
+        },
+        {
+            "type": "Image",
+            "id": "216eed57-1ebb-4859-9cf7-319c686afc77",
+            "label": "bigrockright0001",
+            "components": [],
+            "texture": {
+                "key": "cove-spooky",
+                "frame": "bigrockright0001"
+            },
+            "x": 1434,
+            "y": 689
+        },
+        {
+            "type": "Image",
+            "id": "8a57210e-1e77-4b0b-bd5c-cba35bdc9121",
+            "label": "hutinterior",
+            "components": [],
+            "texture": {
+                "key": "cove-spooky",
+                "frame": "hutinterior"
+            },
+            "x": 1315,
+            "y": 447
+        },
+        {
+            "type": "Image",
+            "id": "fef95ace-fce6-4d30-bdd2-5ddc7022456d",
+            "label": "hutright",
+            "components": [],
+            "texture": {
+                "key": "cove-spooky",
+                "frame": "hutright"
+            },
+            "x": 1437,
+            "y": 465
+        },
+        {
+            "type": "Image",
+            "id": "d2bff028-0809-41e8-9243-b5942015b98f",
+            "label": "bigcage",
+            "components": [],
+            "texture": {
+                "key": "cove-spooky",
+                "frame": "bigcage"
+            },
+            "x": 1017.5237423646623,
+            "y": 409.8883906089823,
+            "originX": 0.35955616652634226,
+            "originY": 0.864049397171473
+        },
+        {
+            "type": "Image",
+            "id": "a2d0e6d9-02a0-4b38-92e0-69fe358e7cf0",
+            "label": "shackleftwall",
+            "components": [],
+            "texture": {
+                "key": "cove-spooky",
+                "frame": "shackleftwall"
+            },
+            "x": 1085.712456095566,
+            "y": 449.97204728265524,
+            "originX": 0.4489252619455246,
+            "originY": 0.724536422446753
+        },
+        {
+            "type": "Sprite",
+            "id": "3f37dfcd-1bfe-48fc-b235-5052e38a05eb",
+            "label": "antennae0001",
             "components": [
-                "ShowHint",
-                "Button",
-                "MoveTo"
+                "Animation"
             ],
-            "ShowHint.text": "Feed a Puffle",
-            "Button.spriteName": "feedapuffle.png",
-            "Button.hoverCallback": "() => {}",
-            "Button.hoverOutCallback": "() => {}",
-            "Button.activeFrame": false,
-            "MoveTo.x": 305,
-            "MoveTo.y": 540,
+            "Animation.key": "antennae",
+            "Animation.end": 6,
+            "Animation.frameRate": 5,
             "texture": {
                 "key": "cove-spooky",
-                "frame": "feedapuffle.png"
+                "frame": "antennae0001"
             },
-            "x": 305,
-            "y": 484,
-            "originX": 0.722990531690042,
-            "originY": 0.7115036193704153
+            "x": 1024.6777695965204,
+            "y": 476.25565399429564,
+            "originX": 0.2577769470878593,
+            "originY": 3.38643696056793
         },
         {
             "type": "Image",
-            "id": "fa17fbf9-3849-48dd-a3a8-f476b7c02034",
-            "label": "jol_png",
+            "id": "c1b0b7cf-a4c2-45a2-bd8b-4278a67b5ad4",
+            "label": "hutroof",
             "components": [],
             "texture": {
                 "key": "cove-spooky",
-                "frame": "jol.png"
+                "frame": "hutroof"
             },
-            "x": 141,
-            "y": 519
+            "x": 1287.4562154538696,
+            "y": 558.9633008446433,
+            "originX": 0.4786897984730925,
+            "originY": 1.8997961042974758
         },
         {
             "type": "Image",
-            "id": "2d8638ca-b88e-419a-8894-c86fd0c4a773",
-            "label": "jol_png_1",
+            "id": "70dd5944-f62b-49b9-9ecc-82fe4d05d1f8",
+            "label": "jolright",
             "components": [],
             "texture": {
                 "key": "cove-spooky",
-                "frame": "jol.png"
+                "frame": "jolright"
             },
-            "x": 160,
-            "y": 564
+            "x": 1137.5553112895166,
+            "y": 500,
+            "originX": 0.4233958734637526,
+            "originY": 0.7984364925922104
         },
         {
             "type": "Image",
-            "id": "4b996cdf-3392-4af2-aeb7-d7473b0dc15a",
-            "label": "roofnbeams_png",
+            "id": "e5f20401-48d0-4d04-96ab-254f8a69fd35",
+            "label": "roofnbeams",
             "components": [],
             "texture": {
                 "key": "cove-spooky",
-                "frame": "roofnbeams.png"
+                "frame": "roofnbeams"
             },
-            "x": 746.6248565521324,
-            "y": 373.37170069904477,
-            "originX": 0.507675019158282,
-            "originY": 0.7782106022997455
+            "x": 745.8670295853256,
+            "y": 390.08411628536896,
+            "originX": 0.4762193847524139,
+            "originY": 0.9934751634095885
         },
         {
             "type": "Image",
-            "id": "2c0fb837-5f83-4d1c-9dcd-6c1b03a34dd1",
-            "label": "cage_png",
+            "id": "d8593131-6acf-46fe-a107-7e4e35e7e584",
+            "label": "smolcage",
             "components": [],
             "texture": {
                 "key": "cove-spooky",
-                "frame": "cage.png"
+                "frame": "smolcage"
             },
-            "x": 635.1777513934156,
-            "y": 445.8045921968727,
-            "originX": 0.5144545544219203,
-            "originY": 0.8823125750460599
+            "x": 638,
+            "y": 400,
+            "originY": 0.8108141559748211
         },
         {
             "type": "Image",
-            "id": "338d71fc-f364-4ce9-9b31-145074f3cdcb",
-            "label": "chairnear_png",
+            "id": "14976e7d-4312-499a-a13d-c354142dff11",
+            "label": "orangethingy",
             "components": [],
             "texture": {
                 "key": "cove-spooky",
-                "frame": "chairnear.png"
+                "frame": "orangethingy"
             },
-            "x": 687,
-            "y": 319
+            "x": 906,
+            "y": 394.33242603668623,
+            "originY": 0.7210046308335459
         },
         {
-            "type": "Image",
-            "id": "11ee5a1a-0db7-482e-b5bd-2713c899959b",
-            "label": "chairfar_png",
-            "components": [],
-            "texture": {
-                "key": "cove-spooky",
-                "frame": "chairfar.png"
-            },
-            "x": 721.6830739878059,
-            "y": 375,
-            "originX": 0.4448350949477588
-        },
-        {
-            "type": "Image",
-            "id": "40a5f41e-92eb-4181-800a-3384389344d0",
-            "label": "pcdesk_png",
-            "components": [],
-            "texture": {
-                "key": "cove-spooky",
-                "frame": "pcdesk.png"
-            },
-            "x": 776.6830739878059,
-            "y": 330.6338520243882,
-            "originX": 0.4827095073716856,
-            "originY": 0.5364870238140803
-        },
-        {
-            "type": "Image",
-            "id": "bc04916c-fd02-44b1-9728-603391dd74b3",
-            "label": "surfboards_png",
-            "components": [],
-            "texture": {
-                "key": "cove-spooky",
-                "frame": "surfboards.png"
-            },
-            "x": 1138,
-            "y": 492,
-            "originX": 0.5237543579378501,
-            "originY": 0.7853104947969979
-        },
-        {
-            "type": "Image",
-            "id": "1a1e710b-41c0-416a-8cba-893897a178a2",
-            "label": "jolhut_png",
-            "components": [],
-            "texture": {
-                "key": "cove-spooky",
-                "frame": "jolhut.png"
-            },
-            "x": 1098,
-            "y": 519,
-            "originX": 0.4490785491825478,
-            "originY": 0.4236178237738211
-        },
-        {
-            "type": "Image",
-            "id": "80b695f5-cebf-4874-9ff5-d8e4fe0ee87e",
-            "label": "hutroof_png",
-            "components": [],
-            "texture": {
-                "key": "cove-spooky",
-                "frame": "hutroof.png"
-            },
-            "x": 1323,
-            "y": 236,
-            "originX": 0.49116130100950894,
-            "originY": -0.17792821257064903
-        },
-        {
-            "type": "Image",
-            "id": "6a700372-2720-46a0-9023-a52714780c42",
-            "label": "orangethingy_png",
-            "components": [],
-            "texture": {
-                "key": "cove-spooky",
-                "frame": "orangethingy.png"
-            },
-            "x": 913,
-            "y": 381,
-            "originX": 0.5437155851357384,
-            "originY": 0.47481602160658615
-        },
-        {
-            "type": "Image",
-            "id": "4282681c-e3de-4143-bbfa-9ccf07a274b2",
-            "label": "binoculars0001_png",
+            "type": "Sprite",
+            "id": "a547d2e6-096d-4f4a-8380-03e8b0e96ab1",
+            "label": "fire0001",
             "components": [
-                "Button"
+                "Animation"
             ],
-            "Button.spriteName": "binoculars0002.png",
+            "Animation.key": "fire",
+            "Animation.end": 10,
+            "texture": {
+                "key": "cove",
+                "frame": "fire0001"
+            },
+            "x": 429,
+            "y": 608.2659445011531,
+            "originX": 0.5029239766081871,
+            "originY": 0.7925785933579806
+        },
+        {
+            "type": "Sprite",
+            "id": "ec047308-e5d7-4d83-a201-c333150bdc4d",
+            "label": "net0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "net",
+            "Animation.end": 150,
             "texture": {
                 "key": "cove-spooky",
-                "frame": "binoculars0001.png"
+                "frame": "net0001"
             },
-            "x": 611,
-            "y": 288,
-            "angle": -30
+            "x": 465,
+            "y": 103
         },
         {
             "type": "Image",
-            "id": "504917f3-8fd1-4e71-9f5b-3492a2132433",
-            "label": "barrierstape",
+            "id": "888de539-97e6-4974-9750-876bdbde14a7",
+            "label": "pcdesk",
             "components": [],
             "texture": {
-                "key": "barrierstape"
+                "key": "cove-spooky",
+                "frame": "pcdesk"
             },
-            "x": 1096.7910530655142,
-            "y": 632.0176564097117,
-            "originX": 0.4791659238081286,
-            "originY": 0.3318582075220171
+            "x": 789,
+            "y": 301
+        },
+        {
+            "type": "Image",
+            "id": "761f15eb-ef10-4cbc-a754-610630ffdc33",
+            "label": "tapedcat",
+            "components": [],
+            "texture": {
+                "key": "cove-spooky",
+                "frame": "tapedcat"
+            },
+            "x": 1035,
+            "y": 389
+        },
+        {
+            "type": "Image",
+            "id": "e55af877-3400-4744-99b6-c25a6b7b79bf",
+            "label": "chairfar",
+            "components": [],
+            "texture": {
+                "key": "cove-spooky",
+                "frame": "chairfar"
+            },
+            "x": 698,
+            "y": 296,
+            "originX": 0.28192513176238826,
+            "originY": 0.04604823346456595
+        },
+        {
+            "type": "Image",
+            "id": "3c9c50bd-5725-4261-bb26-157d3e048c30",
+            "label": "chairnear",
+            "components": [],
+            "texture": {
+                "key": "cove-spooky",
+                "frame": "chairnear"
+            },
+            "x": 737,
+            "y": 317,
+            "originX": 0.36370320735149403,
+            "originY": 0.017939764948439182
         }
     ],
     "plainObjects": [],
@@ -301,15 +342,20 @@
             "id": "a52e8977-d148-4108-9432-46c9ec659de8",
             "label": "sort",
             "objectIds": [
-                "6a700372-2720-46a0-9023-a52714780c42",
-                "4a1e7748-e577-4b67-8ab2-25528a3d932e",
-                "1a1e710b-41c0-416a-8cba-893897a178a2",
-                "b2ee3a43-1e42-4ee5-9df1-3df5642e386d",
-                "4b996cdf-3392-4af2-aeb7-d7473b0dc15a",
-                "bc04916c-fd02-44b1-9728-603391dd74b3",
-                "2c0fb837-5f83-4d1c-9dcd-6c1b03a34dd1",
-                "80b695f5-cebf-4874-9ff5-d8e4fe0ee87e",
-                "504917f3-8fd1-4e71-9f5b-3492a2132433"
+                "a2d0e6d9-02a0-4b38-92e0-69fe358e7cf0",
+                "d2bff028-0809-41e8-9243-b5942015b98f",
+                "c1b0b7cf-a4c2-45a2-bd8b-4278a67b5ad4",
+                "d89c347e-32fd-443e-9fd1-e8bbe1d415a1",
+                "0a35d529-a6e6-4c58-884c-42eb583dbebc",
+                "e5f20401-48d0-4d04-96ab-254f8a69fd35",
+                "14976e7d-4312-499a-a13d-c354142dff11",
+                "3f37dfcd-1bfe-48fc-b235-5052e38a05eb",
+                "a547d2e6-096d-4f4a-8380-03e8b0e96ab1",
+                "888de539-97e6-4974-9750-876bdbde14a7",
+                "70dd5944-f62b-49b9-9ecc-82fe4d05d1f8",
+                "d8593131-6acf-46fe-a107-7e4e35e7e584",
+                "3c9c50bd-5725-4261-bb26-157d3e048c30",
+                "e55af877-3400-4744-99b6-c25a6b7b79bf"
             ]
         }
     ]
