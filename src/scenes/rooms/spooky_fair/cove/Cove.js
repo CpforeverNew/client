@@ -14,7 +14,7 @@ export default class Cove extends RoomScene {
         this.sort;
 
 
-        /* START-USER-CTR-CODE */
+        /* START-USER-CTR-CODE */ 
 
         this.roomTriggers =  {
             'forest': () => this.triggerRoom(809, 1190, 750),
@@ -45,8 +45,8 @@ export default class Cove extends RoomScene {
         cautiontapemid.setOrigin(0.47923192611842114, 0.7493505292680174);
 
         // cautiontapeleft
-        const cautiontapeleft = this.add.image(541, 757, "cove-spooky", "cautiontapeleft");
-        cautiontapeleft.setOrigin(0.583146805902277, 0.6820915049259868);
+        const cautiontapeleft = this.add.image(551.6391303750045, 794.2369563125158, "cove-spooky", "cautiontapeleft");
+        cautiontapeleft.setOrigin(0.6074370579000041, 0.8483279170354321);
 
         // fg
         const fg = this.add.image(244.7765564475827, 934.5816920217306, "cove-spooky", "fg");
