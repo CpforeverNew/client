@@ -34,7 +34,7 @@ rooms = {
 	},
 	130: {
 		key: 'Shop',
-		scene: require(`@rooms/old/shop/Shop`).default,
+		scene: require(`@rooms/spooky_fair/shop/Shop`).default,
 		x: 1000,
 		y: 560
 	},
@@ -136,7 +136,7 @@ rooms = {
 	},
 	801: {
 		key: 'Forts',
-		scene: require(`@rooms/old/forts/Forts`).default,
+		scene: require(`@rooms/spooky_fair/forts/Forts`).default,
 		x: 960,
 		y: 610
 	},
