@@ -60,10 +60,6 @@ export default class Forts extends RoomScene {
         const blue_pole = this.add.image(993, 424, "forts", "blue_pole");
         blue_pole.setOrigin(0.5, 1);
 
-        // tower_shadow
-        const tower_shadow = this.add.image(1065, 304, "forts", "tower_shadow");
-        tower_shadow.setOrigin(0, 0);
-
         // tower
         const tower = this.add.sprite(1046, -13, "forts", "tower0001");
         tower.setOrigin(0, 0);
@@ -79,10 +75,6 @@ export default class Forts extends RoomScene {
         // sign
         const sign = this.add.image(1390, 291, "forts", "sign");
         sign.setOrigin(0, 0);
-
-        // snowballs
-        const snowballs = this.add.image(676, 786, "forts", "snowballs");
-        snowballs.setOrigin(0.49230769, 0.57777778);
 
         // blue_flag
         const blue_flag = this.add.sprite(966, 334, "forts", "blue_flag0001");
@@ -138,7 +130,7 @@ export default class Forts extends RoomScene {
         pumpkin_png.setOrigin(-0.027486960591607688, 0.47108075873949484);
 
         // lists
-        const sort = [red_flag, red_pole, blue_pole, blue_flag, snowballs, cobweb_png, fort3_png, pumpkin_png, fort1_png, fort2_png];
+        const sort = [red_flag, red_pole, blue_pole, blue_flag, cobweb_png, fort3_png, pumpkin_png, fort1_png, fort2_png];
 
         // tower (components)
         const towerAnimation = new Animation(tower);

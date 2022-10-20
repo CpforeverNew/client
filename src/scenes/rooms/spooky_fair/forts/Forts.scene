@@ -57,20 +57,6 @@
             "originY": 1
         },
         {
-            "type": "Image",
-            "id": "3b2a720f-7bd6-4c37-831b-1f6b4ef36eed",
-            "label": "tower_shadow",
-            "components": [],
-            "texture": {
-                "key": "forts",
-                "frame": "tower_shadow"
-            },
-            "x": 1065,
-            "y": 304,
-            "originX": 0,
-            "originY": 0
-        },
-        {
             "type": "Sprite",
             "id": "1502a63b-6cb6-4f1e-bab6-e4b217577883",
             "label": "tower",
@@ -136,20 +122,6 @@
             "y": 291,
             "originX": 0,
             "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "1f0cdaf0-e9e6-4541-a76f-2a26400b2146",
-            "label": "snowballs",
-            "components": [],
-            "texture": {
-                "key": "forts",
-                "frame": "snowballs"
-            },
-            "x": 676,
-            "y": 786,
-            "originX": 0.49230769,
-            "originY": 0.57777778
         },
         {
             "type": "Sprite",
@@ -333,7 +305,6 @@
                 "a7eba68a-1f6e-4778-886c-9b83412c56dd",
                 "82671712-eb61-4cf9-a79d-a117f9e89798",
                 "561077bd-3695-4418-a10f-aa6fb315f3ae",
-                "1f0cdaf0-e9e6-4541-a76f-2a26400b2146",
                 "64d49090-0adc-486e-a521-801d3ad8528f",
                 "acb80022-9396-493a-8da3-4d802549568d",
                 "a4896f2f-ee7d-467b-a70f-c1714013ebf2",
