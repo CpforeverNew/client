@@ -340,6 +340,12 @@ rooms = {
 		key: 'Spin',
 		scene: require('@games/spin/Spin').default
 	},
+	8008415: {
+		key: 'Vault',
+		scene: require('@rooms/spooky_fair/vault/Vault').default,
+		x: 500,
+		y: 560
+	}
 }
 
 
