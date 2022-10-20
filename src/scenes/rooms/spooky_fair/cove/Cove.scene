@@ -31,6 +31,34 @@
         },
         {
             "type": "Image",
+            "id": "04d86318-e6e1-4d73-adc4-b58e66247248",
+            "label": "cautiontapemid",
+            "components": [],
+            "texture": {
+                "key": "cove-spooky",
+                "frame": "cautiontapemid"
+            },
+            "x": 928,
+            "y": 657,
+            "originX": 0.47923192611842114,
+            "originY": 0.7493505292680174
+        },
+        {
+            "type": "Image",
+            "id": "a7598cf8-aca5-4853-a6e2-457d65fcf86d",
+            "label": "cautiontapeleft",
+            "components": [],
+            "texture": {
+                "key": "cove-spooky",
+                "frame": "cautiontapeleft"
+            },
+            "x": 551.6391303750045,
+            "y": 794.2369563125158,
+            "originX": 0.6074370579000041,
+            "originY": 0.8483279170354321
+        },
+        {
+            "type": "Image",
             "id": "19e460ef-9cb5-4eb4-8a3c-755ad7c27882",
             "label": "fg",
             "components": [],
@@ -137,10 +165,10 @@
                 "key": "cove-spooky",
                 "frame": "bigcage"
             },
-            "x": 1017.5237423646623,
-            "y": 409.8883906089823,
-            "originX": 0.35955616652634226,
-            "originY": 0.864049397171473
+            "x": 1144.870899626359,
+            "y": 437.77582283463465,
+            "originX": 0.9464094596938811,
+            "originY": 1.0280930763967868
         },
         {
             "type": "Image",
@@ -151,10 +179,10 @@
                 "key": "cove-spooky",
                 "frame": "shackleftwall"
             },
-            "x": 1085.712456095566,
-            "y": 449.97204728265524,
-            "originX": 0.4489252619455246,
-            "originY": 0.724536422446753
+            "x": 1081.0627165402236,
+            "y": 466.88698158996147,
+            "originX": 0.427886198873283,
+            "originY": 0.7858225101399036
         },
         {
             "type": "Sprite",
@@ -293,13 +321,18 @@
             "type": "Image",
             "id": "761f15eb-ef10-4cbc-a754-610630ffdc33",
             "label": "tapedcat",
-            "components": [],
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.loadExternal('Waves')",
             "texture": {
                 "key": "cove-spooky",
                 "frame": "tapedcat"
             },
-            "x": 1035,
-            "y": 389
+            "x": 1038.925347628277,
+            "y": 540.7801082933771,
+            "originX": 0.5785069525655399,
+            "originY": 3.597553230477084
         },
         {
             "type": "Image",
@@ -328,6 +361,36 @@
             "y": 317,
             "originX": 0.36370320735149403,
             "originY": 0.017939764948439182
+        },
+        {
+            "type": "Image",
+            "id": "c3804f1b-5091-4df8-a0ff-6b066054c85e",
+            "label": "binoculars",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "binoculars",
+            "texture": {
+                "key": "cove-spooky",
+                "frame": "binoculars"
+            },
+            "x": 595,
+            "y": 270,
+            "angle": -30
+        },
+        {
+            "type": "Image",
+            "id": "ec84f906-dddf-4546-9cd7-5e203c2e7f60",
+            "label": "cautiontaperight",
+            "components": [],
+            "texture": {
+                "key": "cove-spooky",
+                "frame": "cautiontaperight"
+            },
+            "x": 1328.6298038817763,
+            "y": 631.3701961182237,
+            "originX": 0.4582598269510632,
+            "originY": 0.7707201135182815
         }
     ],
     "plainObjects": [],
@@ -355,7 +418,11 @@
                 "70dd5944-f62b-49b9-9ecc-82fe4d05d1f8",
                 "d8593131-6acf-46fe-a107-7e4e35e7e584",
                 "3c9c50bd-5725-4261-bb26-157d3e048c30",
-                "e55af877-3400-4744-99b6-c25a6b7b79bf"
+                "e55af877-3400-4744-99b6-c25a6b7b79bf",
+                "761f15eb-ef10-4cbc-a754-610630ffdc33",
+                "04d86318-e6e1-4d73-adc4-b58e66247248",
+                "a7598cf8-aca5-4853-a6e2-457d65fcf86d",
+                "ec84f906-dddf-4546-9cd7-5e203c2e7f60"
             ]
         }
     ]
