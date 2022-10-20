@@ -883,9 +883,8 @@
                 "key": "tickets",
                 "frame": "tickets"
             },
-            "x": 1297,
-            "y": 57,
-            "visible": false
+            "x": 1210,
+            "y": 60
         },
         {
             "type": "Text",
@@ -893,9 +892,8 @@
             "label": "tickets",
             "scope": "PUBLIC",
             "components": [],
-            "x": 1248,
-            "y": 34,
-            "visible": false,
+            "x": 1161,
+            "y": 37,
             "text": "0",
             "fixedWidth": 100,
             "align": "center",

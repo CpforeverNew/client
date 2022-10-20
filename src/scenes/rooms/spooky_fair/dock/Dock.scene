@@ -204,8 +204,10 @@
                 "key": "dock-spf",
                 "frame": "pumkin3"
             },
-            "x": 649,
-            "y": 531
+            "x": 644.9534095717188,
+            "y": 550.2213045343358,
+            "originX": 0.4768766261241074,
+            "originY": 0.5804238683445012
         },
         {
             "type": "Image",
@@ -250,26 +252,37 @@
                 "key": "dock-spf",
                 "frame": "boards"
             },
-            "x": 719,
-            "y": 727
+            "x": 707.8192057733216,
+            "y": 719.3131815449016,
+            "originX": 0.43055411826994205,
+            "originY": 0.44806222274327123
         },
         {
             "type": "Image",
             "id": "d4ccf730-7379-4976-860a-55c3727784ab",
             "label": "paper_wrapp",
-            "components": [],
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.loadExternal('Hydro')",
             "texture": {
                 "key": "dock-spf",
                 "frame": "paper_wrapp"
             },
-            "x": 762,
-            "y": 707
+            "x": 760.6024242603265,
+            "y": 762.205164680344,
+            "originX": 0.4714775842894411,
+            "originY": 1.6745773533571857
         },
         {
             "type": "Image",
             "id": "35385860-2a54-4a23-81dc-07d39d2f1791",
             "label": "paper",
-            "components": [],
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "paper",
+            "Button.callback": "() => this.interface.loadExternal('Hydro')",
             "texture": {
                 "key": "dock-spf",
                 "frame": "paper"
@@ -298,8 +311,10 @@
                 "key": "dock-spf",
                 "frame": "gate2"
             },
-            "x": 413,
-            "y": 212
+            "x": 437.7761222698439,
+            "y": 248.54690250339814,
+            "originX": 0.6304007405898526,
+            "originY": 0.6809251759945397
         },
         {
             "type": "Image",
@@ -366,8 +381,10 @@
                 "key": "dock-spf",
                 "frame": "ringthebell"
             },
-            "x": 977,
-            "y": 152
+            "x": 982.2234874278905,
+            "y": 168.7152339347283,
+            "originX": 0.5154085903153228,
+            "originY": 0.5534033187669708
         },
         {
             "type": "Image",
@@ -390,14 +407,17 @@
                 "MoveTo"
             ],
             "Button.spriteName": "spintowin",
+            "Button.pixelPerfect": true,
             "MoveTo.x": 660,
             "MoveTo.y": 270,
             "texture": {
                 "key": "dock-spf",
                 "frame": "spintowin"
             },
-            "x": 632,
-            "y": 161
+            "x": 687.0698856424218,
+            "y": 284.9434561726946,
+            "originX": 0.5138898984952445,
+            "originY": 0.7101114260838323
         },
         {
             "type": "Image",
@@ -408,8 +428,10 @@
                 "key": "dock-spf",
                 "frame": "pumkin1"
             },
-            "x": 1069,
-            "y": 464
+            "x": 1070.0116476070702,
+            "y": 482.2096569272655,
+            "originX": 0.508224777293254,
+            "originY": 0.6264559508837881
         },
         {
             "type": "Image",
@@ -420,8 +442,10 @@
                 "key": "dock-spf",
                 "frame": "pumkin2"
             },
-            "x": 775,
-            "y": 413
+            "x": 772.9766744625391,
+            "y": 482.8036817797264,
+            "originX": 0.4834156129988475,
+            "originY": 0.8877982493769498
         },
         {
             "type": "Image",
@@ -432,8 +456,10 @@
                 "key": "dock-spf",
                 "frame": "pumkin"
             },
-            "x": 537,
-            "y": 379
+            "x": 542.0582380353516,
+            "y": 412.38437103332,
+            "originX": 0.5532446108984376,
+            "originY": 0.7954369117992921
         },
         {
             "type": "Image",
@@ -456,8 +482,10 @@
                 "key": "dock-spf",
                 "frame": "pumkin4"
             },
-            "x": 439,
-            "y": 458
+            "x": 432.9301143575782,
+            "y": 504.535789925234,
+            "originX": 0.47914128645215875,
+            "originY": 0.7820350904559635
         },
         {
             "type": "Image",
@@ -474,8 +502,10 @@
                 "key": "dock-spf",
                 "frame": "puffle_shuffle0001"
             },
-            "x": 1140,
-            "y": 621
+            "x": 1144.2085516339052,
+            "y": 677.1140217854041,
+            "originX": 0.5133182013731179,
+            "originY": 0.644623767488155
         },
         {
             "type": "Rectangle",
@@ -496,6 +526,19 @@
             "fillColor": "#00ff00",
             "width": 135,
             "height": 160
+        },
+        {
+            "type": "Image",
+            "id": "c7f7ca76-41a5-4e84-b33d-145e7db654d9",
+            "label": "spintowin_logo",
+            "components": [],
+            "texture": {
+                "key": "dock-spf",
+                "frame": "spintowin-logo"
+            },
+            "x": 648,
+            "y": 291.8510798290158,
+            "originY": 4.193769282660997
         }
     ],
     "plainObjects": [],
@@ -533,7 +576,9 @@
                 "a0fda399-4247-492f-b210-75ecb79ccb8c",
                 "9c824b27-2c56-4e69-9ecc-99b3b83c6e58",
                 "bff67a62-93f8-4823-bced-34a38736b4a4",
-                "7c70a7a5-8363-4ea8-880f-ba744ad624f9"
+                "7c70a7a5-8363-4ea8-880f-ba744ad624f9",
+                "14ea4b65-3ba8-4534-b9ac-faa41fca670b",
+                "c7f7ca76-41a5-4e84-b33d-145e7db654d9"
             ]
         }
     ]

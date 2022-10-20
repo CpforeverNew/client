@@ -393,12 +393,10 @@ export default class Main extends BaseScene {
         version.setStyle({ "align": "right", "color": "#000000ff", "fixedWidth":200,"fontFamily": "Burbank Small", "fontSize": "18px", "fontStyle": "bold", "stroke": "#000000ff", "strokeThickness":1,"shadow.stroke":true,"shadow.fill":true});
 
         // tickets_button
-        const tickets_button = this.add.image(1297, 57, "tickets", "tickets");
-        tickets_button.visible = false;
+        const tickets_button = this.add.image(1210, 60, "tickets", "tickets");
 
         // tickets
-        const tickets = this.add.text(1248, 34, "", {});
-        tickets.visible = false;
+        const tickets = this.add.text(1161, 37, "", {});
         tickets.text = "0";
         tickets.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":100,"fontFamily": "CCFaceFront", "fontSize": "17px" });
 
@@ -662,7 +660,7 @@ export default class Main extends BaseScene {
         this._create()
 
         // Get User tickets
-        // this.network.send("get_user_tickets");
+        this.network.send("get_user_tickets");
 
         // Version
         this.version.text = "v" + VERSION;
