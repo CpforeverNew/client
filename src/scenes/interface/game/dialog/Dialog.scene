@@ -1,0 +1,165 @@
+{
+    "id": "48447d4b-c945-4eac-8a57-26c6bffd41e8",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadPackFiles": [
+            "client/assets/media/interface/game/dialog/dialog-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Dialog",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "5af74374-3ba6-4eff-b7a9-1a921ec49164",
+            "label": "rectangle_1",
+            "components": [],
+            "x": -18,
+            "y": -8,
+            "scaleX": 12.068722172242227,
+            "scaleY": 7.663652459884201,
+            "originX": -0.01124316128397218,
+            "originY": -0.0038338401059435645,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.4,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "ab0fe24b-9268-461c-9465-e6dd21daed5e",
+            "label": "slade",
+            "components": [],
+            "texture": {
+                "key": "spooky-dialog",
+                "frame": "slade1.png"
+            },
+            "y": 341,
+            "originX": -0.001962426270183689,
+            "originY": 0.0002678731349108793,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "6ace113e-3b87-43dd-a503-fb96608997f5",
+            "label": "conductor2",
+            "components": [],
+            "texture": {
+                "key": "spooky-dialog",
+                "frame": "conductor2.png"
+            },
+            "y": 302,
+            "originX": 0.00016396864105799452,
+            "originY": 0.00010125646810544265,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "600f5466-4043-432c-9167-e6fd6355255c",
+            "label": "conductor1",
+            "components": [],
+            "texture": {
+                "key": "spooky-dialog",
+                "frame": "conductor1.png"
+            },
+            "y": 302,
+            "originX": -0.00004407881145655296,
+            "originY": -0.0000031595488311736115
+        },
+        {
+            "type": "Image",
+            "id": "5dc850ad-4013-44b1-9496-16b376ae2cae",
+            "label": "speechBubble_png",
+            "components": [],
+            "texture": {
+                "key": "dialog",
+                "frame": "SpeechBubble.png"
+            },
+            "x": 519,
+            "y": 653,
+            "originX": -0.00022484312257626095,
+            "originY": 0.00030716366264359435
+        },
+        {
+            "type": "Text",
+            "id": "d146cfc7-92e4-4b9b-a11f-995b4512d222",
+            "label": "dialogText",
+            "components": [],
+            "x": 603,
+            "y": 693,
+            "text": "All these years, I worked so hard on bringing joy to the island.\nEvery single year that Rockhopper takes all the credit.",
+            "paddingRight": 25,
+            "lineSpacing": 15,
+            "fontFamily": "Burbank Small",
+            "fontSize": "30px",
+            "fontStyle": "bold",
+            "color": "#45535fff",
+            "stroke": "#000000ff",
+            "wordWrapWidth": 900
+        },
+        {
+            "type": "Image",
+            "id": "ce268059-d9e0-473f-8e18-96af4147e1bd",
+            "label": "nextbutton",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "nextbutton",
+            "Button.callback": "() => { this.onNextClick() }",
+            "texture": {
+                "key": "dialog",
+                "frame": "nextbutton"
+            },
+            "x": 1420,
+            "y": 843,
+            "scaleX": 0.40028184738929246,
+            "scaleY": 0.4449826224548623
+        },
+        {
+            "type": "Text",
+            "id": "810d0f24-0790-49e6-8f3a-23652d1aa27c",
+            "label": "text",
+            "components": [],
+            "x": 1382,
+            "y": 820,
+            "text": "Next",
+            "align": "center",
+            "fontFamily": "Burbank Small Light",
+            "fontSize": "36px",
+            "fontStyle": "bold",
+            "color": "#2d2d2dff",
+            "stroke": "#2d2d2dff",
+            "strokeThickness": 0.5,
+            "shadow.stroke": true,
+            "wordWrapWidth": 750
+        },
+        {
+            "type": "Text",
+            "id": "50761815-9f51-4e79-9017-ce495c2286cf",
+            "label": "dialogText_1",
+            "components": [],
+            "x": 603,
+            "y": 820,
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px",
+            "fontStyle": "bold",
+            "color": "#45535fff",
+            "stroke": "#45535fff",
+            "wordWrapWidth": 850
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
