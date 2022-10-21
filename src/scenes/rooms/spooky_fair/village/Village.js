@@ -112,6 +112,11 @@ export default class Village extends RoomScene {
         // lists
         const sort = [trees_shadow, fence, bottom_costume, costume_top0001, container_2, tours0001, ghost0001];
 
+        // sky0001 (components)
+        const sky0001Animation = new Animation(sky0001);
+        sky0001Animation.key = "sky";
+        sky0001Animation.end = 282;
+
         // eyes0001 (components)
         const eyes0001Animation = new Animation(eyes0001);
         eyes0001Animation.key = "eyes";
