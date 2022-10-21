@@ -10,7 +10,7 @@ rooms = {
 	},
 	110: {
 		key: 'Coffee',
-		scene: require(`@rooms/old/coffee/Coffee`).default,
+		scene: require(`@rooms/spooky_fair/coffee/Coffee`).default,
 		x: 640,
 		y: 480
 	},
@@ -112,7 +112,7 @@ rooms = {
 	},
 	400: {
 		key: 'Beach',
-		scene: require(`@rooms/spooky_fair/beach/Beach`).default,
+		scene: require(`@rooms/old/beach/Beach`).default,
 		x: 840,
 		y: 680
 	},
@@ -160,7 +160,7 @@ rooms = {
 	},
 	805: {
 		key: 'Berg',
-		scene: require(`@rooms/spooky_fair/berg/Berg`).default,
+		scene: require(`@rooms/old/berg/Berg`).default,
 		x: 652,
 		y: 448
 	},
@@ -184,7 +184,7 @@ rooms = {
 	},
 	809: {
 		key: 'Forest',
-		scene: require(`@rooms/old/forest/Forest`).default,
+		scene: require(`@rooms/spooky_fair/forest/Forest`).default,
 		x: 760,
 		y: 430
 	},
@@ -346,14 +346,6 @@ rooms = {
 		key: 'Spin',
 		scene: require('@games/spin/Spin').default
 	},
-	1002: {
-		key: 'RingTheBell',
-		scene: require('@games/ringthebell/RingTheBell').default
-	},
-	1003: {
-		key: 'PuffleSuffle',
-		scene: require('@games/pufflesuffle/PuffleSuffle').default
-	}
 }
 
 

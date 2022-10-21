@@ -1,0 +1,522 @@
+{
+    "id": "394c4995-cc56-438e-b8b4-8f8d87a927ec",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/spooky_fair/coffee/coffee-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Coffee",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "af92ec52-e01d-4b5a-9450-406d882d943f",
+            "label": "background_png",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "Background.png"
+            },
+            "x": 762,
+            "y": 520
+        },
+        {
+            "type": "Image",
+            "id": "c92f345e-8774-453c-a8ec-9cd6730488d9",
+            "label": "bigPumpkin_png",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "BigPumpkin.png"
+            },
+            "x": 1443,
+            "y": 826
+        },
+        {
+            "type": "Image",
+            "id": "9dd32b17-157a-4f5d-94f3-b6a45e8f29c3",
+            "label": "blueChairBottom_png_png",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "BlueChairBottom.png.png"
+            },
+            "x": 477,
+            "y": 418
+        },
+        {
+            "type": "Image",
+            "id": "eaaf5e77-1eb7-4fca-923d-be8b25ac724f",
+            "label": "redChairBottom_png",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "RedChairBottom.png"
+            },
+            "x": 628,
+            "y": 414
+        },
+        {
+            "type": "Image",
+            "id": "0594f000-9312-46d9-82e3-cd494516a772",
+            "label": "fireExtinguisher_png",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "FireExtinguisher.png"
+            },
+            "x": 48,
+            "y": 738
+        },
+        {
+            "type": "Image",
+            "id": "f1691d05-77cd-4b07-a0a3-6e27e16f9cec",
+            "label": "tallCandles_png",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "TallCandles.png"
+            },
+            "x": 89,
+            "y": 572
+        },
+        {
+            "type": "Image",
+            "id": "7c611f28-f97b-43cf-9f50-4cd6d34f9e9c",
+            "label": "counterBack_png",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "CounterBack.png"
+            },
+            "x": 886,
+            "y": 450
+        },
+        {
+            "type": "Image",
+            "id": "1c4b9cb1-9434-40ea-827a-72415c798430",
+            "label": "counterTop_png",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "CounterTop.png"
+            },
+            "x": 790.6030456812503,
+            "y": 614.5996274420296,
+            "originX": 0.18806003087636006,
+            "originY": 0.6657355674981259
+        },
+        {
+            "type": "Image",
+            "id": "bcbe46f4-f9e6-4a52-a481-c7be6c97a825",
+            "label": "counterGoodies_png",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "CounterGoodies.png"
+            },
+            "x": 764.3657464143884,
+            "y": 720.7359032812915,
+            "originX": 0.02574467293120879,
+            "originY": 1.5479279748038832
+        },
+        {
+            "type": "Image",
+            "id": "ec14de00-1dc4-43de-94bf-c103d927756c",
+            "label": "signBottom_png",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "SignBottom.png"
+            },
+            "x": 894,
+            "y": 680
+        },
+        {
+            "type": "Image",
+            "id": "517e896d-c326-44e0-b204-deaf9ea4137d",
+            "label": "signTop0001_png",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "SignTop0001.png"
+            },
+            "x": 805.1778046803329,
+            "y": 727.8604293790136,
+            "originX": -0.00245950625700089,
+            "originY": 0.7542098577863005
+        },
+        {
+            "type": "Image",
+            "id": "215028e5-534e-40ad-b7e1-9940a2b90635",
+            "label": "arrowSign_png",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "ArrowSign.png"
+            },
+            "x": 1380,
+            "y": 274
+        },
+        {
+            "type": "Image",
+            "id": "f92ae026-db07-41f8-81aa-c0798220f605",
+            "label": "streamers_png",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "Streamers.png"
+            },
+            "x": 741,
+            "y": 109
+        },
+        {
+            "type": "Image",
+            "id": "a6940c2b-a3f5-48b7-80c6-dd410e55ab62",
+            "label": "smallPumpkin_png",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "SmallPumpkin.png"
+            },
+            "x": 946,
+            "y": 728
+        },
+        {
+            "type": "Image",
+            "id": "45a14afe-1ff0-45c5-a782-186f9d3a2ac7",
+            "label": "smallTable_png",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "SmallTable.png"
+            },
+            "x": 127.95972216215951,
+            "y": 673.9234816254373,
+            "originX": 0.005452975253745975,
+            "originY": 0.7872720567363996
+        },
+        {
+            "type": "Image",
+            "id": "61c9a257-5651-414b-a9ec-429e5d8f3d28",
+            "label": "cakeTable_png",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "CakeTable.png"
+            },
+            "x": 227.73193533365964,
+            "y": 808.3317809505317,
+            "originX": 0.017264875902018376,
+            "originY": 0.820431356792405
+        },
+        {
+            "type": "Image",
+            "id": "b2b02df4-d24a-4c06-8eef-ca5bd5d0870b",
+            "label": "blueChair_png",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "BlueChair.png"
+            },
+            "x": 399.91202905475944,
+            "y": 467.8504820018348,
+            "originX": 0.006333535102496136,
+            "originY": 0.6452627758778862
+        },
+        {
+            "type": "Image",
+            "id": "4b1b4161-9945-4442-8f7e-b85f5eb17a3d",
+            "label": "overheadLight_png",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "OverheadLight.png"
+            },
+            "x": 227,
+            "y": 197
+        },
+        {
+            "type": "Image",
+            "id": "f4d3b5de-1c9c-4058-abe6-595fbfcef27e",
+            "label": "door",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "door",
+            "texture": {
+                "key": "coffee",
+                "frame": "door"
+            },
+            "x": 785,
+            "y": 295
+        },
+        {
+            "type": "Image",
+            "id": "91b13a35-6870-41d1-8eeb-cd6bdad1ad58",
+            "label": "redChair_png",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "RedChair.png"
+            },
+            "x": 585.5930983040714,
+            "y": 467.4883435032109,
+            "originX": 0.0006006342198156011,
+            "originY": 0.69148275002085
+        },
+        {
+            "type": "Image",
+            "id": "e49ad1e3-a933-4071-9d36-b2609d4f2743",
+            "label": "beans",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "beans",
+            "texture": {
+                "key": "coffee",
+                "frame": "beans"
+            },
+            "x": 1016,
+            "y": 685
+        },
+        {
+            "type": "Sprite",
+            "id": "4c0df3fd-d4d4-420e-9206-02fad3a78b8c",
+            "label": "candle1_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "Candle1.png"
+            },
+            "x": 193,
+            "y": 559
+        },
+        {
+            "type": "Sprite",
+            "id": "7c0ec2c8-0d26-4aa7-b841-474da36b69a5",
+            "label": "candle1_png_1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "Candle1.png"
+            },
+            "x": 219,
+            "y": 547
+        },
+        {
+            "type": "Sprite",
+            "id": "0d0e841f-f803-4bee-b206-539cb2ad1939",
+            "label": "candle1_png_2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "Candle1.png"
+            },
+            "x": 245,
+            "y": 559
+        },
+        {
+            "type": "Sprite",
+            "id": "f115a78c-dca4-44fa-a128-b881e0f11883",
+            "label": "candle1_png_3",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "Candle1.png"
+            },
+            "x": 34,
+            "y": 499
+        },
+        {
+            "type": "Sprite",
+            "id": "d84286e5-d167-4a46-b7de-f401d4e80aaf",
+            "label": "candle1_png_4",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "Candle1.png"
+            },
+            "x": 58,
+            "y": 481
+        },
+        {
+            "type": "Sprite",
+            "id": "a62fde22-f0a0-4244-b38f-2f26f147aa2c",
+            "label": "candle1_png_5",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "Candle1.png"
+            },
+            "x": 83,
+            "y": 457
+        },
+        {
+            "type": "Sprite",
+            "id": "1fff526e-f958-4040-bfb3-1a95c9651e9e",
+            "label": "candle1_png_6",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "Candle1.png"
+            },
+            "x": 114,
+            "y": 468
+        },
+        {
+            "type": "Sprite",
+            "id": "19eb8528-fd64-4fdd-a94d-cccf7b45d626",
+            "label": "candle1_png_7",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "Candle1.png"
+            },
+            "x": 144,
+            "y": 477
+        },
+        {
+            "type": "Sprite",
+            "id": "d6bd94c8-1cd3-4db6-b786-4aee53992473",
+            "label": "candle1_png_8",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "Candle1.png"
+            },
+            "x": 325,
+            "y": 550
+        },
+        {
+            "type": "Sprite",
+            "id": "a999caa8-3416-474a-b719-86ce6bd078fe",
+            "label": "candle1_png_9",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "Candle1.png"
+            },
+            "x": 343,
+            "y": 549
+        },
+        {
+            "type": "Sprite",
+            "id": "332e7402-4859-414e-8e29-eb46c26c313e",
+            "label": "candle1_png_10",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "Candle1.png"
+            },
+            "x": 376,
+            "y": 555
+        },
+        {
+            "type": "Sprite",
+            "id": "d4dc63d8-76b7-4277-9719-2f4ad63f97ae",
+            "label": "candle1_png_11",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "Candle1.png"
+            },
+            "x": 450,
+            "y": 610
+        },
+        {
+            "type": "Sprite",
+            "id": "920a5107-adf0-41c3-a188-f6332cf8abb1",
+            "label": "candle1_png_12",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "Candle1.png"
+            },
+            "x": 424,
+            "y": 614
+        },
+        {
+            "type": "Sprite",
+            "id": "37e57bd6-4fc7-4f0c-a995-a4fb183b1be9",
+            "label": "candle1_png_13",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "Candle1.png"
+            },
+            "x": 283,
+            "y": 701
+        },
+        {
+            "type": "Sprite",
+            "id": "05c6951c-c139-405c-95e4-3441b380477a",
+            "label": "candle1_png_14",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "Candle1.png"
+            },
+            "x": 301,
+            "y": 692
+        },
+        {
+            "type": "Sprite",
+            "id": "14952467-76db-4fc0-9ac6-d8ed869bc869",
+            "label": "candle1_png_15",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "Candle1.png"
+            },
+            "x": 330,
+            "y": 716
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "d8014338-e465-4139-bd11-d2d330aded64",
+            "label": "sort",
+            "objectIds": [
+                "b2b02df4-d24a-4c06-8eef-ca5bd5d0870b",
+                "91b13a35-6870-41d1-8eeb-cd6bdad1ad58",
+                "517e896d-c326-44e0-b204-deaf9ea4137d",
+                "61c9a257-5651-414b-a9ec-429e5d8f3d28",
+                "45a14afe-1ff0-45c5-a782-186f9d3a2ac7",
+                "bcbe46f4-f9e6-4a52-a481-c7be6c97a825",
+                "1c4b9cb1-9434-40ea-827a-72415c798430"
+            ]
+        }
+    ]
+}
