@@ -51,6 +51,8 @@ export default class Mtn extends RoomScene {
 
         // sky0001
         const sky0001 = this.add.sprite(932, -25, "sky_spooky", "sky0001");
+        sky0001.scaleX = 1.185732906855572;
+        sky0001.scaleY = 1.185732906855572;
 
         // mtnSeat11
         const mtnSeat11 = new MtnSeat(this, 1155, 638);

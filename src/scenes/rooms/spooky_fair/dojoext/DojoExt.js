@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import { Button, MoveTo } from '@components/components'
+import { Button, MoveTo, Animation } from '@components/components'
 
 
 /* START OF COMPILED CODE */
@@ -36,7 +36,9 @@ export default class DojoExt extends RoomScene {
     _create() {
 
         // sky0001
-        this.add.image(951, -32, "sky_spooky", "sky0001");
+        const sky0001 = this.add.sprite(951, -32, "sky_spooky", "sky0001");
+        sky0001.scaleX = 1.2257601266107045;
+        sky0001.scaleY = 1.2257601266107045;
 
         // dojo
         this.add.image(760, 484, "dojoext_halloween", "dojo");
@@ -59,6 +61,11 @@ export default class DojoExt extends RoomScene {
 
         // lists
         const sort = [pumpkin, front];
+
+        // sky0001 (components)
+        const sky0001Animation = new Animation(sky0001);
+        sky0001Animation.key = "sky";
+        sky0001Animation.end = 282;
 
         // dojo_door (components)
         const dojo_doorButton = new Button(dojo_door);

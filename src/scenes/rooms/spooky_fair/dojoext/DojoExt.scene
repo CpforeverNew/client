@@ -18,16 +18,22 @@
     },
     "displayList": [
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "f80f46b5-1acf-4d17-a92c-3abbaae2eac4",
             "label": "sky0001",
-            "components": [],
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "sky",
+            "Animation.end": 282,
             "texture": {
                 "key": "sky_spooky",
                 "frame": "sky0001"
             },
             "x": 951,
-            "y": -32
+            "y": -32,
+            "scaleX": 1.2257601266107045,
+            "scaleY": 1.2257601266107045
         },
         {
             "type": "Image",
