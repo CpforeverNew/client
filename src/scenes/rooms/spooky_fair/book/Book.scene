@@ -1,0 +1,286 @@
+{
+    "id": "3e1f8139-cc54-4914-b065-562e9c1763e7",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/spooky_fair/book/book-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Book",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "1090adfb-4ce6-4bff-9593-df2940e6fb53",
+            "label": "bg_1",
+            "components": [],
+            "texture": {
+                "key": "book_halloween",
+                "frame": "bg"
+            },
+            "x": 767,
+            "y": 481
+        },
+        {
+            "type": "Image",
+            "id": "c9532f84-c85e-4dc4-bae4-aaaf8557e69e",
+            "label": "chair_table",
+            "components": [],
+            "texture": {
+                "key": "book",
+                "frame": "chair_table"
+            },
+            "x": 132,
+            "y": 722,
+            "originX": 0.5069124423963134,
+            "originY": 0.5103734439834025
+        },
+        {
+            "type": "Image",
+            "id": "3121adc6-b8d0-49cc-80b9-fb0f907a2521",
+            "label": "table",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "table",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "ShowHint.text": "Play Mancala",
+            "texture": {
+                "key": "book",
+                "frame": "table"
+            },
+            "x": 951,
+            "y": 446,
+            "originX": 0.5043478260869565,
+            "originY": 0.46
+        },
+        {
+            "type": "Image",
+            "id": "7c76f0f6-08ce-42ce-95ce-ee2bf30214e8",
+            "label": "table_1",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "table",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "ShowHint.text": "Play Mancala",
+            "texture": {
+                "key": "book",
+                "frame": "table"
+            },
+            "x": 650,
+            "y": 444,
+            "originX": 0.5043478260869565,
+            "originY": 0.46
+        },
+        {
+            "type": "Image",
+            "id": "69f50215-4fae-4002-ab73-5ae417038520",
+            "label": "table_2",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "table",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "ShowHint.text": "Play Mancala",
+            "texture": {
+                "key": "book",
+                "frame": "table"
+            },
+            "x": 430,
+            "y": 644,
+            "originX": 0.5043478260869565,
+            "originY": 0.46
+        },
+        {
+            "type": "Image",
+            "id": "2f6c3924-ae43-4b24-b896-637751ef5008",
+            "label": "table_4",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "table",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "ShowHint.text": "Play Mancala",
+            "texture": {
+                "key": "book",
+                "frame": "table"
+            },
+            "x": 1210,
+            "y": 743,
+            "originX": 0.5043478260869565,
+            "originY": 0.46
+        },
+        {
+            "type": "Sprite",
+            "id": "43e73913-3966-4c99-be47-ae2cfaa19c0d",
+            "label": "books0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "book_halloween",
+                "frame": "door0001"
+            },
+            "x": 300,
+            "y": 362
+        },
+        {
+            "type": "Image",
+            "id": "85b21c3a-a734-4e8b-b5c0-8e7d275b61da",
+            "label": "rightcouch",
+            "components": [],
+            "texture": {
+                "key": "book_halloween",
+                "frame": "rightcouch"
+            },
+            "x": 608,
+            "y": 346
+        },
+        {
+            "type": "Image",
+            "id": "d1a7421a-df86-49f0-8fe7-3b2d8fc445a3",
+            "label": "leaf",
+            "components": [],
+            "texture": {
+                "key": "book_halloween",
+                "frame": "leaf"
+            },
+            "x": 89,
+            "y": 532
+        },
+        {
+            "type": "Image",
+            "id": "7a34fb9b-e979-4ed4-8c59-c22d512cbf0e",
+            "label": "chairback",
+            "components": [],
+            "texture": {
+                "key": "book_halloween",
+                "frame": "chairback"
+            },
+            "x": 171,
+            "y": 597
+        },
+        {
+            "type": "Image",
+            "id": "d55183eb-da0e-4777-af8e-98c5aed69cba",
+            "label": "chair",
+            "components": [],
+            "texture": {
+                "key": "book_halloween",
+                "frame": "chair"
+            },
+            "x": 221.0029729070796,
+            "y": 633.0421856925741,
+            "originX": 0.6718192639078396,
+            "originY": 0.39906062912246487
+        },
+        {
+            "type": "Image",
+            "id": "0cb16a5e-e18d-4d2f-bed8-a9832d233d3e",
+            "label": "table_3",
+            "components": [],
+            "texture": {
+                "key": "book_halloween",
+                "frame": "table"
+            },
+            "x": 171.0029729070796,
+            "y": 758.8508636224509,
+            "originX": 0.6797372023367724,
+            "originY": 0.6653562805910825
+        },
+        {
+            "type": "Image",
+            "id": "59c44c35-ba6b-466e-b94e-bdf9e6cebb02",
+            "label": "table_5",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "table",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "ShowHint.text": "Play Mancala",
+            "texture": {
+                "key": "book",
+                "frame": "table"
+            },
+            "x": 797.456718149923,
+            "y": 684.6519382200925,
+            "originX": 0.45614537521672127,
+            "originY": 0.5265193822009246
+        },
+        {
+            "type": "Rectangle",
+            "id": "225f02db-df12-4dc5-bbfc-59589b9e2c2b",
+            "label": "rectangle_1",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.onBookshelfHover()",
+            "x": 120,
+            "y": 658,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "e1703a67-6111-4268-925a-65bcf27f94a7",
+            "label": "hat",
+            "components": [],
+            "texture": {
+                "key": "book_halloween",
+                "frame": "hat"
+            },
+            "x": 322.8789978027344,
+            "y": 840.4341331519257,
+            "originX": 4.837579728381614,
+            "originY": 4.203547922706081,
+            "flipX": true
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "8bce6f73-b3e7-48cf-9a02-7e5412e5397d",
+            "label": "sort",
+            "objectIds": [
+                "2f6c3924-ae43-4b24-b896-637751ef5008",
+                "69f50215-4fae-4002-ab73-5ae417038520",
+                "7c76f0f6-08ce-42ce-95ce-ee2bf30214e8",
+                "3121adc6-b8d0-49cc-80b9-fb0f907a2521",
+                "c9532f84-c85e-4dc4-bae4-aaaf8557e69e",
+                "0cb16a5e-e18d-4d2f-bed8-a9832d233d3e",
+                "d55183eb-da0e-4777-af8e-98c5aed69cba",
+                "7a34fb9b-e979-4ed4-8c59-c22d512cbf0e",
+                "59c44c35-ba6b-466e-b94e-bdf9e6cebb02",
+                "e1703a67-6111-4268-925a-65bcf27f94a7"
+            ]
+        }
+    ]
+}

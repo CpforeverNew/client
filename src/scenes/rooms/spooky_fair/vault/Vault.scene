@@ -32,7 +32,7 @@
         {
             "type": "Sprite",
             "id": "bf47ea2a-e6d5-4c09-b356-9a7c3a91512e",
-            "label": "door0001",
+            "label": "door",
             "scope": "CLASS",
             "components": [
                 "SimpleButton",

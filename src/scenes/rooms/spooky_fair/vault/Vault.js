@@ -11,7 +11,7 @@ export default class Vault extends RoomScene {
         super("Vault");
 
         /** @type {Phaser.GameObjects.Sprite} */
-        this.door0001;
+        this.door;
         /** @type {Phaser.GameObjects.Sprite} */
         this.cds0001;
         /** @type {Phaser.GameObjects.Sprite} */
@@ -43,8 +43,8 @@ export default class Vault extends RoomScene {
         // bg
         this.add.image(778, 527, "vault", "bg");
 
-        // door0001
-        const door0001 = this.add.sprite(763, 330, "vault", "door0001");
+        // door
+        const door = this.add.sprite(763, 330, "vault", "door0001");
 
         // backright
         const backright = this.add.image(1209.157633760896, 526.1363539162678, "vault", "backright");
@@ -179,12 +179,12 @@ export default class Vault extends RoomScene {
         // lists
         const sort = [cake, righttable, table, candle, candy, leftfront, pumpkins, frontright, beans, map, freesign];
 
-        // door0001 (components)
-        const door0001SimpleButton = new SimpleButton(door0001);
-        door0001SimpleButton.hoverCallback = () => this.onDoorHover();
-        const door0001MoveTo = new MoveTo(door0001);
-        door0001MoveTo.x = 763;
-        door0001MoveTo.y = 424;
+        // door (components)
+        const doorSimpleButton = new SimpleButton(door);
+        doorSimpleButton.hoverCallback = () => this.onDoorHover();
+        const doorMoveTo = new MoveTo(door);
+        doorMoveTo.x = 763;
+        doorMoveTo.y = 424;
 
         // cds0001 (components)
         const cds0001SimpleButton = new SimpleButton(cds0001);
@@ -279,7 +279,7 @@ export default class Vault extends RoomScene {
         backcandle_11Animation.key = "backcandle1";
         backcandle_11Animation.end = 12;
 
-        this.door0001 = door0001;
+        this.door = door;
         this.cds0001 = cds0001;
         this.lightlight = lightlight;
         this.sort = sort;
@@ -299,7 +299,7 @@ export default class Vault extends RoomScene {
             return;    
         }
 
-        this.door0001.play("door")
+        this.door.play("doorUnlock")
         this.doorHovered = true;
     }
 
