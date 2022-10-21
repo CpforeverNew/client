@@ -190,7 +190,7 @@ rooms = {
 	},
 	810: {
 		key: 'Cove',
-		scene: require(`@rooms/old/cove/Cove`).default,
+		scene: require(`@rooms/spooky_fair/cove/Cove`).default,
 		x: 840,
 		y: 480
 	},
@@ -346,6 +346,20 @@ rooms = {
 		key: 'Spin',
 		scene: require('@games/spin/Spin').default
 	},
+	1002: {
+		key: 'RingTheBell',
+		scene: require('@games/ringthebell/RingTheBell').default
+	},
+	1003: {
+		key: 'PuffleSuffle',
+		scene: require('@games/pufflesuffle/PuffleSuffle').default
+	},
+	8008415: {
+		key: 'Vault',
+		scene: require('@rooms/spooky_fair/vault/Vault').default,
+		x: 500,
+		y: 560
+	}
 }
 
 

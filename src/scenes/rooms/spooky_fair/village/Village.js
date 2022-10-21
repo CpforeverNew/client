@@ -41,7 +41,7 @@ export default class Village extends RoomScene {
     _create() {
 
         // sky0001
-        this.add.image(1032, 37, "sky_spooky", "sky0001");
+        const sky0001 = this.add.sprite(1032, 37, "sky_spooky", "sky0001");
 
         // bg
         this.add.image(729, 478, "village_halloween", "bg");
