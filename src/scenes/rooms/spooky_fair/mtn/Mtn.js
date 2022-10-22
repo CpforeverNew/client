@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import { Animation, Zone, MoveTo, SimpleButton } from '@components/components'
+import { Animation, Zone, MoveTo, SimpleButton, ShowHint } from '@components/components'
 
 import MtnSeat from './MtnSeat'
 
@@ -60,32 +60,32 @@ export default class Mtn extends RoomScene {
         mtnSeat11.visible = false;
 
         // zone4
-        const zone4 = this.add.rectangle(1127, 657, 180, 90);
+        const zone4 = this.add.rectangle(1114.2467531119082, 679.3181820541607, 180, 90);
         zone4.angle = -33;
-        zone4.visible = false;
+        zone4.setOrigin(0.37304929821917765, 0.6307965099001169);
         zone4.alpha = 0.5;
         zone4.isFilled = true;
         zone4.fillColor = 65280;
 
         // zone3
-        const zone3 = this.add.rectangle(899, 753, 180, 90);
-        zone3.visible = false;
+        const zone3 = this.add.rectangle(906.9707793050574, 764.1590910270803, 180, 90);
+        zone3.setOrigin(0.5442821072503187, 0.6239899003008923);
         zone3.alpha = 0.5;
         zone3.isFilled = true;
         zone3.fillColor = 65280;
 
         // zone2
-        const zone2 = this.add.rectangle(633, 709, 200, 90);
+        const zone2 = this.add.rectangle(634.0020624197113, 716.0144369379791, 200, 90);
         zone2.angle = 11;
-        zone2.visible = false;
+        zone2.setOrigin(0.5116103472215081, 0.5743817728038835);
         zone2.alpha = 0.5;
         zone2.isFilled = true;
         zone2.fillColor = 65280;
 
         // zone1
-        const zone1 = this.add.rectangle(334, 568, 230, 90);
+        const zone1 = this.add.rectangle(324.9814382225983, 581.0268114562468, 230, 90);
         zone1.angle = 33;
-        zone1.visible = false;
+        zone1.setOrigin(0.49796220887788906, 0.675967380375613);
         zone1.alpha = 0.5;
         zone1.isFilled = true;
         zone1.fillColor = 65280;
@@ -136,7 +136,7 @@ export default class Mtn extends RoomScene {
         track0001.scaleY = 1.0286146830746499;
 
         // railing
-        const railing = this.add.image(879.2628255360394, 206.53636172175777, "mtn_halloween", "railing");
+        const railing = this.add.image(887, 213, "mtn_halloween", "railing");
         railing.scaleX = 1.0613720767924026;
         railing.scaleY = 1.0613720767924026;
         railing.setOrigin(0.2861106382987247, 0.30997233946917774);
@@ -243,15 +243,27 @@ export default class Mtn extends RoomScene {
 
         // zone4 (components)
         new MoveTo(zone4);
+        const zone4ShowHint = new ShowHint(zone4);
+        zone4ShowHint.text = "Sled Race";
+        new SimpleButton(zone4);
 
         // zone3 (components)
         new MoveTo(zone3);
+        const zone3ShowHint = new ShowHint(zone3);
+        zone3ShowHint.text = "Sled Race";
+        new SimpleButton(zone3);
 
         // zone2 (components)
         new MoveTo(zone2);
+        const zone2ShowHint = new ShowHint(zone2);
+        zone2ShowHint.text = "Sled Race";
+        new SimpleButton(zone2);
 
         // zone1 (components)
         new MoveTo(zone1);
+        const zone1ShowHint = new ShowHint(zone1);
+        zone1ShowHint.text = "Sled Race";
+        new SimpleButton(zone1);
 
         // shopsled0001 (components)
         const shopsled0001SimpleButton = new SimpleButton(shopsled0001);
