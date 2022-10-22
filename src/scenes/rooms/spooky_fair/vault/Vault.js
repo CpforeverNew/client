@@ -16,14 +16,14 @@ export default class Vault extends RoomScene {
         this.cds0001;
         /** @type {Phaser.GameObjects.Sprite} */
         this.lightlight;
-        /** @type {Phaser.GameObjects.Image[]} */
+        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
         this.sort;
 
 
         /* START-USER-CTR-CODE */
 
         this.roomTriggers = {
-            'book': () => this.triggerRoom(111,50,50)
+            'book': () => this.triggerRoom(111,454,534)
         }
 
         this.roomAnims = true
@@ -127,36 +127,46 @@ export default class Vault extends RoomScene {
         const backcandle_2 = this.add.sprite(1116, 292, "vault", "backcandle20001");
 
         // backcandle_3
-        const backcandle_3 = this.add.sprite(676, 445, "vault", "backcandle10001");
+        const backcandle_3 = this.add.sprite(702.8545245630261, 563.9118430074188, "vault", "backcandle10001");
+        backcandle_3.setOrigin(4.050646366146582, 5.905083773064493);
 
         // backcandle_4
-        const backcandle_4 = this.add.sprite(697, 433, "vault", "backcandle10001");
+        const backcandle_4 = this.add.sprite(725.753273514089, 568.968869668319, "vault", "backcandle10001");
+        backcandle_4.setOrigin(4.607610502012709, 6.680403166741774);
 
         // backcandle_5
-        const backcandle_5 = this.add.sprite(719, 442, "vault", "backcandle10001");
+        const backcandle_5 = this.add.sprite(751.6520224651518, 532.6459131122127, "vault", "backcandle10001");
+        backcandle_5.setOrigin(5.164574637878835, 4.620268777827851);
 
         // backcandle_6
-        const backcandle_6 = this.add.sprite(763, 466, "vault", "backcandle10001");
+        const backcandle_6 = this.add.sprite(781.031713898666, 562.4940365388071, "vault", "backcandle10001");
+        backcandle_6.setOrigin(3.0759591283808567, 4.886092569945777);
 
         // backcandle_7
-        const backcandle_7 = this.add.sprite(807, 452, "vault", "backcandle10001");
+        const backcandle_7 = this.add.sprite(810.8987489510629, 514.3799832170066, "vault", "backcandle10001");
+        backcandle_7.setOrigin(1.0569641358661264, 3.3354537825912094);
 
         // backcandle_9
-        const backcandle_9 = this.add.sprite(890, 472, "vault", "backcandle10001");
+        const backcandle_9 = this.add.sprite(879.7657840034599, 544.6141992135466, "vault", "backcandle10001");
         backcandle_9.angle = 15;
+        backcandle_9.setOrigin(1.7726349187292954, 3.8085791522795476);
 
         // backcandle_10
-        const backcandle_10 = this.add.sprite(668, 511, "vault", "backcandle10001");
+        const backcandle_10 = this.add.sprite(709.9115512239264, 585.0762300701954, "vault", "backcandle10001");
         backcandle_10.angle = -8;
+        backcandle_10.setOrigin(4.956321745462755, 4.09946760659843);
 
         // backcandle_12
-        const backcandle_12 = this.add.sprite(1066, 645, "vault", "backcandle10001");
+        const backcandle_12 = this.add.sprite(1069.36365449353, 736.3804408648155, "vault", "backcandle10001");
+        backcandle_12.setOrigin(0.9805143085053974, 4.65365448317038);
 
         // backcandle_13
-        const backcandle_13 = this.add.sprite(1091, 633, "vault", "backcandle20001");
+        const backcandle_13 = this.add.sprite(1099.3790480115717, 741.8231710486521, "vault", "backcandle20001");
+        backcandle_13.setOrigin(1.6970051451088952, 5.446508020291509);
 
         // backcandle_14
-        const backcandle_14 = this.add.sprite(1118, 645, "vault", "backcandle10001");
+        const backcandle_14 = this.add.sprite(1128.3526850436272, 739.3212010454299, "vault", "backcandle10001");
+        backcandle_14.setOrigin(1.9789567199195193, 4.787326798407677);
 
         // topleftbook
         this.add.image(27, 599, "vault", "topleftbook");
@@ -169,15 +179,20 @@ export default class Vault extends RoomScene {
         partyhat.fillAlpha = 0;
 
         // backcandle_8
-        const backcandle_8 = this.add.sprite(736, 513, "vault", "backcandle10001");
+        const backcandle_8 = this.add.sprite(733, 538, "vault", "backcandle10001");
         backcandle_8.angle = 10;
+        backcandle_8.setOrigin(0.4907198247454159, 1.3819215048876081);
 
         // backcandle_11
-        const backcandle_11 = this.add.sprite(851, 481, "vault", "backcandle10001");
+        const backcandle_11 = this.add.sprite(836, 560, "vault", "backcandle10001");
         backcandle_11.angle = 10;
+        backcandle_11.setOrigin(0.6114402940997609, 3.8902984495849906);
+
+        // rightglow
+        this.add.image(1087, 637, "vault", "rightglow");
 
         // lists
-        const sort = [cake, righttable, table, candle, candy, leftfront, pumpkins, frontright, beans, map, freesign];
+        const sort = [cake, righttable, table, candle, candy, leftfront, pumpkins, frontright, beans, map, freesign, backcandle_12, backcandle_13, backcandle_14, backcandle_3, backcandle_4, backcandle_5, backcandle_6, backcandle_7, backcandle_11, backcandle_9, backcandle_8, backcandle_10];
 
         // door (components)
         const doorSimpleButton = new SimpleButton(door);
