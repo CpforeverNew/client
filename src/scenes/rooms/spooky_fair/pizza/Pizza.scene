@@ -105,10 +105,10 @@
                 "key": "pizza_halloween",
                 "frame": "table_left"
             },
-            "x": 493.5290787937087,
-            "y": 666.3840510361026,
-            "originX": 0.49719690235883446,
-            "originY": 0.4834434637917866
+            "x": 491.35580665518216,
+            "y": 713.1094800337012,
+            "originX": 0.4842607321399597,
+            "originY": 0.7791741399346738
         },
         {
             "type": "Image",
@@ -119,10 +119,10 @@
                 "key": "pizza_halloween",
                 "frame": "table_mid"
             },
-            "x": 760.3877536727096,
-            "y": 780.2342204272954,
-            "originX": 0.47849841160302053,
-            "originY": 0.49515325659330345
+            "x": 758.2144775390625,
+            "y": 818.2665294682299,
+            "originX": 0.46556224138414576,
+            "originY": 0.7358642720584441
         },
         {
             "type": "Image",
@@ -133,10 +133,10 @@
                 "key": "pizza_halloween",
                 "frame": "table_right"
             },
-            "x": 1069.2154523182646,
-            "y": 736.9174011975838,
-            "originX": 0.4893775403211145,
-            "originY": 0.48049003079682745
+            "x": 1073.5620072951044,
+            "y": 777.1230291804179,
+            "originX": 0.5152498807588641,
+            "originY": 0.7349559614314053
         },
         {
             "type": "Image",
@@ -247,7 +247,6 @@
                 "SimpleButton"
             ],
             "SimpleButton.hoverCallback": "() => this.onRegOver()",
-            "SimpleButton.pixelPerfect": true,
             "texture": {
                 "key": "pizza_halloween",
                 "frame": "register0001"
@@ -386,10 +385,12 @@
                 "key": "pizza_halloween",
                 "frame": "flame0001"
             },
-            "x": 499,
-            "y": 583,
+            "x": 510.4579932109747,
+            "y": 666.4786783925047,
             "scaleX": 0.5,
-            "scaleY": 0.5
+            "scaleY": 0.5,
+            "originX": 0.7728093175774715,
+            "originY": 1.939286634263775
         },
         {
             "type": "Sprite",
@@ -404,10 +405,12 @@
                 "key": "pizza_halloween",
                 "frame": "flame0001"
             },
-            "x": 761,
-            "y": 695,
+            "x": 778.7086468781523,
+            "y": 781.9399949014792,
             "scaleX": 0.5,
-            "scaleY": 0.5
+            "scaleY": 0.5,
+            "originX": 0.9216338511075557,
+            "originY": 1.99896577280357
         },
         {
             "type": "Sprite",
@@ -422,10 +425,12 @@
                 "key": "pizza_halloween",
                 "frame": "flame0001"
             },
-            "x": 1068,
-            "y": 654,
+            "x": 1075.510767783574,
+            "y": 748.4682801008709,
             "scaleX": 0.5,
-            "scaleY": 0.5
+            "scaleY": 0.5,
+            "originX": 0.678825021517057,
+            "originY": 2.128763117056063
         },
         {
             "type": "Sprite",
@@ -582,9 +587,6 @@
                 "e8915c85-0d6a-408e-a86e-78493184218f",
                 "6c9136b3-c0d1-4521-9e4e-6bb20852931d",
                 "d8281468-632f-4f71-be72-e4d92f5e2e59",
-                "1019ec36-cff2-44eb-9f82-faede20bc4ad",
-                "b8972c80-b82a-420d-bceb-3fcdd154bdd4",
-                "621bbb57-98ad-4fdb-b42f-cf21f66fe1a1",
                 "5be5d115-8035-4a58-a881-072ba869b91f",
                 "49189297-4821-4b5f-8313-1713f6b7fa59",
                 "05a1c988-44c0-4dc6-aae0-50f003b2ad72",
@@ -602,7 +604,10 @@
                 "18270c0d-3b2e-4c60-b369-77496dd44ad1",
                 "358bf446-f3e0-4bfe-98ae-4d23d214a8c8",
                 "f1791378-cbba-4a7d-8c54-2ea1c20300ee",
-                "52295ac4-d4a1-46e4-bbd4-c4c12322458f"
+                "52295ac4-d4a1-46e4-bbd4-c4c12322458f",
+                "621bbb57-98ad-4fdb-b42f-cf21f66fe1a1",
+                "b8972c80-b82a-420d-bceb-3fcdd154bdd4",
+                "1019ec36-cff2-44eb-9f82-faede20bc4ad"
             ]
         }
     ]
