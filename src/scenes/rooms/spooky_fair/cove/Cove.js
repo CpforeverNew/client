@@ -44,25 +44,34 @@ export default class Cove extends RoomScene {
         const cautiontapemid = this.add.image(928, 657, "cove-spooky", "cautiontapemid");
         cautiontapemid.setOrigin(0.47923192611842114, 0.7493505292680174);
 
+        // fap
+        const fap = this.add.image(294.6660991304181, 451.1139848259839, "cove-spooky", "fap");
+        fap.setOrigin(0.7057889601678863, 0.633016620875223);
+
+        // jolright_1
+        const jolright_1 = this.add.image(133, 576, "cove-spooky", "jolright");
+        jolright_1.scaleX = 1.4;
+        jolright_1.scaleY = 1.4;
+        jolright_1.setOrigin(0.575005610209575, 0.8525828271442899);
+        jolright_1.flipX = true;
+
+        // jolleft
+        const jolleft = this.add.image(122, 620, "cove-spooky", "jolleft");
+        jolleft.scaleX = 1.4;
+        jolleft.scaleY = 1.4;
+        jolleft.setOrigin(0.5501743517867228, 0.8164986106227291);
+
         // cautiontapeleft
         const cautiontapeleft = this.add.image(551.6391303750045, 794.2369563125158, "cove-spooky", "cautiontapeleft");
         cautiontapeleft.setOrigin(0.6074370579000041, 0.8483279170354321);
 
         // fg
-        const fg = this.add.image(244.7765564475827, 934.5816920217306, "cove-spooky", "fg");
-        fg.setOrigin(0.47719506799922146, 0.9411158381479438);
-
-        // fap
-        const fap = this.add.image(294.6660991304181, 451.1139848259839, "cove-spooky", "fap");
-        fap.setOrigin(0.7057889601678863, 0.633016620875223);
-
-        // jolleft
-        const jolleft = this.add.image(145.03504907242026, 543.1051472172608, "cove-spooky", "jolleft");
-        jolleft.setOrigin(0.5745067786718551, 0.7291790786995034);
+        const fg = this.add.image(265.67617433858857, 924.0133185965385, "cove-spooky", "fg");
+        fg.setOrigin(0.5161869472083169, 0.9232940361649447);
 
         // jolleft_1
-        const jolleft_1 = this.add.image(173.05257360863038, 596.5963849491557, "cove-spooky", "jolleft");
-        jolleft_1.setOrigin(0.6117601680077825, 0.7100808221412109);
+        const jolleft_1 = this.add.image(207, 622, "cove-spooky", "jolleft");
+        jolleft_1.setOrigin(0.577694770948728, 0.8148642586646313);
 
         // bigrockright0001
         this.add.image(1434, 689, "cove-spooky", "bigrockright0001");
@@ -136,12 +145,13 @@ export default class Cove extends RoomScene {
         cautiontaperight.setOrigin(0.4582598269510632, 0.7707201135182815);
 
         // lists
-        const sort = [shackleftwall, bigcage, hutroof, jolleft_1, jolleft, roofnbeams, orangethingy, antennae0001, fire0001, pcdesk, jolright, smolcage, chairnear, chairfar, tapedcat, cautiontapemid, cautiontapeleft, cautiontaperight];
+        const sort = [shackleftwall, bigcage, hutroof, roofnbeams, orangethingy, antennae0001, fire0001, pcdesk, jolright, smolcage, chairnear, chairfar, tapedcat, cautiontapemid, cautiontapeleft, cautiontaperight, fg];
 
         // fap (components)
-        new SimpleButton(fap);
+        const fapButton = new Button(fap);
+        fapButton.spriteName = "fap";
         const fapMoveTo = new MoveTo(fap);
-        fapMoveTo.x = 300;
+        fapMoveTo.x = 320;
         fapMoveTo.y = 550;
         const fapShowHint = new ShowHint(fap);
         fapShowHint.text = "Feed-A-Puffle";
@@ -161,14 +171,6 @@ export default class Cove extends RoomScene {
         const net0001Animation = new Animation(net0001);
         net0001Animation.key = "net";
         net0001Animation.end = 150;
-
-        // tapedcat (components)
-        const tapedcatSimpleButton = new SimpleButton(tapedcat);
-        tapedcatSimpleButton.callback = () => this.interface.loadExternal('Waves');
-
-        // binoculars (components)
-        const binocularsButton = new Button(binoculars);
-        binocularsButton.spriteName = "binoculars";
 
         this.sort = sort;
 

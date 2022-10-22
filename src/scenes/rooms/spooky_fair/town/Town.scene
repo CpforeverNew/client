@@ -1,0 +1,372 @@
+{
+    "id": "1f65b070-87c8-4fb6-9af5-0b5a4a08dadc",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/spooky_fair/town/town-spooky-pack.json",
+            "client/assets/media/rooms/old/town/town-pack.json",
+            "client/assets/media/rooms/spooky_fair/sky/sky-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Town",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "27d5eb2e-6b41-4f27-98e5-e56b52eadc98",
+            "label": "sky0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "sky",
+            "Animation.end": 282,
+            "texture": {
+                "key": "sky_spooky",
+                "frame": "sky0001"
+            },
+            "x": 1036,
+            "y": 140,
+            "scaleX": 1.09984007296373,
+            "scaleY": 1.09984007296373
+        },
+        {
+            "type": "Rectangle",
+            "id": "557b3bea-0adc-4936-a2f4-cdf14f904b58",
+            "label": "rectangle",
+            "components": [],
+            "x": 989,
+            "y": 126,
+            "scaleX": 0.17686731678351253,
+            "scaleY": 0.17686731678351253,
+            "isFilled": true,
+            "fillColor": "#000",
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "c6780861-599a-4db0-a433-0269d48dc256",
+            "label": "snow",
+            "components": [],
+            "texture": {
+                "key": "town_halloween",
+                "frame": "snow"
+            },
+            "x": 784,
+            "y": 687
+        },
+        {
+            "type": "Image",
+            "id": "6c14bd5f-faeb-4c11-b083-ba76b3350f7a",
+            "label": "bg_png",
+            "components": [],
+            "texture": {
+                "key": "town_halloween",
+                "frame": "bg.png"
+            },
+            "x": 762,
+            "y": 444
+        },
+        {
+            "type": "Rectangle",
+            "id": "caf99403-bdc3-4301-9be9-2e13a1c50aaf",
+            "label": "rectangle_1",
+            "components": [],
+            "x": 977,
+            "y": 163,
+            "scaleX": 0.17686731678351253,
+            "scaleY": 0.17686731678351253,
+            "isFilled": true,
+            "fillColor": "#000",
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "2b5b3032-cf41-4679-a799-283b9c3876d8",
+            "label": "dance",
+            "components": [],
+            "texture": {
+                "key": "town_halloween",
+                "frame": "dance"
+            },
+            "x": 790,
+            "y": 201
+        },
+        {
+            "type": "Image",
+            "id": "27ceac06-4a26-4110-8f71-db8c5786f8a6",
+            "label": "coffee_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "coffee_door",
+            "Button.activeFrame": false,
+            "MoveTo.x": 532,
+            "MoveTo.y": 426,
+            "texture": {
+                "key": "town",
+                "frame": "coffee_door"
+            },
+            "x": 419,
+            "y": 276,
+            "scaleX": 1.25,
+            "scaleY": 1.25,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "736756e0-1472-4c14-a65d-4cef2fa6527e",
+            "label": "coffee",
+            "components": [],
+            "texture": {
+                "key": "town_halloween",
+                "frame": "coffee"
+            },
+            "x": 352,
+            "y": 283
+        },
+        {
+            "type": "Image",
+            "id": "be4353ac-e3fa-4e10-9d18-f141bc301285",
+            "label": "untitled_1",
+            "components": [],
+            "texture": {
+                "key": "town_halloween",
+                "frame": "Untitled-1"
+            },
+            "x": 1040,
+            "y": 454
+        },
+        {
+            "type": "Rectangle",
+            "id": "cc83e6f3-a333-46aa-ac4e-6cb86ca113c7",
+            "label": "rectangle_2",
+            "components": [],
+            "x": 1110,
+            "y": 361,
+            "scaleX": 0.14766713410232768,
+            "scaleY": 0.14766713410232768,
+            "isFilled": true,
+            "fillColor": "#a896c2",
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "35b8d68a-1616-40ce-8354-21f7af3850e1",
+            "label": "gift",
+            "components": [],
+            "texture": {
+                "key": "town_halloween",
+                "frame": "gift"
+            },
+            "x": 1185,
+            "y": 284
+        },
+        {
+            "type": "Image",
+            "id": "b9087acf-f895-4177-ab09-f68085a61ccc",
+            "label": "gift_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "gift_door",
+            "Button.activeFrame": false,
+            "MoveTo.x": 1053,
+            "MoveTo.y": 442,
+            "texture": {
+                "key": "town",
+                "frame": "gift_door"
+            },
+            "x": 981,
+            "y": 281,
+            "scaleX": 1.150024020179054,
+            "scaleY": 1.150024020179054,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "a08873a4-5c3a-488e-98e4-a7bb69745b49",
+            "label": "leftpumpkin",
+            "components": [],
+            "texture": {
+                "key": "town_halloween",
+                "frame": "leftpumpkin"
+            },
+            "x": 967,
+            "y": 430.05723756623746,
+            "scaleX": 1.1,
+            "scaleY": 1.1,
+            "originY": 0.668992561614822
+        },
+        {
+            "type": "Image",
+            "id": "d7f86627-4a47-4bb1-a6db-c46715340e9e",
+            "label": "rightpumpkin",
+            "components": [],
+            "texture": {
+                "key": "town_halloween",
+                "frame": "rightpumpkin"
+            },
+            "x": 1172.7833885803052,
+            "y": 587.5476979718645,
+            "scaleX": 1.1,
+            "scaleY": 1.1,
+            "originX": 0.5985789942753125,
+            "originY": 0.6520933054533392
+        },
+        {
+            "type": "Image",
+            "id": "bae1b2e9-bf03-4895-b4ba-a0c1012e7fae",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "town_halloween",
+                "frame": "fg"
+            },
+            "x": 781.2606069557016,
+            "y": 936.526270284827,
+            "originX": 0.5098370714976879,
+            "originY": 0.9159829637866318
+        },
+        {
+            "type": "Container",
+            "id": "dd4ee433-3a7a-4ce6-9706-ae1170c9eb25",
+            "label": "container_1",
+            "components": [],
+            "x": 396,
+            "y": 536,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "3eff40c6-a1f9-47b6-a794-2c7a4468738b",
+                    "label": "chair",
+                    "components": [],
+                    "texture": {
+                        "key": "town_halloween",
+                        "frame": "chair"
+                    },
+                    "x": 11.321659445455737,
+                    "y": -3.996493746051442,
+                    "originX": 0.6451494803823852,
+                    "originY": 0.44597753714175997
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "3efcec66-a02b-475e-80fc-815787c2c540",
+            "label": "tables",
+            "components": [],
+            "texture": {
+                "key": "town_halloween",
+                "frame": "tables"
+            },
+            "x": 475.1988576162644,
+            "y": 558.3582663215171,
+            "scaleX": 1.1,
+            "originX": 0.527071874527435,
+            "originY": 0.6686568552804526
+        },
+        {
+            "type": "Image",
+            "id": "2c4fa950-225f-48cb-a202-9a404f407cd4",
+            "label": "stand",
+            "components": [],
+            "texture": {
+                "key": "town_halloween",
+                "frame": "stand"
+            },
+            "x": 949.8231626876196,
+            "y": 711.7315104468684,
+            "originX": 0.5169915113691664,
+            "originY": 0.5400429869610222
+        },
+        {
+            "type": "Rectangle",
+            "id": "b6df8073-1b05-468b-a39c-9e7c3b05d37d",
+            "label": "rectangle_4",
+            "components": [
+                "MoveTo",
+                "SimpleButton"
+            ],
+            "MoveTo.x": 783,
+            "MoveTo.y": 400,
+            "x": 784,
+            "y": 327,
+            "scaleX": 2.017966937422621,
+            "scaleY": 1.5101020117818045,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "d0105f59-1ee7-4373-a5ac-ddc69633cb71",
+            "label": "rectangle_3",
+            "components": [
+                "MoveTo",
+                "SimpleButton"
+            ],
+            "MoveTo.x": 783,
+            "MoveTo.y": 374,
+            "SimpleButton.callback": "() => {this.triggerRoom(8008415, 100, 50)}",
+            "x": 1238,
+            "y": 794,
+            "scaleX": 0.9284943559594598,
+            "scaleY": 0.9284943559594598,
+            "angle": 15,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "ddf17c02-b0d9-4194-8b2d-eb2c107bd2ba",
+            "label": "rightsign",
+            "components": [],
+            "texture": {
+                "key": "town_halloween",
+                "frame": "rightsign"
+            },
+            "x": 1298.8516701780225,
+            "y": 991.5937366875696,
+            "scaleX": 1.1,
+            "scaleY": 1.1,
+            "originX": 0.8846616694202258,
+            "originY": 1.3279838824801864
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "2c4fa950-225f-48cb-a202-9a404f407cd4",
+                "3efcec66-a02b-475e-80fc-815787c2c540",
+                "3eff40c6-a1f9-47b6-a794-2c7a4468738b",
+                "d7f86627-4a47-4bb1-a6db-c46715340e9e",
+                "a08873a4-5c3a-488e-98e4-a7bb69745b49",
+                "ddf17c02-b0d9-4194-8b2d-eb2c107bd2ba",
+                "bae1b2e9-bf03-4895-b4ba-a0c1012e7fae"
+            ]
+        }
+    ]
+}

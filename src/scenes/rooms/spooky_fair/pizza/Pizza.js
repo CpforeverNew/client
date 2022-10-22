@@ -60,16 +60,16 @@ export default class Pizza extends RoomScene {
         chairs_2.setOrigin(0.5178103617096991, 0.434851120262002);
 
         // table_left
-        const table_left = this.add.image(493.5290787937087, 666.3840510361026, "pizza_halloween", "table_left");
-        table_left.setOrigin(0.49719690235883446, 0.4834434637917866);
+        const table_left = this.add.image(491.35580665518216, 713.1094800337012, "pizza_halloween", "table_left");
+        table_left.setOrigin(0.4842607321399597, 0.7791741399346738);
 
         // table_mid
-        const table_mid = this.add.image(760.3877536727096, 780.2342204272954, "pizza_halloween", "table_mid");
-        table_mid.setOrigin(0.47849841160302053, 0.49515325659330345);
+        const table_mid = this.add.image(758.2144775390625, 818.2665294682299, "pizza_halloween", "table_mid");
+        table_mid.setOrigin(0.46556224138414576, 0.7358642720584441);
 
         // table_right
-        const table_right = this.add.image(1069.2154523182646, 736.9174011975838, "pizza_halloween", "table_right");
-        table_right.setOrigin(0.4893775403211145, 0.48049003079682745);
+        const table_right = this.add.image(1073.5620072951044, 777.1230291804179, "pizza_halloween", "table_right");
+        table_right.setOrigin(0.5152498807588641, 0.7349559614314053);
 
         // curtain
         const curtain = this.add.image(581, 225, "pizza_halloween", "curtain");
@@ -129,19 +129,22 @@ export default class Pizza extends RoomScene {
         pumpkin.setOrigin(0.485746070354408, 0.6790997004170268);
 
         // flame0001
-        const flame0001 = this.add.sprite(499, 583, "pizza_halloween", "flame0001");
+        const flame0001 = this.add.sprite(510.4579932109747, 666.4786783925047, "pizza_halloween", "flame0001");
         flame0001.scaleX = 0.5;
         flame0001.scaleY = 0.5;
+        flame0001.setOrigin(0.7728093175774715, 1.939286634263775);
 
         // flame
-        const flame = this.add.sprite(761, 695, "pizza_halloween", "flame0001");
+        const flame = this.add.sprite(778.7086468781523, 781.9399949014792, "pizza_halloween", "flame0001");
         flame.scaleX = 0.5;
         flame.scaleY = 0.5;
+        flame.setOrigin(0.9216338511075557, 1.99896577280357);
 
         // flame_1
-        const flame_1 = this.add.sprite(1068, 654, "pizza_halloween", "flame0001");
+        const flame_1 = this.add.sprite(1075.510767783574, 748.4682801008709, "pizza_halloween", "flame0001");
         flame_1.scaleX = 0.5;
         flame_1.scaleY = 0.5;
+        flame_1.setOrigin(0.678825021517057, 2.128763117056063);
 
         // flame_2
         const flame_2 = this.add.sprite(1007, 266, "pizza_halloween", "flame0001");
@@ -178,7 +181,7 @@ export default class Pizza extends RoomScene {
         const smoke0001 = this.add.sprite(43, 190, "pizza_halloween", "smoke0001");
 
         // lists
-        const sort = [smoke0001, fire0001, piano, flame_6, flame_5, flame_4, flame_3, flame_2, flame_1, flame, flame0001, pumpkin, candle, pianochair, leftbags, cooker, book0001, desk, door, kitchen, curtain, table_right, table_mid, table_left, chairs_2, chairs_1, chairs, stick_thing, register0001];
+        const sort = [smoke0001, fire0001, piano, flame_6, flame_5, flame_4, flame_3, flame_2, pumpkin, candle, pianochair, leftbags, cooker, book0001, desk, door, kitchen, curtain, table_right, table_mid, table_left, chairs_2, chairs_1, chairs, stick_thing, register0001, flame0001, flame, flame_1];
 
         // kitchen (components)
         const kitchenButton = new Button(kitchen);
@@ -205,7 +208,6 @@ export default class Pizza extends RoomScene {
         // register0001 (components)
         const register0001SimpleButton = new SimpleButton(register0001);
         register0001SimpleButton.hoverCallback = () => this.onRegOver();
-        register0001SimpleButton.pixelPerfect = true;
 
         // flame0001 (components)
         const flame0001Animation = new Animation(flame0001);

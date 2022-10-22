@@ -45,6 +45,61 @@
         },
         {
             "type": "Image",
+            "id": "0a364f2d-091b-406b-8b97-6fc8ace68222",
+            "label": "fap",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "fap",
+            "MoveTo.x": 320,
+            "MoveTo.y": 550,
+            "ShowHint.text": "Feed-A-Puffle",
+            "texture": {
+                "key": "cove-spooky",
+                "frame": "fap"
+            },
+            "x": 294.6660991304181,
+            "y": 451.1139848259839,
+            "originX": 0.7057889601678863,
+            "originY": 0.633016620875223
+        },
+        {
+            "type": "Image",
+            "id": "4072c10e-ce93-48b8-88a6-f6f3b8a5ba4e",
+            "label": "jolright_1",
+            "components": [],
+            "texture": {
+                "key": "cove-spooky",
+                "frame": "jolright"
+            },
+            "x": 133,
+            "y": 576,
+            "scaleX": 1.4,
+            "scaleY": 1.4,
+            "originX": 0.575005610209575,
+            "originY": 0.8525828271442899,
+            "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "0a35d529-a6e6-4c58-884c-42eb583dbebc",
+            "label": "jolleft",
+            "components": [],
+            "texture": {
+                "key": "cove-spooky",
+                "frame": "jolleft"
+            },
+            "x": 122,
+            "y": 620,
+            "scaleX": 1.4,
+            "scaleY": 1.4,
+            "originX": 0.5501743517867228,
+            "originY": 0.8164986106227291
+        },
+        {
+            "type": "Image",
             "id": "a7598cf8-aca5-4853-a6e2-457d65fcf86d",
             "label": "cautiontapeleft",
             "components": [],
@@ -66,45 +121,10 @@
                 "key": "cove-spooky",
                 "frame": "fg"
             },
-            "x": 244.7765564475827,
-            "y": 934.5816920217306,
-            "originX": 0.47719506799922146,
-            "originY": 0.9411158381479438
-        },
-        {
-            "type": "Image",
-            "id": "0a364f2d-091b-406b-8b97-6fc8ace68222",
-            "label": "fap",
-            "components": [
-                "SimpleButton",
-                "MoveTo",
-                "ShowHint"
-            ],
-            "MoveTo.x": 300,
-            "MoveTo.y": 550,
-            "ShowHint.text": "Feed-A-Puffle",
-            "texture": {
-                "key": "cove-spooky",
-                "frame": "fap"
-            },
-            "x": 294.6660991304181,
-            "y": 451.1139848259839,
-            "originX": 0.7057889601678863,
-            "originY": 0.633016620875223
-        },
-        {
-            "type": "Image",
-            "id": "0a35d529-a6e6-4c58-884c-42eb583dbebc",
-            "label": "jolleft",
-            "components": [],
-            "texture": {
-                "key": "cove-spooky",
-                "frame": "jolleft"
-            },
-            "x": 145.03504907242026,
-            "y": 543.1051472172608,
-            "originX": 0.5745067786718551,
-            "originY": 0.7291790786995034
+            "x": 265.67617433858857,
+            "y": 924.0133185965385,
+            "originX": 0.5161869472083169,
+            "originY": 0.9232940361649447
         },
         {
             "type": "Image",
@@ -115,10 +135,10 @@
                 "key": "cove-spooky",
                 "frame": "jolleft"
             },
-            "x": 173.05257360863038,
-            "y": 596.5963849491557,
-            "originX": 0.6117601680077825,
-            "originY": 0.7100808221412109
+            "x": 207,
+            "y": 622,
+            "originX": 0.577694770948728,
+            "originY": 0.8148642586646313
         },
         {
             "type": "Image",
@@ -321,10 +341,7 @@
             "type": "Image",
             "id": "761f15eb-ef10-4cbc-a754-610630ffdc33",
             "label": "tapedcat",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => this.interface.loadExternal('Waves')",
+            "components": [],
             "texture": {
                 "key": "cove-spooky",
                 "frame": "tapedcat"
@@ -366,10 +383,7 @@
             "type": "Image",
             "id": "c3804f1b-5091-4df8-a0ff-6b066054c85e",
             "label": "binoculars",
-            "components": [
-                "Button"
-            ],
-            "Button.spriteName": "binoculars",
+            "components": [],
             "texture": {
                 "key": "cove-spooky",
                 "frame": "binoculars"
@@ -408,8 +422,6 @@
                 "a2d0e6d9-02a0-4b38-92e0-69fe358e7cf0",
                 "d2bff028-0809-41e8-9243-b5942015b98f",
                 "c1b0b7cf-a4c2-45a2-bd8b-4278a67b5ad4",
-                "d89c347e-32fd-443e-9fd1-e8bbe1d415a1",
-                "0a35d529-a6e6-4c58-884c-42eb583dbebc",
                 "e5f20401-48d0-4d04-96ab-254f8a69fd35",
                 "14976e7d-4312-499a-a13d-c354142dff11",
                 "3f37dfcd-1bfe-48fc-b235-5052e38a05eb",
@@ -422,7 +434,8 @@
                 "761f15eb-ef10-4cbc-a754-610630ffdc33",
                 "04d86318-e6e1-4d73-adc4-b58e66247248",
                 "a7598cf8-aca5-4853-a6e2-457d65fcf86d",
-                "ec84f906-dddf-4546-9cd7-5e203c2e7f60"
+                "ec84f906-dddf-4546-9cd7-5e203c2e7f60",
+                "19e460ef-9cb5-4eb4-8a3c-755ad7c27882"
             ]
         }
     ]

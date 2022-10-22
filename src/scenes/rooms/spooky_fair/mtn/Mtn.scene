@@ -59,12 +59,16 @@
             "id": "ef9b8944-1657-4c42-93e1-635ccc3f68d1",
             "label": "zone4",
             "components": [
-                "MoveTo"
+                "MoveTo",
+                "ShowHint",
+                "SimpleButton"
             ],
-            "x": 1127,
-            "y": 657,
+            "ShowHint.text": "Sled Race",
+            "x": 1114.2467531119082,
+            "y": 679.3181820541607,
             "angle": -33,
-            "visible": false,
+            "originX": 0.37304929821917765,
+            "originY": 0.6307965099001169,
             "alpha": 0.5,
             "isFilled": true,
             "fillColor": "#00ff00",
@@ -76,11 +80,15 @@
             "id": "d637b1ba-4403-4f67-8df7-3e2a39c20182",
             "label": "zone3",
             "components": [
-                "MoveTo"
+                "MoveTo",
+                "ShowHint",
+                "SimpleButton"
             ],
-            "x": 899,
-            "y": 753,
-            "visible": false,
+            "ShowHint.text": "Sled Race",
+            "x": 906.9707793050574,
+            "y": 764.1590910270803,
+            "originX": 0.5442821072503187,
+            "originY": 0.6239899003008923,
             "alpha": 0.5,
             "isFilled": true,
             "fillColor": "#00ff00",
@@ -92,12 +100,16 @@
             "id": "fae5d3e7-f9ac-4eb1-af04-c7191621bab5",
             "label": "zone2",
             "components": [
-                "MoveTo"
+                "MoveTo",
+                "ShowHint",
+                "SimpleButton"
             ],
-            "x": 633,
-            "y": 709,
+            "ShowHint.text": "Sled Race",
+            "x": 634.0020624197113,
+            "y": 716.0144369379791,
             "angle": 11,
-            "visible": false,
+            "originX": 0.5116103472215081,
+            "originY": 0.5743817728038835,
             "alpha": 0.5,
             "isFilled": true,
             "fillColor": "#00ff00",
@@ -109,12 +121,16 @@
             "id": "e7292dc1-8f98-4fc6-b456-4d5a059a7447",
             "label": "zone1",
             "components": [
-                "MoveTo"
+                "MoveTo",
+                "ShowHint",
+                "SimpleButton"
             ],
-            "x": 334,
-            "y": 568,
+            "ShowHint.text": "Sled Race",
+            "x": 324.9814382225983,
+            "y": 581.0268114562468,
             "angle": 33,
-            "visible": false,
+            "originX": 0.49796220887788906,
+            "originY": 0.675967380375613,
             "alpha": 0.5,
             "isFilled": true,
             "fillColor": "#00ff00",
@@ -292,8 +308,8 @@
                 "key": "mtn_halloween",
                 "frame": "railing"
             },
-            "x": 879.2628255360394,
-            "y": 206.53636172175777,
+            "x": 887,
+            "y": 213,
             "scaleX": 1.0613720767924026,
             "scaleY": 1.0613720767924026,
             "originX": 0.2861106382987247,
