@@ -54,8 +54,22 @@
                 "key": "village_halloween",
                 "frame": "trees shadow"
             },
-            "x": 754,
-            "y": 175
+            "x": 801,
+            "y": 49,
+            "originX": 0.49822930060553045,
+            "originY": 0.2469256450122031
+        },
+        {
+            "type": "Image",
+            "id": "290d02d0-1e88-402d-a8c1-58948747c770",
+            "label": "snowfront",
+            "components": [],
+            "texture": {
+                "key": "village_halloween",
+                "frame": "snowfront"
+            },
+            "x": 1137,
+            "y": 415
         },
         {
             "type": "Image",
@@ -66,8 +80,22 @@
                 "key": "village_halloween",
                 "frame": "fish room"
             },
-            "x": 1093,
+            "x": 1129,
             "y": 429
+        },
+        {
+            "type": "Image",
+            "id": "c8f91ccf-9061-4c4d-bffd-6bed7f0c8777",
+            "label": "epf",
+            "components": [],
+            "texture": {
+                "key": "village_halloween",
+                "frame": "epf"
+            },
+            "x": 1267,
+            "y": 415,
+            "originX": 0.5298318890781366,
+            "originY": 0.6206973924121636
         },
         {
             "type": "Image",
@@ -90,8 +118,8 @@
                 "key": "village_halloween",
                 "frame": "bottom costume"
             },
-            "x": 654.6333640881813,
-            "y": 337.42591498196043,
+            "x": 704,
+            "y": 337,
             "originX": 0.6668813901726748,
             "originY": 0.5382650441086291
         },
@@ -104,68 +132,10 @@
                 "key": "village_halloween",
                 "frame": "costume top0001"
             },
-            "x": 647.1341416427867,
-            "y": 451.54393455916886,
+            "x": 697,
+            "y": 456,
             "originX": 0.4872307517953811,
             "originY": 0.914769140890163
-        },
-        {
-            "type": "Image",
-            "id": "290d02d0-1e88-402d-a8c1-58948747c770",
-            "label": "snowfront",
-            "components": [],
-            "texture": {
-                "key": "village_halloween",
-                "frame": "snowfront"
-            },
-            "x": 1105,
-            "y": 416
-        },
-        {
-            "type": "Container",
-            "id": "0a335b9a-ba32-4999-a6cf-7d4cd753f2fd",
-            "label": "container_2",
-            "components": [],
-            "x": 1217,
-            "y": 353,
-            "list": [
-                {
-                    "type": "Container",
-                    "id": "c8e14b74-fc5e-4dd2-b15f-cc1e7aa40ca1",
-                    "label": "container_1",
-                    "components": [],
-                    "list": [
-                        {
-                            "type": "Image",
-                            "id": "da2b55f9-3e32-4c2e-8073-1b00efdae34a",
-                            "label": "epf",
-                            "components": [],
-                            "texture": {
-                                "key": "village_halloween",
-                                "frame": "epf"
-                            },
-                            "x": 64.72601361572356,
-                            "y": 169.0290214382892,
-                            "originX": 0.5940567143554701,
-                            "originY": 0.7519160669652747
-                        },
-                        {
-                            "type": "Image",
-                            "id": "45e8b326-6388-4912-b8b8-e013a909b19f",
-                            "label": "tree",
-                            "components": [],
-                            "texture": {
-                                "key": "village_halloween",
-                                "frame": "tree"
-                            },
-                            "x": -1179.5434565435273,
-                            "y": 288.46229179765703,
-                            "originX": 0.375436793492366,
-                            "originY": 0.6156712774561973
-                        }
-                    ]
-                }
-            ]
         },
         {
             "type": "Sprite",
@@ -180,7 +150,7 @@
                 "key": "village_halloween",
                 "frame": "eyes0001"
             },
-            "x": 1134,
+            "x": 1170,
             "y": 293
         },
         {
@@ -229,14 +199,28 @@
             ],
             "Button.spriteName": "door",
             "Button.activeFrame": false,
-            "MoveTo.x": 1040,
-            "MoveTo.y": 321,
+            "MoveTo.x": 1076,
+            "MoveTo.y": 325,
             "texture": {
                 "key": "village_halloween",
                 "frame": "door"
             },
-            "x": 1036,
+            "x": 1072,
             "y": 298
+        },
+        {
+            "type": "Image",
+            "id": "cf454085-2a92-4823-8959-d49fe54306a0",
+            "label": "tree",
+            "components": [],
+            "texture": {
+                "key": "village_halloween",
+                "frame": "tree"
+            },
+            "x": 413.1243172723871,
+            "y": 694.4275099134696,
+            "originX": 0.8723524044415973,
+            "originY": 0.6300487663719795
         },
         {
             "type": "Image",
@@ -258,6 +242,7 @@
                 "SimpleButton"
             ],
             "SimpleButton.callback": "() => this.interface.prompt.showItem(428)",
+            "SimpleButton.pixelPerfect": true,
             "texture": {
                 "key": "village_halloween",
                 "frame": "tours0001"
@@ -295,13 +280,13 @@
             "id": "528d71e2-a474-4325-aa76-2ccaa2e1016f",
             "label": "sort",
             "objectIds": [
-                "b3b5b1df-f72a-4d7f-a34e-d3275ca1e717",
                 "2a40f467-1961-4de9-b947-e709fe04afb9",
                 "eed97c8f-067b-445c-b552-ee301658c453",
                 "48f9091c-0d04-4e8b-8b65-e7f7763ecaf1",
-                "0a335b9a-ba32-4999-a6cf-7d4cd753f2fd",
                 "9ac2f359-8fcc-4d5d-978b-b57af2f034c9",
-                "fc3f112d-6116-49be-a264-db039239131d"
+                "fc3f112d-6116-49be-a264-db039239131d",
+                "45e8b326-6388-4912-b8b8-e013a909b19f",
+                "cf454085-2a92-4823-8959-d49fe54306a0"
             ]
         }
     ]

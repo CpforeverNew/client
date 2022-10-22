@@ -12,7 +12,7 @@ export default class Village extends RoomScene {
 
         /** @type {Phaser.GameObjects.Sprite} */
         this.ghost0001;
-        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Container|Phaser.GameObjects.Sprite>} */
+        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
         this.sort;
 
 
@@ -47,44 +47,32 @@ export default class Village extends RoomScene {
         this.add.image(729, 478, "village_halloween", "bg");
 
         // trees_shadow
-        const trees_shadow = this.add.image(754, 175, "village_halloween", "trees shadow");
+        const trees_shadow = this.add.image(801, 49, "village_halloween", "trees shadow");
+        trees_shadow.setOrigin(0.49822930060553045, 0.2469256450122031);
+
+        // snowfront
+        this.add.image(1137, 415, "village_halloween", "snowfront");
 
         // fish_room
-        this.add.image(1093, 429, "village_halloween", "fish room");
+        this.add.image(1129, 429, "village_halloween", "fish room");
+
+        // epf
+        const epf = this.add.image(1267, 415, "village_halloween", "epf");
+        epf.setOrigin(0.5298318890781366, 0.6206973924121636);
 
         // fence
         const fence = this.add.image(225, 346, "village_halloween", "fence");
 
         // bottom_costume
-        const bottom_costume = this.add.image(654.6333640881813, 337.42591498196043, "village_halloween", "bottom costume");
+        const bottom_costume = this.add.image(704, 337, "village_halloween", "bottom costume");
         bottom_costume.setOrigin(0.6668813901726748, 0.5382650441086291);
 
         // costume_top0001
-        const costume_top0001 = this.add.image(647.1341416427867, 451.54393455916886, "village_halloween", "costume top0001");
+        const costume_top0001 = this.add.image(697, 456, "village_halloween", "costume top0001");
         costume_top0001.setOrigin(0.4872307517953811, 0.914769140890163);
 
-        // snowfront
-        this.add.image(1105, 416, "village_halloween", "snowfront");
-
-        // container_2
-        const container_2 = this.add.container(1217, 353);
-
-        // container_1
-        const container_1 = this.add.container(0, 0);
-        container_2.add(container_1);
-
-        // epf
-        const epf = this.add.image(64.72601361572356, 169.0290214382892, "village_halloween", "epf");
-        epf.setOrigin(0.5940567143554701, 0.7519160669652747);
-        container_1.add(epf);
-
-        // tree
-        const tree = this.add.image(-1179.5434565435273, 288.46229179765703, "village_halloween", "tree");
-        tree.setOrigin(0.375436793492366, 0.6156712774561973);
-        container_1.add(tree);
-
         // eyes0001
-        const eyes0001 = this.add.sprite(1134, 293, "village_halloween", "eyes0001");
+        const eyes0001 = this.add.sprite(1170, 293, "village_halloween", "eyes0001");
 
         // leftleaves
         this.add.image(526, 711, "village_halloween", "leftleaves");
@@ -96,7 +84,11 @@ export default class Village extends RoomScene {
         this.add.image(640, 553, "village_halloween", "plank");
 
         // door
-        const door = this.add.image(1036, 298, "village_halloween", "door");
+        const door = this.add.image(1072, 298, "village_halloween", "door");
+
+        // tree
+        const tree = this.add.image(413.1243172723871, 694.4275099134696, "village_halloween", "tree");
+        tree.setOrigin(0.8723524044415973, 0.6300487663719795);
 
         // wood
         this.add.image(1087, 692, "village_halloween", "wood");
@@ -110,7 +102,7 @@ export default class Village extends RoomScene {
         ghost0001.setOrigin(0.8719637230388408, 0.7622248916553525);
 
         // lists
-        const sort = [trees_shadow, fence, bottom_costume, costume_top0001, container_2, tours0001, ghost0001];
+        const sort = [fence, bottom_costume, costume_top0001, tours0001, ghost0001, tree];
 
         // sky0001 (components)
         const sky0001Animation = new Animation(sky0001);
@@ -127,12 +119,13 @@ export default class Village extends RoomScene {
         doorButton.spriteName = "door";
         doorButton.activeFrame = false;
         const doorMoveTo = new MoveTo(door);
-        doorMoveTo.x = 1040;
-        doorMoveTo.y = 321;
+        doorMoveTo.x = 1076;
+        doorMoveTo.y = 325;
 
         // tours0001 (components)
         const tours0001SimpleButton = new SimpleButton(tours0001);
         tours0001SimpleButton.callback = () => this.interface.prompt.showItem(428);
+        tours0001SimpleButton.pixelPerfect = true;
 
         this.ghost0001 = ghost0001;
         this.sort = sort;
