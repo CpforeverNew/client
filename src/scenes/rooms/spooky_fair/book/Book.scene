@@ -135,7 +135,11 @@
             "id": "43e73913-3966-4c99-be47-ae2cfaa19c0d",
             "label": "books0001",
             "scope": "CLASS",
-            "components": [],
+            "components": [
+                "MoveTo"
+            ],
+            "MoveTo.x": 365,
+            "MoveTo.y": 479,
             "texture": {
                 "key": "book_halloween",
                 "frame": "door0001"
@@ -152,7 +156,7 @@
                 "key": "book_halloween",
                 "frame": "rightcouch"
             },
-            "x": 608,
+            "x": 602,
             "y": 346
         },
         {
@@ -230,19 +234,6 @@
             "originY": 0.5265193822009246
         },
         {
-            "type": "Rectangle",
-            "id": "225f02db-df12-4dc5-bbfc-59589b9e2c2b",
-            "label": "rectangle_1",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => this.onBookshelfHover()",
-            "x": 120,
-            "y": 658,
-            "width": 128,
-            "height": 128
-        },
-        {
             "type": "Image",
             "id": "e1703a67-6111-4268-925a-65bcf27f94a7",
             "label": "hat",
@@ -256,6 +247,19 @@
             "originX": 4.837579728381614,
             "originY": 4.203547922706081,
             "flipX": true
+        },
+        {
+            "type": "Triangle",
+            "id": "d6fc4491-f1c5-4d19-9ee2-cbbd8e1eb6f0",
+            "label": "triangle_1",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.onBookshelfHover()",
+            "x": 109,
+            "y": 628,
+            "angle": -15,
+            "isFilled": true
         }
     ],
     "plainObjects": [],

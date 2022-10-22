@@ -67,7 +67,7 @@ export default class Book extends RoomScene {
         const books0001 = this.add.sprite(300, 362, "book_halloween", "door0001");
 
         // rightcouch
-        this.add.image(608, 346, "book_halloween", "rightcouch");
+        this.add.image(602, 346, "book_halloween", "rightcouch");
 
         // leaf
         this.add.image(89, 532, "book_halloween", "leaf");
@@ -87,13 +87,15 @@ export default class Book extends RoomScene {
         const table_5 = this.add.image(797.456718149923, 684.6519382200925, "book", "table");
         table_5.setOrigin(0.45614537521672127, 0.5265193822009246);
 
-        // rectangle_1
-        const rectangle_1 = this.add.rectangle(120, 658, 128, 128);
-
         // hat
         const hat = this.add.image(322.8789978027344, 840.4341331519257, "book_halloween", "hat");
         hat.setOrigin(4.837579728381614, 4.203547922706081);
         hat.flipX = true;
+
+        // triangle_1
+        const triangle_1 = this.add.triangle(109, 628, 0, 128, 64, 0, 128, 128);
+        triangle_1.angle = -15;
+        triangle_1.isFilled = true;
 
         // lists
         const sort = [table_4, table_2, table_1, table, chair_table, table_3, chair, chairback, table_5, hat];
@@ -134,6 +136,11 @@ export default class Book extends RoomScene {
         const table_4ShowHint = new ShowHint(table_4);
         table_4ShowHint.text = "Play Mancala";
 
+        // books0001 (components)
+        const books0001MoveTo = new MoveTo(books0001);
+        books0001MoveTo.x = 365;
+        books0001MoveTo.y = 479;
+
         // table_5 (components)
         const table_5Button = new Button(table_5);
         table_5Button.spriteName = "table";
@@ -143,9 +150,9 @@ export default class Book extends RoomScene {
         const table_5ShowHint = new ShowHint(table_5);
         table_5ShowHint.text = "Play Mancala";
 
-        // rectangle_1 (components)
-        const rectangle_1SimpleButton = new SimpleButton(rectangle_1);
-        rectangle_1SimpleButton.callback = () => this.onBookshelfHover();
+        // triangle_1 (components)
+        const triangle_1SimpleButton = new SimpleButton(triangle_1);
+        triangle_1SimpleButton.callback = () => this.onBookshelfHover();
 
         this.books0001 = books0001;
         this.sort = sort;
