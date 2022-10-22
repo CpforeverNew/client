@@ -41,6 +41,8 @@ export default class ModActions extends BaseContainer {
         this.username_status_txt;
         /** @type {Phaser.GameObjects.Text} */
         this.activated_txt;
+        /** @type {Phaser.GameObjects.Text} */
+        this.activated_txt_1;
 
 
         // block
@@ -243,6 +245,18 @@ export default class ModActions extends BaseContainer {
         activated_txt.setStyle({ "color": "#000000ff", "fixedWidth":180,"fontFamily": "Burbank Small", "fontSize": "20px" });
         this.add(activated_txt);
 
+        // activate_btn_1
+        const activate_btn_1 = scene.add.image(353, 270, "main", "grey-arrow");
+        activate_btn_1.angle = 90;
+        this.add(activate_btn_1);
+
+        // activated_txt_1
+        const activated_txt_1 = scene.add.text(335, 269, "", {});
+        activated_txt_1.setOrigin(0.5, 0.5);
+        activated_txt_1.text = "Activate";
+        activated_txt_1.setStyle({ "color": "#000000ff", "fixedWidth":180,"fontFamily": "Burbank Small", "fontSize": "20px" });
+        this.add(activated_txt_1);
+
         // block (components)
         new Interactive(block);
 
@@ -294,6 +308,10 @@ export default class ModActions extends BaseContainer {
         const coins_btnSimpleButton = new SimpleButton(coins_btn);
         coins_btnSimpleButton.callback = () => this.addCoin();
 
+        // activate_btn_1 (components)
+        const activate_btn_1SimpleButton = new SimpleButton(activate_btn_1);
+        activate_btn_1SimpleButton.callback = () => this.handleActivate();
+
         this.rectangle = rectangle;
         this.paperDoll = paperDoll;
         this.username = username;
@@ -307,6 +325,7 @@ export default class ModActions extends BaseContainer {
         this.joindate_txt = joindate_txt;
         this.username_status_txt = username_status_txt;
         this.activated_txt = activated_txt;
+        this.activated_txt_1 = activated_txt_1;
 
         /* START-USER-CTR-CODE */
 
@@ -448,6 +467,11 @@ export default class ModActions extends BaseContainer {
     handleChangeUsername(){
         let newUsername = this.changeusername.value.toString()
         this.network.send('change_user_name', { id: this.id, newUsername: newUsername })
+        this.show()
+    }
+
+    handleActivate(){
+        this.network.send('activate_user', { id: this.id })
         this.show()
     }
 
