@@ -195,6 +195,13 @@ export default class Stage extends RoomScene {
         // symbol_137_png
         this.add.image(982, 361, "stage-sled", "Symbol_137.png");
 
+        // rectangle_1
+        const rectangle_1 = this.add.rectangle(398, 812, 128, 128);
+        rectangle_1.scaleX = 1.0331052031454988;
+        rectangle_1.scaleY = 1.2308885744866833;
+        rectangle_1.isFilled = true;
+        rectangle_1.fillAlpha = 0;
+
         // lists
         const sort = [left_front_arm, left_hold, right_front_arm, right_hold, costume_cat];
 
@@ -211,6 +218,12 @@ export default class Stage extends RoomScene {
         costume_catButton.spriteName = "costume_cat";
         costume_catButton.callback = () => this.interface.loadExternal('CostumeCatalog');
         costume_catButton.activeFrame = false;
+
+        // rectangle_1 (components)
+        const rectangle_1MoveTo = new MoveTo(rectangle_1);
+        rectangle_1MoveTo.x = 319;
+        rectangle_1MoveTo.y = 837;
+        new SimpleButton(rectangle_1);
 
         this.sort = sort;
 

@@ -647,6 +647,25 @@
             },
             "x": 982,
             "y": 361
+        },
+        {
+            "type": "Rectangle",
+            "id": "c37a1b44-0fca-4e5e-8f20-5fd6064a803e",
+            "label": "rectangle_1",
+            "components": [
+                "MoveTo",
+                "SimpleButton"
+            ],
+            "MoveTo.x": 319,
+            "MoveTo.y": 837,
+            "x": 398,
+            "y": 812,
+            "scaleX": 1.0331052031454988,
+            "scaleY": 1.2308885744866833,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],
