@@ -78,17 +78,22 @@
                 "key": "plaza-spf",
                 "frame": "trees"
             },
-            "x": 759,
-            "y": 490
+            "x": 123.69653840291858,
+            "y": 847.8876415661466,
+            "originX": 0.09118181257703477,
+            "originY": 0.8881644442882995
         },
         {
             "type": "Image",
             "id": "876ff4cc-e6ac-45ff-8757-6f7d9673ad4f",
             "label": "sewer",
             "components": [
-                "Button"
+                "Button",
+                "MoveTo"
             ],
             "Button.spriteName": "sewer",
+            "MoveTo.x": 566,
+            "MoveTo.y": 510,
             "texture": {
                 "key": "plaza-spf",
                 "frame": "sewer"
@@ -118,8 +123,10 @@
                 "key": "plaza-spf",
                 "frame": "pumkin1"
             },
-            "x": 120,
-            "y": 644
+            "x": 122.11767821085095,
+            "y": 652.4707128434038,
+            "originX": 0.5225284916047974,
+            "originY": 0.5941190315933758
         },
         {
             "type": "Image",
@@ -130,8 +137,10 @@
                 "key": "plaza-spf",
                 "frame": "pumkin2"
             },
-            "x": 1418,
-            "y": 727
+            "x": 1415.882326648351,
+            "y": 735.470703125,
+            "originX": 0.47058780262707006,
+            "originY": 0.6210101834771974
         },
         {
             "type": "Image",
@@ -143,7 +152,8 @@
                 "frame": "pumkin3"
             },
             "x": 1389,
-            "y": 862
+            "y": 876.8237474759567,
+            "originY": 0.6347613406905153
         },
         {
             "type": "Image",
@@ -154,24 +164,13 @@
                 "key": "plaza-spf",
                 "frame": "pizza_trick"
             },
-            "x": 406,
-            "y": 851,
+            "x": 346.70501009617317,
+            "y": 825.5878614697884,
             "scaleX": 0.76,
             "scaleY": 0.75,
-            "angle": 1
-        },
-        {
-            "type": "Image",
-            "id": "7d0b765a-03cc-4a0a-9893-996ea1da4755",
-            "label": "overlay",
-            "components": [],
-            "texture": {
-                "key": "plaza-spf",
-                "frame": "overlay"
-            },
-            "x": 755,
-            "y": 965.9504536945924,
-            "originY": 0.9690993906799709
+            "angle": 1,
+            "originX": 0.36212035379685764,
+            "originY": 0.3605240228932637
         },
         {
             "type": "Sprite",
@@ -239,7 +238,11 @@
             "label": "sort",
             "objectIds": [
                 "317b386b-850b-4a2f-919e-020e69418629",
-                "7d0b765a-03cc-4a0a-9893-996ea1da4755"
+                "13e4885f-e2ff-42a2-a136-c3ba6ae312cf",
+                "db5dfa0d-c3bd-4731-b85d-cce6aec7aaeb",
+                "d49e2784-1d23-426c-a235-a5aecbf0ed46",
+                "40459f40-bbec-4373-97d6-fcffd255122e",
+                "d98dc688-565b-421c-9e14-08333a181d2d"
             ]
         }
     ]

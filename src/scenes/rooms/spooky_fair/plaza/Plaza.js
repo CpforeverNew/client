@@ -53,7 +53,8 @@ export default class Plaza extends RoomScene {
         this.add.image(209, 226, "plaza-spf", "puffle");
 
         // trees
-        this.add.image(759, 490, "plaza-spf", "trees");
+        const trees = this.add.image(123.69653840291858, 847.8876415661466, "plaza-spf", "trees");
+        trees.setOrigin(0.09118181257703477, 0.8881644442882995);
 
         // sewer
         const sewer = this.add.image(566, 472, "plaza-spf", "sewer");
@@ -63,23 +64,23 @@ export default class Plaza extends RoomScene {
         tickets.setOrigin(0.5, 0.9970561809053845);
 
         // pumkin1
-        this.add.image(120, 644, "plaza-spf", "pumkin1");
+        const pumkin1 = this.add.image(122.11767821085095, 652.4707128434038, "plaza-spf", "pumkin1");
+        pumkin1.setOrigin(0.5225284916047974, 0.5941190315933758);
 
         // pumkin2
-        this.add.image(1418, 727, "plaza-spf", "pumkin2");
+        const pumkin2 = this.add.image(1415.882326648351, 735.470703125, "plaza-spf", "pumkin2");
+        pumkin2.setOrigin(0.47058780262707006, 0.6210101834771974);
 
         // pumkin3
-        this.add.image(1389, 862, "plaza-spf", "pumkin3");
+        const pumkin3 = this.add.image(1389, 876.8237474759567, "plaza-spf", "pumkin3");
+        pumkin3.setOrigin(0.5, 0.6347613406905153);
 
         // pizza_trick
-        const pizza_trick = this.add.image(406, 851, "plaza-spf", "pizza_trick");
+        const pizza_trick = this.add.image(346.70501009617317, 825.5878614697884, "plaza-spf", "pizza_trick");
         pizza_trick.scaleX = 0.76;
         pizza_trick.scaleY = 0.75;
         pizza_trick.angle = 1;
-
-        // overlay
-        const overlay = this.add.image(755, 965.9504536945924, "plaza-spf", "overlay");
-        overlay.setOrigin(0.5, 0.9690993906799709);
+        pizza_trick.setOrigin(0.36212035379685764, 0.3605240228932637);
 
         // pet_door
         const pet_door = this.add.sprite(335, 494, "plaza-spf", "pet_door");
@@ -91,7 +92,7 @@ export default class Plaza extends RoomScene {
         const right_stage_door = this.add.sprite(958, 390, "plaza-spf", "right_stage_door");
 
         // lists
-        const sort = [tickets, overlay];
+        const sort = [tickets, pizza_trick, pumkin1, pumkin3, pumkin2, trees];
 
         // sky0001 (components)
         const sky0001Animation = new Animation(sky0001);
@@ -101,6 +102,9 @@ export default class Plaza extends RoomScene {
         // sewer (components)
         const sewerButton = new Button(sewer);
         sewerButton.spriteName = "sewer";
+        const sewerMoveTo = new MoveTo(sewer);
+        sewerMoveTo.x = 566;
+        sewerMoveTo.y = 510;
 
         // pet_door (components)
         const pet_doorButton = new Button(pet_door);
