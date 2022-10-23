@@ -1,0 +1,301 @@
+{
+    "id": "9500f969-9ebb-4627-b908-fb8a27c0ca86",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/spooky_fair/shop/shop-pack.json",
+            "client/assets/media/rooms/spooky_fair/pizza/pizza-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Shop",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "0fa846db-53ed-4ef1-a4f3-ed6f5e9df94c",
+            "label": "container",
+            "components": [],
+            "x": 1324.9695028627973,
+            "y": 660.5011002882876,
+            "list": []
+        },
+        {
+            "type": "Sprite",
+            "id": "732f6114-4672-44a1-ae53-e39de7523f2a",
+            "label": "doorlightning0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "doorlightning",
+            "Animation.end": 86,
+            "texture": {
+                "key": "shop_halloween",
+                "frame": "doorlightning0001"
+            },
+            "x": 1107,
+            "y": 258,
+            "scaleX": 1.6030451677292308,
+            "scaleY": 1.6030451677292308
+        },
+        {
+            "type": "Image",
+            "id": "447028ae-1dc5-4725-b816-8321cb502d7a",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "shop_halloween",
+                "frame": "bg"
+            },
+            "x": 763,
+            "y": 475,
+            "scaleX": 1.0198154029971915,
+            "scaleY": 1.0198154029971915
+        },
+        {
+            "type": "Image",
+            "id": "2189911b-6abe-4ed0-8a88-90c6c0265d69",
+            "label": "desk",
+            "components": [],
+            "texture": {
+                "key": "shop_halloween",
+                "frame": "desk"
+            },
+            "x": 1341.7446917430605,
+            "y": 671.3151208199762,
+            "originX": 0.40808217709425987,
+            "originY": 0.7909328631737692
+        },
+        {
+            "type": "Sprite",
+            "id": "8c367381-f364-4a49-b637-d7e6675815f1",
+            "label": "register0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "shop_halloween",
+                "frame": "register0001"
+            },
+            "x": 1390.0888509283955,
+            "y": 735.919268151086,
+            "originX": 1.159763750935526,
+            "originY": 2.0227864761638776
+        },
+        {
+            "type": "Sprite",
+            "id": "7854a1e4-046e-4705-aca6-c1fb1ee38bdf",
+            "label": "phone0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "shop_halloween",
+                "frame": "phone0001"
+            },
+            "x": 1499.034368109497,
+            "y": 731.4025912728478,
+            "originX": 1.191781699370326,
+            "originY": 1.7492729293754767
+        },
+        {
+            "type": "Image",
+            "id": "b9cbe11d-bb4e-4a7d-97bb-12f4f00eddae",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "shop_halloween",
+                "frame": "fg"
+            },
+            "x": 809,
+            "y": 367
+        },
+        {
+            "type": "Image",
+            "id": "ba2804b0-31c6-4058-b9a3-a2478567d4d9",
+            "label": "bottomleft",
+            "components": [],
+            "texture": {
+                "key": "shop_halloween",
+                "frame": "bottomleft"
+            },
+            "x": 130,
+            "y": 705
+        },
+        {
+            "type": "Image",
+            "id": "5df1d9ca-92b2-4c2e-ab94-8fec77446ed8",
+            "label": "bottomleftidk",
+            "components": [],
+            "texture": {
+                "key": "shop_halloween",
+                "frame": "bottomleftidk"
+            },
+            "x": 28,
+            "y": 870
+        },
+        {
+            "type": "Image",
+            "id": "2d02f71b-3fc7-425e-95f3-b30a31e41849",
+            "label": "chairs",
+            "components": [],
+            "texture": {
+                "key": "shop_halloween",
+                "frame": "chairs"
+            },
+            "x": 844,
+            "y": 356
+        },
+        {
+            "type": "Image",
+            "id": "ca1f58e8-84e6-41b8-9d78-45244f43bb37",
+            "label": "leftchairhead",
+            "components": [],
+            "texture": {
+                "key": "shop_halloween",
+                "frame": "leftchairhead"
+            },
+            "x": 771,
+            "y": 260,
+            "scaleX": 0.9826311173362379,
+            "scaleY": 0.9826311173362379
+        },
+        {
+            "type": "Sprite",
+            "id": "b3f87362-76c8-4b3d-9ed1-3634542425f2",
+            "label": "speaker0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "speaker",
+            "Animation.end": 30,
+            "texture": {
+                "key": "shop_halloween",
+                "frame": "speaker0001"
+            },
+            "x": 43,
+            "y": 321
+        },
+        {
+            "type": "Image",
+            "id": "c431d661-8d30-4511-b035-268de5927d88",
+            "label": "decoration",
+            "components": [],
+            "texture": {
+                "key": "shop_halloween",
+                "frame": "decoration"
+            },
+            "x": 762,
+            "y": -63
+        },
+        {
+            "type": "Image",
+            "id": "da0e4c0c-b68b-4074-a597-b1b2f40fdf53",
+            "label": "door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door",
+            "Button.activeFrame": false,
+            "MoveTo.x": 1102,
+            "MoveTo.y": 450,
+            "texture": {
+                "key": "shop_halloween",
+                "frame": "door"
+            },
+            "x": 1102,
+            "y": 318,
+            "scaleX": 1.1036100643349118,
+            "scaleY": 1.1036100643349118
+        },
+        {
+            "type": "Image",
+            "id": "1014b132-c409-454c-9983-5ce882707830",
+            "label": "pumpkin",
+            "components": [],
+            "texture": {
+                "key": "pizza_halloween",
+                "frame": "pumpkin"
+            },
+            "x": 228.0554649955557,
+            "y": 804.9718334431319,
+            "originX": 0.5857012794266797,
+            "originY": 0.7920248885977599,
+            "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "d9d3f441-7715-4324-826e-6839691ce8d1",
+            "label": "catalog",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.loadExternal('ClothingCatalog')",
+            "texture": {
+                "key": "shop_halloween",
+                "frame": "catalog0001"
+            },
+            "x": 1340,
+            "y": 1052,
+            "originX": 0,
+            "originY": 2
+        },
+        {
+            "type": "Rectangle",
+            "id": "9c0035ee-7d95-4919-b84d-55c2037c23e6",
+            "label": "rectangle_1",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.register0001.play(\"register\")",
+            "x": 1305,
+            "y": 483,
+            "scaleX": 0.715384304732612,
+            "scaleY": 0.715384304732612,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "bc41efda-2ae2-4f76-a8a1-a5525137234d",
+            "label": "rectangle",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.phone0001.play(\"phone\")",
+            "x": 1440,
+            "y": 553,
+            "scaleX": 0.3221768433658497,
+            "scaleY": 0.3221768433658497,
+            "width": 128,
+            "height": 128
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "74808b14-d54a-4e8f-8e73-510aada4154f",
+            "label": "sort",
+            "objectIds": [
+                "0fa846db-53ed-4ef1-a4f3-ed6f5e9df94c",
+                "d9d3f441-7715-4324-826e-6839691ce8d1",
+                "2189911b-6abe-4ed0-8a88-90c6c0265d69",
+                "8c367381-f364-4a49-b637-d7e6675815f1",
+                "7854a1e4-046e-4705-aca6-c1fb1ee38bdf",
+                "1014b132-c409-454c-9983-5ce882707830",
+                "5df1d9ca-92b2-4c2e-ab94-8fec77446ed8"
+            ]
+        }
+    ]
+}
