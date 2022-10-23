@@ -63,10 +63,18 @@ export default class Forts extends RoomScene {
         // tower
         const tower = this.add.sprite(1046, -13, "forts", "tower0001");
         tower.setOrigin(0, 0);
+        tower.tintTopLeft = 7500402;
+        tower.tintTopRight = 7500402;
+        tower.tintBottomLeft = 7500402;
+        tower.tintBottomRight = 7500402;
 
         // clock
         const clock = this.add.image(1082, 104, "forts", "clock");
         clock.setOrigin(0, 0);
+        clock.tintTopLeft = 10644523;
+        clock.tintTopRight = 10644523;
+        clock.tintBottomLeft = 10644523;
+        clock.tintBottomRight = 10644523;
 
         // secret_message
         const secret_message = this.add.image(1252, 327, "forts", "secret_message");

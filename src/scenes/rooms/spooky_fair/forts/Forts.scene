@@ -75,7 +75,11 @@
             "x": 1046,
             "y": -13,
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "tintTopLeft": "#727272",
+            "tintTopRight": "#727272",
+            "tintBottomLeft": "#727272",
+            "tintBottomRight": "#727272"
         },
         {
             "type": "Image",
@@ -89,7 +93,11 @@
             "x": 1082,
             "y": 104,
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "tintTopLeft": "#a26c2b",
+            "tintTopRight": "#a26c2b",
+            "tintBottomLeft": "#a26c2b",
+            "tintBottomRight": "#a26c2b"
         },
         {
             "type": "Image",
