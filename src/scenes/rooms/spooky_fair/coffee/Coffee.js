@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import { Animation, Button, MoveTo, ShowHint } from '@components/components'
+import { Animation, Button, MoveTo, ShowHint, SimpleButton } from '@components/components'
 
 
 /* START OF COMPILED CODE */
@@ -10,50 +10,26 @@ export default class Coffee extends RoomScene {
     constructor() {
         super("Coffee");
 
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.candle1_png;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.candle1_png_1;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.candle1_png_2;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.candle1_png_3;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.candle1_png_4;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.candle1_png_5;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.candle1_png_6;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.candle1_png_7;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.candle1_png_8;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.candle1_png_9;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.candle1_png_10;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.candle1_png_11;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.candle1_png_12;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.candle1_png_13;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.candle1_png_14;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.candle1_png_15;
-        /** @type {Phaser.GameObjects.Image[]} */
+        /** @type {Phaser.GameObjects.Image} */
+        this.happyhalloween;
+        /** @type {Phaser.GameObjects.Image} */
+        this.bookroomhover0002;
+        /** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Image>} */
         this.sort;
 
 
         /* START-USER-CTR-CODE */
+
         this.roomTriggers = {
             'town': () => this.triggerRoom(100, 580, 520),
             'beans': () => this.triggerGame('BeanCounters', 908),
             'book': () => this.triggerRoom(111, 1200, 580)
-        };
-        this.roomAnims = true;
-        this.music = 'coffee';
+        }
+        this.roomAnims = false
+        this.music = 'coffee'
+
+        this.boardToggle = true
+
         /* END-USER-CTR-CODE */
     }
 
@@ -66,151 +42,297 @@ export default class Coffee extends RoomScene {
     /** @returns {void} */
     _create() {
 
-        // background_png
-        this.add.image(762, 520, "coffee", "Background.png");
+        // lightningdoor0001
+        const lightningdoor0001 = this.add.sprite(775, 242, "coffee_halloween", "lightningdoor0001");
+        lightningdoor0001.scaleX = 1.3518793284739814;
+        lightningdoor0001.scaleY = 1.3518793284739814;
 
-        // bigPumpkin_png
-        this.add.image(1443, 826, "coffee", "BigPumpkin.png");
+        // bg_1
+        this.add.image(773, 460, "coffee_halloween", "bg");
 
-        // blueChairBottom_png_png
-        this.add.image(477, 418, "coffee", "BlueChairBottom.png.png");
+        // happyhalloween_1
+        this.add.image(1101, 363, "coffee_halloween", "happyhalloween2");
 
-        // redChairBottom_png
-        this.add.image(628, 414, "coffee", "RedChairBottom.png");
+        // happyhalloween
+        const happyhalloween = this.add.image(1101, 363, "coffee_halloween", "happyhalloween");
 
-        // fireExtinguisher_png
-        this.add.image(48, 738, "coffee", "FireExtinguisher.png");
+        // backbackpumpkin
+        const backbackpumpkin = this.add.image(1023.0085563276511, 558.236892924727, "coffee_halloween", "backbackpumpkin");
+        backbackpumpkin.setOrigin(0.48326517922395923, 0.7821976632475901);
 
-        // tallCandles_png
-        this.add.image(89, 572, "coffee", "TallCandles.png");
+        // deskback
+        const deskback = this.add.image(913.4679137713082, 449.92299305113966, "coffee_halloween", "deskback");
+        deskback.setOrigin(0.5597433101704655, 0.6271134258946075);
 
-        // counterBack_png
-        this.add.image(886, 450, "coffee", "CounterBack.png");
+        // deskleft
+        const deskleft = this.add.image(835.1988119952318, 625.5172050136637, "coffee_halloween", "deskleft");
+        deskleft.setOrigin(0.3158667950425669, 0.8131712738102143);
 
-        // counterTop_png
-        const counterTop_png = this.add.image(790.6030456812503, 614.5996274420296, "coffee", "CounterTop.png");
-        counterTop_png.setOrigin(0.18806003087636006, 0.6657355674981259);
+        // sign
+        const sign = this.add.image(871.1099906178471, 691.2998516403129, "coffee_halloween", "sign");
+        sign.setOrigin(0.4132117397048296, 0.6537919739880087);
 
-        // counterGoodies_png
-        const counterGoodies_png = this.add.image(764.3657464143884, 720.7359032812915, "coffee", "CounterGoodies.png");
-        counterGoodies_png.setOrigin(0.02574467293120879, 1.5479279748038832);
+        // signpumpkin
+        const signpumpkin = this.add.image(958.9187148873141, 710.429410296878, "coffee_halloween", "signpumpkin");
+        signpumpkin.setOrigin(0.699144367234885, 0.6785805467051959);
 
-        // signBottom_png
-        this.add.image(894, 680, "coffee", "SignBottom.png");
+        // backbean
+        const backbean = this.add.image(1080, 656, "coffee_halloween", "backbean");
 
-        // signTop0001_png
-        const signTop0001_png = this.add.image(805.1778046803329, 727.8604293790136, "coffee", "SignTop0001.png");
-        signTop0001_png.setOrigin(-0.00245950625700089, 0.7542098577863005);
+        // beans_1
+        const beans_1 = this.add.image(1034.3205220860727, 629.2645203069275, "coffee_halloween", "beans");
+        beans_1.setOrigin(0.39600316006229164, 0.3883295346847366);
 
-        // arrowSign_png
-        this.add.image(1380, 274, "coffee", "ArrowSign.png");
+        // rightpumpkin
+        const rightpumpkin = this.add.image(1442, 818, "coffee_halloween", "rightpumpkin");
 
-        // streamers_png
-        this.add.image(741, 109, "coffee", "Streamers.png");
+        // bookroomhover0002
+        const bookroomhover0002 = this.add.image(1272, 548, "coffee_halloween", "bookroomhover0002");
+        bookroomhover0002.visible = false;
 
-        // smallPumpkin_png
-        this.add.image(946, 728, "coffee", "SmallPumpkin.png");
+        // shadow
+        this.add.image(106, 684, "coffee_halloween", "shadow");
 
-        // smallTable_png
-        const smallTable_png = this.add.image(127.95972216215951, 673.9234816254373, "coffee", "SmallTable.png");
-        smallTable_png.setOrigin(0.005452975253745975, 0.7872720567363996);
+        // sofa
+        const sofa = this.add.image(279.67269504394477, 455.2219518029624, "coffee_halloween", "sofa");
+        sofa.setOrigin(0.7951702866872123, 0.24453825556821535);
 
-        // cakeTable_png
-        const cakeTable_png = this.add.image(227.73193533365964, 808.3317809505317, "coffee", "CakeTable.png");
-        cakeTable_png.setOrigin(0.017264875902018376, 0.820431356792405);
+        // redlight
+        const redlight = this.add.image(242.22679192883695, 500.84324287265, "coffee_halloween", "redlight");
+        redlight.setOrigin(0.5465732110170315, 0.7424033580583667);
 
-        // blueChair_png
-        const blueChair_png = this.add.image(399.91202905475944, 467.8504820018348, "coffee", "BlueChair.png");
-        blueChair_png.setOrigin(0.006333535102496136, 0.6452627758778862);
+        // candle
+        const candle = this.add.image(105.39929482896086, 670.0954163882457, "coffee_halloween", "candle");
+        candle.setOrigin(0.6141134989938875, 0.8952834369537481);
 
-        // overheadLight_png
-        this.add.image(227, 197, "coffee", "OverheadLight.png");
+        // lefttable
+        const lefttable = this.add.image(192.95534678527173, 644.7250290012391, "coffee_halloween", "lefttable");
+        lefttable.setOrigin(0.3747462885526803, 0.7731195973506156);
 
-        // door
-        const door = this.add.image(785, 295, "coffee", "door");
+        // pumpkintree
+        const pumpkintree = this.add.image(344.23641651657636, 400.5139811024048, "coffee_halloween", "pumpkintree");
+        pumpkintree.setOrigin(0.4843931658656789, 0.895595831661562);
 
-        // redChair_png
-        const redChair_png = this.add.image(585.5930983040714, 467.4883435032109, "coffee", "RedChair.png");
-        redChair_png.setOrigin(0.0006006342198156011, 0.69148275002085);
+        // leftlight
+        this.add.image(188, 177, "coffee_halloween", "leftlight");
 
-        // beans
-        const beans = this.add.image(1016, 685, "coffee", "beans");
+        // cake
+        const cake = this.add.image(374.9457109712869, 776.194358631687, "coffee_halloween", "cake");
+        cake.setOrigin(0.47795534678527163, 0.8288016072705233);
 
-        // candle1_png
-        const candle1_png = this.add.sprite(193, 559, "coffee", "Candle1.png");
+        // light
+        this.add.image(1256, 345, "coffee_halloween", "light");
 
-        // candle1_png_1
-        const candle1_png_1 = this.add.sprite(219, 547, "coffee", "Candle1.png");
+        // bluechairbehind
+        const bluechairbehind = this.add.image(459.9486620340931, 394.45507927983147, "coffee_halloween", "bluechairbehind");
+        bluechairbehind.setOrigin(0.6475143460999149, 0.7091015855966293);
 
-        // candle1_png_2
-        const candle1_png_2 = this.add.sprite(245, 559, "coffee", "Candle1.png");
+        // bluechair
+        const bluechair = this.add.image(454.4807482627849, 438.8930459043606, "coffee_halloween", "bluechair");
+        bluechair.setOrigin(0.5311163073804508, 0.7145952233134533);
 
-        // candle1_png_3
-        const candle1_png_3 = this.add.sprite(34, 499, "coffee", "Candle1.png");
+        // redchairbehind
+        const redchairbehind = this.add.image(642.4721919351338, 393.4636356074826, "coffee_halloween", "redchairbehind");
+        redchairbehind.setOrigin(0.6797831093092712, 0.728746908310341);
 
-        // candle1_png_4
-        const candle1_png_4 = this.add.sprite(58, 481, "coffee", "Candle1.png");
+        // door_1
+        const door_1 = this.add.image(780, 267, "coffee_halloween", "door");
 
-        // candle1_png_5
-        const candle1_png_5 = this.add.sprite(83, 457, "coffee", "Candle1.png");
+        // redchair
+        const redchair = this.add.image(664.5192517372151, 433.8844895767094, "coffee_halloween", "redchair");
+        redchair.setOrigin(0.47109194669171023, 0.6745746076409703);
 
-        // candle1_png_6
-        const candle1_png_6 = this.add.sprite(114, 468, "coffee", "Candle1.png");
+        // lightsign
+        this.add.image(1070, 220, "coffee_halloween", "lightsign");
 
-        // candle1_png_7
-        const candle1_png_7 = this.add.sprite(144, 477, "coffee", "Candle1.png");
+        // fire
+        const fire = this.add.image(34.52714451435652, 702.0446532147282, "coffee_halloween", "fire");
+        fire.setOrigin(0.5534415835508564, 0.6735799465726631);
 
-        // candle1_png_8
-        const candle1_png_8 = this.add.sprite(325, 550, "coffee", "Candle1.png");
+        // tvborder
+        this.add.image(531, 207, "coffee_halloween", "tvborder");
 
-        // candle1_png_9
-        const candle1_png_9 = this.add.sprite(343, 549, "coffee", "Candle1.png");
+        // wiring
+        this.add.image(798, 28, "coffee_halloween", "wiring");
 
-        // candle1_png_10
-        const candle1_png_10 = this.add.sprite(376, 555, "coffee", "Candle1.png");
+        // fire0001
+        const fire0001 = this.add.sprite(443, 579, "coffee_halloween", "fire0001");
 
-        // candle1_png_11
-        const candle1_png_11 = this.add.sprite(450, 610, "coffee", "Candle1.png");
+        // fire_1
+        const fire_1 = this.add.sprite(417, 583, "coffee_halloween", "fire0001");
 
-        // candle1_png_12
-        const candle1_png_12 = this.add.sprite(424, 614, "coffee", "Candle1.png");
+        // fire_2
+        const fire_2 = this.add.sprite(294, 661, "coffee_halloween", "fire0001");
 
-        // candle1_png_13
-        const candle1_png_13 = this.add.sprite(283, 701, "coffee", "Candle1.png");
+        // fire_3
+        const fire_3 = this.add.sprite(276, 668, "coffee_halloween", "fire0001");
 
-        // candle1_png_14
-        const candle1_png_14 = this.add.sprite(301, 692, "coffee", "Candle1.png");
+        // fire_4
+        const fire_4 = this.add.sprite(322, 681, "coffee_halloween", "fire0001");
 
-        // candle1_png_15
-        const candle1_png_15 = this.add.sprite(330, 716, "coffee", "Candle1.png");
+        // fire_5
+        const fire_5 = this.add.sprite(368, 518, "coffee_halloween", "fire0001");
+
+        // fire_6
+        const fire_6 = this.add.sprite(336, 518, "coffee_halloween", "fire0001");
+
+        // fire_7
+        const fire_7 = this.add.sprite(317, 520, "coffee_halloween", "fire0001");
+
+        // fire_8
+        const fire_8 = this.add.sprite(244, 534, "coffee_halloween", "fire0001");
+
+        // fire_9
+        const fire_9 = this.add.sprite(219, 522, "coffee_halloween", "fire0001");
+
+        // fire_10
+        const fire_10 = this.add.sprite(193, 533, "coffee_halloween", "fire0001");
+
+        // fire_11
+        const fire_11 = this.add.sprite(141, 447, "coffee_halloween", "fire0001");
+
+        // fire_12
+        const fire_12 = this.add.sprite(111, 440, "coffee_halloween", "fire0001");
+
+        // fire_13
+        const fire_13 = this.add.sprite(82, 432, "coffee_halloween", "fire0001");
+
+        // fire_14
+        const fire_14 = this.add.sprite(55, 453, "coffee_halloween", "fire0001");
+
+        // fire_15
+        const fire_15 = this.add.sprite(31, 472, "coffee_halloween", "fire0001");
+
+        // rectangle_1
+        const rectangle_1 = this.add.rectangle(1082, 356, 128, 128);
+        rectangle_1.scaleX = 1.4486462702705145;
+        rectangle_1.scaleY = 2.554085800683581;
+
+        // rectangle
+        const rectangle = this.add.rectangle(1288, 615, 128, 128);
+        rectangle.scaleX = 1.4486462702705145;
+        rectangle.scaleY = 4.712770748989753;
 
         // lists
-        const sort = [blueChair_png, redChair_png, signTop0001_png, cakeTable_png, smallTable_png, counterGoodies_png, counterTop_png];
+        const sort = [fire_15, fire_14, fire_13, fire_12, fire_11, fire_10, fire_9, fire_8, fire_7, fire_6, fire_5, fire_4, fire_3, fire_2, fire_1, fire0001, fire, redchair, redchairbehind, bluechair, bluechairbehind, cake, pumpkintree, lefttable, candle, sofa, beans_1, backbean, signpumpkin, rightpumpkin, sign, deskleft, deskback, backbackpumpkin];
 
-        // door (components)
-        const doorButton = new Button(door);
-        doorButton.spriteName = "door";
+        // lightningdoor0001 (components)
+        const lightningdoor0001Animation = new Animation(lightningdoor0001);
+        lightningdoor0001Animation.key = "lightningdoor";
+        lightningdoor0001Animation.end = 90;
 
-        // beans (components)
-        const beansButton = new Button(beans);
-        beansButton.spriteName = "beans";
+        // beans_1 (components)
+        const beans_1ShowHint = new ShowHint(beans_1);
+        beans_1ShowHint.text = "Bean Counters";
+        const beans_1Button = new Button(beans_1);
+        beans_1Button.spriteName = "beans";
+        beans_1Button.activeFrame = false;
+        const beans_1MoveTo = new MoveTo(beans_1);
+        beans_1MoveTo.x = 1031;
+        beans_1MoveTo.y = 656;
 
-        this.candle1_png = candle1_png;
-        this.candle1_png_1 = candle1_png_1;
-        this.candle1_png_2 = candle1_png_2;
-        this.candle1_png_3 = candle1_png_3;
-        this.candle1_png_4 = candle1_png_4;
-        this.candle1_png_5 = candle1_png_5;
-        this.candle1_png_6 = candle1_png_6;
-        this.candle1_png_7 = candle1_png_7;
-        this.candle1_png_8 = candle1_png_8;
-        this.candle1_png_9 = candle1_png_9;
-        this.candle1_png_10 = candle1_png_10;
-        this.candle1_png_11 = candle1_png_11;
-        this.candle1_png_12 = candle1_png_12;
-        this.candle1_png_13 = candle1_png_13;
-        this.candle1_png_14 = candle1_png_14;
-        this.candle1_png_15 = candle1_png_15;
+        // door_1 (components)
+        const door_1Button = new Button(door_1);
+        door_1Button.spriteName = "door";
+        door_1Button.activeFrame = false;
+        const door_1MoveTo = new MoveTo(door_1);
+        door_1MoveTo.x = 769;
+        door_1MoveTo.y = 325;
+
+        // fire0001 (components)
+        const fire0001Animation = new Animation(fire0001);
+        fire0001Animation.key = "fire";
+        fire0001Animation.end = 14;
+
+        // fire_1 (components)
+        const fire_1Animation = new Animation(fire_1);
+        fire_1Animation.key = "fire";
+        fire_1Animation.end = 14;
+
+        // fire_2 (components)
+        const fire_2Animation = new Animation(fire_2);
+        fire_2Animation.key = "fire";
+        fire_2Animation.end = 14;
+
+        // fire_3 (components)
+        const fire_3Animation = new Animation(fire_3);
+        fire_3Animation.key = "fire";
+        fire_3Animation.end = 14;
+
+        // fire_4 (components)
+        const fire_4Animation = new Animation(fire_4);
+        fire_4Animation.key = "fire";
+        fire_4Animation.end = 14;
+
+        // fire_5 (components)
+        const fire_5Animation = new Animation(fire_5);
+        fire_5Animation.key = "fire";
+        fire_5Animation.end = 14;
+
+        // fire_6 (components)
+        const fire_6Animation = new Animation(fire_6);
+        fire_6Animation.key = "fire";
+        fire_6Animation.end = 14;
+
+        // fire_7 (components)
+        const fire_7Animation = new Animation(fire_7);
+        fire_7Animation.key = "fire";
+        fire_7Animation.end = 14;
+
+        // fire_8 (components)
+        const fire_8Animation = new Animation(fire_8);
+        fire_8Animation.key = "fire";
+        fire_8Animation.end = 14;
+
+        // fire_9 (components)
+        const fire_9Animation = new Animation(fire_9);
+        fire_9Animation.key = "fire";
+        fire_9Animation.end = 14;
+
+        // fire_10 (components)
+        const fire_10Animation = new Animation(fire_10);
+        fire_10Animation.key = "fire";
+        fire_10Animation.end = 14;
+
+        // fire_11 (components)
+        const fire_11Animation = new Animation(fire_11);
+        fire_11Animation.key = "fire";
+        fire_11Animation.end = 14;
+
+        // fire_12 (components)
+        const fire_12Animation = new Animation(fire_12);
+        fire_12Animation.key = "fire";
+        fire_12Animation.end = 14;
+
+        // fire_13 (components)
+        const fire_13Animation = new Animation(fire_13);
+        fire_13Animation.key = "fire";
+        fire_13Animation.end = 14;
+
+        // fire_14 (components)
+        const fire_14Animation = new Animation(fire_14);
+        fire_14Animation.key = "fire";
+        fire_14Animation.end = 14;
+
+        // fire_15 (components)
+        const fire_15Animation = new Animation(fire_15);
+        fire_15Animation.key = "fire";
+        fire_15Animation.end = 14;
+
+        // rectangle_1 (components)
+        const rectangle_1SimpleButton = new SimpleButton(rectangle_1);
+        rectangle_1SimpleButton.callback = () => {this.happyhalloween.visible = !this.happyhalloween.visible};
+
+        // rectangle (components)
+        const rectangleSimpleButton = new SimpleButton(rectangle);
+        rectangleSimpleButton.hoverCallback = () => this.bookroomhover0002.visible = true;;
+        rectangleSimpleButton.hoverOutCallback = () => this.bookroomhover0002.visible = false;;
+        const rectangleMoveTo = new MoveTo(rectangle);
+        rectangleMoveTo.x = 1285;
+        rectangleMoveTo.y = 850;
+
+        this.happyhalloween = happyhalloween;
+        this.bookroomhover0002 = bookroomhover0002;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -219,26 +341,11 @@ export default class Coffee extends RoomScene {
 
     /* START-USER-CODE */
 
-    // Write your code here
+    onBoardClick() {
+        let animation = (this.boardToggle) ? 'board1' : 'board2'
 
-    create() {
-        super.create();
-        this.candle1_png.play('candle_flame');
-        this.candle1_png_1.play('candle_flame');
-        this.candle1_png_2.play('candle_flame');
-        this.candle1_png_3.play('candle_flame');
-        this.candle1_png_4.play('candle_flame');
-        this.candle1_png_5.play('candle_flame');
-        this.candle1_png_6.play('candle_flame');
-        this.candle1_png_7.play('candle_flame');
-        this.candle1_png_8.play('candle_flame');
-        this.candle1_png_9.play('candle_flame');
-        this.candle1_png_10.play('candle_flame');
-        this.candle1_png_11.play('candle_flame');
-        this.candle1_png_12.play('candle_flame');
-        this.candle1_png_13.play('candle_flame');
-        this.candle1_png_14.play('candle_flame');
-        this.candle1_png_15.play('candle_flame');
+        this.board.play(animation)
+        this.boardToggle = !this.boardToggle
     }
 
     /* END-USER-CODE */

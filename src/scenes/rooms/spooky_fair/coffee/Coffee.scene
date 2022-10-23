@@ -1,5 +1,5 @@
 {
-    "id": "394c4995-cc56-438e-b8b4-8f8d87a927ec",
+    "id": "27081f42-9237-4417-aff7-1d223dcfb4c5",
     "sceneType": "SCENE",
     "settings": {
         "compilerInsertSpaces": true,
@@ -17,484 +17,725 @@
     },
     "displayList": [
         {
+            "type": "Sprite",
+            "id": "d0133f6c-1e72-43c6-bb51-f6e4febfac30",
+            "label": "lightningdoor0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "lightningdoor",
+            "Animation.end": 90,
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "lightningdoor0001"
+            },
+            "x": 775,
+            "y": 242,
+            "scaleX": 1.3518793284739814,
+            "scaleY": 1.3518793284739814
+        },
+        {
             "type": "Image",
-            "id": "af92ec52-e01d-4b5a-9450-406d882d943f",
-            "label": "background_png",
+            "id": "d08df21f-911b-4eba-b37d-4b531e1d1d52",
+            "label": "bg_1",
             "components": [],
             "texture": {
-                "key": "coffee",
-                "frame": "Background.png"
+                "key": "coffee_halloween",
+                "frame": "bg"
             },
-            "x": 762,
+            "x": 773,
+            "y": 460
+        },
+        {
+            "type": "Image",
+            "id": "2899fcec-43ed-4319-82c7-a00700b427aa",
+            "label": "happyhalloween_1",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "happyhalloween2"
+            },
+            "x": 1101,
+            "y": 363
+        },
+        {
+            "type": "Image",
+            "id": "fde584e9-5ad0-45e1-abbc-cbe0e31815e1",
+            "label": "happyhalloween",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "happyhalloween"
+            },
+            "x": 1101,
+            "y": 363
+        },
+        {
+            "type": "Image",
+            "id": "ff34bccc-42e0-4da6-a14d-9f21f7aeadb3",
+            "label": "backbackpumpkin",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "backbackpumpkin"
+            },
+            "x": 1023.0085563276511,
+            "y": 558.236892924727,
+            "originX": 0.48326517922395923,
+            "originY": 0.7821976632475901
+        },
+        {
+            "type": "Image",
+            "id": "bfccdd9a-eca5-4a01-89f8-fed7ecce577d",
+            "label": "deskback",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "deskback"
+            },
+            "x": 913.4679137713082,
+            "y": 449.92299305113966,
+            "originX": 0.5597433101704655,
+            "originY": 0.6271134258946075
+        },
+        {
+            "type": "Image",
+            "id": "b6b19b36-b02d-41ea-b0a4-035ec8ec7ef9",
+            "label": "deskleft",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "deskleft"
+            },
+            "x": 835.1988119952318,
+            "y": 625.5172050136637,
+            "originX": 0.3158667950425669,
+            "originY": 0.8131712738102143
+        },
+        {
+            "type": "Image",
+            "id": "55d2f0ea-5877-4ba5-96da-177e5bb59611",
+            "label": "sign",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "sign"
+            },
+            "x": 871.1099906178471,
+            "y": 691.2998516403129,
+            "originX": 0.4132117397048296,
+            "originY": 0.6537919739880087
+        },
+        {
+            "type": "Image",
+            "id": "5ec6d610-2ebe-4d82-abb7-5ca4ab5c6770",
+            "label": "signpumpkin",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "signpumpkin"
+            },
+            "x": 958.9187148873141,
+            "y": 710.429410296878,
+            "originX": 0.699144367234885,
+            "originY": 0.6785805467051959
+        },
+        {
+            "type": "Image",
+            "id": "98ce29d1-d288-4593-b21e-516b2dee6dfb",
+            "label": "backbean",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "backbean"
+            },
+            "x": 1080,
+            "y": 656
+        },
+        {
+            "type": "Image",
+            "id": "c88cc472-c832-4bbe-8713-529ba47dbc01",
+            "label": "beans_1",
+            "components": [
+                "ShowHint",
+                "Button",
+                "MoveTo"
+            ],
+            "ShowHint.text": "Bean Counters",
+            "Button.spriteName": "beans",
+            "Button.activeFrame": false,
+            "MoveTo.x": 1031,
+            "MoveTo.y": 656,
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "beans"
+            },
+            "x": 1034.3205220860727,
+            "y": 629.2645203069275,
+            "originX": 0.39600316006229164,
+            "originY": 0.3883295346847366
+        },
+        {
+            "type": "Image",
+            "id": "ee93b6b9-2f15-405f-acdf-5908509ecbb3",
+            "label": "rightpumpkin",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "rightpumpkin"
+            },
+            "x": 1442,
+            "y": 818
+        },
+        {
+            "type": "Image",
+            "id": "8f940333-479e-48f2-aac2-a8ab2c6d71f0",
+            "label": "bookroomhover0002",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "bookroomhover0002"
+            },
+            "x": 1272,
+            "y": 548,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "3aa77bc6-ffb2-4317-95c3-1753e7add992",
+            "label": "shadow",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "shadow"
+            },
+            "x": 106,
+            "y": 684
+        },
+        {
+            "type": "Image",
+            "id": "7a4aa622-3ba8-47ab-be14-22e7f734075c",
+            "label": "sofa",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "sofa"
+            },
+            "x": 279.67269504394477,
+            "y": 455.2219518029624,
+            "originX": 0.7951702866872123,
+            "originY": 0.24453825556821535
+        },
+        {
+            "type": "Image",
+            "id": "42287537-c695-41e1-a20a-b415f09b58ca",
+            "label": "redlight",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "redlight"
+            },
+            "x": 242.22679192883695,
+            "y": 500.84324287265,
+            "originX": 0.5465732110170315,
+            "originY": 0.7424033580583667
+        },
+        {
+            "type": "Image",
+            "id": "0703b044-89fb-4d83-94d8-b287a0095ef5",
+            "label": "candle",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "candle"
+            },
+            "x": 105.39929482896086,
+            "y": 670.0954163882457,
+            "originX": 0.6141134989938875,
+            "originY": 0.8952834369537481
+        },
+        {
+            "type": "Image",
+            "id": "721f0863-0626-4abd-b757-7f4bccaac5b6",
+            "label": "lefttable",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "lefttable"
+            },
+            "x": 192.95534678527173,
+            "y": 644.7250290012391,
+            "originX": 0.3747462885526803,
+            "originY": 0.7731195973506156
+        },
+        {
+            "type": "Image",
+            "id": "edf16f13-1195-4283-9164-1fd6416dd0fb",
+            "label": "pumpkintree",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "pumpkintree"
+            },
+            "x": 344.23641651657636,
+            "y": 400.5139811024048,
+            "originX": 0.4843931658656789,
+            "originY": 0.895595831661562
+        },
+        {
+            "type": "Image",
+            "id": "4e96c08c-0d73-4856-9229-dd1abbef3104",
+            "label": "leftlight",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "leftlight"
+            },
+            "x": 188,
+            "y": 177
+        },
+        {
+            "type": "Image",
+            "id": "e8fc2ef3-8f79-45db-939e-ed550a821dda",
+            "label": "cake",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "cake"
+            },
+            "x": 374.9457109712869,
+            "y": 776.194358631687,
+            "originX": 0.47795534678527163,
+            "originY": 0.8288016072705233
+        },
+        {
+            "type": "Image",
+            "id": "d78ac6d8-7747-496d-b3e2-0c1d5e89c80f",
+            "label": "light",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "light"
+            },
+            "x": 1256,
+            "y": 345
+        },
+        {
+            "type": "Image",
+            "id": "805485fe-23aa-40a8-a9cc-d269371e7800",
+            "label": "bluechairbehind",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "bluechairbehind"
+            },
+            "x": 459.9486620340931,
+            "y": 394.45507927983147,
+            "originX": 0.6475143460999149,
+            "originY": 0.7091015855966293
+        },
+        {
+            "type": "Image",
+            "id": "42ad7491-3b40-4e6d-9d64-c584356d323e",
+            "label": "bluechair",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "bluechair"
+            },
+            "x": 454.4807482627849,
+            "y": 438.8930459043606,
+            "originX": 0.5311163073804508,
+            "originY": 0.7145952233134533
+        },
+        {
+            "type": "Image",
+            "id": "4fff7002-ba44-4a5d-9937-e6a24f7c6d16",
+            "label": "redchairbehind",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "redchairbehind"
+            },
+            "x": 642.4721919351338,
+            "y": 393.4636356074826,
+            "originX": 0.6797831093092712,
+            "originY": 0.728746908310341
+        },
+        {
+            "type": "Image",
+            "id": "aaf941c4-dc7f-4c57-9c13-b4d068070f6c",
+            "label": "door_1",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door",
+            "Button.activeFrame": false,
+            "MoveTo.x": 769,
+            "MoveTo.y": 325,
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "door"
+            },
+            "x": 780,
+            "y": 267
+        },
+        {
+            "type": "Image",
+            "id": "b2a7fec5-6e40-4360-8dfa-0f189887008f",
+            "label": "redchair",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "redchair"
+            },
+            "x": 664.5192517372151,
+            "y": 433.8844895767094,
+            "originX": 0.47109194669171023,
+            "originY": 0.6745746076409703
+        },
+        {
+            "type": "Image",
+            "id": "6cae4b74-8669-4e27-88fe-88c2feb132be",
+            "label": "lightsign",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "lightsign"
+            },
+            "x": 1070,
+            "y": 220
+        },
+        {
+            "type": "Image",
+            "id": "a47a2269-244a-4ad4-a008-faec63b7c41b",
+            "label": "fire",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "fire"
+            },
+            "x": 34.52714451435652,
+            "y": 702.0446532147282,
+            "originX": 0.5534415835508564,
+            "originY": 0.6735799465726631
+        },
+        {
+            "type": "Image",
+            "id": "0a0b8d08-5d35-4829-87b2-7226ecd86ef8",
+            "label": "tvborder",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "tvborder"
+            },
+            "x": 531,
+            "y": 207
+        },
+        {
+            "type": "Image",
+            "id": "941e37a3-a930-4d36-b02e-599d75254ba4",
+            "label": "wiring",
+            "components": [],
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "wiring"
+            },
+            "x": 798,
+            "y": 28
+        },
+        {
+            "type": "Sprite",
+            "id": "f2409ea1-d0ee-4c2b-9404-d8eb4118dc15",
+            "label": "fire0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fire",
+            "Animation.end": 14,
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "fire0001"
+            },
+            "x": 443,
+            "y": 579
+        },
+        {
+            "type": "Sprite",
+            "id": "2d4237d4-1ce7-45f0-9ccc-7623505d8e97",
+            "label": "fire_1",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fire",
+            "Animation.end": 14,
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "fire0001"
+            },
+            "x": 417,
+            "y": 583
+        },
+        {
+            "type": "Sprite",
+            "id": "74fefdc4-fe7e-405e-8c9e-4e91b7c155b9",
+            "label": "fire_2",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fire",
+            "Animation.end": 14,
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "fire0001"
+            },
+            "x": 294,
+            "y": 661
+        },
+        {
+            "type": "Sprite",
+            "id": "89017243-235e-46d9-9bf3-9eb7076e319a",
+            "label": "fire_3",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fire",
+            "Animation.end": 14,
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "fire0001"
+            },
+            "x": 276,
+            "y": 668
+        },
+        {
+            "type": "Sprite",
+            "id": "f4cda8bf-2028-4aab-bf47-7b5d86e64068",
+            "label": "fire_4",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fire",
+            "Animation.end": 14,
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "fire0001"
+            },
+            "x": 322,
+            "y": 681
+        },
+        {
+            "type": "Sprite",
+            "id": "37df9495-2341-4fa4-b1e9-552b5a73dfdd",
+            "label": "fire_5",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fire",
+            "Animation.end": 14,
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "fire0001"
+            },
+            "x": 368,
+            "y": 518
+        },
+        {
+            "type": "Sprite",
+            "id": "64e76a07-bd6a-494c-8b60-144c3d315ba2",
+            "label": "fire_6",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fire",
+            "Animation.end": 14,
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "fire0001"
+            },
+            "x": 336,
+            "y": 518
+        },
+        {
+            "type": "Sprite",
+            "id": "24800505-8d68-4f30-bb8c-9368d6757243",
+            "label": "fire_7",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fire",
+            "Animation.end": 14,
+            "texture": {
+                "key": "coffee_halloween",
+                "frame": "fire0001"
+            },
+            "x": 317,
             "y": 520
         },
         {
-            "type": "Image",
-            "id": "c92f345e-8774-453c-a8ec-9cd6730488d9",
-            "label": "bigPumpkin_png",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "BigPumpkin.png"
-            },
-            "x": 1443,
-            "y": 826
-        },
-        {
-            "type": "Image",
-            "id": "9dd32b17-157a-4f5d-94f3-b6a45e8f29c3",
-            "label": "blueChairBottom_png_png",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "BlueChairBottom.png.png"
-            },
-            "x": 477,
-            "y": 418
-        },
-        {
-            "type": "Image",
-            "id": "eaaf5e77-1eb7-4fca-923d-be8b25ac724f",
-            "label": "redChairBottom_png",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "RedChairBottom.png"
-            },
-            "x": 628,
-            "y": 414
-        },
-        {
-            "type": "Image",
-            "id": "0594f000-9312-46d9-82e3-cd494516a772",
-            "label": "fireExtinguisher_png",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "FireExtinguisher.png"
-            },
-            "x": 48,
-            "y": 738
-        },
-        {
-            "type": "Image",
-            "id": "f1691d05-77cd-4b07-a0a3-6e27e16f9cec",
-            "label": "tallCandles_png",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "TallCandles.png"
-            },
-            "x": 89,
-            "y": 572
-        },
-        {
-            "type": "Image",
-            "id": "7c611f28-f97b-43cf-9f50-4cd6d34f9e9c",
-            "label": "counterBack_png",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "CounterBack.png"
-            },
-            "x": 886,
-            "y": 450
-        },
-        {
-            "type": "Image",
-            "id": "1c4b9cb1-9434-40ea-827a-72415c798430",
-            "label": "counterTop_png",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "CounterTop.png"
-            },
-            "x": 790.6030456812503,
-            "y": 614.5996274420296,
-            "originX": 0.18806003087636006,
-            "originY": 0.6657355674981259
-        },
-        {
-            "type": "Image",
-            "id": "bcbe46f4-f9e6-4a52-a481-c7be6c97a825",
-            "label": "counterGoodies_png",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "CounterGoodies.png"
-            },
-            "x": 764.3657464143884,
-            "y": 720.7359032812915,
-            "originX": 0.02574467293120879,
-            "originY": 1.5479279748038832
-        },
-        {
-            "type": "Image",
-            "id": "ec14de00-1dc4-43de-94bf-c103d927756c",
-            "label": "signBottom_png",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "SignBottom.png"
-            },
-            "x": 894,
-            "y": 680
-        },
-        {
-            "type": "Image",
-            "id": "517e896d-c326-44e0-b204-deaf9ea4137d",
-            "label": "signTop0001_png",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "SignTop0001.png"
-            },
-            "x": 805.1778046803329,
-            "y": 727.8604293790136,
-            "originX": -0.00245950625700089,
-            "originY": 0.7542098577863005
-        },
-        {
-            "type": "Image",
-            "id": "215028e5-534e-40ad-b7e1-9940a2b90635",
-            "label": "arrowSign_png",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "ArrowSign.png"
-            },
-            "x": 1380,
-            "y": 274
-        },
-        {
-            "type": "Image",
-            "id": "f92ae026-db07-41f8-81aa-c0798220f605",
-            "label": "streamers_png",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "Streamers.png"
-            },
-            "x": 741,
-            "y": 109
-        },
-        {
-            "type": "Image",
-            "id": "a6940c2b-a3f5-48b7-80c6-dd410e55ab62",
-            "label": "smallPumpkin_png",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "SmallPumpkin.png"
-            },
-            "x": 946,
-            "y": 728
-        },
-        {
-            "type": "Image",
-            "id": "45a14afe-1ff0-45c5-a782-186f9d3a2ac7",
-            "label": "smallTable_png",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "SmallTable.png"
-            },
-            "x": 127.95972216215951,
-            "y": 673.9234816254373,
-            "originX": 0.005452975253745975,
-            "originY": 0.7872720567363996
-        },
-        {
-            "type": "Image",
-            "id": "61c9a257-5651-414b-a9ec-429e5d8f3d28",
-            "label": "cakeTable_png",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "CakeTable.png"
-            },
-            "x": 227.73193533365964,
-            "y": 808.3317809505317,
-            "originX": 0.017264875902018376,
-            "originY": 0.820431356792405
-        },
-        {
-            "type": "Image",
-            "id": "b2b02df4-d24a-4c06-8eef-ca5bd5d0870b",
-            "label": "blueChair_png",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "BlueChair.png"
-            },
-            "x": 399.91202905475944,
-            "y": 467.8504820018348,
-            "originX": 0.006333535102496136,
-            "originY": 0.6452627758778862
-        },
-        {
-            "type": "Image",
-            "id": "4b1b4161-9945-4442-8f7e-b85f5eb17a3d",
-            "label": "overheadLight_png",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "OverheadLight.png"
-            },
-            "x": 227,
-            "y": 197
-        },
-        {
-            "type": "Image",
-            "id": "f4d3b5de-1c9c-4058-abe6-595fbfcef27e",
-            "label": "door",
+            "type": "Sprite",
+            "id": "044126fc-78f1-4e9a-abd6-dabbdd417bae",
+            "label": "fire_8",
             "components": [
-                "Button"
+                "Animation"
             ],
-            "Button.spriteName": "door",
+            "Animation.key": "fire",
+            "Animation.end": 14,
             "texture": {
-                "key": "coffee",
-                "frame": "door"
+                "key": "coffee_halloween",
+                "frame": "fire0001"
             },
-            "x": 785,
-            "y": 295
-        },
-        {
-            "type": "Image",
-            "id": "91b13a35-6870-41d1-8eeb-cd6bdad1ad58",
-            "label": "redChair_png",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "RedChair.png"
-            },
-            "x": 585.5930983040714,
-            "y": 467.4883435032109,
-            "originX": 0.0006006342198156011,
-            "originY": 0.69148275002085
-        },
-        {
-            "type": "Image",
-            "id": "e49ad1e3-a933-4071-9d36-b2609d4f2743",
-            "label": "beans",
-            "components": [
-                "Button"
-            ],
-            "Button.spriteName": "beans",
-            "texture": {
-                "key": "coffee",
-                "frame": "beans"
-            },
-            "x": 1016,
-            "y": 685
+            "x": 244,
+            "y": 534
         },
         {
             "type": "Sprite",
-            "id": "4c0df3fd-d4d4-420e-9206-02fad3a78b8c",
-            "label": "candle1_png",
-            "scope": "CLASS",
-            "components": [],
+            "id": "211e5625-c3b5-41a0-af67-e149833221c1",
+            "label": "fire_9",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fire",
+            "Animation.end": 14,
             "texture": {
-                "key": "coffee",
-                "frame": "Candle1.png"
-            },
-            "x": 193,
-            "y": 559
-        },
-        {
-            "type": "Sprite",
-            "id": "7c0ec2c8-0d26-4aa7-b841-474da36b69a5",
-            "label": "candle1_png_1",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "Candle1.png"
+                "key": "coffee_halloween",
+                "frame": "fire0001"
             },
             "x": 219,
-            "y": 547
+            "y": 522
         },
         {
             "type": "Sprite",
-            "id": "0d0e841f-f803-4bee-b206-539cb2ad1939",
-            "label": "candle1_png_2",
-            "scope": "CLASS",
-            "components": [],
+            "id": "27127ef3-51d7-473c-9c99-f8a6a96cbeb8",
+            "label": "fire_10",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fire",
+            "Animation.end": 14,
             "texture": {
-                "key": "coffee",
-                "frame": "Candle1.png"
+                "key": "coffee_halloween",
+                "frame": "fire0001"
             },
-            "x": 245,
-            "y": 559
+            "x": 193,
+            "y": 533
         },
         {
             "type": "Sprite",
-            "id": "f115a78c-dca4-44fa-a128-b881e0f11883",
-            "label": "candle1_png_3",
-            "scope": "CLASS",
-            "components": [],
+            "id": "9116ea0f-bf2e-48d9-a004-039ee1d68d9c",
+            "label": "fire_11",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fire",
+            "Animation.end": 14,
             "texture": {
-                "key": "coffee",
-                "frame": "Candle1.png"
+                "key": "coffee_halloween",
+                "frame": "fire0001"
             },
-            "x": 34,
-            "y": 499
+            "x": 141,
+            "y": 447
         },
         {
             "type": "Sprite",
-            "id": "d84286e5-d167-4a46-b7de-f401d4e80aaf",
-            "label": "candle1_png_4",
-            "scope": "CLASS",
-            "components": [],
+            "id": "bfa5bf6c-f9bb-470d-93a1-3270a141520b",
+            "label": "fire_12",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fire",
+            "Animation.end": 14,
             "texture": {
-                "key": "coffee",
-                "frame": "Candle1.png"
+                "key": "coffee_halloween",
+                "frame": "fire0001"
             },
-            "x": 58,
-            "y": 481
+            "x": 111,
+            "y": 440
         },
         {
             "type": "Sprite",
-            "id": "a62fde22-f0a0-4244-b38f-2f26f147aa2c",
-            "label": "candle1_png_5",
-            "scope": "CLASS",
-            "components": [],
+            "id": "81476d67-db85-455f-ac07-c4cd45012677",
+            "label": "fire_13",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fire",
+            "Animation.end": 14,
             "texture": {
-                "key": "coffee",
-                "frame": "Candle1.png"
+                "key": "coffee_halloween",
+                "frame": "fire0001"
             },
-            "x": 83,
-            "y": 457
+            "x": 82,
+            "y": 432
         },
         {
             "type": "Sprite",
-            "id": "1fff526e-f958-4040-bfb3-1a95c9651e9e",
-            "label": "candle1_png_6",
-            "scope": "CLASS",
-            "components": [],
+            "id": "37612314-30e9-46b8-9a14-c3a39970bc5d",
+            "label": "fire_14",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fire",
+            "Animation.end": 14,
             "texture": {
-                "key": "coffee",
-                "frame": "Candle1.png"
+                "key": "coffee_halloween",
+                "frame": "fire0001"
             },
-            "x": 114,
-            "y": 468
+            "x": 55,
+            "y": 453
         },
         {
             "type": "Sprite",
-            "id": "19eb8528-fd64-4fdd-a94d-cccf7b45d626",
-            "label": "candle1_png_7",
-            "scope": "CLASS",
-            "components": [],
+            "id": "d6bcb5bd-5ad3-4925-bc4d-22e4f9be772c",
+            "label": "fire_15",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fire",
+            "Animation.end": 14,
             "texture": {
-                "key": "coffee",
-                "frame": "Candle1.png"
+                "key": "coffee_halloween",
+                "frame": "fire0001"
             },
-            "x": 144,
-            "y": 477
+            "x": 31,
+            "y": 472
         },
         {
-            "type": "Sprite",
-            "id": "d6bd94c8-1cd3-4db6-b786-4aee53992473",
-            "label": "candle1_png_8",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "Candle1.png"
-            },
-            "x": 325,
-            "y": 550
+            "type": "Rectangle",
+            "id": "a884f753-f16b-4c04-a9d1-930687c3bc7e",
+            "label": "rectangle_1",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => {this.happyhalloween.visible = !this.happyhalloween.visible}",
+            "x": 1082,
+            "y": 356,
+            "scaleX": 1.4486462702705145,
+            "scaleY": 2.554085800683581,
+            "width": 128,
+            "height": 128
         },
         {
-            "type": "Sprite",
-            "id": "a999caa8-3416-474a-b719-86ce6bd078fe",
-            "label": "candle1_png_9",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "Candle1.png"
-            },
-            "x": 343,
-            "y": 549
-        },
-        {
-            "type": "Sprite",
-            "id": "332e7402-4859-414e-8e29-eb46c26c313e",
-            "label": "candle1_png_10",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "Candle1.png"
-            },
-            "x": 376,
-            "y": 555
-        },
-        {
-            "type": "Sprite",
-            "id": "d4dc63d8-76b7-4277-9719-2f4ad63f97ae",
-            "label": "candle1_png_11",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "Candle1.png"
-            },
-            "x": 450,
-            "y": 610
-        },
-        {
-            "type": "Sprite",
-            "id": "920a5107-adf0-41c3-a188-f6332cf8abb1",
-            "label": "candle1_png_12",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "Candle1.png"
-            },
-            "x": 424,
-            "y": 614
-        },
-        {
-            "type": "Sprite",
-            "id": "37e57bd6-4fc7-4f0c-a995-a4fb183b1be9",
-            "label": "candle1_png_13",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "Candle1.png"
-            },
-            "x": 283,
-            "y": 701
-        },
-        {
-            "type": "Sprite",
-            "id": "05c6951c-c139-405c-95e4-3441b380477a",
-            "label": "candle1_png_14",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "Candle1.png"
-            },
-            "x": 301,
-            "y": 692
-        },
-        {
-            "type": "Sprite",
-            "id": "14952467-76db-4fc0-9ac6-d8ed869bc869",
-            "label": "candle1_png_15",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "Candle1.png"
-            },
-            "x": 330,
-            "y": 716
+            "type": "Rectangle",
+            "id": "e6924178-f78e-48ce-af6f-acd921d2d667",
+            "label": "rectangle",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.bookroomhover0002.visible = true;",
+            "SimpleButton.hoverOutCallback": "() => this.bookroomhover0002.visible = false;",
+            "MoveTo.x": 1285,
+            "MoveTo.y": 850,
+            "x": 1288,
+            "y": 615,
+            "scaleX": 1.4486462702705145,
+            "scaleY": 4.712770748989753,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],
@@ -509,13 +750,40 @@
             "id": "d8014338-e465-4139-bd11-d2d330aded64",
             "label": "sort",
             "objectIds": [
-                "b2b02df4-d24a-4c06-8eef-ca5bd5d0870b",
-                "91b13a35-6870-41d1-8eeb-cd6bdad1ad58",
-                "517e896d-c326-44e0-b204-deaf9ea4137d",
-                "61c9a257-5651-414b-a9ec-429e5d8f3d28",
-                "45a14afe-1ff0-45c5-a782-186f9d3a2ac7",
-                "bcbe46f4-f9e6-4a52-a481-c7be6c97a825",
-                "1c4b9cb1-9434-40ea-827a-72415c798430"
+                "d6bcb5bd-5ad3-4925-bc4d-22e4f9be772c",
+                "37612314-30e9-46b8-9a14-c3a39970bc5d",
+                "81476d67-db85-455f-ac07-c4cd45012677",
+                "bfa5bf6c-f9bb-470d-93a1-3270a141520b",
+                "9116ea0f-bf2e-48d9-a004-039ee1d68d9c",
+                "27127ef3-51d7-473c-9c99-f8a6a96cbeb8",
+                "211e5625-c3b5-41a0-af67-e149833221c1",
+                "044126fc-78f1-4e9a-abd6-dabbdd417bae",
+                "24800505-8d68-4f30-bb8c-9368d6757243",
+                "64e76a07-bd6a-494c-8b60-144c3d315ba2",
+                "37df9495-2341-4fa4-b1e9-552b5a73dfdd",
+                "f4cda8bf-2028-4aab-bf47-7b5d86e64068",
+                "89017243-235e-46d9-9bf3-9eb7076e319a",
+                "74fefdc4-fe7e-405e-8c9e-4e91b7c155b9",
+                "2d4237d4-1ce7-45f0-9ccc-7623505d8e97",
+                "f2409ea1-d0ee-4c2b-9404-d8eb4118dc15",
+                "a47a2269-244a-4ad4-a008-faec63b7c41b",
+                "b2a7fec5-6e40-4360-8dfa-0f189887008f",
+                "4fff7002-ba44-4a5d-9937-e6a24f7c6d16",
+                "42ad7491-3b40-4e6d-9d64-c584356d323e",
+                "805485fe-23aa-40a8-a9cc-d269371e7800",
+                "e8fc2ef3-8f79-45db-939e-ed550a821dda",
+                "edf16f13-1195-4283-9164-1fd6416dd0fb",
+                "721f0863-0626-4abd-b757-7f4bccaac5b6",
+                "0703b044-89fb-4d83-94d8-b287a0095ef5",
+                "7a4aa622-3ba8-47ab-be14-22e7f734075c",
+                "c88cc472-c832-4bbe-8713-529ba47dbc01",
+                "98ce29d1-d288-4593-b21e-516b2dee6dfb",
+                "5ec6d610-2ebe-4d82-abb7-5ca4ab5c6770",
+                "ee93b6b9-2f15-405f-acdf-5908509ecbb3",
+                "55d2f0ea-5877-4ba5-96da-177e5bb59611",
+                "b6b19b36-b02d-41ea-b0a4-035ec8ec7ef9",
+                "bfccdd9a-eca5-4a01-89f8-fed7ecce577d",
+                "ff34bccc-42e0-4da6-a14d-9f21f7aeadb3"
             ]
         }
     ]

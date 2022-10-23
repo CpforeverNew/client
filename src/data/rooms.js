@@ -4,7 +4,7 @@ let rooms;
 rooms = {
 	100: {
 		key: 'Town',
-		scene: require(`@rooms/old/town/Town`).default,
+		scene: require(`@rooms/spooky_fair/town/Town`).default,
 		x: 760,
 		y: 660
 	},

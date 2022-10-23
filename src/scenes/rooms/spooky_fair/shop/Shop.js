@@ -11,10 +11,10 @@ export default class Shop extends RoomScene {
         super("Shop");
 
         /** @type {Phaser.GameObjects.Sprite} */
-        this.phone;
+        this.register0001;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.register;
-        /** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Image>} */
+        this.phone0001;
+        /** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
         this.sort;
 
 
@@ -25,6 +25,7 @@ export default class Shop extends RoomScene {
             'catalog': () => this.interface.loadExternal('ClothingCatalog')
         }
         this.music = '345'
+        this.roomAnims = true;
 
         /* END-USER-CTR-CODE */
     }
@@ -33,136 +34,119 @@ export default class Shop extends RoomScene {
     _preload() {
 
         this.load.pack("shop-pack", "assets/media/rooms/spooky_fair/shop/shop-pack.json");
+        this.load.pack("pizza-pack", "assets/media/rooms/spooky_fair/pizza/pizza-pack.json");
     }
 
     /** @returns {void} */
     _create() {
 
-        // background_png
-        const background_png = this.add.image(0, 0, "spooky-shop", "Background.png");
-        background_png.setOrigin(0.002500607161042051, 0.061693174588784136);
+        // container
+        const container = this.add.container(1324.9695028627973, 660.5011002882876);
+
+        // doorlightning0001
+        const doorlightning0001 = this.add.sprite(1107, 258, "shop_halloween", "doorlightning0001");
+        doorlightning0001.scaleX = 1.6030451677292308;
+        doorlightning0001.scaleY = 1.6030451677292308;
+
+        // bg
+        const bg = this.add.image(763, 475, "shop_halloween", "bg");
+        bg.scaleX = 1.0198154029971915;
+        bg.scaleY = 1.0198154029971915;
+
+        // desk
+        const desk = this.add.image(1341.7446917430605, 671.3151208199762, "shop_halloween", "desk");
+        desk.setOrigin(0.40808217709425987, 0.7909328631737692);
+
+        // register0001
+        const register0001 = this.add.sprite(1390.0888509283955, 735.919268151086, "shop_halloween", "register0001");
+        register0001.setOrigin(1.159763750935526, 2.0227864761638776);
+
+        // phone0001
+        const phone0001 = this.add.sprite(1499.034368109497, 731.4025912728478, "shop_halloween", "phone0001");
+        phone0001.setOrigin(1.191781699370326, 1.7492729293754767);
+
+        // fg
+        this.add.image(809, 367, "shop_halloween", "fg");
+
+        // bottomleft
+        this.add.image(130, 705, "shop_halloween", "bottomleft");
+
+        // bottomleftidk
+        const bottomleftidk = this.add.image(28, 870, "shop_halloween", "bottomleftidk");
+
+        // chairs
+        this.add.image(844, 356, "shop_halloween", "chairs");
+
+        // leftchairhead
+        const leftchairhead = this.add.image(771, 260, "shop_halloween", "leftchairhead");
+        leftchairhead.scaleX = 0.9826311173362379;
+        leftchairhead.scaleY = 0.9826311173362379;
+
+        // speaker0001
+        const speaker0001 = this.add.sprite(43, 321, "shop_halloween", "speaker0001");
+
+        // decoration
+        this.add.image(762, -63, "shop_halloween", "decoration");
 
         // door
-        const door = this.add.image(1028, 132, "shop", "door");
-        door.setOrigin(0, 0);
+        const door = this.add.image(1102, 318, "shop_halloween", "door");
+        door.scaleX = 1.1036100643349118;
+        door.scaleY = 1.1036100643349118;
 
-        // speaker
-        const speaker = this.add.sprite(-2, 175, "shop", "speaker/speaker0003");
-        speaker.setOrigin(0, 0);
-
-        // container
-        const container = this.add.container(1324.9695028627973, 663.5011002882876);
-
-        // counter
-        const counter = this.add.image(0.030536885885567244, 1.4989092534428892, "shop", "counter");
-        counter.setOrigin(0.4, 0.8102766798418972);
-        container.add(counter);
-
-        // phone
-        const phone = this.add.sprite(63.03053688588557, -177.5010907465571, "shop", "phone/phone0001");
-        phone.setOrigin(0, 0);
-        container.add(phone);
-
-        // register
-        const register = this.add.sprite(-102.96946311411443, -289.5010907465571, "shop", "register/register0001");
-        register.setOrigin(0, 0);
-        container.add(register);
-
-        // registerZone
-        const registerZone = this.add.rectangle(1292, 466, 110, 100);
-        registerZone.alpha = 0.5;
-        registerZone.isFilled = true;
-        registerZone.fillColor = 65280;
-
-        // phoneZone
-        const phoneZone = this.add.rectangle(1428, 541, 75, 60);
-        phoneZone.alpha = 0.5;
-        phoneZone.isFilled = true;
-        phoneZone.fillColor = 65280;
+        // pumpkin
+        const pumpkin = this.add.image(228.0554649955557, 804.9718334431319, "pizza_halloween", "pumpkin");
+        pumpkin.setOrigin(0.5857012794266797, 0.7920248885977599);
+        pumpkin.flipX = true;
 
         // catalog
-        const catalog = this.add.image(1340, 1055, "shop", "catalog");
+        const catalog = this.add.image(1340, 1052, "shop_halloween", "catalog0001");
         catalog.setOrigin(0, 2);
 
-        // pumpkin_png
-        this.add.image(218, 739, "spooky-shop", "Pumpkin.png");
+        // rectangle_1
+        const rectangle_1 = this.add.rectangle(1305, 483, 128, 128);
+        rectangle_1.scaleX = 0.715384304732612;
+        rectangle_1.scaleY = 0.715384304732612;
 
-        // shoebox_png
-        this.add.image(34, 899, "spooky-shop", "Shoebox.png");
-
-        // streamer4_png
-        this.add.image(995, 10, "spooky-shop", "Streamer4.png");
-
-        // streamer5_png
-        this.add.image(1387, 61, "spooky-shop", "Streamer5.png");
-
-        // streamer3_png
-        this.add.image(475, 83, "spooky-shop", "Streamer3.png");
-
-        // streamer2_png
-        this.add.image(678, 31, "spooky-shop", "Streamer2.png");
-
-        // streamer1_png
-        this.add.image(203, 85, "spooky-shop", "Streamer1.png");
+        // rectangle
+        const rectangle = this.add.rectangle(1440, 553, 128, 128);
+        rectangle.scaleX = 0.3221768433658497;
+        rectangle.scaleY = 0.3221768433658497;
 
         // lists
-        const sort = [container, catalog];
+        const sort = [container, catalog, desk, register0001, phone0001, pumpkin, bottomleftidk];
+
+        // doorlightning0001 (components)
+        const doorlightning0001Animation = new Animation(doorlightning0001);
+        doorlightning0001Animation.key = "doorlightning";
+        doorlightning0001Animation.end = 86;
+
+        // speaker0001 (components)
+        const speaker0001Animation = new Animation(speaker0001);
+        speaker0001Animation.key = "speaker";
+        speaker0001Animation.end = 30;
 
         // door (components)
         const doorButton = new Button(door);
         doorButton.spriteName = "door";
         doorButton.activeFrame = false;
-        doorButton.pixelPerfect = true;
         const doorMoveTo = new MoveTo(door);
-        doorMoveTo.x = 1080;
-        doorMoveTo.y = 466;
-
-        // speaker (components)
-        const speakerSimpleButton = new SimpleButton(speaker);
-        speakerSimpleButton.pixelPerfect = true;
-        const speakerAnimation = new Animation(speaker);
-        speakerAnimation.key = "speaker/speaker";
-        speakerAnimation.end = 30;
-        speakerAnimation.repeat = 0;
-        speakerAnimation.autoPlay = false;
-        speakerAnimation.onHover = true;
-        speakerAnimation.stopOnOut = false;
-
-        // phone (components)
-        const phoneAnimation = new Animation(phone);
-        phoneAnimation.key = "phone/phone";
-        phoneAnimation.end = 55;
-        phoneAnimation.repeat = 0;
-        phoneAnimation.autoPlay = false;
-        phoneAnimation.onHover = true;
-        phoneAnimation.stopOnOut = false;
-
-        // register (components)
-        const registerAnimation = new Animation(register);
-        registerAnimation.key = "register/register";
-        registerAnimation.end = 35;
-        registerAnimation.repeat = 0;
-        registerAnimation.autoPlay = false;
-        registerAnimation.onHover = true;
-        registerAnimation.stopOnOut = false;
-
-        // registerZone (components)
-        const registerZoneZone = new Zone(registerZone);
-        registerZoneZone.hoverCallback = () => this.register.__Animation.play();
-
-        // phoneZone (components)
-        const phoneZoneZone = new Zone(phoneZone);
-        phoneZoneZone.hoverCallback = () => this.phone.__Animation.play();
+        doorMoveTo.x = 1102;
+        doorMoveTo.y = 450;
 
         // catalog (components)
-        const catalogButton = new Button(catalog);
-        catalogButton.spriteName = "catalog";
-        catalogButton.callback = () => this.interface.loadExternal('ClothingCatalog');
-        catalogButton.activeFrame = false;
-        catalogButton.pixelPerfect = true;
+        const catalogSimpleButton = new SimpleButton(catalog);
+        catalogSimpleButton.callback = () => this.interface.loadExternal('ClothingCatalog');
 
-        this.phone = phone;
-        this.register = register;
+        // rectangle_1 (components)
+        const rectangle_1SimpleButton = new SimpleButton(rectangle_1);
+        rectangle_1SimpleButton.hoverCallback = () => this.register0001.play("register");
+
+        // rectangle (components)
+        const rectangleSimpleButton = new SimpleButton(rectangle);
+        rectangleSimpleButton.hoverCallback = () => this.phone0001.play("phone");
+
+        this.register0001 = register0001;
+        this.phone0001 = phone0001;
         this.sort = sort;
 
         this.events.emit("scene-awake");
