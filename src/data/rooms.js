@@ -16,7 +16,7 @@ rooms = {
 	},
 	111: {
 		key: 'Book',
-		scene: require(`@rooms/old/book/Book`).default,
+		scene: require(`@rooms/spooky_fair/book/Book`).default,
 		x: 1260,
 		y: 560
 	},
@@ -112,13 +112,13 @@ rooms = {
 	},
 	400: {
 		key: 'Beach',
-		scene: require(`@rooms/old/beach/Beach`).default,
+		scene: require(`@rooms/spooky_fair/beach/Beach`).default,
 		x: 840,
 		y: 680
 	},
 	410: {
 		key: 'Lighthouse',
-		scene: require(`@rooms/old/lighthouse/Lighthouse`).default,
+		scene: require(`@rooms/spooky_fair/lighthouse/Lighthouse`).default,
 		x: 840,
 		y: 680
 	},
@@ -160,7 +160,7 @@ rooms = {
 	},
 	805: {
 		key: 'Berg',
-		scene: require(`@rooms/old/berg/Berg`).default,
+		scene: require(`@rooms/spooky_fair/berg/Berg`).default,
 		x: 652,
 		y: 448
 	},

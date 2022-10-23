@@ -1,0 +1,651 @@
+{
+    "id": "38fcb456-c893-4164-bc03-95bea23214a3",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/spooky_fair/lighthouse/lighthouse-spf-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Lighthouse",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "118756f1-4c69-45a5-acd9-bd2fb123350c",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "bg"
+            },
+            "x": 759,
+            "y": 469
+        },
+        {
+            "type": "Image",
+            "id": "d1369f83-453f-4ff1-90f7-34aa96706094",
+            "label": "concessions",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "concessions"
+            },
+            "x": 985,
+            "y": 498
+        },
+        {
+            "type": "Image",
+            "id": "332bfffe-764e-403a-b819-09ea959d4a7f",
+            "label": "smalltv",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "smalltv"
+            },
+            "x": 1203,
+            "y": 534
+        },
+        {
+            "type": "Image",
+            "id": "a2bdbee9-7f9b-453c-be81-f0e8bca4505e",
+            "label": "rail",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "rail"
+            },
+            "x": 655,
+            "y": 663.7526243930017,
+            "originY": 1.0307240457528273
+        },
+        {
+            "type": "Image",
+            "id": "445ed7a4-5c6f-4b9c-b808-1c1018b42e12",
+            "label": "popcorn",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "popcorn",
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "popcorn"
+            },
+            "x": 741,
+            "y": 381
+        },
+        {
+            "type": "Image",
+            "id": "30afb236-d9ea-4155-b135-8464de96d447",
+            "label": "speaker",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "speaker"
+            },
+            "x": 632,
+            "y": 378
+        },
+        {
+            "type": "Image",
+            "id": "a0dca9a0-472f-4947-bcdb-40b66f259c59",
+            "label": "pumkin1",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "pumkin1"
+            },
+            "x": 579,
+            "y": 453
+        },
+        {
+            "type": "Image",
+            "id": "ea26a084-b498-401e-90a7-664cb68b91fc",
+            "label": "door",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "door"
+            },
+            "x": 468,
+            "y": 395
+        },
+        {
+            "type": "Image",
+            "id": "1441ff76-8a19-4d13-95f6-ca0ed66dcaf2",
+            "label": "screen",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "screen"
+            },
+            "x": 613,
+            "y": 458.535377928559,
+            "originY": 0.6892952712480875
+        },
+        {
+            "type": "Sprite",
+            "id": "182f9fe7-8418-4aa2-b6a8-c88016964c28",
+            "label": "tv",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "tv",
+                "frame": "tv10000"
+            },
+            "x": 156,
+            "y": 675,
+            "originX": 0.5091060582705557,
+            "originY": 1.0684434815387627
+        },
+        {
+            "type": "Image",
+            "id": "5893b385-0179-4d10-aba8-74d76fe37225",
+            "label": "spider",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "spider"
+            },
+            "x": 78,
+            "y": 133
+        },
+        {
+            "type": "Image",
+            "id": "33460918-71e0-405f-a682-e3bae35ff349",
+            "label": "tv_stand",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "tv_stand"
+            },
+            "x": 190,
+            "y": 615
+        },
+        {
+            "type": "Image",
+            "id": "887401d3-4f2a-4aa4-afc1-19bae602be27",
+            "label": "speaker_onbox",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "speaker_onbox"
+            },
+            "x": 11,
+            "y": 870
+        },
+        {
+            "type": "Image",
+            "id": "c2c4d9cf-2e20-4c68-a7e5-6da6e994f469",
+            "label": "pumkin2",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "pumkin2"
+            },
+            "x": 1489,
+            "y": 623
+        },
+        {
+            "type": "Image",
+            "id": "721b357f-098f-4a00-9335-252b88b562a7",
+            "label": "chair1",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair1"
+            },
+            "x": 748,
+            "y": 635
+        },
+        {
+            "type": "Image",
+            "id": "18d22420-665e-4dca-baf1-a5fdf8cfcd47",
+            "label": "char_arm1",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "char_arm1"
+            },
+            "x": 738,
+            "y": 673
+        },
+        {
+            "type": "Image",
+            "id": "0fadef86-18e6-40fa-b472-03bb47732a8f",
+            "label": "chair_arm2",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair_arm2"
+            },
+            "x": 695,
+            "y": 720
+        },
+        {
+            "type": "Image",
+            "id": "d6ec6931-1749-4417-afb8-d471ed2f8463",
+            "label": "char2",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "char2"
+            },
+            "x": 715,
+            "y": 713
+        },
+        {
+            "type": "Image",
+            "id": "d64eccee-e9c2-47e7-bf37-03f37c18259b",
+            "label": "chair_arm3",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair_arm3"
+            },
+            "x": 632,
+            "y": 786
+        },
+        {
+            "type": "Image",
+            "id": "ec18d989-9f8e-4146-8dbf-9a471da09b2e",
+            "label": "chair3",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair3"
+            },
+            "x": 655,
+            "y": 793
+        },
+        {
+            "type": "Image",
+            "id": "47d70e5f-a093-456f-97e9-d1ea415f2a4f",
+            "label": "chair_arm4",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair_arm4"
+            },
+            "x": 544,
+            "y": 839
+        },
+        {
+            "type": "Image",
+            "id": "1ed3a038-0fa8-4135-968f-752ab3ad30ec",
+            "label": "chair4",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair4"
+            },
+            "x": 572,
+            "y": 849
+        },
+        {
+            "type": "Image",
+            "id": "491aebae-8a9b-49c1-9fa1-93d1a3f1279b",
+            "label": "chair5",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair5"
+            },
+            "x": 857,
+            "y": 621
+        },
+        {
+            "type": "Image",
+            "id": "b5059cdc-d488-41c8-81a1-375fb196b64e",
+            "label": "chair_arm5",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair_arm5"
+            },
+            "x": 847,
+            "y": 658
+        },
+        {
+            "type": "Image",
+            "id": "c6b204e5-ac6b-4840-b0d4-8c4896a22aaa",
+            "label": "chair_arm6",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair_arm6"
+            },
+            "x": 821,
+            "y": 697
+        },
+        {
+            "type": "Image",
+            "id": "4f1f01bf-5d13-41e7-8d24-1788afdc965c",
+            "label": "chair6",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair6"
+            },
+            "x": 842,
+            "y": 690
+        },
+        {
+            "type": "Image",
+            "id": "84b1a2b7-c063-474b-b694-e224ca90d5ce",
+            "label": "chair_arm7",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair_arm7"
+            },
+            "x": 772,
+            "y": 771
+        },
+        {
+            "type": "Image",
+            "id": "84879ba3-bd10-4d00-9b1c-1f18e27ed292",
+            "label": "chair7",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair7"
+            },
+            "x": 798,
+            "y": 774
+        },
+        {
+            "type": "Image",
+            "id": "f0c9657c-8d9d-47fd-b379-b5d75fbd72ac",
+            "label": "chair_arm8",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair_arm8"
+            },
+            "x": 705,
+            "y": 848
+        },
+        {
+            "type": "Image",
+            "id": "8e6d89d2-9c62-4598-95dc-9c73bc90e954",
+            "label": "chair8",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair8"
+            },
+            "x": 733,
+            "y": 859
+        },
+        {
+            "type": "Image",
+            "id": "85744b74-a0b5-42d4-a984-5ef22d37bd22",
+            "label": "chair9",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair9"
+            },
+            "x": 970,
+            "y": 632
+        },
+        {
+            "type": "Image",
+            "id": "3a010e29-a862-4fd8-8b76-e38a569e48a1",
+            "label": "chair_arm9",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair_arm9"
+            },
+            "x": 960,
+            "y": 669
+        },
+        {
+            "type": "Image",
+            "id": "ef5b5b26-a9fb-4d0c-bebf-3c6a38333e68",
+            "label": "chair10",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair10"
+            },
+            "x": 963,
+            "y": 689
+        },
+        {
+            "type": "Image",
+            "id": "c2da7c92-53d8-40d0-b044-c19f95e4d2b7",
+            "label": "chair_arm10",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair_arm10"
+            },
+            "x": 955,
+            "y": 726
+        },
+        {
+            "type": "Image",
+            "id": "5989a0c1-916c-4a98-ae2f-cd41f02162b3",
+            "label": "chair_arm11",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair_arm11"
+            },
+            "x": 912,
+            "y": 777
+        },
+        {
+            "type": "Image",
+            "id": "41bfbdd6-62fb-4fce-a276-bcbdd41e41b0",
+            "label": "chair11",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair11"
+            },
+            "x": 933,
+            "y": 771
+        },
+        {
+            "type": "Image",
+            "id": "ea2b8784-0f3a-4239-854e-9439bf5a2f47",
+            "label": "chair_arm12",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair_arm12"
+            },
+            "x": 864,
+            "y": 835
+        },
+        {
+            "type": "Image",
+            "id": "56bb3d1a-140c-4540-99b1-ca2efd32c030",
+            "label": "chair12",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair12"
+            },
+            "x": 889,
+            "y": 838
+        },
+        {
+            "type": "Image",
+            "id": "e4c34b0c-f73d-4c9a-8202-847a80ca5d4d",
+            "label": "chair13",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair13"
+            },
+            "x": 1083,
+            "y": 680
+        },
+        {
+            "type": "Image",
+            "id": "e359fcbd-d10d-40c0-bb11-0d737951b0bd",
+            "label": "chairarm13",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chairarm13"
+            },
+            "x": 1075,
+            "y": 718
+        },
+        {
+            "type": "Image",
+            "id": "66da6738-c4f2-4a08-8da0-102219acdcba",
+            "label": "chair14",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair14"
+            },
+            "x": 1076,
+            "y": 744
+        },
+        {
+            "type": "Image",
+            "id": "5b7393bc-5ad1-407a-82e4-05ab3e0cd2d5",
+            "label": "chair_arm14",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair_arm14"
+            },
+            "x": 1067,
+            "y": 783
+        },
+        {
+            "type": "Image",
+            "id": "8ab2bbeb-39ee-4a13-ba74-6294c37e3ab8",
+            "label": "chair_arm15",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair_arm15"
+            },
+            "x": 1029,
+            "y": 841
+        },
+        {
+            "type": "Image",
+            "id": "9d8afb95-527e-40f5-8664-aa4264612dc4",
+            "label": "chair15",
+            "components": [],
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "chair15"
+            },
+            "x": 1051,
+            "y": 834
+        },
+        {
+            "type": "Image",
+            "id": "a2591497-df68-413d-a78b-71d5f58eb8a0",
+            "label": "paper0001",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "paper",
+            "Button.callback": "() => this.interface.loadExternal('Music')",
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "paper"
+            },
+            "x": 1439,
+            "y": 898
+        },
+        {
+            "type": "Sprite",
+            "id": "56e84e2c-8238-434d-84af-996ea13b546d",
+            "label": "to_top0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "to_top",
+            "Animation.end": 26,
+            "Animation.onHover": true,
+            "texture": {
+                "key": "lighthouse-spf",
+                "frame": "to_top0001"
+            },
+            "x": 317,
+            "y": 61
+        },
+        {
+            "type": "Sprite",
+            "id": "8d3fd0c1-7c14-4456-bda3-c59cf75dbb7e",
+            "label": "screen_text",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "tv",
+                "frame": "text0638"
+            },
+            "x": 1188,
+            "y": 482
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "1bc796af-8118-4a54-b624-39e93ad42d65",
+            "label": "sort",
+            "objectIds": [
+                "9d8afb95-527e-40f5-8664-aa4264612dc4",
+                "8ab2bbeb-39ee-4a13-ba74-6294c37e3ab8",
+                "5b7393bc-5ad1-407a-82e4-05ab3e0cd2d5",
+                "66da6738-c4f2-4a08-8da0-102219acdcba",
+                "e359fcbd-d10d-40c0-bb11-0d737951b0bd",
+                "e4c34b0c-f73d-4c9a-8202-847a80ca5d4d",
+                "56bb3d1a-140c-4540-99b1-ca2efd32c030",
+                "ea2b8784-0f3a-4239-854e-9439bf5a2f47",
+                "41bfbdd6-62fb-4fce-a276-bcbdd41e41b0",
+                "5989a0c1-916c-4a98-ae2f-cd41f02162b3",
+                "c2da7c92-53d8-40d0-b044-c19f95e4d2b7",
+                "ef5b5b26-a9fb-4d0c-bebf-3c6a38333e68",
+                "3a010e29-a862-4fd8-8b76-e38a569e48a1",
+                "85744b74-a0b5-42d4-a984-5ef22d37bd22",
+                "8e6d89d2-9c62-4598-95dc-9c73bc90e954",
+                "f0c9657c-8d9d-47fd-b379-b5d75fbd72ac",
+                "84879ba3-bd10-4d00-9b1c-1f18e27ed292",
+                "84b1a2b7-c063-474b-b694-e224ca90d5ce",
+                "4f1f01bf-5d13-41e7-8d24-1788afdc965c",
+                "c6b204e5-ac6b-4840-b0d4-8c4896a22aaa",
+                "b5059cdc-d488-41c8-81a1-375fb196b64e",
+                "491aebae-8a9b-49c1-9fa1-93d1a3f1279b",
+                "1ed3a038-0fa8-4135-968f-752ab3ad30ec",
+                "47d70e5f-a093-456f-97e9-d1ea415f2a4f",
+                "ec18d989-9f8e-4146-8dbf-9a471da09b2e",
+                "d64eccee-e9c2-47e7-bf37-03f37c18259b",
+                "d6ec6931-1749-4417-afb8-d471ed2f8463",
+                "0fadef86-18e6-40fa-b472-03bb47732a8f",
+                "18d22420-665e-4dca-baf1-a5fdf8cfcd47",
+                "721b357f-098f-4a00-9335-252b88b562a7",
+                "a2bdbee9-7f9b-453c-be81-f0e8bca4505e",
+                "d1369f83-453f-4ff1-90f7-34aa96706094",
+                "1441ff76-8a19-4d13-95f6-ca0ed66dcaf2",
+                "182f9fe7-8418-4aa2-b6a8-c88016964c28"
+            ]
+        }
+    ]
+}

@@ -36,7 +36,7 @@ export default class DojoExt extends RoomScene {
     _create() {
 
         // sky0001
-        this.add.image(951, 28, "sky_spooky", "sky0001");
+        const sky0001 = this.add.sprite(951, 28, "sky_spooky", "sky0001");
 
         // dojo
         this.add.image(760, 484, "dojoext_halloween", "dojo");
