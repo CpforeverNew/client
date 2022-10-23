@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dbf84a0-702d-4b7f-91c2-cad1e9a3ca05" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/rooms.js" afterDir="false" />
@@ -11,6 +12,11 @@
       <change beforePath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/dojoext/DojoExt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/dojoext/DojoExt.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/forest/Forest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/forest/Forest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/forest/Forest.scene" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/forest/Forest.scene" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/data/rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/rooms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/village/Village.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/village/Village.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/village/Village.scene" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/village/Village.scene" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +34,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -38,6 +45,18 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Websites/CPForever/client/src/scenes/games/feed",
+    "nodejs_package_manager_path": "yarn",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+>>>>>>> Stashed changes
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Websites\CPForever\client\src\scenes\games\feed" />
@@ -94,7 +113,11 @@
       <updated>1665985774202</updated>
       <workItem from="1665985776390" duration="306000" />
       <workItem from="1666083212061" duration="13444000" />
+<<<<<<< Updated upstream
       <workItem from="1666218600774" duration="21188000" />
+=======
+      <workItem from="1666218600774" duration="11076000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
