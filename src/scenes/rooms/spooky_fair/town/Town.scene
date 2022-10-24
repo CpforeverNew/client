@@ -321,7 +321,7 @@
             ],
             "MoveTo.x": 783,
             "MoveTo.y": 374,
-            "SimpleButton.callback": "() => {this.triggerRoom(8008415, 100, 50)}",
+            "SimpleButton.callback": "() => {this.triggerRoom(899,  716, 666)}",
             "x": 1238,
             "y": 794,
             "scaleX": 0.9284943559594598,

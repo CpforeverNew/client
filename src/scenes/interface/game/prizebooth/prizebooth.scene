@@ -7,8 +7,10 @@
         "exportClass": true,
         "superClassName": "BaseScene",
         "preloadPackFiles": [
-            "client/assets/media/interface/game/prizebooth/prize-pack.json"
+            "client/assets/media/interface/game/prizebooth/prize-pack.json",
+            "client/assets/media/interface/game/telescope/telescope-pack.json"
         ],
+        "createMethodName": "_create",
         "sceneKey": "PrizeBooth",
         "borderWidth": 1520,
         "borderHeight": 960
@@ -123,18 +125,117 @@
             "scaleY": 1.2529759730265984
         },
         {
-            "type": "Image",
-            "id": "639820e3-453c-41cf-8fb2-36d87800bd62",
+            "type": "Rectangle",
+            "id": "003cba1c-3ab9-4e12-9d21-b1accac6daa7",
+            "label": "rectangle_2",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.crab()",
+            "x": 199,
+            "y": 790,
+            "scaleX": 2.0683990799814773,
+            "scaleY": 2.725701582118213,
+            "alpha": 0.0001,
+            "isFilled": true,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Sprite",
+            "id": "f4548d42-2819-4c41-8bfc-11e837f91712",
             "label": "closebtn",
             "components": [
                 "Button"
             ],
+            "Button.spriteName": "closebtn",
+            "Button.callback": "() => this.scene.stop()",
             "texture": {
                 "key": "telescope",
                 "frame": "closebtn"
             },
-            "x": 1441,
-            "y": 64
+            "x": 1440,
+            "y": 53
+        },
+        {
+            "type": "Rectangle",
+            "id": "0b79235d-d2cb-4635-999f-85e39b644dea",
+            "label": "rectangle_3",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.ghost()",
+            "x": 253,
+            "y": 327,
+            "scaleX": 2.0683990799814773,
+            "scaleY": 2.725701582118213,
+            "alpha": 0.0001,
+            "isFilled": true,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "c51d486f-82f6-4656-a3cb-55f8f8711cb8",
+            "label": "rectangle_4",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.puffle()",
+            "x": 756,
+            "y": 466,
+            "scaleX": 4.510593677751949,
+            "scaleY": 5.170462858011434,
+            "alpha": 0.0001,
+            "isFilled": true,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "f688352f-bcd2-4e0f-817d-a21aee3a4e5a",
+            "label": "rectangle_5",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.mask()",
+            "x": 1237,
+            "y": 397,
+            "scaleX": 2.0882078853263466,
+            "scaleY": 2.152659354351799,
+            "alpha": 0.0001,
+            "isFilled": true,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "d8524f06-ce7a-4c76-be15-1670c3a455cc",
+            "label": "rectangle_6",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.body()",
+            "x": 1227,
+            "y": 786,
+            "scaleX": 2.0882078853263466,
+            "scaleY": 2.152659354351799,
+            "alpha": 0.0001,
+            "isFilled": true,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Text",
+            "id": "bf2ce8d0-373d-4e11-b21a-9f8f7e8961be",
+            "label": "tickets",
+            "scope": "CLASS",
+            "components": [],
+            "x": 547,
+            "y": 881,
+            "text": "Tickets: ",
+            "fontFamily": "Burbank Small",
+            "fontSize": "50px"
         }
     ],
     "plainObjects": [],

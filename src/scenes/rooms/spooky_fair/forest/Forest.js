@@ -25,9 +25,9 @@ export default class Forest extends RoomScene {
             'plaza': () => this.triggerRoom(300, 1240, 660),
             'shack': () => this.triggerRoom(807, 500, 800),
             'cove': () => this.triggerRoom(810, 520, 416),
-            'circusext': () => this.triggerRoom(111, 100, 100),
+            'circusext': () => this.triggerRoom(899, 746, 731),
             'memory': () => this.triggerGame("Card", 998),
-            'prizebooth': null,
+            'prizebooth': () => this.interface.loadExternal('PrizeBooth'),
             'pufflepaddle': () => this.triggerGame("Paddle", 1000)
         }
 

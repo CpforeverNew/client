@@ -180,7 +180,7 @@ export default class Town extends RoomScene {
         rectangle_3MoveTo.x = 783;
         rectangle_3MoveTo.y = 374;
         const rectangle_3SimpleButton = new SimpleButton(rectangle_3);
-        rectangle_3SimpleButton.callback = () => {this.triggerRoom(8008415, 100, 50)};
+        rectangle_3SimpleButton.callback = () => {this.triggerRoom(899,  716, 666)};
 
         this.sort = sort;
 

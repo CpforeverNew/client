@@ -359,6 +359,12 @@ rooms = {
 		scene: require('@rooms/spooky_fair/vault/Vault').default,
 		x: 500,
 		y: 560
+	},
+	432234: {
+		key: 'CircusInt',
+		scene: require('@rooms/spooky_fair/circusint/CircusInt').default,
+		x: 746,
+		y: 731
 	}
 }
 
