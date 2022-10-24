@@ -27,7 +27,7 @@ export default class Theatre extends Plugin {
     }
 
     #theatreRoom() {
-        return this.world.room.id === this.theatreId;
+        return true;
     }
 
 }

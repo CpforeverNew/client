@@ -365,6 +365,10 @@ rooms = {
 		scene: require('@rooms/spooky_fair/circusint/CircusInt').default,
 		x: 746,
 		y: 731
+	},
+	1004: {
+		key: 'Feed',
+		scene: require('@games/feed/Feed').default
 	}
 }
 

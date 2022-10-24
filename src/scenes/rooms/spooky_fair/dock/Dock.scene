@@ -88,22 +88,58 @@
         },
         {
             "type": "Image",
+            "id": "08ae2961-fbb0-4bb0-b38a-53148e157fe2",
+            "label": "tree2",
+            "components": [],
+            "texture": {
+                "key": "dock-spf",
+                "frame": "tree2"
+            },
+            "x": 124,
+            "y": 244
+        },
+        {
+            "type": "Image",
+            "id": "9768f0fe-8571-4cfe-b670-f86dc089b155",
+            "label": "gate1",
+            "components": [],
+            "texture": {
+                "key": "dock-spf",
+                "frame": "gate1"
+            },
+            "x": 251,
+            "y": 432.7264299798384,
+            "originY": 0.703541602789564
+        },
+        {
+            "type": "Image",
+            "id": "48f880c7-bfe7-4132-9a76-985bbe2d0351",
+            "label": "pumkin_1",
+            "components": [],
+            "texture": {
+                "key": "dock-spf",
+                "frame": "pumkin2"
+            },
+            "x": 257.51075212079786,
+            "y": 531.9774791472946,
+            "originX": 0.9548150882684139,
+            "originY": 0.6098952506696277,
+            "flipX": true
+        },
+        {
+            "type": "Image",
             "id": "ccf25e35-97d1-4fd3-b497-e624b3c44e5c",
             "label": "boat",
             "scope": "CLASS",
-            "components": [
-                "SimpleButton",
-                "MoveTo",
-                "ShowHint"
-            ],
-            "SimpleButton.pixelPerfect": true,
-            "ShowHint.text": "Hydro Hopper",
+            "components": [],
             "texture": {
                 "key": "dock-spf",
                 "frame": "boat0001"
             },
-            "x": 223,
-            "y": 647
+            "x": 80.0346427629448,
+            "y": 536.143659848803,
+            "originX": 0.0018628480534620495,
+            "originY": -0.003892537816854839
         },
         {
             "type": "Image",
@@ -127,8 +163,8 @@
                 "key": "dock-spf",
                 "frame": "dock"
             },
-            "x": 184.97704761448438,
-            "y": 589.3695288854817,
+            "x": 184.97705078125,
+            "y": 585.1397520450215,
             "originX": 0,
             "originY": 0
         },
@@ -292,18 +328,6 @@
         },
         {
             "type": "Image",
-            "id": "08ae2961-fbb0-4bb0-b38a-53148e157fe2",
-            "label": "tree2",
-            "components": [],
-            "texture": {
-                "key": "dock-spf",
-                "frame": "tree2"
-            },
-            "x": 124,
-            "y": 244
-        },
-        {
-            "type": "Image",
             "id": "b217bfda-8c05-4c1e-b220-f41917849ca2",
             "label": "gate2",
             "components": [],
@@ -315,18 +339,6 @@
             "y": 248.54690250339814,
             "originX": 0.6304007405898526,
             "originY": 0.6809251759945397
-        },
-        {
-            "type": "Image",
-            "id": "9768f0fe-8571-4cfe-b670-f86dc089b155",
-            "label": "gate1",
-            "components": [],
-            "texture": {
-                "key": "dock-spf",
-                "frame": "gate1"
-            },
-            "x": 251,
-            "y": 345
         },
         {
             "type": "Image",
@@ -539,6 +551,41 @@
             "x": 648,
             "y": 291.8510798290158,
             "originY": 4.193769282660997
+        },
+        {
+            "type": "Rectangle",
+            "id": "b3a1da91-e3b4-492b-b6cb-fea66395cc58",
+            "label": "rectangle_2",
+            "components": [
+                "MoveTo",
+                "ShowHint",
+                "SimpleButton"
+            ],
+            "ShowHint.text": "Hydro Hopper",
+            "x": 227,
+            "y": 640,
+            "scaleX": 2.3862256695962585,
+            "scaleY": 1.2253750953009241,
+            "angle": -44,
+            "alpha": 0.00001,
+            "isFilled": true,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "307facdf-a608-4d6b-aafe-3e9989451389",
+            "label": "screen_placeholder",
+            "scope": "CLASS",
+            "components": [],
+            "x": 851,
+            "y": 693,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "isFilled": true,
+            "fillColor": "#000",
+            "width": 636,
+            "height": 382
         }
     ],
     "plainObjects": [],
@@ -578,7 +625,9 @@
                 "bff67a62-93f8-4823-bced-34a38736b4a4",
                 "7c70a7a5-8363-4ea8-880f-ba744ad624f9",
                 "14ea4b65-3ba8-4534-b9ac-faa41fca670b",
-                "c7f7ca76-41a5-4e84-b33d-145e7db654d9"
+                "c7f7ca76-41a5-4e84-b33d-145e7db654d9",
+                "48f880c7-bfe7-4132-9a76-985bbe2d0351",
+                "ccf25e35-97d1-4fd3-b497-e624b3c44e5c"
             ]
         }
     ]

@@ -14,11 +14,14 @@ export default class Dock extends RoomScene {
         this.boat;
         /** @type {Phaser.GameObjects.Sprite} */
         this.rings;
+        /** @type {Phaser.GameObjects.Rectangle} */
+        this.screen_placeholder;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
         this.sort;
 
 
         /* START-USER-CTR-CODE */
+        this.#streamActive = false;
 
         this.roomTriggers = {
             'beach': () => this.triggerRoom(400, 950, 430),
@@ -61,15 +64,28 @@ export default class Dock extends RoomScene {
         // bg
         this.add.image(715, 420, "dock-spf", "bg");
 
+        // tree2
+        const tree2 = this.add.image(124, 244, "dock-spf", "tree2");
+
+        // gate1
+        const gate1 = this.add.image(251, 432.7264299798384, "dock-spf", "gate1");
+        gate1.setOrigin(0.5, 0.703541602789564);
+
+        // pumkin_1
+        const pumkin_1 = this.add.image(257.51075212079786, 531.9774791472946, "dock-spf", "pumkin2");
+        pumkin_1.setOrigin(0.9548150882684139, 0.6098952506696277);
+        pumkin_1.flipX = true;
+
         // boat
-        const boat = this.add.image(223, 647, "dock-spf", "boat0001");
+        const boat = this.add.image(80.0346427629448, 536.143659848803, "dock-spf", "boat0001");
+        boat.setOrigin(0.0018628480534620495, -0.003892537816854839);
 
         // post1
         const post1 = this.add.image(439, 595.5372015059321, "dock-spf", "post1");
         post1.setOrigin(0.5, 0.5394540428922225);
 
         // dock
-        const dock = this.add.image(184.97704761448438, 589.3695288854817, "dock-spf", "dock");
+        const dock = this.add.image(184.97705078125, 585.1397520450215, "dock-spf", "dock");
         dock.setOrigin(0, 0);
 
         // bollard_1
@@ -111,15 +127,9 @@ export default class Dock extends RoomScene {
         // paper
         const paper = this.add.image(1441, 889, "dock-spf", "paper");
 
-        // tree2
-        const tree2 = this.add.image(124, 244, "dock-spf", "tree2");
-
         // gate2
         const gate2 = this.add.image(437.7761222698439, 248.54690250339814, "dock-spf", "gate2");
         gate2.setOrigin(0.6304007405898526, 0.6809251759945397);
-
-        // gate1
-        const gate1 = this.add.image(251, 345, "dock-spf", "gate1");
 
         // gate4
         const gate4 = this.add.image(1043.0247114780461, 86.16637995746022, "dock-spf", "gate4");
@@ -177,8 +187,23 @@ export default class Dock extends RoomScene {
         const spintowin_logo = this.add.image(648, 291.8510798290158, "dock-spf", "spintowin-logo");
         spintowin_logo.setOrigin(0.5, 4.193769282660997);
 
+        // rectangle_2
+        const rectangle_2 = this.add.rectangle(227, 640, 128, 128);
+        rectangle_2.scaleX = 2.3862256695962585;
+        rectangle_2.scaleY = 1.2253750953009241;
+        rectangle_2.angle = -44;
+        rectangle_2.alpha = 0.00001;
+        rectangle_2.isFilled = true;
+
+        // screen_placeholder
+        const screen_placeholder = this.add.rectangle(851, 693, 636, 382);
+        screen_placeholder.scaleX = 0.5;
+        screen_placeholder.scaleY = 0.5;
+        screen_placeholder.isFilled = true;
+        screen_placeholder.fillColor = 0;
+
         // lists
-        const sort = [pumkin1, puffle_shuffle0001, gate3, pumkin2, pumkin3, pumkin4, pumkin, gate2, tree2, gate1, boards, paper_wrapp, tree1, rings, ringthebell, ringthebell_sign, dock, post2, post3, post4, post1, bollard_1, bollard_2, box, spintowin, spintowin_logo];
+        const sort = [pumkin1, puffle_shuffle0001, gate3, pumkin2, pumkin3, pumkin4, pumkin, gate2, tree2, gate1, boards, paper_wrapp, tree1, rings, ringthebell, ringthebell_sign, dock, post2, post3, post4, post1, bollard_1, bollard_2, box, spintowin, spintowin_logo, pumkin_1, boat];
 
         // lightning_10006 (components)
         const lightning_10006Animation = new Animation(lightning_10006);
@@ -189,13 +214,6 @@ export default class Dock extends RoomScene {
         const lightning_20122Animation = new Animation(lightning_20122);
         lightning_20122Animation.key = "lightning_2";
         lightning_20122Animation.end = 290;
-
-        // boat (components)
-        const boatSimpleButton = new SimpleButton(boat);
-        boatSimpleButton.pixelPerfect = true;
-        new MoveTo(boat);
-        const boatShowHint = new ShowHint(boat);
-        boatShowHint.text = "Hydro Hopper";
 
         // rings (components)
         const ringsAnimation = new Animation(rings);
@@ -241,8 +259,15 @@ export default class Dock extends RoomScene {
         zoneZone.hoverCallback = () => this.onRingsOver();
         new MoveTo(zone);
 
+        // rectangle_2 (components)
+        new MoveTo(rectangle_2);
+        const rectangle_2ShowHint = new ShowHint(rectangle_2);
+        rectangle_2ShowHint.text = "Hydro Hopper";
+        new SimpleButton(rectangle_2);
+
         this.boat = boat;
         this.rings = rings;
+        this.screen_placeholder = screen_placeholder;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -261,6 +286,8 @@ export default class Dock extends RoomScene {
             callback: () => this.floatBoat(),
             loop: true
         })
+
+        this.network.send('get_stream');
     }
 
     onRingsOver() {
@@ -272,6 +299,72 @@ export default class Dock extends RoomScene {
         this.boat.y += value
         this.up = !this.up
     }
+
+    stream(source) {
+
+        console.log("Strea,omg tjos sjot")
+
+        if(!Hls.isSupported()) throw Error('Hls is not supported on this device.');
+
+        this.#video = document.createElement('video');
+
+        if(this.#streamActive) throw Error('Stream is already active.');
+        this.#streamActive = true;
+
+        this.hls = new Hls();
+
+        this.events.once('shutdown', () => {
+            this.#clean();
+        });
+
+        this.hls.loadSource(source);
+        this.hls.attachMedia(this.#video);
+
+        this.videoContainer = new Phaser.GameObjects.Video(this, 100, 100);
+
+        this.#video.addEventListener('pause', this.onPause.bind(this));
+
+        this.videoContainer.on('created', () => {
+            const { width, height } = this.screen_placeholder.getBounds();
+            this.videoContainer.setDisplaySize(width, height);
+        })
+
+        this.videoContainer.copyPosition(this.screen_placeholder.getCenter());
+
+        this.videoContainer.video = this.#video;
+
+        this.add.existing(this.videoContainer);
+
+        this.videoContainer.play();
+
+        console.log("helooo")
+    }
+
+    onPause() {
+        this.videoContainer.play();
+    }
+
+    onStreamAvaliable({ avaliable, source }) {
+        if(!this.#streamActive && avaliable) return this.stream(source);
+        if(this.#streamActive && !avaliable) return this.#clean();
+    }
+
+    #clean() {
+        this.#streamActive = false;
+        this.#video && this.#video.removeEventListener('pause', this.onPause.bind(this));
+
+        this.hls && this.hls.destroy();
+        this.#video && this.#video.remove();
+        this.videoContainer && this.videoContainer.destroy();
+
+        this.#video = null;
+        this.videoContainer = null;
+        this.hls = null;
+    }
+
+    /** Private */
+    #streamActive
+    #video
 
     /* END-USER-CODE */
 }
