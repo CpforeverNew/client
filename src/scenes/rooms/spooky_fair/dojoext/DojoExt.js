@@ -20,7 +20,7 @@ export default class DojoExt extends RoomScene {
             'map': () => this.interface.main.map.visible = true,
             'dojo': () => this.triggerRoom(320, 384, 616)
         }
-        this.music = 'dojo'
+        this.music = '251'
 
         /* END-USER-CTR-CODE */
     }

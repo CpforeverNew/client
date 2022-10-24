@@ -25,6 +25,7 @@ export default class Vault extends RoomScene {
         this.roomTriggers = {
             'book': () => this.triggerRoom(111,454,534)
         }
+        this.music = '252'
 
         this.roomAnims = true
         /* END-USER-CTR-CODE */
@@ -282,7 +283,7 @@ export default class Vault extends RoomScene {
 
         // partyhat (components)
         const partyhatSimpleButton = new SimpleButton(partyhat);
-        partyhatSimpleButton.callback = () => this.interface.prompt.showItem(10);
+        partyhatSimpleButton.callback = () => this.interface.prompt.showItem(36105);
 
         // backcandle_8 (components)
         const backcandle_8Animation = new Animation(backcandle_8);

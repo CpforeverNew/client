@@ -22,7 +22,7 @@ export default class Pizza extends RoomScene {
             'plaza': () => this.triggerRoom(300, 870, 330),
             'pizzatron': () => this.triggerGame("Pizzatron", 910)
         }
-        this.music = 'pizzaparlor'
+        this.music = '253'
         this.roomAnims = true;
 
         /* END-USER-CTR-CODE */
@@ -180,6 +180,11 @@ export default class Pizza extends RoomScene {
         // smoke0001
         const smoke0001 = this.add.sprite(43, 190, "pizza_halloween", "smoke0001");
 
+        // candy_candy50002
+        const candy_candy50002 = this.add.image(1461, 257, "candyhunt", "candy/5-got");
+        candy_candy50002.scaleX = 0.7216821803326748;
+        candy_candy50002.scaleY = 0.7324105121939131;
+
         // lists
         const sort = [smoke0001, fire0001, piano, flame_6, flame_5, flame_4, flame_3, flame_2, pumpkin, candle, pianochair, leftbags, cooker, book0001, desk, door, kitchen, curtain, table_right, table_mid, table_left, chairs_2, chairs_1, chairs, stick_thing, register0001, flame0001, flame, flame_1];
 
@@ -258,6 +263,10 @@ export default class Pizza extends RoomScene {
         const smoke0001Animation = new Animation(smoke0001);
         smoke0001Animation.key = "smoke";
         smoke0001Animation.end = 5;
+
+        // candy_candy50002 (components)
+        const candy_candy50002SimpleButton = new SimpleButton(candy_candy50002);
+        candy_candy50002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "pumkin" });
 
         this.book0001 = book0001;
         this.register0001 = register0001;

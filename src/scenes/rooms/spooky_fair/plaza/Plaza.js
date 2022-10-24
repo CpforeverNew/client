@@ -25,7 +25,7 @@ export default class Plaza extends RoomScene {
             'pizza': () => this.triggerRoom(330, 850, 540),
             'forest': () => this.triggerRoom(809, 270, 430)
         }
-        this.music = '677'
+        this.music = '251'
 
         /* END-USER-CTR-CODE */
     }
@@ -91,6 +91,11 @@ export default class Plaza extends RoomScene {
         // right_stage_door
         const right_stage_door = this.add.sprite(958, 390, "plaza-spf", "right_stage_door");
 
+        // candy_candy60002
+        const candy_candy60002 = this.add.image(488, 836, "candyhunt", "candy/6-got");
+        candy_candy60002.scaleX = 0.5;
+        candy_candy60002.scaleY = 0.5;
+
         // lists
         const sort = [tickets, pizza_trick, pumkin1, pumkin3, pumkin2, trees];
 
@@ -124,6 +129,10 @@ export default class Plaza extends RoomScene {
         const right_stage_doorMoveTo = new MoveTo(right_stage_door);
         right_stage_doorMoveTo.x = 960;
         right_stage_doorMoveTo.y = 460;
+
+        // candy_candy60002 (components)
+        const candy_candy60002SimpleButton = new SimpleButton(candy_candy60002);
+        candy_candy60002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_apple" });
 
         this.sort = sort;
 

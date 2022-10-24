@@ -565,6 +565,23 @@
             },
             "x": 43,
             "y": 190
+        },
+        {
+            "type": "Image",
+            "id": "e423f098-152e-4f29-b759-52993f746602",
+            "label": "candy_candy50002",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"pumkin\" })",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "candy/5-got"
+            },
+            "x": 1461,
+            "y": 257,
+            "scaleX": 0.7216821803326748,
+            "scaleY": 0.7324105121939131
         }
     ],
     "plainObjects": [],

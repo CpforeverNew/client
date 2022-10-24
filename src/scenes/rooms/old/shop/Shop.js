@@ -44,12 +44,6 @@ export default class Shop extends RoomScene {
         bg_2005_shop.scaleY = 1.02;
         bg_2005_shop.setOrigin(0, 0);
 
-        // candy_candy40002
-        const candy_candy40002 = this.add.image(216, 733, "candyhunt", "candy/4-got");
-        candy_candy40002.scaleX = 0.5;
-        candy_candy40002.scaleY = 0.5;
-        candy_candy40002.angle = -19;
-
         // door
         const door = this.add.image(1028, 132, "shop", "door");
         door.setOrigin(0, 0);
@@ -100,10 +94,6 @@ export default class Shop extends RoomScene {
 
         // lists
         const sort = [container, catalog];
-
-        // candy_candy40002 (components)
-        const candy_candy40002SimpleButton = new SimpleButton(candy_candy40002);
-        candy_candy40002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_borbon" });
 
         // door (components)
         const doorButton = new Button(door);

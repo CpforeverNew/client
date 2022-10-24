@@ -14,7 +14,7 @@ export default class CircusInt extends RoomScene {
 
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
-            'circusext': () => this.triggerRoom(809, 1120, 800),
+            'circusext': () => this.triggerRoom(899, 1120, 800),
         }
         this.music = 252;
         /* END-USER-CTR-CODE */

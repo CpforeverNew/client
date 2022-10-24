@@ -166,6 +166,23 @@
         },
         {
             "type": "Image",
+            "id": "d0d22cdd-c788-48aa-ada8-786e3dc92679",
+            "label": "candy_candy70002",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"candy_bar\" })",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "candy/7-got"
+            },
+            "x": 936,
+            "y": 355,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "type": "Image",
             "id": "fef95ace-fce6-4d30-bdd2-5ddc7022456d",
             "label": "hutright",
             "components": [],

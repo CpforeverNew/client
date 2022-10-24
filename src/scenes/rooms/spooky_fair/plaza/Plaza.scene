@@ -223,6 +223,23 @@
             },
             "x": 958,
             "y": 390
+        },
+        {
+            "type": "Image",
+            "id": "d240854a-5ac1-4e1c-9518-5d2601c7416b",
+            "label": "candy_candy60002",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"candy_apple\" })",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "candy/6-got"
+            },
+            "x": 488,
+            "y": 836,
+            "scaleX": 0.5,
+            "scaleY": 0.5
         }
     ],
     "plainObjects": [],

@@ -24,6 +24,7 @@ export default class Village extends RoomScene {
             'beach': () => this.triggerRoom(400, 920, 360),
             'mtn': () => this.triggerRoom(230, 840, 320)
         }
+        this.music = '251'
 
         this.roomAnims = true
 

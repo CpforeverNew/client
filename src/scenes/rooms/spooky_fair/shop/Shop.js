@@ -24,7 +24,7 @@ export default class Shop extends RoomScene {
             'town': () => this.triggerRoom(100, 932, 560),
             'catalog': () => this.interface.loadExternal('ClothingCatalog')
         }
-        this.music = '345'
+        this.music = '252'
         this.roomAnims = true;
 
         /* END-USER-CTR-CODE */

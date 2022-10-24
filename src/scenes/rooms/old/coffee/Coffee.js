@@ -48,12 +48,6 @@ export default class Coffee extends RoomScene {
         const lamp = this.add.image(172, -11, "coffee", "lamp");
         lamp.setOrigin(0, 0);
 
-        // candy_candy80002
-        const candy_candy80002 = this.add.image(905, 692, "candyhunt", "candy/8-got");
-        candy_candy80002.scaleX = 0.5;
-        candy_candy80002.scaleY = 0.5;
-        candy_candy80002.angle = 46;
-
         // table
         const table = this.add.image(414, 499, "coffee", "table");
         table.setOrigin(0.5217391304347826, 0.5368421052631579);
@@ -121,10 +115,6 @@ export default class Coffee extends RoomScene {
 
         // lists
         const sort = [beans, bag, sign_front, sign_back, counter_front, counter_back, table];
-
-        // candy_candy80002 (components)
-        const candy_candy80002SimpleButton = new SimpleButton(candy_candy80002);
-        candy_candy80002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "lollipop" });
 
         // smoke (components)
         const smokeAnimation = new Animation(smoke);

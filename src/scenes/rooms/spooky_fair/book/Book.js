@@ -26,7 +26,7 @@ export default class Book extends RoomScene {
                 }
             }
         }
-        this.music = 'coffee'
+        this.music = '252'
         this.roomAnims = true;
         /* END-USER-CTR-CODE */
     }

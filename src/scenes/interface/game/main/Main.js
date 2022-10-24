@@ -792,6 +792,11 @@ export default class Main extends BaseScene {
         // init partycontroller
 
         this.world.party.getPartyCompletion()
+
+        if (!localStorage.getItem('dialog-slade')) {
+            this.interface.loadExternal('Dialog')
+            localStorage.setItem('dialog-slade', 'true')
+        }
     }
 
     onSleep(sys, data) {

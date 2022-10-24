@@ -32,23 +32,6 @@
         },
         {
             "type": "Image",
-            "id": "c40a69ee-0f55-44ed-979d-e8b10b2273c0",
-            "label": "candy_candy10002",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"candy_stick\" })",
-            "texture": {
-                "key": "candyhunt",
-                "frame": "candy/1-got"
-            },
-            "x": 68,
-            "y": 490,
-            "scaleX": 0.5,
-            "scaleY": 0.5
-        },
-        {
-            "type": "Image",
             "id": "6291cd2e-fc87-4b49-9dfe-87efcf8dca79",
             "label": "red_fort",
             "components": [],

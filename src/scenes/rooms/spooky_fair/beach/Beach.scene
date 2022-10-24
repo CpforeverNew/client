@@ -143,6 +143,27 @@
         },
         {
             "type": "Image",
+            "id": "5636423d-1397-4a4f-9dc1-c82154014c0a",
+            "label": "candy_candy20002",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"candy_cube\" })",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "candy/2-got"
+            },
+            "x": 129,
+            "y": 513,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "tintTopLeft": "#cfcfcf",
+            "tintTopRight": "#cfcfcf",
+            "tintBottomLeft": "#cfcfcf",
+            "tintBottomRight": "#cfcfcf"
+        },
+        {
+            "type": "Image",
             "id": "088e300e-67c4-4df5-bc18-df6fcf48b220",
             "label": "rightpumpkin",
             "components": [],

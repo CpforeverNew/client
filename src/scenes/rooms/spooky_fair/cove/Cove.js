@@ -79,6 +79,11 @@ export default class Cove extends RoomScene {
         // hutinterior
         this.add.image(1315, 447, "cove-spooky", "hutinterior");
 
+        // candy_candy70002
+        const candy_candy70002 = this.add.image(936, 355, "candyhunt", "candy/7-got");
+        candy_candy70002.scaleX = 0.5;
+        candy_candy70002.scaleY = 0.5;
+
         // hutright
         this.add.image(1437, 465, "cove-spooky", "hutright");
 
@@ -155,6 +160,10 @@ export default class Cove extends RoomScene {
         fapMoveTo.y = 550;
         const fapShowHint = new ShowHint(fap);
         fapShowHint.text = "Feed-A-Puffle";
+
+        // candy_candy70002 (components)
+        const candy_candy70002SimpleButton = new SimpleButton(candy_candy70002);
+        candy_candy70002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_bar" });
 
         // antennae0001 (components)
         const antennae0001Animation = new Animation(antennae0001);

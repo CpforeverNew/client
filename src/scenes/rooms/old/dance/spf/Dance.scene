@@ -116,7 +116,10 @@
             "type": "Image",
             "id": "6d1cb5b1-33e1-4d67-905b-872ba73fdbc6",
             "label": "candy_pumkin",
-            "components": [],
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.prompt.showItem(36103)",
             "texture": {
                 "key": "spooky-dance",
                 "frame": "candy_pumkin"

@@ -26,7 +26,7 @@ export default class Coffee extends RoomScene {
             'book': () => this.triggerRoom(111, 1200, 580)
         }
         this.roomAnims = false
-        this.music = 'coffee'
+        this.music = '252'
 
         this.boardToggle = true
 

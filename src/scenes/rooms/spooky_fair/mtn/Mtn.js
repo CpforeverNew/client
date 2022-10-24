@@ -33,7 +33,7 @@ export default class Mtn extends RoomScene {
             'waddle102': () => this.triggerWaddle(102),
             'waddle103': () => this.triggerWaddle(103),
         }
-        this.music = 'mountain'
+        this.music = '251'
 
         this.waddles = {}
         /* END-USER-CTR-CODE */
@@ -222,6 +222,16 @@ export default class Mtn extends RoomScene {
         this.add.existing(mtnSeat1);
         mtnSeat1.visible = false;
 
+        // candy_candy40002
+        const candy_candy40002 = this.add.image(1229, 498, "candyhunt", "candy/4-got");
+        candy_candy40002.scaleX = 0.5;
+        candy_candy40002.scaleY = 0.5;
+        candy_candy40002.angle = -19;
+        candy_candy40002.tintTopLeft = 10855845;
+        candy_candy40002.tintTopRight = 10855845;
+        candy_candy40002.tintBottomLeft = 10855845;
+        candy_candy40002.tintBottomRight = 10855845;
+
         // lists
         const sort = [railing, express0001, rightpumpkin, scarecrow, shopsled0001, leftpumpkin];
         const seats100 = [mtnSeat4, mtnSeat3, mtnSeat2, mtnSeat1];
@@ -325,6 +335,10 @@ export default class Mtn extends RoomScene {
         mtnSeat1.sitFrame = 18;
         mtnSeat1.offsetX = 90;
         mtnSeat1.offsetY = -70;
+
+        // candy_candy40002 (components)
+        const candy_candy40002SimpleButton = new SimpleButton(candy_candy40002);
+        candy_candy40002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_borbon" });
 
         this.sort = sort;
         this.seats100 = seats100;

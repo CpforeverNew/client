@@ -345,6 +345,29 @@
             "scaleY": 1.1,
             "originX": 0.8846616694202258,
             "originY": 1.3279838824801864
+        },
+        {
+            "type": "Image",
+            "id": "449b1176-fab7-4b9e-8218-7ab123b9184b",
+            "label": "candy_candy10002",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"candy_stick\" })",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "candy/1-got"
+            },
+            "x": -50.358819141161234,
+            "y": 1232.9029433341475,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "angle": 36,
+            "originX": 0.4999998360620012,
+            "originY": 11.958993896989263,
+            "tintTopLeft": "#245e14",
+            "tintTopRight": "#245e14",
+            "tintBottomLeft": "#245e14"
         }
     ],
     "plainObjects": [],
@@ -365,7 +388,8 @@
                 "d7f86627-4a47-4bb1-a6db-c46715340e9e",
                 "a08873a4-5c3a-488e-98e4-a7bb69745b49",
                 "ddf17c02-b0d9-4194-8b2d-eb2c107bd2ba",
-                "bae1b2e9-bf03-4895-b4ba-a0c1012e7fae"
+                "bae1b2e9-bf03-4895-b4ba-a0c1012e7fae",
+                "449b1176-fab7-4b9e-8218-7ab123b9184b"
             ]
         }
     ]

@@ -557,7 +557,7 @@
             "components": [
                 "SimpleButton"
             ],
-            "SimpleButton.callback": "() => this.interface.prompt.showItem(10)",
+            "SimpleButton.callback": "() => this.interface.prompt.showItem(36105)",
             "x": 1341,
             "y": 652,
             "scaleX": 0.7596523802665731,

@@ -15,6 +15,7 @@ const interfaces = {
     'TelescopeSpooky': require('@scenes/interface/game/telescope/spooky_fair/Telescope').default,
     'Verify': require('@scenes/interface/game/verify/Verify').default,
     'PrizeBooth': require('@scenes/interface/game/prizebooth/PrizeBooth').default,
+    'Dialog': require('@scenes/interface/game/dialog/Dialog').default,
 }
 
 export default interfaces

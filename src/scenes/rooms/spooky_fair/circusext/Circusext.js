@@ -16,7 +16,12 @@ export default class Circusext extends RoomScene {
 
 
         /* START-USER-CTR-CODE */
-        // Write your code here.
+        this.roomTriggers = {
+            'circusint': () => this.triggerRoom(432234, 746, 731),
+            'forest': () => this.triggerRoom(809, 1063, 705),
+            'prize': () => this.interface.loadExternal('PrizeBooth'),
+        }
+        this.music = '251'
         /* END-USER-CTR-CODE */
     }
 
@@ -38,6 +43,12 @@ export default class Circusext extends RoomScene {
 
         // tent_back
         const tent_back = this.add.sprite(952, 373, "circusext", "tent_back");
+
+        // candy_candy30002
+        const candy_candy30002 = this.add.image(1073, 769, "candyhunt", "candy/3-got");
+        candy_candy30002.scaleX = 0.5;
+        candy_candy30002.scaleY = 0.5;
+        candy_candy30002.angle = 17;
 
         // tent
         this.add.image(1062, 277, "circusext", "tent");
@@ -77,9 +88,17 @@ export default class Circusext extends RoomScene {
         tent_backMoveTo.x = 928;
         tent_backMoveTo.y = 486;
 
+        // candy_candy30002 (components)
+        const candy_candy30002SimpleButton = new SimpleButton(candy_candy30002);
+        candy_candy30002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_corn" });
+        candy_candy30002SimpleButton.pixelPerfect = true;
+
         // prize_back (components)
         const prize_backButton = new Button(prize_back);
         prize_backButton.spriteName = "prize_back";
+        const prize_backMoveTo = new MoveTo(prize_back);
+        prize_backMoveTo.x = 338;
+        prize_backMoveTo.y = 441;
 
         this.sort = sort;
 

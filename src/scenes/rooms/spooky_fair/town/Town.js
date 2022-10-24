@@ -23,7 +23,7 @@ export default class Town extends RoomScene {
             'dance': () => this.triggerRoom(120, 300, 560),
             'gift': () => this.triggerRoom(130, 1036, 520),
         }
-        this.music = 'town'
+        this.music = '251'
 
         /* END-USER-CTR-CODE */
     }
@@ -145,8 +145,18 @@ export default class Town extends RoomScene {
         rightsign.scaleY = 1.1;
         rightsign.setOrigin(0.8846616694202258, 1.3279838824801864);
 
+        // candy_candy10002
+        const candy_candy10002 = this.add.image(-50.358819141161234, 1232.9029433341475, "candyhunt", "candy/1-got");
+        candy_candy10002.scaleX = 0.5;
+        candy_candy10002.scaleY = 0.5;
+        candy_candy10002.angle = 36;
+        candy_candy10002.setOrigin(0.4999998360620012, 11.958993896989263);
+        candy_candy10002.tintTopLeft = 2383380;
+        candy_candy10002.tintTopRight = 2383380;
+        candy_candy10002.tintBottomLeft = 2383380;
+
         // lists
-        const sort = [stand, tables, chair, rightpumpkin, leftpumpkin, rightsign, fg];
+        const sort = [stand, tables, chair, rightpumpkin, leftpumpkin, rightsign, fg, candy_candy10002];
 
         // sky0001 (components)
         const sky0001Animation = new Animation(sky0001);
@@ -181,6 +191,10 @@ export default class Town extends RoomScene {
         rectangle_3MoveTo.y = 374;
         const rectangle_3SimpleButton = new SimpleButton(rectangle_3);
         rectangle_3SimpleButton.callback = () => {this.triggerRoom(899,  716, 666)};
+
+        // candy_candy10002 (components)
+        const candy_candy10002SimpleButton = new SimpleButton(candy_candy10002);
+        candy_candy10002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_stick" });
 
         this.sort = sort;
 

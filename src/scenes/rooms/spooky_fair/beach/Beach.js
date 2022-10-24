@@ -21,7 +21,7 @@ export default class Beach extends RoomScene {
             'dock': () => this.triggerRoom(800, 240, 420),
             'lighthouse': () => this.triggerRoom(410, 530, 530)
         }
-        this.music = '583'
+        this.music = '251'
 
         /* END-USER-CTR-CODE */
     }
@@ -64,6 +64,15 @@ export default class Beach extends RoomScene {
         // righttree
         const righttree = this.add.image(1282.0050279039772, 171.84410708950077, "beach_halloween", "righttree");
         righttree.setOrigin(0.4981504461833568, 0.2512059272179837);
+
+        // candy_candy20002
+        const candy_candy20002 = this.add.image(129, 513, "candyhunt", "candy/2-got");
+        candy_candy20002.scaleX = 0.5;
+        candy_candy20002.scaleY = 0.5;
+        candy_candy20002.tintTopLeft = 13619151;
+        candy_candy20002.tintTopRight = 13619151;
+        candy_candy20002.tintBottomLeft = 13619151;
+        candy_candy20002.tintBottomRight = 13619151;
 
         // rightpumpkin
         const rightpumpkin = this.add.image(1312.0600438447532, 585.2794738629618, "beach_halloween", "rightpumpkin");
@@ -153,6 +162,10 @@ export default class Beach extends RoomScene {
         const glow_4Animation = new Animation(glow_4);
         glow_4Animation.key = "glow";
         glow_4Animation.end = 45;
+
+        // candy_candy20002 (components)
+        const candy_candy20002SimpleButton = new SimpleButton(candy_candy20002);
+        candy_candy20002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_cube" });
 
         // bulb0001 (components)
         const bulb0001Animation = new Animation(bulb0001);

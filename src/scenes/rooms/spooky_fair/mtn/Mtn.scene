@@ -685,6 +685,28 @@
             "x": 433,
             "y": 618,
             "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "92abfdab-d71b-4080-ba92-7316508bd221",
+            "label": "candy_candy40002",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"candy_borbon\" })",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "candy/4-got"
+            },
+            "x": 1229,
+            "y": 498,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "angle": -19,
+            "tintTopLeft": "#a5a5a5",
+            "tintTopRight": "#a5a5a5",
+            "tintBottomLeft": "#a5a5a5",
+            "tintBottomRight": "#a5a5a5"
         }
     ],
     "plainObjects": [],

@@ -10,6 +10,22 @@ export default class Dialog extends BaseScene {
     constructor() {
         super("Dialog");
 
+        /** @type {Phaser.GameObjects.Image} */
+        this.slade;
+        /** @type {Phaser.GameObjects.Image} */
+        this.conductor2;
+        /** @type {Phaser.GameObjects.Image} */
+        this.conductor1;
+        /** @type {Phaser.GameObjects.Text} */
+        this.dialogText;
+        /** @type {Phaser.GameObjects.Text} */
+        this.nameText;
+        /** @type {Phaser.GameObjects.Container} */
+        this.next_button;
+        /** @type {Phaser.GameObjects.Container} */
+        this.close_button;
+
+
         /* START-USER-CTR-CODE */
         // Write your code here.
         this.dialog = 0;
@@ -53,88 +69,113 @@ export default class Dialog extends BaseScene {
         speechBubble_png.setOrigin(-0.00022484312257626095, 0.00030716366264359435);
 
         // dialogText
-        const dialogText = this.add.text(603, 693, "", {});
+        const dialogText = this.add.text(603, 727, "", {});
         dialogText.text = "All these years, I worked so hard on bringing joy to the island.\nEvery single year that Rockhopper takes all the credit.";
         dialogText.setStyle({ "color": "#45535fff", "fontFamily": "Burbank Small", "fontSize": "30px", "fontStyle": "bold", "stroke": "#000000ff" });
         dialogText.setPadding({"right":25});
         dialogText.setLineSpacing(15);
         dialogText.setWordWrapWidth(900);
 
+        // nameText
+        const nameText = this.add.text(602, 678, "", {});
+        nameText.text = "NAME";
+        nameText.setStyle({ "color": "#45535fff", "fontFamily": "Burbank Small", "fontSize": "30px", "fontStyle": "bold", "stroke": "#000000ff" });
+        nameText.setPadding({"right":25});
+        nameText.setLineSpacing(15);
+        nameText.setWordWrapWidth(900);
+
+        // next_button
+        const next_button = this.add.container(0, 0);
+
         // nextbutton
-        const nextbutton = this.add.image(1420, 843, "dialog", "nextbutton");
+        const nextbutton = this.add.image(1416, 841, "dialog", "nextbutton");
         nextbutton.scaleX = 0.40028184738929246;
         nextbutton.scaleY = 0.4449826224548623;
+        next_button.add(nextbutton);
 
         // text
-        const text = this.add.text(1382, 820, "", {});
+        const text = this.add.text(1357, 822, "", {});
         text.text = "Next";
-        text.setStyle({ "align": "center", "color": "#2d2d2dff", "fontFamily": "Burbank Small Light", "fontSize": "36px", "fontStyle": "bold", "stroke": "#2d2d2dff", "strokeThickness":0.5,"shadow.stroke":true});
+        text.setStyle({ "align": "center", "color": "#2d2d2dff", "fixedWidth":120,"fontFamily": "Burbank Small Light", "fontSize": "30px", "fontStyle": "bold", "stroke": "#2d2d2dff", "strokeThickness":0.5,"shadow.stroke":true});
         text.setWordWrapWidth(750);
+        next_button.add(text);
 
-        // dialogText_1
-        const dialogText_1 = this.add.text(603, 820, "", {});
-        dialogText_1.setStyle({ "color": "#45535fff", "fontFamily": "Burbank Small", "fontSize": "28px", "fontStyle": "bold", "stroke": "#45535fff" });
-        dialogText_1.setWordWrapWidth(850);
+        // close_button
+        const close_button = this.add.container(0, 0);
+        close_button.visible = false;
+
+        // nextbutton_1
+        const nextbutton_1 = this.add.image(1416, 841, "dialog", "nextbutton");
+        nextbutton_1.scaleX = 0.40028184738929246;
+        nextbutton_1.scaleY = 0.4449826224548623;
+        close_button.add(nextbutton_1);
+
+        // text_1
+        const text_1 = this.add.text(1357, 822, "", {});
+        text_1.text = "Close";
+        text_1.setStyle({ "align": "center", "color": "#2d2d2dff", "fixedWidth":120,"fontFamily": "Burbank Small Light", "fontSize": "30px", "fontStyle": "bold", "stroke": "#2d2d2dff", "strokeThickness":0.5,"shadow.stroke":true});
+        text_1.setWordWrapWidth(750);
+        close_button.add(text_1);
 
         // nextbutton (components)
         const nextbuttonButton = new Button(nextbutton);
         nextbuttonButton.spriteName = "nextbutton";
         nextbuttonButton.callback = () => { this.onNextClick() };
 
-        this.conductor1 = conductor1;
-        this.conductor2 = conductor2;
+        // nextbutton_1 (components)
+        const nextbutton_1Button = new Button(nextbutton_1);
+        nextbutton_1Button.spriteName = "nextbutton";
+        nextbutton_1Button.callback = () => { this.scene.stop() };
+
         this.slade = slade;
+        this.conductor2 = conductor2;
+        this.conductor1 = conductor1;
         this.dialogText = dialogText;
-        this.nextbuttonButton = nextbuttonButton;
-        this.nextbutton = nextbutton;
-        this.text = text;
+        this.nameText = nameText;
+        this.next_button = next_button;
+        this.close_button = close_button;
 
         this.events.emit("scene-awake");
     }
 
+
     /* START-USER-CODE */
+
+    create(){
+        this._create();
+
+        this.conductor1.visible = true;
+        this.conductor2.visible = false;
+        this.slade.visible = false;
+        this.dialogText.text = "All these years, I worked so hard on bringing joy to the island. Every single year that Rockhopper takes all the credit.";
+        this.nameText.text = "The Dark Conductor";
+        this.dialog = 1;
+    }
 
     // Write your code here
 
     onNextClick() {
         switch (this.dialog) {
-            case 0:
-                this.conductor1.visible = true;
-                this.conductor2.visible = false;
-                this.slade.visible = false;
-                this.dialogText.text = "All these years, I worked so hard on bringing joy to the island. Every single year that Rockhopper takes all the credit.";
-                this.dialog = 1;
-                break;
-
             case 1:
                 this.conductor1.visible = false;
                 this.conductor2.visible = true;
                 this.slade.visible = false;
                 this.dialogText.text = "No more. I will unleash chaos on the island.";
+                this.nameText.text = "The Dark Conductor";
                 this.dialog = 2;
                 break;
 
             case 2:
-                this.text.text = "Close";
+                this.close_button.visible = true;
+                this.next_button.visible = false;
                 this.conductor1.visible = false;
                 this.conductor2.visible = false;
                 this.slade.visible = true;
                 this.dialogText.text = "I'm coming for you.";
+                this.nameText.text = "Slade";
                 this.visible = false;
                 break;
-
-            default:
-                this.conductor1.visible = true;
-                this.conductor2.visible = false;
-                this.slade.visible = false;
-                this.dialogText.text = "All these years, I worked so hard on bringing joy to the island. Every single year that Rockhopper takes all the credit.";
-                break;
         }
-    }
-
-    create() {
-
-        this._create()
     }
 
     init() {

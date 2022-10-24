@@ -80,6 +80,16 @@ export default class Rink extends RoomScene {
         bleachers_rail_1.setOrigin(0.82231405, 0.78181818);
         bleachers_rail_1.flipX = true;
 
+        // candy_candy80002
+        const candy_candy80002 = this.add.image(885, 215, "candyhunt", "candy/8-got");
+        candy_candy80002.scaleX = 0.5;
+        candy_candy80002.scaleY = 0.5;
+        candy_candy80002.angle = 23;
+        candy_candy80002.tintTopLeft = 7434609;
+        candy_candy80002.tintTopRight = 7434609;
+        candy_candy80002.tintBottomLeft = 7434609;
+        candy_candy80002.tintBottomRight = 7434609;
+
         // drink
         const drink = this.add.image(70, 485, "rink-spf", "drink");
         drink.setOrigin(0.5, 0.75510204);
@@ -137,8 +147,13 @@ export default class Rink extends RoomScene {
         const light = this.add.image(1249.5584678400055, 307.3915826049796, "rink-spf", "light");
         light.setOrigin(0.5271335457948464, 1.793945084859437);
 
+        // tombstone
+        const tombstone = this.add.image(66, 576, "tombstone");
+        tombstone.scaleX = 0.3;
+        tombstone.scaleY = 0.3;
+
         // lists
-        const sort = [fg, ball, goal_back, goal, goal_back_1, goal_1, snacks, sports_door0001, sports, right_bleachers, bleachers_rail_1, bleachers_rail, left_bleachers, fish_dogs, stand_middle, stand_base, stand_top, trash, rink_border, book_sports, light, snacks_door0001];
+        const sort = [fg, ball, goal_back, goal, goal_back_1, goal_1, snacks, sports_door0001, sports, right_bleachers, bleachers_rail_1, bleachers_rail, left_bleachers, fish_dogs, stand_middle, stand_base, stand_top, trash, rink_border, book_sports, light, snacks_door0001, tombstone];
 
         // sky0001 (components)
         const sky0001Animation = new Animation(sky0001);
@@ -149,6 +164,10 @@ export default class Rink extends RoomScene {
         const sports_door0001Button = new Button(sports_door0001);
         sports_door0001Button.spriteName = "sports_door";
 
+        // candy_candy80002 (components)
+        const candy_candy80002SimpleButton = new SimpleButton(candy_candy80002);
+        candy_candy80002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "lollipop" });
+
         // snacks_door0001 (components)
         const snacks_door0001Button = new Button(snacks_door0001);
         snacks_door0001Button.spriteName = "snacks_door";
@@ -158,6 +177,10 @@ export default class Rink extends RoomScene {
         book_sportsButton.spriteName = "book-sports";
         book_sportsButton.callback = () => this.interface.loadExternal('SportsCatalog');
         book_sportsButton.activeFrame = false;
+
+        // tombstone (components)
+        const tombstoneSimpleButton = new SimpleButton(tombstone);
+        tombstoneSimpleButton.callback = () => this.interface.prompt.showItem(7165);;
 
         this.sort = sort;
 

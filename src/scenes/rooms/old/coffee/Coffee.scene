@@ -45,24 +45,6 @@
         },
         {
             "type": "Image",
-            "id": "d6d154b6-6bc7-4313-b2aa-e65d5956cc27",
-            "label": "candy_candy80002",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"lollipop\" })",
-            "texture": {
-                "key": "candyhunt",
-                "frame": "candy/8-got"
-            },
-            "x": 905,
-            "y": 692,
-            "scaleX": 0.5,
-            "scaleY": 0.5,
-            "angle": 46
-        },
-        {
-            "type": "Image",
             "id": "5beaef60-3e4f-40a3-9fb3-01dc145bfeda",
             "label": "table",
             "components": [],

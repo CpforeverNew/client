@@ -354,6 +354,10 @@ rooms = {
 		key: 'PuffleSuffle',
 		scene: require('@games/pufflesuffle/PuffleSuffle').default
 	},
+	1005: {
+		key: 'Memory',
+		scene: require('@games/memory/Memory').default
+	},
 	8008415: {
 		key: 'Vault',
 		scene: require('@rooms/spooky_fair/vault/Vault').default,

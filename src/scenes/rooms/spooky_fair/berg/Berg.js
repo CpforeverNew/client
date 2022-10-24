@@ -30,7 +30,7 @@ export default class Berg extends RoomScene {
 			'nose': null,
 			'righteye': null
         }
-        this.music = '584'
+        this.music = '251'
         /* END-USER-CTR-CODE */
     }
 

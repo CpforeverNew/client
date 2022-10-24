@@ -82,12 +82,6 @@ export default class Mine extends RoomScene {
         foreground_png.scaleX = 1.01;
         foreground_png.scaleY = 1.01;
 
-        // candy_candy30002
-        const candy_candy30002 = this.add.image(644, 312, "candyhunt", "candy/3-got");
-        candy_candy30002.scaleX = 0.5;
-        candy_candy30002.scaleY = 0.5;
-        candy_candy30002.angle = 17;
-
         // rectangle
         const rectangle = this.add.rectangle(1278, 339, 128, 128);
         rectangle.scaleX = 1.077792846929269;
@@ -120,11 +114,6 @@ export default class Mine extends RoomScene {
         new SimpleButton(puffle_rescue);
         const puffle_rescueShowHint = new ShowHint(puffle_rescue);
         puffle_rescueShowHint.text = "Puffle Rescue";
-
-        // candy_candy30002 (components)
-        const candy_candy30002SimpleButton = new SimpleButton(candy_candy30002);
-        candy_candy30002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_corn" });
-        candy_candy30002SimpleButton.pixelPerfect = true;
 
         // rectangle (components)
         const rectangleSimpleButton = new SimpleButton(rectangle);

@@ -180,6 +180,28 @@
         },
         {
             "type": "Image",
+            "id": "8a7bd6e4-df6c-4705-a4ef-818bb80974bd",
+            "label": "candy_candy80002",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"lollipop\" })",
+            "texture": {
+                "key": "candyhunt",
+                "frame": "candy/8-got"
+            },
+            "x": 885,
+            "y": 215,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "angle": 23,
+            "tintTopLeft": "#717171",
+            "tintTopRight": "#717171",
+            "tintBottomLeft": "#717171",
+            "tintBottomRight": "#717171"
+        },
+        {
+            "type": "Image",
             "id": "0e99bf40-ebdd-49df-9cd2-299b87a4eb9b",
             "label": "drink",
             "components": [],
@@ -379,6 +401,22 @@
             "y": 307.3915826049796,
             "originX": 0.5271335457948464,
             "originY": 1.793945084859437
+        },
+        {
+            "type": "Image",
+            "id": "616b1be5-a48f-4854-9a1d-1d6b14f1c920",
+            "label": "tombstone",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.prompt.showItem(7165);",
+            "texture": {
+                "key": "tombstone"
+            },
+            "x": 66,
+            "y": 576,
+            "scaleX": 0.3,
+            "scaleY": 0.3
         }
     ],
     "plainObjects": [],
@@ -414,7 +452,8 @@
                 "139351a3-ad27-4f1c-b1cc-cb39e13fb57d",
                 "546821ff-56e5-4a78-b97d-d1af0c966000",
                 "a345f6ad-1400-4e4d-9fb0-c306f53e0745",
-                "1daf781a-48ce-435e-8a67-ff83a00acf18"
+                "1daf781a-48ce-435e-8a67-ff83a00acf18",
+                "616b1be5-a48f-4854-9a1d-1d6b14f1c920"
             ]
         }
     ]
