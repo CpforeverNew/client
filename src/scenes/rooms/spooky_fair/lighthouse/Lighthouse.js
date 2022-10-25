@@ -11,10 +11,8 @@ export default class Lighthouse extends RoomScene {
         super("Lighthouse");
 
         /** @type {Phaser.GameObjects.Sprite} */
-        this.tv;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.screen_text;
-        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
+        this.to_top0001;
+        /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
 
@@ -67,10 +65,6 @@ export default class Lighthouse extends RoomScene {
         // screen
         const screen = this.add.image(613, 458.535377928559, "lighthouse-spf", "screen");
         screen.setOrigin(0.5, 0.6892952712480875);
-
-        // tv
-        const tv = this.add.sprite(156, 675, "tv", "tv10000");
-        tv.setOrigin(0.5091060582705557, 1.0684434815387627);
 
         // spider
         this.add.image(78, 133, "lighthouse-spf", "spider");
@@ -180,11 +174,8 @@ export default class Lighthouse extends RoomScene {
         // to_top0001
         const to_top0001 = this.add.sprite(317, 61, "lighthouse-spf", "to_top0001");
 
-        // screen_text
-        const screen_text = this.add.sprite(1188, 482, "tv", "text0638");
-
         // lists
-        const sort = [chair15, chair_arm15, chair_arm14, chair14, chairarm13, chair13, chair12, chair_arm12, chair11, chair_arm11, chair_arm10, chair10, chair_arm9, chair9, chair8, chair_arm8, chair7, chair_arm7, chair6, chair_arm6, chair_arm5, chair5, chair4, chair_arm4, chair3, chair_arm3, char2, chair_arm2, char_arm1, chair1, rail, concessions, screen, tv];
+        const sort = [chair15, chair_arm15, chair_arm14, chair14, chairarm13, chair13, chair12, chair_arm12, chair11, chair_arm11, chair_arm10, chair10, chair_arm9, chair9, chair8, chair_arm8, chair7, chair_arm7, chair6, chair_arm6, chair_arm5, chair5, chair4, chair_arm4, chair3, chair_arm3, char2, chair_arm2, char_arm1, chair1, rail, concessions, screen];
 
         // popcorn (components)
         const popcornButton = new Button(popcorn);
@@ -195,14 +186,7 @@ export default class Lighthouse extends RoomScene {
         paper0001Button.spriteName = "paper";
         paper0001Button.callback = () => this.interface.loadExternal('Music');
 
-        // to_top0001 (components)
-        const to_top0001Animation = new Animation(to_top0001);
-        to_top0001Animation.key = "to_top";
-        to_top0001Animation.end = 26;
-        to_top0001Animation.onHover = true;
-
-        this.tv = tv;
-        this.screen_text = screen_text;
+        this.to_top0001 = to_top0001;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -213,15 +197,11 @@ export default class Lighthouse extends RoomScene {
 
     create() {
         super.create()
-        // this.speaker_bottom_stage.play('bottom_speaker')
-        // this.top_left_speaker0001.play('top_left_speaker')
-        // this.top_right_speaker0001.play('top_right_speaker')
-        this.tv.play('tv')
-        this.screen_text.play('text')
+
     }
 
     onTopOver() {
-        // this.to_top0001.play('to_top')
+        this.to_top0001.play('to_top')
     }
 
     /* END-USER-CODE */

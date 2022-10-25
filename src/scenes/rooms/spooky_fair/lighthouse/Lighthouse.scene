@@ -130,21 +130,6 @@
             "originY": 0.6892952712480875
         },
         {
-            "type": "Sprite",
-            "id": "182f9fe7-8418-4aa2-b6a8-c88016964c28",
-            "label": "tv",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "tv",
-                "frame": "tv10000"
-            },
-            "x": 156,
-            "y": 675,
-            "originX": 0.5091060582705557,
-            "originY": 1.0684434815387627
-        },
-        {
             "type": "Image",
             "id": "5893b385-0179-4d10-aba8-74d76fe37225",
             "label": "spider",
@@ -572,31 +557,14 @@
             "type": "Sprite",
             "id": "56e84e2c-8238-434d-84af-996ea13b546d",
             "label": "to_top0001",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "to_top",
-            "Animation.end": 26,
-            "Animation.onHover": true,
+            "scope": "CLASS",
+            "components": [],
             "texture": {
                 "key": "lighthouse-spf",
                 "frame": "to_top0001"
             },
             "x": 317,
             "y": 61
-        },
-        {
-            "type": "Sprite",
-            "id": "8d3fd0c1-7c14-4456-bda3-c59cf75dbb7e",
-            "label": "screen_text",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "tv",
-                "frame": "text0638"
-            },
-            "x": 1188,
-            "y": 482
         }
     ],
     "plainObjects": [],
@@ -643,8 +611,7 @@
                 "721b357f-098f-4a00-9335-252b88b562a7",
                 "a2bdbee9-7f9b-453c-be81-f0e8bca4505e",
                 "d1369f83-453f-4ff1-90f7-34aa96706094",
-                "1441ff76-8a19-4d13-95f6-ca0ed66dcaf2",
-                "182f9fe7-8418-4aa2-b6a8-c88016964c28"
+                "1441ff76-8a19-4d13-95f6-ca0ed66dcaf2"
             ]
         }
     ]
