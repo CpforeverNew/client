@@ -1,0 +1,659 @@
+{
+    "id": "5f3964c1-a88b-4642-b378-c83a4b25aa76",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/spooky_fair/vault/vault-pack.json",
+            "client/assets/media/rooms/old/observatory/observatory-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Vault",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "0fd0d6f7-889e-4da4-996c-a4852e23a6d0",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "vault",
+                "frame": "bg"
+            },
+            "x": 778,
+            "y": 527
+        },
+        {
+            "type": "Sprite",
+            "id": "bf47ea2a-e6d5-4c09-b356-9a7c3a91512e",
+            "label": "door",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onDoorHover()",
+            "MoveTo.x": 763,
+            "MoveTo.y": 424,
+            "texture": {
+                "key": "vault",
+                "frame": "door0001"
+            },
+            "x": 763,
+            "y": 330
+        },
+        {
+            "type": "Image",
+            "id": "d58b653d-89cd-4a65-80ab-cd5ca97e74a8",
+            "label": "backright",
+            "components": [],
+            "texture": {
+                "key": "vault",
+                "frame": "backright"
+            },
+            "x": 1209.157633760896,
+            "y": 526.1363539162678,
+            "originX": 0.2019058422851251,
+            "originY": 0.5559344466963608
+        },
+        {
+            "type": "Sprite",
+            "id": "80439338-4956-454b-bdbb-212ca82505e1",
+            "label": "cds0001",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onCdHover()",
+            "texture": {
+                "key": "vault",
+                "frame": "cds0001"
+            },
+            "x": 1427.8353068972792,
+            "y": 516.7988222718776,
+            "originX": 0.9139216817219336,
+            "originY": 1.0734741531719103
+        },
+        {
+            "type": "Sprite",
+            "id": "4155d15c-54fb-42fb-a2b0-63684e040312",
+            "label": "lightlight",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "vault",
+                "frame": "lightlight"
+            },
+            "x": 1399.4870711926933,
+            "y": 496.6623445122141,
+            "originX": 0.3592418150124483,
+            "originY": 0.9093735027786265
+        },
+        {
+            "type": "Image",
+            "id": "bf7b795c-78d8-4e2a-81d1-e64eadb24836",
+            "label": "map",
+            "components": [],
+            "texture": {
+                "key": "vault",
+                "frame": "map"
+            },
+            "x": 203.58593944827803,
+            "y": 505.3931801963809,
+            "originX": 0.4692800678054343,
+            "originY": 0.4055522674751202
+        },
+        {
+            "type": "Image",
+            "id": "560f2f58-4cde-451e-ac4e-dfdeddb4d506",
+            "label": "beans",
+            "components": [],
+            "texture": {
+                "key": "vault",
+                "frame": "beans"
+            },
+            "x": 370.20676823898197,
+            "y": 552.2066133021217,
+            "originX": 0.46341055640407774,
+            "originY": 0.5846041976895441
+        },
+        {
+            "type": "Image",
+            "id": "1ec1f8e6-dfeb-47a2-acc4-72eb2cf1f4b8",
+            "label": "frontright",
+            "components": [],
+            "texture": {
+                "key": "vault",
+                "frame": "frontright"
+            },
+            "x": 1493.8853196175553,
+            "y": 650.5931778107364,
+            "originX": 0.620026731746509,
+            "originY": 0.44065191991050884
+        },
+        {
+            "type": "Image",
+            "id": "b48f1305-ab99-4e47-b175-c10e83645689",
+            "label": "freesign",
+            "components": [],
+            "texture": {
+                "key": "observatory",
+                "frame": "freesign"
+            },
+            "x": 1368.5194722075107,
+            "y": 631.7748100405204,
+            "scaleX": 0.3,
+            "scaleY": 0.3,
+            "angle": 6,
+            "originX": 0.6347974425334325,
+            "originY": 1.0974444830506447
+        },
+        {
+            "type": "Image",
+            "id": "1f205396-6710-46f1-a72f-240bd8a6a2f5",
+            "label": "pumpkins",
+            "components": [],
+            "texture": {
+                "key": "vault",
+                "frame": "pumpkins"
+            },
+            "x": 831.5687391194599,
+            "y": 608.9820549450176,
+            "originX": 0.5439447917708219,
+            "originY": 0.5684759426576855
+        },
+        {
+            "type": "Image",
+            "id": "90d9b181-d070-46d2-a9d5-64bc5158cf5b",
+            "label": "leftfront",
+            "components": [],
+            "texture": {
+                "key": "vault",
+                "frame": "leftfront"
+            },
+            "x": 177.8423144741384,
+            "y": 841.2061315199852,
+            "originX": 0.5963117726514322,
+            "originY": 0.6511262506666301
+        },
+        {
+            "type": "Image",
+            "id": "b5a81e69-31f6-4ebe-860b-b11b3dde3a8f",
+            "label": "rightshadow",
+            "components": [],
+            "texture": {
+                "key": "vault",
+                "frame": "rightshadow"
+            },
+            "x": 1491,
+            "y": 766
+        },
+        {
+            "type": "Image",
+            "id": "6ce6857f-77f7-4520-a8d8-cfbfdc643208",
+            "label": "candy",
+            "components": [],
+            "texture": {
+                "key": "vault",
+                "frame": "candy"
+            },
+            "x": 1497.464162380486,
+            "y": 794.3638170458468,
+            "originX": 0.5867925858196041,
+            "originY": 0.742425786716639
+        },
+        {
+            "type": "Image",
+            "id": "54b24181-3d5b-4ab0-a116-ac8b233b8e90",
+            "label": "candle",
+            "components": [],
+            "texture": {
+                "key": "vault",
+                "frame": "candle"
+            },
+            "x": 1058.6893002935747,
+            "y": 493.88478121122415,
+            "originX": 0.4904328488582092,
+            "originY": 0.8165463441932986
+        },
+        {
+            "type": "Image",
+            "id": "a28fe32b-13d1-48ac-94e1-c44273ec2378",
+            "label": "tableshadows",
+            "components": [],
+            "texture": {
+                "key": "vault",
+                "frame": "tableshadows"
+            },
+            "x": 890,
+            "y": 831
+        },
+        {
+            "type": "Image",
+            "id": "3679f769-25cb-4085-b56f-40a700561ca1",
+            "label": "table",
+            "components": [],
+            "texture": {
+                "key": "vault",
+                "frame": "table"
+            },
+            "x": 767.4928324760972,
+            "y": 807.3638170458468,
+            "originX": 0.5041816035745019,
+            "originY": 0.6404149358705286
+        },
+        {
+            "type": "Image",
+            "id": "c1cfd305-8e6f-4dea-896e-14515d67f38c",
+            "label": "righttable",
+            "components": [],
+            "texture": {
+                "key": "vault",
+                "frame": "righttable"
+            },
+            "x": 1064,
+            "y": 760,
+            "originX": 0.49495884728297856,
+            "originY": 0.7157859272773487
+        },
+        {
+            "type": "Image",
+            "id": "55993af6-fe15-4c1b-be0a-1dbc4c1c99d0",
+            "label": "cake",
+            "components": [],
+            "texture": {
+                "key": "vault",
+                "frame": "17"
+            },
+            "x": 1006.8261135130857,
+            "y": 892.009573894693,
+            "originX": 1.4529773897897285,
+            "originY": 1.363916993403966
+        },
+        {
+            "type": "Sprite",
+            "id": "f6cc568d-54d0-461f-b09a-3914144f25b5",
+            "label": "backcandle10001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "backcandle1",
+            "Animation.end": 12,
+            "texture": {
+                "key": "vault",
+                "frame": "backcandle10001"
+            },
+            "x": 1004,
+            "y": 304
+        },
+        {
+            "type": "Sprite",
+            "id": "6fa42144-9509-4e9b-b24b-575f1405615a",
+            "label": "backcandle20001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "backcandle2",
+            "Animation.end": 12,
+            "texture": {
+                "key": "vault",
+                "frame": "backcandle20001"
+            },
+            "x": 1029,
+            "y": 288
+        },
+        {
+            "type": "Sprite",
+            "id": "40c3a669-9154-439d-b341-39b7c375c19a",
+            "label": "backcandle",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "backcandle1",
+            "Animation.end": 12,
+            "texture": {
+                "key": "vault",
+                "frame": "backcandle10001"
+            },
+            "x": 1058,
+            "y": 270
+        },
+        {
+            "type": "Sprite",
+            "id": "41d8f45e-6c05-482d-a08a-28b3938f7d1f",
+            "label": "backcandle_1",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "backcandle1",
+            "Animation.end": 12,
+            "texture": {
+                "key": "vault",
+                "frame": "backcandle10001"
+            },
+            "x": 1088,
+            "y": 281
+        },
+        {
+            "type": "Sprite",
+            "id": "4a6a8cae-9c8c-4f15-a728-4144a42b991b",
+            "label": "backcandle_2",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "backcandle2",
+            "Animation.end": 12,
+            "texture": {
+                "key": "vault",
+                "frame": "backcandle20001"
+            },
+            "x": 1116,
+            "y": 292
+        },
+        {
+            "type": "Sprite",
+            "id": "102c84d0-faff-459d-bf16-af986da0a8e0",
+            "label": "backcandle_3",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "backcandle1",
+            "Animation.end": 12,
+            "texture": {
+                "key": "vault",
+                "frame": "backcandle10001"
+            },
+            "x": 702.8545245630261,
+            "y": 563.9118430074188,
+            "originX": 4.050646366146582,
+            "originY": 5.905083773064493
+        },
+        {
+            "type": "Sprite",
+            "id": "d44cd1ef-e3db-4fdf-9a22-335d84759799",
+            "label": "backcandle_4",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "backcandle1",
+            "Animation.end": 12,
+            "texture": {
+                "key": "vault",
+                "frame": "backcandle10001"
+            },
+            "x": 725.753273514089,
+            "y": 568.968869668319,
+            "originX": 4.607610502012709,
+            "originY": 6.680403166741774
+        },
+        {
+            "type": "Sprite",
+            "id": "08cb4f53-a0ef-49dd-9ddb-56b1d5a20762",
+            "label": "backcandle_5",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "backcandle1",
+            "Animation.end": 12,
+            "texture": {
+                "key": "vault",
+                "frame": "backcandle10001"
+            },
+            "x": 751.6520224651518,
+            "y": 532.6459131122127,
+            "originX": 5.164574637878835,
+            "originY": 4.620268777827851
+        },
+        {
+            "type": "Sprite",
+            "id": "7bc91030-253c-484d-b5b1-4faf039ac91c",
+            "label": "backcandle_6",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "backcandle1",
+            "Animation.end": 12,
+            "texture": {
+                "key": "vault",
+                "frame": "backcandle10001"
+            },
+            "x": 781.031713898666,
+            "y": 562.4940365388071,
+            "originX": 3.0759591283808567,
+            "originY": 4.886092569945777
+        },
+        {
+            "type": "Sprite",
+            "id": "cd91d9b0-54b1-44b8-af55-ebaca32fa0b5",
+            "label": "backcandle_7",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "backcandle1",
+            "Animation.end": 12,
+            "texture": {
+                "key": "vault",
+                "frame": "backcandle10001"
+            },
+            "x": 810.8987489510629,
+            "y": 514.3799832170066,
+            "originX": 1.0569641358661264,
+            "originY": 3.3354537825912094
+        },
+        {
+            "type": "Sprite",
+            "id": "066fdb3e-e811-422e-9de4-88f808d00b73",
+            "label": "backcandle_9",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "backcandle1",
+            "Animation.end": 12,
+            "texture": {
+                "key": "vault",
+                "frame": "backcandle10001"
+            },
+            "x": 879.7657840034599,
+            "y": 544.6141992135466,
+            "angle": 15,
+            "originX": 1.7726349187292954,
+            "originY": 3.8085791522795476
+        },
+        {
+            "type": "Sprite",
+            "id": "77764946-65d1-4809-a5c6-d77886c5a1e7",
+            "label": "backcandle_10",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "backcandle1",
+            "Animation.end": 12,
+            "texture": {
+                "key": "vault",
+                "frame": "backcandle10001"
+            },
+            "x": 709.9115512239264,
+            "y": 585.0762300701954,
+            "angle": -8,
+            "originX": 4.956321745462755,
+            "originY": 4.09946760659843
+        },
+        {
+            "type": "Sprite",
+            "id": "30d52355-0a5b-4dce-a3bc-cd2bd2db49c6",
+            "label": "backcandle_12",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "backcandle1",
+            "Animation.end": 12,
+            "texture": {
+                "key": "vault",
+                "frame": "backcandle10001"
+            },
+            "x": 1069.36365449353,
+            "y": 736.3804408648155,
+            "originX": 0.9805143085053974,
+            "originY": 4.65365448317038
+        },
+        {
+            "type": "Sprite",
+            "id": "a4098aeb-2fd9-4c28-b311-50489f3c2c17",
+            "label": "backcandle_13",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "backcandle2",
+            "Animation.end": 12,
+            "texture": {
+                "key": "vault",
+                "frame": "backcandle20001"
+            },
+            "x": 1099.3790480115717,
+            "y": 741.8231710486521,
+            "originX": 1.6970051451088952,
+            "originY": 5.446508020291509
+        },
+        {
+            "type": "Sprite",
+            "id": "811cd985-e6bb-40c6-8f82-6c32bef2ce04",
+            "label": "backcandle_14",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "backcandle1",
+            "Animation.end": 12,
+            "texture": {
+                "key": "vault",
+                "frame": "backcandle10001"
+            },
+            "x": 1128.3526850436272,
+            "y": 739.3212010454299,
+            "originX": 1.9789567199195193,
+            "originY": 4.787326798407677
+        },
+        {
+            "type": "Image",
+            "id": "39128842-f857-4be2-af83-86492d23fcda",
+            "label": "topleftbook",
+            "components": [],
+            "texture": {
+                "key": "vault",
+                "frame": "topleftbook"
+            },
+            "x": 27,
+            "y": 599
+        },
+        {
+            "type": "Rectangle",
+            "id": "36782c9c-5a34-48de-9310-7103dc123898",
+            "label": "partyhat",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.prompt.showItem(36105)",
+            "x": 1341,
+            "y": 652,
+            "scaleX": 0.7596523802665731,
+            "scaleY": 1.130672726964664,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Sprite",
+            "id": "0d3f1053-7da4-488f-a66b-18b0187cad71",
+            "label": "backcandle_8",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "backcandle1",
+            "Animation.end": 12,
+            "texture": {
+                "key": "vault",
+                "frame": "backcandle10001"
+            },
+            "x": 733,
+            "y": 538,
+            "angle": 10,
+            "originX": 0.4907198247454159,
+            "originY": 1.3819215048876081
+        },
+        {
+            "type": "Sprite",
+            "id": "8435722f-ff34-4374-90d0-ab96b44f5419",
+            "label": "backcandle_11",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "backcandle1",
+            "Animation.end": 12,
+            "texture": {
+                "key": "vault",
+                "frame": "backcandle10001"
+            },
+            "x": 836,
+            "y": 560,
+            "angle": 10,
+            "originX": 0.6114402940997609,
+            "originY": 3.8902984495849906
+        },
+        {
+            "type": "Image",
+            "id": "110fc28f-bab8-4df9-9dbb-ec3037c8a6ac",
+            "label": "rightglow",
+            "components": [],
+            "texture": {
+                "key": "vault",
+                "frame": "rightglow"
+            },
+            "x": 1087,
+            "y": 637
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "528d71e2-a474-4325-aa76-2ccaa2e1016f",
+            "label": "sort",
+            "objectIds": [
+                "55993af6-fe15-4c1b-be0a-1dbc4c1c99d0",
+                "c1cfd305-8e6f-4dea-896e-14515d67f38c",
+                "3679f769-25cb-4085-b56f-40a700561ca1",
+                "54b24181-3d5b-4ab0-a116-ac8b233b8e90",
+                "6ce6857f-77f7-4520-a8d8-cfbfdc643208",
+                "90d9b181-d070-46d2-a9d5-64bc5158cf5b",
+                "1f205396-6710-46f1-a72f-240bd8a6a2f5",
+                "1ec1f8e6-dfeb-47a2-acc4-72eb2cf1f4b8",
+                "560f2f58-4cde-451e-ac4e-dfdeddb4d506",
+                "bf7b795c-78d8-4e2a-81d1-e64eadb24836",
+                "b48f1305-ab99-4e47-b175-c10e83645689",
+                "30d52355-0a5b-4dce-a3bc-cd2bd2db49c6",
+                "a4098aeb-2fd9-4c28-b311-50489f3c2c17",
+                "811cd985-e6bb-40c6-8f82-6c32bef2ce04",
+                "102c84d0-faff-459d-bf16-af986da0a8e0",
+                "d44cd1ef-e3db-4fdf-9a22-335d84759799",
+                "08cb4f53-a0ef-49dd-9ddb-56b1d5a20762",
+                "7bc91030-253c-484d-b5b1-4faf039ac91c",
+                "cd91d9b0-54b1-44b8-af55-ebaca32fa0b5",
+                "8435722f-ff34-4374-90d0-ab96b44f5419",
+                "066fdb3e-e811-422e-9de4-88f808d00b73",
+                "0d3f1053-7da4-488f-a66b-18b0187cad71",
+                "77764946-65d1-4809-a5c6-d77886c5a1e7"
+            ]
+        }
+    ]
+}

@@ -14,7 +14,7 @@ import Buddy from '../buddy/Buddy'
 import ChatLog from '../chatlog/ChatLog'
 import EmotesMenu from '../floating/emotes/EmotesMenu'
 import Waddle from '../waddle/Waddle'
-import Map from '../map/Map'
+import Map from '../map/spooky_map/SpookyMap'
 import Newspaper from '../newspaper/Newspaper'
 import Moderator from '../moderator/Moderator'
 import ModActions from '../modactions/ModActions'
@@ -792,6 +792,11 @@ export default class Main extends BaseScene {
         // init partycontroller
 
         this.world.party.getPartyCompletion()
+
+        if (!localStorage.getItem('dialog-slade')) {
+            this.interface.loadExternal('Dialog')
+            localStorage.setItem('dialog-slade', 'true')
+        }
     }
 
     onSleep(sys, data) {

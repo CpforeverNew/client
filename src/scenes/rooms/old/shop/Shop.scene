@@ -33,24 +33,6 @@
         },
         {
             "type": "Image",
-            "id": "2b77716d-82e1-4c91-8b13-71733ff5493b",
-            "label": "candy_candy40002",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"candy_borbon\" })",
-            "texture": {
-                "key": "candyhunt",
-                "frame": "candy/4-got"
-            },
-            "x": 216,
-            "y": 733,
-            "scaleX": 0.5,
-            "scaleY": 0.5,
-            "angle": -19
-        },
-        {
-            "type": "Image",
             "id": "3cd503be-8016-4426-ad8e-3c7518a4a732",
             "label": "door",
             "components": [

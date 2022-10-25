@@ -1,0 +1,464 @@
+{
+    "id": "5ac273de-055c-4426-a295-5289c892ce04",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 128,
+        "snapHeight": 128,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/spooky_fair/forest/forest-pack.json",
+            "client/assets/media/rooms/spooky_fair/sky/sky-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Forest",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "db38a1a3-f8a9-4571-a68f-f2215a5ae54e",
+            "label": "sky0001",
+            "components": [],
+            "texture": {
+                "key": "sky_spooky",
+                "frame": "sky0001"
+            },
+            "x": 1023,
+            "y": 21
+        },
+        {
+            "type": "Image",
+            "id": "1b09f056-ad85-42c8-8752-418b3d927d77",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "bg"
+            },
+            "x": 775,
+            "y": 476
+        },
+        {
+            "type": "Image",
+            "id": "415e092a-7d6f-4879-af83-8bd1a3bb2167",
+            "label": "candy",
+            "components": [],
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "candy"
+            },
+            "x": 1455.3420853913692,
+            "y": 419.7263316869047,
+            "originX": 0.4463449188409401,
+            "originY": 0.5788401192541296
+        },
+        {
+            "type": "Image",
+            "id": "97c71833-c223-4408-a050-f0181b6ab225",
+            "label": "cavepumpkin0001",
+            "components": [],
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "cavepumpkin0001"
+            },
+            "x": 310.30793707092346,
+            "y": 705.4456953333794,
+            "originX": 0.7543396362671813,
+            "originY": 0.9267509872732018
+        },
+        {
+            "type": "Image",
+            "id": "e4b3c2b9-c462-4dc4-86ee-5b6ea85eb015",
+            "label": "coveent",
+            "components": [],
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "coveent"
+            },
+            "x": 1333.4568144649659,
+            "y": 567.4952389680248,
+            "originX": 0.5034037721144062,
+            "originY": 0.5874691914782865
+        },
+        {
+            "type": "Image",
+            "id": "49c0d98e-c091-4ce3-a143-0a292e4b6a3d",
+            "label": "covehandle",
+            "components": [],
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "covehandle"
+            },
+            "x": 1590.656487381969,
+            "y": 1048.8312011843468,
+            "originX": 1.2284072324829725,
+            "originY": 1.8818925781962674
+        },
+        {
+            "type": "Image",
+            "id": "3691dde9-03dd-4512-aaca-0794ab8005c8",
+            "label": "covepumpkin",
+            "components": [],
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "covepumpkin"
+            },
+            "x": 1327,
+            "y": 691
+        },
+        {
+            "type": "Image",
+            "id": "4338aae2-935f-4903-a4c9-4f07a43047e6",
+            "label": "covesign",
+            "components": [],
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "covesign"
+            },
+            "x": 1411,
+            "y": 680
+        },
+        {
+            "type": "Image",
+            "id": "e16f4508-d2b5-460e-9616-a83e88a456d9",
+            "label": "bak",
+            "components": [],
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "bak"
+            },
+            "x": 1056,
+            "y": 270,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Image",
+            "id": "4e828143-733f-442c-b760-7c9bb364db14",
+            "label": "paddleveryfront",
+            "components": [],
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "paddleveryfront"
+            },
+            "x": 1061,
+            "y": 340,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Sprite",
+            "id": "f5a12394-cd1d-4ed3-b53d-27b70be71fbd",
+            "label": "padl",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "padl",
+            "Button.activeFrame": false,
+            "MoveTo.x": 1074,
+            "MoveTo.y": 380,
+            "ShowHint.text": "Puffle Paddle",
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "padl"
+            },
+            "x": 1064,
+            "y": 220,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Image",
+            "id": "da0ab4a7-2df4-43e0-a7b8-ef3161c3fcd5",
+            "label": "pufflepaddlefront",
+            "components": [],
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "pufflepaddlefront"
+            },
+            "x": 1059,
+            "y": 237,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Image",
+            "id": "44005c6b-28b1-4193-913d-5faca6fa0167",
+            "label": "paddlepaddle",
+            "components": [],
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "paddlepaddle"
+            },
+            "x": 1058.9305585159439,
+            "y": 262.2691331661426,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "originX": 0.39556532789411375,
+            "originY": 0.5994196174852042
+        },
+        {
+            "type": "Image",
+            "id": "929dcabe-b995-4456-862d-3c9e4e36a90e",
+            "label": "topleftstick",
+            "components": [],
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "topleftstick"
+            },
+            "x": 654,
+            "y": 413,
+            "scaleX": 0.70262925319559,
+            "scaleY": 0.70262925319559
+        },
+        {
+            "type": "Image",
+            "id": "7944bd64-ac04-499c-8eae-914100e3c351",
+            "label": "treemiddle",
+            "components": [],
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "treemiddle"
+            },
+            "x": 858.0790700795337,
+            "y": 429.6353517396638,
+            "scaleX": 0.9292661815853588,
+            "scaleY": 0.9292661815853588,
+            "originX": 0.5386850496002865,
+            "originY": 0.7803069868245998
+        },
+        {
+            "type": "Image",
+            "id": "ea683e74-2be9-45da-a900-39f9bf403647",
+            "label": "rightstick",
+            "components": [],
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "rightstick"
+            },
+            "x": 932.4823130970358,
+            "y": 400.4627034450641,
+            "scaleX": 0.6593002762649696,
+            "scaleY": 0.6593002762649696,
+            "originX": 0.4214147470302661,
+            "originY": -0.21634839334192102
+        },
+        {
+            "type": "Image",
+            "id": "287218d2-7cf6-4652-a7aa-9f976376266b",
+            "label": "prizes",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "prizes",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "MoveTo.x": 689,
+            "MoveTo.y": 574,
+            "ShowHint.text": "Prizes",
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "prizes"
+            },
+            "x": 697.7747099999294,
+            "y": 511.96343474292456,
+            "scaleX": 0.6520876327827486,
+            "scaleY": 0.6520876327827486,
+            "originX": 0.5317368140469552,
+            "originY": 0.6134731932820582
+        },
+        {
+            "type": "Image",
+            "id": "754ba203-2581-41f7-933a-954249dfb87f",
+            "label": "redeemtickets",
+            "components": [],
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "redeemtickets"
+            },
+            "x": 720.0018505353696,
+            "y": 584.0575096930842,
+            "scaleX": 0.6609437051107323,
+            "scaleY": 0.6609437051107323,
+            "originX": 0.6561551927231568,
+            "originY": -0.337326314146762
+        },
+        {
+            "type": "Image",
+            "id": "7cc5c1c0-d278-4e56-85b4-8ede5c2ba37e",
+            "label": "frontstick",
+            "components": [],
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "frontstick"
+            },
+            "x": 823.3678959563016,
+            "y": 628.6076241104865,
+            "scaleX": 0.7808847128809611,
+            "scaleY": 0.7808847128809611,
+            "originX": 0.7826733595118796,
+            "originY": 0.9169533078785845
+        },
+        {
+            "type": "Image",
+            "id": "f24bf29b-09ed-4493-9512-49e4ececca40",
+            "label": "prizetext",
+            "components": [],
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "prizetext"
+            },
+            "x": 693.2246981881908,
+            "y": 652.9651785211584,
+            "scaleX": 0.4358708425987934,
+            "scaleY": 0.4358708425987934,
+            "originX": 0.5397235479194178,
+            "originY": 11.481448045042196
+        },
+        {
+            "type": "Image",
+            "id": "1625a536-c053-4491-a788-1e088ac41463",
+            "label": "cardin",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "cardin",
+            "Button.activeFrame": false,
+            "MoveTo.x": 481,
+            "MoveTo.y": 349,
+            "ShowHint.text": "Memory Game",
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "cardin"
+            },
+            "x": 470.10827784675973,
+            "y": 280.48725031041914,
+            "scaleX": 0.7285088665119721,
+            "scaleY": 0.7285088665119721,
+            "originX": 0.5295233467868501,
+            "originY": 0.5972444257566872
+        },
+        {
+            "type": "Image",
+            "id": "31c63f36-596a-4cf0-81dd-99fd72488acd",
+            "label": "cardout",
+            "components": [
+                "MoveTo"
+            ],
+            "MoveTo.x": 464,
+            "MoveTo.y": 335,
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "cardout"
+            },
+            "x": 435,
+            "y": 242,
+            "scaleX": 0.7126802148322475,
+            "scaleY": 0.7126802148322475,
+            "angle": 10
+        },
+        {
+            "type": "Image",
+            "id": "4763af54-da52-4781-a5f9-c3d970630cff",
+            "label": "bottomleft",
+            "components": [],
+            "texture": {
+                "key": "forest_halloween",
+                "frame": "bottomleft"
+            },
+            "x": 503.053315676501,
+            "y": 867.881695055906,
+            "originX": 0.49610780638708185,
+            "originY": 0.8834834970201477
+        },
+        {
+            "type": "Rectangle",
+            "id": "b2057568-92b0-48d4-8a1d-3ec3624883ab",
+            "label": "rectangle_1",
+            "components": [],
+            "x": 1343,
+            "y": 354,
+            "scaleX": 0.5942228316658187,
+            "scaleY": 0.19386755349433704,
+            "isFilled": true,
+            "fillColor": "#A9A9BA",
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "f5bc4cdd-175d-47c8-84de-121564260ca6",
+            "label": "rectangle_2",
+            "components": [
+                "MoveTo",
+                "SimpleButton"
+            ],
+            "MoveTo.x": 749,
+            "MoveTo.y": 170,
+            "x": 749,
+            "y": 131,
+            "scaleX": 1.7538869951106308,
+            "scaleY": 1.2926018475107421,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "8407f69a-9c3d-49ed-8ed4-19d6fb330d36",
+            "label": "rectangle",
+            "components": [
+                "MoveTo",
+                "SimpleButton"
+            ],
+            "MoveTo.x": 1384,
+            "MoveTo.y": 891,
+            "x": 1384,
+            "y": 891,
+            "scaleX": 2.9193350532602125,
+            "scaleY": 1.2926018475107421,
+            "width": 128,
+            "height": 128
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "adc6dee8-ab4a-4215-92af-f5272ec15c19",
+            "label": "sort",
+            "objectIds": [
+                "4763af54-da52-4781-a5f9-c3d970630cff",
+                "31c63f36-596a-4cf0-81dd-99fd72488acd",
+                "7cc5c1c0-d278-4e56-85b4-8ede5c2ba37e",
+                "ea683e74-2be9-45da-a900-39f9bf403647",
+                "287218d2-7cf6-4652-a7aa-9f976376266b",
+                "7944bd64-ac04-499c-8eae-914100e3c351",
+                "929dcabe-b995-4456-862d-3c9e4e36a90e",
+                "44005c6b-28b1-4193-913d-5faca6fa0167",
+                "3691dde9-03dd-4512-aaca-0794ab8005c8",
+                "e4b3c2b9-c462-4dc4-86ee-5b6ea85eb015",
+                "97c71833-c223-4408-a050-f0181b6ab225",
+                "415e092a-7d6f-4879-af83-8bd1a3bb2167",
+                "f24bf29b-09ed-4493-9512-49e4ececca40",
+                "754ba203-2581-41f7-933a-954249dfb87f",
+                "49c0d98e-c091-4ce3-a143-0a292e4b6a3d"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9dbf84a0-702d-4b7f-91c2-cad1e9a3ca05" name="Changes" comment="">
+<<<<<<< Updated upstream
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/rooms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/interface/game/modactions/ModActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/interface/game/modactions/ModActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/interface/game/modactions/ModActions.scene" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/interface/game/modactions/ModActions.scene" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/coffee/Coffee.scene" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/coffee/Coffee.scene" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/dojoext/DojoExt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/dojoext/DojoExt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/forest/Forest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/forest/Forest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/forest/Forest.scene" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/forest/Forest.scene" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/data/rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/rooms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/village/Village.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/village/Village.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/village/Village.scene" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/rooms/spooky_fair/village/Village.scene" afterDir="false" />
+>>>>>>> Stashed changes
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GFYPRqDhC0zre3XGNeoBAGDsQo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+<<<<<<< Updated upstream
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Websites/CPForever/client/src/scenes/games/feed&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Websites/CPForever/client/src/scenes/games/feed",
+    "nodejs_package_manager_path": "yarn",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+>>>>>>> Stashed changes
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Websites\CPForever\client\src\scenes\games\feed" />
+      <recent name="D:\Websites\CPForever\client\src\scenes\games\ringthebell" />
+      <recent name="D:\Websites\CPForever\client\src\scenes\games\shuffle" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.build:stage">
+    <configuration name="build-crumbs" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-crumbs" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build:stage" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build:stage" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="devclient" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="devclient" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build:stage" />
+        <item itemvalue="npm.build-crumbs" />
+        <item itemvalue="npm.devclient" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9dbf84a0-702d-4b7f-91c2-cad1e9a3ca05" name="Changes" comment="" />
+      <created>1665985774202</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665985774202</updated>
+      <workItem from="1665985776390" duration="306000" />
+      <workItem from="1666083212061" duration="13444000" />
+<<<<<<< Updated upstream
+      <workItem from="1666218600774" duration="21188000" />
+=======
+      <workItem from="1666218600774" duration="11076000" />
+>>>>>>> Stashed changes
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

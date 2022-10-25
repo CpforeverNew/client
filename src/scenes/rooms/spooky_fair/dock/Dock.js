@@ -30,6 +30,7 @@ export default class Dock extends RoomScene {
             'puffleshuffle' : () => this.triggerGame('pufflesuffle', 1003),
         }
 
+        this.music = '251'
         /* END-USER-CTR-CODE */
     }
 

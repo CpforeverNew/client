@@ -65,6 +65,25 @@
         },
         {
             "type": "Image",
+            "id": "62c2197b-12f8-4f4c-8130-6a3df0779dd7",
+            "label": "candy_candy30002",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"candy_corn\" })",
+            "SimpleButton.pixelPerfect": true,
+            "texture": {
+                "key": "candyhunt",
+                "frame": "candy/3-got"
+            },
+            "x": 1073,
+            "y": 769,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "angle": 17
+        },
+        {
+            "type": "Image",
             "id": "627df20e-43a2-4358-a503-24e3bad7f0bc",
             "label": "tent",
             "components": [],
@@ -92,9 +111,12 @@
             "id": "9deed4cd-9709-4b27-95fd-3432d94e894c",
             "label": "prize_back",
             "components": [
-                "Button"
+                "Button",
+                "MoveTo"
             ],
             "Button.spriteName": "prize_back",
+            "MoveTo.x": 338,
+            "MoveTo.y": 441,
             "texture": {
                 "key": "circusext",
                 "frame": "prize_back"

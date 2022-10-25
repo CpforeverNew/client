@@ -209,21 +209,6 @@
             "y": 345
         },
         {
-            "type": "Image",
-            "id": "6d5df63c-4ae5-4be4-a628-ef3791146b48",
-            "label": "candy_candy50002",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => this.network.send('collected_candy', { candy: \"pumkin\" })",
-            "texture": {
-                "key": "candyhunt",
-                "frame": "candy/5-got"
-            },
-            "x": 1316,
-            "y": 641
-        },
-        {
             "type": "Rectangle",
             "id": "97333811-9daf-44d0-8367-89eb06ec21d3",
             "label": "zone",

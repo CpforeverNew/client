@@ -4,19 +4,19 @@ let rooms;
 rooms = {
 	100: {
 		key: 'Town',
-		scene: require(`@rooms/old/town/Town`).default,
+		scene: require(`@rooms/spooky_fair/town/Town`).default,
 		x: 760,
 		y: 660
 	},
 	110: {
 		key: 'Coffee',
-		scene: require(`@rooms/old/coffee/Coffee`).default,
+		scene: require(`@rooms/spooky_fair/coffee/Coffee`).default,
 		x: 640,
 		y: 480
 	},
 	111: {
 		key: 'Book',
-		scene: require(`@rooms/old/book/Book`).default,
+		scene: require(`@rooms/spooky_fair/book/Book`).default,
 		x: 1260,
 		y: 560
 	},
@@ -34,7 +34,7 @@ rooms = {
 	},
 	130: {
 		key: 'Shop',
-		scene: require(`@rooms/old/shop/Shop`).default,
+		scene: require(`@rooms/spooky_fair/shop/Shop`).default,
 		x: 1000,
 		y: 560
 	},
@@ -118,7 +118,7 @@ rooms = {
 	},
 	410: {
 		key: 'Lighthouse',
-		scene: require(`@rooms/old/lighthouse/Lighthouse`).default,
+		scene: require(`@rooms/spooky_fair/lighthouse/Lighthouse`).default,
 		x: 840,
 		y: 680
 	},
@@ -136,7 +136,7 @@ rooms = {
 	},
 	801: {
 		key: 'Forts',
-		scene: require(`@rooms/old/forts/Forts`).default,
+		scene: require(`@rooms/spooky_fair/forts/Forts`).default,
 		x: 960,
 		y: 610
 	},
@@ -184,13 +184,13 @@ rooms = {
 	},
 	809: {
 		key: 'Forest',
-		scene: require(`@rooms/old/forest/Forest`).default,
+		scene: require(`@rooms/spooky_fair/forest/Forest`).default,
 		x: 760,
 		y: 430
 	},
 	810: {
 		key: 'Cove',
-		scene: require(`@rooms/old/cove/Cove`).default,
+		scene: require(`@rooms/spooky_fair/cove/Cove`).default,
 		x: 840,
 		y: 480
 	},
@@ -353,6 +353,26 @@ rooms = {
 	1003: {
 		key: 'PuffleSuffle',
 		scene: require('@games/pufflesuffle/PuffleSuffle').default
+	},
+	1005: {
+		key: 'Memory',
+		scene: require('@games/memory/Memory').default
+	},
+	8008415: {
+		key: 'Vault',
+		scene: require('@rooms/spooky_fair/vault/Vault').default,
+		x: 500,
+		y: 560
+	},
+	432234: {
+		key: 'CircusInt',
+		scene: require('@rooms/spooky_fair/circusint/CircusInt').default,
+		x: 746,
+		y: 731
+	},
+	1004: {
+		key: 'Feed',
+		scene: require('@games/feed/Feed').default
 	}
 }
 

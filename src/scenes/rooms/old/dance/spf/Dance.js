@@ -26,7 +26,7 @@ export default class Dance extends RoomScene {
             'mix': null
         }
         // this.roomAnims = true
-        this.music = '5'
+        this.music = '223'
 
         /* END-USER-CTR-CODE */
     }
@@ -62,7 +62,7 @@ export default class Dance extends RoomScene {
         const right_speaker0001 = this.add.sprite(999, 387, "spooky-dance", "right_speaker0001");
 
         // candy_pumkin
-        this.add.image(1039, 491, "spooky-dance", "candy_pumkin");
+        const candy_pumkin = this.add.image(1039, 491, "spooky-dance", "candy_pumkin");
 
         // fg_speaker_right
         this.add.image(1174, 635, "spooky-dance", "fg_speaker_right");
@@ -124,6 +124,10 @@ export default class Dance extends RoomScene {
         const right_speaker0001Animation = new Animation(right_speaker0001);
         right_speaker0001Animation.key = "right_speaker";
         right_speaker0001Animation.end = 10;
+
+        // candy_pumkin (components)
+        const candy_pumkinSimpleButton = new SimpleButton(candy_pumkin);
+        candy_pumkinSimpleButton.callback = () => this.interface.prompt.showItem(36103);
 
         // right_top_speaker0001 (components)
         const right_top_speaker0001Animation = new Animation(right_top_speaker0001);

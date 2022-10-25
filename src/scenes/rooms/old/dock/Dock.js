@@ -89,9 +89,6 @@ export default class Dock extends RoomScene {
         // left_sign
         this.add.image(120, 345, "dock", "left_sign");
 
-        // candy_candy50002
-        const candy_candy50002 = this.add.image(1316, 641, "candyhunt", "candy/5-got");
-
         // zone
         const zone = this.add.rectangle(631, 633, 135, 160);
         zone.alpha = 0.5;
@@ -141,10 +138,6 @@ export default class Dock extends RoomScene {
         ringsAnimation.repeat = 0;
         ringsAnimation.autoPlay = false;
         ringsAnimation.stopOnOut = false;
-
-        // candy_candy50002 (components)
-        const candy_candy50002SimpleButton = new SimpleButton(candy_candy50002);
-        candy_candy50002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "pumkin" });
 
         // zone (components)
         const zoneZone = new Zone(zone);

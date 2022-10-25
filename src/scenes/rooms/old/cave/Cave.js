@@ -46,11 +46,6 @@ export default class Cave extends RoomScene {
         const ceiling = this.add.image(1360, 743, "cave", "ceiling");
         ceiling.setOrigin(0.8945998698763825, 0.9345911949685535);
 
-        // candy_candy20002
-        const candy_candy20002 = this.add.image(120, 725, "candyhunt", "candy/2-got");
-        candy_candy20002.scaleX = 0.5;
-        candy_candy20002.scaleY = 0.5;
-
         // fg_1
         const fg_1 = this.add.image(-15, 880, "cave", "fg_1");
         fg_1.setOrigin(0, 1);
@@ -155,10 +150,6 @@ export default class Cave extends RoomScene {
 
         // lists
         const sort = [line, water_water_11, water_water_10, water_water_9, water_water_8, water_water_7, water_water_6, water_water_5, water_water_4, water_water_3, water_water_2, water_water_1, ladder_front, ladder_back, chair_front, fg_2, ceiling, fg_3, fg_1];
-
-        // candy_candy20002 (components)
-        const candy_candy20002SimpleButton = new SimpleButton(candy_candy20002);
-        candy_candy20002SimpleButton.callback = () => this.network.send('collected_candy', { candy: "candy_cube" });
 
         // door (components)
         const doorButton = new Button(door);
