@@ -31,11 +31,13 @@ export default class Beach extends RoomScene {
 
         this.load.pack("sky-pack", "assets/media/rooms/spooky_fair/sky/sky-pack.json");
         this.load.pack("beach-pack", "assets/media/rooms/spooky_fair/beach/beach-pack.json");
+        this.load.audio('thunder', `assets/media/music/sf_thunder.mp3`);
     }
 
     /** @returns {void} */
     _create() {
-
+        const thunder = this.sound.add('thunder');
+        this.loopAudio(thunder, 5000);
         // sky0001
         const sky0001 = this.add.sprite(913, -23, "sky_spooky", "sky0001");
 

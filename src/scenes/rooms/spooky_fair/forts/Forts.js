@@ -44,11 +44,13 @@ export default class Forts extends RoomScene {
     _preload() {
 
         this.load.pack("forts-pack", "assets/media/rooms/spooky_fair/forts/forts-pack.json");
+        this.load.audio('thunder', `assets/media/music/sf_thunder.mp3`);
     }
 
     /** @returns {void} */
     _create() {
-
+        const thunder = this.sound.add('thunder');
+        this.loopAudio(thunder, 5000);
         // background_png
         const background_png = this.add.image(0, -23, "spooky_forts", "Background.png");
         background_png.setOrigin(0.10871520408536875, 0.06389649105286381);
