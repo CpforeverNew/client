@@ -95,9 +95,9 @@ export default class Penguin extends BaseContainer {
 
         // Monster Mash stamp
         const equippedIds = Object.values(this.items.equippedFlat);
-        const costumes = [[4016, 1013], [789], [120, 266], [4138], [14737], [135, 5]]
+        const costumes = [[1013, 4016], [789], [120, 266], [4138], [14737]]
         costumes.forEach(costume => {
-            if(costume.every(costumeItem => equippedIds.includes(costumeItem))) { console.log('true!!!'); this.world.client.stampEarned(187)}
+            if(costume.every(costumeItem => equippedIds.includes(costumeItem))) this.world.client.stampEarned(187)
         })
     }
 
