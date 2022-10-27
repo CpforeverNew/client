@@ -6,7 +6,7 @@ import News from '@scenes/interface/books/News'
 export default class Waves extends News {
 
     constructor() {
-        super("Hydro");
+        super("Waves");
 
         /** @type {Phaser.GameObjects.Container[]} */
         this.pages;

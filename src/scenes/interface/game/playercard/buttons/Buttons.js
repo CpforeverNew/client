@@ -223,6 +223,7 @@ export default class Buttons extends BaseContainer {
             this.enableButton('report', 'mute-icon', 'Warn Player')
             this.enableButton('ignore', 'ignore-icon', 'Kick Player')
             this.enableButton('profile', 'help-icon', 'Find Player')
+            this.enableButton('igloo')
         }
 
         if (!['online', 'offline'].includes(relationship)) {
