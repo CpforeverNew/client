@@ -32,8 +32,8 @@ export default class PromptController {
         this.setCursor()
     }
 
-    showItem(item) {
-        this.item.showItem(item)
+    showItem(item, ticket) {
+        this.item.showItem(item, ticket)
         this.setCursor()
     }
 

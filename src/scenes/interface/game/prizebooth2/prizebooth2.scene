@@ -1,0 +1,214 @@
+{
+    "id": "839fe8e7-96b6-4b19-ae32-9e70a9a5f273",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [
+            "client/assets/media/interface/game/prizebooth2/booth2-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "PrizeBooth2",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "be7f1777-61a5-44c8-b6ed-a1493fdc32be",
+            "label": "rectangle_1",
+            "components": [
+                "Interactive"
+            ],
+            "x": 799,
+            "y": 511,
+            "scaleX": 13.633051271826252,
+            "scaleY": 13.633051271826252,
+            "isFilled": true,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "2eb5bf2b-5c08-4865-a196-a7e78786fa87",
+            "label": "bg_1",
+            "components": [],
+            "texture": {
+                "key": "booth2",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Sprite",
+            "id": "f4548d42-2819-4c41-8bfc-11e837f91712",
+            "label": "closebtn",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "closebtn",
+            "Button.callback": "() => this.scene.stop()",
+            "texture": {
+                "key": "booth2",
+                "frame": "closebtn"
+            },
+            "x": 1440,
+            "y": 53
+        },
+        {
+            "type": "Rectangle",
+            "id": "35f96c20-5150-4de1-967a-1a9d82564890",
+            "label": "rectangle_7",
+            "components": [],
+            "x": 761,
+            "y": 928,
+            "scaleX": 4.500446100594491,
+            "isFilled": true,
+            "fillColor": "#CCAC5D",
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Text",
+            "id": "bf2ce8d0-373d-4e11-b21a-9f8f7e8961be",
+            "label": "tickets",
+            "scope": "CLASS",
+            "components": [],
+            "x": 547,
+            "y": 881,
+            "text": "Tickets: ",
+            "fontFamily": "Burbank Small",
+            "fontSize": "50px"
+        },
+        {
+            "type": "Rectangle",
+            "id": "9aa08e87-3227-4883-afb7-211c3fba41e6",
+            "label": "antennae",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => {this.antennae()}",
+            "x": 288,
+            "y": 264,
+            "scaleX": 2.1482096053670148,
+            "scaleY": 3.643819274375406,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "842967dd-a789-4de7-bf72-c9e413d71734",
+            "label": "bg",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => {this.bg()}",
+            "x": 292,
+            "y": 842,
+            "scaleX": 2.1482096053670148,
+            "scaleY": 1.7390165394813715,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "dcb4b145-d6fd-48b0-9458-fa7ccbaba088",
+            "label": "batwings",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => {this.batwings()}",
+            "x": 1231,
+            "y": 202,
+            "scaleX": 2.4664612934535706,
+            "scaleY": 2.3368025045616494,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "8197f2f0-c1b3-4189-9e3f-68ba471c9c8f",
+            "label": "bg_2",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => {this.ringmasterhat()}",
+            "x": 787,
+            "y": 290,
+            "scaleX": 2.1482096053670148,
+            "scaleY": 1.7390165394813715,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "37d18066-ef5b-49e8-b841-061d50314be9",
+            "label": "bg_3",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => {this.ringmasteroutfit()}",
+            "x": 773,
+            "y": 605,
+            "scaleX": 4.228723365320141,
+            "scaleY": 2.7188681685189926,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "c5f28fcb-3a74-4a35-aebf-2de456aa6d59",
+            "label": "bg_4",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => {this.paddle()}",
+            "x": 1126,
+            "y": 642,
+            "scaleX": 1.4182637201153612,
+            "scaleY": 1.4602141246012472,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "5b6bbed4-f9c0-421b-a30e-942800602dc6",
+            "label": "bg_5",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => {this.bighat()}",
+            "x": 1348,
+            "y": 767,
+            "scaleX": 1.5360832068915964,
+            "scaleY": 3.258238866443201,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "f7416482-425c-40df-ad62-8e0317753e6b",
+            "label": "bg_6",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => {this.candyapple()}",
+            "x": 263,
+            "y": 590,
+            "scaleX": 2.9558149981210002,
+            "scaleY": 1.1577559078420632,
+            "width": 128,
+            "height": 128
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

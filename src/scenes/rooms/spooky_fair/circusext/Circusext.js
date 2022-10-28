@@ -19,7 +19,7 @@ export default class Circusext extends RoomScene {
         this.roomTriggers = {
             'circusint': () => this.triggerRoom(432234, 746, 731),
             'forest': () => this.triggerRoom(809, 1063, 705),
-            'prize': () => this.interface.loadExternal('PrizeBooth'),
+            'prize': () => this.interface.loadExternal('PrizeBooth2'),
         }
         this.music = '251'
         /* END-USER-CTR-CODE */
