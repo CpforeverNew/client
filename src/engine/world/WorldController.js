@@ -80,6 +80,7 @@ export default class WorldController extends BaseScene {
     addPenguins() {
         this.room.penguins = this.penguinFactory.createPenguins(this.room.waiting, this.room)
         this.room.isReady = true
+        this.room.events.emit("roomready") 
 
         setTimeout( ()=> {for (var x in this.room.waiting) {
             this.room.checkMascot(this.room.waiting[x].id)

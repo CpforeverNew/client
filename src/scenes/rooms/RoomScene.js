@@ -87,6 +87,8 @@ export default class RoomScene extends BaseScene {
         this.interface.main.buddy.showPage()
 
         this.checkMascot(id)
+
+        this.world.room.events.emit("addpenguin")
     }
 
     checkMascot(id){
@@ -109,6 +111,8 @@ export default class RoomScene extends BaseScene {
         delete this.penguins[id]
 
         this.interface.main.buddy.showPage()
+        this.world.room.events.emit("removepenguin")
+
     }
 
     addInput() {

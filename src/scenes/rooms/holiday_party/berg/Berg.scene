@@ -1,0 +1,207 @@
+{
+    "id": "bfc0bf0f-5bfb-4d94-b341-063f776c447e",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 1156,
+        "snapHeight": 231,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/holiday_party/berg/berg-christmas-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Berg",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "0973d214-8573-4f9e-88b6-14e387cfbbd6",
+            "label": "oceanfix",
+            "components": [],
+            "x": 936,
+            "y": 829,
+            "scaleX": 6.201258764243633,
+            "scaleY": 2.1041584437005336,
+            "isFilled": true,
+            "fillColor": "#4EB1E1",
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "182da28a-a454-486b-a2d2-7411a9f4664f",
+            "label": "sky",
+            "components": [],
+            "texture": {
+                "key": "berg-christmas",
+                "frame": "sky"
+            },
+            "x": 764,
+            "y": 154
+        },
+        {
+            "type": "Sprite",
+            "id": "f2304007-5198-4096-b464-ab613eefb9cb",
+            "label": "northernlights0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "northernlights",
+            "Animation.end": 100,
+            "texture": {
+                "key": "berg-christmas",
+                "frame": "northernlights0001"
+            },
+            "x": 302,
+            "y": 162
+        },
+        {
+            "type": "Sprite",
+            "id": "0f9912d1-5d37-442f-a9a8-3f782e839663",
+            "label": "northernlights",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "northernlights",
+            "Animation.end": 100,
+            "texture": {
+                "key": "berg-christmas",
+                "frame": "northernlights0001"
+            },
+            "x": 761,
+            "y": 148
+        },
+        {
+            "type": "Sprite",
+            "id": "a22526df-fcde-4f89-9d2a-3ad746e96cd8",
+            "label": "northernlights_1",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "northernlights",
+            "Animation.end": 100,
+            "texture": {
+                "key": "berg-christmas",
+                "frame": "northernlights0001"
+            },
+            "x": 1247,
+            "y": 150
+        },
+        {
+            "type": "Image",
+            "id": "13132c87-4ad7-41c1-afed-6c689e71d41d",
+            "label": "berg",
+            "components": [],
+            "texture": {
+                "key": "berg-christmas",
+                "frame": "berg"
+            },
+            "x": 798,
+            "y": 516
+        },
+        {
+            "type": "Image",
+            "id": "e8082bc4-7fc8-4f5c-9709-417e9035c516",
+            "label": "present_orange",
+            "components": [],
+            "texture": {
+                "key": "berg-christmas",
+                "frame": "present_orange"
+            },
+            "x": 763,
+            "y": 694,
+            "originX": 0.5087608651304267,
+            "originY": 0.5532755311985399
+        },
+        {
+            "type": "Sprite",
+            "id": "0e9ee92a-4588-4d2c-8357-9e39bbc33b9a",
+            "label": "present_red0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "present_red",
+            "Animation.end": 80,
+            "texture": {
+                "key": "berg-christmas",
+                "frame": "present_red0001"
+            },
+            "x": 104,
+            "y": 371
+        },
+        {
+            "type": "Image",
+            "id": "65817499-6543-4ece-8d81-bb68be7aea75",
+            "label": "present_purple",
+            "components": [],
+            "texture": {
+                "key": "berg-christmas",
+                "frame": "present_purple"
+            },
+            "x": 1085,
+            "y": 561,
+            "originX": 0.6093259911054996,
+            "originY": 0.4446862545001932
+        },
+        {
+            "type": "Sprite",
+            "id": "3ed5fe4d-eb27-4c8a-ae4a-0ff99afa1a58",
+            "label": "tree",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "berg-christmas",
+                "frame": "tree0001"
+            },
+            "x": 725.2658532208204,
+            "y": 496.54390812933525,
+            "originX": 0.4696878256992772,
+            "originY": 0.8314887858758104
+        },
+        {
+            "type": "Sprite",
+            "id": "e0f355f7-c6b8-4e2f-aca3-75d3c1933ae8",
+            "label": "aqua",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onAquaOver()",
+            "SimpleButton.callback": "() => this.onAquaClick()",
+            "SimpleButton.pixelPerfect": true,
+            "ShowHint.text": "Aqua Grabber",
+            "texture": {
+                "key": "berg-christmas",
+                "frame": "aqua0001"
+            },
+            "x": 1262,
+            "y": 292,
+            "originY": 0.4014336917562724
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "039e3e86-31a4-42f2-81bf-d675f82a58fa",
+            "label": "sort",
+            "objectIds": [
+                "e8082bc4-7fc8-4f5c-9709-417e9035c516",
+                "3ed5fe4d-eb27-4c8a-ae4a-0ff99afa1a58",
+                "65817499-6543-4ece-8d81-bb68be7aea75"
+            ]
+        }
+    ]
+}

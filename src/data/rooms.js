@@ -160,7 +160,7 @@ rooms = {
 	},
 	805: {
 		key: 'Berg',
-		scene: require(`@rooms/old/berg/Berg`).default,
+		scene: require(`@rooms/holiday_party/berg/Berg`).default,
 		x: 652,
 		y: 448
 	},
