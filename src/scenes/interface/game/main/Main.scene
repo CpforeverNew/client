@@ -448,7 +448,8 @@
             "components": [],
             "x": 760,
             "y": 3,
-            "nestedPrefabs": []
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "type": "Image",
@@ -610,7 +611,8 @@
             "x": 760,
             "y": 461,
             "visible": false,
-            "nestedPrefabs": []
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "d44a536e-8824-4c11-8cdd-649f5629a29c",
@@ -626,7 +628,8 @@
             "x": 760,
             "y": 481,
             "visible": false,
-            "nestedPrefabs": []
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "type": "Layer",
@@ -649,7 +652,8 @@
                     "x": 1140,
                     "y": 436,
                     "visible": false,
-                    "nestedPrefabs": []
+                    "nestedPrefabs": [],
+                    "list": []
                 },
                 {
                     "prefabId": "aa26f680-5a55-46f1-b89f-e40211af8a8d",
@@ -665,7 +669,8 @@
                     "x": 446,
                     "y": 436,
                     "visible": false,
-                    "nestedPrefabs": []
+                    "nestedPrefabs": [],
+                    "list": []
                 }
             ]
         },
@@ -683,7 +688,8 @@
             "x": 760,
             "y": 481,
             "visible": false,
-            "nestedPrefabs": []
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "660de11c-0cd6-4b68-8d0c-bee940918a4d",
@@ -699,7 +705,8 @@
             "x": 760,
             "y": 481,
             "visible": false,
-            "nestedPrefabs": []
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "c0278f51-86ed-479c-93d8-d832408669c2",
@@ -715,7 +722,8 @@
             "x": 366,
             "y": 873,
             "visible": false,
-            "nestedPrefabs": []
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "0dee3174-7c8b-4158-b686-0fbea0d0c1f1",
@@ -731,7 +739,8 @@
             "x": 306,
             "y": 906,
             "visible": false,
-            "nestedPrefabs": []
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "354b1452-525c-4f8a-8d7b-839eca9cc1c0",
@@ -747,7 +756,8 @@
             "x": 246,
             "y": 858,
             "visible": false,
-            "nestedPrefabs": []
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "847139cb-5cc3-48bc-be0b-14aabf820c56",
@@ -763,7 +773,8 @@
             "x": 244,
             "y": 933,
             "visible": false,
-            "nestedPrefabs": []
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "032db1d9-1eac-4321-b4b3-ef359e514589",
@@ -779,7 +790,8 @@
             "x": 733,
             "y": 422,
             "visible": false,
-            "nestedPrefabs": []
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "c497abe9-ef5b-4e05-9576-c628bc1df794",
@@ -795,7 +807,8 @@
             "x": 736,
             "y": 472,
             "visible": false,
-            "nestedPrefabs": []
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "c7faec64-0731-43ba-ac67-c99b18aab3f7",
@@ -811,7 +824,8 @@
             "x": 500,
             "y": 583,
             "visible": false,
-            "nestedPrefabs": []
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "c61a40df-26bb-479a-af3b-c54b2568be12",
@@ -827,7 +841,8 @@
             "x": 0,
             "y": 0,
             "visible": false,
-            "nestedPrefabs": []
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "58912eae-df4c-439d-97cf-58e295071ee7",
@@ -843,7 +858,8 @@
             "x": 0,
             "y": 0,
             "visible": false,
-            "nestedPrefabs": []
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "type": "Text",
@@ -872,37 +888,6 @@
         },
         {
             "type": "Image",
-            "id": "a92c0f27-b9ce-4f9d-b544-72d9d610313d",
-            "label": "tickets_button",
-            "components": [
-                "Button"
-            ],
-            "Button.spriteName": "tickets",
-            "Button.callback": "() => { console.log(\"tickets\")}",
-            "texture": {
-                "key": "tickets",
-                "frame": "tickets"
-            },
-            "x": 1210,
-            "y": 60
-        },
-        {
-            "type": "Text",
-            "id": "b0fa11e7-55ca-4a3b-95de-24a6cf4a2168",
-            "label": "tickets",
-            "scope": "PUBLIC",
-            "components": [],
-            "x": 1161,
-            "y": 37,
-            "text": "0",
-            "fixedWidth": 100,
-            "align": "center",
-            "fontFamily": "CCFaceFront",
-            "fontSize": "17px",
-            "color": "#000000ff"
-        },
-        {
-            "type": "Image",
             "id": "abaa21d2-06e9-4600-a776-7bdff961438c",
             "label": "news_new",
             "components": [],
@@ -927,7 +912,8 @@
             "x": -28,
             "y": 7,
             "visible": false,
-            "nestedPrefabs": []
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "type": "Image",
@@ -956,45 +942,6 @@
             "fontFamily": "CCFaceFront",
             "fontSize": "19px",
             "fontStyle": "bold"
-        },
-        {
-            "type": "Image",
-            "id": "2b74aa90-85a2-4123-ba39-8e53f3c29b5a",
-            "label": "cany_hunt_button",
-            "scope": "CLASS",
-            "components": [
-                "Button"
-            ],
-            "Button.spriteName": "huntbtn",
-            "Button.callback": "() => this.huntButton();",
-            "texture": {
-                "key": "candyhunt",
-                "frame": "huntbtn"
-            },
-            "x": 1340,
-            "y": 58,
-            "scaleX": 0.5,
-            "scaleY": 0.5
-        },
-        {
-            "prefabId": "216bddd0-3652-4edf-a93b-25c51186f90c",
-            "id": "5b660194-ea46-4a3a-8fed-af93f7e315bb",
-            "unlock": [
-                "x",
-                "y",
-                "visible",
-                "scaleX",
-                "scaleY"
-            ],
-            "label": "candyhunt",
-            "scope": "CLASS",
-            "components": [],
-            "x": 660,
-            "y": 364,
-            "scaleX": 0.7,
-            "scaleY": 0.7,
-            "visible": false,
-            "nestedPrefabs": []
         },
         {
             "type": "Container",

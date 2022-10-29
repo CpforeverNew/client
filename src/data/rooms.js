@@ -4,25 +4,25 @@ let rooms;
 rooms = {
 	100: {
 		key: 'Town',
-		scene: require(`@rooms/spooky_fair/town/Town`).default,
+		scene: require(`@rooms/old/town/Town`).default,
 		x: 760,
 		y: 660
 	},
 	110: {
 		key: 'Coffee',
-		scene: require(`@rooms/spooky_fair/coffee/Coffee`).default,
+		scene: require(`@rooms/old/coffee/Coffee`).default,
 		x: 640,
 		y: 480
 	},
 	111: {
 		key: 'Book',
-		scene: require(`@rooms/spooky_fair/book/Book`).default,
+		scene: require(`@rooms/old/book/Book`).default,
 		x: 1260,
 		y: 560
 	},
 	120: {
 		key: 'Dance',
-		scene: require(`@rooms/old/dance/spf/Dance`).default,
+		scene: require(`@rooms/old/dance/Dance`).default,
 		x: 360,
 		y: 560
 	},
@@ -34,13 +34,13 @@ rooms = {
 	},
 	130: {
 		key: 'Shop',
-		scene: require(`@rooms/spooky_fair/shop/Shop`).default,
+		scene: require(`@rooms/old/shop/Shop`).default,
 		x: 1000,
 		y: 560
 	},
 	200: {
 		key: 'Village',
-		scene: require(`@rooms/spooky_fair/village/Village`).default,
+		scene: require(`@rooms/old/village/Village`).default,
 		x: 800,
 		y: 640
 	},
@@ -64,13 +64,13 @@ rooms = {
 	},
 	230: {
 		key: 'Mtn',
-		scene: require(`@rooms/spooky_fair/mtn/Mtn`).default,
+		scene: require(`@rooms/old/mtn/Mtn`).default,
 		x: 760,
 		y: 440
 	},
 	300: {
 		key: 'Plaza',
-		scene: require(`@rooms/spooky_fair/plaza/Plaza`).default,
+		scene: require(`@rooms/old/plaza/Plaza`).default,
 		x: 760,
 		y: 680
 	},
@@ -88,13 +88,13 @@ rooms = {
 	},
 	321: {
 		key: 'DojoExt',
-		scene: require(`@rooms/spooky_fair/dojoext/DojoExt`).default,
+		scene: require(`@rooms/old/dojoext/DojoExt`).default,
 		x: 780,
 		y: 790
 	},
 	330: {
 		key: 'Pizza',
-		scene: require(`@rooms/spooky_fair/pizza/Pizza`).default,
+		scene: require(`@rooms/old/pizza/Pizza`).default,
 		x: 780,
 		y: 790
 	},
@@ -112,37 +112,37 @@ rooms = {
 	},
 	400: {
 		key: 'Beach',
-		scene: require(`@rooms/spooky_fair/beach/Beach`).default,
+		scene: require(`@rooms/old/beach/Beach`).default,
 		x: 840,
 		y: 680
 	},
 	410: {
 		key: 'Lighthouse',
-		scene: require(`@rooms/spooky_fair/lighthouse/Lighthouse`).default,
+		scene: require(`@rooms/old/lighthouse/Lighthouse`).default,
 		x: 840,
 		y: 680
 	},
 	411: {
 		key: 'Beacon',
-		scene: require(`@rooms/spooky_fair/beacon/Beacon`).default,
+		scene: require(`@rooms/old/beacon/Beacon`).default,
 		x: 410,
 		y: 800
 	},
 	800: {
 		key: 'Dock',
-		scene: require(`@rooms/spooky_fair/dock/Dock`).default,
+		scene: require(`@rooms/old/dock/Dock`).default,
 		x: 800,
 		y: 400
 	},
 	801: {
 		key: 'Forts',
-		scene: require(`@rooms/spooky_fair/forts/Forts`).default,
+		scene: require(`@rooms/old/forts/Forts`).default,
 		x: 960,
 		y: 610
 	},
 	802: {
 		key: 'Rink',
-		scene: require(`@rooms/old/rink/spf/Rink`).default,
+		scene: require(`@rooms/old/rink/Rink`).default,
 		x: 770,
 		y: 400
 	},
@@ -160,7 +160,7 @@ rooms = {
 	},
 	805: {
 		key: 'Berg',
-		scene: require(`@rooms/spooky_fair/berg/Berg`).default,
+		scene: require(`@rooms/old/berg/Berg`).default,
 		x: 652,
 		y: 448
 	},
@@ -172,7 +172,7 @@ rooms = {
 	},
 	807: {
 		key: 'Shack',
-		scene: require(`@rooms/spooky_fair/shack/Shack`).default,
+		scene: require(`@rooms/old/shack/Shack`).default,
 		x: 760,
 		y: 680
 	},
@@ -184,13 +184,13 @@ rooms = {
 	},
 	809: {
 		key: 'Forest',
-		scene: require(`@rooms/spooky_fair/forest/Forest`).default,
+		scene: require(`@rooms/old/forest/Forest`).default,
 		x: 760,
 		y: 430
 	},
 	810: {
 		key: 'Cove',
-		scene: require(`@rooms/spooky_fair/cove/Cove`).default,
+		scene: require(`@rooms/old/cove/Cove`).default,
 		x: 840,
 		y: 480
 	},
@@ -272,12 +272,6 @@ rooms = {
 		x: 760,
 		y: 660
 	},
-	899: {
-		key: 'Circusext',
-		scene: require(`@rooms/spooky_fair/circusext/Circusext`).default,
-		x: 760,
-		y: 660
-	},
 	916: {
 		key: 'AquaGrabber',
 		scene: require('@games/aquagrabber/AquaGrabber').default
@@ -337,42 +331,6 @@ rooms = {
 	999: {
 		key: 'Sled',
 		scene: require('@games/sled/Sled').default
-	},
-	1000: {
-		key: 'Paddle',
-		scene: require('@games/paddle/Paddle').default
-	},
-	1001: {
-		key: 'Spin',
-		scene: require('@games/spin/Spin').default
-	},
-	1002: {
-		key: 'RingTheBell',
-		scene: require('@games/ringthebell/RingTheBell').default
-	},
-	1003: {
-		key: 'PuffleSuffle',
-		scene: require('@games/pufflesuffle/PuffleSuffle').default
-	},
-	1005: {
-		key: 'Memory',
-		scene: require('@games/memory/Memory').default
-	},
-	8008415: {
-		key: 'Vault',
-		scene: require('@rooms/spooky_fair/vault/Vault').default,
-		x: 500,
-		y: 560
-	},
-	432234: {
-		key: 'CircusInt',
-		scene: require('@rooms/spooky_fair/circusint/CircusInt').default,
-		x: 746,
-		y: 731
-	},
-	1004: {
-		key: 'Feed',
-		scene: require('@games/feed/Feed').default
 	}
 }
 

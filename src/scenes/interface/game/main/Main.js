@@ -14,7 +14,7 @@ import Buddy from '../buddy/Buddy'
 import ChatLog from '../chatlog/ChatLog'
 import EmotesMenu from '../floating/emotes/EmotesMenu'
 import Waddle from '../waddle/Waddle'
-import Map from '../map/spooky_map/SpookyMap'
+import Map from '../map/Map'
 import Newspaper from '../newspaper/Newspaper'
 import Moderator from '../moderator/Moderator'
 import ModActions from '../modactions/ModActions'
@@ -26,7 +26,6 @@ import Prompt from '../prompt/Prompt'
 import Snitch from '../snitch/Snitch'
 import PufflesMenu from '../floating/puffles/PufflesMenu'
 import Daily from '../daily/Daily'
-import CandyHunt from '../candyhunt/CandyHunt'
 
 /* START OF COMPILED CODE */
 
@@ -141,18 +140,12 @@ export default class Main extends BaseScene {
         this.daily;
         /** @type {Phaser.GameObjects.Text} */
         this.version;
-        /** @type {Phaser.GameObjects.Text} */
-        this.tickets;
         /** @type {Newspaper} */
         this.newspaper;
         /** @type {Phaser.GameObjects.Image} */
         this.mail_new;
         /** @type {Phaser.GameObjects.Text} */
         this.mail_text;
-        /** @type {Phaser.GameObjects.Image} */
-        this.cany_hunt_button;
-        /** @type {CandyHunt} */
-        this.candyhunt;
         /** @type {Phaser.GameObjects.Container} */
         this.stampEarned;
         /** @type {Phaser.GameObjects.Image} */
@@ -392,14 +385,6 @@ export default class Main extends BaseScene {
         version.text = "v1.1.1-beta";
         version.setStyle({ "align": "right", "color": "#000000ff", "fixedWidth":200,"fontFamily": "Burbank Small", "fontSize": "18px", "fontStyle": "bold", "stroke": "#000000ff", "strokeThickness":1,"shadow.stroke":true,"shadow.fill":true});
 
-        // tickets_button
-        const tickets_button = this.add.image(1210, 60, "tickets", "tickets");
-
-        // tickets
-        const tickets = this.add.text(1161, 37, "", {});
-        tickets.text = "0";
-        tickets.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":100,"fontFamily": "CCFaceFront", "fontSize": "17px" });
-
         // news_new
         this.add.image(96, 90, "main", "news-new");
 
@@ -415,18 +400,6 @@ export default class Main extends BaseScene {
         const mail_text = this.add.text(187, 20, "", {});
         mail_text.text = "0";
         mail_text.setStyle({ "align": "center", "fixedWidth":20,"fontFamily": "CCFaceFront", "fontSize": "19px", "fontStyle": "bold" });
-
-        // cany_hunt_button
-        const cany_hunt_button = this.add.image(1340, 58, "candyhunt", "huntbtn");
-        cany_hunt_button.scaleX = 0.5;
-        cany_hunt_button.scaleY = 0.5;
-
-        // candyhunt
-        const candyhunt = new CandyHunt(this, 660, 364);
-        this.add.existing(candyhunt);
-        candyhunt.scaleX = 0.7;
-        candyhunt.scaleY = 0.7;
-        candyhunt.visible = false;
 
         // stampEarned
         const stampEarned = this.add.container(933, -150);
@@ -572,16 +545,6 @@ export default class Main extends BaseScene {
         const news_button_1SimpleButton = new SimpleButton(news_button_1);
         news_button_1SimpleButton.callback = () => this.daily.visible = true;
 
-        // tickets_button (components)
-        const tickets_buttonButton = new Button(tickets_button);
-        tickets_buttonButton.spriteName = "tickets";
-        tickets_buttonButton.callback = () => { console.log("tickets")};
-
-        // cany_hunt_button (components)
-        const cany_hunt_buttonButton = new Button(cany_hunt_button);
-        cany_hunt_buttonButton.spriteName = "huntbtn";
-        cany_hunt_buttonButton.callback = () => this.huntButton();;
-
         this.pinContainer = pinContainer;
         this.dock = dock;
         this.chat_box = chat_box;
@@ -635,12 +598,9 @@ export default class Main extends BaseScene {
         this.prompt = prompt;
         this.daily = daily;
         this.version = version;
-        this.tickets = tickets;
         this.newspaper = newspaper;
         this.mail_new = mail_new;
         this.mail_text = mail_text;
-        this.cany_hunt_button = cany_hunt_button;
-        this.candyhunt = candyhunt;
         this.stampEarned = stampEarned;
         this.stampEarnedBg = stampEarnedBg;
         this.stampEarnedImage = stampEarnedImage;
@@ -658,9 +618,6 @@ export default class Main extends BaseScene {
     create() {
 
         this._create()
-
-        // Get User tickets
-        this.network.send("get_user_tickets");
 
         // Version
         this.version.text = "v" + VERSION;
@@ -1098,11 +1055,6 @@ export default class Main extends BaseScene {
             this.mail_text.visible = true
             this.mail_new.visible = true
         }
-    }
-
-    huntButton(){
-        this.network.send("user_candy_current_collected")
-        this.candyhunt.visible = true
     }
 
     /* END-USER-CODE */

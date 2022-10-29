@@ -22,9 +22,9 @@ export default class Start extends BaseScene {
         bg.setOrigin(0, 0);
 
         // pgames
-        const pgames = this.add.image(759, 432, "generic_start");
-        pgames.scaleX = 1.2;
-        pgames.scaleY = 1.2;
+        const pgames = this.add.image(765, 432, "start", "startscreen");
+        pgames.scaleX = 0.9937453096008476;
+        pgames.scaleY = 0.9937453096008476;
 
         // bottom
         this.add.image(760, 766, "start", "bottom");

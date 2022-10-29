@@ -30,12 +30,13 @@
             "label": "pgames",
             "components": [],
             "texture": {
-                "key": "generic_start"
+                "key": "start",
+                "frame": "startscreen"
             },
-            "x": 759,
+            "x": 765,
             "y": 432,
-            "scaleX": 1.2,
-            "scaleY": 1.2
+            "scaleX": 0.9937453096008476,
+            "scaleY": 0.9937453096008476
         },
         {
             "type": "Image",
