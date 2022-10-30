@@ -1,0 +1,254 @@
+{
+    "id": "c83fbc61-eb44-4633-b8f2-343b2e95ad7a",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/holiday_party/sky/sky-holiday.json",
+            "client/assets/media/rooms/holiday_party/rink/rink-holiday-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Rink",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "c7d7a613-971b-4871-81b0-37308233509e",
+            "label": "sky",
+            "components": [],
+            "texture": {
+                "key": "sky",
+                "frame": "sky"
+            },
+            "x": 772,
+            "y": 139,
+            "scaleX": 1.0969122250284444,
+            "scaleY": 1.0969122250284444
+        },
+        {
+            "type": "Sprite",
+            "id": "ad9c6abf-2749-4cf8-9011-d3a0de8ff0f3",
+            "label": "aurora",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "aurora",
+            "Animation.end": 100,
+            "texture": {
+                "key": "sky",
+                "frame": "aurora0001"
+            },
+            "x": 647,
+            "y": 132
+        },
+        {
+            "type": "Sprite",
+            "id": "bccd1a25-1613-40b4-adf2-bbbd0adf4aa5",
+            "label": "aurora_1",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "aurora",
+            "Animation.end": 100,
+            "texture": {
+                "key": "sky",
+                "frame": "aurora0001"
+            },
+            "x": 950,
+            "y": 141
+        },
+        {
+            "type": "Sprite",
+            "id": "8fa2c510-555c-4482-966f-f19406ef8ee9",
+            "label": "aurora_2",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "aurora",
+            "Animation.end": 100,
+            "texture": {
+                "key": "sky",
+                "frame": "aurora0001"
+            },
+            "x": 1331,
+            "y": 101
+        },
+        {
+            "type": "Sprite",
+            "id": "886c202c-9604-4a7e-8029-0fcafa292ab4",
+            "label": "aurora0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "aurora",
+            "Animation.end": 100,
+            "texture": {
+                "key": "sky",
+                "frame": "aurora0001"
+            },
+            "x": 342,
+            "y": 155
+        },
+        {
+            "type": "Image",
+            "id": "0a8c6308-ad84-464c-bb0a-224fc0265395",
+            "label": "bg_1",
+            "components": [],
+            "texture": {
+                "key": "rink-holiday",
+                "frame": "bg"
+            },
+            "x": 756,
+            "y": 396,
+            "scaleX": 1.0147623158449213,
+            "scaleY": 1.0147623158449213
+        },
+        {
+            "type": "Image",
+            "id": "229f3dc6-6c40-46ca-a3eb-b216a1a3356a",
+            "label": "window",
+            "components": [],
+            "texture": {
+                "key": "rink-holiday",
+                "frame": "window"
+            },
+            "x": 517,
+            "y": 288.3937422585697,
+            "scaleX": 1.0147623158449213,
+            "scaleY": 1.0147623158449213,
+            "originY": 0.6121025564079174
+        },
+        {
+            "type": "Image",
+            "id": "fcd3d7c6-55b4-4149-b6d9-5f9739edc4c2",
+            "label": "door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "rink-holiday",
+                "frame": "door"
+            },
+            "x": 781.8787484517139,
+            "y": 286.75749690342786,
+            "originX": 0.5430972050190437,
+            "originY": 0.5680482184511216
+        },
+        {
+            "type": "Image",
+            "id": "73847759-e75e-4a30-bb45-36ff6e138a81",
+            "label": "fg_1",
+            "components": [],
+            "texture": {
+                "key": "rink-holiday",
+                "frame": "fg"
+            },
+            "x": 811,
+            "y": 903,
+            "scaleX": 1.0147623158449213,
+            "scaleY": 1.0147623158449213,
+            "originX": 0.5287397705793603,
+            "originY": 0.9096834562162947
+        },
+        {
+            "type": "Image",
+            "id": "65835682-0e3b-49ea-88f6-aee7c0aa953e",
+            "label": "puck",
+            "components": [],
+            "texture": {
+                "key": "rink-holiday",
+                "frame": "puck"
+            },
+            "x": 793,
+            "y": 483,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "38e025e6-1019-4d2c-8a54-4286e74043e0",
+            "label": "netfront",
+            "components": [],
+            "texture": {
+                "key": "rink-holiday",
+                "frame": "netfront"
+            },
+            "x": 290,
+            "y": 451,
+            "originX": 0.353922681511951,
+            "originY": 0.6022541229416348
+        },
+        {
+            "type": "Image",
+            "id": "c4afc3af-91fe-4dd1-bb0c-84337acb89b1",
+            "label": "netback",
+            "components": [],
+            "texture": {
+                "key": "rink-holiday",
+                "frame": "netback"
+            },
+            "x": 271.27049475299617,
+            "y": 575.6301461798447,
+            "originX": 0.6348406016812767,
+            "originY": 1.1115832036699032
+        },
+        {
+            "type": "Image",
+            "id": "d2eb34e0-97ee-4909-85b4-1f68218ab066",
+            "label": "netfront_1",
+            "components": [],
+            "texture": {
+                "key": "rink-holiday",
+                "frame": "netfront"
+            },
+            "x": 1244,
+            "y": 451,
+            "originX": 0.353922681511951,
+            "originY": 0.6022541229416348,
+            "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "341c9973-f1a8-4603-b5ec-c9a3f2b68abc",
+            "label": "netback_1",
+            "components": [],
+            "texture": {
+                "key": "rink-holiday",
+                "frame": "netback"
+            },
+            "x": 1300,
+            "y": 575.6301461798447,
+            "originX": 0.6348406016812767,
+            "originY": 1.1115832036699032,
+            "flipX": true
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "6d6d5fae-d1f8-4bcd-a35d-8a2c43027744",
+            "label": "sort",
+            "objectIds": [
+                "38e025e6-1019-4d2c-8a54-4286e74043e0",
+                "c4afc3af-91fe-4dd1-bb0c-84337acb89b1",
+                "229f3dc6-6c40-46ca-a3eb-b216a1a3356a",
+                "fcd3d7c6-55b4-4149-b6d9-5f9739edc4c2",
+                "73847759-e75e-4a30-bb45-36ff6e138a81"
+            ]
+        }
+    ]
+}

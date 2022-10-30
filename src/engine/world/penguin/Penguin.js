@@ -223,11 +223,23 @@ export default class Penguin extends BaseContainer {
             this.removeTween(false)
         }
 
+        let style = "Linear"
+
+        try {
+            if (this.room.shouldSlide) {
+                path.duration *= 1.2
+                style = "Quad.easeInOut"
+            }
+        } catch (err) {
+            // pass
+        }
+
         this.playFrame(this.direction + 8) // + 8 for walking frame id
 
         this.tween = this.room.tweens.add({
             targets: this,
             duration: path.duration,
+            ease: style,
 
             x: Math.round(path.target.x),
             y: Math.round(path.target.y),

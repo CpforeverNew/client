@@ -64,7 +64,7 @@ rooms = {
 	},
 	230: {
 		key: 'Mtn',
-		scene: require(`@rooms/old/mtn/Mtn`).default,
+		scene: require(`@rooms/holiday_party/mtn/Mtn`).default,
 		x: 760,
 		y: 440
 	},
@@ -142,7 +142,7 @@ rooms = {
 	},
 	802: {
 		key: 'Rink',
-		scene: require(`@rooms/old/rink/Rink`).default,
+		scene: require(`@rooms/holiday_party/rink/Rink`).default,
 		x: 770,
 		y: 400
 	},
