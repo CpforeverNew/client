@@ -8,6 +8,7 @@
         "superClassName": "RoomScene",
         "preloadMethodName": "_preload",
         "preloadPackFiles": [
+            "client/assets/media/rooms/cfcbooth/cfcbooth-pack.json",
             "client/assets/media/rooms/holiday_party/sky/sky-holiday.json",
             "client/assets/media/rooms/holiday_party/town/town-holiday-pack.json"
         ],
@@ -257,47 +258,46 @@
                 "key": "town-holiday",
                 "frame": "lantern0001"
             },
-            "x": 274,
-            "y": 1000,
-            "originX": 0.591351085937634,
-            "originY": 3.513405456415751
-        },
-        {
-            "type": "Sprite",
-            "id": "f7fbd0a2-4402-408e-8185-6844912a9f2c",
-            "label": "cfc0001",
-            "components": [
-                "Animation",
-                "SimpleButton"
-            ],
-            "Animation.key": "cfc",
-            "Animation.end": 40,
-            "Animation.autoPlay": false,
-            "Animation.onHover": true,
-            "SimpleButton.hoverCallback": "",
-            "SimpleButton.hoverOutCallback": "",
-            "SimpleButton.pixelPerfect": true,
-            "texture": {
-                "key": "town-holiday",
-                "frame": "cfc0001"
-            },
-            "x": 964,
-            "y": 813.4002141401771,
-            "originY": 0.9212132027281673
+            "x": 313,
+            "y": 1080,
+            "angle": -11,
+            "originX": 0.4220237544872943,
+            "originY": 4.332301039385129
         },
         {
             "type": "Image",
-            "id": "952c5590-b0de-4bb3-ae91-29c1e3b03eab",
-            "label": "cfcfrontleg",
+            "id": "887ad568-5e45-47cb-9a61-ec095922e6ca",
+            "label": "fg_ccL_png_1",
             "components": [],
             "texture": {
                 "key": "town-holiday",
-                "frame": "cfcfrontleg"
+                "frame": "fg_ccL.png"
             },
-            "x": 952.721505434166,
-            "y": 823.3393543530055,
-            "originX": 0.34004561921715254,
-            "originY": 0.8410719565615812
+            "x": 204.35022658003123,
+            "y": 1117.7078701477064,
+            "originX": 0.3695900429110741,
+            "originY": 2.0381060696173994
+        },
+        {
+            "type": "Sprite",
+            "id": "a4234e50-02b5-4bf4-81a4-c4db8da5f165",
+            "label": "lantern",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "(e) => this.onLanternRightClick()",
+            "SimpleButton.pixelPerfect": true,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "lantern0001"
+            },
+            "x": 1349,
+            "y": 1096,
+            "angle": 11,
+            "originX": 1.227429520607302,
+            "originY": 4.08994235794411,
+            "flipX": true
         },
         {
             "type": "Sprite",
@@ -318,7 +318,22 @@
                 "frame": "giftdoor0001"
             },
             "x": 1085,
-            "y": 391
+            "y": 390
+        },
+        {
+            "type": "Image",
+            "id": "059f3c8c-692f-4c60-82bd-62371511c125",
+            "label": "fg_ccL_png",
+            "components": [],
+            "texture": {
+                "key": "town-holiday",
+                "frame": "fg_ccL.png"
+            },
+            "x": 1360,
+            "y": 1052,
+            "originX": 0.4500048214108138,
+            "originY": 1.680988470610681,
+            "flipX": true
         },
         {
             "type": "Image",
@@ -416,26 +431,6 @@
             "y": 466,
             "originX": 0.4538664293523831,
             "originY": 0.5349010490986322
-        },
-        {
-            "type": "Sprite",
-            "id": "a4234e50-02b5-4bf4-81a4-c4db8da5f165",
-            "label": "lantern",
-            "scope": "CLASS",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "(e) => this.onLanternRightClick()",
-            "SimpleButton.pixelPerfect": true,
-            "texture": {
-                "key": "town-holiday",
-                "frame": "lantern0001"
-            },
-            "x": 1326.720443926511,
-            "y": 1018.5806658897665,
-            "originX": 0.552446030724098,
-            "originY": 3.4492121153134154,
-            "flipX": true
         },
         {
             "type": "Sprite",
@@ -2271,8 +2266,8 @@
                 "key": "town-holiday",
                 "frame": "santasled"
             },
-            "x": 367.54923030735074,
-            "y": 1003.2349684766884,
+            "x": 356.54923030735074,
+            "y": 1005.2349684766884,
             "originX": 0.5219088290577206,
             "originY": 1.5307870999008018
         },
@@ -2848,6 +2843,157 @@
             "angle": -11,
             "originX": 1,
             "originY": 1
+        },
+        {
+            "type": "Image",
+            "id": "417349c0-3b05-4ad1-99e9-5ba0f3ef949a",
+            "label": "chairl",
+            "components": [],
+            "texture": {
+                "key": "town-holiday",
+                "frame": "chairl"
+            },
+            "x": 402,
+            "y": 515,
+            "originX": 0.524655273734139,
+            "originY": 0.3315956749409276
+        },
+        {
+            "type": "Image",
+            "id": "78f4e1e9-5af6-466f-b8d1-bc266f18ff59",
+            "label": "chairr",
+            "components": [],
+            "texture": {
+                "key": "town-holiday",
+                "frame": "chairr"
+            },
+            "x": 450.07004531600626,
+            "y": 469.280181264025,
+            "originX": 0.502046217079112,
+            "originY": 0.3283178295001511
+        },
+        {
+            "type": "Image",
+            "id": "a0ceb86d-6773-4c67-9eed-1f0dd867912c",
+            "label": "tabler",
+            "components": [],
+            "texture": {
+                "key": "town-holiday",
+                "frame": "tabler"
+            },
+            "x": 496.92995468399374,
+            "y": 513.0193655759126,
+            "originX": 0.5185572565768629,
+            "originY": 0.7216307673894082
+        },
+        {
+            "type": "Image",
+            "id": "5d8da487-de5f-4818-b346-1091d9b005d2",
+            "label": "tablel",
+            "components": [],
+            "texture": {
+                "key": "town-holiday",
+                "frame": "tablel"
+            },
+            "x": 447.280181264025,
+            "y": 556.9493202599064,
+            "originX": 0.43401864328226475,
+            "originY": 0.6347116263027719
+        },
+        {
+            "type": "Image",
+            "id": "5d39b0da-24f2-47aa-85e2-69f973cdfbc1",
+            "label": "snowman",
+            "components": [],
+            "texture": {
+                "key": "town-holiday",
+                "frame": "snowman"
+            },
+            "x": 379,
+            "y": 582,
+            "originX": 0.6455129247070475,
+            "originY": 0.7723110368433909
+        },
+        {
+            "type": "Image",
+            "id": "5b54a524-ddae-48dc-a520-5a56025b5275",
+            "label": "fgpresents",
+            "components": [],
+            "texture": {
+                "key": "town-holiday",
+                "frame": "fgpresents"
+            },
+            "x": 222.6304078440562,
+            "y": 1127.0341995512006,
+            "originX": 0.4056000426307403,
+            "originY": 2.508408126432525
+        },
+        {
+            "type": "Image",
+            "id": "95352caf-62a9-4624-9353-8f614745cf4d",
+            "label": "lilsnow",
+            "components": [],
+            "texture": {
+                "key": "town-holiday",
+                "frame": "lilsnow"
+            },
+            "x": 1336,
+            "y": 1138,
+            "originX": 0.31684696194434614,
+            "originY": 14.50960080566056
+        },
+        {
+            "type": "Sprite",
+            "id": "95d7c474-20fe-4d4f-aaca-7f6b8769d17c",
+            "label": "back0001",
+            "components": [
+                "SimpleButton",
+                "Animation"
+            ],
+            "SimpleButton.hoverCallback": "() => this.outline0001.play('outline');",
+            "SimpleButton.hoverOutCallback": "() => { this.outline0001.setFrame('outline0001'); this.outline0001.stop() }",
+            "SimpleButton.pixelPerfect": true,
+            "Animation.key": "back",
+            "Animation.end": 40,
+            "Animation.repeat": 0,
+            "Animation.onHover": true,
+            "texture": {
+                "key": "cfcbooth",
+                "frame": "back0001"
+            },
+            "x": 961.8680391455679,
+            "y": 816.6392170886431,
+            "originX": 0.46961793489388143,
+            "originY": 0.9173697832759754
+        },
+        {
+            "type": "Image",
+            "id": "c95b501b-9d92-4109-b32d-890e492900f9",
+            "label": "leg",
+            "components": [],
+            "texture": {
+                "key": "cfcbooth",
+                "frame": "leg"
+            },
+            "x": 955.215254803795,
+            "y": 819.576510322798,
+            "originX": 0.32470469102409105,
+            "originY": 0.7352039255599843
+        },
+        {
+            "type": "Sprite",
+            "id": "ea427b90-5f16-4f65-94ad-28f8e1b62dfb",
+            "label": "outline0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cfcbooth",
+                "frame": "outline0001"
+            },
+            "x": 966.5,
+            "y": 813,
+            "originX": 0.4845846574503785,
+            "originY": 0.8410734163188335
         }
     ],
     "plainObjects": [],
@@ -2863,8 +3009,6 @@
             "label": "sort",
             "objectIds": [
                 "957d8df9-d295-4caa-9a21-a81f24c5f4d6",
-                "f7fbd0a2-4402-408e-8185-6844912a9f2c",
-                "952c5590-b0de-4bb3-ae91-29c1e3b03eab",
                 "d0d18962-9e3b-48aa-9af6-02585dc3fe53",
                 "3c2dfdb6-7263-451e-800d-e79c6cc18a17",
                 "02a4d776-198f-43b6-aa97-0b192915f46a",
@@ -2909,7 +3053,19 @@
                 "2bcb5fe7-d1a1-46a9-8dff-2db3c5758a58",
                 "3f3125ed-6543-4b21-a944-80492179d0d9",
                 "16585791-3523-4797-aa49-89dbc483fcd5",
-                "74baa43c-1818-41d2-b90a-4ee2592ff3be"
+                "74baa43c-1818-41d2-b90a-4ee2592ff3be",
+                "78f4e1e9-5af6-466f-b8d1-bc266f18ff59",
+                "417349c0-3b05-4ad1-99e9-5ba0f3ef949a",
+                "a0ceb86d-6773-4c67-9eed-1f0dd867912c",
+                "5d8da487-de5f-4818-b346-1091d9b005d2",
+                "059f3c8c-692f-4c60-82bd-62371511c125",
+                "5d39b0da-24f2-47aa-85e2-69f973cdfbc1",
+                "887ad568-5e45-47cb-9a61-ec095922e6ca",
+                "5b54a524-ddae-48dc-a520-5a56025b5275",
+                "95352caf-62a9-4624-9353-8f614745cf4d",
+                "c95b501b-9d92-4109-b32d-890e492900f9",
+                "95d7c474-20fe-4d4f-aaca-7f6b8769d17c",
+                "ea427b90-5f16-4f65-94ad-28f8e1b62dfb"
             ]
         }
     ]

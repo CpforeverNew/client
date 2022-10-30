@@ -19,11 +19,13 @@ export default class Town extends RoomScene {
         /** @type {Phaser.GameObjects.Sprite} */
         this.lantern0001;
         /** @type {Phaser.GameObjects.Sprite} */
+        this.lantern;
+        /** @type {Phaser.GameObjects.Sprite} */
         this.giftdoor0001;
         /** @type {Phaser.GameObjects.Sprite} */
         this.coffeedoor0001;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.lantern;
+        this.outline0001;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
         this.sort;
 
@@ -46,6 +48,7 @@ export default class Town extends RoomScene {
     /** @returns {void} */
     _preload() {
 
+        this.load.pack("cfcbooth-pack", "assets/media/rooms/cfcbooth/cfcbooth-pack.json");
         this.load.pack("sky-holiday", "assets/media/rooms/holiday_party/sky/sky-holiday.json");
         this.load.pack("town-holiday-pack", "assets/media/rooms/holiday_party/town/town-holiday-pack.json");
     }
@@ -114,19 +117,27 @@ export default class Town extends RoomScene {
         fg.setOrigin(0.4842646734011181, 0.9919206952952365);
 
         // lantern0001
-        const lantern0001 = this.add.sprite(274, 1000, "town-holiday", "lantern0001");
-        lantern0001.setOrigin(0.591351085937634, 3.513405456415751);
+        const lantern0001 = this.add.sprite(313, 1080, "town-holiday", "lantern0001");
+        lantern0001.angle = -11;
+        lantern0001.setOrigin(0.4220237544872943, 4.332301039385129);
 
-        // cfc0001
-        const cfc0001 = this.add.sprite(964, 813.4002141401771, "town-holiday", "cfc0001");
-        cfc0001.setOrigin(0.5, 0.9212132027281673);
+        // fg_ccL_png_1
+        const fg_ccL_png_1 = this.add.image(204.35022658003123, 1117.7078701477064, "town-holiday", "fg_ccL.png");
+        fg_ccL_png_1.setOrigin(0.3695900429110741, 2.0381060696173994);
 
-        // cfcfrontleg
-        const cfcfrontleg = this.add.image(952.721505434166, 823.3393543530055, "town-holiday", "cfcfrontleg");
-        cfcfrontleg.setOrigin(0.34004561921715254, 0.8410719565615812);
+        // lantern
+        const lantern = this.add.sprite(1349, 1096, "town-holiday", "lantern0001");
+        lantern.angle = 11;
+        lantern.setOrigin(1.227429520607302, 4.08994235794411);
+        lantern.flipX = true;
 
         // giftdoor0001
-        const giftdoor0001 = this.add.sprite(1085, 391, "town-holiday", "giftdoor0001");
+        const giftdoor0001 = this.add.sprite(1085, 390, "town-holiday", "giftdoor0001");
+
+        // fg_ccL_png
+        const fg_ccL_png = this.add.image(1360, 1052, "town-holiday", "fg_ccL.png");
+        fg_ccL_png.setOrigin(0.4500048214108138, 1.680988470610681);
+        fg_ccL_png.flipX = true;
 
         // joy
         this.add.image(1136, 349, "town-holiday", "joy");
@@ -148,11 +159,6 @@ export default class Town extends RoomScene {
         // pinkpresent
         const pinkpresent = this.add.image(909, 466, "town-holiday", "pinkpresent");
         pinkpresent.setOrigin(0.4538664293523831, 0.5349010490986322);
-
-        // lantern
-        const lantern = this.add.sprite(1326.720443926511, 1018.5806658897665, "town-holiday", "lantern0001");
-        lantern.setOrigin(0.552446030724098, 3.4492121153134154);
-        lantern.flipX = true;
 
         // orangelight
         const orangelight = this.add.sprite(467, 383, "town-holiday", "orangelight0001");
@@ -692,7 +698,7 @@ export default class Town extends RoomScene {
         orangelight_27.setOrigin(3.594697034216638, 18.965998812660597);
 
         // santasled
-        const santasled = this.add.image(367.54923030735074, 1003.2349684766884, "town-holiday", "santasled");
+        const santasled = this.add.image(356.54923030735074, 1005.2349684766884, "town-holiday", "santasled");
         santasled.setOrigin(0.5219088290577206, 1.5307870999008018);
 
         // redlight_10
@@ -872,8 +878,48 @@ export default class Town extends RoomScene {
         purplelight_22.angle = -11;
         purplelight_22.setOrigin(1, 1);
 
+        // chairl
+        const chairl = this.add.image(402, 515, "town-holiday", "chairl");
+        chairl.setOrigin(0.524655273734139, 0.3315956749409276);
+
+        // chairr
+        const chairr = this.add.image(450.07004531600626, 469.280181264025, "town-holiday", "chairr");
+        chairr.setOrigin(0.502046217079112, 0.3283178295001511);
+
+        // tabler
+        const tabler = this.add.image(496.92995468399374, 513.0193655759126, "town-holiday", "tabler");
+        tabler.setOrigin(0.5185572565768629, 0.7216307673894082);
+
+        // tablel
+        const tablel = this.add.image(447.280181264025, 556.9493202599064, "town-holiday", "tablel");
+        tablel.setOrigin(0.43401864328226475, 0.6347116263027719);
+
+        // snowman
+        const snowman = this.add.image(379, 582, "town-holiday", "snowman");
+        snowman.setOrigin(0.6455129247070475, 0.7723110368433909);
+
+        // fgpresents
+        const fgpresents = this.add.image(222.6304078440562, 1127.0341995512006, "town-holiday", "fgpresents");
+        fgpresents.setOrigin(0.4056000426307403, 2.508408126432525);
+
+        // lilsnow
+        const lilsnow = this.add.image(1336, 1138, "town-holiday", "lilsnow");
+        lilsnow.setOrigin(0.31684696194434614, 14.50960080566056);
+
+        // back0001
+        const back0001 = this.add.sprite(961.8680391455679, 816.6392170886431, "cfcbooth", "back0001");
+        back0001.setOrigin(0.46961793489388143, 0.9173697832759754);
+
+        // leg
+        const leg = this.add.image(955.215254803795, 819.576510322798, "cfcbooth", "leg");
+        leg.setOrigin(0.32470469102409105, 0.7352039255599843);
+
+        // outline0001
+        const outline0001 = this.add.sprite(966.5, 813, "cfcbooth", "outline0001");
+        outline0001.setOrigin(0.4845846574503785, 0.8410734163188335);
+
         // lists
-        const sort = [fg, cfc0001, cfcfrontleg, lantern0001, redpresent, pinkpresent, yellowlight_12, purplelight_15, greenlight_15, orangelight_19, orangelight_17, yellowlight_10, bluelight_10, orangelight_22, greenlight_18, purplelight_16, greenlight_19, orangelight_23, bluelight_13, yellowlight_15, purplelight_18, greenlight_20, yellowlight_16, purplelight_19, purplelight_20, greenlight_22, purplelight_21, yellowlight_18, bluelight_14, redlight_14, orangelight_26, greenlight_21, orangelight_27, yellowlight_19, santasled, lantern, bluelight_11, redlight_11, redlight_10, orangelight_18, redlight_12, bluelight_12, redlight_16, redlight_15, canopy, trees0017, rcandycanecanopy, lcandycanecanopy];
+        const sort = [fg, lantern0001, redpresent, pinkpresent, yellowlight_12, purplelight_15, greenlight_15, orangelight_19, orangelight_17, yellowlight_10, bluelight_10, orangelight_22, greenlight_18, purplelight_16, greenlight_19, orangelight_23, bluelight_13, yellowlight_15, purplelight_18, greenlight_20, yellowlight_16, purplelight_19, purplelight_20, greenlight_22, purplelight_21, yellowlight_18, bluelight_14, redlight_14, orangelight_26, greenlight_21, orangelight_27, yellowlight_19, santasled, lantern, bluelight_11, redlight_11, redlight_10, orangelight_18, redlight_12, bluelight_12, redlight_16, redlight_15, canopy, trees0017, rcandycanecanopy, lcandycanecanopy, chairr, chairl, tabler, tablel, fg_ccL_png, snowman, fg_ccL_png_1, fgpresents, lilsnow, leg, back0001, outline0001];
 
         // aurora0001 (components)
         const aurora0001Animation = new Animation(aurora0001);
@@ -925,16 +971,10 @@ export default class Town extends RoomScene {
         lantern0001SimpleButton.callback = () => this.onLanternLeftClick();
         lantern0001SimpleButton.pixelPerfect = true;
 
-        // cfc0001 (components)
-        const cfc0001Animation = new Animation(cfc0001);
-        cfc0001Animation.key = "cfc";
-        cfc0001Animation.end = 40;
-        cfc0001Animation.autoPlay = false;
-        cfc0001Animation.onHover = true;
-        const cfc0001SimpleButton = new SimpleButton(cfc0001);
-        cfc0001SimpleButton.hoverCallback;
-        cfc0001SimpleButton.hoverOutCallback;
-        cfc0001SimpleButton.pixelPerfect = true;
+        // lantern (components)
+        const lanternSimpleButton = new SimpleButton(lantern);
+        lanternSimpleButton.callback = (e) => this.onLanternRightClick();
+        lanternSimpleButton.pixelPerfect = true;
 
         // giftdoor0001 (components)
         const giftdoor0001SimpleButton = new SimpleButton(giftdoor0001);
@@ -964,11 +1004,6 @@ export default class Town extends RoomScene {
         const trees0017MoveTo = new MoveTo(trees0017);
         trees0017MoveTo.x = 688;
         trees0017MoveTo.y = 401;
-
-        // lantern (components)
-        const lanternSimpleButton = new SimpleButton(lantern);
-        lanternSimpleButton.callback = (e) => this.onLanternRightClick();
-        lanternSimpleButton.pixelPerfect = true;
 
         // orangelight (components)
         const orangelightAnimation = new Animation(orangelight);
@@ -1600,10 +1635,22 @@ export default class Town extends RoomScene {
         purplelight_22Animation.key = "purplelight";
         purplelight_22Animation.end = 12;
 
+        // back0001 (components)
+        const back0001SimpleButton = new SimpleButton(back0001);
+        back0001SimpleButton.hoverCallback = () => this.outline0001.play('outline');;
+        back0001SimpleButton.hoverOutCallback = () => { this.outline0001.setFrame('outline0001'); this.outline0001.stop() };
+        back0001SimpleButton.pixelPerfect = true;
+        const back0001Animation = new Animation(back0001);
+        back0001Animation.key = "back";
+        back0001Animation.end = 40;
+        back0001Animation.repeat = 0;
+        back0001Animation.onHover = true;
+
         this.lantern0001 = lantern0001;
+        this.lantern = lantern;
         this.giftdoor0001 = giftdoor0001;
         this.coffeedoor0001 = coffeedoor0001;
-        this.lantern = lantern;
+        this.outline0001 = outline0001;
         this.sort = sort;
 
         this.events.emit("scene-awake");
