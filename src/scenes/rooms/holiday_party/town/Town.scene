@@ -1,0 +1,2916 @@
+{
+    "id": "3e090e17-e441-44de-a829-5793f073f28b",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/holiday_party/sky/sky-holiday.json",
+            "client/assets/media/rooms/holiday_party/town/town-holiday-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Town",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "673c3a31-b52e-4aea-a594-bd2391170d39",
+            "label": "sky",
+            "components": [],
+            "texture": {
+                "key": "sky",
+                "frame": "sky"
+            },
+            "x": 760,
+            "y": 222
+        },
+        {
+            "type": "Sprite",
+            "id": "7960d54d-411c-41df-ace9-d62b75a0fff1",
+            "label": "aurora0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "aurora",
+            "Animation.end": 100,
+            "texture": {
+                "key": "sky",
+                "frame": "aurora0001"
+            },
+            "x": 302,
+            "y": 166
+        },
+        {
+            "type": "Sprite",
+            "id": "5d1c3d9a-a86f-48d4-a91b-752b09fb7cf3",
+            "label": "aurora",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "aurora",
+            "Animation.end": 100,
+            "texture": {
+                "key": "sky",
+                "frame": "aurora0001"
+            },
+            "x": 1299,
+            "y": 208
+        },
+        {
+            "type": "Image",
+            "id": "0f6eebb1-bb96-4b84-93cb-f7a90508ccf9",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Sprite",
+            "id": "ac617434-eecf-4cba-8e75-db91c620819a",
+            "label": "bluelight0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 426,
+            "y": 401,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Sprite",
+            "id": "df4f9f71-89a9-4b8d-b558-708214d6e029",
+            "label": "greenlight0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 362,
+            "y": 431,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Sprite",
+            "id": "12864e4e-ae26-4b7e-b015-d2c367982356",
+            "label": "orangelight0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 342,
+            "y": 439,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 44
+        },
+        {
+            "type": "Sprite",
+            "id": "68b38c51-1811-44c6-a948-ef5e3deb424c",
+            "label": "purplelight0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 383,
+            "y": 421,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Image",
+            "id": "16585791-3523-4797-aa49-89dbc483fcd5",
+            "label": "rcandycanecanopy",
+            "components": [],
+            "texture": {
+                "key": "town-holiday",
+                "frame": "rcandycanecanopy"
+            },
+            "x": 725.3695551618886,
+            "y": 455.4185008857507,
+            "originX": 0.2523442188605602,
+            "originY": 0.7813712958985217
+        },
+        {
+            "type": "Image",
+            "id": "74baa43c-1818-41d2-b90a-4ee2592ff3be",
+            "label": "lcandycanecanopy",
+            "components": [],
+            "texture": {
+                "key": "town-holiday",
+                "frame": "lcandycanecanopy"
+            },
+            "x": 654.6304448381114,
+            "y": 458.5761120952786,
+            "originX": 0.757764180369621,
+            "originY": 0.8065641950997919
+        },
+        {
+            "type": "Sprite",
+            "id": "b76236a5-2bda-4035-9f70-5b324943a87e",
+            "label": "redlight0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 448,
+            "y": 393,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Image",
+            "id": "2bcb5fe7-d1a1-46a9-8dff-2db3c5758a58",
+            "label": "canopy",
+            "components": [
+                "MoveTo"
+            ],
+            "MoveTo.x": 688,
+            "MoveTo.y": 401,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "canopy"
+            },
+            "x": 685.6847534179688,
+            "y": 431.3587773576427,
+            "originX": 0.451044787449181,
+            "originY": 1.332238613363931
+        },
+        {
+            "type": "Sprite",
+            "id": "7401aac8-5384-4ab9-b89d-2e7089d795e7",
+            "label": "yellowlight0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 406,
+            "y": 409,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 33
+        },
+        {
+            "type": "Image",
+            "id": "957d8df9-d295-4caa-9a21-a81f24c5f4d6",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "town-holiday",
+                "frame": "fg"
+            },
+            "x": 765.8722969435277,
+            "y": 971.6191830666276,
+            "originX": 0.4842646734011181,
+            "originY": 0.9919206952952365
+        },
+        {
+            "type": "Sprite",
+            "id": "d0d18962-9e3b-48aa-9af6-02585dc3fe53",
+            "label": "lantern0001",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.onLanternLeftClick()",
+            "SimpleButton.pixelPerfect": true,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "lantern0001"
+            },
+            "x": 274,
+            "y": 1000,
+            "originX": 0.591351085937634,
+            "originY": 3.513405456415751
+        },
+        {
+            "type": "Sprite",
+            "id": "f7fbd0a2-4402-408e-8185-6844912a9f2c",
+            "label": "cfc0001",
+            "components": [
+                "Animation",
+                "SimpleButton"
+            ],
+            "Animation.key": "cfc",
+            "Animation.end": 40,
+            "Animation.autoPlay": false,
+            "Animation.onHover": true,
+            "SimpleButton.hoverCallback": "",
+            "SimpleButton.hoverOutCallback": "",
+            "SimpleButton.pixelPerfect": true,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "cfc0001"
+            },
+            "x": 964,
+            "y": 813.4002141401771,
+            "originY": 0.9212132027281673
+        },
+        {
+            "type": "Image",
+            "id": "952c5590-b0de-4bb3-ae91-29c1e3b03eab",
+            "label": "cfcfrontleg",
+            "components": [],
+            "texture": {
+                "key": "town-holiday",
+                "frame": "cfcfrontleg"
+            },
+            "x": 952.721505434166,
+            "y": 823.3393543530055,
+            "originX": 0.34004561921715254,
+            "originY": 0.8410719565615812
+        },
+        {
+            "type": "Sprite",
+            "id": "2140a7cb-56be-4bdb-8d00-0bd543945d94",
+            "label": "giftdoor0001",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.giftdoor0001.setFrame('giftdoor0002')",
+            "SimpleButton.hoverOutCallback": "() => this.giftdoor0001.setFrame('giftdoor0001')",
+            "SimpleButton.pixelPerfect": true,
+            "MoveTo.x": 1034,
+            "MoveTo.y": 462,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "giftdoor0001"
+            },
+            "x": 1085,
+            "y": 391
+        },
+        {
+            "type": "Image",
+            "id": "3fdf4a7a-a5b4-4892-a8f7-376f6e7eb998",
+            "label": "joy",
+            "components": [],
+            "texture": {
+                "key": "town-holiday",
+                "frame": "joy"
+            },
+            "x": 1136,
+            "y": 349
+        },
+        {
+            "type": "Image",
+            "id": "4fc35c0c-ef5f-4b60-b1cd-8f9abd53f361",
+            "label": "santashirt",
+            "components": [],
+            "texture": {
+                "key": "town-holiday",
+                "frame": "santashirt"
+            },
+            "x": 1012,
+            "y": 374
+        },
+        {
+            "type": "Image",
+            "id": "3c2dfdb6-7263-451e-800d-e79c6cc18a17",
+            "label": "redpresent",
+            "components": [],
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redpresent"
+            },
+            "x": 1139,
+            "y": 590,
+            "originX": 0.5441768533553395,
+            "originY": 0.5471219769123625
+        },
+        {
+            "type": "Sprite",
+            "id": "4564f1ae-c4f2-4770-9b97-1089ec879df8",
+            "label": "coffeedoor0001",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.coffeedoor0001.setFrame('coffeedoor0002')",
+            "SimpleButton.hoverOutCallback": "() => this.coffeedoor0001.setFrame('coffeedoor0001')",
+            "SimpleButton.pixelPerfect": true,
+            "MoveTo.x": 542,
+            "MoveTo.y": 439,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "coffeedoor0001"
+            },
+            "x": 514,
+            "y": 378
+        },
+        {
+            "type": "Sprite",
+            "id": "3f3125ed-6543-4b21-a944-80492179d0d9",
+            "label": "trees0017",
+            "components": [
+                "SimpleButton",
+                "Animation",
+                "MoveTo"
+            ],
+            "Animation.key": "trees",
+            "Animation.end": 72,
+            "Animation.autoPlay": false,
+            "Animation.onHover": true,
+            "MoveTo.x": 688,
+            "MoveTo.y": 401,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "trees0017"
+            },
+            "x": 688.5787871686736,
+            "y": 463.20116167666447,
+            "originX": 0.5173495121402631,
+            "originY": 2.8682084071458926
+        },
+        {
+            "type": "Image",
+            "id": "02a4d776-198f-43b6-aa97-0b192915f46a",
+            "label": "pinkpresent",
+            "components": [],
+            "texture": {
+                "key": "town-holiday",
+                "frame": "pinkpresent"
+            },
+            "x": 909,
+            "y": 466,
+            "originX": 0.4538664293523831,
+            "originY": 0.5349010490986322
+        },
+        {
+            "type": "Sprite",
+            "id": "a4234e50-02b5-4bf4-81a4-c4db8da5f165",
+            "label": "lantern",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "(e) => this.onLanternRightClick()",
+            "SimpleButton.pixelPerfect": true,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "lantern0001"
+            },
+            "x": 1326.720443926511,
+            "y": 1018.5806658897665,
+            "originX": 0.552446030724098,
+            "originY": 3.4492121153134154,
+            "flipX": true
+        },
+        {
+            "type": "Sprite",
+            "id": "f8676b3a-bc12-4f8a-abde-5f20a0edddd2",
+            "label": "orangelight",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 467,
+            "y": 383,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 42
+        },
+        {
+            "type": "Sprite",
+            "id": "a21c06b1-12a4-4b2e-bb0a-6ac06e0bb6d5",
+            "label": "greenlight",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 483,
+            "y": 372,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Sprite",
+            "id": "b68927d4-d5c2-4bbe-9c50-cfcec6a865b9",
+            "label": "purplelight",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 504,
+            "y": 363,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Sprite",
+            "id": "fb04e59d-3ae2-4292-b86c-32ddea89efc8",
+            "label": "yellowlight",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 524,
+            "y": 356,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 40
+        },
+        {
+            "type": "Sprite",
+            "id": "ec48e974-dcd1-4d0a-880d-139e80e61fa6",
+            "label": "bluelight",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 545,
+            "y": 352,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Sprite",
+            "id": "da9cb3b3-08fd-4e2f-a3a8-8821f1efd0ab",
+            "label": "redlight",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 562,
+            "y": 348,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Sprite",
+            "id": "40a469aa-2255-4db8-bb30-897ca099b581",
+            "label": "orangelight_1",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 579,
+            "y": 344,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Sprite",
+            "id": "52dfcf86-3075-4cc1-a986-549ce0bee988",
+            "label": "greenlight_1",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 599,
+            "y": 338,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Sprite",
+            "id": "68cb86e1-026e-425b-920c-ad2c1a314a63",
+            "label": "purplelight_1",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 618,
+            "y": 334,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Sprite",
+            "id": "1547eaa5-82a9-41bf-96d2-bbe38e6dd933",
+            "label": "bluelight_1",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 256,
+            "y": 180,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Sprite",
+            "id": "8f892318-76ba-4fb0-a955-dd8780fb2c41",
+            "label": "orangelight_2",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 299,
+            "y": 162,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 64
+        },
+        {
+            "type": "Sprite",
+            "id": "2b5c9aca-376e-43ab-a148-54330621cf9d",
+            "label": "greenlight_2",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 203,
+            "y": 201,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 21
+        },
+        {
+            "type": "Sprite",
+            "id": "f3a482f9-3b13-4be9-9266-d58e7822596c",
+            "label": "purplelight_2",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 221,
+            "y": 194,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Sprite",
+            "id": "57092fbd-c7da-4c38-b306-7ed5752cadb9",
+            "label": "redlight_1",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 277,
+            "y": 173,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Sprite",
+            "id": "f844cf9a-32c4-4f4e-af40-1f8aa5f2859e",
+            "label": "yellowlight_1",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 238,
+            "y": 186,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 25
+        },
+        {
+            "type": "Sprite",
+            "id": "242fad07-d59e-4838-9a52-b9fdb1e3666d",
+            "label": "greenlight_3",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 319,
+            "y": 157,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 20
+        },
+        {
+            "type": "Sprite",
+            "id": "43c9b854-f2ee-4ef5-a2b6-7f1b83f9e8ff",
+            "label": "purplelight_3",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 342,
+            "y": 152,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Sprite",
+            "id": "93f8b6df-de0f-4b34-9088-32ec0da8d482",
+            "label": "yellowlight_2",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 358,
+            "y": 139,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 30
+        },
+        {
+            "type": "Sprite",
+            "id": "27600b5d-3253-4e2f-9b81-f7d5a4a25d47",
+            "label": "redlight_2",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 386,
+            "y": 105,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Sprite",
+            "id": "aae30293-a7f3-4505-a7f2-474a3d364fc3",
+            "label": "bluelight_2",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 372,
+            "y": 123,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Sprite",
+            "id": "929b83d5-9e0a-465a-952b-934345138344",
+            "label": "orangelight_4",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 400,
+            "y": 87,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 26
+        },
+        {
+            "type": "Sprite",
+            "id": "61c1471f-4d55-4f4c-9512-b11e96da1d0c",
+            "label": "greenlight_4",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 414,
+            "y": 71,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 22
+        },
+        {
+            "type": "Sprite",
+            "id": "277aeb94-1bac-4202-8258-83b7c85a3d2b",
+            "label": "purplelight_4",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 429,
+            "y": 56,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Sprite",
+            "id": "cfd16e25-d7e1-4655-988c-fd516e92c658",
+            "label": "redlight_3",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 482,
+            "y": 35,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 19
+        },
+        {
+            "type": "Sprite",
+            "id": "f640a379-5c19-46f8-aaef-be52b3f28fc4",
+            "label": "greenlight_5",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 513,
+            "y": 55,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 41
+        },
+        {
+            "type": "Sprite",
+            "id": "75a3f5e9-4e18-4571-8225-899cf3a92370",
+            "label": "purplelight_5",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 529,
+            "y": 67,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 48
+        },
+        {
+            "type": "Sprite",
+            "id": "1cc5cc92-26ff-4459-9b0e-bb39a36edc77",
+            "label": "yellowlight_3",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 446,
+            "y": 38,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 27
+        },
+        {
+            "type": "Sprite",
+            "id": "f7cfd3f8-0146-4e23-af36-3bc3243f8225",
+            "label": "bluelight_3",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 465,
+            "y": 27,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 6
+        },
+        {
+            "type": "Sprite",
+            "id": "41469258-7ce4-4884-8278-faaf86e655bd",
+            "label": "orangelight_6",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 496,
+            "y": 45,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 55
+        },
+        {
+            "type": "Sprite",
+            "id": "c66d52a1-90f5-4c66-b956-6e664efc54c8",
+            "label": "yellowlight_4",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 595,
+            "y": 165,
+            "scaleX": 0.6,
+            "scaleY": 0.6,
+            "angle": 23
+        },
+        {
+            "type": "Sprite",
+            "id": "b76e0175-e992-4ddf-b3a2-f5b89fd4918e",
+            "label": "purplelight_8",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 588,
+            "y": 182,
+            "scaleX": 0.6,
+            "scaleY": 0.6,
+            "angle": -11
+        },
+        {
+            "type": "Sprite",
+            "id": "8bc10f50-2107-45e3-9f40-51ebbaa328b0",
+            "label": "greenlight_8",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 586,
+            "y": 201,
+            "scaleX": 0.6,
+            "scaleY": 0.6,
+            "angle": -9
+        },
+        {
+            "type": "Sprite",
+            "id": "81f74e18-b58c-4e2f-a7c0-8f73cb5e38a6",
+            "label": "orangelight_8",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 582,
+            "y": 217,
+            "scaleX": 0.6,
+            "scaleY": 0.6,
+            "angle": -6
+        },
+        {
+            "type": "Sprite",
+            "id": "6bac35e6-4ed8-47df-8c59-2a8261bbc874",
+            "label": "redlight_4",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 625,
+            "y": 196,
+            "scaleX": 0.6,
+            "scaleY": 0.6,
+            "angle": 17
+        },
+        {
+            "type": "Sprite",
+            "id": "9dcd177e-2b6b-465e-bf81-5822c917b0a0",
+            "label": "orangelight_9",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 639,
+            "y": 206,
+            "scaleX": 0.6,
+            "scaleY": 0.6,
+            "angle": 62
+        },
+        {
+            "type": "Sprite",
+            "id": "a9c224ad-c7a5-486a-8e6e-71b2c5908a2c",
+            "label": "bluelight_4",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 607,
+            "y": 181,
+            "scaleX": 0.6,
+            "scaleY": 0.6,
+            "angle": 11
+        },
+        {
+            "type": "Sprite",
+            "id": "646b0707-f424-4dbc-a670-d2282e37d667",
+            "label": "orangelight_7",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 976,
+            "y": 214,
+            "scaleX": 0.6,
+            "scaleY": 0.6,
+            "angle": 64
+        },
+        {
+            "type": "Sprite",
+            "id": "0a49a11c-b941-4607-8e56-af5600cb410e",
+            "label": "redlight_5",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 972,
+            "y": 199,
+            "scaleX": 0.6,
+            "scaleY": 0.6,
+            "angle": 30
+        },
+        {
+            "type": "Sprite",
+            "id": "eba45056-9f15-47e8-9679-8f05978a42ae",
+            "label": "bluelight_5",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 956,
+            "y": 194,
+            "scaleX": 0.6,
+            "scaleY": 0.6,
+            "angle": 28
+        },
+        {
+            "type": "Sprite",
+            "id": "d1c9679a-9c6b-4b1b-a6a2-94c2cbfc25aa",
+            "label": "yellowlight_5",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 967,
+            "y": 187,
+            "scaleX": 0.6,
+            "scaleY": 0.6,
+            "angle": 39
+        },
+        {
+            "type": "Sprite",
+            "id": "9473a36b-a085-40d0-a0fc-9f0b18cd97af",
+            "label": "purplelight_7",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 946,
+            "y": 204,
+            "scaleX": 0.6,
+            "scaleY": 0.6,
+            "angle": 34
+        },
+        {
+            "type": "Sprite",
+            "id": "fef37f7a-5322-4b0b-b6f4-131e893a3424",
+            "label": "greenlight_7",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 932,
+            "y": 210,
+            "scaleX": 0.6,
+            "scaleY": 0.6,
+            "angle": 36
+        },
+        {
+            "type": "Sprite",
+            "id": "93d27731-70e7-4ade-989a-0cad45770eaf",
+            "label": "orangelight_10",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 921,
+            "y": 223,
+            "scaleX": 0.6,
+            "scaleY": 0.6,
+            "angle": 39
+        },
+        {
+            "type": "Sprite",
+            "id": "1da5ae49-58d8-49d2-b8ba-4e9f5238e007",
+            "label": "redlight_6",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 955,
+            "y": 87,
+            "scaleX": 0.3,
+            "scaleY": 0.3,
+            "angle": -5,
+            "originX": 1,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "c0d66285-368e-4295-8a58-35f5016cc115",
+            "label": "yellowlight_6",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 934,
+            "y": 87,
+            "scaleX": 0.3,
+            "scaleY": 0.3,
+            "angle": 39,
+            "originX": 1,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "05b71a44-c961-433b-a59f-75135d071115",
+            "label": "bluelight_6",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 944,
+            "y": 88,
+            "scaleX": 0.3,
+            "scaleY": 0.3,
+            "angle": 28,
+            "originX": 1,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "3a729b33-2946-49a7-ab07-6e816ff57d70",
+            "label": "purplelight_9",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 925,
+            "y": 85,
+            "scaleX": 0.3,
+            "scaleY": 0.3,
+            "angle": 34,
+            "originX": 1,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "93626dcc-4560-4fc7-9553-e949fc80317a",
+            "label": "greenlight_9",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 916,
+            "y": 82,
+            "scaleX": 0.3,
+            "scaleY": 0.3,
+            "angle": 36,
+            "originX": 1,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "6cc3532e-c503-4b05-9f0b-785deea16722",
+            "label": "redstar0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redstar",
+            "Animation.end": 30,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redstar0001"
+            },
+            "x": 955,
+            "y": 31
+        },
+        {
+            "type": "Sprite",
+            "id": "56e21c75-9011-4f7a-b422-562fd48d5d45",
+            "label": "orangelight_12",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 904,
+            "y": 78,
+            "scaleX": 0.3,
+            "scaleY": 0.3,
+            "angle": 66,
+            "originX": 1,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "cdc6e094-411c-4e50-afa5-b20e058618d5",
+            "label": "redlight_7",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 958,
+            "y": 54,
+            "scaleX": 0.3,
+            "scaleY": 0.3,
+            "angle": -21,
+            "originX": 1,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "605f5c92-fbfd-48a2-bcf3-5581f0ba1db1",
+            "label": "yellowlight_7",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 937,
+            "y": 56,
+            "scaleX": 0.3,
+            "scaleY": 0.3,
+            "angle": 39,
+            "originX": 1,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "77d4bacd-2c11-4668-b55a-3d9a5153ef6d",
+            "label": "bluelight_7",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 946,
+            "y": 57,
+            "scaleX": 0.3,
+            "scaleY": 0.3,
+            "angle": 28,
+            "originX": 1,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "06e09b69-b2c3-4d1d-9533-fa9466bef0cd",
+            "label": "orangelight_14",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 1077,
+            "y": 125,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 96
+        },
+        {
+            "type": "Sprite",
+            "id": "dfeee0b8-5e6e-49d2-bec7-a92afc775044",
+            "label": "greenlight_10",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 1095,
+            "y": 134,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 42
+        },
+        {
+            "type": "Sprite",
+            "id": "3fc7e447-b943-46a0-b28c-f21e60ef77aa",
+            "label": "purplelight_10",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 1114,
+            "y": 142,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 30
+        },
+        {
+            "type": "Sprite",
+            "id": "9d6a7511-6f2e-4694-989e-07ddf8979901",
+            "label": "yellowlight_8",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 1132,
+            "y": 150,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 51
+        },
+        {
+            "type": "Sprite",
+            "id": "66d5700e-1f39-48ee-9fd2-6720b97e91f1",
+            "label": "bluelight_8",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 1149,
+            "y": 157,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 30
+        },
+        {
+            "type": "Sprite",
+            "id": "e9578d07-ad73-4c76-bfb2-7c45d5d55065",
+            "label": "redlight_8",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 1166,
+            "y": 164,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 30
+        },
+        {
+            "type": "Sprite",
+            "id": "a0dd8b5c-6af8-422b-8cbe-20557d5552e1",
+            "label": "orangelight_15",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 1182,
+            "y": 172,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 90
+        },
+        {
+            "type": "Sprite",
+            "id": "90c705dd-2112-45f0-9e68-a9225a79da05",
+            "label": "greenlight_11",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 1197,
+            "y": 181,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 46
+        },
+        {
+            "type": "Sprite",
+            "id": "dd357e37-7dc5-4996-b3d8-80ff9847ec6e",
+            "label": "purplelight_11",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 1213,
+            "y": 191,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 30
+        },
+        {
+            "type": "Sprite",
+            "id": "0c98cdc2-a2dd-49e0-9413-8457bf973168",
+            "label": "yellowlight_9",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 1227,
+            "y": 200,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 61
+        },
+        {
+            "type": "Sprite",
+            "id": "b0b58355-34cd-4b71-85e9-2209ba8f059b",
+            "label": "bluelight_9",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 1241,
+            "y": 211,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 41
+        },
+        {
+            "type": "Sprite",
+            "id": "dc60b70c-c03e-4673-8103-fd6b2c6cfd52",
+            "label": "redlight_9",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 1255,
+            "y": 220,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 30
+        },
+        {
+            "type": "Sprite",
+            "id": "4bc3d651-2334-412c-9a7e-49c7a10fbb96",
+            "label": "orangelight_16",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 1271,
+            "y": 230,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 54
+        },
+        {
+            "type": "Sprite",
+            "id": "5fadcd5f-28c9-4738-b8fd-0585c8aa1160",
+            "label": "greenlight_12",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 1286,
+            "y": 242,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 66
+        },
+        {
+            "type": "Sprite",
+            "id": "60d1eacd-926c-48ce-8616-28de46650e23",
+            "label": "purplelight_12",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 1300,
+            "y": 257,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 56
+        },
+        {
+            "type": "Sprite",
+            "id": "cd13c340-803e-4f11-8b68-1de096721c35",
+            "label": "yellowlight_10",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 1426.2850913408506,
+            "y": 1032.3358396065662,
+            "angle": 59,
+            "originX": 9.395102316030012,
+            "originY": 5.516704116285832
+        },
+        {
+            "type": "Sprite",
+            "id": "1446ada9-03a8-430a-8808-9e64d8a9d3a9",
+            "label": "orangelight_17",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 1508.34737626308,
+            "y": 1056.299742671986,
+            "angle": 91,
+            "originX": 20.42982671453031,
+            "originY": -1.848160978919168
+        },
+        {
+            "type": "Sprite",
+            "id": "37ff9b7c-de3c-44ff-8aff-b4e8b09d4079",
+            "label": "bluelight_10",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 1460,
+            "y": 1081.5067292682847,
+            "angle": 122,
+            "originX": 24.35723232509657,
+            "originY": -9.990570955121207
+        },
+        {
+            "type": "Sprite",
+            "id": "6d9c5646-2014-41a7-9ae0-d9cacca485b7",
+            "label": "orangelight_19",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 1452.1736711729377,
+            "y": 1072.7830993810453,
+            "angle": 168,
+            "originX": 3.393180564146959,
+            "originY": -17.38874489152903
+        },
+        {
+            "type": "Sprite",
+            "id": "073e268e-c97e-4571-9acd-d8945112085a",
+            "label": "greenlight_15",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 1505.4877077092779,
+            "y": 1026.0103003309166,
+            "angle": 58,
+            "originX": 17.169438085402568,
+            "originY": 8.652760914483588
+        },
+        {
+            "type": "Sprite",
+            "id": "94e2b1b0-3753-4d90-946e-e7d9f9342578",
+            "label": "purplelight_15",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 1406.2850913408506,
+            "y": 1044.233140666743,
+            "angle": 65,
+            "originX": 17.39080659261298,
+            "originY": 6.317000614682822
+        },
+        {
+            "type": "Sprite",
+            "id": "4060b8b1-659b-40f3-8034-2a366c2b7ac0",
+            "label": "yellowlight_12",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 1454.458762513788,
+            "y": 1057.919104130403,
+            "angle": 56,
+            "originX": 14.506785583106835,
+            "originY": 7.971609837539645
+        },
+        {
+            "type": "Sprite",
+            "id": "fa9e82a5-a0ad-4d9d-a016-81fc86b95c95",
+            "label": "purplelight_16",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 1516.3429817318302,
+            "y": 1053.5269532356842,
+            "angle": 16,
+            "originX": 7.016799649679031,
+            "originY": 16.312465139540045
+        },
+        {
+            "type": "Sprite",
+            "id": "d683ac27-ae97-4a9c-b01d-79f7a32fcb3f",
+            "label": "greenlight_18",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 1417.3719269273195,
+            "y": 1072.2953916717674,
+            "angle": 120,
+            "originX": 16.607832850877994,
+            "originY": -7.931997064557827
+        },
+        {
+            "type": "Sprite",
+            "id": "7fa98ed0-0c0e-4a72-a4a0-259c34ac17d8",
+            "label": "orangelight_22",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 1533.0868355864689,
+            "y": 1090.522592621639,
+            "angle": 37,
+            "originX": 11.321219870479284,
+            "originY": 13.42506723210091
+        },
+        {
+            "type": "Sprite",
+            "id": "5310b1eb-e2c3-4a17-9a32-a542f1280b77",
+            "label": "greenlight_19",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 312,
+            "y": 745,
+            "angle": 37
+        },
+        {
+            "type": "Sprite",
+            "id": "e3516f6b-c2be-4a3d-8901-13072b097a1b",
+            "label": "bluelight_13",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 137.95083083711114,
+            "y": 1036.8076839624896,
+            "originX": 5.023727938795323,
+            "originY": 14.974358665277393
+        },
+        {
+            "type": "Sprite",
+            "id": "dfc7cdd7-7325-4cb5-8b39-ae51a05c1d5e",
+            "label": "orangelight_23",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 143.4052327368542,
+            "y": 1041.2287800526979,
+            "angle": 23,
+            "originX": 8.027709894199143,
+            "originY": 11.480325648488014
+        },
+        {
+            "type": "Sprite",
+            "id": "bbd1f621-631e-4cb6-8116-c8f3bd96093b",
+            "label": "yellowlight_15",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 176.92188564162157,
+            "y": 1022.0725513359412,
+            "angle": 6,
+            "originX": 6.455780957874896,
+            "originY": 19.01649416430407
+        },
+        {
+            "type": "Sprite",
+            "id": "b4d7b14c-f6dd-4239-a8e3-0d9b9020286b",
+            "label": "purplelight_18",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 126.7482144686841,
+            "y": 1039.81640519058,
+            "angle": 8,
+            "originX": 7.061032659977741,
+            "originY": 17.983748668612346
+        },
+        {
+            "type": "Sprite",
+            "id": "3fc310d6-ab92-4e75-8779-edbc1b248739",
+            "label": "greenlight_20",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 99.74821446868415,
+            "y": 1018.671679213132,
+            "angle": 48,
+            "originX": 17.952702072317344,
+            "originY": 11.220430578992607
+        },
+        {
+            "type": "Sprite",
+            "id": "f1c67f06-5997-44b1-9fbe-fe1cb1d957ae",
+            "label": "yellowlight_16",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 77.03330580953462,
+            "y": 1043.8076839624896,
+            "angle": 30,
+            "originX": 11.390908495852416,
+            "originY": 13.017309270048987
+        },
+        {
+            "type": "Sprite",
+            "id": "2157d08e-5198-4ea1-b050-91b966ff3bac",
+            "label": "purplelight_19",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 36.60348849123608,
+            "y": 1046.46470223066,
+            "angle": 25,
+            "originX": 10.956590642805532,
+            "originY": 12.984554159240306
+        },
+        {
+            "type": "Sprite",
+            "id": "5745a801-a177-4c28-bee9-9a34a4e17938",
+            "label": "greenlight_21",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 171.43417793234377,
+            "y": 1045.373506030146,
+            "angle": 2,
+            "originX": 3.769419574764913,
+            "originY": 13.622524988958343
+        },
+        {
+            "type": "Sprite",
+            "id": "b460bb4e-ff63-45fe-8ed7-41e0c5c0b8de",
+            "label": "purplelight_20",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 242.4674837418784,
+            "y": 1088.2462225088786,
+            "angle": -57,
+            "originX": -18.297625961935328,
+            "originY": 14.012920349057538
+        },
+        {
+            "type": "Sprite",
+            "id": "379d13cc-756d-49fb-9852-dc4063d1c207",
+            "label": "greenlight_22",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 199.9797760326007,
+            "y": 1042.8120445765348,
+            "angle": -1,
+            "originX": 4.242054414084874,
+            "originY": 18.072628826163168
+        },
+        {
+            "type": "Sprite",
+            "id": "eea442cf-48a0-4d84-a381-f4427c609744",
+            "label": "purplelight_21",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 230.06661161906945,
+            "y": 1079.4068118396806,
+            "angle": -52,
+            "originX": -12.011272537094333,
+            "originY": 12.175816999248847
+        },
+        {
+            "type": "Sprite",
+            "id": "e66db52f-738e-4d21-bac7-dd318c13863b",
+            "label": "yellowlight_18",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 240.40959335089934,
+            "y": 1026.8322685439343,
+            "angle": -55.00000000000006,
+            "originX": -9.75519102081836,
+            "originY": 11.868662738828734
+        },
+        {
+            "type": "Sprite",
+            "id": "07250d3d-e651-4e3e-8683-e4e7889de375",
+            "label": "bluelight_14",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 43.37192692731947,
+            "y": 1021.9393280978022,
+            "angle": -12,
+            "originX": -2.1773158223942826,
+            "originY": 10.3206439579611
+        },
+        {
+            "type": "Sprite",
+            "id": "ae2ec7f4-0d21-499a-862b-a4bc1fc37a35",
+            "label": "redlight_14",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 45.37628754136466,
+            "y": 1032.618149436198,
+            "angle": 57,
+            "originX": 25.54977151158813,
+            "originY": 8.727273686763654
+        },
+        {
+            "type": "Sprite",
+            "id": "2190f6d1-4d1a-4699-8afb-663a6718ac9b",
+            "label": "orangelight_26",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 81.1201413960035,
+            "y": 1021.7585147996008,
+            "angle": 65,
+            "originX": 20.446333296751664,
+            "originY": 6.511690519330357
+        },
+        {
+            "type": "Sprite",
+            "id": "c7f4a906-18ab-4be1-a569-f06f4b5b3b83",
+            "label": "yellowlight_19",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 47.26050675940628,
+            "y": 1029.9682732932915,
+            "angle": 37,
+            "originX": 9.310779971820903,
+            "originY": 8.379146765299861
+        },
+        {
+            "type": "Sprite",
+            "id": "87b6a325-b2e1-4f87-9331-1dd6aec75c16",
+            "label": "orangelight_27",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 163.17803178698267,
+            "y": 1062.1839715038543,
+            "originX": 3.594697034216638,
+            "originY": 18.965998812660597
+        },
+        {
+            "type": "Image",
+            "id": "0a76283c-877a-4066-82a0-2f3ead066b64",
+            "label": "santasled",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "santasled",
+            "Button.pixelPerfect": true,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "santasled"
+            },
+            "x": 367.54923030735074,
+            "y": 1003.2349684766884,
+            "originX": 0.5219088290577206,
+            "originY": 1.5307870999008018
+        },
+        {
+            "type": "Sprite",
+            "id": "bdff2d80-042a-41eb-992f-d12c536f25bf",
+            "label": "redlight_10",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 1460.057861328125,
+            "y": 1055.8164130176285,
+            "angle": 106,
+            "originX": 26.267465896461367,
+            "originY": -4.549259145837027
+        },
+        {
+            "type": "Sprite",
+            "id": "98664694-a866-4ff9-9850-21498c63cde9",
+            "label": "bluelight_11",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 1475.7438964843748,
+            "y": 1054.6757996860902,
+            "angle": 23,
+            "originX": 8.29378560864545,
+            "originY": 12.402309972366785
+        },
+        {
+            "type": "Sprite",
+            "id": "5e011ccc-1207-4085-8eb4-74d4f2edf9f5",
+            "label": "redlight_11",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 1509.4298173182988,
+            "y": 1042.4603416166146,
+            "angle": 23,
+            "originX": 8.62067352698634,
+            "originY": 11.57103414957986
+        },
+        {
+            "type": "Sprite",
+            "id": "042092ec-52b6-4b49-ba4f-756199ea4fe4",
+            "label": "bluelight_12",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 1473.4298173182985,
+            "y": 1054.7656569248647,
+            "angle": 23,
+            "originX": 6.204763231249073,
+            "originY": 8.684482608791145
+        },
+        {
+            "type": "Sprite",
+            "id": "ca9a0df0-f5cb-438b-9d15-3e904dadf105",
+            "label": "redlight_12",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 1484.3140365363404,
+            "y": 1032.5630405564375,
+            "angle": 37,
+            "originX": 7.654867084916355,
+            "originY": 6.763215007264337
+        },
+        {
+            "type": "Sprite",
+            "id": "93f449de-30fc-4d54-90d7-4d5265165312",
+            "label": "orangelight_18",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 1523.0289451954895,
+            "y": 1017.1332232381387,
+            "angle": 37,
+            "originX": 5.981221986432353,
+            "originY": 7.191806593867194
+        },
+        {
+            "type": "Sprite",
+            "id": "570fdaf8-44aa-4e02-b437-901673c7fc0e",
+            "label": "redlight_15",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 132.77715966417364,
+            "y": 1048.9813551354273,
+            "angle": 3,
+            "originX": 5.133941354873339,
+            "originY": 15.184981460276251
+        },
+        {
+            "type": "Sprite",
+            "id": "80f321e8-7c15-4c2e-a0e5-c17bbe01fb61",
+            "label": "redlight_16",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 82.14472597744792,
+            "y": 1058.2577252481876,
+            "angle": 3,
+            "originX": 2.5313387696144383,
+            "originY": 11.670455716961966
+        },
+        {
+            "type": "Sprite",
+            "id": "27a7051e-8a5d-4a2c-bc1c-233026ec972e",
+            "label": "yellowlight_11",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 547,
+            "y": 77,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 38
+        },
+        {
+            "type": "Sprite",
+            "id": "7659d985-8908-4de0-abc9-530fd1150b75",
+            "label": "bluelight_15",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 564,
+            "y": 92,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 22
+        },
+        {
+            "type": "Sprite",
+            "id": "5102a057-60b4-451d-a206-8ea8554ad113",
+            "label": "redlight_13",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 580,
+            "y": 101,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "angle": 19
+        },
+        {
+            "type": "Sprite",
+            "id": "c2ab74f6-a261-4a8c-b7de-ec061754203f",
+            "label": "purplelight_6",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 927,
+            "y": 53,
+            "scaleX": 0.3,
+            "scaleY": 0.3,
+            "angle": 55,
+            "originX": 1,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "1e5e1b83-94c6-46de-a196-b5c7ca43075e",
+            "label": "greenlight_6",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 1268,
+            "y": 347,
+            "scaleX": 0.6,
+            "scaleY": 0.6,
+            "angle": 36
+        },
+        {
+            "type": "Sprite",
+            "id": "9cb4adac-08b6-4d6e-85fa-3fb2bfbb6747",
+            "label": "purplelight_13",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 1283,
+            "y": 350,
+            "scaleX": 0.6,
+            "scaleY": 0.6,
+            "angle": 34
+        },
+        {
+            "type": "Sprite",
+            "id": "028714be-a7d6-4fc1-9777-f2398718bfaf",
+            "label": "bluelight_16",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 1317,
+            "y": 361,
+            "scaleX": 0.6,
+            "scaleY": 0.6,
+            "angle": 28
+        },
+        {
+            "type": "Sprite",
+            "id": "988887eb-2cd7-4092-97c3-d2611ac0b340",
+            "label": "yellowlight_13",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 1300,
+            "y": 352,
+            "scaleX": 0.6,
+            "scaleY": 0.6,
+            "angle": 77
+        },
+        {
+            "type": "Sprite",
+            "id": "e42cccf5-740c-4ce9-b0aa-5cb4323fd7be",
+            "label": "yellowlight_14",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 1398,
+            "y": 427,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 39,
+            "originX": 1,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "0840b4f4-541c-43e1-bcce-2e38c26453d4",
+            "label": "purplelight_14",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 1413,
+            "y": 422,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -11,
+            "originX": 1,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "3c2115e2-ac07-4f32-908d-744afcc87401",
+            "label": "bluelight_17",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 1387,
+            "y": 426,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 28,
+            "originX": 1,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "1ccbacc3-de56-43c8-8437-77ed7ff05b29",
+            "label": "redlight_17",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 1373,
+            "y": 421,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 55,
+            "originX": 1,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "4ec3ece0-582f-4995-a2e5-8c1eb2954954",
+            "label": "greenlight_14",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 1417,
+            "y": 411,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -19
+        },
+        {
+            "type": "Sprite",
+            "id": "68b12d6e-cfab-4c0d-be87-6f9eb450d8a3",
+            "label": "greenlight_16",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "greenlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "greenlight0001"
+            },
+            "x": 1369,
+            "y": 459,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 38
+        },
+        {
+            "type": "Sprite",
+            "id": "105ce5e1-8c4b-4762-96be-8e207ece3177",
+            "label": "purplelight_17",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 1355,
+            "y": 462,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 45,
+            "originX": 1,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "a24cb365-0b72-4d5a-b6b9-805762af55ef",
+            "label": "yellowlight_17",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 1344,
+            "y": 457,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 68,
+            "originX": 1,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "e162d901-54a0-40db-b55e-51237089b019",
+            "label": "bluelight_18",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "bluelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "bluelight0001"
+            },
+            "x": 1409,
+            "y": 464,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 12,
+            "originX": 1,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "e83268a4-aa84-4a67-bc7f-b4db7632efb3",
+            "label": "redlight_18",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "redlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "redlight0001"
+            },
+            "x": 1395,
+            "y": 467,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 28,
+            "originX": 1,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "aa4e2f2b-ec28-4d65-849f-e6eedeb04e28",
+            "label": "orangelight_3",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "orangelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "orangelight0001"
+            },
+            "x": 1383,
+            "y": 460,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 54
+        },
+        {
+            "type": "Sprite",
+            "id": "5cf21886-05d2-402f-8db0-3c635cbc76b6",
+            "label": "yellowlight_20",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "yellowlight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "yellowlight0001"
+            },
+            "x": 1418,
+            "y": 461,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": 39,
+            "originX": 1,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "ff60fa05-64d0-400e-8678-b047307b567a",
+            "label": "purplelight_22",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "purplelight",
+            "Animation.end": 12,
+            "texture": {
+                "key": "town-holiday",
+                "frame": "purplelight0001"
+            },
+            "x": 1433,
+            "y": 455,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "angle": -11,
+            "originX": 1,
+            "originY": 1
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "82871b21-eb13-4a26-95e6-46c6337db0d3",
+            "label": "sort",
+            "objectIds": [
+                "957d8df9-d295-4caa-9a21-a81f24c5f4d6",
+                "f7fbd0a2-4402-408e-8185-6844912a9f2c",
+                "952c5590-b0de-4bb3-ae91-29c1e3b03eab",
+                "d0d18962-9e3b-48aa-9af6-02585dc3fe53",
+                "3c2dfdb6-7263-451e-800d-e79c6cc18a17",
+                "02a4d776-198f-43b6-aa97-0b192915f46a",
+                "4060b8b1-659b-40f3-8034-2a366c2b7ac0",
+                "94e2b1b0-3753-4d90-946e-e7d9f9342578",
+                "073e268e-c97e-4571-9acd-d8945112085a",
+                "6d9c5646-2014-41a7-9ae0-d9cacca485b7",
+                "1446ada9-03a8-430a-8808-9e64d8a9d3a9",
+                "cd13c340-803e-4f11-8b68-1de096721c35",
+                "37ff9b7c-de3c-44ff-8aff-b4e8b09d4079",
+                "7fa98ed0-0c0e-4a72-a4a0-259c34ac17d8",
+                "d683ac27-ae97-4a9c-b01d-79f7a32fcb3f",
+                "fa9e82a5-a0ad-4d9d-a016-81fc86b95c95",
+                "5310b1eb-e2c3-4a17-9a32-a542f1280b77",
+                "dfc7cdd7-7325-4cb5-8b39-ae51a05c1d5e",
+                "e3516f6b-c2be-4a3d-8901-13072b097a1b",
+                "bbd1f621-631e-4cb6-8116-c8f3bd96093b",
+                "b4d7b14c-f6dd-4239-a8e3-0d9b9020286b",
+                "3fc310d6-ab92-4e75-8779-edbc1b248739",
+                "f1c67f06-5997-44b1-9fbe-fe1cb1d957ae",
+                "2157d08e-5198-4ea1-b050-91b966ff3bac",
+                "b460bb4e-ff63-45fe-8ed7-41e0c5c0b8de",
+                "379d13cc-756d-49fb-9852-dc4063d1c207",
+                "eea442cf-48a0-4d84-a381-f4427c609744",
+                "e66db52f-738e-4d21-bac7-dd318c13863b",
+                "07250d3d-e651-4e3e-8683-e4e7889de375",
+                "ae2ec7f4-0d21-499a-862b-a4bc1fc37a35",
+                "2190f6d1-4d1a-4699-8afb-663a6718ac9b",
+                "5745a801-a177-4c28-bee9-9a34a4e17938",
+                "87b6a325-b2e1-4f87-9331-1dd6aec75c16",
+                "c7f4a906-18ab-4be1-a569-f06f4b5b3b83",
+                "0a76283c-877a-4066-82a0-2f3ead066b64",
+                "a4234e50-02b5-4bf4-81a4-c4db8da5f165",
+                "98664694-a866-4ff9-9850-21498c63cde9",
+                "5e011ccc-1207-4085-8eb4-74d4f2edf9f5",
+                "bdff2d80-042a-41eb-992f-d12c536f25bf",
+                "93f449de-30fc-4d54-90d7-4d5265165312",
+                "ca9a0df0-f5cb-438b-9d15-3e904dadf105",
+                "042092ec-52b6-4b49-ba4f-756199ea4fe4",
+                "80f321e8-7c15-4c2e-a0e5-c17bbe01fb61",
+                "570fdaf8-44aa-4e02-b437-901673c7fc0e",
+                "2bcb5fe7-d1a1-46a9-8dff-2db3c5758a58",
+                "3f3125ed-6543-4b21-a944-80492179d0d9",
+                "16585791-3523-4797-aa49-89dbc483fcd5",
+                "74baa43c-1818-41d2-b90a-4ee2592ff3be"
+            ]
+        }
+    ]
+}
