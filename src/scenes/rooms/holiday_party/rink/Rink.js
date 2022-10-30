@@ -91,7 +91,7 @@ export default class Rink extends RoomScene {
         netback_1.flipX = true;
 
         // lists
-        const sort = [netfront, netback, window, door, fg_1];
+        const sort = [netfront, netback, window, door, fg_1, netback_1, netfront_1];
 
         // aurora (components)
         const auroraAnimation = new Animation(aurora);
