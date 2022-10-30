@@ -1,0 +1,34 @@
+{
+    "id": "649fc326-2622-4b83-9d41-d4f359a8331b",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "33e90a9b-09cb-4e19-8bb5-4de1cd23b45f",
+            "label": "tube",
+            "components": [],
+            "texture": {
+                "key": "mtn-holiday",
+                "frame": "tube"
+            },
+            "x": 760,
+            "y": 480
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

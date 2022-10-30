@@ -1,0 +1,589 @@
+{
+    "id": "685ae997-1c14-4667-841f-b5b98d499f19",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/holiday_party/sky/sky-holiday.json",
+            "client/assets/media/rooms/holiday_party/mtn/mtn-holiday-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Mtn",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "565bbb8c-b12b-4aa5-aade-941b10c8fd4c",
+            "label": "sky",
+            "components": [],
+            "texture": {
+                "key": "sky",
+                "frame": "sky"
+            },
+            "x": 763,
+            "y": 225
+        },
+        {
+            "type": "Sprite",
+            "id": "dd767312-1f35-484a-83a6-894bdcf95895",
+            "label": "aurora0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "aurora",
+            "Animation.end": 100,
+            "texture": {
+                "key": "sky",
+                "frame": "aurora0001"
+            },
+            "x": 342,
+            "y": 187
+        },
+        {
+            "type": "Sprite",
+            "id": "8e3d3a70-1eae-4d06-8ab9-efcdc0ac50d2",
+            "label": "aurora_1",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "aurora",
+            "Animation.end": 100,
+            "texture": {
+                "key": "sky",
+                "frame": "aurora0001"
+            },
+            "x": 1245,
+            "y": 195
+        },
+        {
+            "type": "Sprite",
+            "id": "fc75cacc-c594-4ac1-87c6-ebcd52d1fa0b",
+            "label": "aurora",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "aurora",
+            "Animation.end": 100,
+            "texture": {
+                "key": "sky",
+                "frame": "aurora0001"
+            },
+            "x": 761,
+            "y": 177
+        },
+        {
+            "type": "Image",
+            "id": "756164e2-c7cd-4ec7-86b9-18b7093d187b",
+            "label": "horizon",
+            "components": [],
+            "texture": {
+                "key": "mtn-holiday",
+                "frame": "horizon"
+            },
+            "x": 761,
+            "y": 625,
+            "scaleX": 1.01
+        },
+        {
+            "type": "Sprite",
+            "id": "830e7809-3e94-4c0f-b2f6-fece5101aede",
+            "label": "lift0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "lift",
+            "Animation.end": 87,
+            "texture": {
+                "key": "mtn-holiday",
+                "frame": "lift0001"
+            },
+            "x": 1134,
+            "y": 305
+        },
+        {
+            "type": "Image",
+            "id": "80a12cd6-5cbf-4179-8609-3bea0d614349",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "mtn-holiday",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 592,
+            "scaleX": 1.01
+        },
+        {
+            "type": "Image",
+            "id": "56a3187a-db41-4d24-a334-9727eef71589",
+            "label": "stick2",
+            "components": [],
+            "texture": {
+                "key": "mtn-holiday",
+                "frame": "stick2"
+            },
+            "x": 672,
+            "y": 718
+        },
+        {
+            "type": "Image",
+            "id": "80d63aac-a643-4c7d-a88e-ffeb444311a1",
+            "label": "stick_4",
+            "components": [],
+            "texture": {
+                "key": "mtn-holiday",
+                "frame": "stick1"
+            },
+            "x": 1140,
+            "y": 685,
+            "angle": -10,
+            "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "4fa7baf7-09c8-400d-8ce7-0064d42169df",
+            "label": "stick_1",
+            "components": [],
+            "texture": {
+                "key": "mtn-holiday",
+                "frame": "stick1"
+            },
+            "x": 274,
+            "y": 529,
+            "angle": 8
+        },
+        {
+            "type": "Image",
+            "id": "386e44d9-172d-4508-b9d5-3010939ca25f",
+            "label": "stick",
+            "components": [],
+            "texture": {
+                "key": "mtn-holiday",
+                "frame": "stick1"
+            },
+            "x": 341,
+            "y": 565,
+            "angle": 8
+        },
+        {
+            "type": "Image",
+            "id": "985db031-7f2f-4c9e-acbf-a1d9d100f774",
+            "label": "stick1",
+            "components": [],
+            "texture": {
+                "key": "mtn-holiday",
+                "frame": "stick1"
+            },
+            "x": 415,
+            "y": 604,
+            "angle": 8
+        },
+        {
+            "type": "Image",
+            "id": "db53e155-b548-466f-bd6f-8f20ffcc1119",
+            "label": "stick_2",
+            "components": [],
+            "texture": {
+                "key": "mtn-holiday",
+                "frame": "stick1"
+            },
+            "x": 591,
+            "y": 708
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "1d53a225-4804-458c-92fa-6c60341d8bed",
+            "unlock": [
+                "x",
+                "y",
+                "visible",
+                "sitFrame",
+                "offsetX",
+                "offsetY"
+            ],
+            "label": "tube_11",
+            "sitFrame": 24,
+            "offsetX": -100,
+            "offsetY": -70,
+            "components": [],
+            "x": 1182,
+            "y": 669,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "6eb9caee-977b-46f6-944d-ae607d4cbd66",
+            "label": "stick_3",
+            "components": [],
+            "texture": {
+                "key": "mtn-holiday",
+                "frame": "stick2"
+            },
+            "x": 903,
+            "y": 764
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "16c84264-1d45-4708-aa1f-09db965cce6a",
+            "unlock": [
+                "x",
+                "y",
+                "visible",
+                "sitFrame",
+                "offsetX",
+                "offsetY"
+            ],
+            "label": "tube_10",
+            "sitFrame": 24,
+            "offsetX": -100,
+            "offsetY": -70,
+            "components": [],
+            "x": 1108,
+            "y": 684,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "2c1e41a2-4a82-4817-91a7-353577502d98",
+            "label": "caticon",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.loadExternal('Sled')",
+            "texture": {
+                "key": "mtn-holiday",
+                "frame": "caticon"
+            },
+            "x": 1442,
+            "y": 891
+        },
+        {
+            "type": "Image",
+            "id": "4b0fc239-5cc6-4049-91e2-e5be8e1078e2",
+            "label": "express",
+            "components": [],
+            "texture": {
+                "key": "mtn-holiday",
+                "frame": "express"
+            },
+            "x": 1070,
+            "y": 791,
+            "originX": 0.45445262573550865,
+            "originY": 0.6796590873766045
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "7239b166-f078-4066-82b2-13bb27489ea7",
+            "unlock": [
+                "x",
+                "y",
+                "visible",
+                "offsetX",
+                "offsetY",
+                "sitFrame"
+            ],
+            "label": "tube_2",
+            "sitFrame": 18,
+            "offsetX": 90,
+            "offsetY": -70,
+            "components": [],
+            "x": 449,
+            "y": 611,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "7049d7f5-a91c-4962-8f0e-c0326f051b22",
+            "label": "pole",
+            "components": [],
+            "texture": {
+                "key": "mtn-holiday",
+                "frame": "pole"
+            },
+            "x": 732.7149995337118,
+            "y": 334.1986338626359,
+            "originX": 0.5967959164641297,
+            "originY": 0.857299533322011
+        },
+        {
+            "type": "Image",
+            "id": "5bcce1fb-78dd-4e59-8494-24b49e34f5c3",
+            "label": "pengrun",
+            "components": [],
+            "texture": {
+                "key": "mtn-holiday",
+                "frame": "pengrun"
+            },
+            "x": 515,
+            "y": 588,
+            "originX": 0.5648393698802782,
+            "originY": 0.7629157376242989
+        },
+        {
+            "type": "Image",
+            "id": "b8abe2e1-c99b-4e49-bf92-5ef5306cf82f",
+            "label": "toboggan",
+            "components": [],
+            "texture": {
+                "key": "mtn-holiday",
+                "frame": "toboggan"
+            },
+            "x": 497,
+            "y": 258
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "b543c76a-37ed-44b6-8da6-a48cb6d90b23",
+            "unlock": [
+                "x",
+                "y",
+                "visible",
+                "offsetX",
+                "offsetY",
+                "sitFrame"
+            ],
+            "label": "tube_4",
+            "sitFrame": 18,
+            "offsetX": 90,
+            "offsetY": -70,
+            "components": [],
+            "x": 239,
+            "y": 507,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "a2fb2bc8-495d-4432-9336-1fb6101dd11f",
+            "label": "mtncat0001",
+            "components": [
+                "SimpleButton",
+                "Animation"
+            ],
+            "SimpleButton.callback": "() => this.interface.loadExternal('Sled')",
+            "Animation.key": "mtncat",
+            "Animation.end": 7,
+            "Animation.repeat": 0,
+            "Animation.autoPlay": false,
+            "Animation.onHover": true,
+            "texture": {
+                "key": "mtn-holiday",
+                "frame": "mtncat0001"
+            },
+            "x": 513,
+            "y": 242,
+            "tintTopLeft": "#d8d8d8",
+            "tintTopRight": "#d8d8d8",
+            "tintBottomLeft": "#d8d8d8",
+            "tintBottomRight": "#d8d8d8"
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "d0f58b10-8a47-41cf-b3a3-498347309bd3",
+            "unlock": [
+                "x",
+                "y",
+                "visible",
+                "offsetX",
+                "offsetY",
+                "sitFrame"
+            ],
+            "label": "tube",
+            "sitFrame": 18,
+            "offsetX": 90,
+            "offsetY": -70,
+            "components": [],
+            "x": 304,
+            "y": 537,
+            "visible": false
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "8dd8b615-b1af-4b25-b8bf-8f91ddbe8ed5",
+            "unlock": [
+                "x",
+                "y",
+                "visible",
+                "offsetX",
+                "offsetY",
+                "sitFrame"
+            ],
+            "label": "tube_3",
+            "sitFrame": 18,
+            "offsetX": 90,
+            "offsetY": -70,
+            "components": [],
+            "x": 375,
+            "y": 572,
+            "visible": false
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "1fdab65e-620a-4597-b4e5-131c00f6a057",
+            "unlock": [
+                "x",
+                "y",
+                "visible",
+                "sitFrame",
+                "offsetX",
+                "offsetY"
+            ],
+            "label": "tube_5",
+            "sitFrame": 18,
+            "offsetX": 18,
+            "offsetY": -70,
+            "components": [],
+            "x": 565,
+            "y": 677,
+            "visible": false
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "e7835a34-dc11-4abc-890b-5bf4e2328560",
+            "unlock": [
+                "x",
+                "y",
+                "visible",
+                "sitFrame",
+                "offsetX",
+                "offsetY"
+            ],
+            "label": "tube_6",
+            "sitFrame": 17,
+            "offsetX": 18,
+            "offsetY": -110,
+            "components": [],
+            "x": 643,
+            "y": 714,
+            "visible": false
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "45aea95d-13e2-4531-8960-53994363e989",
+            "unlock": [
+                "x",
+                "y",
+                "visible",
+                "sitFrame",
+                "offsetX",
+                "offsetY"
+            ],
+            "label": "tube_7",
+            "sitFrame": 17,
+            "offsetX": 18,
+            "offsetY": -110,
+            "components": [],
+            "x": 729,
+            "y": 718,
+            "visible": false
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "fee3c251-588a-44de-9302-b0d895baf84b",
+            "unlock": [
+                "x",
+                "y",
+                "visible",
+                "offsetX",
+                "offsetY"
+            ],
+            "label": "tube_8",
+            "offsetX": -10,
+            "offsetY": -90,
+            "components": [],
+            "x": 867,
+            "y": 762,
+            "visible": false
+        },
+        {
+            "prefabId": "1ac896b9-c2f7-46e3-9f68-ef8924a015ce",
+            "id": "091d9c3f-e5bd-4bf0-976e-65ccdf9eef9f",
+            "unlock": [
+                "x",
+                "y",
+                "visible",
+                "offsetX",
+                "offsetY"
+            ],
+            "label": "tube_9",
+            "offsetX": -40,
+            "offsetY": -90,
+            "components": [],
+            "x": 955,
+            "y": 764,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "3b855ead-0bdd-40fa-aea6-61eeb0fb2d30",
+            "label": "tape",
+            "components": [],
+            "texture": {
+                "key": "mtn-holiday",
+                "frame": "tape"
+            },
+            "x": 508,
+            "y": 219
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "3b9c0477-e109-456d-b3ec-7c18920194d0",
+            "label": "sort",
+            "objectIds": [
+                "4b0fc239-5cc6-4049-91e2-e5be8e1078e2",
+                "7049d7f5-a91c-4962-8f0e-c0326f051b22",
+                "5bcce1fb-78dd-4e59-8494-24b49e34f5c3"
+            ]
+        },
+        {
+            "id": "86c8bd58-a02a-4bd8-9830-3bec70a16a55",
+            "label": "seats100",
+            "objectIds": [
+                "b543c76a-37ed-44b6-8da6-a48cb6d90b23",
+                "d0f58b10-8a47-41cf-b3a3-498347309bd3",
+                "8dd8b615-b1af-4b25-b8bf-8f91ddbe8ed5",
+                "7239b166-f078-4066-82b2-13bb27489ea7"
+            ]
+        },
+        {
+            "id": "d40b3e1b-64fb-403b-ae7c-8db50364d1be",
+            "label": "seats101",
+            "objectIds": [
+                "45aea95d-13e2-4531-8960-53994363e989",
+                "e7835a34-dc11-4abc-890b-5bf4e2328560",
+                "1fdab65e-620a-4597-b4e5-131c00f6a057"
+            ]
+        },
+        {
+            "id": "000ccabd-656a-4cd7-bbdd-1a95f54a76e4",
+            "label": "seats103",
+            "objectIds": [
+                "1d53a225-4804-458c-92fa-6c60341d8bed",
+                "16c84264-1d45-4708-aa1f-09db965cce6a"
+            ]
+        },
+        {
+            "id": "9dce2baa-68a9-414a-93f1-17524864ee9f",
+            "label": "seats102",
+            "objectIds": [
+                "8a9bb92e-9230-4dbc-8230-8cdee802ff6e",
+                "597ca950-0087-4d7f-9de5-8d1c5398a36b",
+                "091d9c3f-e5bd-4bf0-976e-65ccdf9eef9f",
+                "fee3c251-588a-44de-9302-b0d895baf84b"
+            ]
+        }
+    ]
+}
