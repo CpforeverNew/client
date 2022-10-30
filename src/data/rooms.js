@@ -4,7 +4,7 @@ let rooms;
 rooms = {
 	100: {
 		key: 'Town',
-		scene: require(`@rooms/old/town/Town`).default,
+		scene: require(`@rooms/holiday_party/town/Town`).default,
 		x: 760,
 		y: 660
 	},
@@ -172,7 +172,7 @@ rooms = {
 	},
 	807: {
 		key: 'Shack',
-		scene: require(`@rooms/old/shack/Shack`).default,
+		scene: require(`@rooms/holiday_party/shack/Shack`).default,
 		x: 760,
 		y: 680
 	},

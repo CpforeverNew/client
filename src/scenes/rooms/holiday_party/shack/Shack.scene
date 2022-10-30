@@ -1,0 +1,389 @@
+{
+    "id": "60b45cef-141d-418d-9738-29099a7e710e",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/holiday_party/shack/shack-holiday-pack.json",
+            "client/assets/media/rooms/holiday_party/sky/sky-holiday.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Shack",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "8153293d-8b00-4183-8c09-3630a7eb9741",
+            "label": "sky",
+            "components": [],
+            "texture": {
+                "key": "sky",
+                "frame": "sky"
+            },
+            "x": 773,
+            "y": 187,
+            "scaleX": 1.0549906592236395,
+            "scaleY": 1.0549906592236395
+        },
+        {
+            "type": "Sprite",
+            "id": "8119894b-711e-467a-bb16-d11dd5aec86c",
+            "label": "aurora_4",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "aurora",
+            "Animation.end": 100,
+            "texture": {
+                "key": "sky",
+                "frame": "aurora0001"
+            },
+            "x": 1272,
+            "y": 37,
+            "flipX": true
+        },
+        {
+            "type": "Sprite",
+            "id": "b3f4672b-9557-45e9-a088-83c44fc98c0e",
+            "label": "aurora_3",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "aurora",
+            "Animation.end": 100,
+            "texture": {
+                "key": "sky",
+                "frame": "aurora0001"
+            },
+            "x": 1534,
+            "y": 235
+        },
+        {
+            "type": "Sprite",
+            "id": "3ca9c3bf-6195-469c-841e-edf03ced3914",
+            "label": "aurora_1",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "aurora",
+            "Animation.end": 100,
+            "texture": {
+                "key": "sky",
+                "frame": "aurora0001"
+            },
+            "x": 956,
+            "y": 104
+        },
+        {
+            "type": "Sprite",
+            "id": "cd928847-ac17-4b67-a066-2b27b94b8219",
+            "label": "aurora_2",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "aurora",
+            "Animation.end": 100,
+            "texture": {
+                "key": "sky",
+                "frame": "aurora0001"
+            },
+            "x": 1404,
+            "y": 159
+        },
+        {
+            "type": "Sprite",
+            "id": "fd286559-523b-43d2-8a7f-695769320a0e",
+            "label": "aurora",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "aurora",
+            "Animation.end": 100,
+            "texture": {
+                "key": "sky",
+                "frame": "aurora0001"
+            },
+            "x": 632,
+            "y": 112
+        },
+        {
+            "type": "Sprite",
+            "id": "3a8cc0d6-b80d-414d-a094-5885ffdbcaae",
+            "label": "aurora0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "aurora",
+            "Animation.end": 100,
+            "texture": {
+                "key": "sky",
+                "frame": "aurora0001"
+            },
+            "x": 299,
+            "y": 127
+        },
+        {
+            "type": "Image",
+            "id": "c15f9b14-46fd-4ea9-a7c5-25136fdcf9ff",
+            "label": "bg_png",
+            "components": [],
+            "texture": {
+                "key": "shack-holiday",
+                "frame": "bg.png"
+            },
+            "x": 750,
+            "y": 507,
+            "scaleX": 1.0165268065931263,
+            "scaleY": 1.0165268065931263
+        },
+        {
+            "type": "Image",
+            "id": "083757a3-0ca4-4a9e-9f3f-4eea09d958dd",
+            "label": "tracks_png",
+            "components": [],
+            "texture": {
+                "key": "shack-holiday",
+                "frame": "tracks.png"
+            },
+            "x": 658,
+            "y": 566
+        },
+        {
+            "type": "Image",
+            "id": "7892aa43-0eba-4bae-96e6-c3d9df38d5bd",
+            "label": "mineshack_png",
+            "components": [],
+            "texture": {
+                "key": "shack-holiday",
+                "frame": "mineshack.png"
+            },
+            "x": 741.33891793962,
+            "y": 467.16775303990903,
+            "originX": 0.2437125388872312,
+            "originY": 0.8140071290312023
+        },
+        {
+            "type": "Image",
+            "id": "1b3a4da5-e7fb-4bb5-ac95-dd760f04eda3",
+            "label": "frontcart_png",
+            "components": [],
+            "texture": {
+                "key": "shack-holiday",
+                "frame": "frontcart.png"
+            },
+            "x": 621,
+            "y": 536
+        },
+        {
+            "type": "Image",
+            "id": "31453417-2850-49c6-a93e-0c607b2511ee",
+            "label": "backcart_png",
+            "components": [],
+            "texture": {
+                "key": "shack-holiday",
+                "frame": "backcart.png"
+            },
+            "x": 519,
+            "y": 578
+        },
+        {
+            "type": "Image",
+            "id": "f2a385d0-9b8c-4920-b435-73259ee30393",
+            "label": "pile_topl_png",
+            "components": [],
+            "texture": {
+                "key": "shack-holiday",
+                "frame": "pile topl.png"
+            },
+            "x": 695.2497305073299,
+            "y": 601.3523339756068,
+            "originX": 0.5953911908859197,
+            "originY": 0.4746512919324127
+        },
+        {
+            "type": "Image",
+            "id": "fdb10cd2-499f-4880-907f-c972912a7d84",
+            "label": "pile_topr_png",
+            "components": [],
+            "texture": {
+                "key": "shack-holiday",
+                "frame": "pile topr.png"
+            },
+            "x": 793,
+            "y": 609.6134648683009,
+            "originY": 0.6098444016262111
+        },
+        {
+            "type": "Image",
+            "id": "fb3aa0bf-4dd6-49dc-9010-d63c9c10a421",
+            "label": "pile_barrel_png",
+            "components": [],
+            "texture": {
+                "key": "shack-holiday",
+                "frame": "pile barrel.png"
+            },
+            "x": 740,
+            "y": 613,
+            "originY": 0.6044861381322489
+        },
+        {
+            "type": "Image",
+            "id": "b85bbcce-7111-4b00-b713-fc7ad4041a43",
+            "label": "pile_bl_png",
+            "components": [],
+            "texture": {
+                "key": "shack-holiday",
+                "frame": "pile bl.png"
+            },
+            "x": 691.8517949902667,
+            "y": 634.6932675658495,
+            "originX": 0.6235749518294879,
+            "originY": 0.4450777991868931
+        },
+        {
+            "type": "Image",
+            "id": "4f030cec-c013-4685-b1bb-490d3bd6163e",
+            "label": "pile_b_png",
+            "components": [],
+            "texture": {
+                "key": "shack-holiday",
+                "frame": "pile b.png"
+            },
+            "x": 742,
+            "y": 657
+        },
+        {
+            "type": "Image",
+            "id": "2fb0a7c6-4d48-4871-9ee2-c5253dee5722",
+            "label": "greenpresent_png",
+            "components": [],
+            "texture": {
+                "key": "shack-holiday",
+                "frame": "greenpresent.png"
+            },
+            "x": 899.506711407587,
+            "y": 593.3461044995618,
+            "originX": 0.5223811555907371,
+            "originY": 0.5587484381338729
+        },
+        {
+            "type": "Image",
+            "id": "2082d0b5-7358-47c4-8a8d-8535ac51df21",
+            "label": "top_pile_left_png",
+            "components": [],
+            "texture": {
+                "key": "shack-holiday",
+                "frame": "top pile left.png"
+            },
+            "x": 815.636265639029,
+            "y": 632.7616698780341,
+            "originX": 0.525594812029408,
+            "originY": 0.34157057457757933
+        },
+        {
+            "type": "Image",
+            "id": "15204bec-f903-4c49-8faf-8c233cc2ed70",
+            "label": "right_png",
+            "components": [],
+            "texture": {
+                "key": "shack-holiday",
+                "frame": "right.png"
+            },
+            "x": 1407.4192812216954,
+            "y": 840.8385624433911,
+            "originX": 0.6397516345282936,
+            "originY": 0.6953517471900883
+        },
+        {
+            "type": "Image",
+            "id": "bfad3542-893c-4b50-8b04-f6fc715995e3",
+            "label": "left_png",
+            "components": [],
+            "texture": {
+                "key": "shack-holiday",
+                "frame": "left.png"
+            },
+            "x": 186.60442161373277,
+            "y": 765.3958772445714,
+            "originX": 0.6574366831761531,
+            "originY": 0.5128847783816475
+        },
+        {
+            "type": "Image",
+            "id": "40fd3d60-5f5c-483a-a404-69f25b775116",
+            "label": "top_pile_right_png",
+            "components": [],
+            "texture": {
+                "key": "shack-holiday",
+                "frame": "top pile right.png"
+            },
+            "x": 637.2014151977722,
+            "y": 422.07855142824104,
+            "originX": 0.6281469259758357,
+            "originY": 0.6913120394751802
+        },
+        {
+            "type": "Image",
+            "id": "22874baa-c630-45c5-b385-4259d9ecf339",
+            "label": "pile_barrel_png_1",
+            "components": [],
+            "texture": {
+                "key": "shack-holiday",
+                "frame": "pile barrel.png"
+            },
+            "x": 599.8078493703915,
+            "y": 437.83333196631804,
+            "originX": 0.570703695991381,
+            "originY": 0.7906503019865488
+        },
+        {
+            "type": "Image",
+            "id": "8d3351e3-87df-4614-b4e9-a99347306068",
+            "label": "top_pile_left_png_1",
+            "components": [],
+            "texture": {
+                "key": "shack-holiday",
+                "frame": "top pile left.png"
+            },
+            "x": 569,
+            "y": 449.3857109906406,
+            "originY": 0.3920329036661649
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "5b05df9c-2b13-4c2e-9199-6607fd85e390",
+            "label": "sort",
+            "objectIds": [
+                "fb3aa0bf-4dd6-49dc-9010-d63c9c10a421",
+                "fdb10cd2-499f-4880-907f-c972912a7d84",
+                "2082d0b5-7358-47c4-8a8d-8535ac51df21",
+                "4f030cec-c013-4685-b1bb-490d3bd6163e",
+                "b85bbcce-7111-4b00-b713-fc7ad4041a43",
+                "f2a385d0-9b8c-4920-b435-73259ee30393",
+                "2fb0a7c6-4d48-4871-9ee2-c5253dee5722",
+                "22874baa-c630-45c5-b385-4259d9ecf339",
+                "8d3351e3-87df-4614-b4e9-a99347306068",
+                "40fd3d60-5f5c-483a-a404-69f25b775116",
+                "7892aa43-0eba-4bae-96e6-c3d9df38d5bd",
+                "1b3a4da5-e7fb-4bb5-ac95-dd760f04eda3",
+                "31453417-2850-49c6-a93e-0c607b2511ee",
+                "bfad3542-893c-4b50-8b04-f6fc715995e3",
+                "15204bec-f903-4c49-8faf-8c233cc2ed70"
+            ]
+        }
+    ]
+}
