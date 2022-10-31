@@ -130,7 +130,7 @@ rooms = {
 	},
 	800: {
 		key: 'Dock',
-		scene: require(`@rooms/old/dock/Dock`).default,
+		scene: require(`@rooms/holiday_party/dock/Dock`).default,
 		x: 800,
 		y: 400
 	},

@@ -1,0 +1,659 @@
+{
+    "id": "0d947b4c-dc39-4f70-96a1-035b23910da6",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/holiday_party/dock/dock-holiday-pack.json",
+            "client/assets/media/rooms/holiday_party/sky/sky-holiday.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Dock",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "6c603fa3-c708-4026-a3bd-b42c398ee13d",
+            "label": "sky",
+            "components": [],
+            "texture": {
+                "key": "sky",
+                "frame": "sky"
+            },
+            "x": 704,
+            "y": 152,
+            "scaleX": 1.4680349462054876,
+            "scaleY": 1.4680349462054876
+        },
+        {
+            "type": "Sprite",
+            "id": "70f2b924-feb4-47a5-96cc-b33dfeb4c940",
+            "label": "aurora0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "aurora",
+            "Animation.end": 100,
+            "texture": {
+                "key": "sky",
+                "frame": "aurora0001"
+            },
+            "x": 262,
+            "y": 71
+        },
+        {
+            "type": "Sprite",
+            "id": "f987d4df-cfbc-4d57-8373-256e24ae7407",
+            "label": "aurora",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "aurora",
+            "Animation.end": 100,
+            "texture": {
+                "key": "sky",
+                "frame": "aurora0001"
+            },
+            "x": 680,
+            "y": 68
+        },
+        {
+            "type": "Sprite",
+            "id": "4d93bb4d-0c56-40d2-9782-34aeb2aa6cff",
+            "label": "aurora_1",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "aurora",
+            "Animation.end": 100,
+            "texture": {
+                "key": "sky",
+                "frame": "aurora0001"
+            },
+            "x": 1285,
+            "y": 57
+        },
+        {
+            "type": "Sprite",
+            "id": "6d18e6f3-39be-4236-bb2b-25377bac7a51",
+            "label": "aurora_2",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "aurora",
+            "Animation.end": 100,
+            "texture": {
+                "key": "sky",
+                "frame": "aurora0001"
+            },
+            "x": 912,
+            "y": 83
+        },
+        {
+            "type": "Image",
+            "id": "42d9ecd6-305a-4bc2-8fa1-95f616c68180",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "bg"
+            },
+            "x": 769,
+            "y": 503
+        },
+        {
+            "type": "Image",
+            "id": "e340e403-a981-4b67-8617-54dc0bbd206f",
+            "label": "blackthing",
+            "components": [],
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "blackthing"
+            },
+            "x": 274,
+            "y": 714
+        },
+        {
+            "type": "Sprite",
+            "id": "243d0324-98e5-4cc9-bcc7-91969a202756",
+            "label": "campfire0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "campfire",
+            "Animation.end": 10,
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "campfire0001"
+            },
+            "x": 642.3585577464777,
+            "y": 223.415609389662,
+            "scaleX": 0.33026465110741676,
+            "scaleY": 0.33026465110741676,
+            "originX": 0.5119928356356648,
+            "originY": 0.614265072862022
+        },
+        {
+            "type": "Image",
+            "id": "2c785d47-b536-4c2c-a767-2b8b9eba5aa0",
+            "label": "tree",
+            "components": [],
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "tree"
+            },
+            "x": 1008.7008934475367,
+            "y": 307.57231635118393,
+            "originX": 0.4474116410557946,
+            "originY": 0.9499286503896494
+        },
+        {
+            "type": "Image",
+            "id": "6e7d80f7-5dbe-4862-b69f-f77c6cac4e02",
+            "label": "fire",
+            "components": [],
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "fire"
+            },
+            "x": 1148.3458048146122,
+            "y": 322.7780608328775,
+            "originX": 0.5571816422975285,
+            "originY": 0.5769926049832873
+        },
+        {
+            "type": "Image",
+            "id": "ea7b3d20-308e-4418-9189-eed832eec6a8",
+            "label": "stand",
+            "components": [],
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "stand"
+            },
+            "x": 440.2405877902275,
+            "y": 233.37022943624902,
+            "originX": 0.4635008351297521,
+            "originY": 1.0460247116641508
+        },
+        {
+            "type": "Image",
+            "id": "466c78aa-b4ee-45bc-aae7-425435542262",
+            "label": "stand_1",
+            "components": [],
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "stand"
+            },
+            "x": 796.2621180724313,
+            "y": 188.05630383497618,
+            "originX": 0.5510885249750617,
+            "originY": 0.8161187358770536,
+            "flipX": true
+        },
+        {
+            "type": "Sprite",
+            "id": "7f451123-be69-452e-bebd-dcca0be533a8",
+            "label": "boatbob0001",
+            "scope": "CLASS",
+            "components": [
+                "Animation",
+                "SimpleButton",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Animation.key": "boatbob",
+            "Animation.end": 80,
+            "SimpleButton.hoverCallback": "() => this.boatring.visible = true;",
+            "SimpleButton.hoverOutCallback": "() => this.boatring.visible = false;",
+            "ShowHint.text": "Hydro Hopper",
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "boatbob0001"
+            },
+            "x": 225,
+            "y": 645
+        },
+        {
+            "type": "Sprite",
+            "id": "4867d7f3-60ce-4ba3-9d3d-cef1beb87a83",
+            "label": "smalllamp0001",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => {this.backlClick()}",
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "smalllamp0001"
+            },
+            "x": 486,
+            "y": 102,
+            "scaleX": 0.5203451338745538,
+            "scaleY": 0.5203451338745538
+        },
+        {
+            "type": "Sprite",
+            "id": "a1fbe791-fdbe-4915-bcaf-cd310168d282",
+            "label": "smalllamp",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => {this.backrClick()}",
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "smalllamp0001"
+            },
+            "x": 752,
+            "y": 97,
+            "scaleX": 0.5203451338745538,
+            "scaleY": 0.5203451338745538,
+            "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "4f182da5-a083-4731-a147-e1e616877a8b",
+            "label": "back",
+            "components": [],
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "back"
+            },
+            "x": 1360.20148911899,
+            "y": 625.616506389303,
+            "originX": 0.7265980874135874,
+            "originY": 0.6643841940398033
+        },
+        {
+            "type": "Image",
+            "id": "dbe8c44c-2f11-4de7-a95e-97c094e034b1",
+            "label": "front",
+            "components": [],
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "front"
+            },
+            "x": 1222.276030148497,
+            "y": 727.3660964204636,
+            "originX": 0.3939855359999986,
+            "originY": 0.8534955708154026
+        },
+        {
+            "type": "Image",
+            "id": "eb8e0de2-75d1-4d30-bd55-cc3ad99a8dcc",
+            "label": "table",
+            "components": [],
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "table"
+            },
+            "x": 949.9865720729892,
+            "y": 768.4143696287903,
+            "originX": 0.418966723905319,
+            "originY": 0.589208499743628
+        },
+        {
+            "type": "Sprite",
+            "id": "c77ef416-2a36-461e-a031-c4cea6a2831d",
+            "label": "lamp",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "lamp"
+            },
+            "x": 919.1451554535164,
+            "y": 840.3413485263163,
+            "scaleX": 0.7787654141646153,
+            "scaleY": 0.7787654141646153,
+            "angle": -3,
+            "originX": 0.3910192370488433,
+            "originY": 0.9042426652470088
+        },
+        {
+            "type": "Sprite",
+            "id": "496f9f59-b152-4ec4-a0df-6c81541dce9d",
+            "label": "lamp_1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "lamp"
+            },
+            "x": 133.32569300777214,
+            "y": 437.96828299663053,
+            "scaleX": 0.7140024301340478,
+            "scaleY": 0.7140024301340478,
+            "angle": -3,
+            "originX": 0.3500848382038602,
+            "originY": 0.8847850995451235
+        },
+        {
+            "type": "Image",
+            "id": "1dcbed15-dbce-474f-840e-85f54fd972de",
+            "label": "left_bench",
+            "components": [],
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "left bench"
+            },
+            "x": 269.2926437735747,
+            "y": 326.7747869256481,
+            "originX": 0.7356665180102253,
+            "originY": 0.18265573806890156
+        },
+        {
+            "type": "Sprite",
+            "id": "4a2e89e3-9399-4439-a080-5dc562bb32e3",
+            "label": "candle0001",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "candle",
+            "Animation.end": 14,
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "candle0001"
+            },
+            "x": 921.4832977071642,
+            "y": 375.2689892603657,
+            "originX": 1.4261843478161123,
+            "originY": 10.012227147577427
+        },
+        {
+            "type": "Sprite",
+            "id": "35dd4b85-0dfa-4a82-a906-18028dc05741",
+            "label": "candle",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "candle",
+            "Animation.end": 14,
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "candle0001"
+            },
+            "x": 1129.5760043203804,
+            "y": 441.3523326692871,
+            "originX": 1.0108577600543478,
+            "originY": 13.01601512133123
+        },
+        {
+            "type": "Sprite",
+            "id": "11101f9f-8c85-4ee7-b399-3256ce9486a0",
+            "label": "candle_1",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "candle",
+            "Animation.end": 14,
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "candle0001"
+            },
+            "x": 954.7089792699107,
+            "y": 397.91947836948907,
+            "originX": -1.2558601042984654,
+            "originY": 16.087249016794956
+        },
+        {
+            "type": "Sprite",
+            "id": "4a4711e6-b4ca-4ba6-b72f-4052a704da72",
+            "label": "candle_2",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "candle",
+            "Animation.end": 14,
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "candle0001"
+            },
+            "x": 856.2764716032553,
+            "y": 721.0580560417999,
+            "originX": 0.5394984263402064,
+            "originY": 2.866275751968105
+        },
+        {
+            "type": "Image",
+            "id": "d3f99571-45c2-4031-850c-575034e61a3c",
+            "label": "backleftdock",
+            "components": [],
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "backleftdock"
+            },
+            "x": 438.102711701356,
+            "y": 580.7674595837285,
+            "originX": 0.5275677925338996,
+            "originY": 0.3849344311628566
+        },
+        {
+            "type": "Image",
+            "id": "52ecd869-0a4e-4f21-8d93-bb026aeec740",
+            "label": "backrightdock",
+            "components": [],
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "backrightdock"
+            },
+            "x": 525.1608420103462,
+            "y": 687.9365004794353,
+            "originX": -0.6848422204218423,
+            "originY": 1.0511770558035562
+        },
+        {
+            "type": "Image",
+            "id": "bf37c67c-e670-4758-ad78-db1692953c6f",
+            "label": "dock",
+            "components": [],
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "dock"
+            },
+            "x": 350.4075322497798,
+            "y": 674.6341587112323,
+            "originX": 0.5140824884610545,
+            "originY": 0.24200048535545052
+        },
+        {
+            "type": "Sprite",
+            "id": "dd45e1dc-3ef8-4dad-bbe8-59c750e4d183",
+            "label": "rings",
+            "scope": "CLASS",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "rubber",
+            "Animation.end": 34,
+            "Animation.repeat": 0,
+            "Animation.autoPlay": false,
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "rubber0001"
+            },
+            "x": 622.6030688648809,
+            "y": 690.0901134862596,
+            "originX": 0.46833202408356894,
+            "originY": 0.8833621850479132
+        },
+        {
+            "type": "Image",
+            "id": "3c8d03dc-858b-453b-be66-1429375833c4",
+            "label": "boards_1",
+            "components": [],
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "boards"
+            },
+            "x": 736.836158915399,
+            "y": 752.3827326308584,
+            "originX": 0.4989825166481159,
+            "originY": 0.7998831277058116
+        },
+        {
+            "type": "Rectangle",
+            "id": "9b0e6c8d-859d-462e-9739-de2c1e5052fe",
+            "label": "ringshover",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => {this.onRingsOver()}",
+            "SimpleButton.callback": "null",
+            "x": 626.4247935775011,
+            "y": 581.7488886150363,
+            "scaleY": 1.2526105139495551,
+            "originX": 0.5189439791280126,
+            "originY": 0.17411116785524117,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Sprite",
+            "id": "3aca07da-b586-45ad-b6be-050d26b110af",
+            "label": "red",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "red",
+            "Button.callback": "() => this.interface.loadExternal('Hydro')",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "red"
+            },
+            "x": 1425,
+            "y": 869
+        },
+        {
+            "type": "Sprite",
+            "id": "752387bc-b737-46b0-bac5-2937140629c4",
+            "label": "peel0001",
+            "scope": "CLASS",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "peel",
+            "Animation.end": 7,
+            "Animation.repeat": 0,
+            "Animation.autoPlay": false,
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "peel0001"
+            },
+            "x": 737,
+            "y": 863,
+            "angle": 11,
+            "originX": 0.3027355886991528,
+            "originY": 3.6601360122735254
+        },
+        {
+            "type": "Rectangle",
+            "id": "fd90974b-424d-4d4d-a87d-7cabbc1d6abc",
+            "label": "peel",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => {this.peel0001.__Animation.play()}",
+            "SimpleButton.hoverOutCallback": "() => {this.peel0001.__Animation.stop()}",
+            "SimpleButton.callback": "() => this.interface.loadExternal('Hydro')",
+            "x": 780,
+            "y": 677,
+            "scaleX": 0.3657079147092659,
+            "scaleY": 0.3657079147092659,
+            "angle": 7,
+            "originX": 0.5189439791280126,
+            "originY": 0.17411116785524117,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Sprite",
+            "id": "96d4c5e3-7822-4c16-893b-3964deeeaf94",
+            "label": "boatring",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dock-holiday",
+                "frame": "ring"
+            },
+            "x": 196,
+            "y": 655,
+            "scaleX": 0.39353611881933315,
+            "scaleY": 0.39353611881933315,
+            "visible": false
+        },
+        {
+            "type": "Rectangle",
+            "id": "2513747a-10e6-4079-9688-c3fe9a3fc5a2",
+            "label": "rectangle_1",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => {this.rlClick()}",
+            "x": 918,
+            "y": 544,
+            "scaleX": 0.7591398238213805,
+            "scaleY": 0.8182852979233071,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "6cc81287-9307-4002-8d60-871596dc9eae",
+            "label": "rectangle",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => {this.lClick()}",
+            "x": 140,
+            "y": 177,
+            "scaleX": 0.7591398238213805,
+            "scaleY": 0.8182852979233071,
+            "width": 128,
+            "height": 128
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "672dde11-c1fa-4288-8b95-0278f69713f1",
+            "label": "sort",
+            "objectIds": [
+                "eb8e0de2-75d1-4d30-bd55-cc3ad99a8dcc",
+                "c77ef416-2a36-461e-a031-c4cea6a2831d",
+                "dbe8c44c-2f11-4de7-a95e-97c094e034b1",
+                "4f182da5-a083-4731-a147-e1e616877a8b",
+                "2c785d47-b536-4c2c-a767-2b8b9eba5aa0",
+                "6e7d80f7-5dbe-4862-b69f-f77c6cac4e02",
+                "243d0324-98e5-4cc9-bcc7-91969a202756",
+                "1dcbed15-dbce-474f-840e-85f54fd972de",
+                "496f9f59-b152-4ec4-a0df-6c81541dce9d",
+                "d3f99571-45c2-4031-850c-575034e61a3c",
+                "52ecd869-0a4e-4f21-8d93-bb026aeec740",
+                "bf37c67c-e670-4758-ad78-db1692953c6f",
+                "3c8d03dc-858b-453b-be66-1429375833c4",
+                "ea7b3d20-308e-4418-9189-eed832eec6a8",
+                "466c78aa-b4ee-45bc-aae7-425435542262",
+                "dd45e1dc-3ef8-4dad-bbe8-59c750e4d183",
+                "4a2e89e3-9399-4439-a080-5dc562bb32e3",
+                "4a4711e6-b4ca-4ba6-b72f-4052a704da72",
+                "35dd4b85-0dfa-4a82-a906-18028dc05741",
+                "11101f9f-8c85-4ee7-b399-3256ce9486a0",
+                "752387bc-b737-46b0-bac5-2937140629c4"
+            ]
+        }
+    ]
+}
