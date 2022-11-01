@@ -178,6 +178,13 @@ export default class RuffleManager {
 
 	playerWearingItem(item) {
 		let items = this.world.client.penguin.items.equippedFlat
+
+		const puffleIds = [1762, 2519, 2639]
+		if(puffleIds.includes(item) && this.world.client.penguin.pufflesprite) {
+			const puffleColor = this.world.client.penguin.pufflesprite.color
+			return item == 1762 && puffleColor == 'green' || item == 2519 && puffleColor == 'black' || item == 2639 && puffleColor == 'pink'
+		}
+
 		for (var x in items) {
 			if (items[x] === item) {
 				return true
