@@ -163,42 +163,27 @@ export default class prizebooth extends BaseScene {
     }
 
     crab(){
-        this.network.send('spend_tickets', {
-            item: "35016"
-        })
-        this.tickets.text = "Tickets: " + this.interface.main.tickets.text;
+        this.interface.prompt.showItem(35016, 25000)
         this.scene.stop()
     }
 
     ghost(){
-        this.network.send('spend_tickets', {
-            item: "36104"
-        })
-        this.tickets.text = "Tickets: " + this.interface.main.tickets.text;
+        this.interface.prompt.showItem(36104, 5000)
         this.scene.stop()
     }
 
     puffle(){
-        this.network.send('spend_tickets', {
-            item: "36102"
-        })
-        this.tickets.text = "Tickets: " + this.interface.main.tickets.text;
+        this.interface.prompt.showItem(36102, 12000)
         this.scene.stop()
     }
 
     mask(){
-        this.network.send('spend_tickets', {
-            item: "36101"
-        })
-        this.tickets.text = "Tickets: " + this.interface.main.tickets.text;
+        this.interface.prompt.showItem(36101, 5000)
         this.scene.stop()
     }
 
     body() {
-        this.network.send('spend_tickets', {
-            item: "36100"
-        })
-        this.tickets.text = "Tickets: " + this.interface.main.tickets.text;
+        this.interface.prompt.showItem(36100, 7500)
         this.scene.stop()
     }
     /* END-USER-CODE */

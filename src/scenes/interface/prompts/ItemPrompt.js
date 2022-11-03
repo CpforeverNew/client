@@ -5,8 +5,9 @@ import { Interactive, NineSlice } from '@components/components'
 import DualButtons from './buttons/DualButtons'
 import ItemPromptLoader from '@engine/loaders/ItemPromptLoader'
 
-
 /* START OF COMPILED CODE */
+
+
 
 export default class ItemPrompt extends BaseContainer {
 
@@ -65,6 +66,7 @@ export default class ItemPrompt extends BaseContainer {
         this.item // Active item ID
         this.icon // Icon sprite
         this.type
+        this.ticketBuy = false
 
         this.loader = new ItemPromptLoader(scene, this)
 
@@ -74,19 +76,19 @@ export default class ItemPrompt extends BaseContainer {
 
     /* START-USER-CODE */
 
-    showItem(item) {
+    showItem(item, ticket=false) {
         if (this.inventoryIncludes(item)) {
             return this.interface.prompt.showError('You already have this item.')
         }
 
-        this.show(item, this.crumbs.items[item], 'clothing')
+        this.show(item, this.crumbs.items[item], 'clothing', ticket)
     }
 
     showFurniture(item) {
         this.show(item, this.crumbs.furniture[item], 'furniture')
     }
 
-    show(item, crumb, type) {
+    show(item, crumb, type, ticket) {
         if (!crumb) {
             return
         }
@@ -95,6 +97,13 @@ export default class ItemPrompt extends BaseContainer {
         this.type = type
 
         this.text.text = this.getText(crumb.name, crumb.cost)
+
+        if (ticket != false) {
+            this.network.send("get_user_tickets")
+            this.text.text = `Would you like to buy ${crumb.name} for ${ticket} tickets? You currently have ${this.interface.main.tickets.text} tickets.`
+            this.ticketBuy = true
+        }
+        
         this.visible = true
 
         this.loader.loadIcon(item)
@@ -123,13 +132,23 @@ export default class ItemPrompt extends BaseContainer {
 
     noCallback() {
         this.visible = false
+        this.ticketBuy = false
     }
 
     sendAddItem() {
         switch (this.type) {
             case 'clothing':
+                if (this.ticketBuy) {
+                    this.network.send('spend_tickets', {
+                        item: this.item
+                    })                    
+                    this.ticketBuy = false
+                    return
+                }
+
                 this.network.send('add_item', { item: this.item })
                 break
+                
             case 'furniture':
                 this.network.send('add_furniture', { furniture: this.item })
                 break
