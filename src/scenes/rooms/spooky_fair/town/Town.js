@@ -30,15 +30,16 @@ export default class Town extends RoomScene {
 
     /** @returns {void} */
     _preload() {
-
         this.load.pack("town-spooky-pack", "assets/media/rooms/spooky_fair/town/town-spooky-pack.json");
         this.load.pack("town-pack", "assets/media/rooms/old/town/town-pack.json");
         this.load.pack("sky-pack", "assets/media/rooms/spooky_fair/sky/sky-pack.json");
+        this.load.audio('thunder', `assets/media/music/sf_thunder.mp3`)
     }
 
     /** @returns {void} */
     _create() {
-
+        const thunder = this.sound.add('thunder');
+        this.loopAudio(thunder, 5000);
         // sky0001
         const sky0001 = this.add.sprite(1036, 140, "sky_spooky", "sky0001");
         sky0001.scaleX = 1.09984007296373;
@@ -216,7 +217,6 @@ export default class Town extends RoomScene {
         this.canopy_lights.__Animation.stop()
         this.disco_lights.__Animation.stop()
     }
-
     /* END-USER-CODE */
 }
 

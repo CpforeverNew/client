@@ -38,11 +38,13 @@ export default class Dock extends RoomScene {
     _preload() {
 
         this.load.pack("dock-spf-pack", "assets/media/rooms/spooky_fair/dock/dock-spf-pack.json");
+        this.load.audio('thunder', `assets/media/music/sf_thunder.mp3`)
     }
 
     /** @returns {void} */
     _create() {
-
+        const thunder = this.sound.add('thunder');
+        this.loopAudio(thunder, 5000);
         // rectangle_1
         const rectangle_1 = this.add.rectangle(764, 118, 128, 128);
         rectangle_1.scaleX = 12.146623719655171;

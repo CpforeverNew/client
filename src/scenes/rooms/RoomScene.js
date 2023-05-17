@@ -289,4 +289,12 @@ export default class RoomScene extends BaseScene {
         prompt.showError('This feature is not yet implemented!\nCPForever is in development, and is being\nactively updated. Check back soon!',)
 	}
 
+    loopAudio(audio, delay) {
+        audio.play();
+        this.time.addEvent({
+            delay: delay, callback: () => this.loopAudio(audio, Phaser.Math.Between(1000, 10000)),
+            callbackScope: this,
+            loop: false
+        })
+    }
 }

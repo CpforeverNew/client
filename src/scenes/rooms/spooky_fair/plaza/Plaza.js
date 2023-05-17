@@ -35,11 +35,13 @@ export default class Plaza extends RoomScene {
 
         this.load.pack("plaza-spf-pack", "assets/media/rooms/spooky_fair/plaza/plaza-spf-pack.json");
         this.load.pack("sky-pack", "assets/media/rooms/spooky_fair/sky/sky-pack.json");
+        this.load.audio('thunder', `assets/media/music/sf_thunder.mp3`)
     }
 
     /** @returns {void} */
     _create() {
-
+        const thunder = this.sound.add('thunder');
+        this.loopAudio(thunder, 5000);
         // sky0001
         const sky0001 = this.add.sprite(936, 95, "sky_spooky", "sky0001");
 
